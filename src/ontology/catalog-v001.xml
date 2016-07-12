@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ons/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/sbbskumb.owl" uri="integration_from_PATO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/t7w6n7fe.owl" uri="integration_from_OBIB.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/sbbskumb.owl" uri="integration_from_PATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/t7w6n7fe.owl" uri="integration_from_OBIB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
+    </group>
 </catalog>

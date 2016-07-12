@@ -1,14 +1,195 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+format-version: 1.2
+ontology: http://http://www.duccioknights.org/?page_id=940
 
+[Term]
+id: AGE
+is_a: Subject_information
 
-Ontology(<http://purl.obolibrary.org/obo/ons.owl>
-Import(<http://purl.obolibrary.org/obo/ons/imports/ro_import.owl>)
-Annotation(rdfs:comment "ons")
+[Term]
+id: ALC
+is_a: dietary_assessment
 
-Declaration(Class(<http://purl.obolibrary.org/obo/ONS_00000000>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ONS_00000000> "ons"@en)
-)
+[Term]
+id: CARB
+is_a: dietary_assessment
+
+[Term]
+id: CAT_PA_QX
+is_a: physical_activity
+
+[Term]
+id: CURR_NCIG
+is_a: Subject_information
+
+[Term]
+id: DIET_M
+is_a: dietary_assessment
+
+[Term]
+id: EDU
+is_a: Subject_information
+
+[Term]
+id: ENERGY
+is_a: dietary_assessment
+
+[Term]
+id: FAST
+is_a: blood_analytics
+
+[Term]
+id: FAT
+is_a: dietary_assessment
+
+[Term]
+id: FIBER
+is_a: dietary_assessment
+
+[Term]
+id: HDL
+is_a: blood_analytics
+
+[Term]
+id: HEIGHT
+is_a: Subject_information
+
+[Term]
+id: HIP_C
+is_a: Subject_information
+
+[Term]
+id: ID
+is_a: Subject_information
+
+[Term]
+id: LDL
+is_a: blood_analytics
+
+[Term]
+id: LEI_PA_QX
+is_a: physical_activity
+
+[Term]
+id: LPA_AC
+is_a: physical_activity
+
+[Term]
+id: LPA_QX
+is_a: physical_activity
+
+[Term]
+id: MMYY_ANTR
+is_a: Subject_information
+
+[Term]
+id: MMYY_BL
+is_a: blood_analytics
+
+[Term]
+id: MMYY_Diet
+is_a: dietary_assessment
+
+[Term]
+id: MMYY_PA_AC
+is_a: physical_activity
+
+[Term]
+id: MMYY_PA_QX
+is_a: physical_activity
+
+[Term]
+id: MPA_AC
+is_a: physical_activity
+
+[Term]
+id: MPA_QX
+is_a: physical_activity
+
+[Term]
+id: MUFA
+is_a: dietary_assessment
+
+[Term]
+id: N_BOUTS_AC
+is_a: physical_activity
+
+[Term]
+id: N_BOUTS_QX
+is_a: physical_activity
+
+[Term]
+id: PAST_YQSMK
+is_a: Subject_information
+
+[Term]
+id: PREV_CVD
+is_a: prevalent_disease
+
+[Term]
+id: PREV_DIAB
+is_a: prevalent_disease
+
+[Term]
+id: PREV_DYSL
+is_a: prevalent_disease
+
+[Term]
+id: PREV_HBP
+is_a: prevalent_disease
+
+[Term]
+id: PROT
+is_a: dietary_assessment
+
+[Term]
+id: PUFA
+is_a: dietary_assessment
+
+[Term]
+id: SED_AC
+is_a: physical_activity
+
+[Term]
+id: SED_QX
+is_a: physical_activity
+
+[Term]
+id: SEX
+is_a: Subject_information
+
+[Term]
+id: SFA
+is_a: dietary_assessment
+
+[Term]
+id: SMOKE_ST
+is_a: Subject_information
+
+[Term]
+id: TCHOL
+is_a: blood_analytics
+
+[Term]
+id: TIME_BOUTS_AC
+is_a: physical_activity
+
+[Term]
+id: TOT_PA_QX
+is_a: physical_activity
+
+[Term]
+id: VPA_AC
+is_a: physical_activity
+
+[Term]
+id: VPA_QX
+is_a: physical_activity
+
+[Term]
+id: WAIST_C
+is_a: Subject_information
+
+[Term]
+id: WEIGHT
+is_a: Subject_information
+
