@@ -2,6 +2,8 @@
 
 This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
 
+Modified on local PC (trying out github features)
+
 ## Versions
 
 Initial commit: July 12, 2016
