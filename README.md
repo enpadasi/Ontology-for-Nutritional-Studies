@@ -22,3 +22,6 @@ Editors of this ontology should use the edit version, [src/ontology/ons-edit.owl
 
 ## Contact
 Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/ons/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+
+## Licence
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is distributed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribuzione 4.0 Internazionale</a>.
