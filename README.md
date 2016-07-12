@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/FrancescoVit/Ontology-for-Nutritional-Studies.svg?branch=master)](https://travis-ci.org/FrancescoVit/Ontology-for-Nutritional-Studies)
+
 # ONS
 
 This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
