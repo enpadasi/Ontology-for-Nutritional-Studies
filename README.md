@@ -1,11 +1,10 @@
-[![Build Status](https://travis-ci.org/obophenotype/ons.svg?branch=master)](https://travis-ci.org/obophenotype/ons)
-[![DOI](https://zenodo.org/badge/13996/obophenotype/ons.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/ons)
-
 # ONS
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
 
 ## Versions
+
+Initial commit: July 12, 2016
 
 ### Stable release versions
 
@@ -21,4 +20,3 @@ Editors of this ontology should use the edit version, [src/ontology/ons-edit.owl
 
 ## Contact
 Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/ons/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
-
