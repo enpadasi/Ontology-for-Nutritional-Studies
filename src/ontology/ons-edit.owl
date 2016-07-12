@@ -1,195 +1,739 @@
-format-version: 1.2
-ontology: http://http://www.duccioknights.org/?page_id=940
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://ontofox.hegroup.org/bdpvpocc.owl</Import>
+    <Import>http://ontofox.hegroup.org/66uggib3.owl</Import>
+    <Import>http://ontofox.hegroup.org/sesq9522.owl</Import>
+    <Import>http://ontofox.hegroup.org/9h5mjuwd.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WEIGHT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HIP_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CAT_PA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TOT_PA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DIAB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#AGE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CARB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ENERGY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SMOKE_ST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TIME_BOUTS_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SEX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_CVD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ALC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#DIET_M"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LDL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_HBP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_BL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#prevalent_disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LEI_PA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HDL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FIBER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#EDU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CURR_NCIG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HEIGHT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PAST_YQSMK"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DYSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MUFA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WAIST_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TCHOL"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SFA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_QX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PUFA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PROT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_ANTR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_QX"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000051"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000052"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000053"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0001407"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBIB_0000054"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000011"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000047"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#AGE"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ALC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CARB"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CAT_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CURR_NCIG"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#DIET_M"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#EDU"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ENERGY"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAST"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FIBER"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HDL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HEIGHT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HIP_C"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ID"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LDL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LEI_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_ANTR"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_BL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_Diet"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MUFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PAST_YQSMK"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_CVD"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#prevalent_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DIAB"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#prevalent_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DYSL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#prevalent_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_HBP"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#prevalent_disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PROT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PUFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SEX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SMOKE_ST"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TCHOL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#blood_analytics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TIME_BOUTS_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TOT_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WAIST_C"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WEIGHT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003939"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#dietary_assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003940"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#physical_activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004318"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004338"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004339"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004342"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005093"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0006525"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#Subject_information"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#AGE"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ALC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CARB"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CAT_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CURR_NCIG"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#DIET_M"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#EDU"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ENERGY"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAST"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FIBER"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HDL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HEIGHT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HIP_C"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ID"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LDL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LEI_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_ANTR"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_BL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_Diet"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MUFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PAST_YQSMK"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_CVD"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DIAB"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DYSL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_HBP"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PROT"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PUFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SEX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SFA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SMOKE_ST"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TCHOL"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TIME_BOUTS_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TOT_PA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_AC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_QX"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WAIST_C"/>
+        <Class IRI="http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WEIGHT"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#AGE</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">AGE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ALC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ALC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CARB</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CARB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CAT_PA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CAT_PA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#CURR_NCIG</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CURR_NCIG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#DIET_M</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DIET_M</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#EDU</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EDU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ENERGY</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ENERGY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAST</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FAST</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FAT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#FIBER</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FIBER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HDL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">HDL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HEIGHT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">HEIGHT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#HIP_C</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">HIP_C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#ID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LDL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LDL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LEI_PA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LEI_PA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LPA_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#LPA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LPA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_ANTR</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MMYY_ANTR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_BL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MMYY_BL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_Diet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MMYY_Diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MMYY_PA_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MMYY_PA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MMYY_PA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MPA_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MPA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MPA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#MUFA</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MUFA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">N_BOUTS_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#N_BOUTS_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">N_BOUTS_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PAST_YQSMK</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PAST_YQSMK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_CVD</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PREV_CVD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DIAB</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PREV_DIAB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_DYSL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PREV_DYSL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PREV_HBP</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PREV_HBP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PROT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PROT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#PUFA</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PUFA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SED_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SED_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SED_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SEX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SEX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SFA</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SFA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#SMOKE_ST</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SMOKE_ST</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TCHOL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TCHOL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TIME_BOUTS_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TIME_BOUTS_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#TOT_PA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TOT_PA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_AC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">VPA_AC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#VPA_QX</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">VPA_QX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WAIST_C</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">WAIST_C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/http://http://www.duccioknights.org/?page_id=940#WEIGHT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">WEIGHT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
-[Term]
-id: AGE
-is_a: Subject_information
 
-[Term]
-id: ALC
-is_a: dietary_assessment
 
-[Term]
-id: CARB
-is_a: dietary_assessment
-
-[Term]
-id: CAT_PA_QX
-is_a: physical_activity
-
-[Term]
-id: CURR_NCIG
-is_a: Subject_information
-
-[Term]
-id: DIET_M
-is_a: dietary_assessment
-
-[Term]
-id: EDU
-is_a: Subject_information
-
-[Term]
-id: ENERGY
-is_a: dietary_assessment
-
-[Term]
-id: FAST
-is_a: blood_analytics
-
-[Term]
-id: FAT
-is_a: dietary_assessment
-
-[Term]
-id: FIBER
-is_a: dietary_assessment
-
-[Term]
-id: HDL
-is_a: blood_analytics
-
-[Term]
-id: HEIGHT
-is_a: Subject_information
-
-[Term]
-id: HIP_C
-is_a: Subject_information
-
-[Term]
-id: ID
-is_a: Subject_information
-
-[Term]
-id: LDL
-is_a: blood_analytics
-
-[Term]
-id: LEI_PA_QX
-is_a: physical_activity
-
-[Term]
-id: LPA_AC
-is_a: physical_activity
-
-[Term]
-id: LPA_QX
-is_a: physical_activity
-
-[Term]
-id: MMYY_ANTR
-is_a: Subject_information
-
-[Term]
-id: MMYY_BL
-is_a: blood_analytics
-
-[Term]
-id: MMYY_Diet
-is_a: dietary_assessment
-
-[Term]
-id: MMYY_PA_AC
-is_a: physical_activity
-
-[Term]
-id: MMYY_PA_QX
-is_a: physical_activity
-
-[Term]
-id: MPA_AC
-is_a: physical_activity
-
-[Term]
-id: MPA_QX
-is_a: physical_activity
-
-[Term]
-id: MUFA
-is_a: dietary_assessment
-
-[Term]
-id: N_BOUTS_AC
-is_a: physical_activity
-
-[Term]
-id: N_BOUTS_QX
-is_a: physical_activity
-
-[Term]
-id: PAST_YQSMK
-is_a: Subject_information
-
-[Term]
-id: PREV_CVD
-is_a: prevalent_disease
-
-[Term]
-id: PREV_DIAB
-is_a: prevalent_disease
-
-[Term]
-id: PREV_DYSL
-is_a: prevalent_disease
-
-[Term]
-id: PREV_HBP
-is_a: prevalent_disease
-
-[Term]
-id: PROT
-is_a: dietary_assessment
-
-[Term]
-id: PUFA
-is_a: dietary_assessment
-
-[Term]
-id: SED_AC
-is_a: physical_activity
-
-[Term]
-id: SED_QX
-is_a: physical_activity
-
-[Term]
-id: SEX
-is_a: Subject_information
-
-[Term]
-id: SFA
-is_a: dietary_assessment
-
-[Term]
-id: SMOKE_ST
-is_a: Subject_information
-
-[Term]
-id: TCHOL
-is_a: blood_analytics
-
-[Term]
-id: TIME_BOUTS_AC
-is_a: physical_activity
-
-[Term]
-id: TOT_PA_QX
-is_a: physical_activity
-
-[Term]
-id: VPA_AC
-is_a: physical_activity
-
-[Term]
-id: VPA_QX
-is_a: physical_activity
-
-[Term]
-id: WAIST_C
-is_a: Subject_information
-
-[Term]
-id: WEIGHT
-is_a: Subject_information
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 

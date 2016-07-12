@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/66uggib3.owl" uri="file:/home/svito/Desktop/ONS/integration_from_PATO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/sesq9522.owl" uri="file:/home/svito/Desktop/ONS/integration_from_OBIB.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/9h5mjuwd.owl" uri="file:/home/svito/Desktop/ONS/integration_from_EFO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/bdpvpocc.owl" uri="file:/home/svito/Desktop/ONS/integration_from_CMO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/sbbskumb.owl" uri="file:/home/svito/Desktop/ONS/integration_from_PATO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/t7w6n7fe.owl" uri="file:/home/svito/Desktop/ONS/integration_from_OBIB.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="file:/home/svito/Desktop/ONS/integration_from_EFO.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/haqo37m5.owl" uri="file:/home/svito/Desktop/ONS/integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/sbbskumb.owl" uri="integration_from_PATO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/t7w6n7fe.owl" uri="integration_from_OBIB.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/sbbskumb.owl" uri="integration_from_PATO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/t7w6n7fe.owl" uri="integration_from_OBIB.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1468316267434" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468319158555" name="http://www.w3.org/2002/07/owl#" uri="ons-edit.owl"/>
     </group>
 </catalog>
