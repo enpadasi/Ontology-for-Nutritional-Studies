@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/c7cj4h25.owl" uri="file:/home/svito/Desktop/ONS/integration_from_OBI.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/ebkjh52n.owl" uri="file:/home/svito/Desktop/ONS/integration_from_HP.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/a6f24ums.owl" uri="file:/home/svito/Desktop/ONS/integration_EFO_2.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/66uggib3.owl" uri="file:/home/svito/Desktop/ONS/integration_from_PATO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/sesq9522.owl" uri="file:/home/svito/Desktop/ONS/integration_from_OBIB.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/9h5mjuwd.owl" uri="file:/home/svito/Desktop/ONS/integration_from_EFO.owl"/>
@@ -13,6 +16,6 @@
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1468337461241" name="http://www.w3.org/2002/07/owl#" uri="ons-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468404372680" name="http://www.w3.org/2002/07/owl#" uri="ons-edit.owl"/>
     </group>
 </catalog>
