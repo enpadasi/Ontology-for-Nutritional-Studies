@@ -126,14 +126,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000054 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_000034"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000630 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000630">
