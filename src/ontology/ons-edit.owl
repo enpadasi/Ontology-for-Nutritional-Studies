@@ -5,30 +5,21 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://ontofox.hegroup.org/c7cj4h25.owl</Import>
-    <Import>http://ontofox.hegroup.org/bdpvpocc.owl</Import>
-    <Import>http://ontofox.hegroup.org/a6f24ums.owl</Import>
-    <Import>http://ontofox.hegroup.org/66uggib3.owl</Import>
-    <Import>http://ontofox.hegroup.org/ebkjh52n.owl</Import>
-    <Import>http://ontofox.hegroup.org/sesq9522.owl</Import>
-    <Import>http://ontofox.hegroup.org/9h5mjuwd.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/HP_0003119"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000031"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000021"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000033"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000011"/>
@@ -37,25 +28,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000023"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000001"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004318"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/blood_analytics"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004338"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_000034"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0006525"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBIB_0000054"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000024"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000014"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000026"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003940"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000004"/>
@@ -67,28 +55,103 @@
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000028"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000006"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000018"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000008"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000030"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000020"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000010"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000032"/>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000022"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000022"/>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004339"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004342"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0001407"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/blood_analytics"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_000034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000400"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000319"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000032"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
@@ -100,7 +163,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/physical_activity"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/definition_editor"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000537"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000630"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005093"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003939"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000013"/>
@@ -109,16 +187,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000025"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000003"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000015"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000053"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000005"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000027"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000017"/>
@@ -127,85 +199,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000007"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/ONS_0000019"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/ONS_0000009"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004338"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/CMO_0001407"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004339"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000537"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/definition_editor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/HP_0003119"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000011"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000400"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBIB_0000054"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003940"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004318"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000630"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000319"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005093"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000052"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000053"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/CMO_0000051"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0006525"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0004342"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0003939"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.ebi.ac.uk/efo/definition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000047"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000630"/>
