@@ -1,0 +1,1608 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl#"
+     xml:base="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:ns="http://usefulinc.com/ns/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:obi="http://purl.obolibrary.org/obo/obi/2015-12-07/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/VHOG_definition_citation">
+        <efo:VHOG_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/VHOG_definition_citation is an annotation property that is drawn from VHOG</efo:VHOG_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/BILA_definition_citation">
+        <efo:BILA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/BILA_definition_citation is an annotation property that is drawn from BILA</efo:BILA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HP_0040005">
+        <rdfs:label>semi_formal_definition</rdfs:label>
+        <oboInOwl:created_by>HPO:skoehler</oboInOwl:created_by>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/DOID_definition_citation">
+        <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:DOID_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/source_definition"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MIAA_definition_citation">
+        <efo:MIAA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MIAA_definition_citation is an annotation property that is drawn from MIAA</efo:MIAA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:label>Description</rdfs:label>
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/GAID_definition_citation">
+        <efo:GAID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/GAID_definition_citation is an annotation property that is drawn from GAID</efo:GAID_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EHDAA2_definition_citation">
+        <efo:EHDAA2_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EHDAA2_definition_citation is an annotation property that is drawn from EHDAA2</efo:EHDAA2_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:label>Contributor</rdfs:label>
+        <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MA_definition_citation">
+        <efo:MA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MA_definition_citation is an annotation property that is drawn from MA</efo:MA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/XAO_definition_citation">
+        <efo:XAO_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/XAO_definition_citation is an annotation property that is drawn from XAO</efo:XAO_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SAEL_definition_citation">
+        <efo:SAEL_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SAEL_definition_citation is an annotation property that is drawn from SAEL</efo:SAEL_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo foundry unique label</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_definition_citation">
+        <efo:EFO_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO_definition_citation is an annotation property that is drawn from EFO</efo:EFO_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MESH_definition_citation">
+        <efo:MESH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MESH_definition_citation is an annotation property that is drawn from MESH</efo:MESH_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative_term</rdfs:label>
+        <efo:definition>An alternative label for a given entity such as a commonly used abbreviation or synonym. </efo:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/AAO_definition_citation">
+        <efo:AAO_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/AAO_definition_citation is an annotation property that is drawn from AAO</efo:AAO_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/AAO_definition_citation is an annotation property that is drawn from AAO</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creator</rdfs:label>
+        <rdfs:label>Creator</rdfs:label>
+        <rdfs:label xml:lang="en-us">Creator</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc-creator</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc-creator</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/dc/elements/1.1/creator</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">BFO OWL specification label</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attribute slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/OpenCyc_definition_citation">
+        <efo:OpenCyc_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/OpenCyc_definition_citation is an annotation property that is drawn from OpenCyc</efo:OpenCyc_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/organizational_class"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ArrayExpress_label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <rdfs:label>Subject and Keywords</rdfs:label>
+        <rdfs:label xml:lang="en-us">Subject and Keywords</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The topic of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation">
+        <efo:definition>A definition citation is a document, ontology class, person or organization from which the definition of the class is derived. It is used in the same sense as a citation in literature, in that the definition may have been derived from these sources or that this definition is related to these source.</efo:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MSH_definition_citation">
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MSH_definition_citation is an annotation property that is drawn from MSH</efo:MSH_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/alternative_term"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/GO_definition_citation">
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/GO_definition_citation is an annotation property that is drawn from GO</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+        <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ZFA_definition_citation">
+        <efo:ZFA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/ZFA_definition_citation is an annotation property that is drawn from ZFA</efo:ZFA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
+        <rdfs:label xml:lang="en">temporal interpretation</rdfs:label>
+        <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://code.google.com/p/obo-relations/wiki/ROAndTime</foaf:page>
+        <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/ROAndTime</foaf:page>
+        <obo:IAO_0000111 xml:lang="en">temporal interpretation</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/alternative_term"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:label>Title</rdfs:label>
+        <rdfs:label xml:lang="en-us">Title</rdfs:label>
+        <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">BFO CLIF specification label</obo:IAO_0000111>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/UMLS_definition_citation">
+        <efo:UMLS_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/UMLS_definition_citation is an annotation property that is drawn from UMLS</efo:UMLS_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/CALOHA_definition_citation">
+        <efo:CALOHA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/CALOHA_definition_citation is an annotation property that is drawn from CALOHA</efo:CALOHA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#scalar_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scalar slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ICD9_definition_citation">
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/ICD9_definition_citation is an annotation property that is drawn from ICD9</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_editor"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/branch_class"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EMAPA_definition_citation">
+        <efo:EMAPA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EMAPA_definition_citation is an annotation property that is drawn from EMAPA</efo:EMAPA_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EMAPA_definition_citation is an annotation property that is drawn from EMAPA</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:label>Source</rdfs:label>
+        <rdfs:label xml:lang="en-us">Source</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/example_of_usage"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EV_definition_citation">
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EV_definition_citation is an annotation property that is drawn from EV</efo:definition>
+        <efo:EV_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EV_definition_citation is an annotation property that is drawn from EV</efo:EV_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/TAO_definition_citation">
+        <efo:TAO_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/TAO_definition_citation is an annotation property that is drawn from TAO</efo:TAO_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MAT_definition_citation">
+        <efo:MAT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MAT_definition_citation is an annotation property that is drawn from MAT</efo:MAT_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homology_notes</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes on the homology status of this class.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes on the homology status of this class.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homology_notes</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homology_notes</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/Wikipedia_definition_citation">
+        <efo:Wikipedia_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/Wikipedia_definition_citation is an annotation property that is drawn from Wikipedia</efo:Wikipedia_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:definition>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EHDAA_definition_citation">
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EHDAA_definition_citation is an annotation property that is drawn from EHDAA</efo:definition>
+        <efo:EHDAA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EHDAA_definition_citation is an annotation property that is drawn from EHDAA</efo:EHDAA_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#file-release"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/FMA_definition_citation">
+        <efo:FMA_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/FMA_definition_citation is an annotation property that is drawn from FMA</efo:FMA_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/FMA_definition_citation is an annotation property that is drawn from FMA</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon#homologous_in">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homologous_in</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status: experimental</rdfs:comment>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homologous_in</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_URI"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+        <rdfs:label>Format</rdfs:label>
+        <rdfs:label xml:lang="en-us">Format</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The physical or digital manifestation of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/BTO_definition_citation">
+        <efo:BTO_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/BTO_definition_citation is an annotation property that is drawn from BTO</efo:BTO_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/BTO_definition_citation is an annotation property that is drawn from BTO</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000050</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0000822</rdfs:comment>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For continuants: C part_of C&#39; if and only if: given any c that instantiates C at a time t, there is some c&#39; such that c&#39; instantiates C&#39; at time t, and c *part_of* c&#39; at t. For processes: P part_of P&#39; if and only if: given any p that instantiates P at a time t, there is some p&#39; such that p&#39; instantiates P&#39; at time t, and p *part_of* p&#39; at t. (Here *part_of* is the instance-level part-relation.)</efo:definition>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/part_of</efo:EFO_URI>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_stages_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <efo:alternative_term>part of</efo:alternative_term>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:shorthand>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/has_part</efo:EFO_URI>
+        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+        <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
+        <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+        <rdfs:label>is_about</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">is about</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has_specified_output</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realized_in</rdfs:label>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between a realizable entity and a process. Reciprocal relation of realizes</efo:definition>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/is_realized_by</efo:EFO_URI>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizes</rdfs:label>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between a process and a material fulfilling a role (i.e. realizing a role within the context of the process).  For example a human realizing role of teacher within a lesson teching process.</efo:definition>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/realizes</efo:EFO_URI>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell sorting process achieves the objective specification &#39;material separation objective&#39;</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BP, AR, PPPB branch</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PPPB branch derived</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</obo:IAO_0000111>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</obo:IAO_0000111>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000117>OBI</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000052</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in</oboInOwl:id>
+        <obo:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this fragility inheres in this vase</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this red color inheres in this apple</obo:IAO_0000112>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
+        <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
+        <rdfs:label xml:lang="en">concretizes</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">concretizes</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0001025</oboInOwl:hasDbXref>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/located_in</efo:EFO_URI>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">located_in</oboInOwl:shorthand>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
+        <rdfs:label xml:lang="en">overlaps</rdfs:label>
+        <obo:IAO_0000424>http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)</obo:IAO_0000424>
+        <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002323"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in part of</rdfs:label>
+        <rdfs:label xml:lang="en">inheres in part of</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002314</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in_part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres_in_part_of</oboInOwl:shorthand>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000115>q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.</obo:IAO_0000115>
+        <obo:IAO_0000116>Because part_of is transitive, inheres in is a sub-relation of inheres in part of</obo:IAO_0000116>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002323 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002323">
+        <rdfs:label xml:lang="en">mereotopologically related to</rdfs:label>
+        <obo:IAO_0000115>A mereological relationship or a topological relationship</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships</obo:IAO_0000232>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
+        <rdfs:label>depends_on</rdfs:label>
+        <rdfs:label>depends on</rdfs:label>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002573">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has modifier</rdfs:label>
+        <rdfs:label>has modifier</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002180</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placeholder relation to indicate normality/abnormality.</rdfs:comment>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualifier</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualifier</oboInOwl:id>
+        <obo:IAO_0000232>This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as &#39;abnormal&#39; and &#39;normal&#39;. It has yet to be formally aligned into an ontological framework; it&#39;s not clear what the ontological status of the &quot;modifiers&quot; are.</obo:IAO_0000232>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000115>A relation that holds between an attribute or a qualifier and another attribute.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/UPHENO_0000001">
+        <rdfs:label>has phenotype affecting</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002502"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000784 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0000784">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_disease_location</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000785"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000785 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0000785">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_location_of_disease</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#location_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/has_flag -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/has_flag">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_flag</rdfs:label>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation to flag that an EFO class qualifies as an Atlas validation type</efo:definition>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/has_flag</efo:EFO_URI>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#location_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location_of</rdfs:label>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/location_of</efo:EFO_URI>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#revision -->
+
+    <owl:DatatypeProperty rdf:about="http://usefulinc.com/ns/doap#revision">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000051">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood total cholesterol level</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000051</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the entire amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, without taking into account any association with other molecules such as lipoproteins, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood TC level</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood high density lipoprotein cholesterol level</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000052</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in high-density lipoprotein (HDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. HDL is the smallest of the major lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The HDL class of lipoproteins, specifically the subtypes of HDL2 and HDL3, have densities between 1.063 and 1.210 g/ml.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL level</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL-C</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood low density lipoprotein cholesterol level</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in low-density lipoprotein (LDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. LDL constitute a class of relatively large, heterogeneous lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The LDL class of lipoproteins has a density between 1.019 and 1.063 g/ml. In some animal species, such as canine and rodents, this may overlap with the HDL1 class and be designated LDL/HDL1.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL level</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL-C level</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001407">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethanol drink intake rate</rdfs:label>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-14T15:41:12Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001407</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</oboInOwl:created_by>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of ethanol, a colorless volatile flammable liquid CH3CH2OH that is the intoxicating agent in liquors, consumed per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol intake rate</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0003119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0003119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abnormality of lipid metabolism</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">According to CHEBI:18059 &#39;Lipids&#39; is a loosely defined term for substances of biological origin that are soluble in nonpolar solvents. They consist of saponifiable lipids, such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable lipids, principally steroids.</rdfs:comment>
+        <obo:HP_0040005 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abnormality in the of `lipid` (CHEBI:18059) metabolism.</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abnormality in the of lipid metabolism.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dyslipidemia</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003119</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003611</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000630">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematology</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood analysis, haematology</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematology</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematology is a process studying blood and blood producing organs relying on a variety of techniques and instruments</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000319 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000319">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular disease</rdfs:label>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A body system disease which occurs in the blood, heart, blood vessels or the lymphatic system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells or lymph to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A body system disease which occurs in the blood, heart, blood vessels or the lymphatic system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells or lymph to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.[accessedResource: DOID:1287][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels).  Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension.  Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma. -- 2003</efo:definition>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-neoplastic or neoplastic disorder affecting the heart or the vessels (arteries, veins and lymph vessels). Representative examples of non-neoplastic cardiovascular disorders are endocarditis and hypertension. Representative examples of neoplastic cardiovascular disorders are endocardial myxoma and angiosarcoma.[accessedResource: NCIt:C2931][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASCVD</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASCVD[accessedResource: ICD9:429.2][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARDIOVASC DIS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARDIOVASC DIS[accessedResource: MSH:D002318][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIRCULATORY DISEASE NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIRCULATORY DISEASE NOS[accessedResource: ICD9:459.9][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD, NOS[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVD[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVS disease</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVS disease[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disease (CVD)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disease (CVD)[accessedResource: NCIt:C2931][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Diseases</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Diseases[accessedResource: MSH:D002318][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disorder</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disorder[accessedResource: NCIt:C2931][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disorders</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Disorders[accessedResource: NCIt:C2931][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disease, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disease, NOS[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disease, unspecified</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disease, unspecified[accessedResource: ICD9:429.2][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disorder, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular disorder, NOS[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular system disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certain sequelae of myocardial infarction, not elsewhere classified</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certain sequelae of myocardial infarction, not elsewhere classified[accessedResource: ICD9:429.7][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory system disease NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory system disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory system disease NOS (disorder)[accessedResource: SNOMEDCT:195646003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory system disease NOS[accessedResource: SNOMEDCT:195646003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISEASES OF THE CIRCULATORY SYSTEM</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISEASES OF THE CIRCULATORY SYSTEM[accessedResource: ICD9:390-459.99][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:1287</efo:DOID_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease affecting entire cardiovascular system</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease affecting entire cardiovascular system (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease affecting entire cardiovascular system (disorder)[accessedResource: SNOMEDCT:105980002][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease affecting entire cardiovascular system[accessedResource: SNOMEDCT:105980002][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system (disorder)[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system, NOS[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease of cardiovascular system[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease, Cardiovascular</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease, Cardiovascular[accessedResource: MSH:D002318][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diseases, Cardiovascular</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diseases, Cardiovascular[accessedResource: MSH:D002318][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of cardiovascular system</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of cardiovascular system (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of cardiovascular system (disorder)[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of cardiovascular system[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of circulatory system</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of circulatory system, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of circulatory system, NOS[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of circulatory system[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of the circulatory system</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder of the circulatory system[accessedResource: SNOMEDCT:49601007][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:390-459.99</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:420-429.99</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:423</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:423.8</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:424</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429.2</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429.7</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429.8</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429.81</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:429.89</efo:ICD9_definition_citation>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:459.9</efo:ICD9_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ILL-DEFINED HRT DIS NEC</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ILL-DEFINED HRT DIS NEC[accessedResource: ICD9:429.89][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ill-defined descriptions and complications of heart disease</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ill-defined descriptions and complications of heart disease[accessedResource: ICD9:429][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D002318</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C2931</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER SEQUELAE OF MI NEC</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER SEQUELAE OF MI NEC[accessedResource: ICD9:429.79][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of endocardium</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of endocardium (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of endocardium (disorder)[accessedResource: SNOMEDCT:266241000][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of endocardium[accessedResource: ICD9:424][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of pericardium</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of pericardium (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of pericardium (disorder)[accessedResource: SNOMEDCT:194962004][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other diseases of pericardium[accessedResource: ICD9:423][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other disorders of papillary muscle</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other disorders of papillary muscle[accessedResource: ICD9:429.81][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other forms of heart disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other forms of heart disease (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other forms of heart disease (disorder)[accessedResource: SNOMEDCT:194901009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other forms of heart disease[accessedResource: SNOMEDCT:194901009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease (disorder)[accessedResource: SNOMEDCT:266309008][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease NOS (disorder)[accessedResource: SNOMEDCT:195151008][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease NOS[accessedResource: SNOMEDCT:195151008][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other heart disease[accessedResource: SNOMEDCT:266309008][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease (disorder)[accessedResource: SNOMEDCT:266251004][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease NOS (disorder)[accessedResource: SNOMEDCT:195150009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease NOS[accessedResource: SNOMEDCT:195150009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart disease[accessedResource: SNOMEDCT:266251004][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart diseases</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ill-defined heart diseases[accessedResource: ICD9:429.8][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other pericardial disease NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other pericardial disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other pericardial disease NOS (disorder)[accessedResource: SNOMEDCT:266240004][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other pericardial disease NOS[accessedResource: SNOMEDCT:266240004][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other sequelae of myocardial infarction, not elsewhere classified</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other sequelae of myocardial infarction, not elsewhere classified[accessedResource: ICD9:429.79][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified diseases of pericardium</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified diseases of pericardium[accessedResource: ICD9:423.8][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified pericardial disease NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified pericardial disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified pericardial disease NOS (disorder)[accessedResource: SNOMEDCT:266239001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other specified pericardial disease NOS[accessedResource: SNOMEDCT:266239001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAPILLARY MUSCLE DIS NEC</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAPILLARY MUSCLE DIS NEC[accessedResource: ICD9:429.81][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERICARDIAL DISEASE NEC</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERICARDIAL DISEASE NEC[accessedResource: ICD9:423.8][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathological conditions involving the CARDIOVASCULAR SYSTEM including the HEART; the BLOOD VESSELS; or the PERICARDIUM.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathological conditions involving the CARDIOVASCULAR SYSTEM including the HEART; the BLOOD VESSELS; or the PERICARDIUM.[accessedResource: MSH:D002318][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:105980002</efo:SNOMEDCT_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:49601007</efo:SNOMEDCT_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified circulatory system disorder</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified circulatory system disorder[accessedResource: ICD9:459.9][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Cardiovascular disease, unspecified</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Cardiovascular disease, unspecified (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Cardiovascular disease, unspecified (disorder)[accessedResource: SNOMEDCT:195594006][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Cardiovascular disease, unspecified[accessedResource: SNOMEDCT:195594006][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other forms of heart disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other forms of heart disease (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other forms of heart disease (disorder)[accessedResource: SNOMEDCT:195551001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other forms of heart disease[accessedResource: SNOMEDCT:195551001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other ill-defined heart diseases</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other ill-defined heart diseases (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other ill-defined heart diseases (disorder)[accessedResource: SNOMEDCT:195588003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other ill-defined heart diseases[accessedResource: SNOMEDCT:195588003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other specified diseases of pericardium</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other specified diseases of pericardium (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other specified diseases of pericardium (disorder)[accessedResource: SNOMEDCT:195553003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Other specified diseases of pericardium[accessedResource: SNOMEDCT:195553003][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular system disease[accessedResource: DOID:1287][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system disease</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of subdivision of hemolymphoid system</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of subdivision of hemolymphoid system[accessedResource: DOID:1287][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000400 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000400">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diabetes mellitus</rdfs:label>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heterogeneous group of disorders characterized by HYPERGLYCEMIA and GLUCOSE INTOLERANCE.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heterogeneous group of disorders characterized by HYPERGLYCEMIA and GLUCOSE INTOLERANCE.[accessedResource: MSH:D003920][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.[accessedResource: NCIt:C2985][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM - Diabetes mellitus</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM - Diabetes mellitus[accessedResource: SNOMEDCT:73211009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9351</efo:DOID_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes NOS[accessedResource: DOID:9351][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes mellitus (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes mellitus (disorder)[accessedResource: DOID:9351][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes mellitus, NOS</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes mellitus, NOS[accessedResource: SNOMEDCT:73211009][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes[accessedResource: DOID:9351][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:250</efo:ICD9_definition_citation>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D003920</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C2985</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:73211009</efo:SNOMEDCT_definition_citation>
+        <efo:gwas_trait>true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000537 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000537">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypertension</rdfs:label>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(hypertensive disease) or (hypertension)</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Pressure, High</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Pressure, High[accessedResource: MSH:D006973][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Pressures, High</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Pressures, High[accessedResource: MSH:D006973][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:10763</efo:DOID_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTN</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTN - hypertension</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTN[accessedResource: DOID:10763][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HYPERTENSIVE DISEASE</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HYPERTENSIVE DISEASE[accessedResource: ICD9:401-405.99][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Blood Pressure</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Blood Pressure[accessedResource: MSH:D006973][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Blood Pressures</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High Blood Pressures[accessedResource: MSH:D006973][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High blood pressure (&amp; [essential hypertension])</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High blood pressure (&amp; [essential hypertension])[accessedResource: DOID:10763][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertensive disease (disorder)</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertensive disease NOS (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertensive disease NOS (disorder)[accessedResource: SNOMEDCT:194794002][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertensive disease NOS[accessedResource: SNOMEDCT:194794002][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:ICD9_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9:401-405.99</efo:ICD9_definition_citation>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D006973</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C3117</efo:NCI_Thesaurus_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persistently high systemic arterial BLOOD PRESSURE. Based on multiple readings (BLOOD PRESSURE DETERMINATION), hypertension is currently defined as when SYSTOLIC PRESSURE is consistently greater than 140 mm Hg or when DIASTOLIC PRESSURE is consistently 90 mm Hg or more.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persistently high systemic arterial BLOOD PRESSURE. Based on multiple readings (BLOOD PRESSURE DETERMINATION), hypertension is currently defined as when SYSTOLIC PRESSURE is consistently greater than 140 mm Hg or when DIASTOLIC PRESSURE is consistently 90 mm Hg or more.[accessedResource: MSH:D006973][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SURG COMP - HYPERTENSION</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SURG COMP - HYPERTENSION[accessedResource: ICD9:997.91][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Hypertensive diseases</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Hypertensive diseases (disorder)</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Hypertensive diseases (disorder)[accessedResource: SNOMEDCT:195537001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[X]Hypertensive diseases[accessedResource: SNOMEDCT:195537001][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyperpiesia</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyperpiesia[accessedResource: DOID:10763][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypertension NOS</efo:alternative_term>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypertensive disease NOS</efo:alternative_term>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vascular hypertensive disorder</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vascular hypertensive disorder[accessedResource: DOID:10763][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003939 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003939">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy intake</rdfs:label>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caloric Intake</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caloric Intake[accessedResource: MSH:D002149][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D002149</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C28135</efo:NCI_Thesaurus_definition_citation>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</efo:definition_editor>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total number of calories taken in daily whether ingested or by parenteral routes.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total number of calories taken in daily whether ingested or by parenteral routes.[accessedResource: MSH:D002149][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003940 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003940">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity</rdfs:label>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Locomotor</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Locomotor[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Motor</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Motor[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Physical</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities, Physical[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Locomotor</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Locomotor[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Motor</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Motor[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Physical</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity, Physical[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locomotor Activities</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locomotor Activities[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locomotor Activity</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locomotor Activity[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D009043</efo:MSH_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motor Activities</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motor Activities[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motor Activity</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motor Activity[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C17708</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Activities</efo:alternative_term>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Activities[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:68130003</efo:SNOMEDCT_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The physical activity of a human or an animal as a behavioral phenomenon.</efo:definition>
+        <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The physical activity of a human or an animal as a behavioral phenomenon.[accessedResource: MSH:D009043][accessDate: 05-04-2011]</efo:bioportal_provenance>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</efo:definition_editor>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004318 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004318">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smoking behavior</rdfs:label>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhaling and exhaling the smoke of tobacco or something similar to tobacco.</efo:definition>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D012907</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C20134</efo:NCI_Thesaurus_definition_citation>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smoking</efo:alternative_term>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004338 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004338">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body weight</rdfs:label>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D001835</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C81328</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:27113001</efo:SNOMEDCT_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mass or quantity of heaviness of an individual. It is expressed by units of pounds or kilograms.</efo:definition>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004339">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body height</rdfs:label>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D001827</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C25347</efo:NCI_Thesaurus_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distance from the sole to the crown of the head with body standing on a flat surface and fully extended.</efo:definition>
+        <efo:alternative_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">height</efo:alternative_term>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004342 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004342">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist circumference</rdfs:label>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D055105</efo:MSH_definition_citation>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C100948</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:276361009</efo:SNOMEDCT_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement around the body at the level of the ABDOMEN and just above the hip bone. The measurement is usually taken immediately after exhalation.</efo:definition>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005093 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005093">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip circumference</rdfs:label>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C100947</efo:NCI_Thesaurus_definition_citation>
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:284472007</efo:SNOMEDCT_definition_citation>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circumferential measurement of the largest part of the hip</efo:definition>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0006525 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0006525">
+        <rdfs:label xml:lang="en">cigarettes per day measurement</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004318"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dani Welter</efo:definition_editor>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the quantification of the number of cigarettes that a subject smoked on average per day</efo:definition>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <efo:alternative_term>CPD measurement</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">to be replaced with external ontology term</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">requires discussion</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001901 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RO_0001901">
+        <rdfs:label xml:lang="en">axiom holds for all times</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">axiom holds for all times</obo:IAO_0000111>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao.owl"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi.owl"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi/2015-12-07/obi.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/2015-12-07/obi.owl">
+        <rdfs:label>OBI Release 2015-12-07</rdfs:label>
+        <doap:revision>SVN Revision: exported</doap:revision>
+        <doap:file-release rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <doap:file-release rdf:resource="http://purl.obolibrary.org/obo/obi/2015-12-07/obi.owl"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi/wiki/Releases/2015-12-07"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap -->
+
+    <owl:NamedIndividual rdf:about="http://usefulinc.com/ns/doap"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
