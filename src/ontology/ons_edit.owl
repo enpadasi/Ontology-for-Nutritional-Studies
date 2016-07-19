@@ -81,9 +81,45 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
             oboInOwl:id "PREV_DYSL"@en .
 
 
+###  http://purl.obolibrary.org/obo/ICO_0000069
+:ICO_0000069 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/Metadata_start_tab
+:Metadata_start_tab rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBCS_0000089
+:OBCS_0000089 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000094
+:OBI_0000094 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000103
+:OBI_0000103 rdfs:subClassOf :Metadata_start_tab .
+
+
 ###  http://purl.obolibrary.org/obo/OBI_0000630
 :OBI_0000630 rdf:type owl:Class ;
              owl:equivalentClass :blood_analytics .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001942
+:OBI_0001942 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/OMIABIS_0000036
+:OMIABIS_0000036 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/OMIABIS_0000037
+:OMIABIS_0000037 rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://purl.obolibrary.org/obo/OMRSE_00000038
+:OMRSE_00000038 rdfs:subClassOf :Metadata_start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/ONS_0000001
@@ -445,7 +481,88 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/physical_activity
 :physical_activity rdf:type owl:Class ;
-                   owl:equivalentClass efo:EFO_0003940 .
+                   owl:equivalentClass efo:EFO_0003940 ;
+                   rdfs:subClassOf efo:EFO_0003940 .
+
+
+###  http://semanticscience.org/resource/SIO_000000
+<http://semanticscience.org/resource/SIO_000000> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000031
+<http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000142
+<http://semanticscience.org/resource/SIO_000142> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000143
+<http://semanticscience.org/resource/SIO_000143> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000154
+<http://semanticscience.org/resource/SIO_000154> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000172
+<http://semanticscience.org/resource/SIO_000172> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000173
+<http://semanticscience.org/resource/SIO_000173> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000183
+<http://semanticscience.org/resource/SIO_000183> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000262
+<http://semanticscience.org/resource/SIO_000262> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000296
+<http://semanticscience.org/resource/SIO_000296> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000337
+<http://semanticscience.org/resource/SIO_000337> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000366
+<http://semanticscience.org/resource/SIO_000366> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000391
+<http://semanticscience.org/resource/SIO_000391> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000508
+<http://semanticscience.org/resource/SIO_000508> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000664
+<http://semanticscience.org/resource/SIO_000664> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_000688
+<http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_001041
+<http://semanticscience.org/resource/SIO_001041> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_001042
+<http://semanticscience.org/resource/SIO_001042> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_001068
+<http://semanticscience.org/resource/SIO_001068> rdfs:subClassOf :Metadata_start_tab .
+
+
+###  http://semanticscience.org/resource/SIO_001323
+<http://semanticscience.org/resource/SIO_001323> rdfs:subClassOf :Metadata_start_tab .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0000319
@@ -464,6 +581,10 @@ efo:EFO_0000400 rdf:type owl:Class ;
 efo:EFO_0000537 rdf:type owl:Class ;
                 rdfs:subClassOf :ONS_0000032 ;
                 oboInOwl:id "PREV_HBP"@en .
+
+
+###  http://www.ebi.ac.uk/efo/EFO_0000727
+efo:EFO_0000727 rdfs:subClassOf :Metadata_start_tab .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0003939
