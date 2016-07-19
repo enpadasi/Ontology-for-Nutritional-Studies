@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
+    <uri id="Imports Wizard Entry" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox1.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/9h5mjuwd.owl" uri="file:/home/svito/Desktop/GitHub/ONS/integration_from_EFO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/bdpvpocc.owl" uri="file:/home/svito/Desktop/GitHub/ONS/integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/a6f24ums.owl" uri="file:/home/svito/Desktop/GitHub/ONS/integration_EFO_2.owl"/>
@@ -19,7 +21,6 @@
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1468857451115" name="http://purl.obolibrary.org/obo/" uri="ons_edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1468857451115" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1468938140284" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
     </group>
 </catalog>
