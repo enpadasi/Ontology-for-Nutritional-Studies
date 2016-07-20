@@ -48,11 +48,80 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+:BFO_0000050 rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
-###  http://purl.obolibrary.org/obo/Anystudy_template
-:Anystudy_template rdf:type owl:Class .
+###  http://purl.obolibrary.org/obo/Absolute_start_time_relative_to_study_initiation
+:Absolute_start_time_relative_to_study_initiation rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Actual_question
+:Actual_question rdf:type owl:Class ;
+                 rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Age_unit
+:Age_unit rdf:type owl:Class ;
+          rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Anystudy_template_ontology
+:Anystudy_template_ontology rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/Assay_description
+:Assay_description rdf:type owl:Class ;
+                   rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/Assay_name
+:Assay_name rdf:type owl:Class ;
+            rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/Assay_name_2
+:Assay_name_2 rdf:type owl:Class ;
+              rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/Assay_name_3
+:Assay_name_3 rdf:type owl:Class ;
+              rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/Assay_platform
+:Assay_platform rdf:type owl:Class ;
+                rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/Assay_platform_2
+:Assay_platform_2 rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/Assay_type
+:Assay_type rdf:type owl:Class ;
+            rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/BMI
+:BMI rdf:type owl:Class ;
+     rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Body_weight_unit
+:Body_weight_unit rdf:type owl:Class ;
+                  rdfs:subClassOf :Subject_tab .
 
 
 ###  http://purl.obolibrary.org/obo/CMO_0000051
@@ -79,8 +148,58 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
              oboInOwl:id "ALC"^^xsd:string .
 
 
-###  http://purl.obolibrary.org/obo/DataSHIELD_casestudy
-:DataSHIELD_casestudy rdf:type owl:Class .
+###  http://purl.obolibrary.org/obo/Chemical-biological_assays
+:Chemical-biological_assays rdf:type owl:Class ;
+                            rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/DataSHIELD_casestudy_Ontology
+:DataSHIELD_casestudy_Ontology rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/Description
+:Description rdf:type owl:Class ;
+             rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Description_of_sampling_or_SOP
+:Description_of_sampling_or_SOP rdf:type owl:Class ;
+                                rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Duration
+:Duration rdf:type owl:Class ;
+          rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/End_time
+:End_time rdf:type owl:Class ;
+          rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Etnicity
+:Etnicity rdf:type owl:Class ;
+          rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Event_identifier_name
+:Event_identifier_name rdf:type owl:Class ;
+                       rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Events_tab
+:Events_tab rdf:type owl:Class ;
+            rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Gender
+:Gender rdf:type owl:Class ;
+        rdfs:subClassOf :Subject_tab .
 
 
 ###  http://purl.obolibrary.org/obo/HP_0003119
@@ -91,6 +210,31 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ICO_0000069
 :ICO_0000069 rdfs:subClassOf :Start_tab .
+
+
+###  http://purl.obolibrary.org/obo/Informations
+:Informations rdf:type owl:Class ;
+              rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Initial_age
+:Initial_age rdf:type owl:Class ;
+             rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Initial_body_heaight
+:Initial_body_heaight rdf:type owl:Class ;
+                      rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Initial_body_weight
+:Initial_body_weight rdf:type owl:Class ;
+                     rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Initial_hip_circumference
+:Initial_hip_circumference rdf:type owl:Class ;
+                           rdfs:subClassOf :Subject_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OBCS_0000089
@@ -108,7 +252,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 ###  http://purl.obolibrary.org/obo/OBI_0000630
 :OBI_0000630 rdf:type owl:Class ;
              owl:equivalentClass :blood_analytics ;
-             rdfs:subClassOf :DataSHIELD_casestudy .
+             rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0001942
@@ -443,7 +587,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000032
 :ONS_0000032 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy ;
+             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
              efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -453,7 +597,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000033
 :ONS_0000033 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy ;
+             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
              efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -463,7 +607,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000034
 :ONS_0000034 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy ;
+             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
              efo:definition "Anthropometric and habits information of the subject"@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -527,6 +671,11 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
              rdfs:label "Compliance assessed?"@en .
 
 
+###  http://purl.obolibrary.org/obo/Omics
+:Omics rdf:type owl:Class ;
+       rdfs:subClassOf :Anystudy_template_ontology .
+
+
 ###  http://purl.obolibrary.org/obo/PATO_0000011
 :PATO_0000011 rdf:type owl:Class ;
               rdfs:subClassOf :ONS_0000034 ;
@@ -539,21 +688,226 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
               oboInOwl:id "SEX"^^xsd:string .
 
 
+###  http://purl.obolibrary.org/obo/Physiology_assays
+:Physiology_assays rdf:type owl:Class ;
+                   rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Physiology_type
+:Physiology_type rdf:type owl:Class ;
+                 rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_reference
+:Protocol_reference rdf:type owl:Class ;
+                    rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_reference_2
+:Protocol_reference_2 rdf:type owl:Class ;
+                      rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_reference_4
+:Protocol_reference_4 rdf:type owl:Class ;
+                      rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_used
+:Protocol_used rdf:type owl:Class ;
+               rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_used_2
+:Protocol_used_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/Protocol_used_4
+:Protocol_used_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/Realted_event_identifier
+:Realted_event_identifier rdf:type owl:Class ;
+                          rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Route
+:Route rdf:type owl:Class ;
+       rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Sampling
+:Sampling rdf:type owl:Class ;
+          rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_identifier
+:Sampling_identifier rdf:type owl:Class ;
+                     rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_identifier_2
+:Sampling_identifier_2 rdf:type owl:Class ;
+                       rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_identifier_3
+:Sampling_identifier_3 rdf:type owl:Class ;
+                       rdfs:subClassOf :Chemical-biological_assays .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_identifier_4
+:Sampling_identifier_4 rdf:type owl:Class ;
+                       rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_method_description
+:Sampling_method_description rdf:type owl:Class ;
+                             rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Sampling_name
+:Sampling_name rdf:type owl:Class ;
+               rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Short_name_of_question
+:Short_name_of_question rdf:type owl:Class ;
+                        rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/Species
+:Species rdf:type owl:Class ;
+         rdfs:subClassOf :Subject_tab .
+
+
 ###  http://purl.obolibrary.org/obo/Start_tab
 :Start_tab rdf:type owl:Class ;
-           rdfs:subClassOf :Anystudy_template .
+           rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Start_time
+:Start_time rdf:type owl:Class ;
+            rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Start_time_2
+:Start_time_2 rdf:type owl:Class ;
+              rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Startgroup
+:Startgroup rdf:type owl:Class ;
+            rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Study_sampling_method
+:Study_sampling_method rdf:type owl:Class ;
+                       rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/Subject_ID
+:Subject_ID rdf:type owl:Class ;
+            rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Subject_tab
+:Subject_tab rdf:type owl:Class ;
+             rdfs:subClassOf :Anystudy_template_ontology .
+
+
+###  http://purl.obolibrary.org/obo/Time_units_for_start_and_end_time
+:Time_units_for_start_and_end_time rdf:type owl:Class ;
+                                   rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Treatment_descriptive_name
+:Treatment_descriptive_name rdf:type owl:Class ;
+                            rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Treatment_full_description
+:Treatment_full_description rdf:type owl:Class ;
+                            rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Treatment_or_dose_level
+:Treatment_or_dose_level rdf:type owl:Class ;
+                         rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/Type_of_omics
+:Type_of_omics rdf:type owl:Class ;
+               rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/Type_of_question_or_question_variable_code
+:Type_of_question_or_question_variable_code rdf:type owl:Class ;
+                                            rdfs:subClassOf :Informations .
+
+
+###  http://purl.obolibrary.org/obo/adverse_events
+:adverse_events rdf:type owl:Class ;
+                rdfs:subClassOf :Subject_tab .
 
 
 ###  http://purl.obolibrary.org/obo/blood_analytics
 :blood_analytics rdf:type owl:Class ;
-                 rdfs:subClassOf :DataSHIELD_casestudy .
+                 rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
+
+
+###  http://purl.obolibrary.org/obo/initial_waist_circumference
+:initial_waist_circumference rdf:type owl:Class ;
+                             rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/intervention_challenge_or_both
+:intervention_challenge_or_both rdf:type owl:Class ;
+                                rdfs:subClassOf :Events_tab .
+
+
+###  http://purl.obolibrary.org/obo/medication_supplement_diet_use
+:medication_supplement_diet_use rdf:type owl:Class ;
+                                rdfs:subClassOf :Subject_tab .
 
 
 ###  http://purl.obolibrary.org/obo/physical_activity
 :physical_activity rdf:type owl:Class ;
                    owl:equivalentClass efo:EFO_0003940 ;
-                   rdfs:subClassOf :DataSHIELD_casestudy ,
+                   rdfs:subClassOf :DataSHIELD_casestudy_Ontology ,
                                    efo:EFO_0003940 .
+
+
+###  http://purl.obolibrary.org/obo/platform
+:platform rdf:type owl:Class ;
+          rdfs:subClassOf :Omics .
+
+
+###  http://purl.obolibrary.org/obo/protocol_reference_3
+:protocol_reference_3 rdf:type owl:Class ;
+                      rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/protocol_used_3
+:protocol_used_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :Physiology_assays .
+
+
+###  http://purl.obolibrary.org/obo/realtive_time_points_of_sampling_event_in_the_study
+:realtive_time_points_of_sampling_event_in_the_study rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Sampling .
+
+
+###  http://purl.obolibrary.org/obo/subject_description
+:subject_description rdf:type owl:Class ;
+                     rdfs:subClassOf :Subject_tab .
+
+
+###  http://purl.obolibrary.org/obo/Initial_waist:hip_ratio
+:Initial_waist:hip_ratio rdf:type owl:Class ;
+                         rdfs:subClassOf :Subject_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000000
@@ -666,7 +1020,7 @@ efo:EFO_0003939 rdf:type owl:Class ;
 
 ###  http://www.ebi.ac.uk/efo/EFO_0003940
 efo:EFO_0003940 rdf:type owl:Class ;
-                rdfs:subClassOf :DataSHIELD_casestudy .
+                rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0004318
