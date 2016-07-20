@@ -51,6 +51,10 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/Anystudy_template
+:Anystudy_template rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/CMO_0000051
 :CMO_0000051 rdf:type owl:Class ;
              rdfs:subClassOf :blood_analytics ;
@@ -75,6 +79,10 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
              oboInOwl:id "ALC"^^xsd:string .
 
 
+###  http://purl.obolibrary.org/obo/DataSHIELD_casestudy
+:DataSHIELD_casestudy rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/HP_0003119
 :HP_0003119 rdf:type owl:Class ;
             rdfs:subClassOf :ONS_0000032 ;
@@ -82,49 +90,46 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000069
-:ICO_0000069 rdfs:subClassOf :Metadata_start_tab .
-
-
-###  http://purl.obolibrary.org/obo/Metadata_start_tab
-:Metadata_start_tab rdf:type owl:Class .
+:ICO_0000069 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OBCS_0000089
-:OBCS_0000089 rdfs:subClassOf :Metadata_start_tab .
+:OBCS_0000089 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000094
-:OBI_0000094 rdfs:subClassOf :Metadata_start_tab .
+:OBI_0000094 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000103
-:OBI_0000103 rdfs:subClassOf :Metadata_start_tab .
+:OBI_0000103 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000630
 :OBI_0000630 rdf:type owl:Class ;
-             owl:equivalentClass :blood_analytics .
+             owl:equivalentClass :blood_analytics ;
+             rdfs:subClassOf :DataSHIELD_casestudy .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0001942
-:OBI_0001942 rdfs:subClassOf :Metadata_start_tab .
+:OBI_0001942 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OMIABIS_0000036
-:OMIABIS_0000036 rdfs:subClassOf :Metadata_start_tab .
+:OMIABIS_0000036 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OMIABIS_0000037
-:OMIABIS_0000037 rdfs:subClassOf :Metadata_start_tab .
+:OMIABIS_0000037 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/OMRSE_00000038
-:OMRSE_00000038 rdfs:subClassOf :Metadata_start_tab .
+:OMRSE_00000038 rdfs:subClassOf :Start_tab .
 
 
 ###  http://purl.obolibrary.org/obo/ONS_0000001
 :ONS_0000001 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_000034 ;
+             rdfs:subClassOf :ONS_0000034 ;
              efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -134,7 +139,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000002
 :ONS_0000002 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_000034 ;
+             rdfs:subClassOf :ONS_0000034 ;
              efo:definition "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -144,7 +149,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000003
 :ONS_0000003 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_000034 ;
+             rdfs:subClassOf :ONS_0000034 ;
              efo:definition """School education (years of school education)
 1= less than 12 years      2= 12 or more years"""@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
@@ -155,7 +160,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000004
 :ONS_0000004 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_000034 ;
+             rdfs:subClassOf :ONS_0000034 ;
              efo:definition "For past smokers: time in years since quitting smoking"@en ;
              efo:definition_editor "ENPADASI_WP4"^^xsd:string ;
              oboInOwl:created_by "ENPADASI_WP4"^^xsd:string ;
@@ -438,6 +443,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000032
 :ONS_0000032 rdf:type owl:Class ;
+             rdfs:subClassOf :DataSHIELD_casestudy ;
              efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -447,6 +453,7 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/ONS_0000033
 :ONS_0000033 rdf:type owl:Class ;
+             rdfs:subClassOf :DataSHIELD_casestudy ;
              efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
              efo:definition_editor "ENPADASI_WP4"@en ;
              oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -454,115 +461,179 @@ oboInOwl:id rdf:type owl:AnnotationProperty .
              rdfs:label "Dietary assessment"@en .
 
 
-###  http://purl.obolibrary.org/obo/ONS_000034
-:ONS_000034 rdf:type owl:Class ;
-            efo:definition "Anthropometric and habits information of the subject"@en ;
-            efo:definition_editor "ENPADASI_WP4"@en ;
-            oboInOwl:created_by "ENPADASI_WP4"@en ;
-            oboInOwl:id "Subject_informations"@en ;
-            rdfs:label "subject informations"@en .
+###  http://purl.obolibrary.org/obo/ONS_0000034
+:ONS_0000034 rdf:type owl:Class ;
+             rdfs:subClassOf :DataSHIELD_casestudy ;
+             efo:definition "Anthropometric and habits information of the subject"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             oboInOwl:created_by "ENPADASI_WP4"@en ;
+             oboInOwl:id "Subject_informations"@en ;
+             rdfs:label "subject informations"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000035
+:ONS_0000035 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Short study name"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000036
+:ONS_0000036 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "Name of the consortium which the study refers to"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Consortium"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000037
+:ONS_0000037 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "The name of the method used for randomization (OBCS_0000089), if any randomization was adopted."@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Randomization method"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000038
+:ONS_0000038 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "Indicate whether blinded experiment were conducted or not"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Blinding"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000039
+:ONS_0000039 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "If blinded experiment were conducted, indicate the method used for blinding"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Blinding method"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000040
+:ONS_0000040 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "Indicated whether the study is terminated or not"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Study terminated?"@en .
+
+
+###  http://purl.obolibrary.org/obo/ONS_0000041
+:ONS_0000041 rdf:type owl:Class ;
+             rdfs:subClassOf :Start_tab ;
+             efo:definition "Indicate whethet the compliance was assessed or not"@en ;
+             efo:definition_editor "ENPADASI_WP4"@en ;
+             rdfs:label "Compliance assessed?"@en .
 
 
 ###  http://purl.obolibrary.org/obo/PATO_0000011
 :PATO_0000011 rdf:type owl:Class ;
-              rdfs:subClassOf :ONS_000034 ;
+              rdfs:subClassOf :ONS_0000034 ;
               oboInOwl:id "AGE"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/PATO_0000047
 :PATO_0000047 rdf:type owl:Class ;
-              rdfs:subClassOf :ONS_000034 ;
+              rdfs:subClassOf :ONS_0000034 ;
               oboInOwl:id "SEX"^^xsd:string .
 
 
+###  http://purl.obolibrary.org/obo/Start_tab
+:Start_tab rdf:type owl:Class ;
+           rdfs:subClassOf :Anystudy_template .
+
+
 ###  http://purl.obolibrary.org/obo/blood_analytics
-:blood_analytics rdf:type owl:Class .
+:blood_analytics rdf:type owl:Class ;
+                 rdfs:subClassOf :DataSHIELD_casestudy .
 
 
 ###  http://purl.obolibrary.org/obo/physical_activity
 :physical_activity rdf:type owl:Class ;
                    owl:equivalentClass efo:EFO_0003940 ;
-                   rdfs:subClassOf efo:EFO_0003940 .
+                   rdfs:subClassOf :DataSHIELD_casestudy ,
+                                   efo:EFO_0003940 .
 
 
 ###  http://semanticscience.org/resource/SIO_000000
-<http://semanticscience.org/resource/SIO_000000> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000000> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000031
-<http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000142
-<http://semanticscience.org/resource/SIO_000142> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000142> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000143
-<http://semanticscience.org/resource/SIO_000143> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000143> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000154
-<http://semanticscience.org/resource/SIO_000154> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000154> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000172
-<http://semanticscience.org/resource/SIO_000172> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000172> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000173
-<http://semanticscience.org/resource/SIO_000173> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000173> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000183
-<http://semanticscience.org/resource/SIO_000183> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000183> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000262
-<http://semanticscience.org/resource/SIO_000262> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000262> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000296
-<http://semanticscience.org/resource/SIO_000296> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000296> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000337
-<http://semanticscience.org/resource/SIO_000337> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000337> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000366
-<http://semanticscience.org/resource/SIO_000366> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000366> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000391
-<http://semanticscience.org/resource/SIO_000391> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000391> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000508
-<http://semanticscience.org/resource/SIO_000508> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000508> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000664
-<http://semanticscience.org/resource/SIO_000664> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000664> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_000688
-<http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_001041
-<http://semanticscience.org/resource/SIO_001041> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_001041> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_001042
-<http://semanticscience.org/resource/SIO_001042> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_001042> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_001068
-<http://semanticscience.org/resource/SIO_001068> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_001068> rdfs:subClassOf :Start_tab .
 
 
 ###  http://semanticscience.org/resource/SIO_001323
-<http://semanticscience.org/resource/SIO_001323> rdfs:subClassOf :Metadata_start_tab .
+<http://semanticscience.org/resource/SIO_001323> rdfs:subClassOf :Start_tab .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0000319
@@ -584,7 +655,7 @@ efo:EFO_0000537 rdf:type owl:Class ;
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0000727
-efo:EFO_0000727 rdfs:subClassOf :Metadata_start_tab .
+efo:EFO_0000727 rdfs:subClassOf :Start_tab .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0003939
@@ -595,42 +666,42 @@ efo:EFO_0003939 rdf:type owl:Class ;
 
 ###  http://www.ebi.ac.uk/efo/EFO_0003940
 efo:EFO_0003940 rdf:type owl:Class ;
-                rdfs:subClassOf owl:Thing .
+                rdfs:subClassOf :DataSHIELD_casestudy .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0004318
 efo:EFO_0004318 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "SMOKE_ST"^^xsd:string .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0004338
 efo:EFO_0004338 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "WEIGHT"^^xsd:string .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0004339
 efo:EFO_0004339 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "HEIGHT"^^xsd:string .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0004342
 efo:EFO_0004342 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "Waist_C"^^xsd:string .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0005093
 efo:EFO_0005093 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "Hip_C"^^xsd:string .
 
 
 ###  http://www.ebi.ac.uk/efo/EFO_0006525
 efo:EFO_0006525 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_000034 ;
+                rdfs:subClassOf :ONS_0000034 ;
                 oboInOwl:id "CURR_NCIG"^^xsd:string .
 
 
