@@ -12,1051 +12,1071 @@
 @prefix uberon: <http://purl.obolibrary.org/obo/uberon#> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
-@base <http://purl.obolibrary.org/obo/> .
 
-<http://purl.obolibrary.org/obo/> rdf:type owl:Ontology ;
-                                   owl:imports <https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl> ;
-                                   oboInOwl:hasOBOFormatVersion "1.2"^^xsd:string .
+<http://purl.obolibrary.org/obo/> a owl:Ontology ;
+	owl:imports <https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl> ;
+	oboInOwl:hasOBOFormatVersion "1.2"^^xsd:string .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ebi.ac.uk/efo/bioportal_provenance
+
+efo:bioportal_provenance a owl:AnnotationProperty .
+# 
+# http://www.ebi.ac.uk/efo/definition
+
+efo:definition a owl:AnnotationProperty .
+# 
+# http://www.ebi.ac.uk/efo/definition_editor
+
+efo:definition_editor a owl:AnnotationProperty .
+# 
+# http://www.geneontology.org/formats/oboInOwl#created_by
+
+oboInOwl:created_by a owl:AnnotationProperty .
+# 
+# http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
+
+oboInOwl:hasOBOFormatVersion a owl:AnnotationProperty ;
+	rdfs:label "has_obo_format_version"^^xsd:string .
+# 
+# http://www.geneontology.org/formats/oboInOwl#id
+
+oboInOwl:id a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000050
+
+:BFO_0000050 a owl:ObjectProperty , owl:TransitiveProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/AERO_0000009
+
+:AERO_0000009 a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/Absolute_start_time_relative_to_study_initiation
+
+:Absolute_start_time_relative_to_study_initiation a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Actual_question
+
+:Actual_question a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Anystudy_template_ontology
+
+:Anystudy_template_ontology a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/Assay_description
+
+:Assay_description a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_name
+
+:Assay_name a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_name_2
+
+:Assay_name_2 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_name_3
+
+:Assay_name_3 a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_platform
+
+:Assay_platform a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_platform_2
+
+:Assay_platform_2 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Assay_type
+
+:Assay_type a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_50733
+
+:CHEBI_50733 a owl:Class ;
+	rdfs:subClassOf :medication_supplement_diet_use .
+# 
+# http://purl.obolibrary.org/obo/CMO_0000051
+
+:CMO_0000051 a owl:Class ;
+	rdfs:subClassOf :blood_analytics ;
+	oboInOwl:id "TCHOL"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/CMO_0000052
+
+:CMO_0000052 a owl:Class ;
+	rdfs:subClassOf :blood_analytics ;
+	oboInOwl:id "HDL"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/CMO_0000053
+
+:CMO_0000053 a owl:Class ;
+	rdfs:subClassOf :blood_analytics ;
+	oboInOwl:id "LDL"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/CMO_0000105
+
+:CMO_0000105 a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/CMO_0001407
+
+:CMO_0001407 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	oboInOwl:id "ALC"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/Chemical-biological_assays_tab
+
+:Chemical-biological_assays_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/DataSHIELD_casestudy_Ontology
+
+:DataSHIELD_casestudy_Ontology a owl:Class .
+# 
+# http://purl.obolibrary.org/obo/Description
+
+:Description a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Description_of_sampling_or_SOP
+
+:Description_of_sampling_or_SOP a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Duration
+
+:Duration a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/End_time
+
+:End_time a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Event_identifier_name
+
+:Event_identifier_name a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Events_tab
+
+:Events_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/HP_0003119
+
+:HP_0003119 a owl:Class ;
+	rdfs:subClassOf :ONS_0000032 ;
+	oboInOwl:id "PREV_DYSL"@en .
+# 
+# http://purl.obolibrary.org/obo/ICO_0000069
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://www.ebi.ac.uk/efo/bioportal_provenance
-efo:bioportal_provenance rdf:type owl:AnnotationProperty .
-
-
-###  http://www.ebi.ac.uk/efo/definition
-efo:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.ebi.ac.uk/efo/definition_editor
-efo:definition_editor rdf:type owl:AnnotationProperty .
-
-
-###  http://www.geneontology.org/formats/oboInOwl#created_by
-oboInOwl:created_by rdf:type owl:AnnotationProperty .
-
-
-###  http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
-oboInOwl:hasOBOFormatVersion rdf:type owl:AnnotationProperty ;
-                             rdfs:label "has_obo_format_version"^^xsd:string .
-
-
-###  http://www.geneontology.org/formats/oboInOwl#id
-oboInOwl:id rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://purl.obolibrary.org/obo/BFO_0000050
-:BFO_0000050 rdf:type owl:ObjectProperty ,
-                      owl:TransitiveProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://purl.obolibrary.org/obo/Absolute_start_time_relative_to_study_initiation
-:Absolute_start_time_relative_to_study_initiation rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Actual_question
-:Actual_question rdf:type owl:Class ;
-                 rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Age_unit
-:Age_unit rdf:type owl:Class ;
-          rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Anystudy_template_ontology
-:Anystudy_template_ontology rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/Assay_description
-:Assay_description rdf:type owl:Class ;
-                   rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/Assay_name
-:Assay_name rdf:type owl:Class ;
-            rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/Assay_name_2
-:Assay_name_2 rdf:type owl:Class ;
-              rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/Assay_name_3
-:Assay_name_3 rdf:type owl:Class ;
-              rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/Assay_platform
-:Assay_platform rdf:type owl:Class ;
-                rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/Assay_platform_2
-:Assay_platform_2 rdf:type owl:Class ;
-                  rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/Assay_type
-:Assay_type rdf:type owl:Class ;
-            rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/BMI
-:BMI rdf:type owl:Class ;
-     rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Body_weight_unit
-:Body_weight_unit rdf:type owl:Class ;
-                  rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/CMO_0000051
-:CMO_0000051 rdf:type owl:Class ;
-             rdfs:subClassOf :blood_analytics ;
-             oboInOwl:id "TCHOL"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/CMO_0000052
-:CMO_0000052 rdf:type owl:Class ;
-             rdfs:subClassOf :blood_analytics ;
-             oboInOwl:id "HDL"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/CMO_0000053
-:CMO_0000053 rdf:type owl:Class ;
-             rdfs:subClassOf :blood_analytics ;
-             oboInOwl:id "LDL"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/CMO_0001407
-:CMO_0001407 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             oboInOwl:id "ALC"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/Chemical-biological_assays
-:Chemical-biological_assays rdf:type owl:Class ;
-                            rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Country
-:Country rdf:type owl:Class ;
-         rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/DataSHIELD_casestudy_Ontology
-:DataSHIELD_casestudy_Ontology rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/Description
-:Description rdf:type owl:Class ;
-             rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Description_of_sampling_or_SOP
-:Description_of_sampling_or_SOP rdf:type owl:Class ;
-                                rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Duration
-:Duration rdf:type owl:Class ;
-          rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/End_time
-:End_time rdf:type owl:Class ;
-          rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Etnicity
-:Etnicity rdf:type owl:Class ;
-          rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Event_identifier_name
-:Event_identifier_name rdf:type owl:Class ;
-                       rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Events_tab
-:Events_tab rdf:type owl:Class ;
-            rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Gender
-:Gender rdf:type owl:Class ;
-        rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/HP_0003119
-:HP_0003119 rdf:type owl:Class ;
-            rdfs:subClassOf :ONS_0000032 ;
-            oboInOwl:id "PREV_DYSL"@en .
-
-
-###  http://purl.obolibrary.org/obo/ICO_0000069
 :ICO_0000069 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/Informations_tab
 
+:Informations_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_species
 
-###  http://purl.obolibrary.org/obo/Informations
-:Informations rdf:type owl:Class ;
-              rdfs:subClassOf :Anystudy_template_ontology .
+:NCBITaxon_species a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/OBCS_0000089
 
-
-###  http://purl.obolibrary.org/obo/Initial_age
-:Initial_age rdf:type owl:Class ;
-             rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Initial_body_heaight
-:Initial_body_heaight rdf:type owl:Class ;
-                      rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Initial_body_weight
-:Initial_body_weight rdf:type owl:Class ;
-                     rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Initial_hip_circumference
-:Initial_hip_circumference rdf:type owl:Class ;
-                           rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/OBCS_0000089
 :OBCS_0000089 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000094
 
-
-###  http://purl.obolibrary.org/obo/OBI_0000094
 :OBI_0000094 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000103
 
-
-###  http://purl.obolibrary.org/obo/OBI_0000103
 :OBI_0000103 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000630
 
+:OBI_0000630 a owl:Class ;
+	owl:equivalentClass :blood_analytics ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
+# 
+# http://purl.obolibrary.org/obo/OBI_0001942
 
-###  http://purl.obolibrary.org/obo/OBI_0000630
-:OBI_0000630 rdf:type owl:Class ;
-             owl:equivalentClass :blood_analytics ;
-             rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
-
-
-###  http://purl.obolibrary.org/obo/OBI_0001942
 :OBI_0001942 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OMIABIS_0000036
 
-
-###  http://purl.obolibrary.org/obo/OMIABIS_0000036
 :OMIABIS_0000036 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OMIABIS_0000037
 
-
-###  http://purl.obolibrary.org/obo/OMIABIS_0000037
 :OMIABIS_0000037 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OMRSE_00000038
 
-
-###  http://purl.obolibrary.org/obo/OMRSE_00000038
 :OMRSE_00000038 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000001
 
+:ONS_0000001 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "ID"^^xsd:string ;
+	rdfs:label "Participants' identification number"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000002
 
-###  http://purl.obolibrary.org/obo/ONS_0000001
-:ONS_0000001 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000034 ;
-             efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "ID"^^xsd:string ;
-             rdfs:label "Participants' identification number"@en .
+:ONS_0000002 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	efo:definition "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MMYY_ANTR"^^xsd:string ;
+	rdfs:label "Month of anthropometry assessment"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000003
 
-
-###  http://purl.obolibrary.org/obo/ONS_0000002
-:ONS_0000002 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000034 ;
-             efo:definition "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MMYY_ANTR"^^xsd:string ;
-             rdfs:label "Month of anthropometry assessment"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000003
-:ONS_0000003 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000034 ;
-             efo:definition """School education (years of school education)
+:ONS_0000003 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	efo:definition """School education (years of school education)
 1= less than 12 years      2= 12 or more years"""@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "EDU"^^xsd:string ;
-             rdfs:label "Education"@en .
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "EDU"^^xsd:string ;
+	rdfs:label "Education"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000004
 
+:ONS_0000004 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	efo:definition "For past smokers: time in years since quitting smoking"@en ;
+	efo:definition_editor "ENPADASI_WP4"^^xsd:string ;
+	oboInOwl:created_by "ENPADASI_WP4"^^xsd:string ;
+	oboInOwl:id "PAST_YQSMK"^^xsd:string ;
+	rdfs:label "Time since quitting smoking"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000005
 
-###  http://purl.obolibrary.org/obo/ONS_0000004
-:ONS_0000004 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000034 ;
-             efo:definition "For past smokers: time in years since quitting smoking"@en ;
-             efo:definition_editor "ENPADASI_WP4"^^xsd:string ;
-             oboInOwl:created_by "ENPADASI_WP4"^^xsd:string ;
-             oboInOwl:id "PAST_YQSMK"^^xsd:string ;
-             rdfs:label "Time since quitting smoking"@en .
+:ONS_0000005 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MMYY_PA_QX"^^xsd:string ;
+	rdfs:label "Month of physical activity assessment by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000006
 
-
-###  http://purl.obolibrary.org/obo/ONS_0000005
-:ONS_0000005 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MMYY_PA_QX"^^xsd:string ;
-             rdfs:label "Month of physical activity assessment by questionnaire"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000006
-:ONS_0000006 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition """Categories of physical activity level
+:ONS_0000006 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition """Categories of physical activity level
 1=low; 2= Medium; 3= High"""@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "CAT_PA_QX"^^xsd:string ;
-             rdfs:label "Categories of physical activity level"@en .
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "CAT_PA_QX"^^xsd:string ;
+	rdfs:label "Categories of physical activity level"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000007
 
+:ONS_0000007 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "TOT_PA_QX"^^xsd:string ;
+	rdfs:label "Total physical activity by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000008
 
-###  http://purl.obolibrary.org/obo/ONS_0000007
-:ONS_0000007 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "TOT_PA_QX"^^xsd:string ;
-             rdfs:label "Total physical activity by questionnaire"@en .
+:ONS_0000008 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "LEI_PA_QX"^^xsd:string ;
+	rdfs:label "Physical activity from recreational or leisure-time activities by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000009
 
+:ONS_0000009 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in light physical activity in minutes/day derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "LPA_QX"^^xsd:string ;
+	rdfs:label "Light physical activity by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000010
 
-###  http://purl.obolibrary.org/obo/ONS_0000008
-:ONS_0000008 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "LEI_PA_QX"^^xsd:string ;
-             rdfs:label "Physical activity from recreational or leisure-time activities by questionnaire"@en .
+:ONS_0000010 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in moderate physical activity in minutes/day derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MPA_QX"^^xsd:string ;
+	rdfs:label "Moderate physical activity by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000011
 
+:ONS_0000011 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in vigorous physical activity in minutes/day derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "VPA_QX"^^xsd:string ;
+	rdfs:label "Vigorous physical activity by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000012
 
-###  http://purl.obolibrary.org/obo/ONS_0000009
-:ONS_0000009 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in light physical activity in minutes/day derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "LPA_QX"^^xsd:string ;
-             rdfs:label "Light physical activity by questionnaire"@en .
+:ONS_0000012 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "SED_QX"^^xsd:string ;
+	rdfs:label "Sedentary time by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000013
 
+:ONS_0000013 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "N_BOUTS_QX"^^xsd:string ;
+	rdfs:label "Number of bouts by questionnaire"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000014
 
-###  http://purl.obolibrary.org/obo/ONS_0000010
-:ONS_0000010 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in moderate physical activity in minutes/day derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MPA_QX"^^xsd:string ;
-             rdfs:label "Moderate physical activity by questionnaire"@en .
+:ONS_0000014 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MMYY_PA_AC"^^xsd:string ;
+	rdfs:label "Month of physical activity assessment by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000015
 
+:ONS_0000015 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in light physical activity in minutes/day derived from accelerometer data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "LPA_AC"^^xsd:string ;
+	rdfs:label "Light physical activity by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000016
 
-###  http://purl.obolibrary.org/obo/ONS_0000011
-:ONS_0000011 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in vigorous physical activity in minutes/day derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "VPA_QX"^^xsd:string ;
-             rdfs:label "Vigorous physical activity by questionnaire"@en .
+:ONS_0000016 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in moderate physical activity in minutes/day derived from accelerometer data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MPA_AC"^^xsd:string ;
+	rdfs:label "Moderate physical activity by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000017
 
+:ONS_0000017 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent in vigorous physical activity in minutes/day derived from accelerometer data"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "VPA_AC"^^xsd:string ;
+	rdfs:label "Vigorous physical activity by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000018
 
-###  http://purl.obolibrary.org/obo/ONS_0000012
-:ONS_0000012 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "SED_QX"^^xsd:string ;
-             rdfs:label "Sedentary time by questionnaire"@en .
+:ONS_0000018 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Time spent sedentary in minutes/day derived from accelerometer data"@en ;
+	efo:definition_editor ""@en ;
+	oboInOwl:created_by ""@en ;
+	oboInOwl:id "SED_AC"^^xsd:string ;
+	rdfs:label "Sedentary time by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000019
 
+:ONS_0000019 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Number of bouts of moderate or vigorous physical activity per day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "N_BOUTS_AC"^^xsd:string ;
+	rdfs:label "Number of bouts by accelerometer"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000020
 
-###  http://purl.obolibrary.org/obo/ONS_0000013
-:ONS_0000013 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "N_BOUTS_QX"^^xsd:string ;
-             rdfs:label "Number of bouts by questionnaire"@en .
+:ONS_0000020 a owl:Class ;
+	rdfs:subClassOf :physical_activity ;
+	efo:definition "Average minutes per bout of moderate or vigorous physical activity per day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "TIME_BOUTS_AC"^^xsd:string ;
+	rdfs:label "Average duration of bouts"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000021
 
-
-###  http://purl.obolibrary.org/obo/ONS_0000014
-:ONS_0000014 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MMYY_PA_AC"^^xsd:string ;
-             rdfs:label "Month of physical activity assessment by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000015
-:ONS_0000015 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in light physical activity in minutes/day derived from accelerometer data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "LPA_AC"^^xsd:string ;
-             rdfs:label "Light physical activity by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000016
-:ONS_0000016 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in moderate physical activity in minutes/day derived from accelerometer data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MPA_AC"^^xsd:string ;
-             rdfs:label "Moderate physical activity by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000017
-:ONS_0000017 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent in vigorous physical activity in minutes/day derived from accelerometer data"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "VPA_AC"^^xsd:string ;
-             rdfs:label "Vigorous physical activity by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000018
-:ONS_0000018 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Time spent sedentary in minutes/day derived from accelerometer data"@en ;
-             efo:definition_editor ""@en ;
-             oboInOwl:created_by ""@en ;
-             oboInOwl:id "SED_AC"^^xsd:string ;
-             rdfs:label "Sedentary time by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000019
-:ONS_0000019 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Number of bouts of moderate or vigorous physical activity per day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "N_BOUTS_AC"^^xsd:string ;
-             rdfs:label "Number of bouts by accelerometer"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000020
-:ONS_0000020 rdf:type owl:Class ;
-             rdfs:subClassOf :physical_activity ;
-             efo:definition "Average minutes per bout of moderate or vigorous physical activity per day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "TIME_BOUTS_AC"^^xsd:string ;
-             rdfs:label "Average duration of bouts"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000021
-:ONS_0000021 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition """Dietary assessment used for uploaded dietary variables
+:ONS_0000021 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition """Dietary assessment used for uploaded dietary variables
 1=24-hour recall; 2=FFQ; 3=Food record; 4=other"""@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "DIET_M"^^xsd:string ;
-             rdfs:label "Dietary assessment method"@en .
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "DIET_M"^^xsd:string ;
+	rdfs:label "Dietary assessment method"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000022
 
+:ONS_0000022 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MMYY_Diet"^^xsd:string ;
+	rdfs:label "Month of dietary assessment"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000023
 
-###  http://purl.obolibrary.org/obo/ONS_0000022
-:ONS_0000022 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MMYY_Diet"^^xsd:string ;
-             rdfs:label "Month of dietary assessment"@en .
+:ONS_0000023 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:bioportal_provenance "CARB"^^xsd:string ;
+	efo:definition "Carbohydrate intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	rdfs:label "Carbohydrate intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000024
 
+:ONS_0000024 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Fiber intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "FIBER"^^xsd:string ;
+	rdfs:label "Fiber intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000025
 
-###  http://purl.obolibrary.org/obo/ONS_0000023
-:ONS_0000023 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:bioportal_provenance "CARB"^^xsd:string ;
-             efo:definition "Carbohydrate intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             rdfs:label "Carbohydrate intake"@en .
+:ONS_0000025 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Total fat intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "FAT"^^xsd:string ;
+	rdfs:label "Total fat intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000026
 
+:ONS_0000026 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Saturated fatty acid intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "SFA"^^xsd:string ;
+	rdfs:label "Saturated fatty acid intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000027
 
-###  http://purl.obolibrary.org/obo/ONS_0000024
-:ONS_0000024 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Fiber intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "FIBER"^^xsd:string ;
-             rdfs:label "Fiber intake"@en .
+:ONS_0000027 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Monounsaturated fatty acid intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MUFA"^^xsd:string ;
+	rdfs:label "Monounsaturated fatty acid intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000028
 
+:ONS_0000028 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Polyunsaturated fatty acid intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "PUFA"^^xsd:string ;
+	rdfs:label "Polyunsaturated fatty acid intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000029
 
-###  http://purl.obolibrary.org/obo/ONS_0000025
-:ONS_0000025 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Total fat intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "FAT"^^xsd:string ;
-             rdfs:label "Total fat intake"@en .
+:ONS_0000029 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	efo:definition "Protein intake in g/day"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "PROT"^^xsd:string ;
+	rdfs:label "Protein intake"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000030
 
+:ONS_0000030 a owl:Class ;
+	rdfs:subClassOf :blood_analytics ;
+	efo:definition "Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "MMYY_BL"^^xsd:string ;
+	rdfs:label "Month of blood draw"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000031
 
-###  http://purl.obolibrary.org/obo/ONS_0000026
-:ONS_0000026 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Saturated fatty acid intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "SFA"^^xsd:string ;
-             rdfs:label "Saturated fatty acid intake"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000027
-:ONS_0000027 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Monounsaturated fatty acid intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MUFA"^^xsd:string ;
-             rdfs:label "Monounsaturated fatty acid intake"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000028
-:ONS_0000028 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Polyunsaturated fatty acid intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "PUFA"^^xsd:string ;
-             rdfs:label "Polyunsaturated fatty acid intake"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000029
-:ONS_0000029 rdf:type owl:Class ;
-             rdfs:subClassOf :ONS_0000033 ;
-             efo:definition "Protein intake in g/day"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "PROT"^^xsd:string ;
-             rdfs:label "Protein intake"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000030
-:ONS_0000030 rdf:type owl:Class ;
-             rdfs:subClassOf :blood_analytics ;
-             efo:definition "Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "MMYY_BL"^^xsd:string ;
-             rdfs:label "Month of blood draw"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000031
-:ONS_0000031 rdf:type owl:Class ;
-             rdfs:subClassOf :blood_analytics ;
-             efo:definition """Fasting status before blood draw (measured in hours of fasting before blood draw) 
+:ONS_0000031 a owl:Class ;
+	rdfs:subClassOf :blood_analytics ;
+	efo:definition """Fasting status before blood draw (measured in hours of fasting before blood draw) 
 1=less than 9 hours; 2=9 hours or more"""@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "FAST"^^xsd:string ;
-             rdfs:label "Fasting status"@en .
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "FAST"^^xsd:string ;
+	rdfs:label "Fasting status"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000032
+
+:ONS_0000032 a owl:Class ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
+	efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "prevalent_disease"@en ;
+	rdfs:label "Prevalent disease"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000033
+
+:ONS_0000033 a owl:Class ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
+	efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "Dietary_assessment"@en ;
+	rdfs:label "Dietary assessment"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000034
+
+:ONS_0000034 a owl:Class ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
+	efo:definition "Anthropometric and habits information of the subject"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
+	oboInOwl:id "Subject_informations"@en ;
+	rdfs:label "subject informations"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000035
+
+:ONS_0000035 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Short study name"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000036
+
+:ONS_0000036 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "Name of the consortium which the study refers to"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Consortium"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000037
+
+:ONS_0000037 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "The name of the method used for randomization (OBCS_0000089), if any randomization was adopted."@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Randomization method"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000038
+
+:ONS_0000038 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "Indicate whether blinded experiment were conducted or not"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Blinding"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000039
+
+:ONS_0000039 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "If blinded experiment were conducted, indicate the method used for blinding"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Blinding method"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000040
+
+:ONS_0000040 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "Indicated whether the study is terminated or not"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Study terminated?"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000041
+
+:ONS_0000041 a owl:Class ;
+	rdfs:subClassOf :Start_tab ;
+	efo:definition "Indicate whethet the compliance was assessed or not"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Compliance assessed?"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000042
+
+:ONS_0000042 a owl:Class ;
+	rdfs:subClassOf :Subject_tab ;
+	efo:definition "The ration between the circumference of the waist to that of the hips"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Waist:Hip ratio"@en .
+# 
+# http://purl.obolibrary.org/obo/Omics_tab
+
+:Omics_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000011
+
+:PATO_0000011 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "AGE"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/PATO_0000047
+
+:PATO_0000047 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "SEX"^^xsd:string .
+# 
+# http://purl.obolibrary.org/obo/Physiology_assays_tab
+
+:Physiology_assays_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/Physiology_type
+
+:Physiology_type a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_reference
+
+:Protocol_reference a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_reference_2
+
+:Protocol_reference_2 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_reference_4
+
+:Protocol_reference_4 a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_used
+
+:Protocol_used a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_used_2
+
+:Protocol_used_2 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Protocol_used_4
+
+:Protocol_used_4 a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/Realted_event_identifier
+
+:Realted_event_identifier a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Route
+
+:Route a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_identifier
+
+:Sampling_identifier a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_identifier_2
+
+:Sampling_identifier_2 a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_identifier_3
+
+:Sampling_identifier_3 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_identifier_4
+
+:Sampling_identifier_4 a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_method_description
+
+:Sampling_method_description a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_name
+
+:Sampling_name a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Sampling_tab
+
+:Sampling_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/Short_name_of_question
+
+:Short_name_of_question a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/Start_tab
+
+:Start_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/Start_time
+
+:Start_time a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Start_time_2
+
+:Start_time_2 a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Startgroup
+
+:Startgroup a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Study_sampling_method
+
+:Study_sampling_method a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.obolibrary.org/obo/Subject_tab
+
+:Subject_tab a owl:Class ;
+	rdfs:subClassOf :Anystudy_template_ontology .
+# 
+# http://purl.obolibrary.org/obo/Time_units_for_start_and_end_time
+
+:Time_units_for_start_and_end_time a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Treatment_descriptive_name
+
+:Treatment_descriptive_name a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Treatment_full_description
+
+:Treatment_full_description a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Treatment_or_dose_level
+
+:Treatment_or_dose_level a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/Type_of_omics
+
+:Type_of_omics a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/Type_of_question_or_question_variable_code
+
+:Type_of_question_or_question_variable_code a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
+# http://purl.obolibrary.org/obo/UO_0000002
+
+:UO_0000002 a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/UO_0000003
+
+:UO_0000003 a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/UO_0000009
+
+:UO_0000009 a owl:Class ;
+	rdfs:subClassOf :UO_0000002 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000021
+
+:UO_0000021 a owl:Class ;
+	rdfs:subClassOf :UO_0000002 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000033
+
+:UO_0000033 a owl:Class ;
+	rdfs:subClassOf :UO_0000003 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000034
+
+:UO_0000034 a owl:Class ;
+	rdfs:subClassOf :UO_0000003 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000036
+
+:UO_0000036 a owl:Class ;
+	rdfs:subClassOf :UO_0000003 .
+# 
+# http://purl.obolibrary.org/obo/blood_analytics
+
+:blood_analytics a owl:Class ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
+# 
+# http://purl.obolibrary.org/obo/intervention_challenge_or_both
+
+:intervention_challenge_or_both a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://purl.obolibrary.org/obo/medication_supplement_diet_use
+
+:medication_supplement_diet_use a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://purl.obolibrary.org/obo/physical_activity
+
+:physical_activity a owl:Class ;
+	owl:equivalentClass efo:EFO_0003940 ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology , efo:EFO_0003940 .
+# 
+# http://purl.obolibrary.org/obo/platform
+
+:platform a owl:Class ;
+	rdfs:subClassOf :Omics_tab .
+# 
+# http://purl.obolibrary.org/obo/protocol_reference_3
+
+:protocol_reference_3 a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/protocol_used_3
+
+:protocol_used_3 a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab .
+# 
+# http://purl.obolibrary.org/obo/realtive_time_points_of_sampling_event_in_the_study
+
+:realtive_time_points_of_sampling_event_in_the_study a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
+# 
+# http://semanticscience.org/resource/SIO_000000
 
-
-###  http://purl.obolibrary.org/obo/ONS_0000032
-:ONS_0000032 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-             efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "prevalent_disease"@en ;
-             rdfs:label "Prevalent disease"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000033
-:ONS_0000033 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-             efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "Dietary_assessment"@en ;
-             rdfs:label "Dietary assessment"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000034
-:ONS_0000034 rdf:type owl:Class ;
-             rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-             efo:definition "Anthropometric and habits information of the subject"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             oboInOwl:created_by "ENPADASI_WP4"@en ;
-             oboInOwl:id "Subject_informations"@en ;
-             rdfs:label "subject informations"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000035
-:ONS_0000035 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Short study name"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000036
-:ONS_0000036 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "Name of the consortium which the study refers to"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Consortium"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000037
-:ONS_0000037 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "The name of the method used for randomization (OBCS_0000089), if any randomization was adopted."@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Randomization method"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000038
-:ONS_0000038 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "Indicate whether blinded experiment were conducted or not"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Blinding"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000039
-:ONS_0000039 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "If blinded experiment were conducted, indicate the method used for blinding"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Blinding method"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000040
-:ONS_0000040 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "Indicated whether the study is terminated or not"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Study terminated?"@en .
-
-
-###  http://purl.obolibrary.org/obo/ONS_0000041
-:ONS_0000041 rdf:type owl:Class ;
-             rdfs:subClassOf :Start_tab ;
-             efo:definition "Indicate whethet the compliance was assessed or not"@en ;
-             efo:definition_editor "ENPADASI_WP4"@en ;
-             rdfs:label "Compliance assessed?"@en .
-
-
-###  http://purl.obolibrary.org/obo/Omics
-:Omics rdf:type owl:Class ;
-       rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/PATO_0000011
-:PATO_0000011 rdf:type owl:Class ;
-              rdfs:subClassOf :ONS_0000034 ;
-              oboInOwl:id "AGE"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/PATO_0000047
-:PATO_0000047 rdf:type owl:Class ;
-              rdfs:subClassOf :ONS_0000034 ;
-              oboInOwl:id "SEX"^^xsd:string .
-
-
-###  http://purl.obolibrary.org/obo/Physiology_assays
-:Physiology_assays rdf:type owl:Class ;
-                   rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Physiology_type
-:Physiology_type rdf:type owl:Class ;
-                 rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_reference
-:Protocol_reference rdf:type owl:Class ;
-                    rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_reference_2
-:Protocol_reference_2 rdf:type owl:Class ;
-                      rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_reference_4
-:Protocol_reference_4 rdf:type owl:Class ;
-                      rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_used
-:Protocol_used rdf:type owl:Class ;
-               rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_used_2
-:Protocol_used_2 rdf:type owl:Class ;
-                 rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/Protocol_used_4
-:Protocol_used_4 rdf:type owl:Class ;
-                 rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/Realted_event_identifier
-:Realted_event_identifier rdf:type owl:Class ;
-                          rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Route
-:Route rdf:type owl:Class ;
-       rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Sampling
-:Sampling rdf:type owl:Class ;
-          rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_identifier
-:Sampling_identifier rdf:type owl:Class ;
-                     rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_identifier_2
-:Sampling_identifier_2 rdf:type owl:Class ;
-                       rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_identifier_3
-:Sampling_identifier_3 rdf:type owl:Class ;
-                       rdfs:subClassOf :Chemical-biological_assays .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_identifier_4
-:Sampling_identifier_4 rdf:type owl:Class ;
-                       rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_method_description
-:Sampling_method_description rdf:type owl:Class ;
-                             rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Sampling_name
-:Sampling_name rdf:type owl:Class ;
-               rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Short_name_of_question
-:Short_name_of_question rdf:type owl:Class ;
-                        rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/Species
-:Species rdf:type owl:Class ;
-         rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Start_tab
-:Start_tab rdf:type owl:Class ;
-           rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Start_time
-:Start_time rdf:type owl:Class ;
-            rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Start_time_2
-:Start_time_2 rdf:type owl:Class ;
-              rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Startgroup
-:Startgroup rdf:type owl:Class ;
-            rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Study_sampling_method
-:Study_sampling_method rdf:type owl:Class ;
-                       rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/Subject_ID
-:Subject_ID rdf:type owl:Class ;
-            rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Subject_tab
-:Subject_tab rdf:type owl:Class ;
-             rdfs:subClassOf :Anystudy_template_ontology .
-
-
-###  http://purl.obolibrary.org/obo/Time_units_for_start_and_end_time
-:Time_units_for_start_and_end_time rdf:type owl:Class ;
-                                   rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Treatment_descriptive_name
-:Treatment_descriptive_name rdf:type owl:Class ;
-                            rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Treatment_full_description
-:Treatment_full_description rdf:type owl:Class ;
-                            rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Treatment_or_dose_level
-:Treatment_or_dose_level rdf:type owl:Class ;
-                         rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/Type_of_omics
-:Type_of_omics rdf:type owl:Class ;
-               rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/Type_of_question_or_question_variable_code
-:Type_of_question_or_question_variable_code rdf:type owl:Class ;
-                                            rdfs:subClassOf :Informations .
-
-
-###  http://purl.obolibrary.org/obo/adverse_events
-:adverse_events rdf:type owl:Class ;
-                rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/blood_analytics
-:blood_analytics rdf:type owl:Class ;
-                 rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
-
-
-###  http://purl.obolibrary.org/obo/initial_waist_circumference
-:initial_waist_circumference rdf:type owl:Class ;
-                             rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/intervention_challenge_or_both
-:intervention_challenge_or_both rdf:type owl:Class ;
-                                rdfs:subClassOf :Events_tab .
-
-
-###  http://purl.obolibrary.org/obo/medication_supplement_diet_use
-:medication_supplement_diet_use rdf:type owl:Class ;
-                                rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/physical_activity
-:physical_activity rdf:type owl:Class ;
-                   owl:equivalentClass efo:EFO_0003940 ;
-                   rdfs:subClassOf :DataSHIELD_casestudy_Ontology ,
-                                   efo:EFO_0003940 .
-
-
-###  http://purl.obolibrary.org/obo/platform
-:platform rdf:type owl:Class ;
-          rdfs:subClassOf :Omics .
-
-
-###  http://purl.obolibrary.org/obo/protocol_reference_3
-:protocol_reference_3 rdf:type owl:Class ;
-                      rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/protocol_used_3
-:protocol_used_3 rdf:type owl:Class ;
-                 rdfs:subClassOf :Physiology_assays .
-
-
-###  http://purl.obolibrary.org/obo/realtive_time_points_of_sampling_event_in_the_study
-:realtive_time_points_of_sampling_event_in_the_study rdf:type owl:Class ;
-                                                     rdfs:subClassOf :Sampling .
-
-
-###  http://purl.obolibrary.org/obo/subject_description
-:subject_description rdf:type owl:Class ;
-                     rdfs:subClassOf :Subject_tab .
-
-
-###  http://purl.obolibrary.org/obo/Initial_waist:hip_ratio
-:Initial_waist:hip_ratio rdf:type owl:Class ;
-                         rdfs:subClassOf :Subject_tab .
-
-
-###  http://semanticscience.org/resource/SIO_000000
 <http://semanticscience.org/resource/SIO_000000> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000031
 
-
-###  http://semanticscience.org/resource/SIO_000031
 <http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000115
 
+<http://semanticscience.org/resource/SIO_000115> a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_000136
 
-###  http://semanticscience.org/resource/SIO_000142
+<http://semanticscience.org/resource/SIO_000136> a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_000142
+
 <http://semanticscience.org/resource/SIO_000142> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000143
 
-
-###  http://semanticscience.org/resource/SIO_000143
 <http://semanticscience.org/resource/SIO_000143> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000154
 
-
-###  http://semanticscience.org/resource/SIO_000154
 <http://semanticscience.org/resource/SIO_000154> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000172
 
-
-###  http://semanticscience.org/resource/SIO_000172
 <http://semanticscience.org/resource/SIO_000172> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000173
 
-
-###  http://semanticscience.org/resource/SIO_000173
 <http://semanticscience.org/resource/SIO_000173> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000183
 
-
-###  http://semanticscience.org/resource/SIO_000183
 <http://semanticscience.org/resource/SIO_000183> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000262
 
-
-###  http://semanticscience.org/resource/SIO_000262
 <http://semanticscience.org/resource/SIO_000262> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000296
 
-
-###  http://semanticscience.org/resource/SIO_000296
 <http://semanticscience.org/resource/SIO_000296> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000337
 
-
-###  http://semanticscience.org/resource/SIO_000337
 <http://semanticscience.org/resource/SIO_000337> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000366
 
-
-###  http://semanticscience.org/resource/SIO_000366
 <http://semanticscience.org/resource/SIO_000366> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000391
 
-
-###  http://semanticscience.org/resource/SIO_000391
 <http://semanticscience.org/resource/SIO_000391> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000403
 
+<http://semanticscience.org/resource/SIO_000403> a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_000508
 
-###  http://semanticscience.org/resource/SIO_000508
 <http://semanticscience.org/resource/SIO_000508> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000664
 
+<http://semanticscience.org/resource/SIO_000664> a owl:Class ;
+	rdfs:subClassOf :Start_tab , :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_000688
 
-###  http://semanticscience.org/resource/SIO_000664
-<http://semanticscience.org/resource/SIO_000664> rdfs:subClassOf :Start_tab .
-
-
-###  http://semanticscience.org/resource/SIO_000688
 <http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_001014
 
+<http://semanticscience.org/resource/SIO_001014> a owl:Class ;
+	rdfs:subClassOf :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_001041
 
-###  http://semanticscience.org/resource/SIO_001041
 <http://semanticscience.org/resource/SIO_001041> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_001042
 
-
-###  http://semanticscience.org/resource/SIO_001042
 <http://semanticscience.org/resource/SIO_001042> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_001068
 
-
-###  http://semanticscience.org/resource/SIO_001068
 <http://semanticscience.org/resource/SIO_001068> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_001323
 
-
-###  http://semanticscience.org/resource/SIO_001323
 <http://semanticscience.org/resource/SIO_001323> rdfs:subClassOf :Start_tab .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0000319
 
+efo:EFO_0000319 a owl:Class ;
+	rdfs:subClassOf :ONS_0000032 ;
+	oboInOwl:id "PREV_CVD"@en .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0000400
 
-###  http://www.ebi.ac.uk/efo/EFO_0000319
-efo:EFO_0000319 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000032 ;
-                oboInOwl:id "PREV_CVD"@en .
+efo:EFO_0000400 a owl:Class ;
+	rdfs:subClassOf :ONS_0000032 ;
+	oboInOwl:id "PREV_DIAB"@en .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0000537
 
+efo:EFO_0000537 a owl:Class ;
+	rdfs:subClassOf :ONS_0000032 ;
+	oboInOwl:id "PREV_HBP"@en .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0000727
 
-###  http://www.ebi.ac.uk/efo/EFO_0000400
-efo:EFO_0000400 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000032 ;
-                oboInOwl:id "PREV_DIAB"@en .
-
-
-###  http://www.ebi.ac.uk/efo/EFO_0000537
-efo:EFO_0000537 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000032 ;
-                oboInOwl:id "PREV_HBP"@en .
-
-
-###  http://www.ebi.ac.uk/efo/EFO_0000727
 efo:EFO_0000727 rdfs:subClassOf :Start_tab .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0002755
 
+efo:EFO_0002755 a owl:Class ;
+	rdfs:subClassOf :medication_supplement_diet_use .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0003939
 
-###  http://www.ebi.ac.uk/efo/EFO_0003939
-efo:EFO_0003939 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000033 ;
-                oboInOwl:id "ENERGY"^^xsd:string .
+efo:EFO_0003939 a owl:Class ;
+	rdfs:subClassOf :ONS_0000033 ;
+	oboInOwl:id "ENERGY"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0003940
 
+efo:EFO_0003940 a owl:Class ;
+	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0004318
 
-###  http://www.ebi.ac.uk/efo/EFO_0003940
-efo:EFO_0003940 rdf:type owl:Class ;
-                rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
+efo:EFO_0004318 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	oboInOwl:id "SMOKE_ST"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0004338
 
+efo:EFO_0004338 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "WEIGHT"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0004339
 
-###  http://www.ebi.ac.uk/efo/EFO_0004318
-efo:EFO_0004318 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "SMOKE_ST"^^xsd:string .
+efo:EFO_0004339 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "HEIGHT"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0004342
 
+efo:EFO_0004342 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "Waist_C"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0005093
 
-###  http://www.ebi.ac.uk/efo/EFO_0004338
-efo:EFO_0004338 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "WEIGHT"^^xsd:string .
+efo:EFO_0005093 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
+	oboInOwl:id "Hip_C"^^xsd:string .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0006525
 
-
-###  http://www.ebi.ac.uk/efo/EFO_0004339
-efo:EFO_0004339 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "HEIGHT"^^xsd:string .
-
-
-###  http://www.ebi.ac.uk/efo/EFO_0004342
-efo:EFO_0004342 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "Waist_C"^^xsd:string .
-
-
-###  http://www.ebi.ac.uk/efo/EFO_0005093
-efo:EFO_0005093 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "Hip_C"^^xsd:string .
-
-
-###  http://www.ebi.ac.uk/efo/EFO_0006525
-efo:EFO_0006525 rdf:type owl:Class ;
-                rdfs:subClassOf :ONS_0000034 ;
-                oboInOwl:id "CURR_NCIG"^^xsd:string .
-
-
-###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+efo:EFO_0006525 a owl:Class ;
+	rdfs:subClassOf :ONS_0000034 ;
+	oboInOwl:id "CURR_NCIG"^^xsd:string .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
