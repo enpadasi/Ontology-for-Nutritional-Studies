@@ -35,7 +35,7 @@ http://www.ebi.ac.uk/efo/EFO_0000537
 http://www.ebi.ac.uk/efo/EFO_0000400
 http://www.ebi.ac.uk/efo/EFO_0003940
 http://www.ebi.ac.uk/efo/EFO_0000727
-
+http://www.ebi.ac.uk/efo/EFO_0002755
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -53,7 +53,7 @@ http://purl.obolibrary.org/obo/CMO_0001407
 http://purl.obolibrary.org/obo/CMO_0000052
 http://purl.obolibrary.org/obo/CMO_0000053
 http://purl.obolibrary.org/obo/CMO_0000051
-
+http://purl.obolibrary.org/obo/CMO_0000105
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -117,6 +117,9 @@ http://semanticscience.org/resource/SIO_001041
 http://semanticscience.org/resource/SIO_001042
 http://semanticscience.org/resource/SIO_001068
 http://semanticscience.org/resource/SIO_001323
+http://semanticscience.org/resource/SIO_000115
+http://semanticscience.org/resource/SIO_001014
+http://semanticscience.org/resource/SIO_000403
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -175,6 +178,68 @@ OBCS
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBCS_0000089
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+##### Import terms from NCBITaxon ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_species
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+##### Import terms from AERO ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+AERO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/AERO_0000009
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+##### Import terms from CHEBI ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_50733
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+##### Import terms from UO ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000003
+http://purl.obolibrary.org/obo/UO_0000002
+http://purl.obolibrary.org/obo/UO_0000009
+http://purl.obolibrary.org/obo/UO_0000021
+http://purl.obolibrary.org/obo/UO_0000033
+http://purl.obolibrary.org/obo/UO_0000034
+http://purl.obolibrary.org/obo/UO_0000036
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
