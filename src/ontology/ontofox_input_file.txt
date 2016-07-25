@@ -36,6 +36,7 @@ http://www.ebi.ac.uk/efo/EFO_0000400
 http://www.ebi.ac.uk/efo/EFO_0003940
 http://www.ebi.ac.uk/efo/EFO_0000727
 http://www.ebi.ac.uk/efo/EFO_0002755
+http://www.ebi.ac.uk/efo/EFO_0000433
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -85,6 +86,7 @@ OBI
 http://purl.obolibrary.org/obo/OBI_0000630
 http://purl.obolibrary.org/obo/OBI_0000103
 http://purl.obolibrary.org/obo/OBI_0001942
+http://purl.obolibrary.org/obo/OBI_0000984
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -120,6 +122,9 @@ http://semanticscience.org/resource/SIO_001323
 http://semanticscience.org/resource/SIO_000115
 http://semanticscience.org/resource/SIO_001014
 http://semanticscience.org/resource/SIO_000403
+http://semanticscience.org/resource/SIO_000669
+http://semanticscience.org/resource/SIO_000670
+http://semanticscience.org/resource/SIO_000946
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -240,7 +245,26 @@ http://purl.obolibrary.org/obo/UO_0000021
 http://purl.obolibrary.org/obo/UO_0000033
 http://purl.obolibrary.org/obo/UO_0000034
 http://purl.obolibrary.org/obo/UO_0000036
+http://purl.obolibrary.org/obo/UO_0000031
+http://purl.obolibrary.org/obo/UO_0000032
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
+
+##### Import terms from OCRe ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+OCRe
+
+[Low level source term URIs]
+http://purl.org/net/OCRe/study_design.owl#OCRE100007
+http://purl.org/net/OCRe/study_design.owl#OCRE100056
+http://purl.org/net/OCRe/OCRe.owl#OCRE400012
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
 
