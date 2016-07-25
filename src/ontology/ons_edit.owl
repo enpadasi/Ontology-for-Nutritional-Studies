@@ -72,6 +72,8 @@ oboInOwl:id a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
+# route
+# 
 # http://purl.obolibrary.org/obo/AERO_0000009
 
 :AERO_0000009 a owl:Class ;
@@ -184,16 +186,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :Duration a owl:Class ;
 	rdfs:subClassOf :Sampling_tab .
 # 
-# http://purl.obolibrary.org/obo/End_time
-
-:End_time a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://purl.obolibrary.org/obo/Event_identifier_name
-
-:Event_identifier_name a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
 # http://purl.obolibrary.org/obo/Events_tab
 
 :Events_tab a owl:Class ;
@@ -237,6 +229,11 @@ oboInOwl:id a owl:AnnotationProperty .
 	owl:equivalentClass :blood_analytics ;
 	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
 # 
+# http://purl.obolibrary.org/obo/OBI_0000984
+
+:OBI_0000984 a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
 # http://purl.obolibrary.org/obo/OBI_0001942
 
 :OBI_0001942 rdfs:subClassOf :Start_tab .
@@ -256,6 +253,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/ONS_0000001
 
 :ONS_0000001 a owl:Class ;
+	owl:equivalentClass <http://semanticscience.org/resource/SIO_000115> ;
 	rdfs:subClassOf :ONS_0000034 ;
 	efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
@@ -723,11 +721,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :Realted_event_identifier a owl:Class ;
 	rdfs:subClassOf :Sampling_tab .
 # 
-# http://purl.obolibrary.org/obo/Route
-
-:Route a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
 # http://purl.obolibrary.org/obo/Sampling_identifier
 
 :Sampling_identifier a owl:Class ;
@@ -773,20 +766,10 @@ oboInOwl:id a owl:AnnotationProperty .
 :Start_tab a owl:Class ;
 	rdfs:subClassOf :Anystudy_template_ontology .
 # 
-# http://purl.obolibrary.org/obo/Start_time
-
-:Start_time a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
 # http://purl.obolibrary.org/obo/Start_time_2
 
 :Start_time_2 a owl:Class ;
 	rdfs:subClassOf :Sampling_tab .
-# 
-# http://purl.obolibrary.org/obo/Startgroup
-
-:Startgroup a owl:Class ;
-	rdfs:subClassOf :Events_tab .
 # 
 # http://purl.obolibrary.org/obo/Study_sampling_method
 
@@ -797,26 +780,6 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :Subject_tab a owl:Class ;
 	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Time_units_for_start_and_end_time
-
-:Time_units_for_start_and_end_time a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://purl.obolibrary.org/obo/Treatment_descriptive_name
-
-:Treatment_descriptive_name a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://purl.obolibrary.org/obo/Treatment_full_description
-
-:Treatment_full_description a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://purl.obolibrary.org/obo/Treatment_or_dose_level
-
-:Treatment_or_dose_level a owl:Class ;
-	rdfs:subClassOf :Events_tab .
 # 
 # http://purl.obolibrary.org/obo/Type_of_omics
 
@@ -836,7 +799,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/UO_0000003
 
 :UO_0000003 a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
+	rdfs:subClassOf :Events_tab , :Subject_tab .
 # 
 # http://purl.obolibrary.org/obo/UO_0000009
 
@@ -847,6 +810,16 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :UO_0000021 a owl:Class ;
 	rdfs:subClassOf :UO_0000002 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000031
+
+:UO_0000031 a owl:Class ;
+	rdfs:subClassOf :UO_0000003 .
+# 
+# http://purl.obolibrary.org/obo/UO_0000032
+
+:UO_0000032 a owl:Class ;
+	rdfs:subClassOf :UO_0000003 .
 # 
 # http://purl.obolibrary.org/obo/UO_0000033
 
@@ -868,10 +841,30 @@ oboInOwl:id a owl:AnnotationProperty .
 :blood_analytics a owl:Class ;
 	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
 # 
-# http://purl.obolibrary.org/obo/intervention_challenge_or_both
+# http://purl.obolibrary.org/obo/challenge
 
-:intervention_challenge_or_both a owl:Class ;
-	rdfs:subClassOf :Events_tab .
+:challenge a owl:Class ;
+	rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100056> .
+# 
+# http://purl.obolibrary.org/obo/desc
+
+:desc a owl:Class ;
+	rdfs:subClassOf efo:EFO_0000727 .
+# 
+# http://purl.obolibrary.org/obo/desc_name
+
+:desc_name a owl:Class ;
+	rdfs:subClassOf efo:EFO_0000727 .
+# 
+# http://purl.obolibrary.org/obo/dose
+
+:dose a owl:Class ;
+	rdfs:subClassOf efo:EFO_0000727 .
+# 
+# http://purl.obolibrary.org/obo/identifier
+
+:identifier a owl:Class ;
+	rdfs:subClassOf efo:EFO_0000727 .
 # 
 # http://purl.obolibrary.org/obo/medication_supplement_diet_use
 
@@ -903,6 +896,16 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :realtive_time_points_of_sampling_event_in_the_study a owl:Class ;
 	rdfs:subClassOf :Sampling_tab .
+# 
+# http://purl.org/net/OCRe/study_design.owl#OCRE100007
+
+<http://purl.org/net/OCRe/study_design.owl#OCRE100007> a owl:Class ;
+	rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100056> .
+# 
+# http://purl.org/net/OCRe/study_design.owl#OCRE100056
+
+<http://purl.org/net/OCRe/study_design.owl#OCRE100056> a owl:Class ;
+	rdfs:subClassOf :Events_tab .
 # 
 # http://semanticscience.org/resource/SIO_000000
 
@@ -969,7 +972,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://semanticscience.org/resource/SIO_000403
 
 <http://semanticscience.org/resource/SIO_000403> a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
+	rdfs:subClassOf :Events_tab , :Subject_tab .
 # 
 # http://semanticscience.org/resource/SIO_000508
 
@@ -979,6 +982,16 @@ oboInOwl:id a owl:AnnotationProperty .
 
 <http://semanticscience.org/resource/SIO_000664> a owl:Class ;
 	rdfs:subClassOf :Start_tab , :Subject_tab .
+# 
+# http://semanticscience.org/resource/SIO_000669
+
+<http://semanticscience.org/resource/SIO_000669> a owl:Class ;
+	rdfs:subClassOf :Events_tab .
+# 
+# http://semanticscience.org/resource/SIO_000670
+
+<http://semanticscience.org/resource/SIO_000670> a owl:Class ;
+	rdfs:subClassOf :Events_tab .
 # 
 # http://semanticscience.org/resource/SIO_000688
 
@@ -1025,7 +1038,8 @@ efo:EFO_0000537 a owl:Class ;
 # 
 # http://www.ebi.ac.uk/efo/EFO_0000727
 
-efo:EFO_0000727 rdfs:subClassOf :Start_tab .
+efo:EFO_0000727 a owl:Class ;
+	rdfs:subClassOf :Events_tab , :Start_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0002755
 
