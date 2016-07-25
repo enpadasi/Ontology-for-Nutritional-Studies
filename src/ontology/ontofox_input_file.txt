@@ -87,6 +87,10 @@ http://purl.obolibrary.org/obo/OBI_0000630
 http://purl.obolibrary.org/obo/OBI_0000103
 http://purl.obolibrary.org/obo/OBI_0001942
 http://purl.obolibrary.org/obo/OBI_0000984
+http://purl.obolibrary.org/obo/OBI_0000070
+http://purl.obolibrary.org/obo/OBI_0000272
+http://purl.obolibrary.org/obo/OBI_0000094
+
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -124,7 +128,8 @@ http://semanticscience.org/resource/SIO_001014
 http://semanticscience.org/resource/SIO_000403
 http://semanticscience.org/resource/SIO_000669
 http://semanticscience.org/resource/SIO_000670
-http://semanticscience.org/resource/SIO_000946
+http://semanticscience.org/resource/SIO_000964
+http://semanticscience.org/resource/SIO_000085
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -139,7 +144,7 @@ ICO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/ICO_0000069
-http://purl.obolibrary.org/obo/OBI_0000094
+
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -263,6 +268,20 @@ OCRe
 http://purl.org/net/OCRe/study_design.owl#OCRE100007
 http://purl.org/net/OCRe/study_design.owl#OCRE100056
 http://purl.org/net/OCRe/OCRe.owl#OCRE400012
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+##### Import terms from EDAM ontology ######
+
+[URI of the OWL(RDF/XML) output file]
+https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+
+[Source ontology]
+EDAM
+
+[Low level source term URIs]
+http://edamontology.org/data_0970
 
 [Source annotation URIs]
 includeAllAxiomsRecursively

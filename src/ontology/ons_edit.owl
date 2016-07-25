@@ -72,54 +72,19 @@ oboInOwl:id a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
+# http://edamontology.org/data_0970
+
+<http://edamontology.org/data_0970> a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab .
+# 
 # http://purl.obolibrary.org/obo/AERO_0000009
 
 :AERO_0000009 a owl:Class ;
 	rdfs:subClassOf :Subject_tab .
 # 
-# http://purl.obolibrary.org/obo/Absolute_start_time_relative_to_study_initiation
-
-:Absolute_start_time_relative_to_study_initiation a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://purl.obolibrary.org/obo/Actual_question
-
-:Actual_question a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
 # http://purl.obolibrary.org/obo/Anystudy_template_ontology
 
 :Anystudy_template_ontology a owl:Class .
-# 
-# http://purl.obolibrary.org/obo/Assay_description
-
-:Assay_description a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Assay_name
-
-:Assay_name a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Assay_name_2
-
-:Assay_name_2 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Assay_name_3
-
-:Assay_name_3 a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
-# 
-# http://purl.obolibrary.org/obo/Assay_platform
-
-:Assay_platform a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Assay_platform_2
-
-:Assay_platform_2 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
 # 
 # http://purl.obolibrary.org/obo/Assay_type
 
@@ -169,11 +134,6 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :DataSHIELD_casestudy_Ontology a owl:Class .
 # 
-# http://purl.obolibrary.org/obo/Description
-
-:Description a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
 # http://purl.obolibrary.org/obo/Events_tab
 
 :Events_tab a owl:Class ;
@@ -203,6 +163,11 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :OBCS_0000089 rdfs:subClassOf :Start_tab .
 # 
+# http://purl.obolibrary.org/obo/OBI_0000070
+
+:OBI_0000070 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab , :Omics_tab , :Physiology_assays_tab .
+# 
 # http://purl.obolibrary.org/obo/OBI_0000094
 
 :OBI_0000094 rdfs:subClassOf :Start_tab .
@@ -210,6 +175,11 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/OBI_0000103
 
 :OBI_0000103 rdfs:subClassOf :Start_tab .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000272
+
+:OBI_0000272 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab .
 # 
 # http://purl.obolibrary.org/obo/OBI_0000630
 
@@ -679,6 +649,38 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	rdfs:label "Sampling method description"@en .
 # 
+# http://purl.obolibrary.org/obo/ONS_0000047
+
+:ONS_0000047 a owl:Class ;
+	rdfs:subClassOf :Physiology_assays_tab ;
+	efo:definition "Long text describing the assay used."@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Assay description"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000048
+
+:ONS_0000048 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab , :Omics_tab , :Physiology_assays_tab ;
+	efo:definition "Platform used for the assay"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Assay platform"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000049
+
+:ONS_0000049 a owl:Class ;
+	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab ;
+	efo:definition "The unique sampling event identifier for the sample collection producing the sample"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Sampling identifier"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000050
+
+:ONS_0000050 a owl:Class ;
+	rdfs:subClassOf :Events_tab ;
+	efo:definition "This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks."@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Absolute start times"@en .
+# 
 # http://purl.obolibrary.org/obo/Omics_tab
 
 :Omics_tab a owl:Class ;
@@ -705,56 +707,6 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :Physiology_type a owl:Class ;
 	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_reference
-
-:Protocol_reference a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_reference_2
-
-:Protocol_reference_2 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_reference_4
-
-:Protocol_reference_4 a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_used
-
-:Protocol_used a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_used_2
-
-:Protocol_used_2 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Protocol_used_4
-
-:Protocol_used_4 a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_identifier
-
-:Sampling_identifier a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_identifier_2
-
-:Sampling_identifier_2 a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_identifier_3
-
-:Sampling_identifier_3 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_identifier_4
-
-:Sampling_identifier_4 a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
 # 
 # http://purl.obolibrary.org/obo/Sampling_tab
 
@@ -852,21 +804,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	owl:equivalentClass efo:EFO_0003940 ;
 	rdfs:subClassOf :DataSHIELD_casestudy_Ontology , efo:EFO_0003940 .
 # 
-# http://purl.obolibrary.org/obo/platform
-
-:platform a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
-# 
-# http://purl.obolibrary.org/obo/protocol_reference_3
-
-:protocol_reference_3 a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/protocol_used_3
-
-:protocol_used_3 a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
 # http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 
 <http://purl.org/net/OCRe/OCRe.owl#OCRE400012> rdfs:subClassOf :Sampling_tab .
@@ -889,6 +826,11 @@ oboInOwl:id a owl:AnnotationProperty .
 
 <http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Start_tab .
 # 
+# http://semanticscience.org/resource/SIO_000085
+
+<http://semanticscience.org/resource/SIO_000085> a owl:Class ;
+	rdfs:subClassOf :Informations_tab .
+# 
 # http://semanticscience.org/resource/SIO_000115
 
 <http://semanticscience.org/resource/SIO_000115> a owl:Class ;
@@ -897,7 +839,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://semanticscience.org/resource/SIO_000136
 
 <http://semanticscience.org/resource/SIO_000136> a owl:Class ;
-	rdfs:subClassOf :Subject_tab , efo:EFO_0000727 .
+	rdfs:subClassOf :Informations_tab , :Subject_tab , efo:EFO_0000727 .
 # 
 # http://semanticscience.org/resource/SIO_000142
 
