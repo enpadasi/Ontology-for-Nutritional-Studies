@@ -72,8 +72,6 @@ oboInOwl:id a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
-# route
-# 
 # http://purl.obolibrary.org/obo/AERO_0000009
 
 :AERO_0000009 a owl:Class ;
@@ -176,16 +174,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :Description a owl:Class ;
 	rdfs:subClassOf :Informations_tab .
 # 
-# http://purl.obolibrary.org/obo/Description_of_sampling_or_SOP
-
-:Description_of_sampling_or_SOP a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
-# http://purl.obolibrary.org/obo/Duration
-
-:Duration a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
 # http://purl.obolibrary.org/obo/Events_tab
 
 :Events_tab a owl:Class ;
@@ -232,7 +220,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/OBI_0000984
 
 :OBI_0000984 a owl:Class ;
-	rdfs:subClassOf :Events_tab .
+	rdfs:subClassOf :Events_tab , efo:EFO_0000727 .
 # 
 # http://purl.obolibrary.org/obo/OBI_0001942
 
@@ -659,6 +647,38 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	rdfs:label "Waist:Hip ratio"@en .
 # 
+# http://purl.obolibrary.org/obo/ONS_0000043
+
+:ONS_0000043 a owl:Class ;
+	rdfs:subClassOf :Events_tab , :Sampling_tab , efo:EFO_0000727 ;
+	efo:definition "A (short) alphanumeric string which identify the event/tretment"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Event identifier name"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000044
+
+:ONS_0000044 a owl:Class ;
+	rdfs:subClassOf :Events_tab , efo:EFO_0000727 ;
+	efo:definition "An alphanumeric string which identify and describe the event/tretment"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Treatment descriptive name"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000045
+
+:ONS_0000045 a owl:Class ;
+	rdfs:subClassOf :Sampling_tab ;
+	efo:definition "Short description of the sampling method used (i.e. \"needle\" for blood drawn, or \"direct sampling\" for questionnaire)"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Study sampling method"@en .
+# 
+# http://purl.obolibrary.org/obo/ONS_0000046
+
+:ONS_0000046 a owl:Class ;
+	rdfs:subClassOf :Sampling_tab ;
+	efo:definition "A long description of the sampling method used"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	rdfs:label "Sampling method description"@en .
+# 
 # http://purl.obolibrary.org/obo/Omics_tab
 
 :Omics_tab a owl:Class ;
@@ -716,11 +736,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :Protocol_used_4 a owl:Class ;
 	rdfs:subClassOf :Omics_tab .
 # 
-# http://purl.obolibrary.org/obo/Realted_event_identifier
-
-:Realted_event_identifier a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
 # http://purl.obolibrary.org/obo/Sampling_identifier
 
 :Sampling_identifier a owl:Class ;
@@ -741,16 +756,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :Sampling_identifier_4 a owl:Class ;
 	rdfs:subClassOf :Omics_tab .
 # 
-# http://purl.obolibrary.org/obo/Sampling_method_description
-
-:Sampling_method_description a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_name
-
-:Sampling_name a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
 # http://purl.obolibrary.org/obo/Sampling_tab
 
 :Sampling_tab a owl:Class ;
@@ -765,16 +770,6 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :Start_tab a owl:Class ;
 	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Start_time_2
-
-:Start_time_2 a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
-# http://purl.obolibrary.org/obo/Study_sampling_method
-
-:Study_sampling_method a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
 # 
 # http://purl.obolibrary.org/obo/Subject_tab
 
@@ -846,26 +841,6 @@ oboInOwl:id a owl:AnnotationProperty .
 :challenge a owl:Class ;
 	rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100056> .
 # 
-# http://purl.obolibrary.org/obo/desc
-
-:desc a owl:Class ;
-	rdfs:subClassOf efo:EFO_0000727 .
-# 
-# http://purl.obolibrary.org/obo/desc_name
-
-:desc_name a owl:Class ;
-	rdfs:subClassOf efo:EFO_0000727 .
-# 
-# http://purl.obolibrary.org/obo/dose
-
-:dose a owl:Class ;
-	rdfs:subClassOf efo:EFO_0000727 .
-# 
-# http://purl.obolibrary.org/obo/identifier
-
-:identifier a owl:Class ;
-	rdfs:subClassOf efo:EFO_0000727 .
-# 
 # http://purl.obolibrary.org/obo/medication_supplement_diet_use
 
 :medication_supplement_diet_use a owl:Class ;
@@ -892,10 +867,9 @@ oboInOwl:id a owl:AnnotationProperty .
 :protocol_used_3 a owl:Class ;
 	rdfs:subClassOf :Physiology_assays_tab .
 # 
-# http://purl.obolibrary.org/obo/realtive_time_points_of_sampling_event_in_the_study
+# http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 
-:realtive_time_points_of_sampling_event_in_the_study a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
+<http://purl.org/net/OCRe/OCRe.owl#OCRE400012> rdfs:subClassOf :Sampling_tab .
 # 
 # http://purl.org/net/OCRe/study_design.owl#OCRE100007
 
@@ -918,12 +892,12 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://semanticscience.org/resource/SIO_000115
 
 <http://semanticscience.org/resource/SIO_000115> a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
+	rdfs:subClassOf :Sampling_tab , :Subject_tab .
 # 
 # http://semanticscience.org/resource/SIO_000136
 
 <http://semanticscience.org/resource/SIO_000136> a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
+	rdfs:subClassOf :Subject_tab , efo:EFO_0000727 .
 # 
 # http://semanticscience.org/resource/SIO_000142
 
@@ -986,7 +960,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://semanticscience.org/resource/SIO_000669
 
 <http://semanticscience.org/resource/SIO_000669> a owl:Class ;
-	rdfs:subClassOf :Events_tab .
+	rdfs:subClassOf :Events_tab , :Sampling_tab .
 # 
 # http://semanticscience.org/resource/SIO_000670
 
@@ -996,6 +970,11 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://semanticscience.org/resource/SIO_000688
 
 <http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Start_tab .
+# 
+# http://semanticscience.org/resource/SIO_000964
+
+<http://semanticscience.org/resource/SIO_000964> a owl:Class ;
+	rdfs:subClassOf :ONS_0000046 .
 # 
 # http://semanticscience.org/resource/SIO_001014
 
@@ -1029,6 +1008,11 @@ efo:EFO_0000319 a owl:Class ;
 efo:EFO_0000400 a owl:Class ;
 	rdfs:subClassOf :ONS_0000032 ;
 	oboInOwl:id "PREV_DIAB"@en .
+# 
+# http://www.ebi.ac.uk/efo/EFO_0000433
+
+efo:EFO_0000433 a owl:Class ;
+	rdfs:subClassOf :Sampling_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0000537
 

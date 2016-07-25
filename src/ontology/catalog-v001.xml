@@ -21,6 +21,6 @@
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/u83thaux.owl" uri="integration_from_CMO.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xo3ogsk9.owl" uri="integration_from_EFO.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1469443980098" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1469456527467" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
     </group>
 </catalog>
