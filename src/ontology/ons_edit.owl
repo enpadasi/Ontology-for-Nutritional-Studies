@@ -63,6 +63,41 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :BFO_0000050 a owl:ObjectProperty , owl:TransitiveProperty .
 # 
+# http://purl.obolibrary.org/obo/hasMassUnit
+
+:hasMassUnit a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	owl:inverseOf :isMassUnitOf ;
+	a owl:FunctionalProperty ;
+	rdfs:domain efo:EFO_0004338 ;
+	rdfs:range :UO_0000002 ;
+	efo:definition "A relation wich connects a measured mass entity with its unit of measure"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en .
+# 
+# http://purl.obolibrary.org/obo/hasTimeUnit
+
+:hasTimeUnit a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	owl:inverseOf :isTimeUnitof ;
+	a owl:FunctionalProperty ;
+	rdfs:domain <http://semanticscience.org/resource/SIO_000669> , <http://semanticscience.org/resource/SIO_000670> ;
+	rdfs:range :UO_0000003 ;
+	efo:definition "A relation wich connects a measured temporal entity with its unit of measure"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en .
+# 
+# http://purl.obolibrary.org/obo/isMassUnitOf
+
+:isMassUnitOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/uo#is_unit_of> ;
+	efo:definition "A relation wich connects a measured mass entity with its unit of measure"@en ;
+	efo:definition_editor "ENPADASI_WP4"@en .
+# 
+# http://purl.obolibrary.org/obo/isTimeUnitof
+
+:isTimeUnitof a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/uo#is_unit_of> ;
+	efo:definition_editor "ENPADASI_WP4"@en .
+# 
 # http://semanticscience.org/resource/SIO_000212
 
 <http://semanticscience.org/resource/SIO_000212> rdfs:domain <http://edamontology.org/data_0970> ;
