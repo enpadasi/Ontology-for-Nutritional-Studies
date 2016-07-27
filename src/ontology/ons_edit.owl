@@ -63,6 +63,16 @@ oboInOwl:id a owl:AnnotationProperty .
 
 :BFO_0000050 a owl:ObjectProperty , owl:TransitiveProperty .
 # 
+# http://semanticscience.org/resource/SIO_000212
+
+<http://semanticscience.org/resource/SIO_000212> rdfs:domain <http://edamontology.org/data_0970> ;
+	rdfs:range :OBI_0000272 .
+# 
+# http://semanticscience.org/resource/SIO_000557
+
+<http://semanticscience.org/resource/SIO_000557> rdfs:domain :OBI_0000070 ;
+	rdfs:range :OBI_0000272 .
+# 
 # 
 # 
 # #################################################################
