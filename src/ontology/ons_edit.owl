@@ -1,1013 +1,2406 @@
-@prefix : <http://purl.obolibrary.org/obo/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix efo: <http://www.ebi.ac.uk/efo/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix doap: <http://usefulinc.com/ns/doap#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix pato: <http://purl.obolibrary.org/obo/pato#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix uberon: <http://purl.obolibrary.org/obo/uberon#> .
-@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
-@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.obolibrary.org/obo/">
+    <Prefix name="" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="efo" IRI="http://www.ebi.ac.uk/efo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="doap" IRI="http://usefulinc.com/ns/doap#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="pato" IRI="http://purl.obolibrary.org/obo/pato#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="uberon" IRI="http://purl.obolibrary.org/obo/uberon#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Import>https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="HP_0003119"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000043"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000067"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0004318"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0006525"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000085"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000066"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTimeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CMO_0000051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CMO_0001407"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_0970"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000045"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000036"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0002755"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PATO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMassUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OBI_0000272"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OBI_0000070"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PATO_0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000060"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000044"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000964"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000537"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OBI_0000630"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0005093"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NCBITaxon_species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="challenge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000051"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000433"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CHEBI_50733"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AERO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="medication_supplement_diet_use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000062"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0004339"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0004342"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000019"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isTimeUnitof"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CMO_0000105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000053"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMassUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OBI_0000984"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CMO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000038"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000064"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000403"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0003939"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CMO_0000053"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000009"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="OBI_0000630"/>
+        <Class IRI="ONS_0000052"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ONS_0000001"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ONS_0000051"/>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://edamontology.org/data_0970"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://edamontology.org/data_0970"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://edamontology.org/data_0970"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://edamontology.org/data_0970"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AERO_0000009"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CHEBI_50733"/>
+        <Class IRI="medication_supplement_diet_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CMO_0000051"/>
+        <Class IRI="ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CMO_0000052"/>
+        <Class IRI="ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CMO_0000053"/>
+        <Class IRI="ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CMO_0000105"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CMO_0001407"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HP_0003119"/>
+        <Class IRI="ONS_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ICO_0000069"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NCBITaxon_species"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBCS_0000089"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000070"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000070"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000070"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000094"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000103"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000272"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000272"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000272"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000272"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000630"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000984"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000984"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0001942"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OMIABIS_0000036"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OMIABIS_0000037"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OMRSE_00000038"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000001"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000002"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000003"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000004"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000005"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000006"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000007"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000008"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000009"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000010"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000011"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000012"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000013"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000014"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000015"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000016"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000017"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000018"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000019"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000020"/>
+        <Class IRI="ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000021"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000022"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000023"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000024"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000025"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000026"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000027"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000028"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000029"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000030"/>
+        <Class IRI="ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000031"/>
+        <Class IRI="ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000032"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000033"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000034"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000035"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000036"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000037"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000038"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000039"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000040"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000041"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000042"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000043"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000043"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000043"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000044"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000044"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000045"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000046"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000047"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000048"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000048"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000048"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000049"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000049"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000049"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000049"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000050"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000051"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000051"/>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000052"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000053"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000054"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000055"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000056"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000057"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000058"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000059"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000060"/>
+        <Class IRI="ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000061"/>
+        <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000062"/>
+        <Class IRI="ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000063"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000064"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ONS_0000065"/>
+        <Class IRI="ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PATO_0000011"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PATO_0000011"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PATO_0000047"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PATO_0000047"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000002"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000003"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000003"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000009"/>
+        <Class IRI="UO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000021"/>
+        <Class IRI="UO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000031"/>
+        <Class IRI="UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000032"/>
+        <Class IRI="UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000033"/>
+        <Class IRI="UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000034"/>
+        <Class IRI="UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UO_0000036"/>
+        <Class IRI="UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="challenge"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="medication_supplement_diet_use"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE400012"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000000"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000031"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000085"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
+        <Class IRI="ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000142"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000143"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000154"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000172"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000173"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000183"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000262"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000296"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000337"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000366"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000391"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000403"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000403"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000508"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000688"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_000964"/>
+        <Class IRI="ONS_0000046"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001014"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001041"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001042"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001068"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001323"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
+        <Class IRI="ONS_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
+        <Class IRI="ONS_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000433"/>
+        <Class IRI="ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000537"/>
+        <Class IRI="ONS_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+        <Class IRI="ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+        <Class IRI="ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0002755"/>
+        <Class IRI="medication_supplement_diet_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0003939"/>
+        <Class IRI="ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+        <Class IRI="ONS_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004318"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004339"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004339"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004342"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004342"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0005093"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0005093"/>
+        <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0006525"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMassUnit"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTimeUnit"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isMassUnitOf"/>
+        <ObjectProperty IRI="uo#is_unit_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isTimeUnitof"/>
+        <ObjectProperty IRI="uo#is_unit_of"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasMassUnit"/>
+        <ObjectProperty IRI="isMassUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasTimeUnit"/>
+        <ObjectProperty IRI="isTimeUnitof"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasMassUnit"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasTimeUnit"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="BFO_0000050"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMassUnit"/>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTimeUnit"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTimeUnit"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
+        <Class IRI="http://edamontology.org/data_0970"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
+        <Class IRI="OBI_0000070"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMassUnit"/>
+        <Class IRI="UO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTimeUnit"/>
+        <Class IRI="UO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
+        <Class IRI="OBI_0000272"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
+        <Class IRI="OBI_0000272"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000001</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000001</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000001</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participants&apos; identification number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">School education (years of school education)
+1= less than 12 years      2= 12 or more years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For past smokers: time in years since quitting smoking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time since quitting smoking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000005</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000005</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000005</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000005</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Categories of physical activity level
+1=low; 2= Medium; 3= High</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Categories of physical activity level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total physical activity by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity from recreational or leisure-time activities by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in light physical activity in minutes/day derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light physical activity by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000010</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in moderate physical activity in minutes/day derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000010</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000010</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000010</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate physical activity by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in vigorous physical activity in minutes/day derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigorous physical activity by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sedentary time by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts by questionnaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000014</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000014</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000014</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000014</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in light physical activity in minutes/day derived from accelerometer data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light physical activity by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in moderate physical activity in minutes/day derived from accelerometer data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate physical activity by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000017</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in vigorous physical activity in minutes/day derived from accelerometer data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000017</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000017</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000017</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigorous physical activity by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000018</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent sedentary in minutes/day derived from accelerometer data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000018</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000018</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000018</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sedentary time by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000019</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts of moderate or vigorous physical activity per day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000019</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000019</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000019</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts by accelerometer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Average minutes per bout of moderate or vigorous physical activity per day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Average duration of bouts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary assessment used for uploaded dietary variables
+1=24-hour recall; 2=FFQ; 3=Food record; 4=other</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary assessment method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of dietary assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000023</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carbohydrate intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000023</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000023</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000023</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carbohydrate intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiber intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiber intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total fat intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total fat intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000026</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Saturated fatty acid intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000026</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000026</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Saturated fatty acid intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000027</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monounsaturated fatty acid intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000027</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000027</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000027</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monounsaturated fatty acid intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000028</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polyunsaturated fatty acid intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000028</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000028</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000028</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polyunsaturated fatty acid intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000029</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protein intake in g/day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000029</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000029</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000029</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protein intake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000030</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000030</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000030</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000030</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of blood draw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000031</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fasting status before blood draw (measured in hours of fasting before blood draw) 
+1=less than 9 hours; 2=9 hours or more</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000031</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000031</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000031</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fasting status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000032</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information on the disease that the subject has at the moment of questionnaire/blood analytics. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000032</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000032</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000032</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prevalent disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000033</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of collecting information on the diet/eating habits of a subject using a questionnaire. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000033</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000033</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000034</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anthropometric and habits information of the subject. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000034</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ONS_0000034</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000034</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subject informations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000035</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000035</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000035</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short study name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000036</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of the consortium which the study refers to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000036</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000036</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000037</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the method used for randomization (OBCS_0000089), if any randomization was adopted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000037</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000037</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Randomization method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000038</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicate whether blinded experiment were conducted or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000038</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000038</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blinding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000039</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If blinded experiment were conducted, indicate the method used for blinding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000039</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000039</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blinding method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000040</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicated whether the study is terminated or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000040</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000040</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study terminated?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000041</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicate whethet the compliance was assessed or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000041</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000041</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Compliance assessed?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000042</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ration between the circumference of the waist to that of the hips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000042</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000042</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Waist:Hip ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000043</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A (short) alphanumeric string which identify the event/tretment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000043</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000043</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event identifier name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000044</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An alphanumeric string which identify and describe the event/tretment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000044</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000044</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Treatment descriptive name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000045</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short description of the sampling method used (i.e. &quot;needle&quot; for blood drawn, or &quot;direct sampling&quot; for questionnaire)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000045</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000045</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study sampling method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000046</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A long description of the sampling method used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000046</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000046</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling method description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000047</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Long text describing the assay used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000047</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000047</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000048</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Platform used for the assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000048</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000048</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000049</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The unique sampling event identifier for the sample collection producing the sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000049</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000049</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000050</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000050</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000050</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Absolute start times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000051</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000051</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000051</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000052</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000052</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000052</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blood Analytics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000053</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000053</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000053</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000053</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Start tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000054</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SUBJECT TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000054</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000054</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000055</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000055</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000055</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000056</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000056</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000056</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000057</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000057</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000058</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000058</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000058</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000059</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CHEMICAL-BIOLOGICAL ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000059</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000059</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chemical-biological assay tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OMICS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Omics tab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000061</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of omic assay performed (i.e. targeted metabolomics, untargeted metabolomics)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000061</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000061</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of omics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000062</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay type (i.e. Clinical chemistry assay: Standard kit #34567 from &apos;vendor&apos; assayed on a Cobas Mira analyzer)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000062</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000062</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000063</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A short text identifying the question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000063</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000063</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short question name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000064</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of question or question variable code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000064</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000064</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Question type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000065</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of physiology assay performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000065</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ONS_0000065</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physionlogy asssay tye</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000066</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ANYSTUDY TEMPLATE. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000066</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ONS_0000067</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DataSHIELD CASESTUDY TEMPLATE. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ONS_0000067</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>hasMassUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation wich connects a measured mass entity with its unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>hasMassUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>hasTimeUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation wich connects a measured temporal entity with its unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>hasTimeUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>isMassUnitOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation wich connects a measured mass entity with its unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>isMassUnitOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>isTimeUnitof</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboInOwl:hasOBOFormatVersion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 
-<http://purl.obolibrary.org/obo/> a owl:Ontology ;
-	owl:imports <https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl> ;
-	oboInOwl:hasOBOFormatVersion "1.2"^^xsd:string .
-# 
-# 
-# #################################################################
-# #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://www.ebi.ac.uk/efo/bioportal_provenance
-
-efo:bioportal_provenance a owl:AnnotationProperty .
-# 
-# http://www.ebi.ac.uk/efo/definition
-
-efo:definition a owl:AnnotationProperty .
-# 
-# http://www.ebi.ac.uk/efo/definition_editor
-
-efo:definition_editor a owl:AnnotationProperty .
-# 
-# http://www.geneontology.org/formats/oboInOwl#created_by
-
-oboInOwl:created_by a owl:AnnotationProperty .
-# 
-# http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
-
-oboInOwl:hasOBOFormatVersion a owl:AnnotationProperty ;
-	rdfs:label "has_obo_format_version"^^xsd:string .
-# 
-# http://www.geneontology.org/formats/oboInOwl#id
-
-oboInOwl:id a owl:AnnotationProperty .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# http://purl.obolibrary.org/obo/BFO_0000050
-
-:BFO_0000050 a owl:ObjectProperty , owl:TransitiveProperty .
-# 
-# http://purl.obolibrary.org/obo/hasMassUnit
-
-:hasMassUnit a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty ;
-	owl:inverseOf :isMassUnitOf ;
-	a owl:FunctionalProperty ;
-	rdfs:domain efo:EFO_0004338 ;
-	rdfs:range :UO_0000002 ;
-	efo:definition "A relation wich connects a measured mass entity with its unit of measure"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en .
-# 
-# http://purl.obolibrary.org/obo/hasTimeUnit
-
-:hasTimeUnit a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty ;
-	owl:inverseOf :isTimeUnitof ;
-	a owl:FunctionalProperty ;
-	rdfs:domain <http://semanticscience.org/resource/SIO_000669> , <http://semanticscience.org/resource/SIO_000670> ;
-	rdfs:range :UO_0000003 ;
-	efo:definition "A relation wich connects a measured temporal entity with its unit of measure"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en .
-# 
-# http://purl.obolibrary.org/obo/isMassUnitOf
-
-:isMassUnitOf a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/uo#is_unit_of> ;
-	efo:definition "A relation wich connects a measured mass entity with its unit of measure"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en .
-# 
-# http://purl.obolibrary.org/obo/isTimeUnitof
-
-:isTimeUnitof a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/uo#is_unit_of> ;
-	efo:definition_editor "ENPADASI_WP4"@en .
-# 
-# http://semanticscience.org/resource/SIO_000212
-
-<http://semanticscience.org/resource/SIO_000212> rdfs:domain <http://edamontology.org/data_0970> ;
-	rdfs:range :OBI_0000272 .
-# 
-# http://semanticscience.org/resource/SIO_000557
-
-<http://semanticscience.org/resource/SIO_000557> rdfs:domain :OBI_0000070 ;
-	rdfs:range :OBI_0000272 .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://edamontology.org/data_0970
-
-<http://edamontology.org/data_0970> a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/AERO_0000009
-
-:AERO_0000009 a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/Anystudy_template_ontology
-
-:Anystudy_template_ontology a owl:Class .
-# 
-# http://purl.obolibrary.org/obo/Assay_type
-
-:Assay_type a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/CHEBI_50733
-
-:CHEBI_50733 a owl:Class ;
-	rdfs:subClassOf :medication_supplement_diet_use .
-# 
-# http://purl.obolibrary.org/obo/CMO_0000051
-
-:CMO_0000051 a owl:Class ;
-	rdfs:subClassOf :blood_analytics .
-# 
-# http://purl.obolibrary.org/obo/CMO_0000052
-
-:CMO_0000052 a owl:Class ;
-	rdfs:subClassOf :blood_analytics .
-# 
-# http://purl.obolibrary.org/obo/CMO_0000053
-
-:CMO_0000053 a owl:Class ;
-	rdfs:subClassOf :blood_analytics .
-# 
-# http://purl.obolibrary.org/obo/CMO_0000105
-
-:CMO_0000105 a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/CMO_0001407
-
-:CMO_0001407 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 .
-# 
-# http://purl.obolibrary.org/obo/Chemical-biological_assays_tab
-
-:Chemical-biological_assays_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/DataSHIELD_casestudy_Ontology
-
-:DataSHIELD_casestudy_Ontology a owl:Class .
-# 
-# http://purl.obolibrary.org/obo/Events_tab
-
-:Events_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/HP_0003119
-
-:HP_0003119 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 .
-# 
-# http://purl.obolibrary.org/obo/ICO_0000069
-
-:ICO_0000069 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/Informations_tab
-
-:Informations_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/NCBITaxon_species
-
-:NCBITaxon_species a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/OBCS_0000089
-
-:OBCS_0000089 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000070
-
-:OBI_0000070 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab , :Omics_tab , :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000094
-
-:OBI_0000094 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000103
-
-:OBI_0000103 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000272
-
-:OBI_0000272 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000630
-
-:OBI_0000630 a owl:Class ;
-	owl:equivalentClass :blood_analytics ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
-# 
-# http://purl.obolibrary.org/obo/OBI_0000984
-
-:OBI_0000984 a owl:Class ;
-	rdfs:subClassOf :Events_tab , efo:EFO_0000727 .
-# 
-# http://purl.obolibrary.org/obo/OBI_0001942
-
-:OBI_0001942 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OMIABIS_0000036
-
-:OMIABIS_0000036 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OMIABIS_0000037
-
-:OMIABIS_0000037 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/OMRSE_00000038
-
-:OMRSE_00000038 rdfs:subClassOf :Start_tab .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000001
-
-:ONS_0000001 a owl:Class ;
-	owl:equivalentClass <http://semanticscience.org/resource/SIO_000115> ;
-	rdfs:subClassOf :ONS_0000034 ;
-	efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Participants' identification number"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000002
-
-:ONS_0000002 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 ;
-	efo:definition "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Month of anthropometry assessment"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000003
-
-:ONS_0000003 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 ;
-	efo:definition """School education (years of school education)
-1= less than 12 years      2= 12 or more years"""@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Education"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000004
-
-:ONS_0000004 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 ;
-	efo:definition "For past smokers: time in years since quitting smoking"@en ;
-	efo:definition_editor "ENPADASI_WP4"^^xsd:string ;
-	oboInOwl:created_by "ENPADASI_WP4"^^xsd:string ;
-	rdfs:label "Time since quitting smoking"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000005
-
-:ONS_0000005 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Month of physical activity assessment by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000006
-
-:ONS_0000006 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition """Categories of physical activity level
-1=low; 2= Medium; 3= High"""@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Categories of physical activity level"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000007
-
-:ONS_0000007 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Total physical activity by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000008
-
-:ONS_0000008 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Physical activity from recreational or leisure-time activities by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000009
-
-:ONS_0000009 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in light physical activity in minutes/day derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Light physical activity by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000010
-
-:ONS_0000010 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in moderate physical activity in minutes/day derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Moderate physical activity by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000011
-
-:ONS_0000011 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in vigorous physical activity in minutes/day derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Vigorous physical activity by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000012
-
-:ONS_0000012 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Sedentary time by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000013
-
-:ONS_0000013 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Number of bouts by questionnaire"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000014
-
-:ONS_0000014 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Month of physical activity assessment by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000015
-
-:ONS_0000015 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in light physical activity in minutes/day derived from accelerometer data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Light physical activity by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000016
-
-:ONS_0000016 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in moderate physical activity in minutes/day derived from accelerometer data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Moderate physical activity by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000017
-
-:ONS_0000017 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent in vigorous physical activity in minutes/day derived from accelerometer data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Vigorous physical activity by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000018
-
-:ONS_0000018 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Time spent sedentary in minutes/day derived from accelerometer data"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Sedentary time by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000019
-
-:ONS_0000019 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Number of bouts of moderate or vigorous physical activity per day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Number of bouts by accelerometer"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000020
-
-:ONS_0000020 a owl:Class ;
-	rdfs:subClassOf :physical_activity ;
-	efo:definition "Average minutes per bout of moderate or vigorous physical activity per day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Average duration of bouts"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000021
-
-:ONS_0000021 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition """Dietary assessment used for uploaded dietary variables
-1=24-hour recall; 2=FFQ; 3=Food record; 4=other"""@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Dietary assessment method"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000022
-
-:ONS_0000022 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Month of dietary assessment"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000023
-
-:ONS_0000023 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Carbohydrate intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Carbohydrate intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000024
-
-:ONS_0000024 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Fiber intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Fiber intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000025
-
-:ONS_0000025 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Total fat intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Total fat intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000026
-
-:ONS_0000026 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Saturated fatty acid intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Saturated fatty acid intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000027
-
-:ONS_0000027 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Monounsaturated fatty acid intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Monounsaturated fatty acid intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000028
-
-:ONS_0000028 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Polyunsaturated fatty acid intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Polyunsaturated fatty acid intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000029
-
-:ONS_0000029 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	efo:definition "Protein intake in g/day"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Protein intake"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000030
-
-:ONS_0000030 a owl:Class ;
-	rdfs:subClassOf :blood_analytics ;
-	efo:definition "Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Month of blood draw"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000031
-
-:ONS_0000031 a owl:Class ;
-	rdfs:subClassOf :blood_analytics ;
-	efo:definition """Fasting status before blood draw (measured in hours of fasting before blood draw) 
-1=less than 9 hours; 2=9 hours or more"""@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Fasting status"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000032
-
-:ONS_0000032 a owl:Class ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-	efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "Prevalent disease"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000033
-
-:ONS_0000033 a owl:Class ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-	efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Dietary assessment"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000034
-
-:ONS_0000034 a owl:Class ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
-	efo:definition "Anthropometric and habits information of the subject"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	rdfs:label "subject informations"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000035
-
-:ONS_0000035 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Short study name"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000036
-
-:ONS_0000036 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "Name of the consortium which the study refers to"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Consortium"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000037
-
-:ONS_0000037 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "The name of the method used for randomization (OBCS_0000089), if any randomization was adopted."@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Randomization method"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000038
-
-:ONS_0000038 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "Indicate whether blinded experiment were conducted or not"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Blinding"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000039
-
-:ONS_0000039 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "If blinded experiment were conducted, indicate the method used for blinding"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Blinding method"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000040
-
-:ONS_0000040 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "Indicated whether the study is terminated or not"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Study terminated?"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000041
-
-:ONS_0000041 a owl:Class ;
-	rdfs:subClassOf :Start_tab ;
-	efo:definition "Indicate whethet the compliance was assessed or not"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Compliance assessed?"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000042
-
-:ONS_0000042 a owl:Class ;
-	rdfs:subClassOf :Subject_tab ;
-	efo:definition "The ration between the circumference of the waist to that of the hips"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Waist:Hip ratio"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000043
-
-:ONS_0000043 a owl:Class ;
-	rdfs:subClassOf :Events_tab , :Sampling_tab , efo:EFO_0000727 ;
-	efo:definition "A (short) alphanumeric string which identify the event/tretment"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Event identifier name"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000044
-
-:ONS_0000044 a owl:Class ;
-	rdfs:subClassOf :Events_tab , efo:EFO_0000727 ;
-	efo:definition "An alphanumeric string which identify and describe the event/tretment"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Treatment descriptive name"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000045
-
-:ONS_0000045 a owl:Class ;
-	rdfs:subClassOf :Sampling_tab ;
-	efo:definition "Short description of the sampling method used (i.e. \"needle\" for blood drawn, or \"direct sampling\" for questionnaire)"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Study sampling method"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000046
-
-:ONS_0000046 a owl:Class ;
-	rdfs:subClassOf :Sampling_tab ;
-	efo:definition "A long description of the sampling method used"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Sampling method description"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000047
-
-:ONS_0000047 a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab ;
-	efo:definition "Long text describing the assay used."@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Assay description"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000048
-
-:ONS_0000048 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab , :Omics_tab , :Physiology_assays_tab ;
-	efo:definition "Platform used for the assay"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Assay platform"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000049
-
-:ONS_0000049 a owl:Class ;
-	rdfs:subClassOf :Chemical-biological_assays_tab , :Informations_tab , :Omics_tab , :Physiology_assays_tab ;
-	efo:definition "The unique sampling event identifier for the sample collection producing the sample"@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Sampling identifier"@en .
-# 
-# http://purl.obolibrary.org/obo/ONS_0000050
-
-:ONS_0000050 a owl:Class ;
-	rdfs:subClassOf :Events_tab ;
-	efo:definition "This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks."@en ;
-	efo:definition_editor "ENPADASI_WP4"@en ;
-	rdfs:label "Absolute start times"@en .
-# 
-# http://purl.obolibrary.org/obo/Omics_tab
-
-:Omics_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/PATO_0000011
-
-:PATO_0000011 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/PATO_0000047
-
-:PATO_0000047 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/Physiology_assays_tab
-
-:Physiology_assays_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Physiology_type
-
-:Physiology_type a owl:Class ;
-	rdfs:subClassOf :Physiology_assays_tab .
-# 
-# http://purl.obolibrary.org/obo/Sampling_tab
-
-:Sampling_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Short_name_of_question
-
-:Short_name_of_question a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://purl.obolibrary.org/obo/Start_tab
-
-:Start_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Subject_tab
-
-:Subject_tab a owl:Class ;
-	rdfs:subClassOf :Anystudy_template_ontology .
-# 
-# http://purl.obolibrary.org/obo/Type_of_omics
-
-:Type_of_omics a owl:Class ;
-	rdfs:subClassOf :Omics_tab .
-# 
-# http://purl.obolibrary.org/obo/Type_of_question_or_question_variable_code
-
-:Type_of_question_or_question_variable_code a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://purl.obolibrary.org/obo/UO_0000002
-
-:UO_0000002 a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/UO_0000003
-
-:UO_0000003 a owl:Class ;
-	rdfs:subClassOf :Events_tab , :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/UO_0000009
-
-:UO_0000009 a owl:Class ;
-	rdfs:subClassOf :UO_0000002 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000021
-
-:UO_0000021 a owl:Class ;
-	rdfs:subClassOf :UO_0000002 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000031
-
-:UO_0000031 a owl:Class ;
-	rdfs:subClassOf :UO_0000003 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000032
-
-:UO_0000032 a owl:Class ;
-	rdfs:subClassOf :UO_0000003 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000033
-
-:UO_0000033 a owl:Class ;
-	rdfs:subClassOf :UO_0000003 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000034
-
-:UO_0000034 a owl:Class ;
-	rdfs:subClassOf :UO_0000003 .
-# 
-# http://purl.obolibrary.org/obo/UO_0000036
-
-:UO_0000036 a owl:Class ;
-	rdfs:subClassOf :UO_0000003 .
-# 
-# http://purl.obolibrary.org/obo/blood_analytics
-
-:blood_analytics a owl:Class ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
-# 
-# http://purl.obolibrary.org/obo/challenge
-
-:challenge a owl:Class ;
-	rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100056> .
-# 
-# http://purl.obolibrary.org/obo/medication_supplement_diet_use
-
-:medication_supplement_diet_use a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://purl.obolibrary.org/obo/physical_activity
-
-:physical_activity a owl:Class ;
-	owl:equivalentClass efo:EFO_0003940 ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology , efo:EFO_0003940 .
-# 
-# http://purl.org/net/OCRe/OCRe.owl#OCRE400012
-
-<http://purl.org/net/OCRe/OCRe.owl#OCRE400012> rdfs:subClassOf :Sampling_tab .
-# 
-# http://purl.org/net/OCRe/study_design.owl#OCRE100007
-
-<http://purl.org/net/OCRe/study_design.owl#OCRE100007> a owl:Class ;
-	rdfs:subClassOf <http://purl.org/net/OCRe/study_design.owl#OCRE100056> .
-# 
-# http://purl.org/net/OCRe/study_design.owl#OCRE100056
-
-<http://purl.org/net/OCRe/study_design.owl#OCRE100056> a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://semanticscience.org/resource/SIO_000000
-
-<http://semanticscience.org/resource/SIO_000000> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000031
-
-<http://semanticscience.org/resource/SIO_000031> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000085
-
-<http://semanticscience.org/resource/SIO_000085> a owl:Class ;
-	rdfs:subClassOf :Informations_tab .
-# 
-# http://semanticscience.org/resource/SIO_000115
-
-<http://semanticscience.org/resource/SIO_000115> a owl:Class ;
-	rdfs:subClassOf :Sampling_tab , :Subject_tab .
-# 
-# http://semanticscience.org/resource/SIO_000136
-
-<http://semanticscience.org/resource/SIO_000136> a owl:Class ;
-	rdfs:subClassOf :Informations_tab , :Subject_tab , efo:EFO_0000727 .
-# 
-# http://semanticscience.org/resource/SIO_000142
-
-<http://semanticscience.org/resource/SIO_000142> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000143
-
-<http://semanticscience.org/resource/SIO_000143> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000154
-
-<http://semanticscience.org/resource/SIO_000154> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000172
-
-<http://semanticscience.org/resource/SIO_000172> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000173
-
-<http://semanticscience.org/resource/SIO_000173> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000183
-
-<http://semanticscience.org/resource/SIO_000183> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000262
-
-<http://semanticscience.org/resource/SIO_000262> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000296
-
-<http://semanticscience.org/resource/SIO_000296> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000337
-
-<http://semanticscience.org/resource/SIO_000337> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000366
-
-<http://semanticscience.org/resource/SIO_000366> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000391
-
-<http://semanticscience.org/resource/SIO_000391> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000403
-
-<http://semanticscience.org/resource/SIO_000403> a owl:Class ;
-	rdfs:subClassOf :Events_tab , :Subject_tab .
-# 
-# http://semanticscience.org/resource/SIO_000508
-
-<http://semanticscience.org/resource/SIO_000508> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000664
-
-<http://semanticscience.org/resource/SIO_000664> a owl:Class ;
-	rdfs:subClassOf :Start_tab , :Subject_tab .
-# 
-# http://semanticscience.org/resource/SIO_000669
-
-<http://semanticscience.org/resource/SIO_000669> a owl:Class ;
-	rdfs:subClassOf :Events_tab , :Sampling_tab .
-# 
-# http://semanticscience.org/resource/SIO_000670
-
-<http://semanticscience.org/resource/SIO_000670> a owl:Class ;
-	rdfs:subClassOf :Events_tab .
-# 
-# http://semanticscience.org/resource/SIO_000688
-
-<http://semanticscience.org/resource/SIO_000688> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_000964
-
-<http://semanticscience.org/resource/SIO_000964> a owl:Class ;
-	rdfs:subClassOf :ONS_0000046 .
-# 
-# http://semanticscience.org/resource/SIO_001014
-
-<http://semanticscience.org/resource/SIO_001014> a owl:Class ;
-	rdfs:subClassOf :Subject_tab .
-# 
-# http://semanticscience.org/resource/SIO_001041
-
-<http://semanticscience.org/resource/SIO_001041> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_001042
-
-<http://semanticscience.org/resource/SIO_001042> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_001068
-
-<http://semanticscience.org/resource/SIO_001068> rdfs:subClassOf :Start_tab .
-# 
-# http://semanticscience.org/resource/SIO_001323
-
-<http://semanticscience.org/resource/SIO_001323> rdfs:subClassOf :Start_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0000319
-
-efo:EFO_0000319 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0000400
-
-efo:EFO_0000400 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0000433
-
-efo:EFO_0000433 a owl:Class ;
-	rdfs:subClassOf :Sampling_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0000537
-
-efo:EFO_0000537 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0000727
-
-efo:EFO_0000727 a owl:Class ;
-	rdfs:subClassOf :Events_tab , :Start_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0002755
-
-efo:EFO_0002755 a owl:Class ;
-	rdfs:subClassOf :medication_supplement_diet_use .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0003939
-
-efo:EFO_0003939 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0003940
-
-efo:EFO_0003940 a owl:Class ;
-	rdfs:subClassOf :DataSHIELD_casestudy_Ontology .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0004318
-
-efo:EFO_0004318 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0004338
-
-efo:EFO_0004338 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0004339
-
-efo:EFO_0004339 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0004342
-
-efo:EFO_0004342 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0005093
-
-efo:EFO_0005093 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
-# 
-# http://www.ebi.ac.uk/efo/EFO_0006525
-
-efo:EFO_0006525 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
