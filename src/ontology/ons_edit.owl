@@ -144,20 +144,17 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/CMO_0000051
 
 :CMO_0000051 a owl:Class ;
-	rdfs:subClassOf :blood_analytics ;
-	oboInOwl:id "TCHOL"^^xsd:string .
+	rdfs:subClassOf :blood_analytics .
 # 
 # http://purl.obolibrary.org/obo/CMO_0000052
 
 :CMO_0000052 a owl:Class ;
-	rdfs:subClassOf :blood_analytics ;
-	oboInOwl:id "HDL"^^xsd:string .
+	rdfs:subClassOf :blood_analytics .
 # 
 # http://purl.obolibrary.org/obo/CMO_0000053
 
 :CMO_0000053 a owl:Class ;
-	rdfs:subClassOf :blood_analytics ;
-	oboInOwl:id "LDL"^^xsd:string .
+	rdfs:subClassOf :blood_analytics .
 # 
 # http://purl.obolibrary.org/obo/CMO_0000105
 
@@ -167,8 +164,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/CMO_0001407
 
 :CMO_0001407 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	oboInOwl:id "ALC"^^xsd:string .
+	rdfs:subClassOf :ONS_0000033 .
 # 
 # http://purl.obolibrary.org/obo/Chemical-biological_assays_tab
 
@@ -187,8 +183,7 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/HP_0003119
 
 :HP_0003119 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 ;
-	oboInOwl:id "PREV_DYSL"@en .
+	rdfs:subClassOf :ONS_0000032 .
 # 
 # http://purl.obolibrary.org/obo/ICO_0000069
 
@@ -260,8 +255,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	rdfs:subClassOf :ONS_0000034 ;
 	efo:definition "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject."@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "ID"^^xsd:string ;
 	rdfs:label "Participants' identification number"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000002
@@ -271,7 +264,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MMYY_ANTR"^^xsd:string ;
 	rdfs:label "Month of anthropometry assessment"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000003
@@ -282,7 +274,6 @@ oboInOwl:id a owl:AnnotationProperty .
 1= less than 12 years      2= 12 or more years"""@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "EDU"^^xsd:string ;
 	rdfs:label "Education"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000004
@@ -292,7 +283,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "For past smokers: time in years since quitting smoking"@en ;
 	efo:definition_editor "ENPADASI_WP4"^^xsd:string ;
 	oboInOwl:created_by "ENPADASI_WP4"^^xsd:string ;
-	oboInOwl:id "PAST_YQSMK"^^xsd:string ;
 	rdfs:label "Time since quitting smoking"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000005
@@ -302,7 +292,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MMYY_PA_QX"^^xsd:string ;
 	rdfs:label "Month of physical activity assessment by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000006
@@ -313,7 +302,6 @@ oboInOwl:id a owl:AnnotationProperty .
 1=low; 2= Medium; 3= High"""@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "CAT_PA_QX"^^xsd:string ;
 	rdfs:label "Categories of physical activity level"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000007
@@ -323,7 +311,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "TOT_PA_QX"^^xsd:string ;
 	rdfs:label "Total physical activity by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000008
@@ -333,7 +320,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "LEI_PA_QX"^^xsd:string ;
 	rdfs:label "Physical activity from recreational or leisure-time activities by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000009
@@ -343,7 +329,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in light physical activity in minutes/day derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "LPA_QX"^^xsd:string ;
 	rdfs:label "Light physical activity by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000010
@@ -353,7 +338,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in moderate physical activity in minutes/day derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MPA_QX"^^xsd:string ;
 	rdfs:label "Moderate physical activity by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000011
@@ -363,7 +347,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in vigorous physical activity in minutes/day derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "VPA_QX"^^xsd:string ;
 	rdfs:label "Vigorous physical activity by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000012
@@ -373,7 +356,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "SED_QX"^^xsd:string ;
 	rdfs:label "Sedentary time by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000013
@@ -383,7 +365,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "N_BOUTS_QX"^^xsd:string ;
 	rdfs:label "Number of bouts by questionnaire"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000014
@@ -393,7 +374,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MMYY_PA_AC"^^xsd:string ;
 	rdfs:label "Month of physical activity assessment by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000015
@@ -403,7 +383,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in light physical activity in minutes/day derived from accelerometer data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "LPA_AC"^^xsd:string ;
 	rdfs:label "Light physical activity by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000016
@@ -413,7 +392,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in moderate physical activity in minutes/day derived from accelerometer data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MPA_AC"^^xsd:string ;
 	rdfs:label "Moderate physical activity by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000017
@@ -423,7 +401,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Time spent in vigorous physical activity in minutes/day derived from accelerometer data"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "VPA_AC"^^xsd:string ;
 	rdfs:label "Vigorous physical activity by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000018
@@ -431,9 +408,8 @@ oboInOwl:id a owl:AnnotationProperty .
 :ONS_0000018 a owl:Class ;
 	rdfs:subClassOf :physical_activity ;
 	efo:definition "Time spent sedentary in minutes/day derived from accelerometer data"@en ;
-	efo:definition_editor ""@en ;
-	oboInOwl:created_by ""@en ;
-	oboInOwl:id "SED_AC"^^xsd:string ;
+	efo:definition_editor "ENPADASI_WP4"@en ;
+	oboInOwl:created_by "ENPADASI_WP4"@en ;
 	rdfs:label "Sedentary time by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000019
@@ -443,7 +419,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Number of bouts of moderate or vigorous physical activity per day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "N_BOUTS_AC"^^xsd:string ;
 	rdfs:label "Number of bouts by accelerometer"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000020
@@ -453,7 +428,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Average minutes per bout of moderate or vigorous physical activity per day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "TIME_BOUTS_AC"^^xsd:string ;
 	rdfs:label "Average duration of bouts"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000021
@@ -464,7 +438,6 @@ oboInOwl:id a owl:AnnotationProperty .
 1=24-hour recall; 2=FFQ; 3=Food record; 4=other"""@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "DIET_M"^^xsd:string ;
 	rdfs:label "Dietary assessment method"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000022
@@ -474,14 +447,12 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MMYY_Diet"^^xsd:string ;
 	rdfs:label "Month of dietary assessment"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000023
 
 :ONS_0000023 a owl:Class ;
 	rdfs:subClassOf :ONS_0000033 ;
-	efo:bioportal_provenance "CARB"^^xsd:string ;
 	efo:definition "Carbohydrate intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
@@ -494,7 +465,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Fiber intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "FIBER"^^xsd:string ;
 	rdfs:label "Fiber intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000025
@@ -504,7 +474,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Total fat intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "FAT"^^xsd:string ;
 	rdfs:label "Total fat intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000026
@@ -513,8 +482,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	rdfs:subClassOf :ONS_0000033 ;
 	efo:definition "Saturated fatty acid intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "SFA"^^xsd:string ;
 	rdfs:label "Saturated fatty acid intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000027
@@ -524,7 +491,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Monounsaturated fatty acid intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MUFA"^^xsd:string ;
 	rdfs:label "Monounsaturated fatty acid intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000028
@@ -534,7 +500,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Polyunsaturated fatty acid intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "PUFA"^^xsd:string ;
 	rdfs:label "Polyunsaturated fatty acid intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000029
@@ -544,7 +509,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Protein intake in g/day"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "PROT"^^xsd:string ;
 	rdfs:label "Protein intake"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000030
@@ -554,7 +518,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "MMYY_BL"^^xsd:string ;
 	rdfs:label "Month of blood draw"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000031
@@ -565,7 +528,6 @@ oboInOwl:id a owl:AnnotationProperty .
 1=less than 9 hours; 2=9 hours or more"""@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "FAST"^^xsd:string ;
 	rdfs:label "Fasting status"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000032
@@ -575,7 +537,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Information on the disease that the subject has at the moment of questionnaire/blood analytics"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "prevalent_disease"@en ;
 	rdfs:label "Prevalent disease"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000033
@@ -584,8 +545,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	rdfs:subClassOf :DataSHIELD_casestudy_Ontology ;
 	efo:definition "The process of collecting information on the diet/eating habits of a subject using a questionnaire."@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
-	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "Dietary_assessment"@en ;
 	rdfs:label "Dietary assessment"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000034
@@ -595,7 +554,6 @@ oboInOwl:id a owl:AnnotationProperty .
 	efo:definition "Anthropometric and habits information of the subject"@en ;
 	efo:definition_editor "ENPADASI_WP4"@en ;
 	oboInOwl:created_by "ENPADASI_WP4"@en ;
-	oboInOwl:id "Subject_informations"@en ;
 	rdfs:label "subject informations"@en .
 # 
 # http://purl.obolibrary.org/obo/ONS_0000035
@@ -734,14 +692,12 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://purl.obolibrary.org/obo/PATO_0000011
 
 :PATO_0000011 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "AGE"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://purl.obolibrary.org/obo/PATO_0000047
 
 :PATO_0000047 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "SEX"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://purl.obolibrary.org/obo/Physiology_assays_tab
 
@@ -987,14 +943,12 @@ oboInOwl:id a owl:AnnotationProperty .
 # http://www.ebi.ac.uk/efo/EFO_0000319
 
 efo:EFO_0000319 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 ;
-	oboInOwl:id "PREV_CVD"@en .
+	rdfs:subClassOf :ONS_0000032 .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0000400
 
 efo:EFO_0000400 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 ;
-	oboInOwl:id "PREV_DIAB"@en .
+	rdfs:subClassOf :ONS_0000032 .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0000433
 
@@ -1004,8 +958,7 @@ efo:EFO_0000433 a owl:Class ;
 # http://www.ebi.ac.uk/efo/EFO_0000537
 
 efo:EFO_0000537 a owl:Class ;
-	rdfs:subClassOf :ONS_0000032 ;
-	oboInOwl:id "PREV_HBP"@en .
+	rdfs:subClassOf :ONS_0000032 .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0000727
 
@@ -1020,8 +973,7 @@ efo:EFO_0002755 a owl:Class ;
 # http://www.ebi.ac.uk/efo/EFO_0003939
 
 efo:EFO_0003939 a owl:Class ;
-	rdfs:subClassOf :ONS_0000033 ;
-	oboInOwl:id "ENERGY"^^xsd:string .
+	rdfs:subClassOf :ONS_0000033 .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0003940
 
@@ -1031,37 +983,31 @@ efo:EFO_0003940 a owl:Class ;
 # http://www.ebi.ac.uk/efo/EFO_0004318
 
 efo:EFO_0004318 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 ;
-	oboInOwl:id "SMOKE_ST"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0004338
 
 efo:EFO_0004338 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "WEIGHT"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0004339
 
 efo:EFO_0004339 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "HEIGHT"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0004342
 
 efo:EFO_0004342 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "Waist_C"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0005093
 
 efo:EFO_0005093 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 , :Subject_tab ;
-	oboInOwl:id "Hip_C"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 , :Subject_tab .
 # 
 # http://www.ebi.ac.uk/efo/EFO_0006525
 
 efo:EFO_0006525 a owl:Class ;
-	rdfs:subClassOf :ONS_0000034 ;
-	oboInOwl:id "CURR_NCIG"^^xsd:string .
+	rdfs:subClassOf :ONS_0000034 .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
