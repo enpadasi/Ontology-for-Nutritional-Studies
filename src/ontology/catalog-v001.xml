@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/" uri="file:/home/svito/Desktop/ONS_struttura.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl#" uri="file:/home/svito/Desktop/ONS_struttura.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/svito/ontologies/2016/6/untitled-ontology-86" uri="file:/home/svito/Desktop/Structure_ons.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl" uri="ontofox1.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/9h5mjuwd.owl" uri="file:/home/svito/Desktop/GitHub/ONS/integration_from_EFO.owl"/>
