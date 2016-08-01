@@ -71,6 +71,9 @@
         <Class IRI="ONS_0000030"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ASSAY"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000042"/>
     </Declaration>
     <Declaration>
@@ -81,6 +84,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000066"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPrevalentDisease"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasTimeUnit"/>
@@ -107,16 +113,16 @@
         <Class IRI="CMO_0001407"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000061"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000021"/>
+        <Class IRI="ONS_0000061"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://edamontology.org/data_0970"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000021"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000033"/>
@@ -134,10 +140,10 @@
         <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PATO_0000011"/>
+        <ObjectProperty IRI="hasMassUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMassUnit"/>
+        <Class IRI="PATO_0000011"/>
     </Declaration>
     <Declaration>
         <Class IRI="OBI_0000272"/>
@@ -167,13 +173,10 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000319"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ONS_0000020"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000032"/>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000044"/>
@@ -192,6 +195,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SUBJECT"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
@@ -371,10 +377,13 @@
         <Class IRI="ONS_0000064"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000012"/>
+        <Class IRI="DISEASE"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000012"/>
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000003"/>
@@ -473,7 +482,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="HP_0003119"/>
-        <Class IRI="ONS_0000032"/>
+        <Class IRI="DISEASE"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ICO_0000069"/>
@@ -676,12 +685,8 @@
         <Class IRI="ONS_0000052"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ONS_0000032"/>
-        <Class IRI="ONS_0000067"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="ONS_0000033"/>
-        <Class IRI="ONS_0000067"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000034"/>
@@ -785,7 +790,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000051"/>
-        <Class IRI="ONS_0000067"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000051"/>
@@ -793,7 +798,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000052"/>
-        <Class IRI="ONS_0000067"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000053"/>
@@ -813,19 +818,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000057"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000058"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000059"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000060"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000061"/>
@@ -1061,11 +1066,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000319"/>
-        <Class IRI="ONS_0000032"/>
+        <Class IRI="DISEASE"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000400"/>
-        <Class IRI="ONS_0000032"/>
+        <Class IRI="DISEASE"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
@@ -1073,7 +1078,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
-        <Class IRI="ONS_0000032"/>
+        <Class IRI="DISEASE"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
@@ -1173,6 +1178,10 @@
         <Class abbreviatedIRI="efo:EFO_0004338"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrevalentDisease"/>
+        <Class IRI="SUBJECT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasTimeUnit"/>
         <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
     </ObjectPropertyDomain>
@@ -1188,9 +1197,17 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="OBI_0000070"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
+        <Class IRI="SUBJECT"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMassUnit"/>
         <Class IRI="UO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrevalentDisease"/>
+        <Class IRI="DISEASE"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasTimeUnit"/>
@@ -1204,6 +1221,39 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="OBI_0000272"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
+        <Class IRI="ONS_0000034"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
+        <Class IRI="ONS_0000054"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>ASSAY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the ASSAYs performed dureing the STUDY on SAMPLES taken from the SUBJECTs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>DISEASE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the information relative to the disease that a SUBJECT has</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>DISEASE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>DISEASE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DISEASE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DISEASE</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>ONS_0000001</IRI>
@@ -1820,26 +1870,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <IRI>ONS_0000032</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information on the disease that the subject has at the moment of questionnaire/blood analytics. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <IRI>ONS_0000032</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <IRI>ONS_0000032</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ONS_0000032</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prevalent disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>ONS_0000033</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of collecting information on the diet/eating habits of a subject using a questionnaire. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2359,6 +2389,16 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>SUBJECT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A subject is an individual that is being investigated during a STUDY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>SUBJECT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>hasMassUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation wich connects a measured mass entity with its unit of measure</Literal>
@@ -2367,6 +2407,16 @@
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
         <IRI>hasMassUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>hasPrevalentDisease</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property relating a subject to the disease/s that the subject has at the moment of questionnaire/blood analytics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>hasPrevalentDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
