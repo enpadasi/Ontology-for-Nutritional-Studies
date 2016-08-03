@@ -32,6 +32,9 @@
         <Class IRI="ONS_0000031"/>
     </Declaration>
     <Declaration>
+        <Class IRI="PROTOCOL"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000043"/>
     </Declaration>
     <Declaration>
@@ -41,7 +44,13 @@
         <Class IRI="ONS_0000067"/>
     </Declaration>
     <Declaration>
+        <Class IRI="QUESTION"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004318"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="STUDY"/>
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000002"/>
@@ -86,6 +95,9 @@
         <Class IRI="ONS_0000066"/>
     </Declaration>
     <Declaration>
+        <Class IRI="EVENT"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasPrevalentDisease"/>
     </Declaration>
     <Declaration>
@@ -113,10 +125,13 @@
         <Class IRI="CMO_0001407"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ONS_0000061"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000061"/>
+        <Class IRI="TREATMENT"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://edamontology.org/data_0970"/>
@@ -126,6 +141,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="START_GROUP"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000045"/>
@@ -218,31 +236,34 @@
         <Class IRI="ONS_0000005"/>
     </Declaration>
     <Declaration>
-        <Class IRI="challenge"/>
+        <Class IRI="ONS_0000017"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000017"/>
+        <Class IRI="challenge"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000051"/>
+        <Class abbreviatedIRI="efo:EFO_0000433"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="BFO_0000050"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000433"/>
+        <Class IRI="CHEBI_50733"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CHEBI_50733"/>
+        <Class IRI="ONS_0000051"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000063"/>
     </Declaration>
     <Declaration>
         <Class IRI="AERO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SAMPLING"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
@@ -323,10 +344,10 @@
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000105"/>
+        <Class IRI="ONS_0000041"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000041"/>
+        <Class IRI="CMO_0000105"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000053"/>
@@ -339,6 +360,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isMassUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SUBJECT_INFORMATION"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
@@ -356,19 +380,19 @@
         <Class IRI="ONS_0000014"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000026"/>
+        <Class IRI="CMO_0000052"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000052"/>
+        <Class IRI="ONS_0000026"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000038"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000400"/>
+        <Class IRI="ONS_0000040"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000040"/>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000052"/>
@@ -401,6 +425,9 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000669"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasInfo"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0003939"/>
     </Declaration>
     <Declaration>
@@ -413,10 +440,10 @@
         <Class IRI="ONS_0000037"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000049"/>
+        <Class IRI="CMO_0000053"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000053"/>
+        <Class IRI="ONS_0000049"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_001014"/>
@@ -531,10 +558,6 @@
     <SubClassOf>
         <Class IRI="OBI_0000272"/>
         <Class IRI="ONS_0000060"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="OBI_0000630"/>
-        <Class IRI="ONS_0000067"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="OBI_0000984"/>
@@ -690,7 +713,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000034"/>
-        <Class IRI="ONS_0000067"/>
+        <Class IRI="SUBJECT_INFORMATION"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000035"/>
@@ -802,11 +825,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000053"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="STUDY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000054"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="SUBJECT_INFORMATION"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000055"/>
@@ -1097,10 +1120,6 @@
         <Class IRI="ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="efo:EFO_0003940"/>
-        <Class IRI="ONS_0000067"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004318"/>
         <Class IRI="ONS_0000034"/>
     </SubClassOf>
@@ -1174,12 +1193,23 @@
         <ObjectProperty IRI="BFO_0000050"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInfo"/>
+        <Class IRI="SUBJECT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMassUnit"/>
         <Class abbreviatedIRI="efo:EFO_0004338"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasPrevalentDisease"/>
         <Class IRI="SUBJECT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrevalentDisease"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="SUBJECT"/>
+        </ObjectMinCardinality>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasTimeUnit"/>
@@ -1201,6 +1231,10 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="SUBJECT"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInfo"/>
+        <Class IRI="SUBJECT_INFORMATION"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMassUnit"/>
         <Class IRI="UO_0000002"/>
@@ -2389,6 +2423,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>ONS_0000067</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class was in the initial organization of the ontology, and refers to all the variables in the file &quot;variable catalogue&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
         <IRI>SUBJECT</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A subject is an individual that is being investigated during a STUDY</Literal>
@@ -2397,6 +2436,11 @@
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
         <IRI>SUBJECT</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>SUBJECT_INFORMATION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the SUBJECT INFORMATION on the SUBJECT of the STUDY</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
