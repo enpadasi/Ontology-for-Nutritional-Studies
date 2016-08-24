@@ -20,7 +20,7 @@
     <Prefix name="uberon" IRI="http://purl.obolibrary.org/obo/uberon#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
-    <Import>https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl</Import>
+    <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
@@ -107,16 +107,16 @@
         <Class IRI="CMO_0001407"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000061"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000021"/>
+        <Class IRI="ONS_0000061"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://edamontology.org/data_0970"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000021"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000033"/>
@@ -134,10 +134,10 @@
         <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PATO_0000011"/>
+        <ObjectProperty IRI="hasMassUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMassUnit"/>
+        <Class IRI="PATO_0000011"/>
     </Declaration>
     <Declaration>
         <Class IRI="OBI_0000272"/>
@@ -167,10 +167,10 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000319"/>
+        <Class IRI="ONS_0000020"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000020"/>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000032"/>
@@ -371,10 +371,10 @@
         <Class IRI="ONS_0000064"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000012"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+        <Class IRI="ONS_0000012"/>
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000003"/>
