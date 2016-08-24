@@ -42,9 +42,6 @@
         <Class IRI="ONS_0000055"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000067"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="QUESTION"/>
     </Declaration>
     <Declaration>
@@ -61,6 +58,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0006525"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ONS_0000005"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
@@ -93,13 +93,13 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000085"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000066"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="EVENT"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPrevalentDisease"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ONS_0000022"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasTimeUnit"/>
@@ -324,13 +324,22 @@
         <Class abbreviatedIRI="efo:EFO_0004342"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="ONS_0000014"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000035"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000047"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="ONS_0000030"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Other"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000007"/>
@@ -483,6 +492,14 @@
     <SubClassOf>
         <Class IRI="AERO_0000009"/>
         <Class IRI="ONS_0000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BFO_0000002"/>
+        <Class IRI="Other"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BFO_0000003"/>
+        <Class IRI="Other"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="CHEBI_50733"/>
@@ -834,11 +851,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000055"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="EVENT"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000056"/>
-        <Class IRI="ONS_0000066"/>
+        <Class IRI="SAMPLING"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ONS_0000057"/>
@@ -1160,6 +1177,10 @@
         <Class abbreviatedIRI="efo:EFO_0006525"/>
         <Class IRI="ONS_0000034"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="oboInOwl:ObsoleteClass"/>
+        <Class IRI="Other"/>
+    </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMassUnit"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1195,7 +1216,10 @@
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasInfo"/>
-        <Class IRI="SUBJECT"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="hasInfo"/>
+            <Class IRI="SUBJECT"/>
+        </ObjectMaxCardinality>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMassUnit"/>
@@ -1203,12 +1227,8 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasPrevalentDisease"/>
-        <Class IRI="SUBJECT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasPrevalentDisease"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <ObjectProperty IRI="hasPrevalentDisease"/>
             <Class IRI="SUBJECT"/>
         </ObjectMinCardinality>
     </ObjectPropertyDomain>
@@ -1234,7 +1254,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInfo"/>
-        <Class IRI="SUBJECT_INFORMATION"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPrevalentDisease"/>
+            <Class IRI="SUBJECT_INFORMATION"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMassUnit"/>
@@ -1242,7 +1265,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPrevalentDisease"/>
-        <Class IRI="DISEASE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPrevalentDisease"/>
+            <Class IRI="DISEASE"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasTimeUnit"/>
@@ -1264,10 +1290,42 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="ONS_0000054"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000005"/>
+        <Class IRI="ONS_0000051"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000014"/>
+        <Class IRI="ONS_0000051"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000022"/>
+        <Class IRI="ONS_0000033"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000030"/>
+        <Class IRI="ONS_0000052"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000005"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000014"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000022"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000030"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>ASSAY</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the ASSAYs performed dureing the STUDY on SAMPLES taken from the SUBJECTs</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the ASSAYs performed during the STUDY on SAMPLES taken from the SUBJECTs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -2405,28 +2463,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <IRI>ONS_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ANYSTUDY TEMPLATE. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <IRI>ONS_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <IRI>ONS_0000067</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DataSHIELD CASESTUDY TEMPLATE. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <IRI>ONS_0000067</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
-        <IRI>ONS_0000067</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class was in the initial organization of the ontology, and refers to all the variables in the file &quot;variable catalogue&quot;</Literal>
+        <IRI>Other</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Class contain9ng all the various classess hat were imported wirh external ontologies, such as those imported with RO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
@@ -2442,6 +2480,21 @@
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>SUBJECT_INFORMATION</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the SUBJECT INFORMATION on the SUBJECT of the STUDY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>hasInfo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation connecting an entity a and an entity b, such as b holds some informations on a. For example, a study subject (a) has some information in the subject information class (b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>hasInfo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasInfo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Has information on</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
