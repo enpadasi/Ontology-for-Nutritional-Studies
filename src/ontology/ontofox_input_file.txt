@@ -1,7 +1,7 @@
 ##### Import terms from PATO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 PATO
@@ -16,7 +16,7 @@ includeAllAxiomsRecursively
 ##### Import terms from EFO Ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 EFO
@@ -44,7 +44,7 @@ includeAllAxiomsRecursively
 ##### Import terms from CMO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 CMO
@@ -62,7 +62,7 @@ includeAllAxiomsRecursively
 ##### Import terms from HP ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 HP
@@ -77,7 +77,7 @@ includeAllAxiomsRecursively
 ##### Import terms from OBI ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 OBI
@@ -98,7 +98,7 @@ includeAllAxiomsRecursively
 ##### Import terms from SIO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 SIO
@@ -137,7 +137,7 @@ includeAllAxiomsRecursively
 ##### Import terms from ICO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 ICO
@@ -152,7 +152,7 @@ includeAllAxiomsRecursively
 ##### Import terms from OMRSE ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 OMRSE
@@ -166,7 +166,7 @@ includeAllAxiomsRecursively
 ##### Import terms from OMIABIS ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 OMIABIS
@@ -181,7 +181,7 @@ includeAllAxiomsRecursively
 ##### Import terms from OBCS ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 OBCS
@@ -195,7 +195,7 @@ includeAllAxiomsRecursively
 ##### Import terms from NCBITaxon ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 NCBITaxon
@@ -209,7 +209,7 @@ includeAllAxiomsRecursively
 ##### Import terms from AERO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 AERO
@@ -223,7 +223,7 @@ includeAllAxiomsRecursively
 ##### Import terms from CHEBI ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 CHEBI
@@ -237,7 +237,7 @@ includeAllAxiomsRecursively
 ##### Import terms from UO ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 UO
@@ -259,7 +259,7 @@ includeAllAxiomsRecursively
 ##### Import terms from OCRe ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 OCRe
@@ -275,7 +275,7 @@ includeAllAxiomsRecursively
 ##### Import terms from EDAM ontology ######
 
 [URI of the OWL(RDF/XML) output file]
-https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/tree/master/src/ontology/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
 
 [Source ontology]
 EDAM
