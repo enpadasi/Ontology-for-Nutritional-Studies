@@ -21,6 +21,7 @@
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
@@ -29,10 +30,10 @@
         <Class IRI="HP_0003119"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000031"/>
+        <Class IRI="PROTOCOL"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PROTOCOL"/>
+        <Class IRI="ONS_0000031"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000043"/>
@@ -116,10 +117,10 @@
         <Class IRI="ONS_0000039"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000051"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+        <Class IRI="CMO_0000051"/>
     </Declaration>
     <Declaration>
         <Class IRI="CMO_0001407"/>
@@ -140,10 +141,10 @@
         <Class IRI="ONS_0000021"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000033"/>
+        <Class IRI="START_GROUP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="START_GROUP"/>
+        <Class IRI="ONS_0000033"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000045"/>
@@ -158,10 +159,10 @@
         <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMassUnit"/>
+        <Class IRI="PATO_0000011"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PATO_0000011"/>
+        <ObjectProperty IRI="hasMassUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="OBI_0000272"/>
@@ -197,10 +198,10 @@
         <Class abbreviatedIRI="efo:EFO_0000319"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000044"/>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+        <Class IRI="ONS_0000044"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000056"/>
@@ -209,13 +210,13 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000964"/>
     </Declaration>
     <Declaration>
+        <Class IRI="SUBJECT"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SUBJECT"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
@@ -236,13 +237,16 @@
         <Class IRI="ONS_0000005"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000017"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="challenge"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ONS_0000017"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000051"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
@@ -254,16 +258,13 @@
         <Class IRI="CHEBI_50733"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000051"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ONS_0000063"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AERO_0000009"/>
+        <Class IRI="SAMPLING"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SAMPLING"/>
+        <Class IRI="AERO_0000009"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
@@ -344,10 +345,10 @@
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000041"/>
+        <Class IRI="CMO_0000105"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000105"/>
+        <Class IRI="ONS_0000041"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000053"/>
@@ -362,10 +363,10 @@
         <ObjectProperty IRI="isMassUnitOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SUBJECT_INFORMATION"/>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <Class IRI="SUBJECT_INFORMATION"/>
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000032"/>
