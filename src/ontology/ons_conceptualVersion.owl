@@ -21,7 +21,7 @@
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl</Import>
-    <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
+    <Import>https://raw.githubusercontent.com/oborel/obo-relations/master/core.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
