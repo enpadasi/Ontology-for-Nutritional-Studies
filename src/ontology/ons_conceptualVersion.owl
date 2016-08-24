@@ -117,10 +117,10 @@
         <Class IRI="ONS_0000039"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+        <Class IRI="CMO_0000051"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000051"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
     </Declaration>
     <Declaration>
         <Class IRI="CMO_0001407"/>
@@ -210,13 +210,13 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000964"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SUBJECT"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SUBJECT"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
@@ -280,6 +280,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004338"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isComposedOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="medication_supplement_diet_use"/>
@@ -388,6 +391,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000014"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAppliedTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="CMO_0000052"/>
@@ -1241,6 +1247,14 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAppliedTo"/>
+        <Class IRI="STUDY"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isComposedOf"/>
+        <Class IRI="START_GROUP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
         <Class IRI="http://edamontology.org/data_0970"/>
     </ObjectPropertyDomain>
@@ -1255,7 +1269,7 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInfo"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasPrevalentDisease"/>
+            <ObjectProperty IRI="hasInfo"/>
             <Class IRI="SUBJECT_INFORMATION"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
@@ -1273,6 +1287,20 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasTimeUnit"/>
         <Class IRI="UO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAppliedTo"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="isAppliedTo"/>
+            <Class IRI="START_GROUP"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isComposedOf"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="isComposedOf"/>
+            <Class IRI="SUBJECT"/>
+        </ObjectMinCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
@@ -2525,6 +2553,36 @@
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
         <IRI>hasTimeUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>isAppliedTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation connecting an entity a to another entity b, such as a is applied to b. For example, a STUDY (a) is applied to a STARTING GROUP (b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>isAppliedTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isAppliedTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Is applied to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>isComposedOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation connecting an entity a to another entity b, such as a is composed of b. For example, a STARTING GROUP (a) is composed of one or many SUBJECTS (b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>isComposedOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isComposedOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Is composed of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
