@@ -30,10 +30,10 @@
         <Class IRI="HP_0003119"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PROTOCOL"/>
+        <Class IRI="ONS_0000031"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000031"/>
+        <Class IRI="PROTOCOL"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000043"/>
@@ -42,10 +42,10 @@
         <Class IRI="ONS_0000055"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0004318"/>
+        <Class IRI="QUESTION"/>
     </Declaration>
     <Declaration>
-        <Class IRI="QUESTION"/>
+        <Class abbreviatedIRI="efo:EFO_0004318"/>
     </Declaration>
     <Declaration>
         <Class IRI="STUDY"/>
@@ -57,10 +57,10 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000115"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0006525"/>
+        <DataProperty IRI="ONS_0000005"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="ONS_0000005"/>
+        <Class abbreviatedIRI="efo:EFO_0006525"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
@@ -111,16 +111,19 @@
         <Class IRI="ONS_0000015"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="ONS_0000050"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000027"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000039"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000051"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+        <Class IRI="CMO_0000051"/>
     </Declaration>
     <Declaration>
         <Class IRI="CMO_0001407"/>
@@ -135,10 +138,10 @@
         <Class IRI="TREATMENT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000021"/>
+        <Class IRI="http://edamontology.org/data_0970"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://edamontology.org/data_0970"/>
+        <Class IRI="ONS_0000021"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000033"/>
@@ -159,10 +162,10 @@
         <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PATO_0000011"/>
+        <ObjectProperty IRI="hasMassUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMassUnit"/>
+        <Class IRI="PATO_0000011"/>
     </Declaration>
     <Declaration>
         <Class IRI="OBI_0000272"/>
@@ -237,28 +240,28 @@
         <Class IRI="ONS_0000005"/>
     </Declaration>
     <Declaration>
-        <Class IRI="challenge"/>
+        <Class IRI="ONS_0000017"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000017"/>
+        <Class IRI="challenge"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CHEBI_50733"/>
+        <Class IRI="ONS_0000051"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000051"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="BFO_0000050"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isProposedTo"/>
+        <Class IRI="CHEBI_50733"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000063"/>
     </Declaration>
     <Declaration>
         <Class IRI="SAMPLING"/>
@@ -267,7 +270,7 @@
         <Class IRI="AERO_0000009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000063"/>
+        <ObjectProperty IRI="isProposedTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
@@ -279,10 +282,10 @@
         <Class IRI="ONS_0000023"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0004338"/>
+        <Class IRI="UO_0000034"/>
     </Declaration>
     <Declaration>
-        <Class IRI="UO_0000034"/>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="documentedBy"/>
@@ -330,10 +333,13 @@
         <Class IRI="UO_0000021"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="isAskedTo"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004342"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isAskedTo"/>
+        <DataProperty IRI="ONS_0000002"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="ONS_0000014"/>
@@ -342,10 +348,10 @@
         <Class IRI="ONS_0000035"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000047"/>
+        <DataProperty IRI="ONS_0000030"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="ONS_0000030"/>
+        <Class IRI="ONS_0000047"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000059"/>
@@ -366,10 +372,10 @@
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000105"/>
+        <Class IRI="ONS_0000041"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000041"/>
+        <Class IRI="CMO_0000105"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000053"/>
@@ -399,10 +405,10 @@
         <Class IRI="ONS_0000002"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isAppliedTo"/>
+        <Class IRI="ONS_0000014"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000014"/>
+        <ObjectProperty IRI="isAppliedTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000026"/>
@@ -468,13 +474,13 @@
         <Class IRI="ONS_0000037"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000049"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="CMO_0000053"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="refersTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000049"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_001014"/>
@@ -493,6 +499,10 @@
     <EquivalentClasses>
         <Class IRI="ONS_0000051"/>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="TREATMENT"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://edamontology.org/data_0970"/>
@@ -1202,6 +1212,10 @@
         <Class abbreviatedIRI="oboInOwl:ObsoleteClass"/>
         <Class IRI="Other"/>
     </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="refersTo"/>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000628"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMassUnit"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1235,6 +1249,10 @@
     <TransitiveObjectProperty>
         <ObjectProperty IRI="BFO_0000050"/>
     </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="RO_0000058"/>
+        <Class IRI="OBI_0000272"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="documentedBy"/>
         <Class IRI="EVENT"/>
@@ -1314,6 +1332,10 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="SUBJECT"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="RO_0000058"/>
+        <Class IRI="OBI_0000070"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="documentedBy"/>
         <Class IRI="SAMPLING"/>
@@ -1399,6 +1421,10 @@
         <Class IRI="ONS_0000054"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000002"/>
+        <Class IRI="SUBJECT_INFORMATION"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="ONS_0000005"/>
         <Class IRI="ONS_0000051"/>
     </DataPropertyDomain>
@@ -1414,6 +1440,14 @@
         <DataProperty IRI="ONS_0000030"/>
         <Class IRI="ONS_0000052"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ONS_0000050"/>
+        <Class IRI="ONS_0000055"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000002"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="ONS_0000005"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
@@ -1428,6 +1462,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="ONS_0000030"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ONS_0000050"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <AnnotationAssertion>
@@ -1489,27 +1527,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ONS_0000002</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <IRI>ONS_0000003</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">School education (years of school education)
-1= less than 12 years      2= 12 or more years</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <IRI>ONS_0000003</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <IRI>ONS_0000003</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ONS_0000003</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Education</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
