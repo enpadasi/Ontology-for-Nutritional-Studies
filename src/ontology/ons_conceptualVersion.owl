@@ -42,10 +42,10 @@
         <Class IRI="ONS_0000055"/>
     </Declaration>
     <Declaration>
-        <Class IRI="QUESTION"/>
+        <Class abbreviatedIRI="efo:EFO_0004318"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0004318"/>
+        <Class IRI="QUESTION"/>
     </Declaration>
     <Declaration>
         <Class IRI="STUDY"/>
@@ -78,10 +78,10 @@
         <Class IRI="UO_0000009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000030"/>
+        <Class IRI="ASSAY"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ASSAY"/>
+        <Class IRI="ONS_0000030"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000042"/>
@@ -126,25 +126,25 @@
         <Class IRI="CMO_0001407"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000061"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
+        <Class IRI="ONS_0000061"/>
     </Declaration>
     <Declaration>
         <Class IRI="TREATMENT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://edamontology.org/data_0970"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ONS_0000021"/>
     </Declaration>
     <Declaration>
-        <Class IRI="START_GROUP"/>
+        <Class IRI="http://edamontology.org/data_0970"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="START_GROUP"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000045"/>
@@ -192,10 +192,10 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000136"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000020"/>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000319"/>
+        <Class IRI="ONS_0000020"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
@@ -210,13 +210,13 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000964"/>
     </Declaration>
     <Declaration>
+        <Class IRI="SUBJECT"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SUBJECT"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
@@ -246,25 +246,28 @@
         <Class IRI="ONS_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000051"/>
+        <Class IRI="CHEBI_50733"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ONS_0000051"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="BFO_0000050"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CHEBI_50733"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ONS_0000063"/>
+        <ObjectProperty IRI="isProposedTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="SAMPLING"/>
     </Declaration>
     <Declaration>
         <Class IRI="AERO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ONS_0000063"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_000664"/>
@@ -276,10 +279,13 @@
         <Class IRI="ONS_0000023"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="UO_0000034"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0004338"/>
+        <ObjectProperty IRI="documentedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isComposedOf"/>
@@ -325,6 +331,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004342"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAskedTo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="ONS_0000014"/>
@@ -390,25 +399,28 @@
         <Class IRI="ONS_0000002"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000014"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="isAppliedTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CMO_0000052"/>
+        <Class IRI="ONS_0000014"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000026"/>
     </Declaration>
     <Declaration>
+        <Class IRI="CMO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="implements"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000038"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000040"/>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000400"/>
+        <Class IRI="ONS_0000040"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000052"/>
@@ -420,10 +432,10 @@
         <Class IRI="DISEASE"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+        <Class IRI="ONS_0000012"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000012"/>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000003"/>
@@ -456,10 +468,13 @@
         <Class IRI="ONS_0000037"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ONS_0000049"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="CMO_0000053"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ONS_0000049"/>
+        <ObjectProperty IRI="refersTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://semanticscience.org/resource/SIO_001014"/>
@@ -1221,6 +1236,14 @@
         <ObjectProperty IRI="BFO_0000050"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="documentedBy"/>
+        <Class IRI="EVENT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="documentedBy"/>
+        <Class IRI="QUESTION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasInfo"/>
         <ObjectMaxCardinality cardinality="1">
             <ObjectProperty IRI="hasInfo"/>
@@ -1247,12 +1270,37 @@
         <Class IRI="http://semanticscience.org/resource/SIO_000670"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="implements"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="implements"/>
+            <Class IRI="EVENT"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="isAppliedTo"/>
         <Class IRI="STUDY"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAskedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isAskedTo"/>
+            <Class IRI="QUESTION"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="isComposedOf"/>
         <Class IRI="START_GROUP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isProposedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isProposedTo"/>
+            <Class IRI="EVENT"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="refersTo"/>
+        <Class IRI="SAMPLING"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
@@ -1266,6 +1314,10 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="SUBJECT"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="documentedBy"/>
+        <Class IRI="SAMPLING"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInfo"/>
         <ObjectSomeValuesFrom>
@@ -1289,6 +1341,13 @@
         <Class IRI="UO_0000003"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="implements"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="implements"/>
+            <Class IRI="TREATMENT"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="isAppliedTo"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="isAppliedTo"/>
@@ -1296,11 +1355,32 @@
         </ObjectMinCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="isAskedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isAskedTo"/>
+            <Class IRI="START_GROUP"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="isComposedOf"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="isComposedOf"/>
             <Class IRI="SUBJECT"/>
         </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isProposedTo"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isAskedTo"/>
+            <Class IRI="START_GROUP"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="refersTo"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="refersTo"/>
+            <Class IRI="SUBJECT"/>
+        </ObjectExactCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
