@@ -41,6 +41,9 @@
         <Class IRI="ONS_0000055"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="appliedTo"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="QUESTION"/>
     </Declaration>
     <Declaration>
@@ -62,6 +65,12 @@
         <Class abbreviatedIRI="efo:EFO_0006525"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BFO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oboInOwl:ObsoleteClass"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
     </Declaration>
     <Declaration>
@@ -81,6 +90,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000030"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="RO_0000058"/>
     </Declaration>
     <Declaration>
         <Class IRI="ONS_0000042"/>
@@ -248,6 +260,9 @@
         <Class IRI="ONS_0000029"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BFO_0000002"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ONS_0000051"/>
     </Declaration>
     <Declaration>
@@ -330,6 +345,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="UO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="forcedUpon"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isAskedTo"/>
@@ -487,18 +505,6 @@
     <Declaration>
         <Class IRI="ONS_0000009"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="BFO_0000003"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="BFO_0000002"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="RO_0000058"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="oboInOwl:ObsoleteClass"/>
-    </Declaration>
     <EquivalentClasses>
         <Class IRI="OBI_0000630"/>
         <Class IRI="ONS_0000052"/>
@@ -618,6 +624,10 @@
     <SubClassOf>
         <Class IRI="OBI_0000272"/>
         <Class IRI="ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OBI_0000630"/>
+        <Class IRI="ASSAY"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="OBI_0000984"/>
@@ -1180,6 +1190,10 @@
         <Class IRI="ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+        <Class IRI="ONS_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004318"/>
         <Class IRI="ONS_0000034"/>
     </SubClassOf>
@@ -1224,9 +1238,17 @@
         <Class IRI="Other"/>
     </SubClassOf>
     <EquivalentObjectProperties>
+        <ObjectProperty IRI="forcedUpon"/>
+        <ObjectProperty IRI="isProposedTo"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
         <ObjectProperty IRI="refersTo"/>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000628"/>
     </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="forcedUpon"/>
+        <ObjectProperty IRI="isProposedTo"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMassUnit"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1265,6 +1287,10 @@
         <Class IRI="OBI_0000272"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="appliedTo"/>
+        <Class IRI="STUDY"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="documentedBy"/>
         <Class IRI="EVENT"/>
     </ObjectPropertyDomain>
@@ -1274,10 +1300,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasInfo"/>
-        <ObjectMaxCardinality cardinality="1">
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="hasInfo"/>
-            <Class IRI="SUBJECT"/>
-        </ObjectMaxCardinality>
+            <Class IRI="SUBJECT_INFORMATION"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMassUnit"/>
@@ -1307,7 +1333,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isAppliedTo"/>
-        <Class IRI="STUDY"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isAppliedTo"/>
+            <Class IRI="STUDY"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isAskedTo"/>
@@ -1329,7 +1358,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="refersTo"/>
-        <Class IRI="SAMPLING"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="refersTo"/>
+            <Class IRI="SAMPLING"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000212"/>
@@ -1343,20 +1375,37 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="SUBJECT"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+            <Class IRI="STUDY"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="RO_0000058"/>
         <Class IRI="OBI_0000070"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="appliedTo"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isAppliedTo"/>
+            <Class IRI="START_GROUP"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="documentedBy"/>
-        <Class IRI="SAMPLING"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="documentedBy"/>
+            <Class IRI="SAMPLING"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInfo"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="hasInfo"/>
-            <Class IRI="SUBJECT_INFORMATION"/>
-        </ObjectSomeValuesFrom>
+            <Class IRI="SUBJECT"/>
+        </ObjectExactCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMassUnit"/>
@@ -1431,6 +1480,13 @@
         <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000557"/>
         <Class IRI="ONS_0000054"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+            <Class IRI="SUBJECT"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="ONS_0000002"/>
         <Class IRI="SUBJECT_INFORMATION"/>
@@ -1482,7 +1538,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>ASSAY</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the ASSAYs performed during the STUDY on SAMPLES taken from the SUBJECTs</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any specific information retrieval from samples, including biological sampole analyses, &quot;omics&quot; analyses and retrieval of specific information from whole body measurements, interviews atc. This class collects the assays performed during the STUDY on SAMPLINGS taken from the SUBJECTS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>ASSAY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>ASSAY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ASSAY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ASSAY</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -1503,6 +1574,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DISEASE</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DISEASE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>EVENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An event is any change &quot;forced&quot; upon a subject, such as a treatment or challange.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>EVENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>EVENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EVENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EVENT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -2600,12 +2691,112 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>Other</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Class contain9ng all the various classess hat were imported wirh external ontologies, such as those imported with RO</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Class containing various classess hat were imported wirh external ontologies, such as those imported with RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>PROTOCOL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A set of rules that describe a method to be used in a clinical trial (e.g. of a drug or medical treatment) or a medical research study</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>PROTOCOL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>PROTOCOL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PROTOCOL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PROTOCOL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>QUESTION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any request of information needed by the study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>QUESTION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>QUESTION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>QUESTION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QUESTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>SAMPLING</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any collection of data-containing material from a volunteer, including body fluids, whole-body samplinbg, interviews, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>SAMPLING</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>SAMPLING</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SAMPLING</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SAMPLING</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>START_GROUP</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A group of subjects that is involved in a study.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>START_GROUP</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>START_GROUP</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>START_GROUP</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">START_GROUP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>STUDY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An investigation aimed to determine if observed factors are associated with health effects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>STUDY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP_4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>STUDY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>STUDY</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STUDY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>SUBJECT</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A subject is an individual that is being investigated during a STUDY</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An individual that is being investigated during a study.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
@@ -2613,9 +2804,54 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>SUBJECT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SUBJECT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SUBJECT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>SUBJECT_INFORMATION</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the SUBJECT INFORMATION on the SUBJECT of the STUDY</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Collects al the information (e.g. antropometric measurement) available on the subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>SUBJECT_INFORMATION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>SUBJECT_INFORMATION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SUBJECT_INFORMATION</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SUBJECT_INFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>TREATMENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any treatment that is implemented by an event that is forced upon a subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <IRI>TREATMENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <IRI>TREATMENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TREATMENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TREATMENT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
