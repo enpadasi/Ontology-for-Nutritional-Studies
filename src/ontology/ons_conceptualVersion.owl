@@ -92,9 +92,6 @@
         <Class IRI="ONS_0000030"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="RO_0000058"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ONS_0000042"/>
     </Declaration>
     <Declaration>
@@ -267,9 +264,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="BFO_0000050"/>
     </Declaration>
     <Declaration>
         <Class IRI="CHEBI_50733"/>
@@ -1279,13 +1273,6 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="hasTimeUnit"/>
     </FunctionalObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="BFO_0000050"/>
-    </TransitiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="RO_0000058"/>
-        <Class IRI="OBI_0000272"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="appliedTo"/>
         <Class IRI="STUDY"/>
@@ -1382,10 +1369,6 @@
             <Class IRI="STUDY"/>
         </ObjectMinCardinality>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="RO_0000058"/>
-        <Class IRI="OBI_0000070"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="appliedTo"/>
         <ObjectExactCardinality cardinality="1">
