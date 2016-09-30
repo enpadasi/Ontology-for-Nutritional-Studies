@@ -5,6 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="efo" IRI="http://www.ebi.ac.uk/efo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
