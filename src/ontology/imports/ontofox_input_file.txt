@@ -1,8 +1,4 @@
 ##### Import terms from PATO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 PATO
 
@@ -11,13 +7,9 @@ http://purl.obolibrary.org/obo/PATO_0000011
 http://purl.obolibrary.org/obo/PATO_0000047
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from EFO Ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 EFO
 
@@ -39,13 +31,9 @@ http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from CMO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 CMO
 
@@ -57,13 +45,9 @@ http://purl.obolibrary.org/obo/CMO_0000051
 http://purl.obolibrary.org/obo/CMO_0000105
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from HP ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 HP
 
@@ -72,13 +56,9 @@ http://purl.obolibrary.org/obo/HP_0003119
 
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from OBI ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 OBI
 
@@ -93,13 +73,9 @@ http://purl.obolibrary.org/obo/OBI_0000094
 
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from SIO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 SIO
 
@@ -132,13 +108,9 @@ http://semanticscience.org/resource/SIO_000964
 http://semanticscience.org/resource/SIO_000085
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from ICO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 ICO
 
@@ -147,13 +119,9 @@ http://purl.obolibrary.org/obo/ICO_0000069
 
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from OMRSE ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 OMRSE
 
@@ -161,13 +129,9 @@ OMRSE
 http://purl.obolibrary.org/obo/OMRSE_00000038
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from OMIABIS ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 OMIABIS
 
@@ -176,13 +140,9 @@ http://purl.obolibrary.org/obo/OMIABIS_0000036
 http://purl.obolibrary.org/obo/OMIABIS_0000037
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from OBCS ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 OBCS
 
@@ -190,13 +150,9 @@ OBCS
 http://purl.obolibrary.org/obo/OBCS_0000089
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from NCBITaxon ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 NCBITaxon
 
@@ -204,13 +160,9 @@ NCBITaxon
 http://purl.obolibrary.org/obo/NCBITaxon_species
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from AERO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 AERO
 
@@ -218,13 +170,9 @@ AERO
 http://purl.obolibrary.org/obo/AERO_0000009
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from CHEBI ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 CHEBI
 
@@ -232,13 +180,9 @@ CHEBI
 http://purl.obolibrary.org/obo/CHEBI_50733
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from UO ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 UO
 
@@ -254,13 +198,9 @@ http://purl.obolibrary.org/obo/UO_0000031
 http://purl.obolibrary.org/obo/UO_0000032
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from OCRe ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 OCRe
 
@@ -270,13 +210,9 @@ http://purl.org/net/OCRe/study_design.owl#OCRE100056
 http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 ##### Import terms from EDAM ontology ######
-
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/ontofox.owl
-
 [Source ontology]
 EDAM
 
@@ -284,6 +220,6 @@ EDAM
 http://edamontology.org/data_0970
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAnnotationProperties
 
 
