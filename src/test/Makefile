@@ -1,7 +1,7 @@
 OBO=http://purl.obolibrary.org/obo
 ONT=ons
 BASE=$(OBO)/$(ONT)
-SRC=$(ONT)-edit.owl
+SRC=$(ONT).owl
 RELEASEDIR=../..
 ROBOT= robot
 OWLTOOLS= owltools
