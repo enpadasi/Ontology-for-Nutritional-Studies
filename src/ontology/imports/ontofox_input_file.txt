@@ -70,6 +70,7 @@ http://purl.obolibrary.org/obo/OBI_0000984
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272
 http://purl.obolibrary.org/obo/OBI_0000094
+http://purl.obolibrary.org/obo/OBI_0000011
 
 
 [Source annotation URIs]
@@ -222,4 +223,29 @@ http://edamontology.org/data_0970
 [Source annotation URIs]
 includeAllAxioms
 
+##### Import terms from OGSM ontology ######
+[Source ontology]
+OGSM
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGMS_0000014
+http://purl.obolibrary.org/obo/OGMS_0000018
+http://purl.obolibrary.org/obo/OGMS_0000093
+http://purl.obolibrary.org/obo/OGMS_0000073
+http://purl.obolibrary.org/obo/OGMS_0000057
+http://purl.obolibrary.org/obo/OGMS_0000056
+
+[Source annotation URIs]
+includeAllAxioms
+
+##### Import terms from IAO ontology ######
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000030
+http://purl.obolibrary.org/obo/IAO_0000027
+
+[Source annotation URIs]
+includeAllAxioms
 
