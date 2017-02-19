@@ -8,9 +8,13 @@ This ontology has been developed as part of the ENPADASI European project (http:
 
 Initial commit: July 12, 2016
 
-### Editors' version
+Versioning:
 
-Editors of this ontology should use the edit version, [src/ontology/ons-edit.owl](src/ontology/ons_edit.owl)
+V2.0: (19/02/2017) 
+*Adoption of BFO ontology as upper level
+*General reformatting of classes and properties
+*Addition/deletion of classes and properties
+
 
 ## Contact
 Please use this GitHub repository's [Issue tracker](https://github.com/FrancescoVit/Ontology-for-Nutritional-Studies/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
