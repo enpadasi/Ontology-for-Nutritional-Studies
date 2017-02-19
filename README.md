@@ -11,9 +11,10 @@ Initial commit: July 12, 2016
 Versioning:
 
 V2.0: (19/02/2017) 
-*Adoption of BFO ontology as upper level
-*General reformatting of classes and properties
-*Addition/deletion of classes and properties
+
+- Adoption of BFO ontology as upper level
+- General reformatting of classes and properties
+- Addition/deletion of classes and properties
 
 
 ## Contact
