@@ -43,6 +43,10 @@
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Version 2.0</Literal>
+    </Annotation>
     <Declaration>
         <Class abbreviatedIRI="obo:OMRSE_00000038"/>
     </Declaration>
@@ -71,10 +75,10 @@
         <Class abbreviatedIRI="obo:QUESTION"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:UO_0000002"/>
+        <Class abbreviatedIRI="obo:STUDY"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:STUDY"/>
+        <Class abbreviatedIRI="obo:UO_0000002"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000115"/>

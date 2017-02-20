@@ -7,7 +7,7 @@ http://purl.obolibrary.org/obo/PATO_0000011
 http://purl.obolibrary.org/obo/PATO_0000047
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from EFO Ontology ######
 [Source ontology]
@@ -31,7 +31,7 @@ http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from CMO ontology ######
 [Source ontology]
@@ -45,7 +45,7 @@ http://purl.obolibrary.org/obo/CMO_0000051
 http://purl.obolibrary.org/obo/CMO_0000105
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from HP ontology ######
 [Source ontology]
@@ -56,7 +56,7 @@ http://purl.obolibrary.org/obo/HP_0003119
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OBI ontology ######
 [Source ontology]
@@ -74,7 +74,7 @@ http://purl.obolibrary.org/obo/OBI_0000011
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from SIO ontology ######
 [Source ontology]
@@ -109,7 +109,7 @@ http://semanticscience.org/resource/SIO_000964
 http://semanticscience.org/resource/SIO_000085
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from ICO ontology ######
 [Source ontology]
@@ -120,7 +120,7 @@ http://purl.obolibrary.org/obo/ICO_0000069
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OMRSE ontology ######
 [Source ontology]
@@ -130,7 +130,7 @@ OMRSE
 http://purl.obolibrary.org/obo/OMRSE_00000038
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OMIABIS ontology ######
 [Source ontology]
@@ -141,7 +141,7 @@ http://purl.obolibrary.org/obo/OMIABIS_0000036
 http://purl.obolibrary.org/obo/OMIABIS_0000037
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OBCS ontology ######
 [Source ontology]
@@ -151,7 +151,7 @@ OBCS
 http://purl.obolibrary.org/obo/OBCS_0000089
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from NCBITaxon ontology ######
 [Source ontology]
@@ -161,7 +161,7 @@ NCBITaxon
 http://purl.obolibrary.org/obo/NCBITaxon_species
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from AERO ontology ######
 [Source ontology]
@@ -171,7 +171,7 @@ AERO
 http://purl.obolibrary.org/obo/AERO_0000009
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from CHEBI ontology ######
 [Source ontology]
@@ -181,7 +181,7 @@ CHEBI
 http://purl.obolibrary.org/obo/CHEBI_50733
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from UO ontology ######
 [Source ontology]
@@ -199,7 +199,7 @@ http://purl.obolibrary.org/obo/UO_0000031
 http://purl.obolibrary.org/obo/UO_0000032
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OCRe ontology ######
 [Source ontology]
@@ -211,7 +211,7 @@ http://purl.org/net/OCRe/study_design.owl#OCRE100056
 http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from EDAM ontology ######
 [Source ontology]
@@ -221,7 +221,7 @@ EDAM
 http://edamontology.org/data_0970
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OGSM ontology ######
 [Source ontology]
@@ -236,7 +236,7 @@ http://purl.obolibrary.org/obo/OGMS_0000057
 http://purl.obolibrary.org/obo/OGMS_0000056
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from IAO ontology ######
 [Source ontology]
@@ -247,5 +247,5 @@ http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000027
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 

@@ -1,0 +1,3924 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="#"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:uo="http://purl.obolibrary.org/obo/uo#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">ONS</rdfs:label>
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/bioportal_provenance -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/appliedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/appliedTo">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/STUDY"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAppliedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/START_GROUP"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/documentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/documentedBy">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/EVENT"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/QUESTION"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/documentedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SAMPLING"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/forcedUpon -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/forcedUpon">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/isProposedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/isProposedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasInfo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/hasInfo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/hasInfo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUBJECT_INFORMATION"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/hasInfo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <efo:definition xml:lang="en">A relation connecting an entity a and an entity b, such as b holds some informations on a. For example, a study subject (a) has some information in the subject information class (b)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Has information on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasMassUnit -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/hasMassUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/isMassUnitOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004338"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+        <efo:definition xml:lang="en">A relation wich connects a measured mass entity with its unit of measure</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasPrevalentDisease -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/hasPrevalentDisease">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/hasPrevalentDisease"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/hasPrevalentDisease"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DISEASE"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <efo:definition xml:lang="en">Property relating a subject to the disease/s that the subject has at the moment of questionnaire/blood analytics.</efo:definition>
+        <efo:definition_editor>ENPADASI_WP4</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hasTimeUnit -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/hasTimeUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/isTimeUnitof"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000669"/>
+        <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000670"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+        <efo:definition xml:lang="en">A relation wich connects a measured temporal entity with its unit of measure</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/implements -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/implements">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/implements"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/EVENT"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/implements"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/TREATMENT"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isAppliedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isAppliedTo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAppliedTo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STUDY"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAppliedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/START_GROUP"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <efo:definition xml:lang="en">Relation connecting an entity a to another entity b, such as a is applied to b. For example, a STUDY (a) is applied to a STARTING GROUP (b)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Is applied to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isAskedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isAskedTo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAskedTo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/QUESTION"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAskedTo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/START_GROUP"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isComposedOf">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/START_GROUP"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isComposedOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <efo:definition xml:lang="en">Relation connecting an entity a to another entity b, such as a is composed of b. For example, a STARTING GROUP (a) is composed of one or many SUBJECTS (b)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Is composed of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isMassUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isMassUnitOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/uo#is_unit_of"/>
+        <efo:definition xml:lang="en">A relation wich connects a measured mass entity with its unit of measure</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isProposedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isProposedTo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isProposedTo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EVENT"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/isAskedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/START_GROUP"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isTimeUnitof -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/isTimeUnitof">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/uo#is_unit_of"/>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/refersTo">
+        <owl:equivalentProperty rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SAMPLING"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/refersTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uo#is_unit_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/uo#is_unit_of"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000212 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000212">
+        <rdfs:domain rdf:resource="http://edamontology.org/data_0970"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000557 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000557">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000628 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000628"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STUDY"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000002 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000002">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SUBJECT_INFORMATION"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000005 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000005">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000014 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000014">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000022 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000022">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000030 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000030">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000050 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONS_0000050">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/data_0970 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ASSAY -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ASSAY">
+        <efo:definition xml:lang="en">A high-level concept. Any specific information retrieval from samples, including biological sampole analyses, &quot;omics&quot; analyses and retrieval of specific information from whole body measurements, interviews atc. This class collects the assays performed during the STUDY on SAMPLINGS taken from the SUBJECTS.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">ASSAY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Other"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medication_supplement_diet_use"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DISEASE -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DISEASE">
+        <efo:definition xml:lang="en">A high-level concept. This class collect the information relative to the disease that a SUBJECT has</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">DISEASE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EVENT -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EVENT">
+        <efo:definition xml:lang="en">A high-level concept. An event is any change &quot;forced&quot; upon a subject, such as a treatment or challange.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">EVENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0003119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0003119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISEASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_species -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_species">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000630">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000984">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001942 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001942">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000001">
+        <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <efo:definition xml:lang="en">Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Participants&apos; identification number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <efo:definition xml:lang="en">For past smokers: time in years since quitting smoking</efo:definition>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Time since quitting smoking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Categories of physical activity level
+1=low; 2= Medium; 3= High</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Categories of physical activity level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Total physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Physical activity from recreational or leisure-time activities by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in light physical activity in minutes/day derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Light physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in moderate physical activity in minutes/day derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Moderate physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in vigorous physical activity in minutes/day derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Vigorous physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Sedentary time by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Number of bouts by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in light physical activity in minutes/day derived from accelerometer data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Light physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in moderate physical activity in minutes/day derived from accelerometer data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Moderate physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent in vigorous physical activity in minutes/day derived from accelerometer data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Vigorous physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Time spent sedentary in minutes/day derived from accelerometer data</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Sedentary time by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Number of bouts of moderate or vigorous physical activity per day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Number of bouts by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000051"/>
+        <efo:definition xml:lang="en">Average minutes per bout of moderate or vigorous physical activity per day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Average duration of bouts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Dietary assessment used for uploaded dietary variables
+1=24-hour recall; 2=FFQ; 3=Food record; 4=other</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Dietary assessment method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Carbohydrate intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Carbohydrate intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Fiber intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Fiber intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Total fat intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Total fat intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Saturated fatty acid intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Saturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Monounsaturated fatty acid intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Monounsaturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Polyunsaturated fatty acid intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Polyunsaturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+        <efo:definition xml:lang="en">Protein intake in g/day</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Protein intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000052"/>
+        <efo:definition xml:lang="en">Fasting status before blood draw (measured in hours of fasting before blood draw) 
+1=less than 9 hours; 2=9 hours or more</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Fasting status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">The process of collecting information on the diet/eating habits of a subject using a questionnaire. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Dietary assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUBJECT_INFORMATION"/>
+        <efo:definition xml:lang="en">Anthropometric and habits information of the subject. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">subject informations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Short study name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">Name of the consortium which the study refers to</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Consortium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">The name of the method used for randomization (OBCS_0000089), if any randomization was adopted.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Randomization method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">Indicate whether blinded experiment were conducted or not</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Blinding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">If blinded experiment were conducted, indicate the method used for blinding</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Blinding method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">Indicated whether the study is terminated or not</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Study terminated?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <efo:definition xml:lang="en">Indicate whethet the compliance was assessed or not</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Compliance assessed?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+        <efo:definition xml:lang="en">The ration between the circumference of the waist to that of the hips</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Waist:Hip ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+        <efo:definition xml:lang="en">A (short) alphanumeric string which identify the event/tretment</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Event identifier name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+        <efo:definition xml:lang="en">An alphanumeric string which identify and describe the event/tretment</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Treatment descriptive name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+        <efo:definition xml:lang="en">Short description of the sampling method used (i.e. &quot;needle&quot; for blood drawn, or &quot;direct sampling&quot; for questionnaire)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Study sampling method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+        <efo:definition xml:lang="en">A long description of the sampling method used</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Sampling method description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <efo:definition xml:lang="en">Long text describing the assay used.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Assay description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+        <efo:definition xml:lang="en">Platform used for the assay</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Assay platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+        <efo:definition xml:lang="en">The unique sampling event identifier for the sample collection producing the sample</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Sampling identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000051">
+        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003940"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003940"/>
+        <efo:definition xml:lang="en">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Physical activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Blood Analytics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STUDY"/>
+        <efo:definition xml:lang="en">START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en"></efo:definition_editor>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Start tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUBJECT_INFORMATION"/>
+        <efo:definition xml:lang="en">SUBJECT TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Subject tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EVENT"/>
+        <efo:definition xml:lang="en">EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Event tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SAMPLING"/>
+        <efo:definition xml:lang="en">SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Sampling tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Information tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">CHEMICAL-BIOLOGICAL ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Chemical-biological assay tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ASSAY"/>
+        <efo:definition xml:lang="en">OMICS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Omics tab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000060"/>
+        <efo:definition xml:lang="en">Type of omic assay performed (i.e. targeted metabolomics, untargeted metabolomics)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Type of omics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000059"/>
+        <efo:definition xml:lang="en">Assay type (i.e. Clinical chemistry assay: Standard kit #34567 from &apos;vendor&apos; assayed on a Cobas Mira analyzer)</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Assay type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <efo:definition xml:lang="en">A short text identifying the question</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Short question name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <efo:definition xml:lang="en">Type of question or question variable code</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Question type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000057"/>
+        <efo:definition xml:lang="en">Type of physiology assay performed</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Physionlogy asssay tye</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/Other -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/Other">
+        <efo:definition xml:lang="en">Class containing various classess hat were imported wirh external ontologies, such as those imported with RO</efo:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PROTOCOL -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROTOCOL">
+        <efo:definition xml:lang="en">A high-level concept. A set of rules that describe a method to be used in a clinical trial (e.g. of a drug or medical treatment) or a medical research study</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">PROTOCOL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/QUESTION -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/QUESTION">
+        <efo:definition xml:lang="en">A high-level concept. Any request of information needed by the study.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">QUESTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SAMPLING -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SAMPLING">
+        <efo:definition xml:lang="en">A high-level concept. Any collection of data-containing material from a volunteer, including body fluids, whole-body samplinbg, interviews, etc</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">SAMPLING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/START_GROUP -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/START_GROUP">
+        <efo:definition xml:lang="en">A high-level concept. A group of subjects that is involved in a study.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">START_GROUP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STUDY -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STUDY">
+        <efo:definition xml:lang="en">A high-level concept. An investigation aimed to determine if observed factors are associated with health effects.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI WP_4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">STUDY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUBJECT -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUBJECT">
+        <efo:definition xml:lang="en">A high-level concept. An individual that is being investigated during a study.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">SUBJECT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUBJECT_INFORMATION -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUBJECT_INFORMATION">
+        <efo:definition xml:lang="en">A high-level concept. Collects al the information (e.g. antropometric measurement) available on the subject</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">SUBJECT_INFO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TREATMENT -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TREATMENT">
+        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+        <efo:definition_editor xml:lang="en">A high-level concept. Any treatment that is implemented by an event that is forced upon a subject</efo:definition_editor>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">TREATMENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/challenge -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/challenge">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medication_supplement_diet_use -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medication_supplement_diet_use">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400012 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/OCRe.owl#OCRE400012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100007 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100007">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100056 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000000 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000031 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000085 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000115 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000136 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000058"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000142 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000143 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000154 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000172 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000173 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000183 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000262 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000296 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000337 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000366 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000366">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000391 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000403 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000508 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000664 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000669 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000670 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000688 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000688">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000964 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000964">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000046"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001014 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001041 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001042 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001068 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001323 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000066 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000066">
+        <statistics:definition>We present a set of essential minimal quality descriptors for observational data in nutritional epidemiology. The descriptors deal with both study design (i.e. cohort study, cross-sectional study and case-control study) and measurements (e.g. anthropometry, dietary data assessment, etc.), which will be implemented as study data descriptors that are specified by the data provider during the uploading of data in the system and available as parameters for those querying the system.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DATA_DESCRIPTORS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000067 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000067">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000066"/>
+        <efo:definition>A high-level concept. all the essential quality descriptors for designs of cross-sectional study, case-control study and cohort study will be put in this class. The ontologies of &quot;cross-sectional study&quot;, &quot;cohort study&quot; and &quot;case-control study&quot; are also put under this category.</efo:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>STUDY_DESIGN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000068 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000068">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000066"/>
+        <statistics:definition>A high level concept. essential quality descriptors for 5 data collection methods (i.e. 1. Dietary record; 2. 24 hours recall 3. FFQ; 4. screener; 5. Dietary history) will be put in this class.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MEASUREMENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000069 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000067"/>
+        <statistics:definition>It is not an ontology term. it is only used as a category for all study design descriptors.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>STUDY DESIGN TAB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000070 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000070">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000067"/>
+        <statistics:definition>It is not an ontology term. it is only used as a category for grouping all included study design types.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI WP2.3</oboInOwl:created_by>
+        <rdfs:label>DESIGN_TYPES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000071 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000071">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000068"/>
+        <statistics:definition>A high-level concept: all the essential quality descriptors for dietary intake data collection process are put under this category. The 5 included dietary intake meansurement methods are also put in this category.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIETARY_ASSESSMENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000072 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000068"/>
+        <statistics:definition>A high-level concept. it includes all the 6 essential quality descriptors for data collection of anthropometry.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ANTHROPOMETRY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000073 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000073">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item No.1, the number of participants divided by the sum of the numbers of participants, non-participants (including refusals and noncontacts), and persons of presumed but unconfirmed eligibility</statistics:definition>
+        <efo:definition_editor>The American Association for Public Opinion Research</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>RESPONSE_RATE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000074 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000074">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item No.2: Factors that can cause or prevent the outcome of interest, are not intermediate variables, and are not associated with the factor(s) under investigation. They give rise to situations in which the effects of two processes are not separated, or the contribution of causal factors cannot be separated, or the measure of the effect of exposure or risk is distorted because of its association with other factors influencing the outcome of the study.</statistics:definition>
+        <efo:definition_editor>MeSH</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONFOUNDING_FACTORS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000075 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>item No. 3: Diagnosis: The determination of the nature of a disease or condition, or the distinguishing of one disease or condition from another. Assessment may be made through physical examination, laboratory tests, or the likes. Computerized programs may be used to enhance the decision-making process.</statistics:definition>
+        <efo:definition_editor>MeSH</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONFIRMED_DIAGNOSIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000076 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000076">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item No. 4. Clinical trial registries are established tools for improving access to information on trials and for addressing publication bias and reporting bias. Much of the ethical and scientific rationale for registering clinical trials also applies to observational studies.</statistics:definition>
+        <efo:definition_editor>Williams et al. 2010</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PROTOCOL REGISTRATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000077 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000077">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>item 5 missing data for the main outcome (missing data: values that are not available and that would be meaningful for analysis if they were observed.)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3 &amp; Little et al. 2012</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MISSING_DATA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000078 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000078">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>item 6: type of missing data.</statistics:definition>
+        <efo:definition_editor>Sterne et al. 2009</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MISSINGDATA_TYPE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000079 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000079">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item 7: In Sampling Bias, error is the result of failure to ensure that all members of the reference population have a known chance of selection in the sample.</statistics:definition>
+        <efo:definition_editor>MeSH</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SAMPLING_BIAS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000080 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000080">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item 8: A sample whose characteristics correspond to those of the original population or reference population.</statistics:definition>
+        <efo:definition_editor>Columbia University</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>REPRESENTATIVE_SAMPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000081 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000081">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item 9: the number of new cases of a given disease during a given period in a specified population. It also is used for the rate at which new events occur in a defined population. It is differentiated from prevalence, which refers to all cases, new or old, in the population at a given time.</statistics:definition>
+        <efo:definition_editor>MeSH</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>INCIDENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000082 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000082">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item 10: In a case-control study, comparison group of persons without disease.</statistics:definition>
+        <efo:definition_editor>Columbia University</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONTROLS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000083 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000083">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000069"/>
+        <statistics:definition>Item 11: Study subjects in COHORT STUDIES whose outcomes are unknown e.g., because they could not or did not wish to attend follow-up visits.</statistics:definition>
+        <statistics:definition>MeSH</statistics:definition>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>LOSS_TO_FOLLOW-UP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000084 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000084">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000070"/>
+        <statistics:definition>All the quality descriptors specific for case-control study design should be linked with this ontology term.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CASE-CONTROL_STUDY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000085 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000085">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000070"/>
+        <statistics:definition>All the quality descriptors specific for cross-sectional study design should be linked with this ontology term.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CROSS-SECTIONAL_STUDY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000086 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000086">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000070"/>
+        <statistics:definition>All the quality descriptors specific for cohort study design should be linked with this ontology term.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>COHORT_STUDY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000087 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000071"/>
+        <statistics:definition>It is not an ontology term. it is only used as a category for all dietary intake measurement descriptors.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIETARY_MEASUREMENT_TAB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000088 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000088">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000071"/>
+        <statistics:definition>It is not an ontology term. it is only used as a category for included dietary intake measurement methods.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DATA_COLLECTION_METHODS_TAB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000089 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 1: about whether the raw data was checked and how the raw data was checked.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ADMINISTRATION_TYPE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000090 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000090">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 2: this is a descriptor for judging whether it is a verified questionnaire.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>QUESTIONNAIRE_ORIGIN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000091 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000091">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 3: Validity of questionnaire assessed or not</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>QUESTIONNAIRE_VALIDITY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000092 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000092">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 4: type of validation reference: e.g. other measurement methods? or Biomarkers?</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>VALIDATION_REFERENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000093 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000093">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 5: which part(s) of the measurement was/were validated?</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>VALIDATED_ELEMENT(S)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000094 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000094">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 6: which kind(s) of validation method was applied?</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>VALIDATION_TYPE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000095 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000095">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 7: a descriptor to check whether all the seasons were taken into account when collecting the data.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SEASONS_REPRESENTATIVENESS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000096 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 8: a descriptor to check how the protion sizes for food items were set.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PORTION_SIZE_QUANTIFICATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000097 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000097">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 9: Description of food intake data: describe how quantification data expressed into units of weights or volume.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DATA_DESCRIPTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000098 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000098">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 10: Geographically-specific food composition data or not? In a single country there may be a wide diversity of soil and climatic conditions, resulting in significant variance in food composition. Variations in food marketing and food preparation within different parts of a country – or among countries in the case of a multi-country database – may also produce notable variance. For these reasons, geographically-specific data may be presented in the database as a supplement to nationwide and/or region-wide averages.  (Greenfield and Southgate 2003)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3 &amp; Greenfield and Southgate 2003</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>GEOGRAPHICAL_DATA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000099 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000099">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 11: matching consumed food to referred food composition data</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MATCHING_DATA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000100 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000100">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 12: representability of the week/weekend days</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WEEK/WEEKEND_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000101 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000101">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 13: number of measured days</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MEASURED_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000102 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000102">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 14: a reference for days selection method, which may contribute to the judgment of the days representiveness.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DAYS_SELECTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000103 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000103">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>item 15: time of diet record. a descriptor to give information about whether the data is recorded in time. It can be a reference for the assessment of recording bias.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>RECORD_TIME</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000104 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000104">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000087"/>
+        <statistics:definition>Item 16:  measurement was changed according to individual&apos;s sex, racial origin, religion, common place of living, financial or social status, or some other cultural or behavioural attribute.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CUSTOMIZATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000105 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000105">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000088"/>
+        <statistics:definition>All the quality descriptors specific for the data collection method &quot;dietary record&quot; should be linked with this ontology term</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIETARY_RECORD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000106 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000106">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000088"/>
+        <statistics:definition>All the quality descriptors specific for the data collection method &quot;24-hour recall&quot; should be linked with this ontology term.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>24H_RECALL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000107 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000107">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000088"/>
+        <statistics:definition>Food Frequency Questionnaire &amp; screener: All the quality descriptors specific for the data collection methods &quot;FFQ&quot; and &quot;screener&quot; should be linked with this ontology term.</statistics:definition>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>FFQ_SCREENER</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000108 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000108">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000088"/>
+        <statistics:definition>ONS_0000105+ONS_0000106+ONS_0000107</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIETARY_HISTORY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000109 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000109">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>item 1: whether the assessors are trained and how they were trained before the anthropometry data collection.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ASSESSOR_TRAINING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000110 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000110">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>item 2: method used to measure weight.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WEIGHT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000111 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000111">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>Item 3: method used to measure height.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>HEIGHT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000112 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000112">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>Item 4: method used to measure waist circumference.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WAIST_CIRCUMFERENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000113 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000113">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>Item 5: BMI (Body mass index)  status
+BMI (MeSH): an indicator of body density as determined by the relationship of BODY WEIGHT to BODY HEIGHT. BMI=weight (kg)/height squared (m2). BMI correlates with body fat (ADIPOSE TISSUE). Their relationship varies with age and gender.</statistics:definition>
+        <efo:definition_editor>ENPADASI WP2.3 &amp; MeSH</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>BMI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000114 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000114">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000072"/>
+        <statistics:definition>Item 6: method used to measure adiposity (i.e. percentage of body fat).</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ADIPOSITY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000115 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000115">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000073"/>
+        <statistics:definition>Option1: Response rate (%): the number of participants divided by the sum of the numbers of participants, non-participants (including refusals and noncontacts), and persons of presumed but unconfirmed eligibility.</statistics:definition>
+        <efo:definition_editor>The American Association for Public Opinion Research 2016</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>RESPONSE_RATE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000116 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000116">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000073"/>
+        <statistics:definition>Option 2: cooperation rate (%): the number of participants divided by the number eligible that were ever contacted.</statistics:definition>
+        <efo:definition_editor>The American Association for Public Opinion Research 2016</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>COOPERATION_RATE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000117 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000117">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000073"/>
+        <statistics:definition>Option 3: there is no available meta-data about response/cooperation rate.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>UNKNOWN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000118 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000118">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000074"/>
+        <statistics:definition>Option 1: Yes, all identified confounding factors are assessed</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ALL_ASSESSED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000119 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000119">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000074"/>
+        <statistics:definition>Option 2: Yes, some of the identified confounding factors are assessed</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PARTIALLY_ASSESSED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000120 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000120">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000074"/>
+        <statistics:definition>Option 3: No, confounding factors are not assessed</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NONE_ASSESSED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000121 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000121">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000075"/>
+        <statistics:definition>Option 1: Yes, method used for confirming diagnosis:________</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>COMFIRMING_METHOD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000122 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000122">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000075"/>
+        <statistics:definition>Option 2: No, self-reported</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SELF-REPORTED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000123 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000123">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000076"/>
+        <statistics:definition>Option 1: Yes, register in ___________</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>REGISTRATION_WEBSITE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000124 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000124">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000076"/>
+        <statistics:definition>option 2: No, the protocol was not registered.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000125 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000125">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000077"/>
+        <statistics:definition>Option 1: Exact percentage of missing data: _______</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>EXACT_PERCENTAGE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000126 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000126">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000077"/>
+        <statistics:definition>option 2: I do not know</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DONT_KNOW</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000127 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000127">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000078"/>
+        <statistics:definition>Option 1: Missing completely at random (Sterne et al. 2009): There are no systematic differences between the missing values and the observed values. For example, blood pressure measurements may be missing because of breakdown of an automatic sphygmomanometer</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3 &amp; Sterne et al. 2009</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MCAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000128 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000128">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000078"/>
+        <statistics:definition>option 2: Missing at random (Sterne et al. 2009): Any systematic difference between the missing values and the observed values can be explained by differences in observed data. For example, missing blood pressure measurements may be lower than measured blood pressures but only because younger people may be more likely to have missing blood pressure measurements</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3 &amp; Sterne et al. 2009</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000129 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000129">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000078"/>
+        <statistics:definition>Option 3: Missing not at random (Sterne et al. 2009): Even after the observed data are taken into account, systematic differences remain between the missing values and the observed values. For example, people with high blood pressure may be more likely to miss clinic appointments because they have headaches</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3 &amp; Sterne et al. 2009</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MNAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000130 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000130">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000079"/>
+        <statistics:definition>Option 1: A random sample from the study population</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>RANDOM_SAMPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000131 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000131">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000079"/>
+        <statistics:definition>option 2: Sampling is not random</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NONRANDOM_SAMPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000132 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000132">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000080"/>
+        <statistics:definition>option 1: Yes: representative sample for the study population</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>REPRESENTATIVE_SAMPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000133 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000133">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000080"/>
+        <statistics:definition>No, a non-representative sample was taken</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NONREPRESENTATIVE_SAMPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000134 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000134">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000081"/>
+        <statistics:definition>option 1: Yes, cases are incident</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>FULL_INCIDENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000135 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000135">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000081"/>
+        <statistics:definition>option 2: Partial, part of all cases are incident</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PARTIAL_INCIDENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000136 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000136">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000081"/>
+        <statistics:definition>option 3: No, cases are not incident</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NON-INCIDENCE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000137 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000137">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000082"/>
+        <statistics:definition>option 1: Controls are from the same population as cases</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PERFECT_CONTROL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000138 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000138">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000082"/>
+        <statistics:definition>option 2: Controls are from similar populations as cases</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>GOOD_CONTROLS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000139 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000139">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000082"/>
+        <statistics:definition>option 3: Controls are from another populations or national controls</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>POOR_CONTROL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000140 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000140">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000083"/>
+        <statistics:definition>option 1: the loss-to-follow-up rate is lower than 5%</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>&lt;5%</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000141 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000141">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000083"/>
+        <statistics:definition>option 2: the loss-to-follow-up rate is between 5% and 20%.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>5%-20%</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000142 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000142">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000083"/>
+        <statistics:definition>option 3: the loss-to-follow-up rate is over 20%</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>&gt;20%</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000143 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000143">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000083"/>
+        <statistics:definition>option 4: no available data about loss-to-followup rate.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>Unknown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000144 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000144">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089"/>
+        <statistics:definition>option 1: Proxy-administered</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PROXY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000145 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000145">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089"/>
+        <statistics:definition>option 2: Self-administered and not verified by interviewer</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>POOR_SELF-ADMINISTERED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000146 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000146">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089"/>
+        <statistics:definition>option 3: Self-administered and checked by interviewer</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>GOOD_SELF-ADMINISTERED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000147 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000147">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089"/>
+        <statistics:definition>option 4: Interview-administered</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>INTERVIEW-ADMINISTERED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000148 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000148">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000089"/>
+        <statistics:definition>option 5: Interview-administered using USDA Automated Multiple-Pass Method</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>AMPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000149 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000149">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000090"/>
+        <statistics:definition>option 1:  Self-developed questionnaires</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SELF-DEVELOPMENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000150 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000150">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000090"/>
+        <statistics:definition>option 2: Adapted from other questionnaires</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ADAPTED_QUESTIONNAIRES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000151 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000151">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000090"/>
+        <statistics:definition>option 3: Adopted other Questionnaires</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ADOPTED_QUESTIONNAIRE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000152 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000152">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000091"/>
+        <statistics:definition>option 1: no</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000153 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000153">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000091"/>
+        <statistics:definition>option 2: Yes, in another population</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ANOTHER_POPULATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000154 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000154">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000091"/>
+        <statistics:definition>option 3: Yes, in a comparable population in terms of both age and dietary habits</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>COMPARABLE_POPULATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000155 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000155">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000092"/>
+        <statistics:definition>option 1: &gt;1 dietary assessment method used</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PLURIAL_METHODS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000156 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000156">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000092"/>
+        <statistics:definition>option 2: Biomarker(s) of dietary intake</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>BIOMARKER</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000157 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000157">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000093"/>
+        <statistics:definition>option 1: Properties of the whole questionnaire (e.g. inter-rater reliability, etc.)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WHOLE_QUESTIONNAIRE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000158 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000158">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000093"/>
+        <statistics:definition>option 2: Frequency options appropriate to identify between-person variations</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>BETWEEN-PERSON_VARIATIONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000159 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000159">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000093"/>
+        <statistics:definition>option 3: Food items lead to underestimated target nutrients intake (for FFQ only)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>FOOD_ITEMS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000160 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000160">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000093"/>
+        <statistics:definition>option 4: others</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>OTHERS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000161 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000161">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000094"/>
+        <statistics:definition>option 1: Concurrent validity or precision only</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SINGLE_CHECKING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000162 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000162">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000094"/>
+        <statistics:definition>option 2: Concurrent validity and precision</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DOUBLE_METHODS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000163 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000163">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000095"/>
+        <statistics:definition>option 1: all the seasons taken into account</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ALL_SEASONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000164 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000164">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000095"/>
+        <statistics:definition>options 2: not all the seasons are taken into account</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NOT_ALL_SEASONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000165 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000165">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096"/>
+        <statistics:definition>option 1: not quantified portion size</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NOT_QUANTIFIED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000166 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000166">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096"/>
+        <statistics:definition>option 2: Standard portion sizes without aids</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>STANDARD_PORTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000167 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000167">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096"/>
+        <statistics:definition>option 3: Standard portion sizes with aids such as pictures, models, standard household measure, utensils, etc.</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PORTION_AIDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000168 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000168">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096"/>
+        <statistics:definition>option 4: Portion sizes are assessed digitally but not verified by trained staff</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIGITALLY_PORTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000169 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000169">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000096"/>
+        <statistics:definition>option 5: Portion sizes are assessed digitally and verified by trained staff (or packaging)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>VERIFIED_DIGITAL_PORTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000170 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000170">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000097"/>
+        <statistics:definition>option 1: Food intakes are directly expressed into units of weights or volume (for weighed Food record)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DIRECT_EXPRESSION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000171 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000171">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000097"/>
+        <statistics:definition>option 2: Food intakes are converted from estimated portion sizes into units of weights or volume</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONVERTED_EXPRESSION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000172 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000172">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000097"/>
+        <statistics:definition>option 3: portion sizes are not converted</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>UNCONVERTED_EXPRESSION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000173 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000173">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000098"/>
+        <statistics:definition>option 1: geographical data</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>YES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000174 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000174">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000098"/>
+        <statistics:definition>option 2: not geographical data</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000175 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000175">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000099"/>
+        <statistics:definition>option 1:  __% food items’ had exact matching</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>EXACTING_MATCHING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000176 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000176">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000099"/>
+        <statistics:definition>option 2:  __% food items’ were matched to means of min. 3  food items in the table</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>MEANS_MATCHING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000177 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000177">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000099"/>
+        <statistics:definition>option 3:  __% food items’ were matched to same food items in the table with similar moisture content</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SIMILAR_MATCHING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000178 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000178">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000099"/>
+        <statistics:definition>option 4:  __%: matched to a different food</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>POOR_MATCHING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000179 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000179">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000100"/>
+        <statistics:definition>option 1: Only weekend days</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WEEKENDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000180 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000180">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000100"/>
+        <statistics:definition>option 2: Only weekdays</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WEEKDAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000181 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000181">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000100"/>
+        <statistics:definition>option 3: both weekdays and weekends</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>BOTH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000182 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000182">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000100"/>
+        <statistics:definition>option 4: no available data about selection of days</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>N/A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000183 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000183">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000101"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>ONE_DAY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000184 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000184">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000101"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>2-7_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000185 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000185">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000101"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>&gt;7_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000186 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000186">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000102"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONVENIENCE_SELECTION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000187 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000187">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000102"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>CONSECTUTIVE_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000188 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000188">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000102"/>
+        <statistics:definition>option 3: Non-consecutive, non-random days</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NON-RANDOM_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000189 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000189">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000102"/>
+        <statistics:definition>option 4: Randomly over the week</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>RANDOM_DAYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000190 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000190">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000103"/>
+        <statistics:definition>option 1: Not during eating occasions nor immediately after</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NOT_IMMEDIATE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000191 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000191">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000103"/>
+        <statistics:definition>option 2: Immediately after eating occasion</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>IMMEDIATE_AFTER</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000192 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000192">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000103"/>
+        <statistics:definition>option 3: During eating occasion</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>DURING_EATING</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000193 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000193">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000104"/>
+        <statistics:definition>option 1: The method was tailored to the characteristics of the population assessed</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>TAILORED_METHOD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000194 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000194">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000104"/>
+        <statistics:definition>option 2: The method was not specifically tailored to the characteristics of the population assessed</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NOT_TAILORED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000195 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000195">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000104"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>UNKNOWN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000196 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000196">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000105"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>personal digital assistant technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000197 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000197">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000105"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>mobile-phone–based technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000198 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000198">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000105"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>camera-recorder–based technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000199 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000199">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000105"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>tape-recorder–based technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000200 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000200">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000106"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>interactive computer-based technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000201 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000201">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000106"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>interactive  web-based technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000202 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000202">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000107"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>interactive computer-based technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000203 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000203">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000107"/>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>interactive web-based technologies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000204 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000204">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000109"/>
+        <statistics:definition>option 1: Not trained using Standard Operating Procedures</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000205 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000205">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000109"/>
+        <statistics:definition>option 2: Trained, not using Standard Operating Procedures</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>TRAINED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000206 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000206">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000109"/>
+        <statistics:definition>Option 3: trained and using pre-defined Standard Operating Procedures</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>TRAINED_SOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000207 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000207">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000110"/>
+        <statistics:definition>option 1: Self-measured, self-reported or proxy reported</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SELF&amp;PROXY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000208 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000208">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000110"/>
+        <statistics:definition>option 2: Measured with no clothing instructions by an assessor</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO_INSTRUCTIONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000209 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000209">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000110"/>
+        <statistics:definition>option 3: Measured naked or with only light clothing by an assessor</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WITH_INSTRUCTIONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000210 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000210">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000111"/>
+        <statistics:definition>option 1: Self-measured, self-reported or proxy reported</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SELF&amp;PROXY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000211 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000211">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000111"/>
+        <statistics:definition>option 2: Measured with shoes</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SHOES_INCLUDED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000212 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000212">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000111"/>
+        <statistics:definition>option 3: Measured barefoot</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SHOES_EXCLUDED</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000213 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000213">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000112"/>
+        <statistics:definition>option 1: Self-measured, self-reported or proxy reported</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>SELF&amp;PROXY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000214 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000214">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000112"/>
+        <statistics:definition>option 2: Measured with no clothing instructions</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO_INSTRUCTIONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000215 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000215">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000112"/>
+        <statistics:definition>option 3: Measured naked or with only light clothing</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>WITH_INSTRUCTIONS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000216 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000216">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000113"/>
+        <statistics:definition>option 1: Self-reported using no aids</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>NO_AIDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000217 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000217">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000113"/>
+        <statistics:definition>option 2: Assessed using pictograms or silhouettes</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>PICTOGRAMS_SILHOUETTES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000218 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000218">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000113"/>
+        <statistics:definition>option 3: Measured using objective measures (weight &amp; height, body scanner...)</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>OBJECTIVE_MEASUREMENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000219 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000219">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000114"/>
+        <statistics:definition>option 1: Using bioelectrical impedance analysis</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>BIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ONS_0000220 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ONS_0000220">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ONS_0000114"/>
+        <statistics:definition>option 2: Using dual energy X-ray absorptiometry</statistics:definition>
+        <efo:definition_editor>ENPADASI_WP2.3</efo:definition_editor>
+        <oboInOwl:created_by>ENPADASI_WP2.3</oboInOwl:created_by>
+        <rdfs:label>X-RAY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000319 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISEASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000400 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISEASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000433 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000537 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DISEASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000727 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000727">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002755 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002755">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medication_supplement_diet_use"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003939 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003939">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003940 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004318 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004338 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004342 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005093 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0006525 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0006525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/Other"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000002">
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Month of anthropometry assessment</rdfs:label>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <efo:definition xml:lang="en">Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</efo:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000005">
+        <efo:definition xml:lang="en">Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</efo:definition>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Month of physical activity assessment by questionnaire</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000014">
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Month of physical activity assessment by accelerometer</rdfs:label>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <efo:definition xml:lang="en">Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</efo:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000022">
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of dietary assessment</rdfs:label>
+        <efo:definition xml:lang="en">Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</efo:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000030">
+        <efo:definition xml:lang="en">Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)</efo:definition>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Month of blood draw</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ONS_0000050">
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <efo:definition xml:lang="en">This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks.</efo:definition>
+        <rdfs:label xml:lang="en">Absolute start times</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
