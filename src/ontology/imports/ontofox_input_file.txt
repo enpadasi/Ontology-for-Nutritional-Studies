@@ -223,21 +223,6 @@ http://edamontology.org/data_0970
 [Source annotation URIs]
 includeAllAnnotationProperties
 
-##### Import terms from OGSM ontology ######
-[Source ontology]
-OGSM
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OGMS_0000014
-http://purl.obolibrary.org/obo/OGMS_0000018
-http://purl.obolibrary.org/obo/OGMS_0000093
-http://purl.obolibrary.org/obo/OGMS_0000073
-http://purl.obolibrary.org/obo/OGMS_0000057
-http://purl.obolibrary.org/obo/OGMS_0000056
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
 ##### Import terms from IAO ontology ######
 [Source ontology]
 IAO
