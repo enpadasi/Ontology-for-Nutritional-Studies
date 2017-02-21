@@ -69,6 +69,9 @@
         <Class abbreviatedIRI="obo:ONS_0000055"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004318"/>
     </Declaration>
     <Declaration>
@@ -339,13 +342,13 @@
         <Class abbreviatedIRI="obo:CHEBI_50733"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000063"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:SAMPLING"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:AERO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:ONS_0000063"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000664"/>
@@ -492,6 +495,9 @@
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:UO_0000032"/>
     </Declaration>
     <Declaration>
@@ -535,9 +541,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000012"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_001041"/>
@@ -592,6 +595,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_001014"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000009"/>
@@ -751,6 +757,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0100026"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000014"/>
@@ -1142,7 +1152,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:challenge"/>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
@@ -1154,11 +1164,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
-        <Class abbreviatedIRI="obo:BFO_0000019"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000000"/>
@@ -1294,7 +1300,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001066"/>
-        <Class abbreviatedIRI="obo:BFO_0000017"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+            <Class abbreviatedIRI="resource:SIO_000883"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="obo:OBI_0500000"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001068"/>
