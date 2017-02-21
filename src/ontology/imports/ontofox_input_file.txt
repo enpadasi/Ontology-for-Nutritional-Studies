@@ -71,6 +71,7 @@ http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272
 http://purl.obolibrary.org/obo/OBI_0000094
 http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/OBI_0100026
 
 
 [Source annotation URIs]
@@ -107,6 +108,8 @@ http://semanticscience.org/resource/SIO_000669
 http://semanticscience.org/resource/SIO_000670
 http://semanticscience.org/resource/SIO_000964
 http://semanticscience.org/resource/SIO_000085
+http://semanticscience.org/resource/SIO_001066
+http://semanticscience.org/resource/SIO_000883
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -159,6 +162,7 @@ NCBITaxon
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/NCBITaxon_species
+http://purl.obolibrary.org/obo/NCBITaxon_9606
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -245,6 +249,7 @@ http://purl.obolibrary.org/obo/OGMS_0000093
 http://purl.obolibrary.org/obo/OGMS_0000073
 http://purl.obolibrary.org/obo/OGMS_0000057
 http://purl.obolibrary.org/obo/OGMS_0000056
+http://purl.obolibrary.org/obo/OGMS_0000031
 
 [Source annotation URIs]
 includeAllAnnotationProperties
