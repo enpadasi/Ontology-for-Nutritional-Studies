@@ -29,8 +29,8 @@
     <Prefix name="resource" IRI="http://semanticscience.org/resource/"/>
     <Prefix name="statistics" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
     <Prefix name="edamontology" IRI="http://edamontology.org/"/>
+    <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl</Import>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
-    <Import>http://ontofox.hegroup.org/gok3v8xi.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
