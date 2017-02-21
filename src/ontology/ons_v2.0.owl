@@ -29,8 +29,8 @@
     <Prefix name="resource" IRI="http://semanticscience.org/resource/"/>
     <Prefix name="statistics" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
     <Prefix name="edamontology" IRI="http://edamontology.org/"/>
-    <Import>http://ontofox.hegroup.org/nbbrwvmr.owl</Import>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Import>http://ontofox.hegroup.org/gok3v8xi.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
@@ -75,9 +75,6 @@
         <Class abbreviatedIRI="obo:QUESTION"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:STUDY"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:UO_0000002"/>
     </Declaration>
     <Declaration>
@@ -105,6 +102,9 @@
         <Class abbreviatedIRI="obo:ONS_0000028"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:UO_0000009"/>
     </Declaration>
     <Declaration>
@@ -118,6 +118,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000054"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000154"/>
@@ -210,6 +213,9 @@
         <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:OGMS_0000057"/>
     </Declaration>
     <Declaration>
@@ -264,6 +270,9 @@
         <Class abbreviatedIRI="obo:ONS_0000020"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="resource:SIO_000883"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000044"/>
     </Declaration>
     <Declaration>
@@ -277,9 +286,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000964"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:SUBJECT"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
@@ -360,6 +366,9 @@
         <Class abbreviatedIRI="obo:UO_0000034"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004338"/>
     </Declaration>
     <Declaration>
@@ -370,9 +379,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="ont:ORGANISM"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000024"/>
@@ -486,9 +492,6 @@
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:SUBJECT_INFORMATION"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:UO_0000032"/>
     </Declaration>
     <Declaration>
@@ -531,9 +534,6 @@
         <Class abbreviatedIRI="obo:ONS_0000064"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:DISEASE"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000012"/>
     </Declaration>
     <Declaration>
@@ -574,6 +574,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000183"/>
@@ -627,7 +630,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:AERO_0000009"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ASSAY"/>
@@ -651,15 +654,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CMO_0000105"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CMO_0001407"/>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:DISEASE"/>
-        <Class abbreviatedIRI="obo:BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:EVENT"/>
@@ -667,7 +666,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:HP_0003119"/>
-        <Class abbreviatedIRI="obo:DISEASE"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
@@ -682,8 +681,12 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:NCBITaxon_species"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBCS_0000089"/>
@@ -746,12 +749,20 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000014"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000018"/>
         <Class abbreviatedIRI="obo:OGMS_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000056"/>
@@ -783,19 +794,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000001"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000002"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000003"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000004"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000005"/>
@@ -911,7 +922,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000034"/>
-        <Class abbreviatedIRI="obo:SUBJECT_INFORMATION"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000035"/>
@@ -943,7 +954,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000042"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000043"/>
@@ -1023,11 +1034,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
-        <Class abbreviatedIRI="obo:STUDY"/>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000054"/>
-        <Class abbreviatedIRI="obo:SUBJECT_INFORMATION"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000055"/>
@@ -1074,48 +1085,32 @@
         <Class abbreviatedIRI="obo:ONS_0000057"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0000011"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0000011"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0000047"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0000047"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SAMPLING"/>
         <Class abbreviatedIRI="obo:BFO_0000015"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:STUDY"/>
-        <Class abbreviatedIRI="obo:BFO_0000017"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SUBJECT"/>
-        <Class abbreviatedIRI="ont:ORGANISM"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SUBJECT_INFORMATION"/>
-        <Class abbreviatedIRI="obo:BFO_0000020"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000002"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:UO_0000003"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000003"/>
         <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000009"/>
@@ -1151,7 +1146,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE400012"/>
@@ -1163,7 +1158,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100056"/>
-        <Class abbreviatedIRI="obo:ONS_0000055"/>
+        <Class abbreviatedIRI="obo:BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000000"/>
@@ -1179,19 +1174,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000115"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="resource:SIO_000115"/>
         <Class abbreviatedIRI="obo:ONS_0000056"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="resource:SIO_000136"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="resource:SIO_000115"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000136"/>
         <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000136"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000136"/>
@@ -1243,11 +1238,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000403"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000403"/>
-        <Class abbreviatedIRI="obo:ONS_0000055"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000508"/>
@@ -1259,7 +1254,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000664"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000669"/>
@@ -1278,12 +1273,16 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000883"/>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000964"/>
         <Class abbreviatedIRI="obo:ONS_0000046"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001014"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001041"/>
@@ -1294,6 +1293,10 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001068"/>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
@@ -1302,16 +1305,12 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="ont:ORGANISM"/>
-        <Class abbreviatedIRI="obo:BFO_0000040"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000319"/>
-        <Class abbreviatedIRI="obo:DISEASE"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000400"/>
-        <Class abbreviatedIRI="obo:DISEASE"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
@@ -1319,7 +1318,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000537"/>
-        <Class abbreviatedIRI="obo:DISEASE"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
@@ -1339,51 +1338,35 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004318"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004338"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="efo:EFO_0004338"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004339"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="efo:EFO_0004339"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0004342"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="efo:EFO_0004342"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0005093"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="efo:EFO_0005093"/>
-        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0006525"/>
-        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="obo:ONS_0000002"/>
-        <Class abbreviatedIRI="obo:SUBJECT_INFORMATION"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="obo:ONS_0000005"/>
@@ -1448,26 +1431,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ASSAY</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ASSAY</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:DISEASE</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. This class collect the information relative to the disease that a SUBJECT has</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:DISEASE</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:DISEASE</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:DISEASE</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DISEASE</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -2118,6 +2081,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subject informations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="deprecated"/>
+        <AbbreviatedIRI>obo:ONS_0000034</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <AbbreviatedIRI>obo:ONS_0000035</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)</Literal>
@@ -2423,6 +2391,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="deprecated"/>
+        <AbbreviatedIRI>obo:ONS_0000054</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <AbbreviatedIRI>obo:ONS_0000055</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
@@ -2584,6 +2557,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AbbreviatedIRI>obo:ONS_0000066</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Collects al the information (e.g. antropometric measurement) available on the subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>obo:ONS_0000066</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:ONS_0000066</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:ONS_0000066</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <AbbreviatedIRI>obo:PROTOCOL</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. A set of rules that describe a method to be used in a clinical trial (e.g. of a drug or medical treatment) or a medical research study</Literal>
     </AnnotationAssertion>
@@ -2661,66 +2654,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:START_GROUP</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">START_GROUP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:STUDY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An investigation aimed to determine if observed factors are associated with health effects.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:STUDY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP_4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:STUDY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:STUDY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STUDY</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:SUBJECT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An individual that is being investigated during a study.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:SUBJECT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:SUBJECT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SUBJECT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SUBJECT</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:SUBJECT_INFORMATION</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Collects al the information (e.g. antropometric measurement) available on the subject</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:SUBJECT_INFORMATION</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:SUBJECT_INFORMATION</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SUBJECT_INFORMATION</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SUBJECT_INFO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
