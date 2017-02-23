@@ -432,6 +432,9 @@
         <Class abbreviatedIRI="resource:SIO_001323"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:ONS_0000067"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004342"/>
     </Declaration>
     <Declaration>
@@ -466,6 +469,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000019"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -757,6 +763,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0100026"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+            <Class abbreviatedIRI="resource:SIO_000883"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0500000"/>
@@ -1280,7 +1293,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000883"/>
-        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000964"/>
@@ -1306,7 +1319,7 @@
         <Class abbreviatedIRI="resource:SIO_001066"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
-            <Class abbreviatedIRI="resource:SIO_000883"/>
+            <Class abbreviatedIRI="ont:ONS_0000067"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1323,6 +1336,17 @@
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001323"/>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000067"/>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000067"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+            <Class abbreviatedIRI="resource:SIO_000883"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000319"/>
@@ -1384,6 +1408,10 @@
         <Class abbreviatedIRI="efo:EFO_0006525"/>
         <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+        <ObjectProperty abbreviatedIRI="obo:RO_0002502"/>
+    </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="obo:ONS_0000002"/>
         <Class abbreviatedIRI="obo:ONS_0000066"/>
@@ -2694,6 +2722,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:TREATMENT</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TREATMENT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000067</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject of a nutritional study</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
