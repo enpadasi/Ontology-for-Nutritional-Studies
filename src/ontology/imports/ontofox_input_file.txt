@@ -309,6 +309,7 @@ http://purl.obolibrary.org/obo/OGMS_0000031
 [Source annotation URIs]
 includeAllAnnotationProperties
 
+<<<<<<< HEAD
 ##### Import terms from ERO ontology ######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
@@ -341,6 +342,10 @@ includeAllAnnotationProperties
 ############################################
 
 ##### Import terms from BFO ontology #######
+=======
+####### IMPORTING RELATIONS ################
+##### Import terms from BFO ontology ######
+>>>>>>> parent of b72f907... Update
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
@@ -362,7 +367,6 @@ RO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/RO_0000057
-http://purl.obolibrary.org/obo/RO_0000087
 
 [Source annotation URIs]
 includeAllAxiomsRecursively

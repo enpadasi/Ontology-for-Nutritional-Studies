@@ -361,9 +361,12 @@
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
     </Declaration>
     <Declaration>
+<<<<<<< HEAD
         <ObjectProperty abbreviatedIRI="obo:RO_0002323"/>
     </Declaration>
     <Declaration>
+=======
+>>>>>>> parent of b72f907... Update
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
     </Declaration>
     <Declaration>
@@ -489,6 +492,7 @@
     <Declaration>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
     </Declaration>
+<<<<<<< HEAD
     <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
         <ObjectProperty abbreviatedIRI="obo:RO_0002131"/>
@@ -573,6 +577,838 @@
         </ObjectPropertyChain>
         <ObjectProperty abbreviatedIRI="obo:RO_0002314"/>
     </SubObjectPropertyOf>
+=======
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:OBI_0000630"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:ONS_0000001"/>
+        <Class abbreviatedIRI="resource:SIO_000115"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:TREATMENT"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="edamontology:data_0970"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="edamontology:data_0970"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="edamontology:data_0970"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="edamontology:data_0970"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:AERO_0000009"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OGMS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_50733"/>
+        <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0000051"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0000052"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0000053"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0000105"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CMO_0001407"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:EVENT"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:HP_0003119"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ICO_0000069"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCBITaxon_species"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBCS_0000089"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000094"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000103"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000630"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000984"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000984"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0001942"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000014"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000018"/>
+        <Class abbreviatedIRI="obo:OGMS_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000056"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000057"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000073"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000093"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OMIABIS_0000036"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OMIABIS_0000037"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OMRSE_00000038"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000001"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000002"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000003"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000004"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000005"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000006"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000007"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000008"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000009"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000010"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000011"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000012"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000013"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000014"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000015"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000016"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000017"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000018"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000019"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000020"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000021"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000022"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000023"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000024"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000025"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000026"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000027"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000028"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000029"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000030"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000031"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000034"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000035"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000036"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000037"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000038"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000039"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000040"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000041"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000042"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000043"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000043"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000043"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000044"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000044"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000045"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000046"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000047"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000048"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000048"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000048"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000049"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000049"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000049"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000049"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000050"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000054"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+        <Class abbreviatedIRI="obo:EVENT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+        <Class abbreviatedIRI="obo:SAMPLING"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+        <Class abbreviatedIRI="obo:ASSAY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000061"/>
+        <Class abbreviatedIRI="obo:ONS_0000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000062"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000063"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000064"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000065"/>
+        <Class abbreviatedIRI="obo:ONS_0000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0000011"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0000047"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SAMPLING"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000002"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000009"/>
+        <Class abbreviatedIRI="obo:UO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000021"/>
+        <Class abbreviatedIRI="obo:UO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000031"/>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000032"/>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000033"/>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000034"/>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UO_0000036"/>
+        <Class abbreviatedIRI="obo:UO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:challenge"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE400012"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000000"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000031"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000085"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000115"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000115"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000136"/>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000136"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000136"/>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000142"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000143"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000154"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000172"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000173"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000183"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000262"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000296"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000337"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000366"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000391"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000403"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000403"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000508"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000664"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000664"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000669"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000669"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000670"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000688"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000883"/>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_000964"/>
+        <Class abbreviatedIRI="obo:ONS_0000046"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001014"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001041"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001042"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+            <Class abbreviatedIRI="resource:SIO_000883"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="obo:OBI_0500000"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001068"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="resource:SIO_001323"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000433"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000537"/>
+        <Class abbreviatedIRI="obo:OGMS_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+        <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0000727"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0002755"/>
+        <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0003939"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0003940"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004318"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004339"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0004342"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0005093"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="efo:EFO_0006525"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </SubClassOf>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000002"/>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000005"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000014"/>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000022"/>
+        <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000030"/>
+        <Class abbreviatedIRI="obo:ONS_0000052"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="obo:ONS_0000050"/>
+        <Class abbreviatedIRI="obo:ONS_0000055"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000002"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000005"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000014"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000022"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000030"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="obo:ONS_0000050"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+>>>>>>> parent of b72f907... Update
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:is_metadata_tag"/>
         <AbbreviatedIRI>edamontology:created_in</AbbreviatedIRI>
@@ -5730,6 +6566,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+<<<<<<< HEAD
         <AbbreviatedIRI>oboInOwl:hasRelatedSynonym</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</Literal>
     </AnnotationAssertion>
@@ -5737,6 +6574,10 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>oboInOwl:inSubset</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">in_subset</Literal>
+=======
+        <AbbreviatedIRI>oboInOwl:hasOBOFormatVersion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</Literal>
+>>>>>>> parent of b72f907... Update
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="obo:OBI_0001847"/>
