@@ -258,6 +258,7 @@ OCRe
 [Low level source term URIs]
 http://purl.org/net/OCRe/study_design.owl#OCRE100007
 http://purl.org/net/OCRe/OCRe.owl#OCRE400012
+http://purl.org/net/OCRe/study_design.owl#OCRE100055
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -308,9 +309,37 @@ http://purl.obolibrary.org/obo/OGMS_0000031
 [Source annotation URIs]
 includeAllAnnotationProperties
 
+##### Import terms from ERO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+ERO
+
+[Low level source term URIs]
+http://purl.org/net/OCRe/research.owl%23Observational_study
+http://purl.org/net/OCRe/research.owl%23Interventional_study
+http://purl.org/net/OCRe/research.owl%23Single_group_study
+http://purl.org/net/OCRe/research.owl%23N-of-1_crossover_study
+http://purl.org/net/OCRe/research.owl%23Crossover_study
+http://purl.org/net/OCRe/research.owl%23Parallel_group_study
+http://purl.org/net/OCRe/research.owl%23Case_control_study
+http://purl.org/net/OCRe/research.owl%23Case_crossover_study
+http://purl.org/net/OCRe/research.owl%23Cohort_study
+http://purl.org/net/OCRe/research.owl%23Cross-sectional_study
+http://purl.obolibrary.org/obo/ERO_0000348
+http://purl.obolibrary.org/obo/ERO_0000358
+http://purl.obolibrary.org/obo/ERO_0000357
+http://purl.obolibrary.org/obo/ERO_0000356
+http://purl.obolibrary.org/obo/ERO_0000016
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
 ############################################
 ####### IMPORTING RELATIONS ################
 ############################################
+
 ##### Import terms from BFO ontology #######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
