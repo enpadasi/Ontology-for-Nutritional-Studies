@@ -10,7 +10,7 @@ http://purl.obolibrary.org/obo/PATO_0000011
 http://purl.obolibrary.org/obo/PATO_0000047
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from EFO Ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -37,7 +37,7 @@ http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from CMO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -54,7 +54,7 @@ http://purl.obolibrary.org/obo/CMO_0000051
 http://purl.obolibrary.org/obo/CMO_0000105
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from HP ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -68,7 +68,7 @@ http://purl.obolibrary.org/obo/HP_0003119
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OBI ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -107,7 +107,7 @@ http://purl.obolibrary.org/obo/OBI_0000252
 http://purl.obolibrary.org/obo/OBI_0000066
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from UBERON Ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -129,7 +129,7 @@ http://purl.obolibrary.org/obo/UBERON_0000479
 http://purl.obolibrary.org/obo/UBERON_0001013
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from SIO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -169,7 +169,7 @@ http://semanticscience.org/resource/SIO_001066
 http://semanticscience.org/resource/SIO_000883
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from ICO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -183,7 +183,7 @@ http://purl.obolibrary.org/obo/ICO_0000069
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OMRSE ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -196,7 +196,7 @@ OMRSE
 http://purl.obolibrary.org/obo/OMRSE_00000038
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OMIABIS ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -210,7 +210,7 @@ http://purl.obolibrary.org/obo/OMIABIS_0000036
 http://purl.obolibrary.org/obo/OMIABIS_0000037
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OBCS ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -223,7 +223,7 @@ OBCS
 http://purl.obolibrary.org/obo/OBCS_0000089
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from NCBITaxon ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -237,7 +237,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_species
 http://purl.obolibrary.org/obo/NCBITaxon_9606
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from AERO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -250,7 +250,7 @@ AERO
 http://purl.obolibrary.org/obo/AERO_0000009
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from CHEBI ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -264,7 +264,7 @@ http://purl.obolibrary.org/obo/CHEBI_50733
 http://purl.obolibrary.org/obo/CHEBI_23367
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from UO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -285,7 +285,7 @@ http://purl.obolibrary.org/obo/UO_0000031
 http://purl.obolibrary.org/obo/UO_0000032
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OCRe ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -300,7 +300,7 @@ http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 http://purl.org/net/OCRe/study_design.owl#OCRE100055
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from EDAM ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -313,7 +313,7 @@ EDAM
 http://edamontology.org/data_0970
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from IAO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -327,7 +327,7 @@ http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000027
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ##### Import terms from OGSM ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -346,7 +346,7 @@ http://purl.obolibrary.org/obo/OGMS_0000056
 http://purl.obolibrary.org/obo/OGMS_0000031
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 <<<<<<< HEAD
 ##### Import terms from ERO ontology ######
@@ -374,7 +374,7 @@ http://purl.obolibrary.org/obo/ERO_0000356
 http://purl.obolibrary.org/obo/ERO_0000016
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 ############################################
 ####### IMPORTING RELATIONS ################
@@ -395,7 +395,7 @@ BFO
 http://purl.obolibrary.org/obo/BFO_0000055
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAxiomsRecursivelyRecursively
 
 ##### Import terms from RO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -408,6 +408,6 @@ RO
 http://purl.obolibrary.org/obo/RO_0000057
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAxiomsRecursivelyRecursively
 
 
