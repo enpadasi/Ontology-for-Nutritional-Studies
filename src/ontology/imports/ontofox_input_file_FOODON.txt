@@ -1,6 +1,6 @@
 ##### Import terms from PATO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl
 
 [Source ontology]
 FOODON

@@ -31,6 +31,7 @@
     <Prefix name="edamontology" IRI="http://edamontology.org/"/>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl</Import>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/foodon/releases/2017-03-18/foodon.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
@@ -142,9 +143,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000094"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE400012"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_1110049"/>
@@ -279,6 +277,9 @@
         <Class abbreviatedIRI="obo:OBI_0000252"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE_400012"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000002"/>
     </Declaration>
     <Declaration>
@@ -375,9 +376,6 @@
         <Class abbreviatedIRI="obo:UO_0000009"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ASSAY"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000154"/>
     </Declaration>
     <Declaration>
@@ -424,9 +422,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000262"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:TREATMENT"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:START_GROUP"/>
@@ -499,6 +494,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000005"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:ERO_0001765"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000017"/>
@@ -693,18 +691,6 @@
         <Class abbreviatedIRI="obo:OBI_0000630"/>
         <Class abbreviatedIRI="obo:ONS_0000052"/>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:ONS_0000001"/>
-        <Class abbreviatedIRI="resource:SIO_000115"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:ONS_0000051"/>
-        <Class abbreviatedIRI="efo:EFO_0003940"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:TREATMENT"/>
-        <Class abbreviatedIRI="efo:EFO_0000727"/>
-    </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="edamontology:data_0970"/>
         <Class abbreviatedIRI="obo:ONS_0000057"/>
@@ -724,10 +710,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:AERO_0000009"/>
         <Class abbreviatedIRI="obo:ONS_0000066"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:ASSAY"/>
-        <Class abbreviatedIRI="obo:OGMS_0000056"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CHEBI_23367"/>
@@ -774,8 +756,24 @@
         <Class abbreviatedIRI="obo:OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:ERO_0001765"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:EVENT"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:FOODON_03411297"/>
+        <Class abbreviatedIRI="obo:FOODON_00000000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:FOODON_03411347"/>
+        <Class abbreviatedIRI="obo:FOODON_00000000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:FOODON_03470107"/>
+        <Class abbreviatedIRI="obo:FOODON_00000000"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:HP_0003119"/>
@@ -816,18 +814,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0000070"/>
-        <Class abbreviatedIRI="obo:ONS_0000057"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0000070"/>
-        <Class abbreviatedIRI="obo:ONS_0000059"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0000070"/>
-        <Class abbreviatedIRI="obo:ONS_0000060"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000094"/>
@@ -887,7 +873,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000630"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000813"/>
@@ -983,11 +969,32 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000001"/>
-        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000001"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="ont:ONS_0000067"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000002"/>
-        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000002"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:ERO_0001765"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000002"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:ONS_0000066"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000003"/>
@@ -1107,7 +1114,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000034"/>
@@ -1211,15 +1218,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000051"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:ONS_0000051"/>
-        <Class abbreviatedIRI="efo:EFO_0003940"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000052"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:ONS_0000059"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
@@ -1239,19 +1242,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000057"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000058"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000059"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000060"/>
-        <Class abbreviatedIRI="obo:ASSAY"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000061"/>
@@ -1276,6 +1279,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000066"/>
         <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="ont:ONS_0000067"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0000011"/>
@@ -1374,7 +1384,7 @@
         <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE400012"/>
+        <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE_400012"/>
         <Class abbreviatedIRI="obo:ONS_0000056"/>
     </SubClassOf>
     <SubClassOf>
@@ -1395,11 +1405,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000115"/>
-        <Class abbreviatedIRI="obo:ONS_0000056"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000115"/>
-        <Class abbreviatedIRI="obo:ONS_0000066"/>
+        <Class abbreviatedIRI="obo:ONS_0000056"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000136"/>
@@ -1541,7 +1551,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="ont:ONS_0000067"/>
-        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="ont:ONS_0000067"/>
@@ -1664,26 +1674,6 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:ASSAY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any specific information retrieval from samples, including biological sampole analyses, &quot;omics&quot; analyses and retrieval of specific information from whole body measurements, interviews atc. This class collects the assays performed during the STUDY on SAMPLINGS taken from the SUBJECTS.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:ASSAY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:ASSAY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:ASSAY</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ASSAY</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <AbbreviatedIRI>obo:EVENT</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. An event is any change &quot;forced&quot; upon a subject, such as a treatment or challange.</Literal>
     </AnnotationAssertion>
@@ -1703,7 +1693,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EVENT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
+        <AbbreviatedIRI>obo:ONS_0000001</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Partecipants&apos; identification number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000001</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject.</Literal>
     </AnnotationAssertion>
@@ -1718,7 +1713,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participants&apos; identification number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
+        <AbbreviatedIRI>obo:ONS_0000002</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000002</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
     </AnnotationAssertion>
@@ -1738,11 +1738,6 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of anthropometry assessment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>obo:ONS_0000004</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For past smokers: time in years since quitting smoking</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
         <AbbreviatedIRI>obo:ONS_0000004</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</Literal>
@@ -1758,7 +1753,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time since quitting smoking</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty abbreviatedIRI="foaf:IAO_0000115"/>
+        <AbbreviatedIRI>obo:ONS_0000004</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For past smokers: time in years since quitting smoking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000005</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
     </AnnotationAssertion>
@@ -1778,7 +1778,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000006</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Categories of physical activity level
 1=low; 2= Medium; 3= High</Literal>
@@ -1799,7 +1799,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Categories of physical activity level</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000007</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1819,7 +1819,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total physical activity by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000008</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1839,7 +1839,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity from recreational or leisure-time activities by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000009</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in light physical activity in minutes/day derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1859,7 +1859,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light physical activity by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000010</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in moderate physical activity in minutes/day derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1879,7 +1879,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate physical activity by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000011</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in vigorous physical activity in minutes/day derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1899,7 +1899,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigorous physical activity by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000012</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data</Literal>
     </AnnotationAssertion>
@@ -1919,7 +1919,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sedentary time by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000013</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day</Literal>
     </AnnotationAssertion>
@@ -1939,7 +1939,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts by questionnaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000014</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
     </AnnotationAssertion>
@@ -1959,7 +1959,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of physical activity assessment by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000015</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in light physical activity in minutes/day derived from accelerometer data</Literal>
     </AnnotationAssertion>
@@ -1979,7 +1979,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light physical activity by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000016</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in moderate physical activity in minutes/day derived from accelerometer data</Literal>
     </AnnotationAssertion>
@@ -1999,7 +1999,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate physical activity by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000017</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent in vigorous physical activity in minutes/day derived from accelerometer data</Literal>
     </AnnotationAssertion>
@@ -2019,7 +2019,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigorous physical activity by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000018</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time spent sedentary in minutes/day derived from accelerometer data</Literal>
     </AnnotationAssertion>
@@ -2039,7 +2039,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sedentary time by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000019</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts of moderate or vigorous physical activity per day</Literal>
     </AnnotationAssertion>
@@ -2059,7 +2059,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of bouts by accelerometer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000020</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Average minutes per bout of moderate or vigorous physical activity per day</Literal>
     </AnnotationAssertion>
@@ -2079,7 +2079,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Average duration of bouts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000021</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary assessment used for uploaded dietary variables
 1=24-hour recall; 2=FFQ; 3=Food record; 4=other</Literal>
@@ -2100,7 +2100,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary assessment method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000022</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</Literal>
     </AnnotationAssertion>
@@ -2120,7 +2120,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of dietary assessment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000023</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carbohydrate intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2140,7 +2140,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carbohydrate intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000024</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiber intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2160,7 +2160,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiber intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000025</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total fat intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2180,7 +2180,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total fat intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000026</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Saturated fatty acid intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2195,7 +2195,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Saturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000027</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monounsaturated fatty acid intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2215,7 +2215,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monounsaturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000028</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polyunsaturated fatty acid intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2235,7 +2235,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polyunsaturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000029</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protein intake in g/day</Literal>
     </AnnotationAssertion>
@@ -2255,7 +2255,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protein intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000030</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)</Literal>
     </AnnotationAssertion>
@@ -2275,7 +2275,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Month of blood draw</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000031</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fasting status before blood draw (measured in hours of fasting before blood draw) 
 1=less than 9 hours; 2=9 hours or more</Literal>
@@ -2296,9 +2296,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fasting status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of collecting information on the diet/eating habits of a subject using a questionnaire. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of collecting information on the diet/eating habits of a subject using a questionnaire.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
@@ -2336,7 +2336,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000035</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)</Literal>
     </AnnotationAssertion>
@@ -2351,7 +2351,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short study name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000036</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of the consortium which the study refers to</Literal>
     </AnnotationAssertion>
@@ -2366,7 +2366,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consortium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000037</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the method used for randomization (OBCS_0000089), if any randomization was adopted.</Literal>
     </AnnotationAssertion>
@@ -2381,7 +2381,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Randomization method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000038</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicate whether blinded experiment were conducted or not</Literal>
     </AnnotationAssertion>
@@ -2396,7 +2396,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blinding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000039</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If blinded experiment were conducted, indicate the method used for blinding</Literal>
     </AnnotationAssertion>
@@ -2411,7 +2411,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blinding method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000040</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicated whether the study is terminated or not</Literal>
     </AnnotationAssertion>
@@ -2426,7 +2426,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study terminated?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000041</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicate whethet the compliance was assessed or not</Literal>
     </AnnotationAssertion>
@@ -2441,7 +2441,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Compliance assessed?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000042</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ration between the circumference of the waist to that of the hips</Literal>
     </AnnotationAssertion>
@@ -2456,7 +2456,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Waist:Hip ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000043</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A (short) alphanumeric string which identify the event/tretment</Literal>
     </AnnotationAssertion>
@@ -2471,7 +2471,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event identifier name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000044</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An alphanumeric string which identify and describe the event/tretment</Literal>
     </AnnotationAssertion>
@@ -2486,7 +2486,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Treatment descriptive name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000045</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short description of the sampling method used (i.e. &quot;needle&quot; for blood drawn, or &quot;direct sampling&quot; for questionnaire)</Literal>
     </AnnotationAssertion>
@@ -2501,7 +2501,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study sampling method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000046</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A long description of the sampling method used</Literal>
     </AnnotationAssertion>
@@ -2516,7 +2516,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling method description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000047</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Long text describing the assay used.</Literal>
     </AnnotationAssertion>
@@ -2531,7 +2531,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000048</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Platform used for the assay</Literal>
     </AnnotationAssertion>
@@ -2546,7 +2546,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay platform</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000049</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The unique sampling event identifier for the sample collection producing the sample</Literal>
     </AnnotationAssertion>
@@ -2561,7 +2561,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000050</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks.</Literal>
     </AnnotationAssertion>
@@ -2576,7 +2576,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Absolute start times</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000051</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2588,10 +2588,10 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000051</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical activity assessment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000052</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2606,7 +2606,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Blood Analytics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000053</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2646,7 +2646,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000055</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2661,7 +2661,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000056</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2676,7 +2676,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sampling tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000057</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2686,7 +2686,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000058</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2701,7 +2701,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000059</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CHEMICAL-BIOLOGICAL ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2716,7 +2716,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chemical-biological assay tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000060</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OMICS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</Literal>
     </AnnotationAssertion>
@@ -2731,7 +2731,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Omics tab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000061</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of omic assay performed (i.e. targeted metabolomics, untargeted metabolomics)</Literal>
     </AnnotationAssertion>
@@ -2746,7 +2746,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of omics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000062</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay type (i.e. Clinical chemistry assay: Standard kit #34567 from &apos;vendor&apos; assayed on a Cobas Mira analyzer)</Literal>
     </AnnotationAssertion>
@@ -2761,7 +2761,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assay type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000063</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A short text identifying the question</Literal>
     </AnnotationAssertion>
@@ -2776,7 +2776,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Short question name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000064</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of question or question variable code</Literal>
     </AnnotationAssertion>
@@ -2791,7 +2791,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Question type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000065</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type of physiology assay performed</Literal>
     </AnnotationAssertion>
@@ -2806,7 +2806,7 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physionlogy asssay tye</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
         <AbbreviatedIRI>obo:ONS_0000066</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Collects al the information (e.g. antropometric measurement) available on the subject</Literal>
     </AnnotationAssertion>
@@ -2904,26 +2904,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:START_GROUP</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">START_GROUP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:TREATMENT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A high-level concept. Any treatment that is implemented by an event that is forced upon a subject</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
-        <AbbreviatedIRI>obo:TREATMENT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:TREATMENT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:TREATMENT</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TREATMENT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
