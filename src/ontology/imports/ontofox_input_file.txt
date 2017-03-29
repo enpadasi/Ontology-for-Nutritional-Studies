@@ -12,6 +12,22 @@ http://purl.obolibrary.org/obo/PATO_0000047
 [Source annotation URIs]
 includeAllAxiomsRecursively
 
+##### Import terms from FOODON ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+FOODON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/FOODON_03411297
+http://purl.obolibrary.org/obo/FOODON_03411347
+http://purl.obolibrary.org/obo/FOODON_03470107
+http://purl.obolibrary.org/obo/FOODON_00000000
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
 ##### Import terms from EFO Ontology ######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
@@ -372,6 +388,7 @@ http://purl.obolibrary.org/obo/ERO_0000358
 http://purl.obolibrary.org/obo/ERO_0000357
 http://purl.obolibrary.org/obo/ERO_0000356
 http://purl.obolibrary.org/obo/ERO_0000016
+http://purl.obolibrary.org/obo/ERO_0001765
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
