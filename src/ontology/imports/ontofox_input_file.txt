@@ -385,7 +385,6 @@ http://purl.obolibrary.org/obo/OGMS_0000031
 [Source annotation URIs]
 includeAllAxiomsRecursively
 
-<<<<<<< HEAD
 ##### Import terms from ERO ontology ######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
@@ -413,39 +412,4 @@ http://purl.obolibrary.org/obo/ERO_0001765
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
-
-############################################
-####### IMPORTING RELATIONS ################
-############################################
-
-##### Import terms from BFO ontology #######
-=======
-####### IMPORTING RELATIONS ################
-##### Import terms from BFO ontology ######
->>>>>>> parent of b72f907... Update
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
-
-[Source ontology]
-BFO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/BFO_0000055
-
-[Source annotation URIs]
-includeAllAxiomsRecursivelyRecursively
-
-##### Import terms from RO ontology ######
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
-
-[Source ontology]
-RO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/RO_0000057
-
-[Source annotation URIs]
-includeAllAxiomsRecursivelyRecursively
-
 
