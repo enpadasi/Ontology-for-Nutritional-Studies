@@ -299,7 +299,7 @@ http://purl.obolibrary.org/obo/CHEBI_26208
 http://purl.obolibrary.org/obo/CHEBI_36088
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAxioms
 
 ##### Import terms from UO ontology ######
 [URI of the OWL(RDF/XML) output file]
