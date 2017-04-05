@@ -712,8 +712,28 @@
         <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_16646"/>
+        <Class abbreviatedIRI="obo:CHEBI_23367"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:CHEBI_23367"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_25413"/>
+        <Class abbreviatedIRI="obo:CHEBI_23367"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_26208"/>
+        <Class abbreviatedIRI="obo:CHEBI_23367"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_26607"/>
+        <Class abbreviatedIRI="obo:CHEBI_23367"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_36080"/>
+        <Class abbreviatedIRI="obo:CHEBI_23367"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CHEBI_50733"/>
@@ -788,6 +808,10 @@
         <Class abbreviatedIRI="obo:BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:ICO_0000069"/>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
@@ -802,6 +826,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBCS_0000089"/>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBIB_0000054"/>
+        <Class abbreviatedIRI="obo:IAO_0000416"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
