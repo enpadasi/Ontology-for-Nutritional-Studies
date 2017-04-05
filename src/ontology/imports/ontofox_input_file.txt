@@ -292,11 +292,11 @@ CHEBI
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHEBI_50733
 http://purl.obolibrary.org/obo/CHEBI_23367
-http://purl.obolibrary.org/obo/CHEBI_23008
+http://purl.obolibrary.org/obo/CHEBI_16646
 http://purl.obolibrary.org/obo/CHEBI_26607
 http://purl.obolibrary.org/obo/CHEBI_25413
 http://purl.obolibrary.org/obo/CHEBI_26208
-http://purl.obolibrary.org/obo/CHEBI_36088
+http://purl.obolibrary.org/obo/CHEBI_36080
 
 [Source annotation URIs]
 includeAllAxioms
