@@ -86,6 +86,20 @@ http://purl.obolibrary.org/obo/HP_0003119
 [Source annotation URIs]
 includeAllAxiomsRecursively
 
+##### Import terms from OBIB ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+OBIB
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBIB_0000054
+
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
 ##### Import terms from OBI ontology ######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
@@ -278,6 +292,11 @@ CHEBI
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHEBI_50733
 http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_23008
+http://purl.obolibrary.org/obo/CHEBI_26607
+http://purl.obolibrary.org/obo/CHEBI_25413
+http://purl.obolibrary.org/obo/CHEBI_26208
+http://purl.obolibrary.org/obo/CHEBI_36088
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
@@ -341,6 +360,8 @@ IAO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000027
+http://purl.obolibrary.org/obo/IAO_0000109
+http://purl.obolibrary.org/obo/IAO_0000416
 
 [Source annotation URIs]
 includeAllAxiomsRecursively
