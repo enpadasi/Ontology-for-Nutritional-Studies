@@ -1105,8 +1105,29 @@
         <Class abbreviatedIRI="obo:ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000022"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:ERO_0001765"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000022"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:ONS_0000066"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000023"/>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000023"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:CHEBI_16646"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000024"/>
@@ -1121,16 +1142,44 @@
         <Class abbreviatedIRI="obo:ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000026"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:CHEBI_26607"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000027"/>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000027"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:CHEBI_25413"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000028"/>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000028"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:CHEBI_26208"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000029"/>
         <Class abbreviatedIRI="obo:ONS_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONS_0000029"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:CHEBI_36080"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONS_0000030"/>
@@ -2165,7 +2214,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000023</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Carbohydrate intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Carbohydrate intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2185,7 +2234,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000024</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiber intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Fiber intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2205,7 +2254,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total fat intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Caclucalted Total fat intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2220,7 +2269,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000026</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Saturated fatty acid intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Saturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2240,7 +2289,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000027</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monounsaturated fatty acid intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Monounsaturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2260,7 +2309,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000028</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polyunsaturated fatty acid intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Polyunsaturated fatty acid intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
@@ -2280,7 +2329,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:ONS_0000029</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protein intake</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Calculated Protein intake</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
