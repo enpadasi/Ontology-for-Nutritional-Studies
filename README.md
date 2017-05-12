@@ -4,7 +4,7 @@
 
 This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
 
-## Versions
+## Pre-release Versions
 
 Initial commit: July 12, 2016
 
@@ -15,6 +15,11 @@ V2.0: (19/02/2017)
 - Adoption of BFO ontology as upper level
 - General reformatting of classes and properties
 - Addition/deletion of classes and properties
+
+V3.0: (12/05/2017) 
+
+- Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
+- Integration of a subset of FOODON ontology
 
 
 ## Contact
