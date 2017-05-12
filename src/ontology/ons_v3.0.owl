@@ -29,9 +29,9 @@
     <Prefix name="resource" IRI="http://semanticscience.org/resource/"/>
     <Prefix name="statistics" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
     <Prefix name="edamontology" IRI="http://edamontology.org/"/>
+    <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl</Import>
+    <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl</Import>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl</Import>
-    <Import>http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl</Import>
-    <Import>http://purl.obolibrary.org/obo/foodon/releases/2017-03-18/foodon.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
@@ -634,10 +634,10 @@
         <Class abbreviatedIRI="obo:OBI_0000249"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:UO_0000032"/>
