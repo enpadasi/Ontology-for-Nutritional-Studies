@@ -12,7 +12,7 @@ http://purl.obolibrary.org/obo/FOODON_03470107
 http://purl.obolibrary.org/obo/FOODON_00000000
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from EFO Ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -39,7 +39,7 @@ http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from CMO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -56,7 +56,7 @@ http://purl.obolibrary.org/obo/CMO_0000051
 http://purl.obolibrary.org/obo/CMO_0000105
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from HP ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -70,7 +70,7 @@ http://purl.obolibrary.org/obo/HP_0003119
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OBIB ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -84,7 +84,7 @@ http://purl.obolibrary.org/obo/OBIB_0000054
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from SIO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -124,7 +124,7 @@ http://semanticscience.org/resource/SIO_001066
 http://semanticscience.org/resource/SIO_000883
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from ICO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -138,7 +138,7 @@ http://purl.obolibrary.org/obo/ICO_0000069
 
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OMRSE ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -151,7 +151,7 @@ OMRSE
 http://purl.obolibrary.org/obo/OMRSE_00000038
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OMIABIS ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -165,7 +165,7 @@ http://purl.obolibrary.org/obo/OMIABIS_0000036
 http://purl.obolibrary.org/obo/OMIABIS_0000037
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OBCS ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -178,7 +178,7 @@ OBCS
 http://purl.obolibrary.org/obo/OBCS_0000089
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from NCBITaxon ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -191,7 +191,7 @@ NCBITaxon
 http://purl.obolibrary.org/obo/NCBITaxon_species
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from AERO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -204,7 +204,7 @@ AERO
 http://purl.obolibrary.org/obo/AERO_0000009
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from CHEBI ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -222,7 +222,7 @@ http://purl.obolibrary.org/obo/CHEBI_26208
 http://purl.obolibrary.org/obo/CHEBI_36080
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from UO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -241,7 +241,7 @@ http://purl.obolibrary.org/obo/UO_0000031
 http://purl.obolibrary.org/obo/UO_0000032
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OCRe ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -256,7 +256,7 @@ http://purl.org/net/OCRe/OCRe.owl#OCRE400012
 http://purl.org/net/OCRe/study_design.owl#OCRE100055
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from EDAM ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -269,7 +269,7 @@ EDAM
 http://edamontology.org/data_0970
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from OGSM ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -288,7 +288,7 @@ http://purl.obolibrary.org/obo/OGMS_0000056
 http://purl.obolibrary.org/obo/OGMS_0000031
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 
 ##### Import terms from ERO ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -316,5 +316,5 @@ http://purl.obolibrary.org/obo/ERO_0000016
 http://purl.obolibrary.org/obo/ERO_0001765
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAnnotationProperties
 

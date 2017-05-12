@@ -4,19 +4,15 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edamontology="http://edamontology.org/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
-     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:resource="http://semanticscience.org/resource/"
-     xmlns:uo="http://purl.obolibrary.org/obo/uo#"
      xmlns:schema="http://schema.org/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edam="http://purl.obolibrary.org/obo/edam#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
     
 
@@ -29,7 +25,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#data"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/DOID_definition_citation">
         <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:DOID_definition_citation>
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:definition>
@@ -42,7 +37,6 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym">
         <dc:identifier>hasSynonym</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/shorthand"/>
@@ -94,13 +88,10 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example">
         <dc:identifier>example</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/OMIM_definition_citation">
         <efo:OMIM_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/OMIM_definition_citation is an annotation property that is drawn from OMIM</efo:OMIM_definition_citation>
@@ -110,12 +101,11 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#edam"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <dc:identifier>description</dc:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
@@ -180,7 +170,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasExactSynonym"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label>has curation status</rdfs:label>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
@@ -190,6 +179,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
         <rdfs:label>definition_source</rdfs:label>
@@ -203,7 +194,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label>definition editor</rdfs:label>
@@ -252,12 +242,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
         <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
@@ -306,182 +290,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001518 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001518">
-        <rdfs:label>has_phase</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
-        <rdfs:label xml:lang="en">is about</rdfs:label>
-        <rdfs:label>is_about</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020012 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0020012">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:label xml:lang="en">designates</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realized_in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label xml:lang="en">inheres in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in part of</rdfs:label>
-        <rdfs:label xml:lang="en">inheres in part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002573">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has modifier</rdfs:label>
-        <rdfs:label>has modifier</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conjugate acid of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000068 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000068">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en">is part of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000273 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000273">
-        <rdfs:label xml:lang="en">has direct part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000339 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000339">
-        <rdfs:label xml:lang="en">is specified by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000341 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000341">
-        <rdfs:label xml:lang="en">is manifested as</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000355 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000355">
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000356 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000356">
-        <rdfs:label xml:lang="en">is realized in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000426 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000426">
-        <rdfs:label xml:lang="en">is manifestation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000672 -->
-
-    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000672">
-        <rdfs:label xml:lang="en">is identifier for</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/EFO_0000784 -->
-
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0000784">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_disease_location</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -495,12 +303,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://edamontology.org/data_0970">
         <rdfs:label>Citation</rdfs:label>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
-        <rdfs:comment>A bibliographic reference might include information such as authors, title, journal name, date and (possibly) a link to the abstract or full-text of the article if available.</rdfs:comment>
-        <obo:hasExactSynonym>Bibliographic reference</obo:hasExactSynonym>
-        <obo:hasExactSynonym>Reference</obo:hasExactSynonym>
         <obo:hasDbXref>Moby:GCP_SimpleCitation</obo:hasDbXref>
         <obo:hasDefinition>Bibliographic data that uniquely identifies a scientific article, book or other published material.</obo:hasDefinition>
         <obo:hasDbXref>Moby:Publication</obo:hasDbXref>
+        <obo:hasExactSynonym>Bibliographic reference</obo:hasExactSynonym>
+        <obo:hasExactSynonym>Reference</obo:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
         <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -711,91 +518,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical trial</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical trial to evaluate the efficacy of a new drug.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study that contains a set of procedures in medical research and drug development that are conducted to allow safety (or more specifically, information about adverse drug reactions and adverse effects of other treatments) and efficacy data to be collected for health interventions (e.g., drugs, diagnostics, devices, therapy protocols) that is performed over phases.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000348 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000348">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">case-only study</rdfs:label>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Dictionary of Epidemiology, Fifth Edition, Edited by Miquel Porta. p. 33. ISBN:978-0-19-531449-6 http://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational study whereby there is a single group of individuals with specific characteristics. This is a method that analyzes data from a case series and is used in case-crossover studies, in case-specular designs, and in molecular and genetic epidemiology to assess relationships between environmental exposures and genotypes.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">case-only study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000356 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000356">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open blinded study</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data and the subject know whether the subjects are in the control or experimental groups.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open trial</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-label trial</obo:IAO_0000118>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/single-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open blinded study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000357 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000357">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single blinded study</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data knows whether the subjects are in the control or experimental groups but the subjects do not.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/single-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single blinded study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000358 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000358">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double blinded study</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which neither the subjects of the experiment nor the persons administering the experiment know the critical aspects of the experiment; a double-blind procedure is used to guard against both experimenter bias and placebo effects.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double blinded study</obo:IAO_0000111>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.thefreedictionary.com/double-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001765 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001765">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometric analysis</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physiological assay of the human body that uses such tools as body mass index, basal metabolic rate, bioelectrical impedance, and dual energy x-ray absorptiometry, along with measurements of skinfold thickness and arm muscle circumference, to assess the structure, form, and composition of the body for purposes of comparison.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.answers.com/topic/anthropometric-analysis</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FOODON_00000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00000000">
@@ -814,7 +536,6 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
         <rdfs:label xml:lang="en">animal used as food source</rdfs:label>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
         <obo:hasDbXref>LANGUAL:B1297</obo:hasDbXref>
-        <rdfs:comment xml:lang="en">LanguaL curation note: For a unicellular animal, use *ALGAE OR FUNGUS USED AS FOOD SOURCE*.</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">Multicellular animal, e.g., fish, meat animal or poultry.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -828,7 +549,6 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
         <rdfs:label xml:lang="en">plant used as food source</rdfs:label>
         <obo:hasDbXref>LANGUAL:B1347</obo:hasDbXref>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">LanguaL curation note: For unicellular plants as well as for algae, mushrooms and yeast, use the appropriate narrower term under *ALGAE OR FUNGUS USED AS FOOD SOURCE*.</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">Multicellular plants.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -842,7 +562,6 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
         <rdfs:label xml:lang="en">preservation method</rdfs:label>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
         <obo:hasDbXref>LANGUAL:J0107</obo:hasDbXref>
-        <rdfs:comment xml:lang="en">LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term.</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">The methods contributing to the prevention or retardation of microbial, enzymatic or oxidative spoilage and thus to the extension of shelf life. Index all methods for which information is available, even if a corresponding descriptor has already been used in *H. TREATMENT APPLIED*. Preservation descriptors refer to the finished food as a whole with these exceptions: (1) if the components of a multi-component food, such as cream pie, are preserved by different methods, index all methods; (2)  if chemical preservatives are declared on the label, always index them even if it is known that the preservative was introduced through or is only present in a component or ingredient of the food; and (3) if the preservation method for an ingredient is declared on the label (such as brie cheese made from pasteurized milk) index it. Also use *INGREDIENT PRESERVED BY THERMAL PROCESSING* or *INGREDIENT PRESERVED BY IRRADIATION* when ingredients have been pasteurized, ultrapasteurized, sterilized or irradiated.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -1152,7 +871,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">start date</rdfs:label>
         <terms:description xml:lang="en">A start date is a time instant pertaining to the date of the beginning of a process.</terms:description>
         <dc:identifier>SIO_000031</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1164,7 +882,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">question</rdfs:label>
         <dc:identifier>SIO_000085</dc:identifier>
         <terms:description xml:lang="en">A question is a linguistic expression used to make a request for information.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1176,7 +893,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">identifier</rdfs:label>
         <terms:description xml:lang="en">An identifier is a label that specifically refers to (identifies) an entity (instance/type).</terms:description>
         <dc:identifier>SIO_000115</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1188,7 +904,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">inclusion criterion</rdfs:label>
         <terms:description xml:lang="en">An inclusion criterion is a criterion that must be present to satisfy some objective.</terms:description>
         <dc:identifier>SIO_000142</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1200,7 +915,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">exclusion criterion</rdfs:label>
         <terms:description xml:lang="en">An exclusion criterion is a criterion that must be absent to satistify the objective.</terms:description>
         <dc:identifier>SIO_000143</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1213,7 +927,6 @@ However, Shaw explicates:
         <terms:description xml:lang="en">An article is a publication that is stand-alone section of a larger work.</terms:description>
         <dc:identifier>SIO_000154</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1224,7 +937,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">address</rdfs:label>
         <terms:description xml:lang="en">An address is a position that indicates the physical location of some entity using a social convention.</terms:description>
         <dc:identifier>SIO_000172</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1237,7 +949,6 @@ However, Shaw explicates:
         <terms:description xml:lang="en">An affiliation is a social relation which indicates the partnership between two or more entities.</terms:description>
         <dc:identifier>SIO_000173</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1250,7 +961,6 @@ However, Shaw explicates:
         <resource:hasSynonym>full name</resource:hasSynonym>
         <dc:identifier>SIO_000183</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1261,7 +971,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">conclusion</rdfs:label>
         <dc:identifier>SIO_000262</dc:identifier>
         <terms:description xml:lang="en">A conclusion is a proposition which is reached after considering the evidence, arguments or premises.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1274,7 +983,6 @@ However, Shaw explicates:
         <dc:identifier>SIO_000296</dc:identifier>
         <terms:description xml:lang="en">A website is a collection of documents published on the World Wide Web.</terms:description>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1285,7 +993,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">objective</rdfs:label>
         <terms:description xml:lang="en">An objective is a proposition that indicates a planned or anticipated outcome.</terms:description>
         <dc:identifier>SIO_000337</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1297,7 +1004,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">number</rdfs:label>
         <dc:identifier>SIO_000366</dc:identifier>
         <terms:description xml:lang="en">A number is a mathematical object used to count, label, and measure.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1311,7 +1017,6 @@ However, Shaw explicates:
         <dc:identifier>SIO_000391</dc:identifier>
         <resource:example xml:lang="en">the duration of my life; the duration of a surgical procedure, the moment of death</resource:example>
         <terms:description xml:lang="en">time measurement is a measurement value of the duration of some interval of time or a particular instant of time (against some frame of reference).</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1323,7 +1028,6 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">study group</rdfs:label>
         <dc:identifier>SIO_000403</dc:identifier>
         <terms:description xml:lang="en">A study group is a group of individuals that are subjects in an observational or intervention study.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1337,7 +1041,6 @@ However, Shaw explicates:
 pair of points.</terms:description>
         <dc:identifier>SIO_000508</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1348,7 +1051,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">country</rdfs:label>
         <dc:identifier>SIO_000664</dc:identifier>
         <terms:description xml:lang="en">A country is a region legally identified as a distinct entity in political geography. </terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1361,7 +1063,6 @@ pair of points.</terms:description>
         <terms:description xml:lang="en">A start time is a time instant pertaining to the time at which a process begins.</terms:description>
         <dc:identifier>SIO_000669</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1373,7 +1074,6 @@ pair of points.</terms:description>
         <dc:identifier>SIO_000670</dc:identifier>
         <terms:description xml:lang="en">An end time is a time instant pertaining to the time at which a process ends.</terms:description>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1385,7 +1085,6 @@ pair of points.</terms:description>
         <dc:identifier>SIO_000688</dc:identifier>
         <terms:description xml:lang="en">institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective.</terms:description>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1396,7 +1095,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">subject role</rdfs:label>
         <terms:description xml:lang="en">A subject role is the role of an individual that is the target of the study.</terms:description>
         <dc:identifier>SIO_000883</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1408,7 +1106,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">standard operating procedure</rdfs:label>
         <terms:description xml:lang="en">A standard operating procedure is a specification approved for use in specific environments.</terms:description>
         <dc:identifier>SIO_000964</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1420,7 +1117,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">ethnicity</rdfs:label>
         <dc:identifier>SIO_001014</dc:identifier>
         <terms:description xml:lang="en">ethnicity is the biological quality of membership in a social group based on a common heritage.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1433,7 +1129,6 @@ pair of points.</terms:description>
         <dc:identifier>SIO_001041</dc:identifier>
         <terms:description xml:lang="en">A study design is a protocol for the proper execution of a study which normally requires a carefullly crafted research question or hypothesis and at least one variable under observation and observed values for that variable.</terms:description>
         <resource:hasSynonym>study protocol</resource:hasSynonym>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1446,7 +1141,6 @@ pair of points.</terms:description>
         <terms:description xml:lang="en">A recipe is a set of instructions that describe how to prepare or make something.</terms:description>
         <dc:identifier>SIO_001042</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1455,21 +1149,8 @@ pair of points.</terms:description>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001066">
         <rdfs:label xml:lang="en">study</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000426"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001041"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000355"/>
-                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000337"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description xml:lang="en">A study is a process that realizes the steps of a study design.</terms:description>
         <dc:identifier>SIO_001066</dc:identifier>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1482,7 +1163,6 @@ pair of points.</terms:description>
         <terms:description xml:lang="en">A control group is a group of individuals that are not subject to an intervention of interest, but rather serve as a baseline to compare the outcomes in the intervention group.</terms:description>
         <dc:identifier>SIO_001068</dc:identifier>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
 
@@ -1493,7 +1173,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">email address</rdfs:label>
         <dc:identifier>SIO_001323</dc:identifier>
         <terms:description>an email address is an identifier to send mail to particular electronic mailbox.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     
@@ -1939,102 +1618,6 @@ pair of points.</terms:description>
         <efo:alternative_term>CPD measurement</efo:alternative_term>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
-        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
-        <rdfs:label xml:lang="en">ready for release</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
-        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
-        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
-        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/iao.owl -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao.owl"/>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/aero.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omiabis.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omiabis.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omiabis.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omiabis.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omiabis.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
-    </rdf:Description>
 </rdf:RDF>
 
 
