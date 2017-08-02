@@ -31,7 +31,7 @@
     <Prefix name="edamontology" IRI="http://edamontology.org/"/>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl</Import>
     <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl</Import>
-    <Import>https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl</Import>
+    <Import>https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI_WP4</Literal>
@@ -55,6 +55,9 @@
         <Class abbreviatedIRI="obo:HP_0003119"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Additive"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000031"/>
     </Declaration>
     <Declaration>
@@ -76,6 +79,9 @@
         <Class abbreviatedIRI="resource:SIO_000115"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Diet"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:OGMS_0000031"/>
     </Declaration>
     <Declaration>
@@ -94,10 +100,13 @@
         <Class abbreviatedIRI="obo:ONS_0000066"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:EVENT"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:UBERON_0001988"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:EVENT"/>
+        <Class abbreviatedIRI="ont:Usual_diet"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000220"/>
@@ -154,10 +163,13 @@
         <Class abbreviatedIRI="obo:ONS_0000046"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:ONS_0000058"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ICO_0000069"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000058"/>
+        <Class abbreviatedIRI="ont:ONS_0000070"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:PATO_0000047"/>
@@ -172,10 +184,16 @@
         <Class abbreviatedIRI="resource:SIO_000366"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000319"/>
+        <Class abbreviatedIRI="ont:Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Prescribed_diet"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000319"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000044"/>
@@ -208,6 +226,9 @@
         <Class abbreviatedIRI="obo:OBI_0100026"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Meal"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000024"/>
     </Declaration>
     <Declaration>
@@ -215,6 +236,12 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000048"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:ONS_0000072"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Contaminant"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000010"/>
@@ -241,10 +268,16 @@
         <DataProperty abbreviatedIRI="obo:ONS_0000014"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Nutrient"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:UBERON_0000463"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:ONS_0000071"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000047"/>
@@ -259,6 +292,9 @@
         <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Intervention_diet"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000000"/>
     </Declaration>
     <Declaration>
@@ -268,10 +304,10 @@
         <Class abbreviatedIRI="obo:ONS_0000001"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:UBERON_0001836"/>
+        <Class abbreviatedIRI="obo:OBI_0000984"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0000984"/>
+        <Class abbreviatedIRI="obo:UBERON_0001836"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
@@ -281,6 +317,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/net/OCRe/OCRe.owl#OCRE_400012"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Dietary_pattern"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000002"/>
@@ -343,19 +382,16 @@
         <Class abbreviatedIRI="resource:SIO_000143"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ERO_0000348"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000198"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="obo:ONS_0000005"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0006525"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:BFO_0000003"/>
+        <DataProperty abbreviatedIRI="obo:ONS_0000005"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000161"/>
@@ -365,6 +401,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0003940"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Food_component"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000004"/>
@@ -397,25 +436,25 @@
         <Class abbreviatedIRI="obo:ONS_0000003"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:UBERON_0000479"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000015"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:UBERON_0000479"/>
+        <DataProperty abbreviatedIRI="obo:ONS_0000050"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000027"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="obo:ONS_0000050"/>
+        <Class abbreviatedIRI="ont:Cook"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000039"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="statistics:definition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:CMO_0001407"/>
@@ -430,19 +469,19 @@
         <Class abbreviatedIRI="efo:EFO_0002755"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:OBI_0100016"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:UBERON_0001913"/>
+        <AnnotationProperty abbreviatedIRI="efo:bioportal_provenance"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_1110040"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:UBERON_0001913"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000272"/>
@@ -463,13 +502,19 @@
         <Class abbreviatedIRI="resource:SIO_000883"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:UBERON_0001970"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:id"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Food"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000031"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_78295"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000727"/>
@@ -493,10 +538,10 @@
         <Class abbreviatedIRI="obo:NCBITaxon_species"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000005"/>
+        <Class abbreviatedIRI="obo:ERO_0001765"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ERO_0001765"/>
+        <Class abbreviatedIRI="obo:ONS_0000005"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000017"/>
@@ -508,13 +553,16 @@
         <Class abbreviatedIRI="obo:BFO_0000002"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000051"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0000433"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:ONS_0000051"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:CHEBI_50733"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:AERO_0000009"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000063"/>
@@ -523,25 +571,19 @@
         <Class abbreviatedIRI="obo:SAMPLING"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:AERO_0000009"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000664"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000296"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ERO_0000356"/>
+        <Class abbreviatedIRI="efo:EFO_0004338"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000688"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:UO_0000034"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0004338"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OMIABIS_0000037"/>
@@ -551,6 +593,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_000337"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:ONS_0000068"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
@@ -571,7 +616,13 @@
         <Class abbreviatedIRI="obo:IAO_0000027"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:Drinking"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="efo:EFO_0004339"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000103"/>
@@ -580,19 +631,19 @@
         <Class abbreviatedIRI="obo:UO_0000033"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OMIABIS_0000036"/>
+        <Class abbreviatedIRI="obo:UO_0000021"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:UO_0000021"/>
+        <Class abbreviatedIRI="obo:OMIABIS_0000036"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_001323"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="ont:ONS_0000067"/>
+        <Class abbreviatedIRI="obo:OBI_0000097"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0000097"/>
+        <Class abbreviatedIRI="ont:ONS_0000067"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OGMS_0000018"/>
@@ -613,22 +664,22 @@
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:CMO_0000105"/>
+        <Class abbreviatedIRI="obo:ONS_0000041"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000041"/>
+        <Class abbreviatedIRI="obo:CMO_0000105"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000065"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000173"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ERO_0000358"/>
+        <Class abbreviatedIRI="obo:ONS_0000065"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Food_bioactive"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000249"/>
@@ -643,16 +694,19 @@
         <Class abbreviatedIRI="obo:UO_0000032"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:CMO_0000052"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000172"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="efo:EFO_0000400"/>
+        <Class abbreviatedIRI="obo:CMO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ont:Eating"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efo:EFO_0000400"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:ONS_0000052"/>
@@ -664,13 +718,7 @@
         <Class abbreviatedIRI="obo:ONS_0000064"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="resource:SIO_001041"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasOBOFormatVersion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:ERO_0000357"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:UO_0000031"/>
@@ -679,25 +727,28 @@
         <Class abbreviatedIRI="obo:UBERON_0000178"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="ont:ONS_0000069"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="resource:SIO_000508"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="resource:SIO_001042"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="resource:SIO_000183"/>
+        <Class abbreviatedIRI="resource:SIO_001066"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="resource:SIO_001066"/>
+        <Class abbreviatedIRI="resource:SIO_000183"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:CMO_0000053"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+        <Class abbreviatedIRI="obo:ONS_0000009"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:ONS_0000009"/>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="obo:OBI_0000630"/>
@@ -752,6 +803,10 @@
         <Class abbreviatedIRI="obo:medication_supplement_diet_use"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_78295"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:CMO_0000051"/>
         <Class abbreviatedIRI="obo:ONS_0000052"/>
     </SubClassOf>
@@ -772,28 +827,16 @@
         <Class abbreviatedIRI="obo:ONS_0000033"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:ERO_0000348"/>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:ERO_0000356"/>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:ERO_0000357"/>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:ERO_0000358"/>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:ERO_0001765"/>
         <Class abbreviatedIRI="obo:ONS_0000059"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:EVENT"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:FOODON_00000000"/>
+        <Class abbreviatedIRI="ont:Ingredient"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:FOODON_03411297"/>
@@ -854,10 +897,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0000094"/>
-        <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000097"/>
@@ -1477,10 +1516,6 @@
         <Class abbreviatedIRI="obo:ONS_0000056"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/net/OCRe/study_design.owl#OCRE100007"/>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_000000"/>
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
@@ -1605,12 +1640,8 @@
         <Class abbreviatedIRI="obo:ONS_0000066"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="resource:SIO_001041"/>
-        <Class abbreviatedIRI="obo:ONS_0000053"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001042"/>
-        <Class abbreviatedIRI="obo:ONS_0000053"/>
+        <Class abbreviatedIRI="obo:IAO_0000104"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="resource:SIO_001066"/>
@@ -1639,6 +1670,143 @@
         <Class abbreviatedIRI="obo:ONS_0000053"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="ont:Additive"/>
+        <Class abbreviatedIRI="ont:Food_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Contaminant"/>
+        <Class abbreviatedIRI="ont:Food_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Cook"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Cook"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="ont:Food_preparation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Diet"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Dietary_pattern"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Drinking"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Drinking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="ont:Meal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Eating"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Eating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="ont:Meal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food"/>
+        <Class abbreviatedIRI="obo:OBI_0000047"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
+            <Class abbreviatedIRI="ont:Food_component"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
+            <Class abbreviatedIRI="ont:Drinking"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
+            <Class abbreviatedIRI="ont:Eating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_bioactive"/>
+        <Class abbreviatedIRI="ont:Food_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_component"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+            <Class abbreviatedIRI="obo:CHEBI_78295"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
+        <Class abbreviatedIRI="obo:OBI_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="resource:SIO_001042"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class abbreviatedIRI="ont:Ingredient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
+            <Class abbreviatedIRI="ont:Food"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Food_preparation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+            <Class abbreviatedIRI="resource:SIO_001042"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Ingredient"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Intervention_diet"/>
+        <Class abbreviatedIRI="ont:Diet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Meal"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Nutrient"/>
+        <Class abbreviatedIRI="ont:Food_component"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="ont:ONS_0000067"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
@@ -1648,6 +1816,34 @@
             <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
             <Class abbreviatedIRI="resource:SIO_000883"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000068"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000069"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000070"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000071"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:ONS_0000072"/>
+        <Class abbreviatedIRI="obo:OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Prescribed_diet"/>
+        <Class abbreviatedIRI="ont:Diet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="ont:Usual_diet"/>
+        <Class abbreviatedIRI="ont:Diet"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="efo:EFO_0000319"/>
@@ -2935,9 +3131,434 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SAMPLING</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Additive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component added to food to improve or preserve it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Additive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Additive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Additive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Additive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Contaminant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unwanted food component that makes the food no longer suitable for use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Contaminant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Contaminant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Contaminant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contaminant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Cook</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cook role is the role of the person responsible for food prepraration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Cook</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Cook</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Cook</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cook role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The regular course of eating and drinking adopted by a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:MSH_definition_citation"/>
+        <AbbreviatedIRI>ont:Diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MSH:D004032</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Dietary_pattern</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary pattern represent the quantity, proportion, variety and combination of different foods and drinks consumed in meals, and the frequency with which they are habitually consumed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Dietary_pattern</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Dietary_pattern</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Dietary_pattern</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dietary Pattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Drinking</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The consumption of liquids. Not for drinking alcohol or alcohol consumption ( = ALCOHOL DRINKING); differentiate from DRINKING BEHAVIOR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:MSH_definition_citation"/>
+        <AbbreviatedIRI>ont:Drinking</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MSH:D004326</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Drinking</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Drinking</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Drinking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Eating</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The consumption of edible substances. The act of eating: do not confuse with FOOD (the substance eaten) or EATING BEHAVIOR (the manner of eating).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:MSH_definition_citation"/>
+        <AbbreviatedIRI>ont:Eating</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MSH:D004435</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Eating</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Eating</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Eating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Food</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The food is a complex matrix that is consumed by a person through the process of eating or drinking. Food are bearer of the nutrients, bioactives and sometimes other food components. Food consumption, through the meal consumption, follows a certain dietary pattern, which define the diet.  Nutrients and bioactives contained in food can be exploited by the human organism thanks to the process of digestion, absorption, metabolization, or through the intervention of the gut microflora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:MSH_definition_citation"/>
+        <AbbreviatedIRI>ont:Food</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MSH:D005502</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Food</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Food</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Food</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Food_bioactive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A food bioactive is a food component other than those needed to meet basic human nutritional needs (nutrients). Food bioactives  modulates one or more metabolic processes, possibly resulting in the promotion of better health. The daily required intake for food bioactives is not established yet, and there is no demonstration that malnutrition occurs when the right amount is not provided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Food_bioactive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Food_bioactive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Food_bioactive</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Food Bioactive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Food_component</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental con-taminants. Concept of food component can be viewer both as a role and as a material entity. This class, for convenience, represents the material entity &quot;food component&quot;, including all those material entity having the role of &quot;Food Component&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Food_component</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Food_component</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Food_component</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Food Component Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Food_preparation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Food preparation is the process in which food is made.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Food_preparation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Food_preparation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Food_preparation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Food Preparation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Ingredient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An ingredient is a material entity used as part for the preparatio of food. Recipes specify which ingredients are used to prepare a specific food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Ingredient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Ingredient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Ingredient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Igredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Intervention_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The diet administered during an intervention study. It usually comprises the adoption of a certain nutritional intervention, intended as the prescription of consuming or not consuming certain food, and follows a precise study design. Intervention studies usually compare at least two subgroups of a population, one control group receiving a null nutritional intervention, and one or more test groups receiving the intervention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Intervention_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Intervention_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Intervention_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intervention Diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Meal</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Meal</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Meal</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Meal</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Nutrient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A nutrient is a food component used by the body for normal physiologic functions that guarantee survival and growth. It must be supplied in adequate and defined amounts from foods consumed within a diet. Malnutrition occurs when the right amount of nutrient is not provided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Nutrient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Nutrient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Nutrient</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nutrient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>ont:ONS_0000067</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject of a nutritional study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:ONS_0000068</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An experimental comparison study in which participants are allocated to treatment/intervention or control/placebo groups using a random mechanism (see randomisation). Best for study the effect of an intervention.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000068</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Randomised Controlled Trial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>ont:ONS_0000068</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.cebm.net/study-designs/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:ONS_0000069</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A controlled trial where each study participant has both therapies, e.g, is randomised to treatment A first, at the crossover point they then start treatment B. Only relevant if the outcome is reversible with time, e.g, symptoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000069</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Crossover Design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>ont:ONS_0000069</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.cebm.net/study-designs/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:ONS_0000070</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data are obtained from groups who have been exposed, or not exposed, to the new technology or factor of interest (eg from databases). No allocation of exposure is made by the researcher. Best for study the effect of predictive risk factors on an outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000070</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cohort Study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>ont:ONS_0000070</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.cebm.net/study-designs/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:ONS_0000071</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Patients with a certain outcome or disease and an appropriate group of controls without the outcome or disease are selected (usually with careful consideration of appropriate choice of controls, matching, etc) and then information is obtained on whether the subjects have been exposed to the factor under investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000071</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Case-Control Studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>ont:ONS_0000071</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.cebm.net/study-designs/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:ONS_0000072</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A study that examines the relationship between diseases (or other health-related characteristics) and other variables of interest as they exist in a defined population at one particular time (ie exposure and outcomes are both measured at the same time). Best for quantifying the prevalence of a disease or risk factor, and for quantifying the accuracy of a diagnostic test.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:ONS_0000072</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cross-Sectional Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>ont:ONS_0000072</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.cebm.net/study-designs/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Prescribed_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A diet prescribed by a physician/ nutritionist to meet spe-cific nutritional needs of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Prescribed_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Prescribed_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Prescribed_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prescribed Diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+        <AbbreviatedIRI>ont:Usual_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour. It is also intended as the diet a person would follow without further prescription or indications, i.e. vegetarian diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition_editor"/>
+        <AbbreviatedIRI>ont:Usual_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>ont:Usual_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENPADASI WP4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ont:Usual_diet</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Usual Diet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
