@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl#"
-     xml:base="https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl#"
+     xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edamontology="http://edamontology.org/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
@@ -13,7 +13,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
     
 
 
@@ -39,7 +39,6 @@
         <dc:identifier>hasSynonym</dc:identifier>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/shorthand"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
         <rdfs:label>database_cross_reference</rdfs:label>
@@ -54,12 +53,9 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/inSubset"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/created_by"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative_term</rdfs:label>
         <efo:definition>An alternative label for a given entity such as a commonly used abbreviation or synonym. </efo:definition>
@@ -91,27 +87,28 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/subset">
+        <dc:identifier>subset</dc:identifier>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/OMIM_definition_citation">
         <efo:OMIM_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/OMIM_definition_citation is an annotation property that is drawn from OMIM</efo:OMIM_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasBroadSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <dc:identifier>description</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasRelatedSynonym"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ICD9_definition_citation">
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/ICD9_definition_citation is an annotation property that is drawn from ICD9</efo:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
@@ -158,11 +155,11 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
-        <obo:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obo:is_metadata_tag>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</obo:hasDbXref>
-        <obo:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:shorthand>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</obo:hasOBONamespace>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</oboInOwl:shorthand>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
@@ -179,11 +176,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasExactSynonym"/>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
-        <rdfs:label>definition_source</rdfs:label>
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
@@ -194,6 +188,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label>definition editor</rdfs:label>
@@ -223,7 +218,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
         <rdfs:label>editor preferred term</rdfs:label>
@@ -248,7 +242,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:definition>
         <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
@@ -258,21 +251,18 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasOBONamespace"/>
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in">
-        <rdfs:label>Created in</rdfs:label>
-        <obo:inSubset>concept_properties</obo:inSubset>
-        <obo:is_metadata_tag>true</obo:is_metadata_tag>
-        <obo:hasDefinition>Version in which a concept was created.</obo:hasDefinition>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in">
+        <rdfs:label>Created in</rdfs:label>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <obo:is_metadata_tag>true</obo:is_metadata_tag>
+        <oboInOwl:hasDefinition>Version in which a concept was created.</oboInOwl:hasDefinition>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasAlternativeId"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     
 
 
@@ -284,6 +274,32 @@ We also have the outstanding issue of how to aim different definitions to differ
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000001 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000001">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+        <dc:identifier>SIO_000001</dc:identifier>
+        <schema:comment>&#39;is related to&#39; is the top level relation in SIO</schema:comment>
+        <resource:subset>relations+</resource:subset>
+        <terms:description xml:lang="en">A is related to B iff there is some relation between A and B.</terms:description>
+        <resource:subset>core</resource:subset>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:ObjectProperty>
     
 
 
@@ -303,14 +319,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://edamontology.org/data_0970">
         <rdfs:label>Citation</rdfs:label>
         <edamontology:created_in>beta12orEarlier</edamontology:created_in>
-        <obo:hasDbXref>Moby:GCP_SimpleCitation</obo:hasDbXref>
-        <obo:hasDefinition>Bibliographic data that uniquely identifies a scientific article, book or other published material.</obo:hasDefinition>
-        <obo:hasDbXref>Moby:Publication</obo:hasDbXref>
-        <obo:hasExactSynonym>Bibliographic reference</obo:hasExactSynonym>
-        <obo:hasExactSynonym>Reference</obo:hasExactSynonym>
+        <oboInOwl:hasDbXref>Moby:Publication</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Bibliographic reference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Reference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>Moby:GCP_SimpleCitation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDefinition>Bibliographic data that uniquely identifies a scientific article, book or other published material.</oboInOwl:hasDefinition>
         <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
     </owl:Class>
     
 
@@ -332,28 +348,28 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16646">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrate</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any member of the class of organooxygen compounds that is a polyhydroxy-aldehyde or -ketone or a lactol resulting from their intramolecular condensation (monosaccharides); substances derived from these by reduction of the carbonyl group (alditols), by oxidation of one or more hydroxy groups to afford the corresponding aldehydes, ketones, or carboxylic acids, or by replacement of one or more hydroxy group(s) by a hydrogen atom; and polymeric products arising by intermolecular acetal formation between two or more such molecules (disaccharides, polysaccharides and oligosaccharides). Carbohydrates contain only carbon, hydrogen and oxygen atoms; prior to any oxidation or reduction, most have the empirical formula Cm(H2O)n. Compounds obtained from carbohydrates by substitution, etc., are known as carbohydrate derivatives and may contain other elements. Cyclitols are generally not regarded as carbohydrates.</obo:IAO_0000115>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15131</obo:hasAlternativeId>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:16646</obo:id>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23008</obo:hasAlternativeId>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:9318</obo:hasAlternativeId>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenhydrat</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenhydrate</obo:hasRelatedSynonym>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Carbohydrate</obo:hasDbXref>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohidrato</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohidratos</obo:hasRelatedSynonym>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrate</obo:hasExactSynonym>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrates</obo:hasExactSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucide</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucides</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucido</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucidos</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrates de carbone</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharide</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharides</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharidum</obo:hasRelatedSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15131</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:16646</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:23008</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:9318</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenhydrat</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlenhydrate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Carbohydrate</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohidrato</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohidratos</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrates</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucide</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucides</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucido</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucidos</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrates de carbone</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharide</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharides</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saccharidum</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     </owl:Class>
     
 
@@ -363,15 +379,15 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25413">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monounsaturated fatty acid</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any fatty acid with one double or triple bond in the fatty acid chain and singly bonded carbon atoms in the rest of the chain. MUFAs have positive effects on the cardiovascular system, and in diabetes treatment.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:25413</obo:id>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUFA</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUFAs</obo:hasRelatedSynonym>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10584045</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12936956</obo:hasDbXref>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monounsaturated fatty acids</obo:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:25413</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUFA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUFAs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10584045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12936956</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monounsaturated fatty acids</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     </owl:Class>
     
 
@@ -381,16 +397,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26208">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyunsaturated fatty acid</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any fatty acid containing more than one double bond. Acids in this group are reported to have cardioprotective effects; and levels are lowered in chronic fatigue syndrome.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:26208</obo:id>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14977874</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16380690</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17891522</obo:hasDbXref>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUFA</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUFAs</obo:hasRelatedSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyunsaturated fatty acids</obo:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:26208</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14977874</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16380690</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17891522</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUFA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUFAs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyunsaturated fatty acids</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     </owl:Class>
     
 
@@ -400,17 +416,17 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26607">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acid</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any fatty acid containing no carbon to carbon multiple bonds. Known to produce adverse biological effects when ingested to excess.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:26607</obo:id>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16492686</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19763019</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20237329</obo:hasDbXref>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SFA</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SFAs</obo:hasRelatedSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acid</obo:hasExactSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acids</obo:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:26607</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16492686</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19763019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20237329</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SFA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SFAs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acids</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     </owl:Class>
     
 
@@ -420,13 +436,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.</obo:IAO_0000115>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:13677</obo:hasAlternativeId>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:14911</obo:hasAlternativeId>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36080</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proteins</obo:hasExactSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:13677</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:14911</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:36080</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proteins</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
     </owl:Class>
     
 
@@ -436,13 +452,29 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50733">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutraceutical</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A product in capsule, tablet or liquid form that provide essential nutrients, such as a vitamin, an essential mineral, a protein, an herb, or similar nutritional substance.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50733</obo:id>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dietary Supplement</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Supplementation</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutritional supplement</obo:hasRelatedSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50733</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dietary Supplement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Supplementation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutritional supplement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_78295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_78295">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">food component</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:78295</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary component</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary components</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">food components</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
 
@@ -451,10 +483,10 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000051">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood total cholesterol level</rdfs:label>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000051</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000051</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the entire amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, without taking into account any association with other molecules such as lipoproteins, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.</obo:IAO_0000115>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood TC level</obo:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood TC level</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
     </owl:Class>
     
@@ -464,12 +496,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000052">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood high density lipoprotein cholesterol level</rdfs:label>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000052</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000052</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in high-density lipoprotein (HDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. HDL is the smallest of the major lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The HDL class of lipoproteins, specifically the subtypes of HDL2 and HDL3, have densities between 1.063 and 1.210 g/ml.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL level</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL-C</obo:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL level</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood HDL-C</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
     </owl:Class>
     
@@ -479,12 +511,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000053">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood low density lipoprotein cholesterol level</rdfs:label>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, carried in low-density lipoprotein (LDL) molecules in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them. LDL constitute a class of relatively large, heterogeneous lipoprotein particles, complex molecules that consist of a protein membrane surrounding a core of lipids. The LDL class of lipoproteins has a density between 1.019 and 1.063 g/ml. In some animal species, such as canine and rodents, this may overlap with the HDL1 class and be designated LDL/HDL1.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Values for density ranges of the lipoprotein classes are approximate.  The classes may be defined differently by different researchers, in part because class definitions depend on the number of subclasses into which the lipoprotein fractions are divided.</rdfs:comment>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL level</obo:hasRelatedSynonym>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL-C level</obo:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL level</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood LDL-C level</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
     </owl:Class>
     
@@ -495,9 +527,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000105">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body mass index (BMI)</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement to related body weight to height in an organisms typically calculated as the weight of an individual divided by the height of that individual squared.</obo:IAO_0000115>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMI</obo:hasRelatedSynonym>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000105</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</obo:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMI</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000105</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
     </owl:Class>
     
@@ -507,12 +539,12 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001407">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethanol drink intake rate</rdfs:label>
-        <obo:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-14T15:41:12Z</obo:creation_date>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001407</obo:id>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</obo:hasOBONamespace>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</obo:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-01-14T15:41:12Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001407</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSmith</oboInOwl:created_by>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of ethanol, a colorless volatile flammable liquid CH3CH2OH that is the intoxicating agent in liquors, consumed per unit time.</obo:IAO_0000115>
-        <obo:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol intake rate</obo:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol intake rate</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cmo.owl"/>
     </owl:Class>
     
@@ -521,10 +553,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/FOODON_00000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00000000">
-        <rdfs:label xml:lang="en">foodon</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">FoodOn is built to interoperate with the OBO Library and to represent entities which bear a “food role”. Its initial focus is a human-centric categorization and handling of food. We aim to develop semantics for food safety, food security, the agricultural and animal husbandry practices linked to food production, culinary, nutritional and chemical ingredients and processes. We intend to expand FoodOn to encompasses materials in natural ecosystems and food webs too.
+        <rdfs:label xml:lang="en">foodon ontology</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The FoodOn food ontology is a controlled vocabulary that currently covers human food raw ingredients, food products and product types. It will develop semantics for food safety, food security, the agricultural and animal husbandry practices linked to food production, culinary, nutritional and chemical ingredients and processes. FoodOn will also grow to encompass food-chains and natural ecosystems involving other animals and plants. It is built to interoperate with the OBO Library family of ontologies.
 
-Note that FoodOn owes a large debt to LanguaL, the food indexing system developed since the mid 1970&#39;s (see LanguaL.org).  LanguaL&#39;s facets have all been imported here, with some adaptation.</obo:IAO_0000115>
+FoodOn owes a large debt to LanguaL, the food indexing system developed since the mid 1970&#39;s (see LanguaL.org).  LanguaL&#39;s facets have all been imported here, with some adaptation.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
     </owl:Class>
     
@@ -535,7 +567,7 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411297">
         <rdfs:label xml:lang="en">animal used as food source</rdfs:label>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
-        <obo:hasDbXref>LANGUAL:B1297</obo:hasDbXref>
+        <oboInOwl:hasDbXref>LANGUAL:B1297</oboInOwl:hasDbXref>
         <obo:IAO_0000115 xml:lang="en">Multicellular animal, e.g., fish, meat animal or poultry.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -547,8 +579,8 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411347">
         <rdfs:label xml:lang="en">plant used as food source</rdfs:label>
-        <obo:hasDbXref>LANGUAL:B1347</obo:hasDbXref>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>LANGUAL:B1347</oboInOwl:hasDbXref>
         <obo:IAO_0000115 xml:lang="en">Multicellular plants.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -561,7 +593,7 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03470107">
         <rdfs:label xml:lang="en">preservation method</rdfs:label>
         <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
-        <obo:hasDbXref>LANGUAL:J0107</obo:hasDbXref>
+        <oboInOwl:hasDbXref>LANGUAL:J0107</oboInOwl:hasDbXref>
         <obo:IAO_0000115 xml:lang="en">The methods contributing to the prevention or retardation of microbial, enzymatic or oxidative spoilage and thus to the extension of shelf life. Index all methods for which information is available, even if a corresponding descriptor has already been used in *H. TREATMENT APPLIED*. Preservation descriptors refer to the finished food as a whole with these exceptions: (1) if the components of a multi-component food, such as cream pie, are preserved by different methods, index all methods; (2)  if chemical preservatives are declared on the label, always index them even if it is known that the preservative was introduced through or is only present in a component or ingredient of the food; and (3) if the preservation method for an ingredient is declared on the label (such as brie cheese made from pasteurized milk) index it. Also use *INGREDIENT PRESERVED BY THERMAL PROCESSING* or *INGREDIENT PRESERVED BY IRRADIATION* when ingredients have been pasteurized, ultrapasteurized, sterilized or irradiated.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
@@ -575,14 +607,14 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abnormality of lipid metabolism</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">According to CHEBI:18059 &#39;Lipids&#39; is a loosely defined term for substances of biological origin that are soluble in nonpolar solvents. They consist of saponifiable lipids, such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable lipids, principally steroids.</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abnormality in the of lipid metabolism.</obo:IAO_0000115>
-        <obo:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dyslipidemia</obo:hasRelatedSynonym>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003119</obo:id>
-        <obo:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003611</obo:hasAlternativeId>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D050171</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US:370992007</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0242339</obo:hasDbXref>
-        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C4025650</obo:hasDbXref>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_phenotype</obo:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dyslipidemia</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003119</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0003611</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSH:D050171</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US:370992007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0242339</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C4025650</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_phenotype</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
     </owl:Class>
     
@@ -603,7 +635,7 @@ Note that FoodOn owes a large debt to LanguaL, the food indexing system develope
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_species">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</obo:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </owl:Class>
     
@@ -768,12 +800,12 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000009</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg</obo:hasExactSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000009</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -783,12 +815,12 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000021">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000021</obo:id>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</obo:hasExactSynonym>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000021</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -798,12 +830,12 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minute</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 60 seconds.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000031</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min</obo:hasExactSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000031</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -813,12 +845,12 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hour</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 3600 seconds or 60 minutes.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000032</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h</obo:hasExactSynonym>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000032</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -828,11 +860,11 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000033">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">day</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 24 hours.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000033</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000033</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -842,11 +874,11 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">week</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 7 days.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000034</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000034</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -856,11 +888,11 @@ However, Shaw explicates:
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">year</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days.</obo:IAO_0000115>
-        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000036</obo:id>
-        <obo:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</obo:created_by>
-        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</obo:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000036</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uo#unit_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:inSubset rdf:resource="http://purl.obolibrary.org/obo/uo#unit_slim"/>
     </owl:Class>
     
 
@@ -1117,18 +1149,6 @@ pair of points.</terms:description>
         <rdfs:label xml:lang="en">ethnicity</rdfs:label>
         <dc:identifier>SIO_001014</dc:identifier>
         <terms:description xml:lang="en">ethnicity is the biological quality of membership in a social group based on a common heritage.</terms:description>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001041 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001041">
-        <rdfs:label xml:lang="en">study design</rdfs:label>
-        <dc:identifier>SIO_001041</dc:identifier>
-        <terms:description xml:lang="en">A study design is a protocol for the proper execution of a study which normally requires a carefullly crafted research question or hypothesis and at least one variable under observation and observed values for that variable.</terms:description>
-        <resource:hasSynonym>study protocol</resource:hasSynonym>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
     

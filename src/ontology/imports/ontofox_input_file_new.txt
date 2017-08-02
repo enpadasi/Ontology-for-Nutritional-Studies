@@ -1,6 +1,6 @@
 ##### Import terms from FOODON ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 FOODON
@@ -16,7 +16,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from EFO Ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 EFO
@@ -43,7 +43,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from CMO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 CMO
@@ -60,7 +60,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from HP ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 HP
@@ -74,7 +74,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from OBIB ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 OBIB
@@ -88,7 +88,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from SIO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 SIO
@@ -109,7 +109,6 @@ http://semanticscience.org/resource/SIO_000391
 http://semanticscience.org/resource/SIO_000508
 http://semanticscience.org/resource/SIO_000664
 http://semanticscience.org/resource/SIO_000688
-http://semanticscience.org/resource/SIO_001041
 http://semanticscience.org/resource/SIO_001042
 http://semanticscience.org/resource/SIO_001068
 http://semanticscience.org/resource/SIO_001323
@@ -122,13 +121,14 @@ http://semanticscience.org/resource/SIO_000964
 http://semanticscience.org/resource/SIO_000085
 http://semanticscience.org/resource/SIO_001066
 http://semanticscience.org/resource/SIO_000883
+http://semanticscience.org/resource/SIO_000001
 
 [Source annotation URIs]
 includeAllAnnotationProperties
 
 ##### Import terms from ICO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 ICO
@@ -142,7 +142,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from OMRSE ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 OMRSE
@@ -155,7 +155,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from OMIABIS ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 OMIABIS
@@ -169,7 +169,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from OBCS ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 OBCS
@@ -182,7 +182,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from NCBITaxon ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 NCBITaxon
@@ -195,7 +195,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from AERO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 AERO
@@ -208,7 +208,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from CHEBI ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 CHEBI
@@ -220,13 +220,14 @@ http://purl.obolibrary.org/obo/CHEBI_26607
 http://purl.obolibrary.org/obo/CHEBI_25413
 http://purl.obolibrary.org/obo/CHEBI_26208
 http://purl.obolibrary.org/obo/CHEBI_36080
+http://purl.obolibrary.org/obo/CHEBI_78295
 
 [Source annotation URIs]
 includeAllAnnotationProperties
 
 ##### Import terms from UO ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 UO
@@ -243,24 +244,9 @@ http://purl.obolibrary.org/obo/UO_0000032
 [Source annotation URIs]
 includeAllAnnotationProperties
 
-##### Import terms from OCRe ontology ######
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
-
-[Source ontology]
-OCRe
-
-[Low level source term URIs]
-http://purl.org/net/OCRe/study_design.owl#OCRE100007
-http://purl.org/net/OCRe/OCRe.owl#OCRE400012
-http://purl.org/net/OCRe/study_design.owl#OCRE100055
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
 ##### Import terms from EDAM ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 EDAM
@@ -273,7 +259,7 @@ includeAllAnnotationProperties
 
 ##### Import terms from OGSM ontology ######
 [URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
 
 [Source ontology]
 OGMS
@@ -289,32 +275,3 @@ http://purl.obolibrary.org/obo/OGMS_0000031
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-
-##### Import terms from ERO ontology ######
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/FrancescoVit/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
-
-[Source ontology]
-ERO
-
-[Low level source term URIs]
-http://purl.org/net/OCRe/research.owl%23Observational_study
-http://purl.org/net/OCRe/research.owl%23Interventional_study
-http://purl.org/net/OCRe/research.owl%23Single_group_study
-http://purl.org/net/OCRe/research.owl%23N-of-1_crossover_study
-http://purl.org/net/OCRe/research.owl%23Crossover_study
-http://purl.org/net/OCRe/research.owl%23Parallel_group_study
-http://purl.org/net/OCRe/research.owl%23Case_control_study
-http://purl.org/net/OCRe/research.owl%23Case_crossover_study
-http://purl.org/net/OCRe/research.owl%23Cohort_study
-http://purl.org/net/OCRe/research.owl%23Cross-sectional_study
-http://purl.obolibrary.org/obo/ERO_0000348
-http://purl.obolibrary.org/obo/ERO_0000358
-http://purl.obolibrary.org/obo/ERO_0000357
-http://purl.obolibrary.org/obo/ERO_0000356
-http://purl.obolibrary.org/obo/ERO_0000016
-http://purl.obolibrary.org/obo/ERO_0001765
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
