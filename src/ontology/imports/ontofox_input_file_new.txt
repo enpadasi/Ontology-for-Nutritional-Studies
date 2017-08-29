@@ -139,7 +139,7 @@ ICO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/ICO_0000069
 http://purl.obolibrary.org/obo/ICO_0000015
-
+http://purl.obolibrary.org/obo/ICO_0000001
 
 [Source annotation URIs]
 includeAllAnnotationProperties
