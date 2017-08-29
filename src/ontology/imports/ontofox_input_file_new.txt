@@ -37,6 +37,8 @@ http://www.ebi.ac.uk/efo/EFO_0003940
 http://www.ebi.ac.uk/efo/EFO_0000727
 http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
+http://www.ebi.ac.uk/efo/EFO_0000727
+http://www.ebi.ac.uk/efo/EFO_0005518
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -122,6 +124,7 @@ http://semanticscience.org/resource/SIO_000085
 http://semanticscience.org/resource/SIO_001066
 http://semanticscience.org/resource/SIO_000883
 http://semanticscience.org/resource/SIO_000001
+http://semanticscience.org/resource/SIO_000296
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -135,6 +138,7 @@ ICO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/ICO_0000069
+http://purl.obolibrary.org/obo/ICO_0000015
 
 
 [Source annotation URIs]
@@ -272,6 +276,72 @@ http://purl.obolibrary.org/obo/OGMS_0000073
 http://purl.obolibrary.org/obo/OGMS_0000057
 http://purl.obolibrary.org/obo/OGMS_0000056
 http://purl.obolibrary.org/obo/OGMS_0000031
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from NCIT ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C16033
+http://purl.obolibrary.org/obo/NCIT_C49647
+http://purl.obolibrary.org/obo/NCIT_C124233
+http://purl.obolibrary.org/obo/NCIT_C53196
+http://purl.obolibrary.org/obo/NCIT_C71496
+http://purl.obolibrary.org/obo/NCIT_C71515
+http://purl.obolibrary.org/obo/NCIT_C71503
+http://purl.obolibrary.org/obo/NCIT_C53204
+http://purl.obolibrary.org/obo/NCIT_C16033
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from EDAM ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+EDAM
+
+[Low level source term URIs]
+http://edamontology.org/topic_3360
+http://edamontology.org/topic_3172
+http://edamontology.org/topic_0121
+http://edamontology.org/topic_0622
+http://edamontology.org/topic_3308
+http://edamontology.org/topic_3174
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from IAO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000326
+http://purl.obolibrary.org/obo/IAO_0000621
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from APOLLO_SV ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+APOLLO_SV
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/APOLLO_SV_00000241
 
 [Source annotation URIs]
 includeAllAnnotationProperties

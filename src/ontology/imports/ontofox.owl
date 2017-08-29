@@ -3,14 +3,16 @@
      xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edamontology="http://edamontology.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:resource="http://semanticscience.org/resource/"
      xmlns:schema="http://schema.org/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
@@ -35,10 +37,64 @@
         <efo:definition>Definition citation for the Microarray and Gene Expression Data Ontology</efo:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107">
+        <rdfs:label>Display_Name</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Display_Name</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P107</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Display Name</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Provides an alternative Preferred Name for use in some NCI systems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Display_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Display Name</obo:NCIT_P107>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym">
         <dc:identifier>hasSynonym</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108">
+        <rdfs:label>Preferred_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Preferred Name</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Preferred Term</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Preferred Name</obo:NCIT_P107>
+        <obo:IAO_0000115>The word or phrase that NCI uses by preference to refer to the concept.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>P108</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207">
+        <rdfs:label>UMLS_CUI</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>UMLS_CUI</obo:NCIT_P108>
+        <obo:IAO_0000115>Concept Unique Identifiers, or CUIs, are concept numbers assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UMLS_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P207</obo:NCIT_NHC0>
+        <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106">
+        <rdfs:label>Semantic_Type</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Semantic_Type</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P106</obo:NCIT_NHC0>
+        <obo:NCIT_P107>Semantic Type</obo:NCIT_P107>
+        <obo:NCIT_P108>Semantic_Type</obo:NCIT_P108>
+        <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
+        <obo:IAO_0000115>The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040">
+        <rdfs:label xml:lang="en">Unique Apollo Label</rdfs:label>
+        <obo:IAO_0000118>UAL</obo:IAO_0000118>
+        <obo:IAO_0000115>This annotation property gives the unique label of all Apollo_SV entities that are refered to in the schema. The UAL is the denotator for the Apollo_SV class in the schema. There can at all times only be ONE value of UAL for each class.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208">
+        <rdfs:label>NCI_META_CUI</rdfs:label>
+        <obo:NCIT_NHC0>P208</obo:NCIT_NHC0>
+        <obo:NCIT_P107>NCI Metathesaurus CUI</obo:NCIT_P107>
+        <obo:NCIT_P108>NCI_META_CUI</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Contains a Concept Unique Identifier for those concepts that appear in NCI Metathesaurus but not in the NLM UMLS.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
         <rdfs:label>database_cross_reference</rdfs:label>
@@ -52,6 +108,16 @@
         <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
+        <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <rdfs:comment>The &#39;tracker item&#39; can associate a tracker with a specific ontology term.</rdfs:comment>
+        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
@@ -71,7 +137,11 @@
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+        <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NIFSTD_definition_citation">
         <efo:NIFSTD_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NIFSTD_definition_citation is an annotation property that is drawn from NIFSTD</efo:NIFSTD_definition_citation>
@@ -85,24 +155,68 @@
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example">
         <dc:identifier>example</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#readOnly"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0">
+        <rdfs:label>code</rdfs:label>
+        <protege:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</protege:readOnly>
+        <obo:NCIT_P108>code</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>code</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/subset">
         <dc:identifier>subset</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P98">
+        <rdfs:label>DesignNote</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>DesignNote</obo:NCIT_P107>
+        <obo:NCIT_NHC0>P98</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Design notes are notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>DesignNote</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/OMIM_definition_citation">
         <efo:OMIM_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/OMIM_definition_citation is an annotation property that is drawn from OMIM</efo:OMIM_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325">
+        <rdfs:label>ALT_DEFINITION</rdfs:label>
+        <obo:IAO_0000115>English language definitions of what a source other than NCI means by the concept. These are limited to 1024 characters. They include information about the definition&#39;s source in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:NCIT_P108>ALT_DEFINITION</obo:NCIT_P108>
+        <obo:NCIT_P107>[source] Definition</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>ALT_DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P325</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366">
+        <rdfs:label>Legacy_Concept_Name</rdfs:label>
+        <protege:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</protege:readOnly>
+        <obo:IAO_0000115>A retired unique concept identifier created and stored as Concept Name by legacy EVS software.  Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired.  Legacy values are intended solely to help resolve and update earlier coding.</obo:IAO_0000115>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P366</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <dc:identifier>description</dc:identifier>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
     </owl:AnnotationProperty>
@@ -114,6 +228,15 @@
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A8">
+        <rdfs:label>Concept_In_Subset</rdfs:label>
+        <obo:NCIT_P108>Concept_In_Subset</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>Concept Is In Subset</obo:NCIT_P107>
+        <obo:NCIT_NHC0>A8</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Used to associate the concept defining a particular terminology subset with concepts that belong to this subset.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Concept_In_Subset</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
@@ -142,6 +265,8 @@ We don&#39;t have definitions of &#39;meaning&#39; or &#39;expression&#39; or &#
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -207,6 +332,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
@@ -236,12 +362,28 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
         <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322">
+        <rdfs:label>Contributing_Source</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Contributing_Source</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P322</obo:NCIT_NHC0>
+        <obo:IAO_0000115>This property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept.  This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake.</obo:IAO_0000115>
+        <obo:NCIT_P107>Contributing Source</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:definition>
         <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
@@ -262,6 +404,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/isdebtag">
+        <rdfs:label>isdebtag</rdfs:label>
+        <obo:is_metadata_tag>true</obo:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:hasDefinition>When &#39;true&#39;, the concept has been proposed or is supported within Debian as a tag.</oboInOwl:hasDefinition>
     </owl:AnnotationProperty>
     
 
@@ -331,6 +479,110 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://edamontology.org/topic_0121 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0121">
+        <rdfs:label>Proteomics</rdfs:label>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>Protein and peptide identification, especially in the study of whole proteomes of organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein and peptide identification</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metaproteomics</oboInOwl:hasNarrowSynonym>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_0622 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0622">
+        <rdfs:label>Genomics</rdfs:label>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>Whole genomes of one or more organisms, or genomes in general, such as meta-information on genomes, genome projects, gene names etc.</oboInOwl:hasDefinition>
+        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
+        <oboInOwl:hasNarrowSynonym>Personal genomics</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3172 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3172">
+        <rdfs:label>Metabolomics</rdfs:label>
+        <edamontology:created_in>1.1</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>The systematic study of metabolites, the chemical processes they are involved, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.</oboInOwl:hasDefinition>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3174 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3174">
+        <rdfs:label>Metagenomics</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Biome sequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>The study of genetic material recovered from environmental samples, and associated environmental data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Shotgun metagenomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental sequencing</oboInOwl:hasNarrowSynonym>
+        <edamontology:created_in>1.1</edamontology:created_in>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasBroadSynonym>Environmental omics</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Environmental genomics</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Community genomics</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Ecogenomics</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3308 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3308">
+        <rdfs:label>Transcriptomics</rdfs:label>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <edamontology:created_in>1.3</edamontology:created_in>
+        <oboInOwl:hasNarrowSynonym>Transcriptome</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>The analysis of transcriptomes, or a set of all the RNA molecules in a specific cell, tissue etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Metatranscriptomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Comparative transcriptomics</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3360 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3360">
+        <rdfs:label>Biomarkers</rdfs:label>
+        <edamontology:isdebtag>true</edamontology:isdebtag>
+        <oboInOwl:hasDefinition>Objective indicators of biological state often used to assess health, and determinate treatment.</oboInOwl:hasDefinition>
+        <edamontology:created_in>1.4</edamontology:created_in>
+        <oboInOwl:hasExactSynonym>Diagnostic markers</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
@@ -339,6 +591,19 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:comment xml:lang="en">I initialy made adverse event a defined class: is_a sign and preceded by administration. However, by doing so, and as the range of preceded by is processual entities, I was implicitely making adverse event a subclass of processual entity, therfore making adverse event rash (a continuant) inconsistent.</rdfs:comment>
         <obo:IAO_0000119>ICH Topic E 2 A Clinical Safety Data Management: Definitions and Standards for Expedited Reporting</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/aero.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000241">
+        <rdfs:label xml:lang="en">age range category</rdfs:label>
+        <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AgeRangeCategoryDefinition</apollo_sv:APOLLO_SV_0000040>
+        <obo:IAO_0000600 xml:lang="en">An information content entity specifying the upper and lower limit of a range of ages of continuants.</obo:IAO_0000600>
+        <obo:IAO_0000115 xml:lang="en">An information content entity specifying the upper and lower limit of a range of ages of continuants.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
     </owl:Class>
     
 
@@ -620,6 +885,51 @@ FoodOn owes a large debt to LanguaL, the food indexing system developed since th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000326">
+        <rdfs:label xml:lang="en">supplementary material to a document</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">additional information</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">appendix</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">part of a document that is segregated from the rest of the document due to its size</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">supplemental information</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary material</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">supplementary material to a document</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">supporting information</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000621">
+        <rdfs:label xml:lang="en">ethical approval textual entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A textual entity that documents the ethical approval of some study design.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">From McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):
+
+The NHS National Research Ethics Service had previously approved the use of these anonymised data for research purposes and this analysis did not require independent review.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">ethical approval textual entity</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000015">
+        <rdfs:label>signed informed consent form</rdfs:label>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000115>an informed consent form that has been signed by at least one participant.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICO_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000069">
@@ -637,6 +947,154 @@ FoodOn owes a large debt to LanguaL, the food indexing system developed since th
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C124233">
+        <rdfs:label>ClinicalTrials.gov</rdfs:label>
+        <obo:NCIT_NHC0>C124233</obo:NCIT_NHC0>
+        <obo:NCIT_P108>ClinicalTrials.gov</obo:NCIT_P108>
+        <obo:NCIT_P208>CL502613</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym>ClinicalTrials.gov</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
+        <obo:IAO_0000115>A Web-based resource that provides patients, their family members, health care professionals, researchers, and the public with access to information on publicly and privately supported clinical studies. A service of the National Institutes of Health (NIH), ClinicalTrials.gov is both a registry and a results database.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16033">
+        <rdfs:label>Follow-up</rdfs:label>
+        <obo:IAO_0000115>The process by which information about the health status of an individual is obtained after a study has officially closed; an activity that continues something that has already begun or that repeats something that has already been done.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Follow Up</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Follow-up</obo:NCIT_P108>
+        <obo:NCIT_P325>Monitoring a person&#39;s health over time after treatment. This includes keeping track of the health of people who participate in a clinical study or clinical trial for a period of time, both during the study and after the study ends.</obo:NCIT_P325>
+        <obo:NCIT_P366>Follow-up</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Active Follow-up</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C16033</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Followup</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Health Care Activity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Follow-up</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Clinical Signs Follow-up</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>CLSFUP</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1522577</obo:NCIT_P207>
+        <obo:NCIT_P325>The process by which information about the health status of a subject is obtained after the subject is no longer receiving study medication.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>follow-up</oboInOwl:hasExactSynonym>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89971"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89972"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49647 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49647">
+        <rdfs:label>Control Type</rdfs:label>
+        <obo:NCIT_NHC0>C49647</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Research Activity</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P366>Control_Type</obo:NCIT_P366>
+        <obo:IAO_0000115>A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TCNTRL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Control Type</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>Comparator against which the study treatment is evaluated.</obo:NCIT_P325>
+        <obo:NCIT_P108>Control Type</obo:NCIT_P108>
+        <obo:NCIT_P207>C1707504</obo:NCIT_P207>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66738"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C67152"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90007"/>
+        <obo:NCIT_A8 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C53196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C53196">
+        <rdfs:label>Simple Random Sampling</rdfs:label>
+        <obo:NCIT_NHC0>C53196</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Simple_Random_Sampling</obo:NCIT_P366>
+        <obo:NCIT_P207>C0681878</obo:NCIT_P207>
+        <obo:NCIT_P108>Simple Random Sampling</obo:NCIT_P108>
+        <obo:NCIT_P106>Activity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Simple Random Sampling</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C53204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C53204">
+        <rdfs:label>Convenience Sampling</rdfs:label>
+        <oboInOwl:hasExactSynonym>Convenience Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Activity</obo:NCIT_P106>
+        <obo:NCIT_P207>C0150095</obo:NCIT_P207>
+        <obo:NCIT_P108>Convenience Sampling</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Volunteer Sample</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C53204</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Convenience_Sampling</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71496">
+        <rdfs:label>Stratified Random Sampling</rdfs:label>
+        <obo:NCIT_P108>Stratified Random Sampling</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C71496</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Stratified Random Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Activity</obo:NCIT_P106>
+        <obo:NCIT_P207>C0681879</obo:NCIT_P207>
+        <obo:NCIT_P366>Stratified_Random_Sampling</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71503">
+        <rdfs:label>Judgment Sampling</rdfs:label>
+        <oboInOwl:hasExactSynonym>Judgement Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Activity</obo:NCIT_P106>
+        <obo:NCIT_P207>C2346606</obo:NCIT_P207>
+        <obo:NCIT_P108>Judgment Sampling</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C71503</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Judgment Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Judgement_Sampling</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71515">
+        <rdfs:label>Multi-Stage Sampling</rdfs:label>
+        <obo:NCIT_P207>C1709096</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C71515</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Multi-Stage Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Multi-Stage Sampling</obo:NCIT_P108>
+        <obo:NCIT_P366>Multi-Stage_Sampling</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Multistage Sampling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Activity</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
     </owl:Class>
     
 
@@ -1623,6 +2081,18 @@ pair of points.</terms:description>
         <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:284472007</efo:SNOMEDCT_definition_citation>
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circumferential measurement of the largest part of the hip</efo:definition>
         <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:gwas_trait>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005518 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005518">
+        <rdfs:label>sample collection protocol</rdfs:label>
+        <efo:definition>Describes the procedure whereby biological samples for an experiment are sourced.</efo:definition>
+        <obo:IAO_0000117>Drashtti Vasant</obo:IAO_0000117>
+        <obo:IAO_0000112>collection of clinical samples from patients, collection of plant materials in a forest, collection of larvae from lab-grown Drosophila flies.</obo:IAO_0000112>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
