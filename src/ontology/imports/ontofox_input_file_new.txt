@@ -297,6 +297,7 @@ http://purl.obolibrary.org/obo/NCIT_C71515
 http://purl.obolibrary.org/obo/NCIT_C71503
 http://purl.obolibrary.org/obo/NCIT_C53204
 http://purl.obolibrary.org/obo/NCIT_C16033
+http://purl.obolibrary.org/obo/NCIT_C25662
 
 [Source annotation URIs]
 includeAllAnnotationProperties
