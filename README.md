@@ -6,7 +6,7 @@ This ontology has been developed as part of the ENPADASI European project (http:
 
 V1.0: (13/09/2017)
 
-- Changies in ONS term URIs and general adjustments for the release version
+- Changes in ONS terms URIs and general adjustments for the release version
 
 ## Pre-release Versions
 
