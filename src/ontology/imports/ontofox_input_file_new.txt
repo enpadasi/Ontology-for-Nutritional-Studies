@@ -125,6 +125,7 @@ http://semanticscience.org/resource/SIO_001066
 http://semanticscience.org/resource/SIO_000883
 http://semanticscience.org/resource/SIO_000001
 http://semanticscience.org/resource/SIO_000296
+http://semanticscience.org/resource/SIO_000136
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -169,7 +170,7 @@ http://purl.obolibrary.org/obo/OMIABIS_0000036
 http://purl.obolibrary.org/obo/OMIABIS_0000037
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+includeAllAnnotationPropertiess
 
 ##### Import terms from OBCS ontology ######
 [URI of the OWL(RDF/XML) output file]
@@ -180,6 +181,10 @@ OBCS
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBCS_0000089
+http://purl.obolibrary.org/obo/OBCS_0000120
+http://purl.obolibrary.org/obo/OBCS_0000002
+http://purl.obolibrary.org/obo/OBCS_0000130
+http://purl.obolibrary.org/obo/OBCS_0000233
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -316,6 +321,10 @@ http://edamontology.org/topic_0121
 http://edamontology.org/topic_0622
 http://edamontology.org/topic_3308
 http://edamontology.org/topic_3174
+http://edamontology.org/operation_0004
+http://edamontology.org/operation_0224
+http://edamontology.org/operation_2421
+http://edamontology.org/operation_0305
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -343,6 +352,47 @@ APOLLO_SV
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/APOLLO_SV_00000241
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from STATO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+STATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/STATO_0000096
+http://purl.obolibrary.org/obo/STATO_0000216
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from OCRE ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+OCRE
+
+[Low level source term URIs]
+http://purl.org/net/OCRe/OCRe.owl#OCRE_400012
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+##### Import terms from ERO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+ERO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ERO_0001765
+http://purl.obolibrary.org/obo/ERO_0000347
 
 [Source annotation URIs]
 includeAllAnnotationProperties
