@@ -10,20 +10,18 @@ V1.0: (13/09/2017)
 
 ## Pre-release Versions
 
-Initial commit: July 12, 2016
+The ONS ontology has previously been circulated as a "work-in-progress" with the following development versions. All of them were not official and were meant as a means to work collaboratively within the ENPADASI partners.
 
-Versioning:
+- Initial commit: July 12, 2016
 
-V2.0: (19/02/2017) 
+- V2.0: (19/02/2017) 
+  - Adoption of BFO ontology as upper level
+  - General reformatting of classes and properties
+  - Addition/deletion of classes and properties
 
-- Adoption of BFO ontology as upper level
-- General reformatting of classes and properties
-- Addition/deletion of classes and properties
-
-V3.0: (12/05/2017) 
-
-- Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
-- Integration of a subset of FOODON ontology
+- V3.0: (12/05/2017) 
+  - Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
+  - Integration of a subset of FOODON ontology
 
 
 ## Contact and contributions
