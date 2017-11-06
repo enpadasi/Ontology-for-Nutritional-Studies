@@ -1,16 +1,16 @@
 # ONS
 
-This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
+The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
 
 ## Release Versions
 
-V1.0: (13/09/2017)
+V1.0: (*DATE of published paper*)  
+*paper abstract, reference and url/doi*  
+*bioportal url*
 
-- Changes in ONS terms URIs and general adjustments for the release version
+### Pre-release Versions
 
-## Pre-release Versions
-
-The ONS ontology has previously been circulated as a "work-in-progress" with the following development versions. All of them were not official and were meant as a means to work collaboratively within the ENPADASI partners.
+The ONS ontology has been circulating as a "work-in-progress" artifact with the following development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project.
 
 - Initial commit: July 12, 2016
 
