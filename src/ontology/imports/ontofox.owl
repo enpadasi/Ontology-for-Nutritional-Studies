@@ -27,14 +27,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MO_definition_citation">
-        <rdfs:label>MO_definition_citation</rdfs:label>
-        <efo:definition>Definition citation for the Microarray and Gene Expression Data Ontology</efo:definition>
-        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/DOID_definition_citation">
         <efo:DOID_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:DOID_definition_citation>
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/DOID_definition_citation is an annotation property that is drawn from DOID</efo:definition>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MO_definition_citation">
+        <rdfs:label>MO_definition_citation</rdfs:label>
+        <efo:definition>Definition citation for the Microarray and Gene Expression Data Ontology</efo:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107">
@@ -47,6 +47,9 @@
         <oboInOwl:hasExactSynonym>Display_Name</oboInOwl:hasExactSynonym>
         <obo:NCIT_P107>Display Name</obo:NCIT_P107>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym">
+        <dc:identifier>hasSynonym</dc:identifier>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108">
         <rdfs:label>Preferred_Name</rdfs:label>
         <oboInOwl:hasExactSynonym>Preferred Name</oboInOwl:hasExactSynonym>
@@ -58,9 +61,6 @@
         <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
         <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/hasSynonym">
-        <dc:identifier>hasSynonym</dc:identifier>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207">
         <rdfs:label>UMLS_CUI</rdfs:label>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
@@ -70,6 +70,7 @@
         <obo:NCIT_NHC0>P207</obo:NCIT_NHC0>
         <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106">
         <rdfs:label>Semantic_Type</rdfs:label>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
@@ -80,12 +81,12 @@
         <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
         <obo:IAO_0000115>The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040">
         <rdfs:label xml:lang="en">Unique Apollo Label</rdfs:label>
         <obo:IAO_0000118>UAL</obo:IAO_0000118>
         <obo:IAO_0000115>This annotation property gives the unique label of all Apollo_SV entities that are refered to in the schema. The UAL is the denotator for the Apollo_SV class in the schema. There can at all times only be ONE value of UAL for each class.</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/shorthand"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
         <rdfs:label>database_cross_reference</rdfs:label>
@@ -108,6 +109,18 @@
         <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
+        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &#39;sequence &#39; + [label], etc. , MA could specify &#39;mouse + [label]&#39; etc. Upon importing terms, ontology developers can choose to use the &#39;OBO foundry unique label&#39; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
@@ -145,16 +158,16 @@
         <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MSH_definition_citation is an annotation property that is drawn from MSH</efo:MSH_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NIFSTD_definition_citation">
-        <efo:NIFSTD_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NIFSTD_definition_citation is an annotation property that is drawn from NIFSTD</efo:NIFSTD_definition_citation>
-        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
         <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NIFSTD_definition_citation">
+        <efo:NIFSTD_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NIFSTD_definition_citation is an annotation property that is drawn from NIFSTD</efo:NIFSTD_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_metadata_tag"/>
@@ -164,8 +177,10 @@
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example">
         <dc:identifier>example</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <obo:IAO_0000589>is defined by</obo:IAO_0000589>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#readOnly"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0">
         <rdfs:label>code</rdfs:label>
         <obo:NCIT_P108>code</obo:NCIT_P108>
@@ -173,10 +188,10 @@
         <protege:readOnly>true</protege:readOnly>
         <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/subset">
         <dc:identifier>subset</dc:identifier>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
@@ -186,7 +201,6 @@
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P98">
         <rdfs:label>DesignNote</rdfs:label>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
@@ -196,6 +210,7 @@
         <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>DesignNote</oboInOwl:hasExactSynonym>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/OMIM_definition_citation">
         <efo:OMIM_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/OMIM_definition_citation is an annotation property that is drawn from OMIM</efo:OMIM_definition_citation>
@@ -222,13 +237,13 @@
         <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <dc:identifier>description</dc:identifier>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in subset</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
@@ -286,10 +301,15 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
+        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</obo:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</oboInOwl:hasDbXref>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</oboInOwl:id>
+        <obo:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:shorthand>
+        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</oboInOwl:shorthand>
+        <obo:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:is_metadata_tag>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</obo:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
@@ -306,8 +326,10 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
+        <rdfs:label>definition_source</rdfs:label>
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
@@ -318,12 +340,12 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label>definition editor</rdfs:label>
         <rdfs:label>term editor</rdfs:label>
         <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label>definition_editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
@@ -366,10 +388,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
-        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
-        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
@@ -382,6 +400,11 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation">
+        <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/SNOMEDCT_definition_citation is an annotation property that is drawn from SNOMEDCT</efo:SNOMEDCT_definition_citation>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322">
         <rdfs:label>Contributing_Source</rdfs:label>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
@@ -391,7 +414,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:NCIT_P107>Contributing Source</obo:NCIT_P107>
         <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
         <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:definition>
         <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
@@ -402,19 +425,21 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label xml:lang="en">label</rdfs:label>
         <obo:IAO_0000111>label</obo:IAO_0000111>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in">
         <rdfs:label>Created in</rdfs:label>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <obo:is_metadata_tag>true</obo:is_metadata_tag>
         <oboInOwl:hasDefinition>Version in which a concept was created.</oboInOwl:hasDefinition>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     <owl:AnnotationProperty rdf:about="http://edamontology.org/isdebtag">
         <rdfs:label>isdebtag</rdfs:label>
         <obo:is_metadata_tag>true</obo:is_metadata_tag>
@@ -1392,6 +1417,56 @@ The NHS National Research Ethics Service had previously approved the use of thes
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000002">
+        <rdfs:label xml:lang="en">human microbiome</rdfs:label>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418802/</obo:IAO_0000119>
+        <obo:IAO_0000115>A microbiome located in a human body</obo:IAO_0000115>
+        <obo:IAO_0000117>JZ, YH</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ohmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000003">
+        <rdfs:label xml:lang="en">microbiome</rdfs:label>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2792171/</obo:IAO_0000119>
+        <obo:IAO_0000117>YH, JZ, JO, AA</obo:IAO_0000117>
+        <obo:IAO_0000115>A material entity consisting of a complex mixture of microorganisms that reside in a specific environmental niche.</obo:IAO_0000115>
+        <obo:IAO_0000118>microbiota</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Microbiota</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ohmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000016">
+        <rdfs:label xml:lang="en">microbiome in human gastrointestinal system</rdfs:label>
+        <obo:IAO_0000115>a human microbiome that is located in a human gastrointestinal system</obo:IAO_0000115>
+        <obo:IAO_0000117>JO, AA, YH</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ohmi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000020">
+        <rdfs:label xml:lang="en">human gut microbiome</rdfs:label>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>human gut microbiota</obo:IAO_0000118>
+        <obo:IAO_0000115>A microbiome located in a human gut.</obo:IAO_0000115>
+        <rdfs:comment>A human being&#39;s gut microbiota contains tens of trillions of microorganisms, including at least 1000 different species of known bacteria with more than 3 million genes (150 times more than human genes). Microbiota can, in total, weigh up to 2 kg. One third of our gut microbiota is common to most people, while two thirds are specific to each one of us. In other words, the microbiota in your intestine is like an individual identity card. URL: http://www.gutmicrobiotaforhealth.com/en/about-gut-microbiota-info/</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ohmi.owl"/>
     </owl:Class>
     
 

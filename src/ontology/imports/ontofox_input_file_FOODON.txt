@@ -162,10 +162,8 @@ http://purl.obolibrary.org/obo/FOODON_03412400
 http://purl.obolibrary.org/obo/FOODON_03411866
 http://purl.obolibrary.org/obo/FOODON_03412465
 http://purl.obolibrary.org/obo/FOODON_03411466
-http://purl.obolibrary.org/obo/FOODON_03470144
 http://purl.obolibrary.org/obo/FOODON_03412171
 http://purl.obolibrary.org/obo/FOODON_03414467
-http://purl.obolibrary.org/obo/FOODON_03470126
 http://purl.obolibrary.org/obo/FOODON_03412646
 http://purl.obolibrary.org/obo/FOODON_03412095
 http://purl.obolibrary.org/obo/FOODON_03412442
@@ -353,7 +351,6 @@ http://purl.obolibrary.org/obo/FOODON_03413410
 http://purl.obolibrary.org/obo/FOODON_03413534
 http://purl.obolibrary.org/obo/FOODON_03412535
 http://purl.obolibrary.org/obo/FOODON_03413708
-http://purl.obolibrary.org/obo/FOODON_03470175
 http://purl.obolibrary.org/obo/FOODON_03413472
 http://purl.obolibrary.org/obo/FOODON_03414203
 http://purl.obolibrary.org/obo/FOODON_03412370
@@ -713,7 +710,6 @@ http://purl.obolibrary.org/obo/FOODON_03413480
 http://purl.obolibrary.org/obo/FOODON_03414373
 http://purl.obolibrary.org/obo/FOODON_03413507
 http://purl.obolibrary.org/obo/FOODON_03412687
-http://purl.obolibrary.org/obo/FOODON_03470169
 http://purl.obolibrary.org/obo/FOODON_03411259
 http://purl.obolibrary.org/obo/FOODON_03412632
 http://purl.obolibrary.org/obo/FOODON_03412588
@@ -749,7 +745,6 @@ http://purl.obolibrary.org/obo/FOODON_03414262
 http://purl.obolibrary.org/obo/FOODON_03411196
 http://purl.obolibrary.org/obo/FOODON_03413474
 http://purl.obolibrary.org/obo/FOODON_03411374
-http://purl.obolibrary.org/obo/FOODON_03470171
 http://purl.obolibrary.org/obo/FOODON_03413626
 http://purl.obolibrary.org/obo/FOODON_03413556
 http://purl.obolibrary.org/obo/FOODON_03412583
@@ -798,7 +793,6 @@ http://purl.obolibrary.org/obo/FOODON_03412898
 http://purl.obolibrary.org/obo/FOODON_03413893
 http://purl.obolibrary.org/obo/FOODON_03411583
 http://purl.obolibrary.org/obo/FOODON_03411500
-http://purl.obolibrary.org/obo/FOODON_03470116
 http://purl.obolibrary.org/obo/FOODON_03412857
 http://purl.obolibrary.org/obo/FOODON_03413675
 http://purl.obolibrary.org/obo/FOODON_03412837
@@ -816,7 +810,6 @@ http://purl.obolibrary.org/obo/FOODON_03412413
 http://purl.obolibrary.org/obo/FOODON_03411277
 http://purl.obolibrary.org/obo/FOODON_03411030
 http://purl.obolibrary.org/obo/FOODON_03414023
-http://purl.obolibrary.org/obo/FOODON_03470162
 http://purl.obolibrary.org/obo/FOODON_03413644
 http://purl.obolibrary.org/obo/FOODON_03412611
 http://purl.obolibrary.org/obo/FOODON_03412961
@@ -837,15 +830,8 @@ http://purl.obolibrary.org/obo/FOODON_03413921
 http://purl.obolibrary.org/obo/FOODON_03412782
 http://purl.obolibrary.org/obo/FOODON_03411203
 http://purl.obolibrary.org/obo/FOODON_03411511
-http://purl.obolibrary.org/obo/FOODON_03470166
-http://purl.obolibrary.org/obo/FOODON_03470165
-http://purl.obolibrary.org/obo/FOODON_03470163
-http://purl.obolibrary.org/obo/FOODON_03470143
-http://purl.obolibrary.org/obo/FOODON_03470168
-http://purl.obolibrary.org/obo/FOODON_03470112
 http://purl.obolibrary.org/obo/FOODON_03414360
 http://purl.obolibrary.org/obo/FOODON_03412005
-http://purl.obolibrary.org/obo/FOODON_03470140
 http://purl.obolibrary.org/obo/FOODON_03411316
 http://purl.obolibrary.org/obo/FOODON_03413553
 http://purl.obolibrary.org/obo/FOODON_03412533
@@ -961,7 +947,6 @@ http://purl.obolibrary.org/obo/FOODON_03412068
 http://purl.obolibrary.org/obo/FOODON_03411486
 http://purl.obolibrary.org/obo/FOODON_03411302
 http://purl.obolibrary.org/obo/FOODON_03412132
-http://purl.obolibrary.org/obo/FOODON_03470181
 http://purl.obolibrary.org/obo/FOODON_03413909
 http://purl.obolibrary.org/obo/FOODON_03414316
 http://purl.obolibrary.org/obo/FOODON_03412349
@@ -1035,7 +1020,6 @@ http://purl.obolibrary.org/obo/FOODON_03414033
 http://purl.obolibrary.org/obo/FOODON_03414038
 http://purl.obolibrary.org/obo/FOODON_03414243
 http://purl.obolibrary.org/obo/FOODON_03412536
-http://purl.obolibrary.org/obo/FOODON_03470130
 http://purl.obolibrary.org/obo/FOODON_03414521
 http://purl.obolibrary.org/obo/FOODON_03412426
 http://purl.obolibrary.org/obo/FOODON_03411204
@@ -1265,7 +1249,6 @@ http://purl.obolibrary.org/obo/FOODON_03411934
 http://purl.obolibrary.org/obo/FOODON_03413466
 http://purl.obolibrary.org/obo/FOODON_03411708
 http://purl.obolibrary.org/obo/FOODON_03411194
-http://purl.obolibrary.org/obo/FOODON_03470117
 http://purl.obolibrary.org/obo/FOODON_03414503
 http://purl.obolibrary.org/obo/FOODON_03414134
 http://purl.obolibrary.org/obo/FOODON_03411014
@@ -1277,9 +1260,7 @@ http://purl.obolibrary.org/obo/FOODON_03411124
 http://purl.obolibrary.org/obo/FOODON_03412082
 http://purl.obolibrary.org/obo/FOODON_03411553
 http://purl.obolibrary.org/obo/FOODON_03413866
-http://purl.obolibrary.org/obo/FOODON_03470178
 http://purl.obolibrary.org/obo/FOODON_03412026
-http://purl.obolibrary.org/obo/FOODON_03470179
 http://purl.obolibrary.org/obo/FOODON_03412130
 http://purl.obolibrary.org/obo/FOODON_03411307
 http://purl.obolibrary.org/obo/FOODON_03412289
@@ -1298,8 +1279,6 @@ http://purl.obolibrary.org/obo/FOODON_03414152
 http://purl.obolibrary.org/obo/FOODON_03412178
 http://purl.obolibrary.org/obo/FOODON_03411146
 http://purl.obolibrary.org/obo/FOODON_03411748
-http://purl.obolibrary.org/obo/FOODON_03470114
-http://purl.obolibrary.org/obo/FOODON_03470129
 http://purl.obolibrary.org/obo/FOODON_03411643
 http://purl.obolibrary.org/obo/FOODON_03413510
 http://purl.obolibrary.org/obo/FOODON_03414056
@@ -1334,8 +1313,6 @@ http://purl.obolibrary.org/obo/FOODON_03411873
 http://purl.obolibrary.org/obo/FOODON_03413964
 http://purl.obolibrary.org/obo/FOODON_03412188
 http://purl.obolibrary.org/obo/FOODON_03413978
-http://purl.obolibrary.org/obo/FOODON_03470151
-http://purl.obolibrary.org/obo/FOODON_03470152
 http://purl.obolibrary.org/obo/FOODON_03411220
 http://purl.obolibrary.org/obo/FOODON_03413582
 http://purl.obolibrary.org/obo/FOODON_03413950
@@ -1541,7 +1518,6 @@ http://purl.obolibrary.org/obo/FOODON_03412087
 http://purl.obolibrary.org/obo/FOODON_03411244
 http://purl.obolibrary.org/obo/FOODON_03411216
 http://purl.obolibrary.org/obo/FOODON_03412952
-http://purl.obolibrary.org/obo/FOODON_03470182
 http://purl.obolibrary.org/obo/FOODON_03413741
 http://purl.obolibrary.org/obo/FOODON_03413998
 http://purl.obolibrary.org/obo/FOODON_03411823
@@ -1692,7 +1668,6 @@ http://purl.obolibrary.org/obo/FOODON_03412787
 http://purl.obolibrary.org/obo/FOODON_03411482
 http://purl.obolibrary.org/obo/FOODON_03413611
 http://purl.obolibrary.org/obo/FOODON_03414303
-http://purl.obolibrary.org/obo/FOODON_03470141
 http://purl.obolibrary.org/obo/FOODON_03411560
 http://purl.obolibrary.org/obo/FOODON_03411436
 http://purl.obolibrary.org/obo/FOODON_03411411
@@ -1807,7 +1782,6 @@ http://purl.obolibrary.org/obo/FOODON_03412214
 http://purl.obolibrary.org/obo/FOODON_03412517
 http://purl.obolibrary.org/obo/FOODON_03414321
 http://purl.obolibrary.org/obo/FOODON_03412165
-http://purl.obolibrary.org/obo/FOODON_03470124
 http://purl.obolibrary.org/obo/FOODON_03412118
 http://purl.obolibrary.org/obo/FOODON_03412360
 http://purl.obolibrary.org/obo/FOODON_03412774
@@ -1870,10 +1844,6 @@ http://purl.obolibrary.org/obo/FOODON_03411483
 http://purl.obolibrary.org/obo/FOODON_03411382
 http://purl.obolibrary.org/obo/FOODON_03412560
 http://purl.obolibrary.org/obo/FOODON_03411634
-http://purl.obolibrary.org/obo/FOODON_03470135
-http://purl.obolibrary.org/obo/FOODON_03470158
-http://purl.obolibrary.org/obo/FOODON_03470159
-http://purl.obolibrary.org/obo/FOODON_03470119
 http://purl.obolibrary.org/obo/FOODON_03413885
 http://purl.obolibrary.org/obo/FOODON_03414105
 http://purl.obolibrary.org/obo/FOODON_03412813
@@ -2004,38 +1974,6 @@ http://purl.obolibrary.org/obo/FOODON_03411218
 http://purl.obolibrary.org/obo/FOODON_03411563
 http://purl.obolibrary.org/obo/FOODON_03414520
 http://purl.obolibrary.org/obo/FOODON_03414493
-http://purl.obolibrary.org/obo/FOODON_03470149
-http://purl.obolibrary.org/obo/FOODON_03470156
-http://purl.obolibrary.org/obo/FOODON_03470100
-http://purl.obolibrary.org/obo/FOODON_03470154
-http://purl.obolibrary.org/obo/FOODON_03470155
-http://purl.obolibrary.org/obo/FOODON_03470153
-http://purl.obolibrary.org/obo/FOODON_03470146
-http://purl.obolibrary.org/obo/FOODON_03470137
-http://purl.obolibrary.org/obo/FOODON_03470109
-http://purl.obolibrary.org/obo/FOODON_03470131
-http://purl.obolibrary.org/obo/FOODON_03470142
-http://purl.obolibrary.org/obo/FOODON_03470139
-http://purl.obolibrary.org/obo/FOODON_03470161
-http://purl.obolibrary.org/obo/FOODON_03470104
-http://purl.obolibrary.org/obo/FOODON_03470121
-http://purl.obolibrary.org/obo/FOODON_03470136
-http://purl.obolibrary.org/obo/FOODON_03470120
-http://purl.obolibrary.org/obo/FOODON_03470122
-http://purl.obolibrary.org/obo/FOODON_03470138
-http://purl.obolibrary.org/obo/FOODON_03470177
-http://purl.obolibrary.org/obo/FOODON_03470004
-http://purl.obolibrary.org/obo/FOODON_03470145
-http://purl.obolibrary.org/obo/FOODON_03470103
-http://purl.obolibrary.org/obo/FOODON_03470106
-http://purl.obolibrary.org/obo/FOODON_03470150
-http://purl.obolibrary.org/obo/FOODON_03470176
-http://purl.obolibrary.org/obo/FOODON_03470173
-http://purl.obolibrary.org/obo/FOODON_03470111
-http://purl.obolibrary.org/obo/FOODON_03470172
-http://purl.obolibrary.org/obo/FOODON_03470174
-http://purl.obolibrary.org/obo/FOODON_03470108
-http://purl.obolibrary.org/obo/FOODON_03470157
 http://purl.obolibrary.org/obo/FOODON_03412295
 http://purl.obolibrary.org/obo/FOODON_03412951
 http://purl.obolibrary.org/obo/FOODON_03411672
@@ -2068,7 +2006,6 @@ http://purl.obolibrary.org/obo/FOODON_03412715
 http://purl.obolibrary.org/obo/FOODON_03412151
 http://purl.obolibrary.org/obo/FOODON_03412280
 http://purl.obolibrary.org/obo/FOODON_03413985
-http://purl.obolibrary.org/obo/FOODON_03470132
 http://purl.obolibrary.org/obo/FOODON_03411298
 http://purl.obolibrary.org/obo/FOODON_03412027
 http://purl.obolibrary.org/obo/FOODON_03411323
@@ -2312,7 +2249,6 @@ http://purl.obolibrary.org/obo/FOODON_03414296
 http://purl.obolibrary.org/obo/FOODON_03412547
 http://purl.obolibrary.org/obo/FOODON_03411183
 http://purl.obolibrary.org/obo/FOODON_03411422
-http://purl.obolibrary.org/obo/FOODON_03470134
 http://purl.obolibrary.org/obo/FOODON_03411433
 http://purl.obolibrary.org/obo/FOODON_03411059
 http://purl.obolibrary.org/obo/FOODON_03413714
@@ -2374,7 +2310,6 @@ http://purl.obolibrary.org/obo/FOODON_03411942
 http://purl.obolibrary.org/obo/FOODON_03412491
 http://purl.obolibrary.org/obo/FOODON_03411997
 http://purl.obolibrary.org/obo/FOODON_03413325
-http://purl.obolibrary.org/obo/FOODON_03470128
 http://purl.obolibrary.org/obo/FOODON_03414210
 http://purl.obolibrary.org/obo/FOODON_03413585
 http://purl.obolibrary.org/obo/FOODON_03412908
@@ -2494,7 +2429,6 @@ http://purl.obolibrary.org/obo/FOODON_03412274
 http://purl.obolibrary.org/obo/FOODON_03411111
 http://purl.obolibrary.org/obo/FOODON_03413350
 http://purl.obolibrary.org/obo/FOODON_03411235
-http://purl.obolibrary.org/obo/FOODON_03470133
 http://purl.obolibrary.org/obo/FOODON_03411208
 http://purl.obolibrary.org/obo/FOODON_03412091
 http://purl.obolibrary.org/obo/FOODON_03414478
@@ -2516,12 +2450,6 @@ http://purl.obolibrary.org/obo/FOODON_03414098
 http://purl.obolibrary.org/obo/FOODON_03414104
 http://purl.obolibrary.org/obo/FOODON_03414497
 http://purl.obolibrary.org/obo/FOODON_03411005
-http://purl.obolibrary.org/obo/FOODON_03470110
-http://purl.obolibrary.org/obo/FOODON_03470147
-http://purl.obolibrary.org/obo/FOODON_03470102
-http://purl.obolibrary.org/obo/FOODON_03470123
-http://purl.obolibrary.org/obo/FOODON_03470113
-http://purl.obolibrary.org/obo/FOODON_03470160
 http://purl.obolibrary.org/obo/FOODON_03413814
 http://purl.obolibrary.org/obo/FOODON_03413836
 http://purl.obolibrary.org/obo/FOODON_03414455
@@ -2569,13 +2497,11 @@ http://purl.obolibrary.org/obo/FOODON_03412161
 http://purl.obolibrary.org/obo/FOODON_03411883
 http://purl.obolibrary.org/obo/FOODON_03412315
 http://purl.obolibrary.org/obo/FOODON_03411190
-http://purl.obolibrary.org/obo/FOODON_03470170
 http://purl.obolibrary.org/obo/FOODON_03411419
 http://purl.obolibrary.org/obo/FOODON_03411818
 http://purl.obolibrary.org/obo/FOODON_03411547
 http://purl.obolibrary.org/obo/FOODON_03413641
 http://purl.obolibrary.org/obo/FOODON_03414283
-http://purl.obolibrary.org/obo/FOODON_03470115
 http://purl.obolibrary.org/obo/FOODON_03412303
 http://purl.obolibrary.org/obo/FOODON_03411657
 http://purl.obolibrary.org/obo/FOODON_03413685
@@ -2716,8 +2642,6 @@ http://purl.obolibrary.org/obo/FOODON_03412821
 http://purl.obolibrary.org/obo/FOODON_03411699
 http://purl.obolibrary.org/obo/FOODON_03411502
 http://purl.obolibrary.org/obo/FOODON_03413447
-http://purl.obolibrary.org/obo/FOODON_03470180
-http://purl.obolibrary.org/obo/FOODON_03470148
 http://purl.obolibrary.org/obo/FOODON_03414099
 http://purl.obolibrary.org/obo/FOODON_03412186
 http://purl.obolibrary.org/obo/FOODON_03412913
@@ -2892,7 +2816,6 @@ http://purl.obolibrary.org/obo/FOODON_03411462
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/FOODON_03411297
 http://purl.obolibrary.org/obo/FOODON_03411347
-http://purl.obolibrary.org/obo/FOODON_03470107
 
 [Source annotation URIs]
 includeAllAxiomsRecursively

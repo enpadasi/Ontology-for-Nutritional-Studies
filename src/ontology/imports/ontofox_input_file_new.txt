@@ -396,3 +396,19 @@ http://purl.obolibrary.org/obo/ERO_0000347
 
 [Source annotation URIs]
 includeAllAnnotationProperties
+
+##### Import terms from OHMI ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+OHMI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OHMI_0000003
+http://purl.obolibrary.org/obo/OHMI_0000002
+http://purl.obolibrary.org/obo/OHMI_0000016
+http://purl.obolibrary.org/obo/OHMI_0000020
+
+[Source annotation URIs]
+includeAllAnnotationProperties
