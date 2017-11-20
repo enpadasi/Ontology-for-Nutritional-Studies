@@ -1,29 +1,27 @@
 # ONS
 
-This ontology has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
+The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
 
 ## Release Versions
 
-V1.0: (13/09/2017)
+V1.0: (*DATE of published paper*)  
+*paper abstract, reference and url/doi*  
+*bioportal url*
 
-- Changes in ONS terms URIs and general adjustments for the release version
+### Pre-release Versions
 
-## Pre-release Versions
+The ONS ontology has been circulating as a "work-in-progress" artifact with the following development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project.
 
-Initial commit: July 12, 2016
+- Initial commit: July 12, 2016
 
-Versioning:
+- V2.0: (19/02/2017) 
+  - Adoption of BFO ontology as upper level
+  - General reformatting of classes and properties
+  - Addition/deletion of classes and properties
 
-V2.0: (19/02/2017) 
-
-- Adoption of BFO ontology as upper level
-- General reformatting of classes and properties
-- Addition/deletion of classes and properties
-
-V3.0: (12/05/2017) 
-
-- Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
-- Integration of a subset of FOODON ontology
+- V3.0: (12/05/2017) 
+  - Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
+  - Integration of a subset of FOODON ontology
 
 
 ## Contact and contributions
