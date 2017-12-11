@@ -49,9 +49,9 @@
         <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
-        <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
-        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
         <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
+        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
+        <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
         <dc:creator xml:lang="en">Eric Deutsch</dc:creator>
         <dc:title xml:lang="en">Ontology for Biomedical Investigation</dc:title>
         <dc:creator xml:lang="en">Philip Lord</dc:creator>
@@ -4292,7 +4292,6 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
     <!-- http://purl.obolibrary.org/obo/OBI_0000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
@@ -4430,7 +4429,6 @@ specimen can later be subject.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000143 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
         <obo:IAO_0000111 xml:lang="en">baseline participant role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Subject at time = 0; subject before a stress test.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -4465,7 +4463,6 @@ specimen can later be subject.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000161 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000161">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
         <obo:IAO_0000111 xml:lang="en">crossover population role</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a role realized when a participant serves as reference to itself</obo:IAO_0000115>
@@ -4512,7 +4509,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000198 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000198">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
         <obo:IAO_0000111 xml:lang="en">biological replicate role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">A member of a dose-time group; a patient in a given arm of a trial</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -4599,7 +4595,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000220">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -4673,7 +4668,6 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000249 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
         <obo:IAO_0000111 xml:lang="en">technical replicate role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Aliquots of a tissue subjected to parallel assays</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -4688,7 +4682,6 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000252 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000252">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000198"/>
         <obo:IAO_0000111 xml:lang="en">cohort role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">In statistics and demography, a cohort is a group of subjects - most often humans from a given population - defined by experiencing an event (typically birth) in a particular time span.  Wikipedia &quot;cohort&quot;, Feb 29 2008</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -6162,7 +6155,6 @@ Chang Gung Med J. 2009 May-Jun;32(3):283-9.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/OBI_0000813 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000813">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to be treated with active ingredient role</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of a patient in a group treated with an active substance in a clinical trial</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -6178,7 +6170,6 @@ Chang Gung Med J. 2009 May-Jun;32(3):283-9.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/OBI_0000825 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000825">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to be treated with placebo role</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study subject role which begins to exist when a subject is assigned to be one of those who will receive a placebo, and realized in a study execution in which they receive the placebo</obo:IAO_0000115>
