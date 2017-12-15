@@ -49,9 +49,9 @@
         <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
-        <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
-        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
         <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
+        <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
+        <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
         <dc:creator xml:lang="en">Eric Deutsch</dc:creator>
         <dc:title xml:lang="en">Ontology for Biomedical Investigation</dc:title>
         <dc:creator xml:lang="en">Philip Lord</dc:creator>

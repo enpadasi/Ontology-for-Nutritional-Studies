@@ -40,6 +40,7 @@ http://www.ebi.ac.uk/efo/EFO_0000433
 http://www.ebi.ac.uk/efo/EFO_0000727
 http://www.ebi.ac.uk/efo/EFO_0005518
 http://www.ebi.ac.uk/efo/EFO_0004329
+http://www.ebi.ac.uk/efo/EFO_0005847
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -57,6 +58,7 @@ http://purl.obolibrary.org/obo/CMO_0000052
 http://purl.obolibrary.org/obo/CMO_0000053
 http://purl.obolibrary.org/obo/CMO_0000051
 http://purl.obolibrary.org/obo/CMO_0000105
+http://purl.obolibrary.org/obo/CMO_0000772
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -84,6 +86,9 @@ OBIB
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBIB_0000054
+http://purl.obolibrary.org/obo/OBIB_0000018
+http://purl.obolibrary.org/obo/OBIB_0000020
+http://purl.obolibrary.org/obo/OBIB_0000019
 
 
 [Source annotation URIs]
@@ -256,19 +261,6 @@ http://purl.obolibrary.org/obo/UO_0000032
 [Source annotation URIs]
 includeAllAnnotationProperties
 
-##### Import terms from EDAM ontology ######
-[URI of the OWL(RDF/XML) output file]
-https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
-
-[Source ontology]
-EDAM
-
-[Low level source term URIs]
-http://edamontology.org/data_0970
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
 ##### Import terms from OGSM ontology ######
 [URI of the OWL(RDF/XML) output file]
 https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
@@ -314,6 +306,7 @@ http://purl.obolibrary.org/obo/NCIT_C53194
 http://purl.obolibrary.org/obo/NCIT_C94090
 http://purl.obolibrary.org/obo/NCIT_C94108
 http://purl.obolibrary.org/obo/NCIT_C98714
+http://purl.obolibrary.org/obo/NCIT_C25729
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -336,6 +329,7 @@ http://edamontology.org/operation_0004
 http://edamontology.org/operation_0224
 http://edamontology.org/operation_2421
 http://edamontology.org/operation_0305
+http://edamontology.org/data_0970
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -377,6 +371,7 @@ STATO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/STATO_0000096
 http://purl.obolibrary.org/obo/STATO_0000216
+http://purl.obolibrary.org/obo/STATO_0000124
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -423,3 +418,17 @@ http://purl.obolibrary.org/obo/OHMI_0000020
 
 [Source annotation URIs]
 includeAllAnnotationProperties
+
+##### Import terms from OBI ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0302908
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
