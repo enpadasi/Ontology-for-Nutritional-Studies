@@ -1,0 +1,3007 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.enpadasi.eu/ontology/release/v1/ons/"
+     xml:base="http://www.enpadasi.eu/ontology/release/v1/ons/"
+     xmlns:schema="http://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:uo="http://purl.obolibrary.org/obo/uo#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:ons="http://www.enpadasi.eu/ontology/release/v1/ons/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
+        <dc:creator>Pietro Franceschi</dc:creator>
+        <dc:creator>Chen Yang</dc:creator>
+        <dc:creator>Damariz Rivero</dc:creator>
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dc:creator>Alessia Trimigno</dc:creator>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <dc:creator>Duccio Cavalieri</dc:creator>
+        <dc:creator>Francesco Vitali</dc:creator>
+        <dc:creator>Jildau Bouwman</dc:creator>
+        <rdfs:label xml:lang="en">ONS</rdfs:label>
+        <dc:creator>Carl Lachat</dc:creator>
+        <dc:creator>Guy De Tré</dc:creator>
+        <dc:creator>Francesco Taglino</dc:creator>
+        <owl:versionInfo>Relese version 1.0</owl:versionInfo>
+        <dc:creator>Franco Miglietta</dc:creator>
+        <dc:creator>Rosario Lombardo</dc:creator>
+        <dc:creator>Fulvio Mattivi</dc:creator>
+        <dc:creator>Bernard De Baets</dc:creator>
+        <dc:creator>Francesco Capozzi</dc:creator>
+        <dc:creator>Giovanni Felici</dc:creator>
+        <dc:creator>Alessandra Bordoni</dc:creator>
+        <dc:title>Ontology for Nutritional Studies</dc:title>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        <dc:creator>ENPADASI WP 4</dc:creator>
+        <dc:creator>Nathalie De Cock</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/statistics.owl#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#definition"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#IAO_0000115"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/bioportal_provenance -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/data_0970 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_0970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0004 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0224 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0224">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0305 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0305">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2421"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_2421 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_2421">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_0121 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/topic_0121">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/topic_0622 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/topic_0622">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/topic_3172 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/topic_3172">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/topic_3174 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/topic_3174">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edamontology.org/topic_3308 -->
+
+    <rdf:Description rdf:about="http://edamontology.org/topic_3308">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000241 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16646 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25413 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_25413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26208 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_26208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26607 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_26607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_78295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_78295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000051">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000052">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000053">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000105">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0001407">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001765 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001765">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00000000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00000000">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000078"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411297 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03411297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411347 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03411347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03470107 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03470107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0003119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0003119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000326 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000621 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000069">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_species -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_species">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124233 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C124233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16033 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49647 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C49647">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C53196 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C53196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C53204 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C53204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71496 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C71496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71503 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C71503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71515 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C71515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000089">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000054 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIB_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+        <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000103">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000198"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000630">
+        <owl:equivalentClass rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000825 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000825">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000097"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000984"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001139"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001942 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001942">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHMI_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHMI_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHMI_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHMI_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHMI_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000036">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000037">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000038">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001836 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001836">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001913">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001988 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE_400012 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/OCRe.owl#OCRE_400012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000031 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000031">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000085 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000085">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000115 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000136 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000136">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000142 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000142">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000143 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000143">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000154 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000154">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000172 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000172">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000173 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000173">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000183 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000183">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000262 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000262">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000296 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000296">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000337 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000337">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000366 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000366">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000391 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000391">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000403 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000508 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000508">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000664 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000664">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000669 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000670 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000688 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000688">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000883 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000883">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000964 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000964">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000046"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001014 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001014">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001042 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001066 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001068 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001068">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001323 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001323">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000319 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000400 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000433 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000537 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000727 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000727">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003939 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003939">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003940 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003940">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004318 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004318">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004338 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004338">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004339">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004342 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004342">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005093 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005093">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005518 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0005518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0006525 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0006525">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000001 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>Partecipants&apos; identification number</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Participants&apos; identification number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000002 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001765"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>Month of anthropometry assessment</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of anthropometry assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000003 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000003">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000004 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000004">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">For past smokers: time in years since quitting smoking</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Time since quitting smoking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000005 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000051"/>
+        <obo:IAO_0000115 xml:lang="en">Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of physical activity assessment by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000006 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000006">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Categories of physical activity level
+1=low; 2= Medium; 3= High</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Categories of physical activity level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000007 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000007">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Total physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000008 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000008">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Physical activity from recreational or leisure-time activities by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000009 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000009">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in light physical activity in minutes/day derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Light physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000010 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000010">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in moderate physical activity in minutes/day derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Moderate physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000011 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in vigorous physical activity in minutes/day derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Vigorous physical activity by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000012 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000012">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Sedentary time by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000013 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000013">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Number of bouts by questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000014 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000014">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000051"/>
+        <obo:IAO_0000115 xml:lang="en">Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of physical activity assessment by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000015 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in light physical activity in minutes/day derived from accelerometer data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Light physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000016 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000016">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in moderate physical activity in minutes/day derived from accelerometer data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Moderate physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000017 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000017">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent in vigorous physical activity in minutes/day derived from accelerometer data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Vigorous physical activity by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000018 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000018">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Time spent sedentary in minutes/day derived from accelerometer data</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Sedentary time by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000019 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000019">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Number of bouts of moderate or vigorous physical activity per day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Number of bouts by accelerometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000020 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092"/>
+        <obo:IAO_0000115 xml:lang="en">Average minutes per bout of moderate or vigorous physical activity per day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Average duration of bouts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000021 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000021">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">Dietary assessment used for uploaded dietary variables
+1=24-hour recall; 2=FFQ; 3=Food record; 4=other</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Dietary assessment method</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000022 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of dietary assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000023 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000023">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Carbohydrate intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Calculated Carbohydrate intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000024 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000024">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <obo:IAO_0000115 xml:lang="en">Fiber intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Calculated Fiber intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000025 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000025">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <obo:IAO_0000115 xml:lang="en">Total fat intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Caclucalted Total fat intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000026 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000026">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26607"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Saturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Calculated Saturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000027 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000027">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25413"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Monounsaturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Calculated Monounsaturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000028 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000028">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Polyunsaturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Calculated Polyunsaturated fatty acid intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000029 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000029">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Protein intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Calculated Protein intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000030 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000030">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Month of blood draw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000031 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">Fasting status before blood draw (measured in hours of fasting before blood draw) 
+1=less than 9 hours; 2=9 hours or more</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Fasting status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000033 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">The process of collecting information on the diet/eating habits of a subject using a questionnaire.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Dietary assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000034 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000034">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+        <efo:definition xml:lang="en">Anthropometric and habits information of the subject. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">subject informations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000035 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000035">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Short study name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000036 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000036">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">Name of the consortium which the study refers to</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Consortium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000037 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000037">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">The name of the method used for randomization (OBCS_0000089), if any randomization was adopted.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Randomization method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000038 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000038">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">Indicate whether blinded experiment were conducted or not</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Blinding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000039 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000039">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">If blinded experiment were conducted, indicate the method used for blinding</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Blinding method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000040 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000040">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">Indicated whether the study is terminated or not</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Study terminated?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000041 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000041">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">Indicate whethet the compliance was assessed or not</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Compliance assessed?</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000042 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000042">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">The ration between the circumference of the waist to that of the hips</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Waist:Hip ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000043 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A (short) alphanumeric string which identify the event/tretment</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Event identifier name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000044 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000044">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000727"/>
+        <obo:IAO_0000115 xml:lang="en">An alphanumeric string which identify and describe the event/tretment</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Treatment descriptive name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000045 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+        <obo:IAO_0000115 xml:lang="en">Short description of the sampling method used (i.e. &quot;needle&quot; for blood drawn, or &quot;direct sampling&quot; for questionnaire)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Study sampling method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000046 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+        <obo:IAO_0000115 xml:lang="en">A long description of the sampling method used</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Sampling method description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000047 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">Long text describing the assay used.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Assay description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000048 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">Platform used for the assay</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Assay platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000049 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">The unique sampling event identifier for the sample collection producing the sample</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Sampling identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000050 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Absolute start times</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000051 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Physical activity assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000052">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+        <obo:IAO_0000115 xml:lang="en">This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Blood Analytics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000053 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000053">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+        <obo:IAO_0000115 xml:lang="en">START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en"></efo:definition_editor>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Start tab</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000054 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000054">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
+        <efo:definition xml:lang="en">SUBJECT TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</efo:definition>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Subject tab</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000055 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Event tab</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000056 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25662"/>
+        <obo:IAO_0000115 xml:lang="en">SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Sampling tab</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000057 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000058 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+        <obo:IAO_0000115 xml:lang="en">INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology.</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Information tab</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000059 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">The process of collecting various chemical-biological data (e.g. blood analytics)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Chemical-biological assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">The process of collecting data from a sample using &apos;omic&apos; technologies</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Omics technology assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000061 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000061">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000060"/>
+        <obo:IAO_0000115 xml:lang="en">Type of omic assay performed (i.e. targeted metabolomics, untargeted metabolomics)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Type of omics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000062 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">Assay type (i.e. Clinical chemistry assay: Standard kit #34567 from &apos;vendor&apos; assayed on a Cobas Mira analyzer)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Assay type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000063 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000063">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+        <obo:IAO_0000115 xml:lang="en">A short text identifying the question</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Short question name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000064 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000064">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090"/>
+        <obo:IAO_0000115 xml:lang="en">Type of question or question variable code</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Question type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000065 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000065">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">Type of physiology assay performed</obo:IAO_0000115>
+        <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
+        <rdfs:label xml:lang="en">Physionlogy asssay tye</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An assay which purpose is to collect all the general information (e.g. anthropometric measurement) available on the subjects of nutritional studies</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">Subject Information collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000883"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The subject (Human) participating in a nutritional study.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Subject of a nutritional study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000068 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>An experimental comparison study in which participants are allocated to treatment/intervention or control/placebo groups using a random mechanism (see randomisation). Best for study the effect of an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Randomised Controlled Trial</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000069 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>A controlled trial where each study participant has both therapies, e.g, is randomised to treatment A first, at the crossover point they then start treatment B. Only relevant if the outcome is reversible with time, e.g, symptoms.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Crossover Design</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000070 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>Data are obtained from groups who have been exposed, or not exposed, to the new technology or factor of interest (eg from databases). No allocation of exposure is made by the researcher. Best for study the effect of predictive risk factors on an outcome.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Cohort Study</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000071 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>Patients with a certain outcome or disease and an appropriate group of controls without the outcome or disease are selected (usually with careful consideration of appropriate choice of controls, matching, etc) and then information is obtained on whether the subjects have been exposed to the factor under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Case-Control Studies</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000072 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>A study that examines the relationship between diseases (or other health-related characteristics) and other variables of interest as they exist in a defined population at one particular time (ie exposure and outcomes are both measured at the same time). Best for quantifying the prevalence of a disease or risk factor, and for quantifying the accuracy of a diagnostic test.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Cross-Sectional Survey</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_78295"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental con-taminants. Concept of food component can be viewer both as a role and as a material entity. This class, for convenience, represents the material entity &quot;food component&quot;, including all those material entity having the role of &quot;Food Component&quot;</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food Component Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000074 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000074">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073"/>
+        <obo:IAO_0000115>Component added to food to improve or preserve it</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Additive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000075 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073"/>
+        <obo:IAO_0000115>Unwanted food component that makes the food no longer suitable for use</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Contaminant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000076 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000076">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073"/>
+        <obo:IAO_0000115>A food bioactive is a food component other than those needed to meet basic human nutritional needs (nutrients). Food bioactives  modulates one or more metabolic processes, possibly resulting in the promotion of better health. The daily required intake for food bioactives is not established yet, and there is no demonstration that malnutrition occurs when the right amount is not provided</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food Bioactive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000077 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000077">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073"/>
+        <obo:IAO_0000115>A nutrient is a food component used by the body for normal physiologic functions that guarantee survival and growth. It must be supplied in adequate and defined amounts from foods consumed within a diet. Malnutrition occurs when the right amount of nutrient is not provided</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Nutrient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000078 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An ingredient is a material entity used as part for the preparatio of food. Recipes specify which ingredients are used to prepare a specific food</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Igredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000079 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The food is a complex matrix that is consumed by a person through the process of eating or drinking. Food are bearer of the nutrients, bioactives and sometimes other food components. Food consumption, through the meal consumption, follows a certain dietary pattern, which define the diet.  Nutrients and bioactives contained in food can be exploited by the human organism thanks to the process of digestion, absorption, metabolization, or through the intervention of the gut microflora</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <efo:MSH_definition_citation>MSH:D005502</efo:MSH_definition_citation>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000080 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>The regular course of eating and drinking adopted by a person</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <efo:MSH_definition_citation>MSH:D004032</efo:MSH_definition_citation>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000081 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000081">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The diet administered during an intervention study. It usually comprises the adoption of a certain nutritional intervention, intended as the prescription of consuming or not consuming certain food, and follows a precise study design. Intervention studies usually compare at least two subgroups of a population, one control group receiving a null nutritional intervention, and one or more test groups receiving the intervention</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Intervention Diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000082 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000082">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000080"/>
+        <obo:IAO_0000115>A diet prescribed by a physician/ nutritionist to meet spe-cific nutritional needs of a person</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Prescribed Diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000083 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000083">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour. It is also intended as the diet a person would follow without further prescription or indications, i.e. vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Usual Diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000084 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>Cook role is the role of the person responsible for food prepraration</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Cook role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000085 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000115>A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Meal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000086 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The consumption of liquids. Not for drinking alcohol or alcohol consumption ( = ALCOHOL DRINKING); differentiate from DRINKING BEHAVIOR.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <efo:MSH_definition_citation>MSH:D004326</efo:MSH_definition_citation>
+        <rdfs:label>Drinking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000087 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The consumption of edible substances. The act of eating: do not confuse with FOOD (the substance eaten) or EATING BEHAVIOR (the manner of eating).</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <efo:MSH_definition_citation>MSH:D004435</efo:MSH_definition_citation>
+        <rdfs:label>Eating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A class which groups the data item collected as results from the subject information collection assay</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Subject information collection data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A class which groups the data item collected as results from the dietary assessment assay</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Dietary assessment data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A class which groups the data item collected as results from the chemical biological assay</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Chemical biological data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000091 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A class which groups the data item collected as results from the analysis performed with an omics platform</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Omics data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A class which groups the data item collected as results from the physical activity assay</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Physical activity assessment data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000093 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Food preparation is the process in which food is made.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food Preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000094 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>Dietary pattern represent the quantity, proportion, variety and combination of different foods and drinks consumed in meals, and the frequency with which they are habitually consumed.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Dietary Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000095 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>An objective measurement to assess the exposure (including food intake), effect, or succeptibility of the human organism (or an animal etc.)</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28974991</obo:IAO_0000119>
+        <rdfs:label>Biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000096 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000096">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000095"/>
+        <obo:IAO_0000115>An exposure biomarker reflects the level of extrinsic variables that humans are exposed to, such as diets or food compounds, including nutrients and non-nutrients.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28974991</obo:IAO_0000119>
+        <oboInOwl:hasAlternativeId>Intake Biomarker</oboInOwl:hasAlternativeId>
+        <rdfs:label>Exposure biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000097 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000097">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000095"/>
+        <obo:IAO_0000115>An effect biomarker reflects the funciontal response of the human body to an exposure.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28974991</obo:IAO_0000119>
+        <rdfs:label>Effect biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000098 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000098">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000095"/>
+        <obo:IAO_0000115>Measurable indicator including genetic or acquired host factors and intrinsic factors, influencing the response of an individual to a (dietary) exposure.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/28974991</obo:IAO_0000119>
+        <rdfs:label>Susceptibility biomarker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000099 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000099">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000079"/>
+        <obo:IAO_0000115>A raw food is an uncooked, unprocessed food that is consumed in its natural state</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Raw food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000100 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000100">
+        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000079"/>
+        <obo:IAO_0000115>A processed food is the result of the process of home or industrial food preparation</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Processed food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000101 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Digestion is the breakdown of large insoluble food molecules into small water-soluble food molecules. The breakdown is both mechanical and chemical (enzymatic digestion). During digestion, food components are released from the food matrix and become bioaccessible. Bioaccessible molecules can be absorbed.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food digestion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000102 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Process mainly occurring in the small intestine and allowing the passage of the biaoccessible food components from the gastro-intestinal lumen into the blood vessels. Absorption occurs through either diffusion or active transport. The degree and rate at which a substance is absorbed and is made available at the site of physiological activity is called bioavailability</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Absorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000103 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Sum of the chemical changes occurring to nutrients and food component within the body. Changes can be anabolic (constructive) or catabolic (destructive). Anabolism converts simpler compounds into organized substances that the body can use. Catabolism converts more organized substances into simpler compounds. In the oxidative or energetic catabolism, this is coupled with the production of ATP</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>Metabolization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000105 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001000"/>
+        <obo:IAO_0000115>Finite list of foods and beverages with response categories to indicate usual frequency of consumption over the time period queried. The time period can vary (from 1 week to 1 year and over). To assess the total diet, the number of foods and beverages queried typically ranges from 80 to 120. Usual portion size can be asked separately for each food and beverage. Alternatively, portion size can be combined with frequency information by asking respondents to translate usual consumption amount to number of specified units (e.g., spoon, cup, glass, etc). Some questionnaires include portion size images in an attempt to enhance reporting  accuracy. In addition to foods and beverages, FFQs often ask about the frequency of intake and dosages of dietary supplements.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food Frequency Questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000106 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001000"/>
+        <obo:IAO_0000115>A structured interview intended to capture detailed information about all foods and beverages (and possibly, dietary supplements) consumed by the respondent in the past 24 hours, most commonly, from midnight to midnight the previous day. A key feature of the 24HR is that, when appropriate, the respondent is asked for more detailed information than first reported. For example, a respondent reporting chicken for dinner or a sandwich for lunch would be asked about the preparation method and type of bread. This open-ended response structure is designed to prompt respondents to provide a comprehensive and detailed report of all foods and beverages consumed. A 24h can also be filled at home by the responder, and be checked during an interview to further improve it with additional details</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <rdfs:label>24-hour dietary recall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000107 -->
+
+    <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001000"/>
+        <obo:IAO_0000115>A food diary is a record of eaten foods on a meal-by-meal, daily, or weekly basis. It is directly filled by the investigated subject, and it can include nutritional or other dietary information, organize and track foods by food group, and allows monitoring what, when, and how often the filling subject eats.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <oboInOwl:created_by>ENPADASI WP4</oboInOwl:created_by>
+        <rdfs:label>Food Diary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.enpadasi.eu/ontology/release/v1/ons/hhhhh -->
+
+    <owl:NamedIndividual rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/hhhhh">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000669"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
