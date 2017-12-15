@@ -35,7 +35,6 @@ http://www.ebi.ac.uk/efo/EFO_0000537
 http://www.ebi.ac.uk/efo/EFO_0000400
 http://www.ebi.ac.uk/efo/EFO_0003940
 http://www.ebi.ac.uk/efo/EFO_0000727
-http://www.ebi.ac.uk/efo/EFO_0002755
 http://www.ebi.ac.uk/efo/EFO_0000433
 http://www.ebi.ac.uk/efo/EFO_0000727
 http://www.ebi.ac.uk/efo/EFO_0005518
@@ -231,7 +230,6 @@ https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/mast
 CHEBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/CHEBI_50733
 http://purl.obolibrary.org/obo/CHEBI_16646
 http://purl.obolibrary.org/obo/CHEBI_26607
 http://purl.obolibrary.org/obo/CHEBI_25413
@@ -319,7 +317,6 @@ https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/mast
 EDAM
 
 [Low level source term URIs]
-http://edamontology.org/topic_3360
 http://edamontology.org/topic_3172
 http://edamontology.org/topic_0121
 http://edamontology.org/topic_0622
@@ -428,6 +425,8 @@ OBI
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBI_0302908
+http://purl.obolibrary.org/obo/OBI_0002116
+http://purl.obolibrary.org/obo/OBI_0001630
 
 [Source annotation URIs]
 includeAllAnnotationProperties
