@@ -1,6 +1,12 @@
 # ONS
 
-The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.
+The multidisciplinary nature of nutritional studies is one of its main strengths, but at the same time, a major obstacle for integrated data analysis, especially for the terminological and sematic interpretations that specific research fields or communities are used to. To date, a proper ontology to structure and formalize the concepts used for the description of this type of studies is still lacking.
+
+We have developed the Ontology for Nutritional Studies (ONS) by harmonizing selected pre-existing de facto ontologies with novel health and nutritional terminology classifications as the result of a scholarly consensus of 51 research centers in 9 European countries. The resulting ontology classes and relations are commonly encountered while conducting, storing, harmonizing, integrating, describing and searching nutritional studies. ONS stands out as a single knowledge entry-point of unified and standardized domain-specific conceptual entitles, improving on the process of describing and specifying complex nutritional studies as demonstrated with two application scenarios.
+
+ONS is the first systematic effort providing a solid and extensible formal ontology framework for nutritional studies, where integration of new information can be easily achieved by the addition of extra modules (i.e. Nutrigenomics, Metabolomics, Nutrikinetics, Quality appraisal, etc.). Nutritional researchers who might not necessarily be familiar with ontologies and concept standardization, can find in ONS a single knowledge entry point for a unified and standardized terminology for their studies. 
+
+
 
 ## Release Versions
 
