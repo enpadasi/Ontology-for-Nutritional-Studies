@@ -16,24 +16,10 @@ There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutriti
 
 V1.0: (*DATE of published paper*)  
 *reference and url/doi*  
-BioPortal http://bioportal.bioontology.org/ontologies/ONS
+BioPortal http://bioportal.bioontology.org/ontologies/ONS  
 FAIRsharing https://fairsharing.org/bsg-s001068
 
-
-### Pre-release Versions
-
-The ONS ontology has been circulating as a "work-in-progress" artifact with the following development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project.
-
-- Initial commit: July 12, 2016
-
-- V2.0: (19/02/2017) 
-  - Adoption of BFO ontology as upper level
-  - General reformatting of classes and properties
-  - Addition/deletion of classes and properties
-
-- V3.0: (12/05/2017) 
-  - Use of ONTODOG to retrieve mid-upper level classes from OBI ontology
-  - Integration of a subset of FOODON ontology
+The ONS ontology has been circulating as a "work-in-progress" research artifact with few development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project. If you you are still interested, they can be found [here](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/tree/master/src/ontology/Older_deprecated).
 
 
 
