@@ -301,22 +301,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
-        <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000066"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000241 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
