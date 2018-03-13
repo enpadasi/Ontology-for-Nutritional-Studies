@@ -668,31 +668,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/edam#topics"/>
     </owl:Class>
-    
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000009">
-        <rdfs:label xml:lang="en">adverse event</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">An adverse event is an undesirable, unfavorable and unintended medical occurrence presenting in a predetermined time frame following administration of a compound or usage of a device</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">I initialy made adverse event a defined class: is_a sign and preceded by administration. However, by doing so, and as the range of preceded by is processual entities, I was implicitely making adverse event a subclass of processual entity, therfore making adverse event rash (a continuant) inconsistent.</rdfs:comment>
-        <obo:IAO_0000119>ICH Topic E 2 A Clinical Safety Data Management: Definitions and Standards for Expedited Reporting</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/aero.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000241 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000241">
-        <rdfs:label xml:lang="en">age range category</rdfs:label>
-        <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AgeRangeCategoryDefinition</apollo_sv:APOLLO_SV_0000040>
-        <obo:IAO_0000600 xml:lang="en">An information content entity specifying the upper and lower limit of a range of ages of continuants.</obo:IAO_0000600>
-        <obo:IAO_0000115 xml:lang="en">An information content entity specifying the upper and lower limit of a range of ages of continuants.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/apollo_sv.owl"/>
-    </owl:Class>
     
 
 
