@@ -2555,7 +2555,7 @@
         <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000057"/>
         <obo:IAO_0000115 xml:lang="en">Type of physiology assay performed</obo:IAO_0000115>
         <efo:definition_editor xml:lang="en">ENPADASI_WP4</efo:definition_editor>
-        <rdfs:label xml:lang="en">Physionlogy asssay tye</rdfs:label>
+        <rdfs:label xml:lang="en">Physiology assay type</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
