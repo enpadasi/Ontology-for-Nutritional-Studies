@@ -14,11 +14,9 @@ There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutriti
 
 ## Release notes
 
-V1.0:  30 April 2018; DOI: 10.1186/s12263-018-0601-y
+V1.0:  30 April 2018; DOI: https://doi.org/10.1186/s12263-018-0601-y
 
 https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
-
-https://doi.org/10.1186/s12263-018-0601-y
 
 BioPortal http://bioportal.bioontology.org/ontologies/ONS  
 
