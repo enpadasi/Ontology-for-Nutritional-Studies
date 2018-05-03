@@ -2087,7 +2087,7 @@
         <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
         <obo:IAO_0000115 xml:lang="en">Total fat intake in g/day</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">Caclucalted Total fat intake</rdfs:label>
+        <rdfs:label xml:lang="en">Calculated Total fat intake</rdfs:label>
     </owl:Class>
     
 
