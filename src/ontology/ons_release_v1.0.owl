@@ -2063,7 +2063,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Carbohydrate intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Carbohydrate intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Carbohydrate intake</rdfs:label>
     </owl:Class>
@@ -2074,7 +2074,7 @@
 
     <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000024">
         <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
-        <obo:IAO_0000115 xml:lang="en">Fiber intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fiber intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Fiber intake</rdfs:label>
     </owl:Class>
@@ -2085,7 +2085,7 @@
 
     <owl:Class rdf:about="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000025">
         <rdfs:subClassOf rdf:resource="http://www.enpadasi.eu/ontology/release/v1/ons/ONS_0000089"/>
-        <obo:IAO_0000115 xml:lang="en">Total fat intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Total fat intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Total fat intake</rdfs:label>
     </owl:Class>
@@ -2102,7 +2102,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26607"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Saturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Saturated fatty acid intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Saturated fatty acid intake</rdfs:label>
     </owl:Class>
@@ -2119,7 +2119,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25413"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Monounsaturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Monounsaturated fatty acid intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Monounsaturated fatty acid intake</rdfs:label>
     </owl:Class>
@@ -2136,7 +2136,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Polyunsaturated fatty acid intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Polyunsaturated fatty acid intake per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Polyunsaturated fatty acid intake</rdfs:label>
     </owl:Class>
@@ -2153,7 +2153,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Protein intake in g/day</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Protein intake in per unit time</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Calculated Protein intake</rdfs:label>
     </owl:Class>
