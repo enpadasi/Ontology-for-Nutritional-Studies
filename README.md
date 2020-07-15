@@ -20,6 +20,10 @@ https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
 
 BioPortal http://bioportal.bioontology.org/ontologies/ONS  
 
+OBO Foundry: http://www.obofoundry.org/ontology/ons.html
+
+Ontobee: http://www.ontobee.org/ontology/ONS
+
 FAIRsharing https://fairsharing.org/bsg-s001068
 
 The ONS ontology has been circulating as a "work-in-progress" research artifact with few development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project. If you you are still interested, they can be found [here](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/tree/master/src/ontology/Older_deprecated).
