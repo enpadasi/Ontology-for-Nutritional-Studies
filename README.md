@@ -7,6 +7,7 @@ We have developed the Ontology for Nutritional Studies (ONS) by harmonizing sele
 ONS is the first systematic effort providing a solid and extensible formal ontology framework for nutritional studies, where integration of new information can be easily achieved by the addition of extra modules (i.e. Nutrigenomics, Metabolomics, Nutrikinetics, Quality appraisal, etc.). Nutritional researchers who might not necessarily be familiar with ontologies and concept standardization, can find in ONS a single knowledge entry point for a unified and standardized terminology for their studies. 
 
 ## Contributions and documentation
+
 We encourage the collaborative extention of ONS and to simplify the process we constantly monitor the ONS repository's [Issue tracker](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues) for requests of new terms/classes or report errors or specific concerns related to the ontology.
 
 There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/wiki) documenting synthentically but clearly how to start working on the onltolgy either on your own or via [issue tracker](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues).
@@ -14,9 +15,11 @@ There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutriti
 
 ## Release notes
 
-V1.0:  30 April 2018; DOI: https://doi.org/10.1186/s12263-018-0601-y
+V1.1:  04 August 2020 - Change in ONS terms IRI after joining OBOFoundry
+V1.0:  30 April 2018 - First official version linked to Vitali et al. 2018
 
-https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
+
+## Accessibility/Ontology browsers
 
 BioPortal http://bioportal.bioontology.org/ontologies/ONS  
 
@@ -28,6 +31,11 @@ FAIRsharing https://fairsharing.org/bsg-s001068
 
 The ONS ontology has been circulating as a "work-in-progress" research artifact with few development versions. All of them were unofficial revisions solely meant as a way to collaboratively work with partners of the ENPADASI project. If you you are still interested, they can be found [here](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/tree/master/src/ontology/Older_deprecated).
 
+## Bibliographic reference
+
+DOI: https://doi.org/10.1186/s12263-018-0601-y
+
+https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
 
 
 ## License
