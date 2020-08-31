@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl/"
-     xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl/"
+<?xml version="1.1"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl/"
+     xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl/"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -28,7 +28,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
@@ -2796,10 +2796,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>The regular course of eating and drinking adopted by a person</obo:IAO_0000115>
+        <obo:IAO_0000115>The regular course of eating and drinking adopted by an organism</obo:IAO_0000115>
         <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
         <efo:MSH_definition_citation>MSH:D004032</efo:MSH_definition_citation>
-        <rdfs:label>Diet</rdfs:label>
+        <rdfs:label>individual regular diet</rdfs:label>
     </owl:Class>
     
 
