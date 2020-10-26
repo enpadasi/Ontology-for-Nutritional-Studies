@@ -10,6 +10,32 @@ http://purl.obolibrary.org/obo/FOODON_03411297
 http://purl.obolibrary.org/obo/FOODON_03411347
 http://purl.obolibrary.org/obo/FOODON_03470107
 http://purl.obolibrary.org/obo/FOODON_00000000
+http://purl.obolibrary.org/obo/FOODON_00001006
+http://purl.obolibrary.org/obo/FOODON_00001015
+http://purl.obolibrary.org/obo/FOODON_00001046
+http://purl.obolibrary.org/obo/FOODON_00001092
+http://purl.obolibrary.org/obo/FOODON_00001105
+http://purl.obolibrary.org/obo/FOODON_00001134
+http://purl.obolibrary.org/obo/FOODON_00001143
+http://purl.obolibrary.org/obo/FOODON_00001176
+http://purl.obolibrary.org/obo/FOODON_00001184
+http://purl.obolibrary.org/obo/FOODON_00001248
+http://purl.obolibrary.org/obo/FOODON_00001251
+http://purl.obolibrary.org/obo/FOODON_00001256
+http://purl.obolibrary.org/obo/FOODON_00001257
+http://purl.obolibrary.org/obo/FOODON_00001274
+http://purl.obolibrary.org/obo/FOODON_00001595
+http://purl.obolibrary.org/obo/FOODON_00001596
+http://purl.obolibrary.org/obo/FOODON_00001599
+http://purl.obolibrary.org/obo/FOODON_00001602
+http://purl.obolibrary.org/obo/FOODON_00001608
+http://purl.obolibrary.org/obo/FOODON_00002200
+http://purl.obolibrary.org/obo/FOODON_00002477
+http://purl.obolibrary.org/obo/FOODON_00002671
+http://purl.obolibrary.org/obo/FOODON_00003194
+http://purl.obolibrary.org/obo/FOODON_03302001
+http://purl.obolibrary.org/obo/FOODON_03303918
+http://purl.obolibrary.org/obo/FOODON_03420164
 
 [Source annotation URIs]
 includeAllAnnotationProperties
@@ -328,6 +354,7 @@ IAO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/IAO_0000326
 http://purl.obolibrary.org/obo/IAO_0000621
+http://purl.obolibrary.org/obo/IAO_0000235
 
 [Source annotation URIs]
 includeAllAnnotationProperties
