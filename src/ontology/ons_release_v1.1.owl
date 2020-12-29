@@ -31,7 +31,7 @@
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl">
         <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import.owl"/>
         <dc:creator>Pietro Franceschi</dc:creator>
         <dc:creator>Chen Yang</dc:creator>
         <dc:creator>Damariz Rivero</dc:creator>
