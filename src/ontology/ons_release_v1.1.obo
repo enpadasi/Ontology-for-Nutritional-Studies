@@ -1,0 +1,1639 @@
+format-version: 1.2
+import: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/foodon_import.owl
+import: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontodog/obi_in_ons.owl
+import: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox.owl
+ontology: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
+property_value: defaultLanguage "en" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Alessandra Bordoni" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Alessia Trimigno" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Bernard De Baets" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Carl Lachat" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Chen Yang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Damariz Rivero" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Duccio Cavalieri" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "ENPADASI WP 4" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Francesco Capozzi" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Francesco Taglino" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Francesco Vitali" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Franco Miglietta" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Fulvio Mattivi" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Giovanni Felici" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Guy De Tré" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Jildau Bouwman" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Katharina Nimptsch" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Mariona Pinart" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Nathalie De Cock" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Pietro Franceschi" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Rosario Lombardo" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Tobias Pischon" xsd:string
+property_value: http://purl.org/dc/elements/1.1/license https://creativecommons.org/licenses/by/4.0/ xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ontology for Nutritional Studies" xsd:string
+property_value: owl:versionInfo "Relese version 1.0" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/in_ONS_subset>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/in_minimal_requirements_subset>))\nDeclaration(AnnotationProperty(<http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary>))\nDeclaration(AnnotationProperty(<http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))\n############################\n#   Annotation Properties\n############################\n\n# Annotation Property: <http://purl.obolibrary.org/obo/in_ONS_subset> (<http://purl.obolibrary.org/obo/in_ONS_subset>)\n\nSubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/in_ONS_subset> <http://www.geneontology.org/formats/oboInOwl#inSubset>)\n\n# Annotation Property: <http://purl.obolibrary.org/obo/in_minimal_requirements_subset> (<http://purl.obolibrary.org/obo/in_minimal_requirements_subset>)\n\nSubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/in_minimal_requirements_subset> <http://purl.obolibrary.org/obo/in_ONS_subset>)\n\n# Annotation Property: <http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor> (<http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor>)\n\nSubAnnotationPropertyOf(<http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary_editor> <http://www.co-ode.org/ontologies/ont.owl#controlled_vocabulary>)\n\n\n)
+name: ONS
+created_by: ENPADASI_WP4
+
+[Term]
+id: CHEBI:16646 ! carbohydrate
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:23367 ! molecular entity
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CHEBI:25413 ! monounsaturated fatty acid
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:26208 ! polyunsaturated fatty acid
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:26607 ! saturated fatty acid
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:36080 ! protein
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:78295 ! food component
+is_a: BFO:0000023 ! role
+
+[Term]
+id: CMO:0000051 ! blood total cholesterol level
+is_a: ONS:0000052 ! Blood Analytics
+
+[Term]
+id: CMO:0000052 ! blood high density lipoprotein cholesterol level
+is_a: ONS:0000052 ! Blood Analytics
+
+[Term]
+id: CMO:0000053 ! blood low density lipoprotein cholesterol level
+is_a: ONS:0000052 ! Blood Analytics
+
+[Term]
+id: CMO:0000105 ! body mass index (BMI)
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: CMO:0000772 ! food intake measurement
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: SIO:000001 ONS:0000079 ! Food
+
+[Term]
+id: CMO:0001407 ! ethanol drink intake rate
+is_a: ONS:0000089 ! Dietary assessment data
+
+[Term]
+id: EFO:0000319
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: EFO:0000400
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: EFO:0000433
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: EFO:0000537
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: EFO:0000727
+is_a: BFO:0000015 ! process
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0003939
+is_a: ONS:0000089 ! Dietary assessment data
+
+[Term]
+id: EFO:0003940
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0004318
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0004329
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0004338
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0004339
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0004342
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: EFO:0005093
+is_a: ONS:0000088 ! Subject information collection data
+
+[Term]
+id: EFO:0005518
+is_a: OBI:0000272 ! protocol
+
+[Term]
+id: EFO:0005847
+is_a: BFO:0000017 ! realizable entity
+
+[Term]
+id: EFO:0006525
+is_a: ONS:0000088 ! Subject information collection data
+
+[Term]
+id: ERO:0000347 ! intervention
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: ERO:0001765 ! anthropometric analysis
+is_a: ONS:0000066 ! Subject Information collection
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: FOODON:00000000 ! foodon ontology
+is_a: ONS:0000078 ! Igredient
+
+[Term]
+id: FOODON:03411297 ! animal used as food source
+is_a: FOODON:00000000 ! foodon ontology
+
+[Term]
+id: FOODON:03411347 ! plant used as food source
+is_a: FOODON:00000000 ! foodon ontology
+
+[Term]
+id: FOODON:03470107 ! food preservation process
+is_a: FOODON:00000000 ! foodon ontology
+
+[Term]
+id: HP:0003119 ! Abnormality of lipid metabolism
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: IAO:0000027 ! data item
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000030 ! information content entity
+is_a: BFO:0000031 ! generically dependent continuant
+
+[Term]
+id: IAO:0000109 ! measurement datum
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: IAO:0000312 ! publication about an investigation
+is_a: IAO:0000310 ! document
+
+[Term]
+id: IAO:0000326 ! supplementary material to a document
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000621 ! ethical approval textual entity
+is_a: IAO:0000300 ! textual entity
+
+[Term]
+id: ICO:0000001 ! informed consent form
+is_a: IAO:0000310 ! document
+
+[Term]
+id: ICO:0000015 ! signed informed consent form
+is_a: ICO:0000001 ! informed consent form
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: ICO:0000069 ! contact person for questions about research
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCBITaxon:9606 ! Homo sapiens
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:species ! species
+is_a: ONS:0000066 ! Subject Information collection
+
+[Term]
+id: NCIT:C115696 ! Institutional Review Board Independent Ethics Committee Human Subject in Research Approval Documentation
+is_a: IAO:0000030 ! information content entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C124233 ! ClinicalTrials.gov
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: NCIT:C139218 ! Body Fat Percentage
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C16033 ! Follow-up
+is_a: OBI:0500000 ! study design
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C25662 ! Sampling
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C25729 ! Adherence
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: NCIT:C49647 ! Control Type
+is_a: OBI:0500000 ! study design
+
+[Term]
+id: NCIT:C53194 ! Random Sampling
+is_a: NCIT:C25662 ! Sampling
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C53196 ! Simple Random Sampling
+is_a: NCIT:C25662 ! Sampling
+
+[Term]
+id: NCIT:C53204 ! Convenience Sampling
+is_a: NCIT:C25662 ! Sampling
+
+[Term]
+id: NCIT:C68631 ! Study Name
+is_a: IAO:0000030 ! information content entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C71496 ! Stratified Random Sampling
+is_a: NCIT:C25662 ! Sampling
+
+[Term]
+id: NCIT:C71503 ! Judgment Sampling
+is_a: NCIT:C25662 ! Sampling
+
+[Term]
+id: NCIT:C71515 ! Multi-Stage Sampling
+is_a: NCIT:C25662 ! Sampling
+
+[Term]
+id: NCIT:C86036 ! Drink
+is_a: BFO:0000040 ! material entity
+relationship: RO:0000056 ONS:0000086 ! participates in Drinking
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C94090 ! Study Objective Description
+is_a: IAO:0000030 ! information content entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C94108 ! Study Protocol Version Acronym
+is_a: IAO:0000030 ! information content entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: NCIT:C98714 ! Clinical Trial Registry Identifier
+is_a: IAO:0000300 ! textual entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBCS:0000002 ! data collection
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBCS:0000089 ! randomization sampling design
+is_a: SIO:001066
+
+[Term]
+id: OBCS:0000120 ! data matrix
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBCS:0000130 ! data collection from literature
+is_a: OBCS:0000002 ! data collection
+
+[Term]
+id: OBCS:0000233 ! transformed data item
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OBI:0000011 ! planned process
+is_a: BFO:0000015 ! process
+
+[Term]
+id: OBI:0000066 ! investigation
+is_a: OBI:0000011 ! planned process
+equivalent_to: SIO:001066
+
+[Term]
+id: OBI:0000070 ! assay
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000097 ! participant under investigation role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000103 ! principal investigator role
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBI:0000143 ! baseline participant role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000161 ! crossover population role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000181 ! population
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0000198 ! biological replicate role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000220 ! reference subject role
+is_a: OBI:0000097 ! participant under investigation role
+
+[Term]
+id: OBI:0000249 ! technical replicate role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000252 ! cohort role
+is_a: OBI:0000198 ! biological replicate role
+
+[Term]
+id: OBI:0000272 ! protocol
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBI:0000630 ! hematology
+is_a: OBI:0000070 ! assay
+equivalent_to: ONS:0000052 ! Blood Analytics
+
+[Term]
+id: OBI:0000813 ! to be treated with active ingredient role
+is_a: OBI:0000097 ! participant under investigation role
+
+[Term]
+id: OBI:0000825 ! to be treated with placebo role
+is_a: OBI:0000097 ! participant under investigation role
+
+[Term]
+id: OBI:0001057
+is_a: OBI:0001139
+
+[Term]
+id: OBI:0001139
+is_a: OBI:0000048 ! chromatography device
+
+[Term]
+id: OBI:0001630 ! analytical chromatography
+is_a: OBI:0000443 ! analyte assay
+
+[Term]
+id: OBI:0001942 ! grant agency
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBI:0002116 ! high performance liquid chromotography assay
+is_a: OBI:0001630 ! analytical chromatography
+
+[Term]
+id: OBI:0100016 ! blood plasma specimen
+is_a: BFO:0000040 ! material entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBI:0100026 ! organism
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0302908 ! document editing
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0500000 ! study design
+is_a: BFO:0000017 ! realizable entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OBI:1110040 ! infectious disease
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: OBI:1110049 ! allergy
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: OBI:1110053 ! cancer
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: OBI:1110054 ! autoimmune disease
+is_a: OGMS:0000031 ! disease
+
+[Term]
+id: OBI:1110201 ! allergen
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBIB:0000018 ! form filling
+is_a: OBI:0302908 ! document editing
+
+[Term]
+id: OBIB:0000019 ! filled patient questionnaire
+is_a: OBIB:0000020 ! patient questionnaire
+
+[Term]
+id: OBIB:0000020 ! patient questionnaire
+is_a: OBI:0001000 ! questionnaire
+
+[Term]
+id: OBIB:0000054 ! smoking end date
+is_a: IAO:0000416 ! time measurement datum
+
+[Term]
+id: OGMS:0000014 ! clinical finding
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OGMS:0000018 ! laboratory finding
+is_a: OGMS:0000014 ! clinical finding
+
+[Term]
+id: OGMS:0000031 ! disease
+is_a: BFO:0000016 ! disposition
+
+[Term]
+id: OGMS:0000056 ! laboratory test
+is_a: BFO:0000015 ! process
+
+[Term]
+id: OGMS:0000057 ! physical examination
+is_a: BFO:0000015 ! process
+
+[Term]
+id: OGMS:0000073 ! diagnosis
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OGMS:0000093 ! prognosis
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OHMI:0000002 ! human microbiome
+is_a: OHMI:0000003 ! microbiome
+
+[Term]
+id: OHMI:0000003 ! microbiome
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OHMI:0000016 ! microbiome in human gastrointestinal system
+is_a: OHMI:0000002 ! human microbiome
+
+[Term]
+id: OHMI:0000020 ! human gut microbiome
+is_a: OHMI:0000016 ! microbiome in human gastrointestinal system
+
+[Term]
+id: OMIABIS:0000036
+is_a: SIO:001066
+
+[Term]
+id: OMIABIS:0000037
+is_a: SIO:001066
+
+[Term]
+id: OMIABIS:0001016
+is_a: IAO:0000005 ! objective specification
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: OMRSE:00000038 ! legal person role
+is_a: SIO:001066
+
+[Term]
+id: ONS:0000001
+name: Participants' identification number
+def: "Aphanumeric string (1 to 8 digits) which univocally identify a partecipant/subject." []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+property_value: IAO:0000111 "Partecipants' identification number" xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000002
+name: Month of anthropometry assessment
+def: "Month of anthropometry assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ERO:0001765 ! is about anthropometric analysis
+relationship: IAO:0000136 ONS:0000066 ! is about Subject Information collection
+property_value: IAO:0000111 "Month of anthropometry assessment" xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000003
+is_a: ONS:0000066 ! Subject Information collection
+is_obsolete: true
+
+[Term]
+id: ONS:0000004
+name: Time since quitting smoking
+def: "For past smokers: time in years since quitting smoking" []
+is_a: ONS:0000088 ! Subject information collection data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000005
+name: Month of physical activity assessment by questionnaire
+def: "Month of physical activity assessment by questionnaire counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)" []
+is_a: ONS:0000051 ! Physical activity assessment
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000006
+name: Categories of physical activity level
+def: "Categories of physical activity level\n1=low; 2= Medium; 3= High" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000007
+name: Total physical activity by questionnaire
+def: "Total physical activity in MET-hours/day (without sedentary or sleeping time) derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000008
+name: Physical activity from recreational or leisure-time activities by questionnaire
+def: "Physical activity from recreational or leisure-time activities in MET-hours/day derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000009
+name: Light physical activity by questionnaire
+def: "Time spent in light physical activity in minutes/day derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000010
+name: Moderate physical activity by questionnaire
+def: "Time spent in moderate physical activity in minutes/day derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000011
+name: Vigorous physical activity by questionnaire
+def: "Time spent in vigorous physical activity in minutes/day derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000012
+name: Sedentary time by questionnaire
+def: "Time spent sedentary (PC use, TV watching) in minutes/day derived from questionnaire data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000013
+name: Number of bouts by questionnaire
+def: "Number of physical activity bouts of moderate or vigorous physical activity of at least 10 minutes per day" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000014
+name: Month of physical activity assessment by accelerometer
+def: "Month of physical activity assessment by accelerometer counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)" []
+is_a: ONS:0000051 ! Physical activity assessment
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000015
+name: Light physical activity by accelerometer
+def: "Time spent in light physical activity in minutes/day derived from accelerometer data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000016
+name: Moderate physical activity by accelerometer
+def: "Time spent in moderate physical activity in minutes/day derived from accelerometer data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000017
+name: Vigorous physical activity by accelerometer
+def: "Time spent in vigorous physical activity in minutes/day derived from accelerometer data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000018
+name: Sedentary time by accelerometer
+def: "Time spent sedentary in minutes/day derived from accelerometer data" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000019
+name: Number of bouts by accelerometer
+def: "Number of bouts of moderate or vigorous physical activity per day" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000020
+name: Average duration of bouts
+def: "Average minutes per bout of moderate or vigorous physical activity per day" []
+is_a: ONS:0000092 ! Physical activity assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000021
+name: Dietary assessment method
+def: "Dietary assessment used for uploaded dietary variables\n1=24-hour recall; 2=FFQ; 3=Food record; 4=other" []
+is_a: ONS:0000033 ! Dietary assessment
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+created_by: ENPADASI_WP4
+
+[Term]
+id: ONS:0000022
+name: Month of dietary assessment
+def: "Month of dietary assessment counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 months/y= 1332; 1332 + 5 (May=05)= 1337)" []
+is_a: IAO:0000030 ! information content entity
+relationship: IAO:0000136 ONS:0000033 ! is about Dietary assessment
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000023
+name: Calculated Carbohydrate intake
+def: "Carbohydrate intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: IAO:0000136 CHEBI:16646 ! is about carbohydrate
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000024
+name: Calculated Fiber intake
+def: "Fiber intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000025
+name: Calculated Total fat intake
+def: "Total fat intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000026
+name: Calculated Saturated fatty acid intake
+def: "Saturated fatty acid intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: IAO:0000136 CHEBI:26607 ! is about saturated fatty acid
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000027
+name: Calculated Monounsaturated fatty acid intake
+def: "Monounsaturated fatty acid intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: IAO:0000136 CHEBI:25413 ! is about monounsaturated fatty acid
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000028
+name: Calculated Polyunsaturated fatty acid intake
+def: "Polyunsaturated fatty acid intake per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: IAO:0000136 CHEBI:26208 ! is about polyunsaturated fatty acid
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000029
+name: Calculated Protein intake
+def: "Protein intake in per unit time" []
+is_a: ONS:0000089 ! Dietary assessment data
+relationship: IAO:0000136 CHEBI:36080 ! is about protein
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000030
+name: Month of blood draw
+def: "Month of blood draw counted from 1900; e.g. May 2011=1337 (2011-1900=111; 111x12 = 1332; 1332 + 5 = 1337)" []
+is_a: ONS:0000052 ! Blood Analytics
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000031
+name: Fasting status
+def: "Fasting status before blood draw (measured in hours of fasting before blood draw) \n1=less than 9 hours; 2=9 hours or more" []
+is_a: ONS:0000052 ! Blood Analytics
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000033
+name: Dietary assessment
+def: "The process of collecting information on the diet/eating habits of a subject using a questionnaire." []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000034
+name: subject informations
+is_a: ONS:0000066 ! Subject Information collection
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+property_value: http://www.ebi.ac.uk/efo/definition "Anthropometric and habits information of the subject. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." xsd:string
+is_obsolete: true
+created_by: ENPADASI_WP4
+
+[Term]
+id: ONS:0000035
+name: Short study name
+def: "A study short name is a short alphanumeric string used to abbreviate a study proper name (OMIABIS_0000037)" []
+is_a: SIO:001066
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000036
+name: Consortium
+def: "Name of the consortium which the study refers to" []
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000037
+name: Randomization method
+def: "The name of the method used for randomization (OBCS_0000089), if any randomization was adopted." []
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000038
+name: Blinding
+def: "Indicate whether blinded experiment were conducted or not" []
+is_a: SIO:001066
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000039
+name: Blinding method
+def: "If blinded experiment were conducted, indicate the method used for blinding" []
+is_a: SIO:001066
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000040
+name: Study terminated
+def: "Indicated whether the study is terminated or not" []
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000041
+name: Compliance assessment
+def: "Indicate whethet the compliance was assessed or not" []
+is_a: SIO:001066
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000042
+name: Waist:Hip ratio
+def: "The ration between the circumference of the waist to that of the hips" []
+is_a: ONS:0000088 ! Subject information collection data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000043
+name: Event identifier name
+def: "A (short) alphanumeric string which identify the event/tretment" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000044
+name: Treatment descriptive name
+def: "An alphanumeric string which identify and describe the event/tretment" []
+is_a: EFO:0000727
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000045
+name: Study sampling method
+def: "Short description of the sampling method used (i.e. \"needle\" for blood drawn, or \"direct sampling\" for questionnaire)" []
+is_a: NCIT:C25662 ! Sampling
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000046
+name: Sampling method description
+def: "A long description of the sampling method used" []
+is_a: NCIT:C25662 ! Sampling
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000047
+name: Assay description
+def: "Long text describing the assay used." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000048
+name: Assay platform
+def: "Platform used for the assay" []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000049
+name: Sampling identifier
+def: "The unique sampling event identifier for the sample collection producing the sample" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000050
+name: Absolute start times
+def: "This field is usually 0 for the overall intervention but may be several time points for challenges, e.g. at 0 and 12 weeks." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000051
+name: Physical activity assessment
+def: "This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000052
+name: Blood Analytics
+def: "This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: ONS:0000090 ! Chemical biological data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000053
+name: Start tab
+def: "START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: SIO:001066
+property_value: definition:editor "" xsd:string
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000054
+name: Subject tab
+is_a: ONS:0000066 ! Subject Information collection
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+property_value: http://www.ebi.ac.uk/efo/definition "SUBJECT TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000055
+name: Event tab
+def: "EVENTS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: OBI:0000011 ! planned process
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000056
+name: Sampling tab
+def: "SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: NCIT:C25662 ! Sampling
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000057
+def: "PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: OBI:0000070 ! assay
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000058
+name: Information tab
+def: "INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology." []
+is_a: OBI:0000070 ! assay
+is_a: ONS:0000090 ! Chemical biological data
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000059
+name: Chemical-biological assay
+def: "The process of collecting various chemical-biological data (e.g. blood analytics)" []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000060
+name: Omics technology assay
+def: "The process of collecting data from a sample using 'omic' technologies" []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000061
+name: Type of omics
+def: "Type of omic assay performed (i.e. targeted metabolomics, untargeted metabolomics)" []
+is_a: ONS:0000060 ! Omics technology assay
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000062
+name: Assay type
+def: "Assay type (i.e. Clinical chemistry assay: Standard kit #34567 from 'vendor' assayed on a Cobas Mira analyzer)" []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000063
+name: Short question name
+def: "A short text identifying the question" []
+is_a: ONS:0000090 ! Chemical biological data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000064
+name: Question type
+def: "Type of question or question variable code" []
+is_a: ONS:0000090 ! Chemical biological data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000065
+name: Physiology assay type
+def: "Type of physiology assay performed" []
+is_a: ONS:0000057
+property_value: definition:editor "ENPADASI_WP4" xsd:string
+is_obsolete: true
+
+[Term]
+id: ONS:0000066
+name: Subject Information collection
+def: "An assay which purpose is to collect all the general information (e.g. anthropometric measurement) available on the subjects of nutritional studies" []
+is_a: OBI:0000070 ! assay
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000299 ONS:0000088 ! has_specified_output Subject information collection data
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000067
+name: Subject of a nutritional study
+def: "The subject (Human) participating in a nutritional study." []
+is_a: BFO:0000040 ! material entity
+relationship: RO:0000087 OBI:0000097 ! has role participant under investigation role
+relationship: RO:0000087 SIO:000883 ! has role
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000068
+name: Randomised Controlled Trial
+def: "An experimental comparison study in which participants are allocated to treatment/intervention or control/placebo groups using a random mechanism (see randomisation). Best for study the effect of an intervention." []
+is_a: OBI:0500000 ! study design
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: seeAlso http://www.cebm.net/study-designs/ xsd:string
+
+[Term]
+id: ONS:0000069
+name: Crossover Design
+def: "A controlled trial where each study participant has both therapies, e.g, is randomised to treatment A first, at the crossover point they then start treatment B. Only relevant if the outcome is reversible with time, e.g, symptoms." []
+is_a: OBI:0500000 ! study design
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: seeAlso http://www.cebm.net/study-designs/ xsd:string
+
+[Term]
+id: ONS:0000070
+name: Cohort Study
+def: "Data are obtained from groups who have been exposed, or not exposed, to the new technology or factor of interest (eg from databases). No allocation of exposure is made by the researcher. Best for study the effect of predictive risk factors on an outcome." []
+is_a: OBI:0500000 ! study design
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: seeAlso http://www.cebm.net/study-designs/ xsd:string
+
+[Term]
+id: ONS:0000071
+name: Case-Control Studies
+def: "Patients with a certain outcome or disease and an appropriate group of controls without the outcome or disease are selected (usually with careful consideration of appropriate choice of controls, matching, etc) and then information is obtained on whether the subjects have been exposed to the factor under investigation." []
+is_a: OBI:0500000 ! study design
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: seeAlso http://www.cebm.net/study-designs/ xsd:string
+
+[Term]
+id: ONS:0000072
+name: Cross-Sectional Survey
+def: "A study that examines the relationship between diseases (or other health-related characteristics) and other variables of interest as they exist in a defined population at one particular time (ie exposure and outcomes are both measured at the same time). Best for quantifying the prevalence of a disease or risk factor, and for quantifying the accuracy of a diagnostic test." []
+is_a: OBI:0500000 ! study design
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: seeAlso http://www.cebm.net/study-designs/ xsd:string
+
+[Term]
+id: ONS:0000073
+name: Food Component Entity
+def: "Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental con-taminants. Concept of food component can be viewer both as a role and as a material entity. This class, for convenience, represents the material entity \"food component\", including all those material entity having the role of \"Food Component\"" []
+is_a: BFO:0000040 ! material entity
+relationship: RO:0000056 ONS:0000102 ! participates in Food component absorption
+relationship: RO:0000056 ONS:0000103 ! participates in Food component metabolization
+relationship: RO:0000087 CHEBI:78295 ! has role food component
+relationship: SIO:000001 ONS:0000079 ! Food
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000074
+name: Additive
+def: "Component added to food to improve or preserve it" []
+is_a: ONS:0000073 ! Food Component Entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000075
+name: Contaminant
+def: "Unwanted food component that makes the food no longer suitable for use" []
+is_a: ONS:0000073 ! Food Component Entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000076
+name: Food Bioactive
+def: "A food bioactive is a food component other than those needed to meet basic human nutritional needs (nutrients). Food bioactives  modulates one or more metabolic processes, possibly resulting in the promotion of better health. The daily required intake for food bioactives is not established yet, and there is no demonstration that malnutrition occurs when the right amount is not provided" []
+is_a: ONS:0000073 ! Food Component Entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000077
+name: Nutrient
+def: "A nutrient is a food component used by the body for normal physiologic functions that guarantee survival and growth. It must be supplied in adequate and defined amounts from foods consumed within a diet. Malnutrition occurs when the right amount of nutrient is not provided" []
+is_a: ONS:0000073 ! Food Component Entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000078
+name: Igredient
+def: "An ingredient is a material entity used as part for the preparatio of food. Recipes specify which ingredients are used to prepare a specific food" []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000079
+name: Food
+def: "The food is a complex matrix that is consumed by a person through the process of eating or drinking. Food are bearer of the nutrients, bioactives and sometimes other food components. Food consumption, through the meal consumption, follows a certain dietary pattern, which define the diet.  Nutrients and bioactives contained in food can be exploited by the human organism thanks to the process of digestion, absorption, metabolization, or through the intervention of the gut microflora" []
+is_a: OBI:0000047 ! processed material
+relationship: RO:0000053 ONS:0000073 ! bearer of Food Component Entity
+relationship: RO:0000056 ONS:0000087 ! participates in Eating
+relationship: RO:0000056 ONS:0000101 ! participates in Food digestion
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: http://www.ebi.ac.uk/efo/MSH_definition_citation MSH:D005502 xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000080
+name: Diet
+def: "The regular course of eating and drinking adopted by a person" []
+is_a: IAO:0000030 ! information content entity
+property_value: http://www.ebi.ac.uk/efo/MSH_definition_citation MSH:D004032 xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000081
+name: Intervention Diet
+def: "The diet administered during an intervention study. It usually comprises the adoption of a certain nutritional intervention, intended as the prescription of consuming or not consuming certain food, and follows a precise study design. Intervention studies usually compare at least two subgroups of a population, one control group receiving a null nutritional intervention, and one or more test groups receiving the intervention" []
+is_a: ONS:0000080 ! Diet
+relationship: BFO:0000051 ERO:0000347 ! has part intervention
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000082
+name: Prescribed Diet
+def: "A diet prescribed by a physician/ nutritionist to meet spe-cific nutritional needs of a person" []
+is_a: ONS:0000080 ! Diet
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000083
+name: Usual Diet
+def: "The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour. It is also intended as the diet a person would follow without further prescription or indications, i.e. vegetarian diet" []
+is_a: ONS:0000080 ! Diet
+relationship: BFO:0000051 ERO:0000347 {cardinality="0"} ! has part intervention
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000084
+name: Cook role
+def: "Cook role is the role of the person responsible for food prepraration" []
+is_a: BFO:0000023 ! role
+relationship: RO:0000052 NCBITaxon:9606 ! inheres in Homo sapiens
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000085
+name: Meal
+def: "A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed." []
+is_a: BFO:0000017 ! realizable entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000086
+name: Drinking
+def: "The consumption of liquids. Not for drinking alcohol or alcohol consumption ( = ALCOHOL DRINKING); differentiate from DRINKING BEHAVIOR." []
+is_a: BFO:0000015 ! process
+relationship: BFO:0000055 ONS:0000085 ! realizes Meal
+property_value: http://www.ebi.ac.uk/efo/MSH_definition_citation MSH:D004326 xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000087
+name: Eating
+def: "The consumption of edible substances. The act of eating: do not confuse with FOOD (the substance eaten) or EATING BEHAVIOR (the manner of eating)." []
+is_a: BFO:0000015 ! process
+relationship: BFO:0000055 ONS:0000085 ! realizes Meal
+property_value: http://www.ebi.ac.uk/efo/MSH_definition_citation MSH:D004435 xsd:string
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000088
+name: Subject information collection data
+def: "A class which groups the data item collected as results from the subject information collection assay" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000293 ONS:0000067 ! has_specified_input Subject of a nutritional study
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000089
+name: Dietary assessment data
+def: "A class which groups the data item collected as results from the dietary assessment assay" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000293 ONS:0000067 ! has_specified_input Subject of a nutritional study
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000090
+name: Chemical biological data
+def: "A class which groups the data item collected as results from the chemical biological assay" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000293 ONS:0000067 ! has_specified_input Subject of a nutritional study
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000091
+name: Omics data
+def: "A class which groups the data item collected as results from the analysis performed with an omics platform" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000293 ONS:0000067 ! has_specified_input Subject of a nutritional study
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000092
+name: Physical activity assessment data
+def: "A class which groups the data item collected as results from the physical activity assay" []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 ONS:0000067 ! is about Subject of a nutritional study
+relationship: OBI:0000293 ONS:0000067 ! has_specified_input Subject of a nutritional study
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000093
+name: Food Preparation
+def: "Food preparation is the process in which food is made." []
+is_a: BFO:0000015 ! process
+is_a: OBI:0000094 ! material processing
+relationship: OBI:0000293 ONS:0000078 ! has_specified_input Igredient
+relationship: OBI:0000299 ONS:0000079 ! has_specified_output Food
+relationship: RO:0000059 SIO:001042 ! concretizes
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000094
+name: Dietary Pattern
+def: "Dietary pattern represent the quantity, proportion, variety and combination of different foods and drinks consumed in meals, and the frequency with which they are habitually consumed." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000095
+name: Biomarker
+def: "An objective measurement to assess the exposure (including food intake), effect, or succeptibility of the human organism (or an animal etc.)" []
+is_a: IAO:0000109 ! measurement datum
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih.gov/pubmed/28974991 xsd:string
+
+[Term]
+id: ONS:0000096
+name: Exposure biomarker
+alt_id: Intake Biomarker
+def: "An exposure biomarker reflects the level of extrinsic variables that humans are exposed to, such as diets or food compounds, including nutrients and non-nutrients." []
+is_a: ONS:0000095 ! Biomarker
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih.gov/pubmed/28974991 xsd:string
+
+[Term]
+id: ONS:0000097
+name: Effect biomarker
+def: "An effect biomarker reflects the funciontal response of the human body to an exposure." []
+is_a: ONS:0000095 ! Biomarker
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih.gov/pubmed/28974991 xsd:string
+
+[Term]
+id: ONS:0000098
+name: Susceptibility biomarker
+def: "Measurable indicator including genetic or acquired host factors and intrinsic factors, influencing the response of an individual to a (dietary) exposure." []
+is_a: ONS:0000095 ! Biomarker
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: IAO:0000119 https://www.ncbi.nlm.nih.gov/pubmed/28974991 xsd:string
+
+[Term]
+id: ONS:0000099
+name: Raw food
+def: "A raw food is an uncooked, unprocessed food that is consumed in its natural state" []
+is_a: ONS:0000079 ! Food
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000100
+name: Processed food
+def: "A processed food is the result of the process of home or industrial food preparation" []
+is_a: ONS:0000079 ! Food
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000101
+name: Food digestion
+def: "Digestion is the breakdown of large insoluble food molecules into small water-soluble food molecules. The breakdown is both mechanical and chemical (enzymatic digestion). During digestion, food components are released from the food matrix and become bioaccessible. Bioaccessible molecules can be absorbed." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000102
+name: Food component absorption
+def: "Process mainly occurring in the small intestine and allowing the passage of the biaoccessible food components from the gastro-intestinal lumen into the blood vessels. Absorption occurs through either diffusion or active transport. The degree and rate at which a substance is absorbed and is made available at the site of physiological activity is called bioavailability" []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000103
+name: Food component metabolization
+def: "Sum of the chemical changes occurring to nutrients and food component within the body. Changes can be anabolic (constructive) or catabolic (destructive). Anabolism converts simpler compounds into organized substances that the body can use. Catabolism converts more organized substances into simpler compounds. In the oxidative or energetic catabolism, this is coupled with the production of ATP" []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000104
+name: Seroepidemiologic Studies
+is_a: OBI:0000070 ! assay
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: http://www.ebi.ac.uk/efo/MSH_definition_citation MSH:D016036 xsd:string
+property_value: IAO_0000115 "EPIDEMIOLOGIC STUDIES based on the detection through serological testing of characteristic change in the serum level of specific ANTIBODIES. Latent subclinical infections and carrier states can thus be detected in addition to clinically overt cases." xsd:string
+
+[Term]
+id: ONS:0000105
+name: Food Frequency Questionnaire
+def: "Finite list of foods and beverages with response categories to indicate usual frequency of consumption over the time period queried. The time period can vary (from 1 week to 1 year and over). To assess the total diet, the number of foods and beverages queried typically ranges from 80 to 120. Usual portion size can be asked separately for each food and beverage. Alternatively, portion size can be combined with frequency information by asking respondents to translate usual consumption amount to number of specified units (e.g., spoon, cup, glass, etc). Some questionnaires include portion size images in an attempt to enhance reporting  accuracy. In addition to foods and beverages, FFQs often ask about the frequency of intake and dosages of dietary supplements." []
+is_a: OBIB:0000020 ! patient questionnaire
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000106
+name: 24-hour dietary recall
+def: "A structured interview intended to capture detailed information about all foods and beverages (and possibly, dietary supplements) consumed by the respondent in the past 24 hours, most commonly, from midnight to midnight the previous day. A key feature of the 24HR is that, when appropriate, the respondent is asked for more detailed information than first reported. For example, a respondent reporting chicken for dinner or a sandwich for lunch would be asked about the preparation method and type of bread. This open-ended response structure is designed to prompt respondents to provide a comprehensive and detailed report of all foods and beverages consumed. A 24h can also be filled at home by the responder, and be checked during an interview to further improve it with additional details" []
+is_a: OBIB:0000020 ! patient questionnaire
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000107
+name: Food Diary
+def: "A food diary is a record of eaten foods on a meal-by-meal, daily, or weekly basis. It is directly filled by the investigated subject, and it can include nutritional or other dietary information, organize and track foods by food group, and allows monitoring what, when, and how often the filling subject eats." []
+is_a: OBIB:0000020 ! patient questionnaire
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000108
+name: Nutritional researcher role
+def: "Nutritional researcher role is the role of a researcher with specific training and expertise in the nutritional science field" []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+
+[Term]
+id: ONS:0000109
+name: Literature database query
+is_a: IAO:0000300 ! textual entity
+property_value: IAO:0000117 "ENPADASI_WP4" xsd:string
+property_value: IAO_0000115 "Textual entity used to perform a specific literature search on databases (i.e. Medline or Web of Science database search)." xsd:string
+
+[Term]
+id: PATO:0000011 ! age
+is_a: ONS:0000088 ! Subject information collection data
+
+[Term]
+id: PATO:0000047 ! biological sex
+is_a: ONS:0000088 ! Subject information collection data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000031
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000085
+is_a: ONS:0000090 ! Chemical biological data
+
+[Term]
+id: SIO:000115
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: SIO:000136
+is_a: EFO:0000727
+is_a: ONS:0000066 ! Subject Information collection
+is_a: ONS:0000090 ! Chemical biological data
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000142
+is_a: SIO:001066
+
+[Term]
+id: SIO:000143
+is_a: SIO:001066
+
+[Term]
+id: SIO:000154
+is_a: SIO:001066
+
+[Term]
+id: SIO:000172
+is_a: SIO:001066
+
+[Term]
+id: SIO:000173
+is_a: SIO:001066
+
+[Term]
+id: SIO:000183
+is_a: SIO:001066
+
+[Term]
+id: SIO:000262
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000296
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000337
+is_a: SIO:001066
+
+[Term]
+id: SIO:000366
+is_a: SIO:001066
+
+[Term]
+id: SIO:000391
+is_a: SIO:001066
+
+[Term]
+id: SIO:000403
+is_a: IAO:0000030 ! information content entity
+is_a: ONS:0000066 ! Subject Information collection
+
+[Term]
+id: SIO:000508
+is_a: SIO:001066
+
+[Term]
+id: SIO:000664
+is_a: ONS:0000088 ! Subject information collection data
+
+[Term]
+id: SIO:000669
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: SIO:000670
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: SIO:000688
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000811
+is_a: IAO:0000300 ! textual entity
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:000883
+is_a: BFO:0000023 ! role
+
+[Term]
+id: SIO:000964
+is_a: ONS:0000046 ! Sampling method description
+
+[Term]
+id: SIO:001014
+is_a: ONS:0000088 ! Subject information collection data
+
+[Term]
+id: SIO:001042
+is_a: IAO:0000104 ! plan specification
+
+[Term]
+id: SIO:001066
+is_a: OBI:0000011 ! planned process
+relationship: BFO:0000055 OBI:0500000 {cardinality="1"} ! realizes study design
+relationship: RO:0000057 ONS:0000067 ! has participant Subject of a nutritional study
+
+[Term]
+id: SIO:001068
+is_a: SIO:001066
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: SIO:001323
+is_a: SIO:001066
+
+[Term]
+id: STATO:0000096 ! population stratification prior to sampling
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: STATO:0000124 ! stratification rule
+is_a: IAO:0000055 ! rule
+
+[Term]
+id: STATO:0000216 ! stratum population
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: UBERON:0000178 ! blood
+is_a: UBERON:0000463 ! organism substance
+property_value: http://purl.obolibrary.org/obo/in_minimal_requirements_subset "true" xsd:boolean
+
+[Term]
+id: UBERON:0000463 ! organism substance
+is_a: UBERON:0000465 ! material anatomical entity
+
+[Term]
+id: UBERON:0000465 ! material anatomical entity
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: UBERON:0000479 ! tissue
+is_a: UBERON:0000465 ! material anatomical entity
+
+[Term]
+id: UBERON:0001013 ! adipose tissue
+is_a: UBERON:0000479 ! tissue
+
+[Term]
+id: UBERON:0001088 ! urine
+is_a: UBERON:0000463 ! organism substance
+
+[Term]
+id: UBERON:0001836 ! saliva
+is_a: UBERON:0000463 ! organism substance
+
+[Term]
+id: UBERON:0001913 ! milk
+is_a: UBERON:0000463 ! organism substance
+
+[Term]
+id: UBERON:0001970 ! bile
+is_a: UBERON:0000463 ! organism substance
+
+[Term]
+id: UBERON:0001988 ! feces
+is_a: UBERON:0000463 ! organism substance
+
+[Term]
+id: UO:0000009 ! kilogram
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0000021 ! gram
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0000031 ! minute
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:0000032 ! hour
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:0000033 ! day
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:0000034 ! week
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:0000036 ! year
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: data:0970
+is_a: IAO:0000300 ! textual entity
+
+[Term]
+id: operation:0004
+is_a: BFO:0000015 ! process
+
+[Term]
+id: operation:0224
+is_a: operation:0004
+
+[Term]
+id: operation:0305
+is_a: operation:2421
+
+[Term]
+id: operation:2421
+is_a: operation:0224
+
+[Term]
+id: topic:0121
+is_a: ONS:0000060 ! Omics technology assay
+
+[Term]
+id: topic:0622
+is_a: ONS:0000060 ! Omics technology assay
+
+[Term]
+id: topic:3172
+is_a: ONS:0000060 ! Omics technology assay
+
+[Term]
+id: topic:3174
+is_a: ONS:0000060 ! Omics technology assay
+
+[Term]
+id: topic:3308
+is_a: ONS:0000060 ! Omics technology assay
+
+[Typedef]
+id: RO:0000087 ! has role
+is_a: RO:0002502
+
