@@ -20,6 +20,7 @@ There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutriti
 
 
 ## Release notes
+Hello world
 
 - v1.2:  06 November 2020 - Addition of a set of different terms for diet and dietary pattern description. For details see this [Discussion](https://github.com/FoodOntology/joint-food-ontology-wg/issues/10) 
 - V1.1:  04 August 2020 - Change in ONS terms IRI after joining OBOFoundry
