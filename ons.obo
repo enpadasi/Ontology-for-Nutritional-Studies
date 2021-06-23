@@ -53671,6 +53671,10 @@ is_a: IAO:0000136 ! is about
 inverse_of: IAO:0000417 ! is quality measured as
 
 [Typedef]
+id: IAO:0000235
+name: denoted by
+
+[Typedef]
 id: IAO:0000413
 name: is duration of
 def: "relates a process to a time-measurement-datum that represents the duration of the process" []
