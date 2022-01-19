@@ -1,0 +1,339 @@
+##### Import terms from FOODON ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+FOODON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/FOODON_03420113
+http://purl.obolibrary.org/obo/FOODON_03420245
+http://purl.obolibrary.org/obo/FOODON_00001304
+http://purl.obolibrary.org/obo/FOODON_03470107
+http://purl.obolibrary.org/obo/FOODON_03420244
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+##### Import terms from NCIT ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C173982
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from HP Ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+HP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/HP_0004789
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from SIO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+SIO
+
+[Low level source term URIs]
+http://semanticscience.org/resource/SIO_000221
+http://semanticscience.org/resource/SIO_000300
+http://semanticscience.org/resource/SIO_000217
+http://semanticscience.org/resource/SIO_000228
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from NCBITaxon ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_434
+http://purl.obolibrary.org/obo/NCBITaxon_292480
+http://purl.obolibrary.org/obo/NCBITaxon_2
+http://purl.obolibrary.org/obo/NCBITaxon_1678
+http://purl.obolibrary.org/obo/NCBITaxon_1535326
+http://purl.obolibrary.org/obo/NCBITaxon_1716
+http://purl.obolibrary.org/obo/NCBITaxon_1350
+http://purl.obolibrary.org/obo/NCBITaxon_4751
+http://purl.obolibrary.org/obo/NCBITaxon_227979
+http://purl.obolibrary.org/obo/NCBITaxon_4910
+http://purl.obolibrary.org/obo/NCBITaxon_57493
+http://purl.obolibrary.org/obo/NCBITaxon_2759736
+http://purl.obolibrary.org/obo/NCBITaxon_2767842
+http://purl.obolibrary.org/obo/NCBITaxon_1578
+http://purl.obolibrary.org/obo/NCBITaxon_1357
+http://purl.obolibrary.org/obo/NCBITaxon_2767893
+http://purl.obolibrary.org/obo/NCBITaxon_1243
+http://purl.obolibrary.org/obo/NCBITaxon_2767886
+http://purl.obolibrary.org/obo/NCBITaxon_2742598
+http://purl.obolibrary.org/obo/NCBITaxon_90243
+http://purl.obolibrary.org/obo/NCBITaxon_838
+http://purl.obolibrary.org/obo/NCBITaxon_255204
+http://purl.obolibrary.org/obo/NCBITaxon_4930
+http://purl.obolibrary.org/obo/NCBITaxon_1301
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+##### Import terms from CHEBI ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_17234
+http://purl.obolibrary.org/obo/CHEBI_422
+http://purl.obolibrary.org/obo/CHEBI_17716
+http://purl.obolibrary.org/obo/CHEBI_15361
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+##### Import terms from UO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000027
+http://purl.obolibrary.org/obo/UO_0000021
+http://purl.obolibrary.org/obo/UO_0000031
+http://purl.obolibrary.org/obo/UO_0000035
+http://purl.obolibrary.org/obo/UO_0000196
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from IAO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000027
+http://purl.obolibrary.org/obo/IAO_0000221
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from GO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0061621
+http://purl.obolibrary.org/obo/GO_0019661
+http://purl.obolibrary.org/obo/GO_0019244
+http://purl.obolibrary.org/obo/GO_0019514
+http://purl.obolibrary.org/obo/GO_0004565
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from OMP ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+OMP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OMP_0007138
+http://purl.obolibrary.org/obo/OMP_0007952
+http://purl.obolibrary.org/obo/OMP_0007519
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from PATO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000033
+http://purl.obolibrary.org/obo/PATO_0001309
+http://purl.obolibrary.org/obo/PATO_0000146
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+
+##### Import terms from RO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0002500
+http://purl.obolibrary.org/obo/RO_0002411
+http://purl.obolibrary.org/obo/RO_0001000
+http://purl.obolibrary.org/obo/RO_0002507
+http://purl.obolibrary.org/obo/RO_0002084
+http://purl.obolibrary.org/obo/RO_0002248
+http://purl.obolibrary.org/obo/RO_0002018
+http://purl.obolibrary.org/obo/RO_0002233
+http://purl.obolibrary.org/obo/RO_0002234
+http://purl.obolibrary.org/obo/RO_0000086
+http://purl.obolibrary.org/obo/RO_0000087
+http://purl.obolibrary.org/obo/RO_0000052
+http://purl.obolibrary.org/obo/RO_0002574
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+##### Import terms from OBI ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0001938
+
+[Source term retrieval setting]
+includeAllAnnotationProperties
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
