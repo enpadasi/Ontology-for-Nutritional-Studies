@@ -6,7 +6,6 @@ We have developed the Ontology for Nutritional Studies (ONS) by harmonizing sele
 
 ONS is the first systematic effort providing a solid and extensible formal ontology framework for nutritional studies, where integration of new information can be easily achieved by the addition of extra modules (i.e. Nutrigenomics, Metabolomics, Nutrikinetics, Quality appraisal, etc.). Nutritional researchers who might not necessarily be familiar with ontologies and concept standardization, can find in ONS a single knowledge entry point for a unified and standardized terminology for their studies. 
 
-*UPDATE*
 
 ONS has lately joined the international initiative [International Food Ontology Work Group](https://github.com/FoodOntology/joint-food-ontology-wg); an initiative aimed at connecting various researchers and ontology developers in the broader-sense food domain to collaboratively build consensus on terms and classification in the food domain. Inside the IFOWG's [issue tracker](https://github.com/FoodOntology/joint-food-ontology-wg/issues), terms are discussed and changes are proposed. Eventually, those changes can be adopted by the single ontologies in the IFOWG. 
 
@@ -16,14 +15,7 @@ ONS was chosen to be the modeling of diet related terms, which were partially al
 
 We encourage the collaborative extention of ONS and to simplify the process we constantly monitor the ONS repository's [Issue tracker](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues) for requests of new terms/classes or report errors or specific concerns related to the ontology.
 
-There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/wiki) documenting synthentically but clearly how to start working on the onltolgy either on your own or via [issue tracker](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues).
-
-
-## Release notes
-- v1.2:  06 November 2020 - Addition of a set of different terms for diet and dietary pattern description. For details see this [Discussion](https://github.com/FoodOntology/joint-food-ontology-wg/issues/10) 
-- V1.1:  04 August 2020 - Change in ONS terms IRI after joining OBOFoundry
-- V1.0:  30 April 2018 - First official version linked to Vitali et al. 2018
-
+There is also avaialbe a [Wiki](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/wiki) documenting synthentically but clearly how to start working on the ontology either on your own or via [issue tracker](https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues).
 
 ## Accessibility/Ontology browsers
 
@@ -39,10 +31,16 @@ The ONS ontology has been circulating as a "work-in-progress" research artifact 
 
 ## Bibliographic reference
 
+- Original publication: 
 DOI: https://doi.org/10.1186/s12263-018-0601-y
-
 https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
 
+- Other publications
+IFOW 2021 paper on "western diet" concept http://ceur-ws.org/Vol-2969/paper7-IFOW.pdf
+
+- Other resources:
+Video of IFOW 2020 oral presentation https://www.youtube.com/playlist?list=PLhzFEi0G-n-vDmqvPLBinMsoATgyPAzLk (Sept 23 session)
+Video of IFOW 2021 oral presentation https://summerofknowledge.inf.unibz.it/ifow-2021-video-presentations/ 
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
