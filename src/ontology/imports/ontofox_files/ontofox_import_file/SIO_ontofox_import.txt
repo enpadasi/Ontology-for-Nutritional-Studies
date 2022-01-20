@@ -1,0 +1,30 @@
+##### Import terms from SIO ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+SIO
+
+[Low level source term URIs]
+http://semanticscience.org/resource/SIO_000221
+http://semanticscience.org/resource/SIO_000300
+http://semanticscience.org/resource/SIO_000217
+http://semanticscience.org/resource/SIO_000228
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+[Source annotation URIs to be excluded]
+

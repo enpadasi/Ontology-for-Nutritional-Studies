@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl#"
+     xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001304">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420113">
+        <rdfs:label xml:lang="en">mammalian milk or milk component</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A broad term that includes milk and its components, cream, curd and whey; use the appropriate specific term when milk or a milk product is the principal ingredient. Use the appropriate term under *MEAT ANIMAL* to index the source of the milk (note: 21 CFR 131.110 defines milk as cow&#39;s milk).</obo:IAO_0000115>
+        <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">LanguaL curation note: For &#39;whole milk&#39; combine *MILK OR MILK PRODUCT* (A. PRODUCT TYPE) with *MILK* (C. PART OF PLANT OR ANIMAL); for &#39;lowfat cottage cheese&#39; combine *UNCURED CHEESE* (A. PRODUCT TYPE) with *CURD* (C. PART OF PLANT OR ANIMAL) and *FAT PARTIALLY REMOVED* (H. TREATMENT APPLIED).</rdfs:comment>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=C0113</oboInOwl:hasDbXref>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420244">
+        <rdfs:label xml:lang="en">mammalian milk whey</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The serum or watery part of milk that is separated from the thicker or more coagulable part or curd, espcially in the process of making cheese; it contains lactose, minerals and lactalbumin.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=C0244</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">whey</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420245">
+        <rdfs:label xml:lang="en">mammalian milk curd</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The thicker or more coagulable part of milk that is separated from the serum or watery part (whey), especially in the process of making cheese.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=C0245</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">curd</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03470107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03470107">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+

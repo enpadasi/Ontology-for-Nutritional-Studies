@@ -1,0 +1,34 @@
+##### Import terms from CHEBI ontology ######
+[URI of the OWL(RDF/XML) output file]
+https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17234
+https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:422
+https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17716
+https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15361
+http://purl.obolibrary.org/obo/CHEBI_17234
+http://purl.obolibrary.org/obo/CHEBI_422
+http://purl.obolibrary.org/obo/CHEBI_17716
+http://purl.obolibrary.org/obo/CHEBI_15361
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+
+[Source annotation URIs to be excluded]
+

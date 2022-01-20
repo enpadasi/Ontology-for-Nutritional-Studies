@@ -1,0 +1,765 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl#"
+     xml:base="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ontofox_import_01192022.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P350">
+        <rdfs:label>Chemical_Formula</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>Chemical Formula</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Chemical Formula</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a concise expression about the atoms that constitute a particular chemical compound.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>P350</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Chemical_Formula</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Chemical_Formula</obo:NCIT_P108>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P351">
+        <rdfs:label>US_Recommended_Intake</rdfs:label>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Recommended Intake</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>US FNB Recommends Intake</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>US_Recommended_Intake</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A property indicating that the Food and Nutrition Board of the National Academy of Science has established an average daily intake for this nutrient that is sufficient to meet the nutritional requirements of most individuals in the general U.S. population.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>P351</obo:NCIT_NHC0>
+        <obo:NCIT_P108>US_Recommended_Intake</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Required_Intake</oboInOwl:hasExactSynonym>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P98">
+        <rdfs:label>DesignNote</rdfs:label>
+        <oboInOwl:hasExactSynonym>DesignNote</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>DesignNote</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P98</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A property representing notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P354">
+        <rdfs:label>USDA_ID</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_NHC0>P354</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>USDA_ID</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a numeric ID assignment by United States Department of Agriculture.</obo:IAO_0000115>
+        <obo:NCIT_P107>USDA ID</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>USDA ID</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>USDA_ID</obo:NCIT_P108>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P310">
+        <rdfs:label>Concept_Status</rdfs:label>
+        <obo:NCIT_NHC0>P310</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A property used to indicate the standing of a concept in relation to currently accepted classifications and concepts. In NCI Thesaurus concept status subtype indicates concepts with unusual and problematic characteristics that should be evaluated by people and/or programs before those concept are used.</obo:IAO_0000115>
+        <obo:NCIT_P107>Concept Status</obo:NCIT_P107>
+        <obo:NCIT_P108>Concept_Status</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Concept_Status</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_Concept_Status-enum"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P399">
+        <rdfs:label>NCI_Drug_Dictionary_ID</rdfs:label>
+        <obo:NCIT_NHC0>P399</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A property representing the numerical CDR ID, which is the NCI Drug Dictionary identifier for a chemical or pharmaceutical agent.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NCI_Drug_Dictionary_ID</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>NCI_Drug_Dictionary_ID</obo:NCIT_P108>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P355">
+        <rdfs:label>Unit</rdfs:label>
+        <obo:NCIT_P107>Unit Used</obo:NCIT_P107>
+        <obo:IAO_0000115>A property representing the unit of measure in which a nutrient or food component is typically expressed, ex., gram (g), minigram (mg), microgram (mcg), joule, or kilojoule.</obo:IAO_0000115>
+        <obo:NCIT_P108>Unit</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Unit</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P355</obo:NCIT_NHC0>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P330">
+        <rdfs:label>PDQ_Closed_Trial_Search_ID</rdfs:label>
+        <oboInOwl:hasExactSynonym>PDQ_Closed_Trial_Search_ID</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P330</obo:NCIT_NHC0>
+        <obo:NCIT_P107>PDQ Closed Trial Search ID</obo:NCIT_P107>
+        <obo:NCIT_P108>PDQ_Closed_Trial_Search_ID</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the identifier used by NCI&#39;s Cancer.gov web site to retrieve PDQ Clinical Trials data for closed trials that involved specific clinical trials agents. While the identifier is the same for both open and closed trials two properties are used to support requirements of the current browser interface, as well as the possibility of providing values where only closed trials will be retrieved.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P210">
+        <rdfs:label>CAS_Registry</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P210</obo:NCIT_NHC0>
+        <obo:NCIT_P108>CAS_Registry</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>CAS_Registry</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>CAS Registry Number</obo:NCIT_P107>
+        <obo:IAO_0000115>A property representing the Chemical Abstracts Service number for a Chemical or Drug.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P353">
+        <rdfs:label>INFOODS</rdfs:label>
+        <obo:IAO_0000115>A property representing uppercase abbreviations assigned by the International Network of Food Data Systems.</obo:IAO_0000115>
+        <obo:NCIT_P107>INFOODS Tag Name</obo:NCIT_P107>
+        <obo:NCIT_P108>INFOODS</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P353</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>INFOODS</oboInOwl:hasExactSynonym>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P358">
+        <rdfs:label>Nutrient</rdfs:label>
+        <obo:NCIT_P325>A property indicating that a food component must be taken into the body preformed and in sufficient quantity to meet the body&#39;s needs for growth, reproduction and/or maintenance of health.</obo:NCIT_P325>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_P107>Is A Nutrient</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Nutrient</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Nutrient</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P358</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in subset</rdfs:label>
+        <oboInOwl:hasExactSynonym>Concept_In_Subset</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>An association that connects the concept defining a particular terminology subset with concepts that belong to this subset.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0">
+        <rdfs:label>code</rdfs:label>
+        <oboInOwl:hasExactSynonym>code</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a concept unique identifier within the NCI Enterprise Vocabulary Service&#39;s NCI Thesaurus.</obo:IAO_0000115>
+        <obo:NCIT_P108>code</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
+        <protege:readOnly>true</protege:readOnly>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P319">
+        <rdfs:label>FDA_UNII_Code</rdfs:label>
+        <obo:NCIT_P107>FDA UNII Code</obo:NCIT_P107>
+        <obo:NCIT_P108>FDA_UNII_Code</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the FDA Unique Ingredient Identifier, a key component of the federal drug information model.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>FDA_UNII_Code</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P319</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P360">
+        <rdfs:label>Macronutrient</rdfs:label>
+        <obo:NCIT_P108>Macronutrient</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P360</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_P325>A property indicating a class of food components that contribute energy to the diet and that are typically consumed in multi-gram amounts.</obo:NCIT_P325>
+        <obo:NCIT_P355>g</obo:NCIT_P355>
+        <oboInOwl:hasExactSynonym>Macronutrient</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Macronutrient</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322">
+        <rdfs:label>Contributing_Source</rdfs:label>
+        <obo:NCIT_P107>Contributing Source</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P322</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Contributing_Source</obo:NCIT_P108>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_Contributing_Source-enum"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366">
+        <rdfs:label>Legacy Concept Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a retired unique concept identifier created and stored as Concept Name by legacy EVS software. Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired. Legacy values are intended solely to help resolve and update earlier coding.</obo:IAO_0000115>
+        <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
+        <protege:readOnly>true</protege:readOnly>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Legacy_Concept_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P366</obo:NCIT_NHC0>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
+        <obo:IAO_0000115>A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325">
+        <rdfs:label>ALT_DEFINITION</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>ALT_DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>[source] Definition</obo:NCIT_P107>
+        <obo:NCIT_P108>ALT_DEFINITION</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the English language definition of a concept from a source other than NCI.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>P325</obo:NCIT_NHC0>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_textArea"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106">
+        <rdfs:label>Semantic_Type</rdfs:label>
+        <oboInOwl:hasExactSynonym>Semantic_Type</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
+        <obo:NCIT_P107>Semantic Type</obo:NCIT_P107>
+        <obo:NCIT_P108>Semantic_Type</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P106</obo:NCIT_NHC0>
+        <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCIT_Semantic_Type-enum"/>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P368">
+        <rdfs:label>CHEBI_ID</rdfs:label>
+        <obo:NCIT_NHC0>P368</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>CHEBI_ID</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>CHEBI_ID</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing that a concept in the &#39;Drug, Food, Chemical or Biomedical Material&#39; branch of the NCI thesaurus maps to a specific concept in the EBI Chemical Entities of Biological Interest (CHEBI) database.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208">
+        <rdfs:label>NCI_META_CUI</rdfs:label>
+        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property representing the concept unique identifier (CUI) for those concepts that appear in NCI Metathesaurus but not in the National Library of Medicine Unified Medical Language System (NLM UMLS).</obo:IAO_0000115>
+        <obo:NCIT_P108>NCI_META_CUI</obo:NCIT_P108>
+        <obo:NCIT_P107>NCI Metathesaurus CUI</obo:NCIT_P107>
+        <obo:NCIT_NHC0>P208</obo:NCIT_NHC0>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P329">
+        <rdfs:label>PDQ_Open_Trial_Search_ID</rdfs:label>
+        <oboInOwl:hasExactSynonym>PDQ_Open_Trial_Search_ID</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P329</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A property representing the identifier used by NCI&#39;s Cancer.gov Web site to retrieve PDQ Clinical Trials data for open trials involving specific clinical trials agents. While the identifier is the same for both open and closed trials two properties are used to support requirements of the current browser interface, as well as the possibility of providing values where only open trials will be retrieved.</obo:IAO_0000115>
+        <obo:NCIT_P107>PDQ Open Trial Search ID</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>PDQ_Open_Trial_Search_ID</obo:NCIT_P108>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107">
+        <rdfs:label>Display_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Display Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Display Name</obo:NCIT_P107>
+        <obo:NCIT_P108>Display_Name</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing an alternative Preferred Name for use in some NCI systems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Display_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P107</obo:NCIT_NHC0>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#readOnly">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108">
+        <rdfs:label>Preferred_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Preferred Term</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>Preferred Name</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Preferred Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P108</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the word or phrase that NCI uses by preference to refer to the concept.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207">
+        <rdfs:label>UMLS_CUI</rdfs:label>
+        <obo:NCIT_NHC0>P207</obo:NCIT_NHC0>
+        <obo:NCIT_P108>UMLS_CUI</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>UMLS_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property representing the concept unique identifier (CUI) assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_Concept_Status-enum -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/NCIT_Concept_Status-enum"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_Contributing_Source-enum -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/NCIT_Contributing_Source-enum"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_Semantic_Type-enum -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/NCIT_Semantic_Type-enum"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_textArea -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/NCIT_textArea"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C116012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C116012">
+        <rdfs:label>Pyruvate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C345"/>
+        <obo:NCIT_P107>Pyruvate</obo:NCIT_P107>
+        <obo:NCIT_NHC0>C116012</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>2-Oxopropanoate</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A 2-oxo monocarboxylic acid anion that is the conjugate base of pyruvic acid, which is an important metabolic product for energy-producing biochemical pathways. Pyruvate is the final product of glycolysis and, when hypoxic conditions arise, can be metabolized anaerobically to form lactate. This chemical is a precursor of both acetyl-coenzyme A and oxaloacetate, which are involved in the citric acid cycle. Additionally, oxaloacetate is a substrate in the gluconeogenesis pathway.</obo:IAO_0000115>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P207>C0244104</obo:NCIT_P207>
+        <obo:NCIT_P368>CHEBI:15361</obo:NCIT_P368>
+        <oboInOwl:hasExactSynonym>Pyruvate</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <obo:NCIT_P108>Pyruvate</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Propanoic Acid, 2-Oxo-, Ion(1-)</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P210>57-60-3</obo:NCIT_P210>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C142799"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1505">
+        <rdfs:label>Dietary Supplement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1908"/>
+        <obo:NCIT_P366>Nutritional_Supplement</obo:NCIT_P366>
+        <obo:NCIT_P322>CPTAC</obo:NCIT_P322>
+        <obo:IAO_0000115>Oral preparations containing dietary ingredient(s) intended to supplement the diet.  Dietary ingredients include vitamins, minerals, herbs, amino acids, extracts and metabolites.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Dietary Supplement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nutritional supplement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dietary supplement</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>supplemental nutrition</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P368>CHEBI:50733</obo:NCIT_P368>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <obo:NCIT_P108>Dietary Supplement</obo:NCIT_P108>
+        <obo:NCIT_P325>Preparations containing ingredient(s) intended to supplement the diet.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Nutritional Supplement</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A product that is added to the diet. A dietary supplement is taken by mouth, and usually contains one or more dietary ingredient (such as vitamin, mineral, herb, amino acid, and enzyme).</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Supplement</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0242295</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>DIETARY SUPPLEMENT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Dietary Supplements</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Dietary Supplement</obo:NCIT_P107>
+        <obo:NCIT_P106>Chemical Viewed Functionally</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Supplements</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C1505</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116978"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C132298"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156952"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156953"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156954"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C99078"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173982">
+        <rdfs:label>Kefir</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C93144"/>
+        <obo:NCIT_P208>CL1407889</obo:NCIT_P208>
+        <obo:NCIT_P330>802420</obo:NCIT_P330>
+        <obo:NCIT_P106>Food</obo:NCIT_P106>
+        <obo:NCIT_P107>Kefir</obo:NCIT_P107>
+        <obo:IAO_0000115>A nutritional supplement composed of a fermented milk drink prepared by inoculating cow, goat, or sheep milk with kefir grains, with potential immunomodulating and probiotic activities. Upon oral administration of kefir, the kefir grains may stimulate the proliferation of beneficial bacteria in the gastrointestinal (GI) tract. This modulates the GI flora ecosystem, improves the functions of the intestinal barrier and protects against harmful viruses and bacteria. In addition, this prebiotic modulates the immune system and may inhibit inflammation.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C173982</obo:NCIT_NHC0>
+        <obo:NCIT_P329>802420</obo:NCIT_P329>
+        <obo:NCIT_P399>802420</obo:NCIT_P399>
+        <obo:NCIT_P108>Kefir</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Kefir</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Pharmacologic Substance</obo:NCIT_P106>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Kephir</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116978"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C176424"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1908 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1908">
+        <rdfs:label>Drug, Food, Chemical or Biomedical Material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:NCIT_P106>Classification</obo:NCIT_P106>
+        <obo:NCIT_P108>Drug, Food, Chemical or Biomedical Material</obo:NCIT_P108>
+        <obo:NCIT_P207>C1880421</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C1908</obo:NCIT_NHC0>
+        <obo:IAO_0000115>An organic or inorganic substance, element, isotope, food or other materials derived from microorganism, plant, or animal sources. They can be used for the prevention, diagnosis, treatment or research of disease states, for industrial purposes, or for the promotion or maintenance of organism viability or health.</obo:IAO_0000115>
+        <obo:NCIT_P366>Drugs_and_Chemicals</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Drug, Food, Chemical or Biomedical Material</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1913">
+        <rdfs:label>Drug or Chemical by Structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1908"/>
+        <obo:IAO_0000115>Substances that are grouped or classified by chemical composition.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Drug or Chemical by Structure</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C1913</obo:NCIT_NHC0>
+        <obo:NCIT_P310>Header_Concept</obo:NCIT_P310>
+        <obo:NCIT_P366>Drugs_and_Chemicals_Structural_Classification</obo:NCIT_P366>
+        <obo:NCIT_P108>Drug or Chemical by Structure</obo:NCIT_P108>
+        <obo:NCIT_P207>C1512079</obo:NCIT_P207>
+        <obo:NCIT_P106>Classification</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1930">
+        <rdfs:label>Food Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1949"/>
+        <obo:NCIT_NHC0>C1930</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Substances introduced into the body by dietary means.</obo:IAO_0000115>
+        <obo:NCIT_P108>Food Component</obo:NCIT_P108>
+        <obo:NCIT_P106>Chemical Viewed Functionally</obo:NCIT_P106>
+        <obo:NCIT_P366>Dietary_Component</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Food Component</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1880311</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1947 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1947">
+        <rdfs:label>Organic Oxoacids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C718"/>
+        <obo:IAO_0000115>Organic acids that have oxygen atoms in the acidic groups. (NCI)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Organic Oxoacids</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Organic Oxoacids</obo:NCIT_P108>
+        <obo:NCIT_P366>Organic_Oxoacids</obo:NCIT_P366>
+        <obo:NCIT_P106>Classification</obo:NCIT_P106>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P207>C1518609</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C1947</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C1949 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C1949">
+        <rdfs:label>Food or Food Product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1908"/>
+        <obo:NCIT_P322>BRIDG</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Food</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Food or Food Product</obo:NCIT_P108>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:IAO_0000115>Processed or unprocessed substances obtained from animal, plant, microorganism and mining source that provide nutrients for living organisms to maintain biological processes or functions.</obo:IAO_0000115>
+        <obo:NCIT_P368>CHEBI:33290</obo:NCIT_P368>
+        <oboInOwl:hasExactSynonym>FoodProduct</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Food or Food Substance</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C1949</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Food</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Food or Food Product</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Food Product</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Food_and_Food_Product</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>FOOD OR FOOD PRODUCT</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P208>CL365211</obo:NCIT_P208>
+        <obo:NCIT_P325>A substance consumed by humans and animals for nutritional purposes. EXAMPLE(S): broccoli, donuts, pet treats</obo:NCIT_P325>
+        <obo:NCIT_P325>A substance consumed by a human or animal for nutritional purposes.  EXAMPLE(S): broccoli, donuts, pet treats  OTHER NAME(S):  NOTE(S):</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C111661"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159501"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159503"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54452"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C28166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28166">
+        <rdfs:label>Lactose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C68472"/>
+        <obo:NCIT_P207>C0022949</obo:NCIT_P207>
+        <obo:NCIT_P354>213</obo:NCIT_P354>
+        <obo:NCIT_P366>Lactose</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>lactose</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P353>LACS</obo:NCIT_P353>
+        <obo:NCIT_P368>CHEBI:17716</obo:NCIT_P368>
+        <oboInOwl:hasExactSynonym>LACTOSE, UNSPECIFIED FORM</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P319>J2B2A4N98G</obo:NCIT_P319>
+        <obo:NCIT_NHC0>C28166</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P210>63-42-3</obo:NCIT_P210>
+        <obo:NCIT_P325>A disaccharide consisting of a galactose linked by a beta-1,4 glycosidic bond to a glucose.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Lactose</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A type of sugar found in milk and milk products.</obo:NCIT_P325>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_P108>Lactose</obo:NCIT_P108>
+        <obo:NCIT_P350>C12H22O11</obo:NCIT_P350>
+        <obo:NCIT_P355>g</obo:NCIT_P355>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C63923"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C344">
+        <rdfs:label>Carbohydrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C718"/>
+        <obo:NCIT_P368>CHEBI:16646</obo:NCIT_P368>
+        <oboInOwl:hasExactSynonym>Carbohydrate</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A class of hydrocarbons with an empirical formula of Cm(H20)n (where m and n may be equal) and includes monomers, polymers and derivatives of aldoses, ketoses, saccharides, and alditols.</obo:IAO_0000115>
+        <obo:NCIT_P106>Chemical Viewed Structurally</obo:NCIT_P106>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C344</obo:NCIT_NHC0>
+        <obo:NCIT_P325>A sugar molecule. Carbohydrates can be small and simple (for example, glucose) or they can be large and complex (for example, polysaccharides such as starch, chitin or cellulose).</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>carbohydrate</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Carbohydrate</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Carbohydrates</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Carbohydrate</obo:NCIT_P366>
+        <obo:NCIT_P207>C0007004</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C345">
+        <rdfs:label>Carboxylic Acids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1947"/>
+        <obo:NCIT_P108>Carboxylic Acids</obo:NCIT_P108>
+        <obo:NCIT_P207>C0007066</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C345</obo:NCIT_NHC0>
+        <obo:IAO_0000115>An organic oxoacid that contains a carboxy moiety (-COOH) as a functional group.</obo:IAO_0000115>
+        <obo:NCIT_P368>CHEBI:33575</obo:NCIT_P368>
+        <oboInOwl:hasExactSynonym>Carboxylic Acids</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P366>Carboxylic_Acids</obo:NCIT_P366>
+        <obo:NCIT_P106>Chemical Viewed Structurally</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C45678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45678">
+        <rdfs:label>Industrial Aid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1908"/>
+        <oboInOwl:hasExactSynonym>Industrial Aid</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Natural or synthetic substances that are used in various industries or in laboratories for a broad range of applications. This group includes, but is not limited to, pharmaceutical excipients, research/diagnostic agents, agricultural agents, and other non-edible products that may have human health implication.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C45678</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Industrial Additive</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1708504</obo:NCIT_P207>
+        <obo:NCIT_P106>Chemical Viewed Functionally</obo:NCIT_P106>
+        <obo:NCIT_P108>Industrial Aid</obo:NCIT_P108>
+        <obo:NCIT_P366>Industrial_Aid</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54060">
+        <rdfs:label>Bioactive Food Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1930"/>
+        <oboInOwl:hasExactSynonym>Bioactive Food Component</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A class of compounds found in food believed to have biological activity in the human body.</obo:NCIT_P325>
+        <obo:NCIT_P108>Bioactive Food Component</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C54060</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Bioactive_Food_Component</obo:NCIT_P366>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_P207>C1706946</obo:NCIT_P207>
+        <obo:NCIT_P106>Chemical Viewed Functionally</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C68470">
+        <rdfs:label>Dietary Carbohydrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C344"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54060"/>
+        <oboInOwl:hasExactSynonym>Dietary Carbohydrate</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A class of macronutrients constructed from carbon, oxygen and hydrogen that have the general formula Cn(H2O)m.</obo:NCIT_P325>
+        <obo:NCIT_P351>Y</obo:NCIT_P351>
+        <obo:NCIT_P358>Y</obo:NCIT_P358>
+        <obo:NCIT_P355>g</obo:NCIT_P355>
+        <obo:NCIT_P360>Y</obo:NCIT_P360>
+        <obo:NCIT_P106>Pharmacologic Substance</obo:NCIT_P106>
+        <obo:NCIT_P108>Dietary Carbohydrate</obo:NCIT_P108>
+        <obo:NCIT_P366>Dietary_Carbohydrate</obo:NCIT_P366>
+        <obo:NCIT_P353>CHOCDF</obo:NCIT_P353>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_P207>C0012170</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C68470</obo:NCIT_NHC0>
+        <obo:NCIT_P354>205</obo:NCIT_P354>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C68472">
+        <rdfs:label>Disaccharide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C68470"/>
+        <obo:NCIT_P368>CHEBI:36233</obo:NCIT_P368>
+        <obo:NCIT_P322>CRCH</obo:NCIT_P322>
+        <obo:NCIT_NHC0>C68472</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P366>Disaccharide</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Disaccharide</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Disaccharide</obo:NCIT_P108>
+        <obo:NCIT_P325>A carbohydrate comprised of two monosaccharides joined by an ether bridge (covalent bonds centered by an oxygen).</obo:NCIT_P325>
+        <obo:NCIT_P355>g</obo:NCIT_P355>
+        <obo:NCIT_P207>C0012611</obo:NCIT_P207>
+        <obo:NCIT_P353>DISACM</obo:NCIT_P353>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C718 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C718">
+        <rdfs:label>Organic Chemical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1913"/>
+        <obo:IAO_0000115>Molecule that contains atoms of the element carbon, usually combined with itself and with atoms of one or more other element such as hydrogen, oxygen, nitrogen, sulfur, phosphorus, chlorine, or fluorine. Excludes carbides, carbonates and carbon oxides.</obo:IAO_0000115>
+        <obo:NCIT_P108>Organic Chemical</obo:NCIT_P108>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P366>Organic_Chemical</obo:NCIT_P366>
+        <obo:NCIT_P368>CHEBI:50860</obo:NCIT_P368>
+        <obo:NCIT_P106>Classification</obo:NCIT_P106>
+        <obo:NCIT_P207>C0029224</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C718</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Organic Chemical</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C76926 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C76926">
+        <rdfs:label>Lactic Acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45678"/>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P366>Lactic_Acid</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C76926</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>lactic acid</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Lactic Acid</obo:NCIT_P108>
+        <obo:NCIT_P319>33X04XA5AT</obo:NCIT_P319>
+        <oboInOwl:hasExactSynonym>LACTIC ACID, UNSPECIFIED FORM</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P210>50-21-5</obo:NCIT_P210>
+        <obo:NCIT_P106>Organic Chemical</obo:NCIT_P106>
+        <obo:NCIT_P368>CHEBI:28358</obo:NCIT_P368>
+        <obo:NCIT_P106>Pharmacologic Substance</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Lactic Acid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Lactate</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A substance made from sugars in milk, by the action of certain enzymes. It is used in skin care products to reduce wrinkles and soften the skin. It is also being studied in the treatment of hand-foot syndrome (a condition marked by pain, swelling, numbness, tingling, or redness of the hands or feet) in patients receiving chemotherapy. Lactic acid is also made in muscles in the body and is used in many chemical processes in the body. It is a type of alpha hydroxyl acid.</obo:NCIT_P325>
+        <obo:NCIT_P207>C0064582</obo:NCIT_P207>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C63923"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C93144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C93144">
+        <rdfs:label>Probiotic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C1505"/>
+        <oboInOwl:hasExactSynonym>Probiotic</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Probiotic</obo:NCIT_P108>
+        <obo:NCIT_P207>C0525033</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>probiotic</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A live microorganism used as a dietary supplement to help with digestion and normal bowel function. It may also help keep the gastrointestinal (GI) tract healthy. A bacterium found in yogurt called Lactobacillus acidophilus, is the most common probiotic.</obo:NCIT_P325>
+        <obo:NCIT_P107>Probiotic</obo:NCIT_P107>
+        <obo:NCIT_P106>Chemical Viewed Functionally</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C93144</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116978"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+
