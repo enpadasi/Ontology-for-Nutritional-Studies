@@ -47303,6 +47303,7 @@ property_value: NCIT:P366 "Follow-up" xsd:string
 
 [Term]
 id: NCIT:C173982
+relationship: RO:0002248 ONS:0000143 ! kefiran
 relationship: RO:0002248 ONS:0000144 ! kefir microbiota
 
 [Term]
@@ -52008,6 +52009,7 @@ id: ONS:0000140
 name: lipolysis during food fermentation
 def: "the set of reactions leading to the conversion of fats (triglycerides) into free fatty acids, monoacylglycerol, diacylglycerol, and glycerol during the fermentation process" []
 is_a: ONS:0000137 ! biological processes during dairy food fermentation
+relationship: SIO:000001 ONS:0000139 ! is related to fermented food ripening
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52017,6 +52019,7 @@ id: ONS:0000141
 name: proteolysis during food fermentation
 def: "the set of reactions leading to the hydrolysis of milk proteins into peptides during the food fermentation process" []
 is_a: ONS:0000137 ! biological processes during dairy food fermentation
+relationship: SIO:000001 ONS:0000139 ! is related to fermented food ripening
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52122,6 +52125,11 @@ id: ONS:0000150
 name: whey microbiota
 def: "consortium of living microrganisms present in whey, characterized by bacteria and yeast components (has part)" []
 is_a: ONS:0000138 ! microbiota in finished or semi-finished fermented products and in the entire food-chain
+relationship: RO:0002248 NCBITaxon:1301
+relationship: RO:0002248 NCBITaxon:1578
+relationship: RO:0002248 NCBITaxon:2759736
+relationship: RO:0002248 NCBITaxon:2767842
+relationship: RO:0002248 NCBITaxon:2767886
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52176,7 +52184,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
 
 [Term]
 id: ONS:0000155
-name: shaped parmigiano
+name: shaped parmigiano reggiano
 def: "the result of moulding and final pressing of Parmigiano Reggiano mass retrieved from cauldron" []
 xref: https://www.parmigianoreggiano.com/product-art-of-making/
 is_a: ONS:0000169 ! shaped cheese
@@ -52219,6 +52227,11 @@ name: agent for physico-chemical selection of microbiota
 def: "a chemical and/or physical factor that exerts selection pressure and brings about natural selection within microbiota components" []
 is_a: SIO:000016
 relationship: RO:0000052 FOODON:03470107 ! inheres in food preservation process
+relationship: RO:0000052 ONS:0000144 ! inheres in kefir microbiota
+relationship: RO:0000052 ONS:0000167 ! inheres in parmigiano reggiano microbiota
+relationship: RO:0002507 OMP:0007138
+relationship: RO:0002507 OMP:0007519
+relationship: RO:0002507 OMP:0007952
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52294,7 +52307,7 @@ name: parmigiano reggiano maturation
 def: "the process during which the parmigiano reggiano cheese wheels are stored at 18-20 °C for a minimum of 12 months giving rise to the ripened parmigiano reggiano" []
 xref: https://www.parmigianoreggiano.com/product-art-of-making/
 is_a: ONS:0000165 ! cheese maturation
-relationship: RO:0002233 ONS:0000155 ! shaped parmigiano
+relationship: RO:0002233 ONS:0000155 ! shaped parmigiano reggiano
 relationship: RO:0002234 ONS:0000163 ! parmigiano reggiano
 relationship: RO:0002248 ONS:0000167 ! parmigiano reggiano microbiota
 relationship: SIO:000217 PATO:0001309
@@ -52329,7 +52342,7 @@ name: parmigiano reggiano shaping and salting
 def: "the process in which the cheese, wrapped in typical linen cloth, is placed in a mould that gives it its final shape and immersed in a saturated solution of water and salt." []
 xref: https://www.parmigianoreggiano.com/product-art-of-making/
 is_a: ONS:0000160 ! cheese shaping and salting
-relationship: RO:0002234 ONS:0000155 ! shaped parmigiano
+relationship: RO:0002234 ONS:0000155 ! shaped parmigiano reggiano
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52377,6 +52390,7 @@ id: ONS:0000172
 name: suitable for consumption
 def: "the role of a material entity, generally a chemical compound, such as the material entity is not suitable for consumption by a defined group of individuals. This role has a causal relation (is determined by) with another material entity such that it exerts a strong causal influence on the role, and its removal cause the termination of the existence of the role" []
 is_a: SIO:000016
+relationship: RO:0002507 HP:0004789
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
@@ -52386,6 +52400,7 @@ id: ONS:0000173
 name: unfit for consumption
 def: "the role of a material entity, generally a chemical compound, such as the material entity is unfit for consumption by a defined group of individuals. This role has a causal relation (is determined by) with another material entity such that it exerts a strong causal influence on the role, and its removal cause the termination of the existence of the role" []
 is_a: SIO:000016
+relationship: RO:0002507 HP:0004789
 property_value: IAO:0000117 https://github.com/FrancescoVit xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0001-9446-7979 xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7114-7726 xsd:string
