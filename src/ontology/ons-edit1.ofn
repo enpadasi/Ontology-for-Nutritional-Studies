@@ -3081,12 +3081,9 @@ Declaration(Class(obo:OBI_0000571))
 Declaration(Class(obo:OBI_0000576))
 Declaration(Class(obo:OBI_0000630))
 Declaration(Class(obo:OBI_0000639))
-Declaration(Class(obo:OBI_0000651))
 Declaration(Class(obo:OBI_0000652))
 Declaration(Class(obo:OBI_0000654))
-Declaration(Class(obo:OBI_0000655))
 Declaration(Class(obo:OBI_0000659))
-Declaration(Class(obo:OBI_0000671))
 Declaration(Class(obo:OBI_0000678))
 Declaration(Class(obo:OBI_0000681))
 Declaration(Class(obo:OBI_0000684))
@@ -3094,7 +3091,6 @@ Declaration(Class(obo:OBI_0000686))
 Declaration(Class(obo:OBI_0000721))
 Declaration(Class(obo:OBI_0000725))
 Declaration(Class(obo:OBI_0000740))
-Declaration(Class(obo:OBI_0000747))
 Declaration(Class(obo:OBI_0000750))
 Declaration(Class(obo:OBI_0000751))
 Declaration(Class(obo:OBI_0000806))
@@ -3108,7 +3104,6 @@ Declaration(Class(obo:OBI_0000931))
 Declaration(Class(obo:OBI_0000932))
 Declaration(Class(obo:OBI_0000941))
 Declaration(Class(obo:OBI_0000947))
-Declaration(Class(obo:OBI_0000953))
 Declaration(Class(obo:OBI_0000967))
 Declaration(Class(obo:OBI_0000968))
 Declaration(Class(obo:OBI_0000969))
@@ -3121,7 +3116,6 @@ Declaration(Class(obo:OBI_0001034))
 Declaration(Class(obo:OBI_0001057))
 Declaration(Class(obo:OBI_0001139))
 Declaration(Class(obo:OBI_0001173))
-Declaration(Class(obo:OBI_0001479))
 Declaration(Class(obo:OBI_0001515))
 Declaration(Class(obo:OBI_0001528))
 Declaration(Class(obo:OBI_0001547))
@@ -3177,24 +3171,13 @@ Declaration(Class(obo:OBI_0002081))
 Declaration(Class(obo:OBI_0002089))
 Declaration(Class(obo:OBI_0002110))
 Declaration(Class(obo:OBI_0002116))
-Declaration(Class(obo:OBI_0002501))
-Declaration(Class(obo:OBI_0002503))
-Declaration(Class(obo:OBI_0002504))
-Declaration(Class(obo:OBI_0002505))
-Declaration(Class(obo:OBI_0002507))
-Declaration(Class(obo:OBI_0002508))
-Declaration(Class(obo:OBI_0002509))
-Declaration(Class(obo:OBI_0100016))
-Declaration(Class(obo:OBI_0100017))
 Declaration(Class(obo:OBI_0100026))
-Declaration(Class(obo:OBI_0100051))
 Declaration(Class(obo:OBI_0100086))
 Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:OBI_0200166))
 Declaration(Class(obo:OBI_0200167))
 Declaration(Class(obo:OBI_0200169))
 Declaration(Class(obo:OBI_0200183))
-Declaration(Class(obo:OBI_0302716))
 Declaration(Class(obo:OBI_0302838))
 Declaration(Class(obo:OBI_0302840))
 Declaration(Class(obo:OBI_0302846))
@@ -3533,23 +3516,12 @@ Declaration(Class(obo:STATO_0000096))
 Declaration(Class(obo:STATO_0000124))
 Declaration(Class(obo:STATO_0000216))
 Declaration(Class(obo:UBERON_0000165))
-Declaration(Class(obo:UBERON_0000178))
-Declaration(Class(obo:UBERON_0000463))
 Declaration(Class(obo:UBERON_0000465))
 Declaration(Class(obo:UBERON_0000477))
 Declaration(Class(obo:UBERON_0000479))
 Declaration(Class(obo:UBERON_0000945))
 Declaration(Class(obo:UBERON_0001013))
-Declaration(Class(obo:UBERON_0001088))
-Declaration(Class(obo:UBERON_0001089))
 Declaration(Class(obo:UBERON_0001155))
-Declaration(Class(obo:UBERON_0001836))
-Declaration(Class(obo:UBERON_0001913))
-Declaration(Class(obo:UBERON_0001970))
-Declaration(Class(obo:UBERON_0001988))
-Declaration(Class(obo:UBERON_0006911))
-Declaration(Class(obo:UBERON_0007311))
-Declaration(Class(obo:UBERON_0012112))
 Declaration(Class(obo:UO_0000001))
 Declaration(Class(obo:UO_0000002))
 Declaration(Class(obo:UO_0000003))
@@ -3780,7 +3752,6 @@ Declaration(NamedIndividual(obo:UO_0000301))
 Declaration(NamedIndividual(obo:iao.owl))
 Declaration(NamedIndividual(obo:obi.owl))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/obi/wiki/Releases/2017-02-22>))
 Declaration(AnnotationProperty(edamontology:isdebtag))
 Declaration(AnnotationProperty(protege:defaultLanguage))
 Declaration(AnnotationProperty(protege:readOnly))
@@ -4503,68 +4474,11 @@ AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000051 "has_part"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part"@en)
 TransitiveObjectProperty(obo:BFO_0000051)
 
-# Object Property: obo:BFO_0000054 (realized in)
-
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000054 "realized in"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000054 "this disease is realized in this disease course"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000054 "this fragility is realized in this shattering"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000054 "this investigator role is realized in this investigation"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000054 "is realized by"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000054 "realized_in"@en)
-AnnotationAssertion(obo:IAO_0000600 obo:BFO_0000054 "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"@en)
-AnnotationAssertion(rdfs:comment obo:BFO_0000054 "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process")
-AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000054 obo:bfo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in"@en)
-InverseObjectProperties(obo:BFO_0000054 obo:BFO_0000055)
-ObjectPropertyDomain(obo:BFO_0000054 obo:BFO_0000017)
-ObjectPropertyRange(obo:BFO_0000054 obo:BFO_0000015)
-
-# Object Property: obo:BFO_0000055 (realizes)
-
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000055 "realizes"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000055 "this disease course realizes this disease"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000055 "this investigation realizes this investigator role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000055 "this shattering realizes this fragility"@en)
-AnnotationAssertion(obo:IAO_0000600 obo:BFO_0000055 "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"@en)
-AnnotationAssertion(rdfs:comment obo:BFO_0000055 "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process")
-AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000055 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
-ObjectPropertyDomain(obo:BFO_0000055 obo:BFO_0000015)
-ObjectPropertyRange(obo:BFO_0000055 obo:BFO_0000017)
-
-# Object Property: obo:BFO_0000062 (preceded by)
-
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000062 "preceded by"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000062 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000062 "is preceded by"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000062 "preceded_by"@en)
-AnnotationAssertion(dc:source obo:BFO_0000062 "http://www.obofoundry.org/ro/#OBO_REL:preceded_by")
-AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
-TransitiveObjectProperty(obo:BFO_0000062)
-ObjectPropertyDomain(obo:BFO_0000062 obo:BFO_0000003)
-ObjectPropertyRange(obo:BFO_0000062 obo:BFO_0000003)
-
 # Object Property: obo:IAO_0000039 (has measurement unit label)
 
 SubObjectPropertyOf(obo:IAO_0000039 obo:BFO_0000051)
 FunctionalObjectProperty(obo:IAO_0000039)
 ObjectPropertyRange(obo:IAO_0000039 obo:IAO_0000003)
-
-# Object Property: obo:IAO_0000136 (is about)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000136 "is about"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000136 "This document is about information artifacts and their representations"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000136 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000136 "is_about is a (currently) primitive relation that relates an information artifact to an entity."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000136 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive.
-
-We will try to build it back up by elaborating the various subproperties that are more precisely defined.
-
-Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000136 "person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000136 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000136 "is about"@en)
-ObjectPropertyDomain(obo:IAO_0000136 obo:IAO_0000030)
 
 # Object Property: obo:IAO_0000219 (denotes)
 
@@ -4627,7 +4541,6 @@ Werner suggests a solution based on \"Magnitudes\" a proposal for which we are a
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000221 "Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000221 "is quality measurement of"@en)
 SubObjectPropertyOf(obo:IAO_0000221 obo:IAO_0000136)
-InverseObjectProperties(obo:IAO_0000221 obo:IAO_0000417)
 ObjectPropertyDomain(obo:IAO_0000221 obo:IAO_0000109)
 ObjectPropertyRange(obo:IAO_0000221 obo:BFO_0000019)
 
@@ -4642,15 +4555,6 @@ SubObjectPropertyOf(obo:IAO_0000413 obo:IAO_0000136)
 ObjectPropertyDomain(obo:IAO_0000413 obo:IAO_0000416)
 ObjectPropertyRange(obo:IAO_0000413 obo:BFO_0000015)
 
-# Object Property: obo:IAO_0000417 (is quality measured as)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000417 "is quality measured as"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000417 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000417 "inverse of the relation of is quality measurement of"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000417 "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000417 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000417 "is quality measured as"@en)
-
 # Object Property: obo:OBI_0000107 (provides_service_consumer_with)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000107 "provides_service_consumer_with")
@@ -4660,94 +4564,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000107 "A relation between a servic
 AnnotationAssertion(rdfs:label obo:OBI_0000107 "provides_service_consumer_with")
 SubObjectPropertyOf(obo:OBI_0000107 obo:BFO_0000051)
 ObjectPropertyDomain(obo:OBI_0000107 obo:OBI_0001173)
-
-# Object Property: obo:OBI_0000124 (is_supported_by_data)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000124 "is_supported_by_data")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000124 "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. ")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000124 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000124 "The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000124 "OBI")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000124 "OBI")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000124 "Philly 2011 workshop")
-AnnotationAssertion(rdfs:label obo:OBI_0000124 "is_supported_by_data")
-ObjectPropertyDomain(obo:OBI_0000124 obo:OBI_0001909)
-ObjectPropertyRange(obo:OBI_0000124 obo:IAO_0000027)
-
-# Object Property: obo:OBI_0000293 (has_specified_input)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000293 "has_specified_input"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000293 "see is_input_of example_of_usage"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000293 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000293 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000293 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000293 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000293 "PERSON: Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000293 "PERSON: Larry Hunter")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000293 "PERSON: Melanie Coutot")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000293 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000293 "has_specified_input"@en)
-SubObjectPropertyOf(obo:OBI_0000293 obo:RO_0000057)
-InverseObjectProperties(obo:OBI_0000293 obo:OBI_0000295)
-ObjectPropertyDomain(obo:OBI_0000293 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000295 (is_specified_input_of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000295 "is_specified_input_of"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000295 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000295 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000295 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000295 "Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000295 "PERSON:Bjoern Peters")
-AnnotationAssertion(rdfs:label obo:OBI_0000295 "is_specified_input_of"@en)
-SubObjectPropertyOf(obo:OBI_0000295 obo:RO_0000056)
-ObjectPropertyRange(obo:OBI_0000295 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000299 (has_specified_output)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000299 "has_specified_output"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000299 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000299 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000299 "PERSON: Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000299 "PERSON: Larry Hunter")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000299 "PERSON: Melanie Courtot")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000299 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000299 "has_specified_output"@en)
-SubObjectPropertyOf(obo:OBI_0000299 obo:RO_0000057)
-InverseObjectProperties(obo:OBI_0000299 obo:OBI_0000312)
-ObjectPropertyDomain(obo:OBI_0000299 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000312 (is_specified_output_of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000312 "is_specified_output_of"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000312 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000312 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000312 "Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000312 "PERSON:Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000312 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000312 "is_specified_output_of"@en)
-SubObjectPropertyOf(obo:OBI_0000312 obo:RO_0000056)
-ObjectPropertyRange(obo:OBI_0000312 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000314 (is_proxy_for)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000314 "is_proxy_for"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000314 "position on a gel is_proxy_for mass and charge of molecule in an western blot. Florescent intensity is_proxy_for amount of protein labeled with GFP. Examples:
-A260/A280 (of a DNA sample) is_proxy_for DNA-purity. NMR Sample scan is a proxy for sample quality.
-
-Within the assay mentioned here: https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay
-level of radioactivity is_proxy_for level of toxicity"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000314 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000314 "A relation between continuant instances c1 and c2 where within an experiment/ protocol application,  measurement of c1 is used to determine what a measurement of c2 would be."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000314 "A relation between continuant instances c1 and c2 where within a protocol
-    application, measurement of c1 is related to a what would be the
-    measurement of c2.
-(another definition)"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000314 "Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000314 "is_proxy_for"@en)
-ObjectPropertyDomain(obo:OBI_0000314 obo:BFO_0000002)
-ObjectPropertyRange(obo:OBI_0000314 obo:BFO_0000002)
 
 # Object Property: obo:OBI_0000643 (has grain)
 
@@ -4771,68 +4587,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000645 "Discussion in Karslruhe wit
 AnnotationAssertion(rdfs:label obo:OBI_0000645 "is grain of"@en)
 SubObjectPropertyOf(obo:OBI_0000645 obo:BFO_0000050)
 
-# Object Property: obo:OBI_0000646 (provisions)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000646 "supplies")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000646 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000646 "A relation between an organisation or person and a material entity who owned or has license to the material entity and there was a legal transfer of ownership or licensing of the material entity to the current owner.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000646 "GROUP: Relations branch")
-AnnotationAssertion(rdfs:label obo:OBI_0000646 "supplies")
-InverseObjectProperties(obo:OBI_0000646 obo:OBI_0000647)
-
-# Object Property: obo:OBI_0000647 (has_supplier)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000647 "has_supplier")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000647 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000647 "A relation between a material entity and an organisation or person who owned or has license to the material entity and there was a legal transfer of ownership or licensing of the material entity to the current owner.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000647 "PERSON: Alan Rutternberg")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000647 "PERSON: Cristian Cocos")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000647 "PERSON: Frank Gibson")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000647 "PERSON: Melanie Courtot")
-AnnotationAssertion(rdfs:label obo:OBI_0000647 "has_supplier")
-ObjectPropertyDomain(obo:OBI_0000647 obo:BFO_0000040)
-ObjectPropertyRange(obo:OBI_0000647 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))
-
-# Object Property: obo:OBI_0000833 (objective_achieved_by)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000833 "objective_achieved_by")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000833 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000833 "This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000833 "OBI")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000833 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000833 "objective_achieved_by")
-ObjectPropertyDomain(obo:OBI_0000833 obo:IAO_0000005)
-ObjectPropertyRange(obo:OBI_0000833 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000846 (is member of organization)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000846 "is member of organization")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000846 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000846 "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000846 "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000846 "JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in 'Domains'. The textual definition was updated based on it.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000846 "Person:Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000846 "Person:Helen Parkinson")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000846 "Person:Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000846 "Person:Helen Parkinson")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000846 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case")
-AnnotationAssertion(rdfs:label obo:OBI_0000846 "is member of organization")
-InverseObjectProperties(obo:OBI_0000846 obo:OBI_0001688)
-ObjectPropertyDomain(obo:OBI_0000846 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))
-ObjectPropertyRange(obo:OBI_0000846 obo:OBI_0000245)
-
-# Object Property: obo:OBI_0001688 (has organization member)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001688 "has organization member"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001688 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001688 "Relating an organization to a legal person or organization.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0001688 "See tracker:
-https://sourceforge.net/tracker/index.php?func=detail&aid=3512902&group_id=177891&atid=886178")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001688 "Person: Jie Zheng")
-AnnotationAssertion(rdfs:label obo:OBI_0001688 "has organization member"@en)
-ObjectPropertyDomain(obo:OBI_0001688 obo:OBI_0000245)
-ObjectPropertyRange(obo:OBI_0001688 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))
-
 # Object Property: obo:OBI_0001927 (specifies value of)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001927 "specifies value of")
@@ -4854,152 +4608,6 @@ SubObjectPropertyOf(obo:OBI_0001938 obo:BFO_0000051)
 ObjectPropertyDomain(obo:OBI_0001938 obo:IAO_0000030)
 ObjectPropertyRange(obo:OBI_0001938 obo:OBI_0001933)
 
-# Object Property: obo:OBI_0001950 (has performer)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001950 "has performer"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001950 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001950 "performer relation covers the need to report on who performed a planned processed. it has to cover processes done by People or Devices (such as a robot controlled by software  WF management system)"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0001950 "has performer"@en)
-SubObjectPropertyOf(obo:OBI_0001950 obo:RO_0000057)
-ObjectPropertyDomain(obo:OBI_0001950 obo:OBI_0000011)
-ObjectPropertyRange(obo:OBI_0001950 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OBI_0000968) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000202)))
-
-# Object Property: obo:OBI_1110060 (process is result of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_1110060 "process is result of")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_1110060 "The production of IFN-gamma by effector T cells is a process result of T cell stimulation through the TCR")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_1110060 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_1110060 "is a relationship between a process and a preceding occurrent that directly caused the later one to occur")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_1110060 "IEDB")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_1110060 "PERSON:Bjoern Peters")
-AnnotationAssertion(rdfs:label obo:OBI_1110060 "process is result of")
-SubObjectPropertyOf(obo:OBI_1110060 obo:RO_0002087)
-ObjectPropertyDomain(obo:OBI_1110060 obo:BFO_0000003)
-ObjectPropertyRange(obo:OBI_1110060 obo:BFO_0000003)
-
-# Object Property: obo:RO_0000052 (inheres in)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000052 "inheres in"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000052 "this fragility inheres in this vase"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000052 "this red color inheres in this apple"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000052 "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000052 "A dependent inheres in its bearer at all times for which the dependent exists."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "inheres_in"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000052 "inheres in"@en)
-InverseObjectProperties(obo:RO_0000052 obo:RO_0000053)
-
-# Object Property: obo:RO_0000053 (has characteristic)
-
-ObjectPropertyRange(obo:RO_0000053 obo:BFO_0000020)
-
-# Object Property: obo:RO_0000056 (participates in)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000056 "participates in"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000056 "this blood clot participates in this blood coagulation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000056 "this input material (or this output material) participates in this process"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000056 "this investigator participates in this investigation"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000056 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000056 "participates_in"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000056 "participates in"@en)
-InverseObjectProperties(obo:RO_0000056 obo:RO_0000057)
-ObjectPropertyDomain(obo:RO_0000056 obo:BFO_0000002)
-ObjectPropertyRange(obo:RO_0000056 obo:BFO_0000003)
-
-# Object Property: obo:RO_0000057 (has participant)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000057 "has participant"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000057 "this blood coagulation has participant this blood clot"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000057 "this investigation has participant this investigator"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000057 "this process has participant this input material (or this output material)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000057 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000057 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000057 "has_participant"@en)
-AnnotationAssertion(dc:source obo:RO_0000057 "http://www.obofoundry.org/ro/#OBO_REL:has_participant")
-AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant"@en)
-ObjectPropertyDomain(obo:RO_0000057 obo:BFO_0000003)
-ObjectPropertyRange(obo:RO_0000057 obo:BFO_0000002)
-
-# Object Property: obo:RO_0000058 (is concretized as)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000058 "is concretized as"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000058 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000058 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000058 "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en)
-AnnotationAssertion(rdfs:label obo:RO_0000058 "is concretized as"@en)
-InverseObjectProperties(obo:RO_0000058 obo:RO_0000059)
-ObjectPropertyDomain(obo:RO_0000058 obo:BFO_0000031)
-ObjectPropertyRange(obo:RO_0000058 obo:BFO_0000020)
-
-# Object Property: obo:RO_0000059 (concretizes)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000059 "concretizes"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000059 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000059 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000059 "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en)
-AnnotationAssertion(rdfs:label obo:RO_0000059 "concretizes"@en)
-ObjectPropertyDomain(obo:RO_0000059 obo:BFO_0000020)
-ObjectPropertyRange(obo:RO_0000059 obo:BFO_0000031)
-
-# Object Property: obo:RO_0000079 (function of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000079 "function of"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000079 "this catalysis function is a function of this enzyme"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000079 "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000079 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000079 "function_of"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000079 "is function of"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000079 "function of"@en)
-SubObjectPropertyOf(obo:RO_0000079 obo:RO_0000052)
-InverseObjectProperties(obo:RO_0000079 obo:RO_0000085)
-ObjectPropertyDomain(obo:RO_0000079 obo:BFO_0000034)
-
-# Object Property: obo:RO_0000080 (quality of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000080 "quality of"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000080 "this red color is a quality of this apple"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000080 "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000080 "A quality inheres in its bearer at all times for which the quality exists."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000080 "is quality of"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000080 "quality_of"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000080 "quality of"@en)
-SubObjectPropertyOf(obo:RO_0000080 obo:RO_0000052)
-InverseObjectProperties(obo:RO_0000080 obo:RO_0000086)
-
-# Object Property: obo:RO_0000081 (role of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000081 "role of"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000081 "this investigator role is a role of this person"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000081 "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000081 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000081 "is role of"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000081 "role_of"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000081 "role of"@en)
-SubObjectPropertyOf(obo:RO_0000081 obo:RO_0000052)
-
-# Object Property: obo:RO_0000085 (has function)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000085 "has function"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000085 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000085 "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000085 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000085 "has_function"@en)
-AnnotationAssertion(rdfs:label obo:RO_0000085 "has function"@en)
-SubObjectPropertyOf(obo:RO_0000085 obo:RO_0000053)
-ObjectPropertyRange(obo:RO_0000085 obo:BFO_0000034)
-
-# Object Property: obo:RO_0000086 (has quality)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0000086 "has quality"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0000086 "this apple has quality this red color"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0000086 "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0000086 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0000086 "has_quality"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0000086 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0000086 obo:ro.owl)
-AnnotationAssertion(rdfs:label obo:RO_0000086 "has quality"@en)
-SubObjectPropertyOf(obo:RO_0000086 obo:RO_0000053)
-ObjectPropertyRange(obo:RO_0000086 obo:BFO_0000019)
-
 # Object Property: obo:RO_0000087 (has role)
 
 AnnotationAssertion(obo:IAO_0000111 obo:RO_0000087 "has role"@en)
@@ -5010,68 +4618,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:RO_0000087 "has_role"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:RO_0000087 obo:foodon.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:RO_0000087 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000087 "has role"@en)
-
-# Object Property: obo:RO_0001000 (derives from)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0001000 "derives from"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001000 "this cell derives from this parent cell (cell division)"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001000 "this nucleus derives from this parent nucleus (nuclear division)"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0001000 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0001000 "a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0001000 "This is a very general relation. More specific relations are preferred when applicable, such as 'directly develops from'."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0001000 "derives_from"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0001000 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0001000 obo:ro.owl)
-AnnotationAssertion(rdfs:label obo:RO_0001000 "derives from"@en)
-SubObjectPropertyOf(obo:RO_0001000 owl:topObjectProperty)
-InverseObjectProperties(obo:RO_0001000 obo:RO_0001001)
-ObjectPropertyDomain(obo:RO_0001000 obo:BFO_0000004)
-ObjectPropertyRange(obo:RO_0001000 obo:BFO_0000004)
-
-# Object Property: obo:RO_0001001 (derives into)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0001001 "derives into"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001001 "this parent cell derives into this cell (cell division)"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001001 "this parent nucleus derives into this nucleus (nuclear division)"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:RO_0001001 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0001001 "a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0001001 "This is a very general relation. More specific relations are preferred when applicable, such as 'directly develops into'. To avoid making statements about a future that may not come to pass, it is often better to use the backward-looking 'derives from' rather than the forward-looking 'derives into'."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0001001 "derives_into"@en)
-AnnotationAssertion(rdfs:label obo:RO_0001001 "derives into"@en)
-
-# Object Property: obo:RO_0001015 (location of)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0001015 "location of"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001015 "my head is the location of my brain"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001015 "this cage is the location of this rat"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0001015 "a relation between two independent continuants, the location and the target, in which the target is entirely within the location"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0001015 "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0001015 "location_of"@en)
-AnnotationAssertion(rdfs:label obo:RO_0001015 "location of"@en)
-InverseObjectProperties(obo:RO_0001015 obo:RO_0001025)
-TransitiveObjectProperty(obo:RO_0001015)
-
-# Object Property: obo:RO_0001025 (located in)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0001025 "located in"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001025 "my brain is located in my head"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:RO_0001025 "this rat is located in this cage"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0001025 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0001025 "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:RO_0001025 "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0001025 "located_in"@en)
-AnnotationAssertion(dc:source obo:RO_0001025 "http://www.obofoundry.org/ro/#OBO_REL:located_in")
-AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
-TransitiveObjectProperty(obo:RO_0001025)
-
-# Object Property: obo:RO_0002087 (immediately preceded by)
-
-AnnotationAssertion(obo:IAO_0000111 obo:RO_0002087 "immediately preceded by"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:RO_0002087 "David Osumi-Sutherland")
-AnnotationAssertion(obo:IAO_0000118 obo:RO_0002087 "starts_at_end_of")
-AnnotationAssertion(rdfs:comment obo:RO_0002087 "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)"@en)
-AnnotationAssertion(rdfs:label obo:RO_0002087 "immediately preceded by"@en)
-SubObjectPropertyOf(obo:RO_0002087 obo:BFO_0000062)
 
 # Object Property: obo:RO_0002219 (surrounded by)
 
@@ -5100,21 +4646,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:RO_0002351 "SIO")
 AnnotationAssertion(rdfs:label obo:RO_0002351 "has member"@en)
 SubObjectPropertyOf(obo:RO_0002351 obo:BFO_0000051)
 IrreflexiveObjectProperty(obo:RO_0002351)
-
-# Object Property: obo:RO_0002470 (eats)
-
-AnnotationAssertion(rdfs:label obo:RO_0002470 "eats"@en)
-
-# Object Property: resource:SIO_000001 (is related to)
-
-AnnotationAssertion(obo:IAO_0000412 resource:SIO_000001 <http://semanticscience.org/ontology/sio.owl>)
-AnnotationAssertion(dc:identifier resource:SIO_000001 "SIO_000001")
-AnnotationAssertion(terms:description resource:SIO_000001 "A is related to B iff there is some relation between A and B."@en)
-AnnotationAssertion(schema:comment resource:SIO_000001 "'is related to' is the top level relation in SIO")
-AnnotationAssertion(resource:subset resource:SIO_000001 "core")
-AnnotationAssertion(resource:subset resource:SIO_000001 "relations+")
-AnnotationAssertion(rdfs:label resource:SIO_000001 "is related to"@en)
-SymmetricObjectProperty(resource:SIO_000001)
 
 
 ############################
@@ -5230,33 +4761,6 @@ AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000026 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000026 "one-dimensional spatial region"@en)
 SubClassOf(obo:BFO_0000026 obo:BFO_0000006)
 
-# Class: obo:BFO_0000027 (object aggregate)
-
-AnnotationAssertion(obo:BFO_0000179 obo:BFO_0000027 "object-aggregate")
-AnnotationAssertion(obo:BFO_0000180 obo:BFO_0000027 "ObjectAggregate")
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000027 "object aggregate"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "a collection of cells in a blood biobank."@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "a swarm of bees is an aggregate of members who are linked together through natural bonds"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "a symphony orchestra"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "defined by fiat: the aggregate of members of an organization"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "defined through physical attachment: the aggregate of atoms in a lump of granite"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "defined via attributive delimitations such as: the patients in this hospital"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "the aggregate of bearings in a constant velocity axle joint"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "the aggregate of blood cells in your body"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "the nitrogen atoms in the atmosphere"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "the restaurants in Palo Alto"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000027 "your collection of Meissen ceramic plates."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000027 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects ")
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000027 "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000027 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.")
-AnnotationAssertion(obo:IAO_0000600 obo:BFO_0000027 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])"@en)
-AnnotationAssertion(obo:IAO_0000602 obo:BFO_0000027 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] ")
-AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000027 obo:bfo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000027 "object aggregate"@en)
-SubClassOf(obo:BFO_0000027 obo:BFO_0000040)
-
 # Class: obo:BFO_0000028 (three-dimensional spatial region)
 
 AnnotationAssertion(obo:BFO_0000179 obo:BFO_0000028 "3d-s-region")
@@ -5295,32 +4799,6 @@ AnnotationAssertion(obo:IAO_0000602 obo:BFO_0000029 "(forall (x) (if (Site x) (I
 AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000029 obo:bfo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000029 "site"@en)
 SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
-
-# Class: obo:BFO_0000030 (object)
-
-AnnotationAssertion(obo:BFO_0000179 obo:BFO_0000030 "object")
-AnnotationAssertion(obo:BFO_0000180 obo:BFO_0000030 "Object")
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000030 "object"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "atom"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "cell"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "cells and organisms"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "engineered artifacts"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "grain of sand"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "molecule"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "organelle"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "planet"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "solid portions of matter"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000030 "star"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000030 "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000030 "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below)."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000030 "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000030 "BFO 2 Reference: an object is a maximal causally unified material entity"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000030 "BFO 2 Reference: ‘objects’ are sometimes referred to as ‘grains’ [74"@en)
-AnnotationAssertion(obo:IAO_0000600 obo:BFO_0000030 "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:BFO_0000030 obo:bfo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000030 "object"@en)
-SubClassOf(obo:BFO_0000030 obo:BFO_0000040)
 
 # Class: obo:BFO_0000040 (material entity)
 
@@ -5588,19 +5066,6 @@ AnnotationAssertion(oboInOwl:inSubset obo:CHEBI_36080 <http://purl.oboInOwllibra
 AnnotationAssertion(rdfs:label obo:CHEBI_36080 "protein")
 SubClassOf(obo:CHEBI_36080 obo:CHEBI_23367)
 
-# Class: obo:CHEBI_78295 (food component)
-
-AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_78295 "Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants.")
-AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_78295 obo:chebi.owl)
-AnnotationAssertion(oboInOwl:hasOBONamespace obo:CHEBI_78295 "chebi_ontology")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHEBI_78295 "dietary component")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHEBI_78295 "dietary components")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHEBI_78295 "food components")
-AnnotationAssertion(oboInOwl:id obo:CHEBI_78295 "CHEBI:78295")
-AnnotationAssertion(oboInOwl:inSubset obo:CHEBI_78295 <http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR>)
-AnnotationAssertion(rdfs:label obo:CHEBI_78295 "food component")
-SubClassOf(obo:CHEBI_78295 obo:BFO_0000023)
-
 # Class: obo:CMO_0000051 (blood total cholesterol level)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CMO_0000051 "Measurement of the entire amount of cholesterol, a eukaryotic sterol that in higher animals is the precursor of bile acids and steroid hormones and a key constituent of cell membranes, without taking into account any association with other molecules such as lipoproteins, in a specified volume of blood, the fluid that circulates through the heart, arteries, capillaries and veins carrying nutrients and oxygen to the body tissues and metabolites away from them.")
@@ -5708,11 +5173,6 @@ SubClassOf(obo:FOODON_00000000 obo:ONS_0000078)
 AnnotationAssertion(rdfs:label obo:FOODON_00001018 "cheese starter culture food product"@en)
 SubClassOf(obo:FOODON_00001018 obo:BFO_0000040)
 SubClassOf(obo:FOODON_00001018 obo:ONS_0000134)
-
-# Class: obo:FOODON_00001132 (swine food product)
-
-AnnotationAssertion(rdfs:label obo:FOODON_00001132 "swine food product"@en)
-SubClassOf(obo:FOODON_00001132 obo:BFO_0000040)
 
 # Class: obo:FOODON_00001155 (watermelon plant)
 
@@ -8498,18 +7958,6 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411197 "laurel"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411197 "laurus nobilis"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411197 "bay plant as food source"@en)
 SubClassOf(obo:FOODON_03411197 obo:FOODON_03411179)
-
-# Class: obo:FOODON_03411198 (broiler or fryer chicken)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411198 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411198 "A young chicken (usually 8-12 weeks or age), of either sex, that is tender-meated with soft, pliable, smooth- textured skin and flexible breastbone cartilage."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411198 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411198 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411198 "LANGUAL:B1198")
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411198 "broiler chicken"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411198 "fryer chicken"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411198 "broiler or fryer chicken as food source"@en)
-SubClassOf(obo:FOODON_03411198 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411199 (thyme plant)
 
@@ -14002,15 +13450,6 @@ SubClassOf(obo:FOODON_03411562 obo:FOODON_03411397)
 
 # Class: obo:FOODON_03411563 (poultry or game bird)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411563 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411563 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411563 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411563 "LANGUAL:B1563")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411563 "Aves")
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411563 "aves"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411563 "fowl"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411563 "game birds"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411563 "poultry or game bird as food source"@en)
 SubClassOf(obo:FOODON_03411563 obo:FOODON_03411297)
 
 # Class: obo:FOODON_03411565 (whitefish or cisco)
@@ -14372,16 +13811,6 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411590 "cassia, saigon"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411590 "cinnamomum lourieri"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411590 "cinnamon, saigon (plant) as food source"@en)
 SubClassOf(obo:FOODON_03411590 obo:FOODON_03411472)
-
-# Class: obo:FOODON_03411591 (Rock Cornish game hen)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411591 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411591 "A small fowl of a breed developed by crossing white Plymouth Rock and Cornish strains, used especially as a roasting chicken."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411591 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411591 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411591 "LANGUAL:B1591")
-AnnotationAssertion(rdfs:label obo:FOODON_03411591 "rock cornish fowl as food source"@en)
-SubClassOf(obo:FOODON_03411591 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411592 (fish, salmoniform)
 
@@ -15817,59 +15246,6 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411708 "crataegus spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411708 "haw"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411708 "hawthorn plant as food source"@en)
 SubClassOf(obo:FOODON_03411708 obo:FOODON_03411599)
-
-# Class: obo:FOODON_03411710 (roaster chicken)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411710 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411710 "A young chicken (usually 3-5 months of age), of either sex, that is tender-meated with soft, pliable, smooth- textured skin and breastbone cartilage that may be somewhat less flexible than that of a broiler or fryer."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411710 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411710 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411710 "LANGUAL:B1710")
-AnnotationAssertion(rdfs:label obo:FOODON_03411710 "roaster chicken as food source"@en)
-SubClassOf(obo:FOODON_03411710 obo:FOODON_03411457)
-
-# Class: obo:FOODON_03411711 (capon)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411711 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411711 "A surgically unsexed male chicken (usually under 8 months of age) that is tender-meated with soft, pliable, smooth-textured skin."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411711 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411711 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411711 "LANGUAL:B1711")
-AnnotationAssertion(rdfs:label obo:FOODON_03411711 "capon as food source"@en)
-SubClassOf(obo:FOODON_03411711 obo:FOODON_03411457)
-
-# Class: obo:FOODON_03411712 (stag chicken)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411712 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411712 "A male chicken (usually under 10 months of age) with coarse skin, somewhat toughened and darkened flesh, and considerable hardening of the breastbone cartilage. Their condition is intermediate between that of a roaster chicken and a rooster."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411712 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411712 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411712 "LANGUAL:B1712")
-AnnotationAssertion(rdfs:label obo:FOODON_03411712 "stag chicken as food source"@en)
-SubClassOf(obo:FOODON_03411712 obo:FOODON_03411457)
-
-# Class: obo:FOODON_03411713 (chicken hen)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411713 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411713 "A mature female chicken (usually more than 10 months of age) with meat less tender than that of a roaster, and with a nonflexible breastbone tip."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411713 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411713 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411713 "LANGUAL:B1713")
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411713 "stewing chicken"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411713 "hen as food source"@en)
-SubClassOf(obo:FOODON_03411713 obo:FOODON_03411457)
-
-# Class: obo:FOODON_03411714 (rooster)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411714 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411714 "A mature male chicken with coarse skin, toughened and darkened meat, and hardened breastbone tip."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411714 obo:foodon.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411714 "http://langual.org")
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411714 "LANGUAL:B1714")
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411714 "cock"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411714 "cockerel"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411714 "rooster as food source"@en)
-SubClassOf(obo:FOODON_03411714 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411715 (oak tree)
 
@@ -51291,16 +50667,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000416 "time measurement datum"@en)
 SubClassOf(obo:IAO_0000416 obo:IAO_0000032)
 SubClassOf(obo:IAO_0000416 ObjectIntersectionOf(ObjectAllValuesFrom(obo:IAO_0000039 obo:UO_0000003) ObjectAllValuesFrom(obo:IAO_0000413 obo:BFO_0000015)))
 
-# Class: obo:IAO_0000442 (author role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000442 "author role"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000442 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000442 "A role inhering in a person or organization that is realized when the bearer participates in the work which is the basis of the document, in the writing of the document, and signs it with their name."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000442 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000442 "PERSON: Melanie Courtot"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000442 "author role"@en)
-SubClassOf(obo:IAO_0000442 obo:BFO_0000023)
-
 # Class: obo:IAO_0000443 (data item extraction from journal article)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000443 "data item extraction from journal article")
@@ -51400,85 +50766,6 @@ AnnotationAssertion(obo:in_minimal_requirements_subset obo:ICO_0000069 "true"^^x
 AnnotationAssertion(rdfs:label obo:ICO_0000069 "contact person for questions about research")
 SubClassOf(obo:ICO_0000069 resource:SIO_001066)
 
-# Class: obo:NCBITaxon_10239 (Viruses)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_10239 "Viruses")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_10239 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_10239 "Viruses")
-SubClassOf(obo:NCBITaxon_10239 obo:OBI_0100026)
-
-# Class: obo:NCBITaxon_117571 (Euteleostomi)
-
-AnnotationAssertion(rdfs:label obo:NCBITaxon_117571 "Euteleostomi")
-SubClassOf(obo:NCBITaxon_117571 obo:NCBITaxon_7742)
-
-# Class: obo:NCBITaxon_2 (Bacteria)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_2 "Bacteria")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_2 "eubacteria")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_2 "Bacteria")
-SubClassOf(obo:NCBITaxon_2 obo:OBI_0100026)
-
-# Class: obo:NCBITaxon_2157 (Archaea)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_2157 "Archaea")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2157 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_2157 "Archaea")
-SubClassOf(obo:NCBITaxon_2157 obo:OBI_0100026)
-
-# Class: obo:NCBITaxon_2759 (Eukaryota)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_2759 "Eukaryota")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_2759 "eucaryotes")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_2759 "eukaryotes")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2759 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_2759 "Eukaryota")
-SubClassOf(obo:NCBITaxon_2759 obo:OBI_0100026)
-
-# Class: obo:NCBITaxon_314146 (Euarchontoglires)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_314146 "Euarchontoglires")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_314146 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_314146 "Euarchontoglires")
-SubClassOf(obo:NCBITaxon_314146 obo:NCBITaxon_40674)
-
-# Class: obo:NCBITaxon_32523 (Tetrapoda)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_32523 "Tetrapoda")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_32523 "tetrapods")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_32523 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_32523 "Tetrapoda")
-SubClassOf(obo:NCBITaxon_32523 obo:NCBITaxon_117571)
-
-# Class: obo:NCBITaxon_32524 (Amniota)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_32524 "Amniota")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_32524 "amniotes")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_32524 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_32524 "Amniota")
-SubClassOf(obo:NCBITaxon_32524 obo:NCBITaxon_32523)
-
-# Class: obo:NCBITaxon_33154 (Opisthokonta)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_33154 "Opisthokonta")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33154 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_33154 "Opisthokonta")
-SubClassOf(obo:NCBITaxon_33154 obo:NCBITaxon_2759)
-
-# Class: obo:NCBITaxon_33213 (Bilateria)
-
-AnnotationAssertion(rdfs:label obo:NCBITaxon_33213 "Bilateria")
-SubClassOf(obo:NCBITaxon_33213 obo:NCBITaxon_33154)
-
-# Class: obo:NCBITaxon_40674 (Mammalia)
-
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_40674 "Mammalia")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_40674 "mammals")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_40674 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_40674 "Mammalia")
-SubClassOf(obo:NCBITaxon_40674 obo:NCBITaxon_32524)
-
 # Class: obo:NCBITaxon_4890 (Ascomycota)
 
 AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_4890 "Ascomycota")
@@ -51506,20 +50793,8 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_716545 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_716545 "saccharomyceta")
 SubClassOf(obo:NCBITaxon_716545 obo:NCBITaxon_4890)
 
-# Class: obo:NCBITaxon_7742 (Vertebrata <vertebrates>)
-
-AnnotationAssertion(rdfs:label obo:NCBITaxon_7742 "Vertebrata <Metazoa>")
-SubClassOf(obo:NCBITaxon_7742 obo:NCBITaxon_33213)
-
 # Class: obo:NCBITaxon_9606 (Homo sapiens)
 
-AnnotationAssertion(obo:IAO_0000111 obo:NCBITaxon_9606 "Homo sapiens")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9606 "human")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9606 "human being")
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9606 "man")
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9606 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "Homo sapiens")
-SubClassOf(obo:NCBITaxon_9606 obo:NCBITaxon_314146)
 SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
 
 # Class: obo:NCBITaxon_species (species)
@@ -51782,18 +51057,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBIB_0000054 obo:obib.owl)
 AnnotationAssertion(rdfs:label obo:OBIB_0000054 "smoking end date"@en)
 SubClassOf(obo:OBIB_0000054 obo:IAO_0000416)
 
-# Class: obo:OBI_0000014 (regulator role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000014 "regulator role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000014 "Fact sheet - Regulating the companies The role of the regulator. Ofwat is the economic regulator of the water and sewerage industry in England and Wales.  http://www.ofwat.gov.uk/aptrix/ofwat/publish.nsf/Content/roleofregulator_factsheet170805"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000014 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000014 "a regulatory role involved with making and/or enforcing relevant legislation and governmental orders"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000014 "Person:Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000014 "regulator")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000014 "OBI"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000014 "regulator role"@en)
-SubClassOf(obo:OBI_0000014 obo:OBI_0000017)
-
 # Class: obo:OBI_0000015 (biological feature identification objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000015 "biological feature identification objective"@en)
@@ -51802,42 +51065,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000015 "Biological_feature_identifi
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000015 "Jennifer Fostel"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000015 "biological feature identification objective"@en)
 SubClassOf(obo:OBI_0000015 obo:IAO_0000005)
-
-# Class: obo:OBI_0000017 (regulatory role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000017 "regulatory role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000017 "Regulatory agency, Ethics committee, Approval letter; example:  Browse these EPA Regulatory Role subtopics  http://www.epa.gov/ebtpages/enviregulatoryrole.html  Feb 29, 2008"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000017 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000017 "a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000017 "GROUP:  Role branch"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000017 "OBI, CDISC"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000017 "govt agents responsible for creating regulations; proxies for enforcing regulations.  CDISC definition:  regulatory authorities. Bodies having the power to regulate. NOTE: In the ICH GCP guideline the term includes the authorities that review submitted clinical data and those that conduct inspections. These bodies are sometimes referred to as competent"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000017 "regulatory role"@en)
-SubClassOf(obo:OBI_0000017 obo:BFO_0000023)
-
-# Class: obo:OBI_0000018 (material supplier role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000018 "material supplier role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000018 "Jackson Labs is an organization which provide mice as experimental material")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000018 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000018 "a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000018 "Supplier role is a special kind of service, e.g. biobank")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000018 "PERSON:Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000018 "material provider role")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000018 "supplier")
-AnnotationAssertion(rdfs:label obo:OBI_0000018 "material supplier role"@en)
-SubClassOf(obo:OBI_0000018 obo:OBI_0000947)
-
-# Class: obo:OBI_0000047 (processed material)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000047 "processed material"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000047 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000047 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000047 "Is a material entity that is created or changed during material processing."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000047 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000047 "processed material"@en)
-EquivalentClasses(obo:OBI_0000047 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000094)))
-SubClassOf(obo:OBI_0000047 obo:BFO_0000040)
 
 # Class: obo:OBI_0000048 (chromatography device)
 
@@ -51892,22 +51119,6 @@ SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000572)
 SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000338))
 SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000471))
 
-# Class: obo:OBI_0000067 (evaluant role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000067 "evaluant role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000067 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000067 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000067 "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000067 "Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000067 "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000067 "GROUP:  Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000067 "OBI")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000067 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.")
-AnnotationAssertion(rdfs:label obo:OBI_0000067 "evaluant role"@en)
-SubClassOf(obo:OBI_0000067 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000067 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000067 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000070))
-
 # Class: obo:OBI_0000073 (sample preparation for assay)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000073 "sample preparation for assay"@en)
@@ -51928,42 +51139,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000075 "diagnosis is an assessment 
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000075 "Jennifer Fostel"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000075 "diagnosis textual entity"@en)
 SubClassOf(obo:OBI_0000075 obo:IAO_0000300)
-
-# Class: obo:OBI_0000086 (reagent role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000086 "reagent role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000086 "Buffer, dye, a catalyst, a solvating agent."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000086 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000086 "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000086 "PERSON:Matthew Brush"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000086 "reagent")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000086 "PERSON:Matthew Brush")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000086 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.
-
-May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\"a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
-")
-AnnotationAssertion(rdfs:comment obo:OBI_0000086 "(copied from ReO)
-Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
-
-Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
-
-In regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).")
-AnnotationAssertion(rdfs:label obo:OBI_0000086 "reagent role"@en)
-SubClassOf(obo:OBI_0000086 obo:BFO_0000023)
-
-# Class: obo:OBI_0000093 (patient role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000093 "patient role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000093 "a hospitalized person; a person with controlled diabetes; the patient's role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000093 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000093 "a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000093 "GROUP:Role Branch"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000093 "patient")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000093 "OBI, CDISC"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000093 "CDISC definition:  patient. Person under a physician's care for a particular disease or condition. NOTE: A subject in a clinical trial is not necessarily a patient, but a patient in a clinical trial is a subject. See also subject, trial subject, healthy volunteer. Often used interchangeably"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000093 "patient role"@en)
-SubClassOf(obo:OBI_0000093 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000093 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
 
 # Class: obo:OBI_0000094 (material processing)
 
@@ -51995,29 +51170,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000096 "Jennifer Fostel"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000096 "protocol testing objective"@en)
 SubClassOf(obo:OBI_0000096 obo:OBI_0000208)
 
-# Class: obo:OBI_0000097 (participant under investigation role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000097 "participant under investigation role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000097 "Human subjects in a clinical trial, rats in a toxicogenomics study, tissue cutlures subjected to drug tests, fish observed in an ecotoxicology study.
-Parasite example: people are infected with a parasite which is then extracted; the particpant under investigation could be the parasite, the people, or a population of which the people are members, depending on the nature of the study.
-Lake example: a lake could realize this role in an investigation that assays pollution levels in samples of water taken from the lake.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000097 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000097 "A role that is realized through the execution of a study design in which the bearer of the role participates and in which data about that bearer is collected.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000097 "A participant can realize both \"specimen role\" and \"participant under investigation role\" at the same time. However \"participant under investigation role\" is distinct from \"specimen role\", since a specimen could somehow be involved in an investigation without being the thing that is under investigation.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000097 "GROUP:  Role Branch"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000097 "OBI")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000097 "Following OBI call November 2012,26th:
-
-1. it was decided there was no need for moving the children class and making them siblings of study subject role.
-2. it also settles the disambiguation about 'study subject'. This is about the individual participating in the investigation/study, Not the 'topic' (as in 'toxicity study') of the investigation/study
-
-This note closes the issue and validates the class definition to be part of the OBI core
-editor = PRS
-"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000097 "participant under investigation role"@en)
-SubClassOf(obo:OBI_0000097 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000097 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000471))
-
 # Class: obo:OBI_0000102 (responsible party role)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000102 "responsible party role"@en)
@@ -52043,37 +51195,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0000103 "principal investigator role"@en)
 SubClassOf(obo:OBI_0000103 obo:OBI_0000102)
 SubClassOf(obo:OBI_0000103 resource:SIO_001066)
 
-# Class: obo:OBI_0000112 (specimen role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000112 "specimen role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000112 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000112 "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "blood taken from animal: animal continues in study, whereas blood has role specimen.
-something taken from study subject, leaves the study and becomes the specimen."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000112 "parasite example
-- when parasite in people we study people, people are subjects and parasites are specimen
-- when parasite extracted, they become subject in the following study
-specimen can later be subject."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000112 "GROUP:  Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000112 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000112 "specimen role"@en)
-SubClassOf(obo:OBI_0000112 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000112 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000659))))
-
-# Class: obo:OBI_0000143 (baseline participant role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000143 "baseline participant role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000143 "Subject at time = 0; subject before a stress test."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000143 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000143 "a reference participant role which is realized by making the reference to qualities at the start of the study or intervention")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000143 "Person: Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000143 "baseline participant")
-AnnotationAssertion(rdfs:label obo:OBI_0000143 "baseline participant role"@en)
-SubClassOf(obo:OBI_0000143 obo:OBI_0000220)
-
 # Class: obo:OBI_0000151 (filter paper)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000151 "filter paper"@en)
@@ -52085,72 +51206,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0000151 "filter paper"@en)
 SubClassOf(obo:OBI_0000151 obo:OBI_0000932)
 SubClassOf(obo:OBI_0000151 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000378))
 
-# Class: obo:OBI_0000161 (crossover population role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000161 "crossover population role"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000161 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000161 "a role realized when a participant serves as reference to itself")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000161 "Person: Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000161 "crossover population")
-AnnotationAssertion(rdfs:label obo:OBI_0000161 "crossover population role"@en)
-SubClassOf(obo:OBI_0000161 obo:OBI_0000220)
-
-# Class: obo:OBI_0000174 (study group role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000174 "study group role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000174 "The group of randomized participants that are assigned to a treatment arm of the trial")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000174 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000174 "a study population role where the bearer is a population of material entities and the role is realized in the implementation of a study design wherein the entities bearing the study population role are observed or subjected to intervention according to the study design and are biological replicates, i.e. they receive the same treatment under the protocol"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000174 "Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000174 "study group population")
-AnnotationAssertion(rdfs:label obo:OBI_0000174 "study group role"@en)
-SubClassOf(obo:OBI_0000174 obo:BFO_0000023)
-
-# Class: obo:OBI_0000181 (population)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000181 "population"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000181 "PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000181 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000181 "a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000181 "1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms:
-http://code.google.com/p/popcomm-ontology/")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000181 "PERSON: Philippe Rocca-Serra"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000181 "adapted from Oxford English Dictionnary"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000181 "rem1: collection somehow always involve a selection process"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000181 "population"@en)
-SubClassOf(obo:OBI_0000181 obo:BFO_0000040)
-
-# Class: obo:OBI_0000198 (biological replicate role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000198 "biological replicate role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000198 "A member of a dose-time group; a patient in a given arm of a trial"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000198 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000198 "a reference participant role realized by equivalent treatment of participants")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000198 "Person:Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000198 "biological replicate")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000198 "OBI"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000198 "biological replicate role"@en)
-SubClassOf(obo:OBI_0000198 obo:OBI_0000220)
-
-# Class: obo:OBI_0000202 (investigation agent role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000202 "investigation agent role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000202 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000202 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000202 "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000202 "Implementing a study means carrying out or performing the study and providing reagents or other materials used in the study and other tasks without which the study would not happen.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000202 "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000202 "GROUP:  Role Branch"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000202 "investigator")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000202 "OBI"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000202 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.")
-AnnotationAssertion(obo:OBI_0001847 obo:OBI_0000202 "study person role")
-AnnotationAssertion(rdfs:comment obo:OBI_0000202 "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)")
-AnnotationAssertion(rdfs:label obo:OBI_0000202 "investigation agent role")
-EquivalentClasses(obo:OBI_0000202 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000052 ObjectSomeValuesFrom(obo:RO_0000053 ObjectSomeValuesFrom(obo:RO_0000059 ObjectSomeValuesFrom(obo:OBI_0000833 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OBI_0000066)))))))
-SubClassOf(obo:OBI_0000202 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000202 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000066))
-
 # Class: obo:OBI_0000208 (methodology testing objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000208 "methodology testing objective"@en)
@@ -52159,19 +51214,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000208 "Methodology_testing_objecti
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000208 "Jennifer Fostel"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000208 "methodology testing objective"@en)
 SubClassOf(obo:OBI_0000208 obo:IAO_0000005)
-
-# Class: obo:OBI_0000220 (reference subject role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000220 "reference subject role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000220 "Saline treated rat; one of three identically-treated subjects"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000220 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000220 "a reference subject  role which inheres in an organism or entity of organismal origin so that the characteristics or responses of the participant playing the reference participant role are used for comparison or reference"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000220 "Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000220 "reference participant")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000220 "OBI"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000220 "reference subject role"@en)
-SubClassOf(obo:OBI_0000220 obo:OBI_0000097)
-SubClassOf(obo:OBI_0000220 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:OBI_0100026 obo:OBI_0100051)))
 
 # Class: obo:OBI_0000245 (organization)
 
@@ -52214,30 +51256,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000245 "GROUP: OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0000245 "organization"@en)
 SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
 
-# Class: obo:OBI_0000249 (technical replicate role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000249 "technical replicate role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000249 "Aliquots of a tissue subjected to parallel assays"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000249 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000249 "technical replicate role is realized when two portions from one evaluant are used in replicate runs of an assay")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000249 "Person: Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000249 "technical replicate")
-AnnotationAssertion(rdfs:label obo:OBI_0000249 "technical replicate role"@en)
-SubClassOf(obo:OBI_0000249 obo:OBI_0000220)
-
-# Class: obo:OBI_0000252 (cohort role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000252 "cohort role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000252 "In statistics and demography, a cohort is a group of subjects - most often humans from a given population - defined by experiencing an event (typically birth) in a particular time span.  Wikipedia \"cohort\", Feb 29 2008"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000252 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000252 "a cohort role is a biological replicate role played by a group of study participants who share a common characteristic of interest to the study."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000252 "Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000252 "WEB:http://www.sceoc.com/glossaryofterms/ # a group of individuals having a statistical factor (as age or class membership) in common in a demographic study, such as a cohort of students.")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000252 "WEB:http://www.thebody.org/content/treat/art2612.html # a group of individuals in a study who share a demographic, clinical, or other statistical characteristic (eg, age, study site).")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000252 "WEB:http://www.uhhospitals.org/tabid/591/Default.aspx # A cohort is a group of people with a common characteristic that is studied over a period of time as part of a scientific or medical investigation.")
-AnnotationAssertion(rdfs:label obo:OBI_0000252 "cohort role"@en)
-SubClassOf(obo:OBI_0000252 obo:OBI_0000198)
-
 # Class: obo:OBI_0000272 (protocol)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000272 "protocol"@en)
@@ -52266,35 +51284,6 @@ SubClassOf(obo:OBI_0000274 obo:OBI_0000652)
 SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000319))
 SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000444))
 SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000319) ObjectSomeValuesFrom(obo:RO_0001025 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000444))))))
-
-# Class: obo:OBI_0000275 (analyte role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000275 "analyte role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000275 "Glucose in blood (measured in an assay to determine the concentration of glucose).")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000275 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000275 "A role borne by a molecular entity or an atom and realized in an analyte assay which achieves the objective to measure the magnitude/concentration/amount of the analyte in the entity bearing evaluant role"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000275 "interestingly, an analyte is still an analyte even if it is not detected.  for this reason it does not bear a specified input role")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000275 "pH (technically the inverse log of [H+]) may be considered a quality; this remains to be tested.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000275 "qualities such as weight, color are not assayed but measured, so they do not fall into this category.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000275 "GROUP: Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000275 "OBI")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000275 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.")
-AnnotationAssertion(rdfs:label obo:OBI_0000275 "analyte role"@en)
-SubClassOf(obo:OBI_0000275 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000275 ObjectSomeValuesFrom(obo:RO_0000081 ObjectUnionOf(obo:CHEBI_23367 obo:CHEBI_33250)))
-SubClassOf(obo:OBI_0000275 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000443))
-
-# Class: obo:OBI_0000319 (material to be added role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000319 "material to be added role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000319 "drug added to a buffer contained in a tube; substance injected into an animal;")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000319 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000319 "material to be added role is a protocol participant role realized by a material which is added into a material bearing the target of material addition role in a material addition process"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000319 "Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000319 "OBI")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000319 "9 March 09 from discussion with PA branch")
-AnnotationAssertion(rdfs:label obo:OBI_0000319 "material to be added role"@en)
-SubClassOf(obo:OBI_0000319 obo:BFO_0000023)
 
 # Class: obo:OBI_0000338 (drawing a conclusion based on data)
 
@@ -52376,7 +51365,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000418 "An assay that determines th
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000418 "Person:Bjoern Peters")
 AnnotationAssertion(rdfs:label obo:OBI_0000418 "measuring glucose concentration in blood serum"@en)
 SubClassOf(obo:OBI_0000418 obo:OBI_0000443)
-SubClassOf(obo:OBI_0000418 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(obo:OBI_0000067 ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0100017))))
 SubClassOf(obo:OBI_0000418 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(obo:OBI_0000275 ObjectSomeValuesFrom(obo:RO_0000081 obo:CHEBI_17234))))
 
 # Class: obo:OBI_0000434 (adding material objective)
@@ -52435,20 +51423,6 @@ EquivalentClasses(obo:OBI_0000443 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0
 SubClassOf(obo:OBI_0000443 obo:OBI_0000070)
 SubClassOf(obo:OBI_0000443 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000275))
 SubClassOf(obo:OBI_0000443 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000109))
-
-# Class: obo:OBI_0000444 (target of material addition role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000444 "target of material addition role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000444 "peritoneum of an animal receiving an interperitoneal injection; solution in a tube receiving additional material; location of absorbed material following a dermal application.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000444 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000444 "target of material addition role is a role realized by an entity into which a material is added in a material addition process")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000444 "From Branch discussion with BP, AR, MC -- there is a need for the recipient to interact with the administered material.  for example, a tooth receiving a filling was not considered to be a target role.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000444 "GROUP:  Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000444 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000444 "target of material addition role"@en)
-SubClassOf(obo:OBI_0000444 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000444 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000444 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000274))
 
 # Class: obo:OBI_0000451 (normalized data set)
 
@@ -52545,33 +51519,6 @@ SubClassOf(obo:OBI_0000520 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersecti
 SubClassOf(obo:OBI_0000520 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(obo:OBI_0000275 ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0000576))))
 SubClassOf(obo:OBI_0000520 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000437))
 
-# Class: obo:OBI_0000571 (manufacturer role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000571 "manufacturer role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000571 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000571 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000571 "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000571 "GROUP:  Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000571 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000571 "manufacturer role")
-SubClassOf(obo:OBI_0000571 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000571 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)))
-SubClassOf(obo:OBI_0000571 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000457))
-
-# Class: obo:OBI_0000576 (scattered molecular aggregate)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000576 "scattered molecular aggregate"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000576 "the sodium and chloride ions in a glass of salt water")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000576 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000576 "a material entity that consists of all the molecules of a specific type that are located in some bounded region and which is part of a more massive material entity that has parts that are other such aggregates"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000576 "PERSON: Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000576 "Collective"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000576 "Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. With inspiration from the paper Granularity, scale and collectivity: When size does and does not matter, Alan Recto, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000576 "scattered molecular aggregate"@en)
-SubClassOf(obo:OBI_0000576 obo:BFO_0000040)
-SubClassOf(obo:OBI_0000576 ObjectSomeValuesFrom(obo:OBI_0000643 obo:CHEBI_23367))
-SubClassOf(obo:OBI_0000576 ObjectAllValuesFrom(obo:OBI_0000643 obo:CHEBI_23367))
-
 # Class: obo:OBI_0000630 (hematology assay)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000630 "hematology")
@@ -52601,21 +51548,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0000639 "material separation objective")
 EquivalentClasses(obo:OBI_0000639 ObjectUnionOf(obo:OBI_0000678 obo:OBI_0000681))
 SubClassOf(obo:OBI_0000639 obo:OBI_0000456)
 
-# Class: obo:OBI_0000651 (urine specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000651 "urine specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000651 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000651 "a portion of urine collected from an organism")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000651 "4/10/2011BP: It seems to me that the editor notes refer to a previous version, and are no longer relevant. ")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000651 "This could be instead a kind of collection of secreted stuff. Among secreted stuff there is passive, and active. urine is secreted, passiv.  lavage is secreted, active")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000651 "are we happy calling collection of urine a material separation?")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0000651 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0000651 "urine specimen")
-SubClassOf(obo:OBI_0000651 obo:OBI_0001479)
-SubClassOf(obo:OBI_0000651 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005))
-SubClassOf(obo:OBI_0000651 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112))
-SubClassOf(obo:OBI_0000651 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001088))
-
 # Class: obo:OBI_0000652 (material combination)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000652 "material combination")
@@ -52641,33 +51573,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000654 "PERSON: Frank Gibson")
 AnnotationAssertion(rdfs:label obo:OBI_0000654 "device setting")
 SubClassOf(obo:OBI_0000654 obo:BFO_0000019)
 SubClassOf(obo:OBI_0000654 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0000047))
-
-# Class: obo:OBI_0000655 (blood specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000655 "blood specimen")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000655 "blood drawn from a human for glucose assay")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000655 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000655 "a material entity derived from a portion of blood collected from an organism")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000655 "Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000655 "Bjoern Peters")
-AnnotationAssertion(rdfs:label obo:OBI_0000655 "blood specimen")
-SubClassOf(obo:OBI_0000655 obo:OBI_0001479)
-SubClassOf(obo:OBI_0000655 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005))
-SubClassOf(obo:OBI_0000655 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112))
-SubClassOf(obo:OBI_0000655 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0000178))
-
-# Class: obo:OBI_0000671 (sample from organism)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000671 "sample from organism")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000671 obo:IAO_0000002)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000671 "a material obtained from an organism in order to be a representative of the whole")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000671 "5/29: This is a helper class for now")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000671 "we need to work on this: Is taking a urine sample a material separation process? If not, we will need to specify what 'taking a sample from organism' entails. We can argue that the objective to obtain a urine sample from a patient is enough to call it a material separation process, but it could dilute what material separation was supposed to be about.")
-AnnotationAssertion(rdfs:label obo:OBI_0000671 "sample from organism")
-EquivalentClasses(obo:OBI_0000671 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000740)))
-SubClassOf(obo:OBI_0000671 obo:OBI_0000747)
-SubClassOf(obo:OBI_0000671 obo:OBI_0001479)
-SubClassOf(obo:OBI_0000671 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0000465))
 
 # Class: obo:OBI_0000678 (portioning objective)
 
@@ -52731,44 +51636,6 @@ SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersecti
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000015))
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000441))
 
-# Class: obo:OBI_0000725 (host role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000725 "host role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000725 "In biology, a host is an organism that harbors a virus or parasite, or a mutual or commensal symbiont, typically providing nourishment and shelter.  http://en.wikipedia.org/wiki/Host_(biology)  30 March 09")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000725 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000725 "host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000725 "30Mar09 virus reproducing inside a cell; bacteria causing a disease, host can be harmed or not.  we want to avoid a cat sitting on my lap and an animal care technician; these are not examples or hosts; dental cares = on tooth, but part of outer layer of tooth, so covered by \"within\" in the definition")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000725 "GROUP: Role Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000725 "30 Mar09 submitted by vaccine community")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000725 "OBI")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000725 "http://en.wikipedia.org/wiki/Host_(biology)")
-AnnotationAssertion(rdfs:label obo:OBI_0000725 "host role")
-SubClassOf(obo:OBI_0000725 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000725 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026))
-
-# Class: obo:OBI_0000740 (material sample role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000740 "material sample role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000740 "a role borne by a portion of blood taken to represent all the blood in an organism; the role borne by a population of humans with HIV enrolled in a study taken to represent patients with HIV in general.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000740 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000740 "A material sample role is a specimen role borne by a material entity that is the output of a material sampling process.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000740 "7/13/09: Note that this is a relational role: between the sample taken and the 'sampled' material of which the sample is thought to be representative off.")
-AnnotationAssertion(rdfs:label obo:OBI_0000740 "material sample role")
-SubClassOf(obo:OBI_0000740 obo:OBI_0000112)
-
-# Class: obo:OBI_0000747 (material sample)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000747 "material sample")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000747 "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000747 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000747 "A material entity that has the material sample role")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000747 "OBI: workshop")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000747 "sample population")
-AnnotationAssertion(obo:OBI_0001847 obo:OBI_0000747 "sample")
-AnnotationAssertion(rdfs:label obo:OBI_0000747 "material sample")
-EquivalentClasses(obo:OBI_0000747 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000740)))
-SubClassOf(obo:OBI_0000747 obo:OBI_0100051)
-
 # Class: obo:OBI_0000750 (study design independent variable)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000750 "study design independent variable"@en)
@@ -52829,28 +51696,6 @@ SubClassOf(obo:OBI_0000810 obo:OBI_0000011)
 SubClassOf(obo:OBI_0000810 ObjectSomeValuesFrom(obo:OBI_0000293 obo:NCBITaxon_9606))
 SubClassOf(obo:OBI_0000810 ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000202)))
 
-# Class: obo:OBI_0000813 (to be treated with active ingredient role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000813 "to be treated with active ingredient role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000813 "Role of a patient in a group treated with an active substance in a clinical trial")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000813 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000813 "A study subject role which begins to exist when a subject is assigned to be one of those who will receive active ingredient, and is realized in a study execution in which they receive the active ingredient")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000813 "Person:Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000813 "PERSON: Helen Parkinson")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000813 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case")
-AnnotationAssertion(rdfs:label obo:OBI_0000813 "to be treated with active ingredient role")
-SubClassOf(obo:OBI_0000813 obo:OBI_0000097)
-
-# Class: obo:OBI_0000825 (to be treated with placebo role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000825 "to be treated with placebo role")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000825 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000825 "A study subject role which begins to exist when a subject is assigned to be one of those who will receive a placebo, and realized in a study execution in which they receive the placebo")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000825 "Person:Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000825 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case")
-AnnotationAssertion(rdfs:label obo:OBI_0000825 "to be treated with placebo role")
-SubClassOf(obo:OBI_0000825 obo:OBI_0000097)
-
 # Class: obo:OBI_0000828 (research organization)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000828 "research organization")
@@ -52891,7 +51736,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000931 "PERSON: Bjoern Peters")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000931 "GROUP: OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0000931 "study intervention")
 SubClassOf(obo:OBI_0000931 obo:OBI_0000011)
-SubClassOf(obo:OBI_0000931 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100051) ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0100051)))
 
 # Class: obo:OBI_0000932 (material separation device)
 
@@ -52902,45 +51746,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000932 "A device with a separation 
 AnnotationAssertion(rdfs:label obo:OBI_0000932 "material separation device")
 EquivalentClasses(obo:OBI_0000932 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000372))
 SubClassOf(obo:OBI_0000932 obo:OBI_0000968)
-
-# Class: obo:OBI_0000941 (service consumer role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000941 "service consumer role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000941 "A biologist who uses a sequencing services fulfills the role of a service consumer")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000941 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000941 "a role which inheres in a person who uses a service")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000941 "Person:Helen Parkinson")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000941 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000941 "service consumer role")
-SubClassOf(obo:OBI_0000941 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000941 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)))
-
-# Class: obo:OBI_0000947 (service provider role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000947 "service provider role")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000947 "Jackson Lab provides experimental animals, EBI provides training on databases, a core facility provides access to a DNA sequencer.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000947 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000947 "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000947 "PERSON:Helen Parkinson")
-AnnotationAssertion(rdfs:label obo:OBI_0000947 "service provider role")
-SubClassOf(obo:OBI_0000947 obo:BFO_0000023)
-SubClassOf(obo:OBI_0000947 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)))
-SubClassOf(obo:OBI_0000947 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBI_0000011))
-
-# Class: obo:OBI_0000953 (processed specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000953 "processed specimen")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000953 "A tissue sample that has been sliced and stained for a histology study.
-A blood specimen that has been centrifuged to obtain the white blood cells.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000953 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000953 "A specimen that has been intentionally physically modified.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000953 "Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000953 "Bjoern Peters")
-AnnotationAssertion(rdfs:comment obo:OBI_0000953 "A tissue sample that has been sliced and stained for a histology study.")
-AnnotationAssertion(rdfs:label obo:OBI_0000953 "processed specimen")
-EquivalentClasses(obo:OBI_0000953 ObjectIntersectionOf(obo:OBI_0000047 obo:OBI_0100051))
-SubClassOf(obo:OBI_0000953 obo:OBI_0000047)
-SubClassOf(obo:OBI_0000953 obo:OBI_0100051)
 
 # Class: obo:OBI_0000967 (container)
 
@@ -53030,7 +51835,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000995 "Bjoern Peters")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000995 "Bjoern Peters")
 AnnotationAssertion(rdfs:label obo:OBI_0000995 "administration of material to specimen")
 SubClassOf(obo:OBI_0000995 obo:OBI_0000274)
-SubClassOf(obo:OBI_0000995 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(obo:OBI_0000444 ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0100051))))
 
 # Class: obo:OBI_0001000 (questionnaire)
 
@@ -53078,18 +51882,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0001173 "service")
 EquivalentClasses(obo:OBI_0001173 ObjectIntersectionOf(obo:OBI_0000011 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000941) ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000947))))
 SubClassOf(obo:OBI_0001173 obo:OBI_0000011)
 SubClassOf(obo:OBI_0001173 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000011))
-
-# Class: obo:OBI_0001479 (specimen from organism)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001479 "specimen from organism"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001479 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001479 "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001479 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0001479 "tissue specimen"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001479 "MO_954 organism_part")
-AnnotationAssertion(rdfs:label obo:OBI_0001479 "specimen from organism"@en)
-EquivalentClasses(obo:OBI_0001479 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112) ObjectSomeValuesFrom(obo:RO_0001000 ObjectUnionOf(obo:UBERON_0000465 obo:UBERON_0000477))))
-SubClassOf(obo:OBI_0001479 obo:OBI_0100051)
 
 # Class: obo:OBI_0001515 (material maintenance service)
 
@@ -53171,7 +51963,6 @@ AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001616 "Specimen ID")
 AnnotationAssertion(dc:source obo:OBI_0001616 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001616 "specimen identifier"@en)
 SubClassOf(obo:OBI_0001616 obo:IAO_0000577)
-SubClassOf(obo:OBI_0001616 ObjectAllValuesFrom(obo:IAO_0000219 obo:OBI_0100051))
 
 # Class: obo:OBI_0001617 (PubMed ID)
 
@@ -53282,22 +52073,6 @@ AnnotationAssertion(obo:IAO_0000232 obo:OBI_0001636 "AR: Grant isn't a plan spec
 AnnotationAssertion(rdfs:label obo:OBI_0001636 "grant"@en)
 SubClassOf(obo:OBI_0001636 obo:IAO_0000104)
 
-# Class: obo:OBI_0001687 (contact representative role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001687 "contact representative role"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001687 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001687 "A role inhering in a person who represents an institution, organization, or service provider and realized when communication is directed at them about the entity they represent.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0001687 "Discussed on May 7, 2012 dev call
-propose:contact role, type of organization role, and create shortcut relation between 'organization role' and 'organization' ?
-Whether it works for communicating author in manuscript or not?
-Tracker:
-https://sourceforge.net/tracker/?func=detail&aid=3512891&group_id=177891&atid=886178"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001687 "Person: Chris Stoeckert")
-AnnotationAssertion(dc:source obo:OBI_0001687 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001687 "contact representative role"@en)
-SubClassOf(obo:OBI_0001687 obo:BFO_0000023)
-SubClassOf(obo:OBI_0001687 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
-
 # Class: obo:OBI_0001755 (selection criterion)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001755 "selection criterion"@en)
@@ -53362,19 +52137,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0001881 "organization of Bioinformatics R
 EquivalentClasses(obo:OBI_0001881 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:OBI_0001688 obo:OBI_0001883)))
 SubClassOf(obo:OBI_0001881 obo:OBI_0000245)
 
-# Class: obo:OBI_0001883 (Bioinformatics Resource Center contact person)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001883 "Bioinformatics Resource Center contact person"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001883 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001883 "A person who is the contact representative of a Bioinformatics Resource Center")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001883 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001883 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001883 "Bioinformatics Resource Center Contact Name")
-AnnotationAssertion(dc:source obo:OBI_0001883 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001883 "Bioinformatics Resource Center contact person"@en)
-EquivalentClasses(obo:OBI_0001883 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:OBI_0000846 obo:OBI_0001626) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0001687)))
-SubClassOf(obo:OBI_0001883 obo:NCBITaxon_9606)
-
 # Class: obo:OBI_0001884 (specimen-based scope of investigation specification)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001884 "specimen-based scope of investigation specification"@en)
@@ -53399,34 +52161,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001885 "NIAID GSCID-BRC metadata wo
 AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001885 "Specimen Repository")
 AnnotationAssertion(dc:source obo:OBI_0001885 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001885 "specimen repository organization"@en)
-EquivalentClasses(obo:OBI_0001885 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 ObjectIntersectionOf(obo:OBI_0000947 ObjectSomeValuesFrom(obo:BFO_0000054 ObjectIntersectionOf(obo:OBI_0001557 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100051)))))))
 SubClassOf(obo:OBI_0001885 obo:OBI_0000245)
-
-# Class: obo:OBI_0001888 (sequencing facility contact person)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001888 "sequencing facility contact person"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001888 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001888 "A person who is the contact representative at the sequencing facility")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001888 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001888 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001888 "Sequencing Facility Contact Name")
-AnnotationAssertion(dc:source obo:OBI_0001888 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001888 "sequencing facility contact person"@en)
-EquivalentClasses(obo:OBI_0001888 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:OBI_0000846 obo:OBI_0001891) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0001687)))
-SubClassOf(obo:OBI_0001888 obo:NCBITaxon_9606)
-
-# Class: obo:OBI_0001889 (specimen provider principal investigator)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001889 "specimen provider principal investigator"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001889 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001889 "A person who is a principal investigator and provides the specimen")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001889 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001889 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001889 "Sample Provider Principal Investigator (PI) Name")
-AnnotationAssertion(dc:source obo:OBI_0001889 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001889 "specimen provider principal investigator"@en)
-EquivalentClasses(obo:OBI_0001889 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:OBI_0000646 obo:OBI_0100051) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000103)))
-SubClassOf(obo:OBI_0001889 obo:NCBITaxon_9606)
 
 # Class: obo:OBI_0001891 (sequencing facility organization)
 
@@ -53453,19 +52188,6 @@ AnnotationAssertion(dc:source obo:OBI_0001893 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001893 "organization of specimen collector"@en)
 EquivalentClasses(obo:OBI_0001893 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:OBI_0001688 obo:OBI_0001895)))
 SubClassOf(obo:OBI_0001893 obo:OBI_0000245)
-
-# Class: obo:OBI_0001895 (specimen collector)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001895 "specimen collector"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001895 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001895 "A person who collects the specimen")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001895 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001895 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001895 "Specimen Collector Name")
-AnnotationAssertion(dc:source obo:OBI_0001895 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001895 "specimen collector"@en)
-EquivalentClasses(obo:OBI_0001895 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0001769)))
-SubClassOf(obo:OBI_0001895 obo:NCBITaxon_9606)
 
 # Class: obo:OBI_0001896 (investigation assay specification)
 
@@ -53543,7 +52265,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001902 "NIAID GSCID-BRC metadata wo
 AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001902 "Nucleic Acid Preparation Method")
 AnnotationAssertion(dc:source obo:OBI_0001902 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001902 "sample preparation for sequencing assay"@en)
-EquivalentClasses(obo:OBI_0001902 ObjectIntersectionOf(obo:OBI_0000073 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000643 obo:CHEBI_33696))) ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000295 obo:OBI_0600047)))))
 SubClassOf(obo:OBI_0001902 obo:OBI_0000073)
 
 # Class: obo:OBI_0001904 (sequencing service)
@@ -53624,7 +52345,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002076 "Person: Chris Stoeckert, Ji
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002076 "OBIB, OBI")
 AnnotationAssertion(dc:source obo:OBI_0002076 "Biobank")
 AnnotationAssertion(rdfs:label obo:OBI_0002076 "collection of specimens"@en)
-EquivalentClasses(obo:OBI_0002076 ObjectIntersectionOf(obo:BFO_0000040 ObjectAllValuesFrom(obo:RO_0002351 obo:OBI_0100051)))
 SubClassOf(obo:OBI_0002076 obo:BFO_0000040)
 
 # Class: obo:OBI_0002078 (specimen set collection process)
@@ -53719,155 +52439,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0002116 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0002116 "high performance liquid chromotography assay")
 SubClassOf(obo:OBI_0002116 obo:OBI_0001630)
 
-# Class: obo:OBI_0002501 (bile specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002501 "bile specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002501 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002501 "A specimen that is derived from bile.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002501 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002501 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(rdfs:label obo:OBI_0002501 "bile specimen")
-EquivalentClasses(obo:OBI_0002501 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001970)))
-SubClassOf(obo:OBI_0002501 obo:OBI_0001479)
-
-# Class: obo:OBI_0002503 (feces specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002503 "feces specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002503 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002503 "A specimen that is derived from feces.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002503 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0002503 "stool specimen")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002503 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0002503 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0002503 "feces specimen")
-EquivalentClasses(obo:OBI_0002503 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001988)))
-SubClassOf(obo:OBI_0002503 obo:OBI_0001479)
-
-# Class: obo:OBI_0002504 (digestive system fluid or secretion specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002504 "digestive system fluid or secretion specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002504 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002504 "A specimen that is derived from digestive system fluid or secretion.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002504 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0002504 "gastric fluid specimen")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002504 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(rdfs:label obo:OBI_0002504 "digestive system fluid or secretion specimen")
-EquivalentClasses(obo:OBI_0002504 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0006911)))
-SubClassOf(obo:OBI_0002504 obo:OBI_0001479)
-
-# Class: obo:OBI_0002505 (milk specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002505 "milk specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002505 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002505 "A specimen that is derived from milk.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002505 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002505 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(rdfs:label obo:OBI_0002505 "milk specimen")
-EquivalentClasses(obo:OBI_0002505 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001913)))
-SubClassOf(obo:OBI_0002505 obo:OBI_0001479)
-
-# Class: obo:OBI_0002507 (saliva specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002507 "saliva specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002507 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002507 "A specimen that is derived from saliva.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002507 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002507 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0002507 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0002507 "saliva specimen")
-EquivalentClasses(obo:OBI_0002507 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001836)))
-SubClassOf(obo:OBI_0002507 obo:OBI_0001479)
-
-# Class: obo:OBI_0002508 (sputum specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002508 "sputum specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002508 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002508 "A specimen that is derived from sputum.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002508 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002508 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(rdfs:label obo:OBI_0002508 "sputum specimen")
-EquivalentClasses(obo:OBI_0002508 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0007311)))
-SubClassOf(obo:OBI_0002508 obo:OBI_0001479)
-
-# Class: obo:OBI_0002509 (sweat specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002509 "sweat specimen")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002509 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002509 "A specimen that is derived from sweat.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002509 "Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002509 "Chris Stoeckert, Penn Medicine Biobank")
-AnnotationAssertion(rdfs:label obo:OBI_0002509 "sweat specimen")
-EquivalentClasses(obo:OBI_0002509 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0600005) ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001089)))
-SubClassOf(obo:OBI_0002509 obo:OBI_0001479)
-
-# Class: obo:OBI_0100016 (blood plasma specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100016 "blood plasma specimen"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100016 "PMID: 18217225.Sex Transm Dis. 2008 Jan;35(1):55-60. Review.Human immunodeficiency virus viral load in blood plasma and semen: review and implications of empirical findings."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100016 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100016 "a material entity which corresponds to the liquid component of blood, in which the blood cells are suspended."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100016 "03/21/2010: BP, blood plasma is defined as the output of certain separation processes, so this is in the domain of OBI, not FMA."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100016 "PERSON: Maura Gasparetto"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100016 "PERSON: Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100016 "PERSON: Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0100016 "plasma"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100016 "WEB: http://en.wikipedia.org/wiki/Blood_plasma"@en)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0100016 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0100016 "blood plasma specimen"@en)
-SubClassOf(obo:OBI_0100016 obo:BFO_0000040)
-SubClassOf(obo:OBI_0100016 obo:OBI_0000953)
-SubClassOf(obo:OBI_0100016 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112)))
-SubClassOf(obo:OBI_0100016 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:OBI_0600014 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0000655))))
-
-# Class: obo:OBI_0100017 (blood serum specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100017 "blood serum specimen"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100017 "PMID: 18229666.Adv Med Sci. 2007;52 Suppl 1:204-6.Antioxidant activity of blood serum and saliva in patients with periodontal disease treated due to epilepsy."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100017 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100017 "A material entity which derives from blood and corresponds to blood plasma without fibrinogen or the other clotting factors."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100017 "PERSON: Maura Gasparetto"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100017 "PERSON: Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100017 "PERSON: Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100017 "WEB: http://en.wikipedia.org/wiki/Blood_plasma"@en)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0100017 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0100017 "blood serum specimen"@en)
-SubClassOf(obo:OBI_0100017 obo:OBI_0000953)
-SubClassOf(obo:OBI_0100017 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(ObjectUnionOf(obo:OBI_0302885 obo:OBI_0302886 obo:OBI_0600052) ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0000655))))
-SubClassOf(obo:OBI_0100017 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112))
-
-# Class: obo:OBI_0100026 (organism)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100026 "organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "animal"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "fungus"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "plant"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100026 "virus"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100026 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100026 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100026 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100026 "13-02-2009:
-OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
-This issue is outside the scope of OBI.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100026 "GROUP: OBI Biomaterial Branch")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100026 "WEB: http://en.wikipedia.org/wiki/Organism"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0100026 "organism"@en)
-EquivalentClasses(obo:OBI_0100026 ObjectUnionOf(obo:NCBITaxon_10239 obo:NCBITaxon_2 obo:NCBITaxon_2157 obo:NCBITaxon_2759))
-SubClassOf(obo:OBI_0100026 obo:BFO_0000040)
-
-# Class: obo:OBI_0100051 (specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100051 "specimen"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0100051 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100051 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100051 "A material entity that has the specimen role."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0100051 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100051 "PERSON: James Malone")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0100051 "PERSON: Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100051 "GROUP: OBI Biomaterial Branch"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0100051 "specimen"@en)
-EquivalentClasses(obo:OBI_0100051 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000112)))
-SubClassOf(obo:OBI_0100051 obo:BFO_0000040)
-
 # Class: obo:OBI_0100086 (glucose in solution)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0100086 "glucose in solution")
@@ -53958,18 +52529,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200183 "Person:Helen Parkinson")
 AnnotationAssertion(rdfs:label obo:OBI_0200183 "scaling objective"@en)
 SubClassOf(obo:OBI_0200183 obo:OBI_0200166)
 
-# Class: obo:OBI_0302716 (pool of specimens)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302716 "pool of specimens"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302716 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302716 "A pool of specimens is a mixture of a population of samples which have been gathered from one or more sample populations, obtained by the physical process of mixing individual specimens, e.g.  mixing the DNA collected from the individual fish."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0302716 "check with advisors as to how to represent multiple instances of any class? a set of specimens which have been gathered from one or more sample_populations, obtained by the physical process of mixing individual specimens, e.g.  mixing the DNA collected from the individual fish"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302716 "PERSON: Jennifer Fostel")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302716 "GROUP: CEBS")
-AnnotationAssertion(rdfs:label obo:OBI_0302716 "pool of specimens"@en)
-EquivalentClasses(obo:OBI_0302716 ObjectIntersectionOf(obo:OBI_0100051 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:OBI_0000652 ObjectAllValuesFrom(obo:OBI_0000293 obo:OBI_0100051)))))
-SubClassOf(obo:OBI_0302716 obo:OBI_0000953)
-
 # Class: obo:OBI_0302840 (curated information)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302840 "curated information"@en)
@@ -53984,18 +52543,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302840 "OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0302840 "curated information"@en)
 SubClassOf(obo:OBI_0302840 obo:IAO_0000030)
 SubClassOf(obo:OBI_0302840 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0302914))
-
-# Class: obo:OBI_0302846 (randomized group participant role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302846 "randomized group participant role"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302846 "A person enrolled in a randomized clinical trial bears a randomized group participant role")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302846 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302846 "a role that borne by an organism and realized by some group randomization process")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302846 "Person:Helen Parkinson")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302846 "Philippe Rocca-Serra")
-AnnotationAssertion(rdfs:label obo:OBI_0302846 "randomized group participant role"@en)
-EquivalentClasses(obo:OBI_0302846 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0302900))
-SubClassOf(obo:OBI_0302846 obo:BFO_0000023)
 
 # Class: obo:OBI_0302885 (filtration)
 
@@ -54224,7 +52771,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600005 "IEDB"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0600005 "collecting specimen from organism"@en)
 SubClassOf(obo:OBI_0600005 obo:OBI_0000659)
 SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100026))
-SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0100051))
 SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000684))
 
 # Class: obo:OBI_0600007 (administering substance in vivo)
@@ -54341,7 +52887,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_1110095 "IEDB"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_1110095 "IEDB"@en)
 AnnotationAssertion(rdfs:label obo:OBI_1110095 "blood harvesting"@en)
 SubClassOf(obo:OBI_1110095 obo:OBI_0600014)
-SubClassOf(obo:OBI_1110095 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000655))
 
 # Class: obo:OBI_1110122 (pathologic process)
 
@@ -55086,11 +53631,11 @@ SubClassOf(obo:ONS_0000083 obo:ONS_0000080)
 SubClassOf(obo:ONS_0000083 obo:ONS_1000008)
 SubClassOf(obo:ONS_0000083 ObjectExactCardinality(0 obo:BFO_0000051 obo:ERO_0000347))
 
-# Class: obo:ONS_0000084 (Cook role)
+# Class: obo:ONS_0000084 (cook role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000084 "Cook role is the role of the person responsible for food prepraration")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000084 "ENPADASI_WP4")
-AnnotationAssertion(rdfs:label obo:ONS_0000084 "Cook role")
+AnnotationAssertion(rdfs:label obo:ONS_0000084 "cook role"@en)
 SubClassOf(obo:ONS_0000084 obo:BFO_0000023)
 SubClassOf(obo:ONS_0000084 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
 
@@ -55551,14 +54096,14 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000136 "https://orcid.org/0000-0002
 AnnotationAssertion(rdfs:label obo:ONS_0000136 "technological processes during dairy food fermentation"@en)
 SubClassOf(obo:ONS_0000136 obo:BFO_0000015)
 
-# Class: obo:ONS_0000137 (biological processes during dairy food fermentation)
+# Class: obo:ONS_0000137 (biological process during dairy food fermentation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000137 "This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000137 "https://github.com/FrancescoVit"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000137 "https://orcid.org/0000-0001-9446-7979")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000137 "https://orcid.org/0000-0002-7114-7726")
-AnnotationAssertion(rdfs:label obo:ONS_0000137 "biological processes during dairy food fermentation"@en)
-SubClassOf(obo:ONS_0000137 resource:SIO_000016)
+AnnotationAssertion(rdfs:label obo:ONS_0000137 "biological process during dairy food fermentation"@en)
+SubClassOf(obo:ONS_0000137 obo:GO_0008150)
 
 # Class: obo:ONS_0000138 (microbiota in finished or semi-finished fermented products and in the entire food-chain)
 
@@ -55608,7 +54153,6 @@ AnnotationAssertion(rdfs:label obo:ONS_0000142 "glucose metabolism during food f
 SubClassOf(obo:ONS_0000142 obo:ONS_0000137)
 SubClassOf(obo:ONS_0000142 ObjectSomeValuesFrom(obo:RO_0002233 obo:FOODON_00001257))
 SubClassOf(obo:ONS_0000142 ObjectSomeValuesFrom(obo:RO_0002233 obo:ONS_0000170))
-SubClassOf(obo:ONS_0000142 ObjectSomeValuesFrom(obo:RO_0002233 obo:UBERON_0001913))
 SubClassOf(obo:ONS_0000142 ObjectSomeValuesFrom(obo:RO_0002234 obo:NCIT_C173982))
 
 # Class: obo:ONS_0000143 (kefiran)
@@ -55650,7 +54194,6 @@ AnnotationAssertion(rdfs:label obo:ONS_0000145 "kefir fermentation"@en)
 SubClassOf(obo:ONS_0000145 obo:ONS_0000156)
 SubClassOf(obo:ONS_0000145 ObjectSomeValuesFrom(obo:RO_0002018 obo:ONS_0000142))
 SubClassOf(obo:ONS_0000145 ObjectSomeValuesFrom(obo:RO_0002233 obo:FOODON_00001257))
-SubClassOf(obo:ONS_0000145 ObjectSomeValuesFrom(obo:RO_0002233 obo:UBERON_0001913))
 SubClassOf(obo:ONS_0000145 ObjectSomeValuesFrom(obo:RO_0002234 obo:NCIT_C173982))
 SubClassOf(obo:ONS_0000145 ObjectSomeValuesFrom(obo:RO_0002234 obo:ONS_0000126))
 
@@ -55801,7 +54344,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000159 "https://github.com/Francesc
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000159 "https://orcid.org/0000-0001-9446-7979")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000159 "https://orcid.org/0000-0002-7114-7726")
 AnnotationAssertion(rdfs:label obo:ONS_0000159 "agent for physico-chemical selection of microbiota"@en)
-SubClassOf(obo:ONS_0000159 resource:SIO_000016)
+SubClassOf(obo:ONS_0000159 obo:BFO_0000023)
 SubClassOf(obo:ONS_0000159 ObjectSomeValuesFrom(obo:RO_0000052 obo:FOODON_03470107))
 SubClassOf(obo:ONS_0000159 ObjectSomeValuesFrom(obo:RO_0000052 obo:ONS_0000144))
 SubClassOf(obo:ONS_0000159 ObjectSomeValuesFrom(obo:RO_0000052 obo:ONS_0000167))
@@ -55964,7 +54507,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000172 "https://github.com/Francesc
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000172 "https://orcid.org/0000-0001-9446-7979")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000172 "https://orcid.org/0000-0002-7114-7726")
 AnnotationAssertion(rdfs:label obo:ONS_0000172 "suitable for consumption"@en)
-SubClassOf(obo:ONS_0000172 resource:SIO_000016)
+SubClassOf(obo:ONS_0000172 obo:BFO_0000023)
 SubClassOf(obo:ONS_0000172 ObjectSomeValuesFrom(obo:RO_0002507 obo:HP_0004789))
 
 # Class: obo:ONS_0000173 (unfit for consumption)
@@ -55974,7 +54517,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000173 "https://github.com/Francesc
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000173 "https://orcid.org/0000-0001-9446-7979")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000173 "https://orcid.org/0000-0002-7114-7726")
 AnnotationAssertion(rdfs:label obo:ONS_0000173 "unfit for consumption"@en)
-SubClassOf(obo:ONS_0000173 resource:SIO_000016)
+SubClassOf(obo:ONS_0000173 obo:BFO_0000023)
 SubClassOf(obo:ONS_0000173 ObjectSomeValuesFrom(obo:RO_0002507 obo:HP_0004789))
 
 # Class: obo:ONS_0000174 (water activity in food)
@@ -57128,19 +55671,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000124 obo:stato.owl)
 AnnotationAssertion(rdfs:label obo:STATO_0000124 "stratification rule"@en)
 SubClassOf(obo:STATO_0000124 obo:IAO_0000055)
 
-# Class: obo:STATO_0000216 (stratum population)
-
-AnnotationAssertion(obo:IAO_0000112 obo:STATO_0000216 ""@en)
-AnnotationAssertion(obo:IAO_0000114 obo:STATO_0000216 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000216 "a stratum population is a population resulting from a population stratification prior to sampling process which aims to produce homogenous subpopulations from an heterogeneous population by applying one or more stratification criteria"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000216 "Alejandra Gonzalez-Beltran")
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000216 "Orlaith Burke")
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000216 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000216 "STATO")
-AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000216 obo:stato.owl)
-AnnotationAssertion(rdfs:label obo:STATO_0000216 "stratum population")
-SubClassOf(obo:STATO_0000216 obo:OBI_0000047)
-
 # Class: obo:UBERON_0000165 (mouth)
 
 AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0000165 "mouth")
@@ -57148,27 +55678,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0000165 "The proximal portion of 
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000165 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0000165 "mouth")
 SubClassOf(obo:UBERON_0000165 obo:UBERON_0000465)
-
-# Class: obo:UBERON_0000178 (blood)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0000178 "blood")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0000178 "A fluid that is composed of blood plasma and erythrocytes.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000178 obo:uberon.owl)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:UBERON_0000178 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:UBERON_0000178 "blood")
-SubClassOf(obo:UBERON_0000178 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0000463 (organism substance)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0000463 "organism substance")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0000463 "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0000463 "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:UBERON_0000463 "http://orcid.org/0000-0001-9114-8737")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000463 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0000463 "organism substance")
-AnnotationAssertion(rdfs:label obo:UBERON_0000463 "organism substance"@en)
-SubClassOf(obo:UBERON_0000463 obo:BFO_0000040)
-SubClassOf(obo:UBERON_0000463 obo:UBERON_0000465)
 
 # Class: obo:UBERON_0000465 (material anatomical entity)
 
@@ -57210,22 +55719,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001013 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0001013 "adipose tissue")
 SubClassOf(obo:UBERON_0001013 obo:UBERON_0000479)
 
-# Class: obo:UBERON_0001088 (urine)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001088 "urine")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001088 "Excretion that is the output of a kidney")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001088 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001088 "urine")
-SubClassOf(obo:UBERON_0001088 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0001089 (sweat)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001089 "sweat")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001089 "Secretion produced by a sweat gland.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001089 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001089 "sweat")
-SubClassOf(obo:UBERON_0001089 obo:UBERON_0000463)
-
 # Class: obo:UBERON_0001155 (colon)
 
 AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001155 "colon")
@@ -57233,60 +55726,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001155 "Last portion of the larg
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001155 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0001155 "colon")
 SubClassOf(obo:UBERON_0001155 obo:UBERON_0000465)
-
-# Class: obo:UBERON_0001836 (saliva)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001836 "saliva")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001836 "A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001836 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001836 "saliva")
-SubClassOf(obo:UBERON_0001836 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0001913 (milk)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001913 "milk")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001913 "An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001913 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001913 "milk")
-SubClassOf(obo:UBERON_0001913 obo:UBERON_0000463)
-SubClassOf(obo:UBERON_0001913 ObjectSomeValuesFrom(obo:RO_0002248 obo:NCIT_C28166))
-
-# Class: obo:UBERON_0001970 (bile)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001970 "bile")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001970 "vital aqueous secretion of the liver that is formed by hepatocytes and modified down stream by absorptive and secretory properties of the bile duct epithelium.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001970 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001970 "bile")
-SubClassOf(obo:UBERON_0001970 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0001988 (feces)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0001988 "feces")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001988 "Portion of semisolid bodily waste discharged through the anus[MW,modified]")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001988 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0001988 "feces")
-SubClassOf(obo:UBERON_0001988 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0006911 (digestive system secreted substance)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0006911 "digestive system fluid or secretion")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0006911 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0006911 "digestive system fluid or secretion")
-SubClassOf(obo:UBERON_0006911 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0007311 (sputum)
-
-AnnotationAssertion(obo:IAO_0000111 obo:UBERON_0007311 "sputum")
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0007311 "Matter ejected from the lungs, bronchi, and trachea, through the mouth.")
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0007311 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:UBERON_0007311 "sputum")
-SubClassOf(obo:UBERON_0007311 obo:UBERON_0000463)
-
-# Class: obo:UBERON_0012112 (ingested food)
-
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0012112 "A substance that is consumed by the organism for food."@en)
-AnnotationAssertion(rdfs:label obo:UBERON_0012112 "ingested food"@en)
-SubClassOf(obo:UBERON_0012112 obo:UBERON_0000463)
 
 # Class: obo:UO_0000001 (length unit)
 
@@ -57670,14 +56109,6 @@ AnnotationAssertion(terms:description resource:SIO_000811 "A Uniform Resource Lo
 AnnotationAssertion(resource:hasSynonym resource:SIO_000811 "Uniform Resource Locator"@en)
 AnnotationAssertion(rdfs:label resource:SIO_000811 "URL"@en)
 SubClassOf(resource:SIO_000811 obo:IAO_0000300)
-
-# Class: resource:SIO_000883 (subject role)
-
-AnnotationAssertion(obo:IAO_0000412 resource:SIO_000883 <http://semanticscience.org/ontology/sio.owl>)
-AnnotationAssertion(dc:identifier resource:SIO_000883 "SIO_000883")
-AnnotationAssertion(terms:description resource:SIO_000883 "A subject role is the role of an individual that is the target of the study."@en)
-AnnotationAssertion(rdfs:label resource:SIO_000883 "subject role"@en)
-SubClassOf(resource:SIO_000883 obo:BFO_0000023)
 
 # Class: resource:SIO_000964 (standard operating procedure)
 
@@ -58858,13 +57289,8 @@ ClassAssertion(obo:UO_0000051 obo:UO_0000301)
 AnnotationAssertion(doap:file-release <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> obo:obi.owl)
 AnnotationAssertion(doap:file-release <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> "OBI Release 2017-02-22")
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> <http://purl.obolibrary.org/obo/obi/wiki/Releases/2017-02-22>)
 ClassAssertion(owl:Thing <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>)
 DataPropertyAssertion(doap:revision <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> "SVN Revision: Unversioned directory")
-
-# Individual: <http://purl.obolibrary.org/obo/obi/wiki/Releases/2017-02-22> (<http://purl.obolibrary.org/obo/obi/wiki/Releases/2017-02-22>)
-
-ClassAssertion(owl:Thing <http://purl.obolibrary.org/obo/obi/wiki/Releases/2017-02-22>)
 
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000068 "An experimental comparison study in which participants are allocated to treatment/intervention or control/placebo groups using a random mechanism (see randomisation). Best for study the effect of an intervention.")
