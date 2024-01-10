@@ -26,13 +26,11 @@ Prefix(study_protocol:=<http://purl.org/net/OCRe/study_protocol.owl#>)
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
 Import(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ONS_import_01192022_noDeprec.owl>)
 Annotation(protege:defaultLanguage "en")
-Annotation(dc:description "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."@en)
-Annotation(dc:title "Ontology for Nutritional Studies")
+Annotation(terms:description "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."@en)
 Annotation(oboInOwl:created_by "ENPADASI_WP4"@en)
 Annotation(rdfs:label "ONS"@en)
 Annotation(owl:versionInfo "Release version 1.2.3"@en)
 
-Declaration(Class(edamontology:data_0970))
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
 Declaration(Class(obo:BFO_0000003))
@@ -2963,8 +2961,6 @@ Declaration(Class(obo:IAO_0000326))
 Declaration(Class(obo:IAO_0000416))
 Declaration(Class(obo:IAO_0000429))
 Declaration(Class(obo:IAO_0000442))
-Declaration(Class(obo:IAO_0000443))
-Declaration(Class(obo:IAO_0000572))
 Declaration(Class(obo:IAO_0000574))
 Declaration(Class(obo:IAO_0000577))
 Declaration(Class(obo:IAO_0000578))
@@ -2972,7 +2968,6 @@ Declaration(Class(obo:IAO_0000579))
 Declaration(Class(obo:IAO_0000621))
 Declaration(Class(obo:ICO_0000001))
 Declaration(Class(obo:ICO_0000015))
-Declaration(Class(obo:ICO_0000069))
 Declaration(Class(obo:NCBITaxon_10239))
 Declaration(Class(obo:NCBITaxon_117571))
 Declaration(Class(obo:NCBITaxon_2))
@@ -2992,25 +2987,14 @@ Declaration(Class(obo:NCBITaxon_9606))
 Declaration(Class(obo:NCBITaxon_species))
 Declaration(Class(obo:NCIT_C115696))
 Declaration(Class(obo:NCIT_C139218))
-Declaration(Class(obo:NCIT_C25662))
 Declaration(Class(obo:NCIT_C25729))
-Declaration(Class(obo:NCIT_C53194))
-Declaration(Class(obo:NCIT_C53196))
-Declaration(Class(obo:NCIT_C53204))
 Declaration(Class(obo:NCIT_C68631))
-Declaration(Class(obo:NCIT_C71496))
-Declaration(Class(obo:NCIT_C71503))
-Declaration(Class(obo:NCIT_C71515))
 Declaration(Class(obo:NCIT_C86036))
 Declaration(Class(obo:NCIT_C94090))
 Declaration(Class(obo:NCIT_C94108))
 Declaration(Class(obo:NCIT_C98714))
-Declaration(Class(obo:OBCS_0000002))
-Declaration(Class(obo:OBCS_0000089))
 Declaration(Class(obo:OBCS_0000120))
-Declaration(Class(obo:OBCS_0000130))
 Declaration(Class(obo:OBCS_0000233))
-Declaration(Class(obo:OBIB_0000018))
 Declaration(Class(obo:OBIB_0000019))
 Declaration(Class(obo:OBIB_0000020))
 Declaration(Class(obo:OBIB_0000054))
@@ -3025,15 +3009,12 @@ Declaration(Class(obo:OBI_0000049))
 Declaration(Class(obo:OBI_0000066))
 Declaration(Class(obo:OBI_0000067))
 Declaration(Class(obo:OBI_0000070))
-Declaration(Class(obo:OBI_0000073))
 Declaration(Class(obo:OBI_0000075))
 Declaration(Class(obo:OBI_0000086))
 Declaration(Class(obo:OBI_0000093))
-Declaration(Class(obo:OBI_0000094))
 Declaration(Class(obo:OBI_0000096))
 Declaration(Class(obo:OBI_0000097))
 Declaration(Class(obo:OBI_0000102))
-Declaration(Class(obo:OBI_0000103))
 Declaration(Class(obo:OBI_0000112))
 Declaration(Class(obo:OBI_0000143))
 Declaration(Class(obo:OBI_0000151))
@@ -3049,10 +3030,8 @@ Declaration(Class(obo:OBI_0000249))
 Declaration(Class(obo:OBI_0000252))
 Declaration(Class(obo:OBI_0000260))
 Declaration(Class(obo:OBI_0000272))
-Declaration(Class(obo:OBI_0000274))
 Declaration(Class(obo:OBI_0000275))
 Declaration(Class(obo:OBI_0000319))
-Declaration(Class(obo:OBI_0000338))
 Declaration(Class(obo:OBI_0000339))
 Declaration(Class(obo:OBI_0000345))
 Declaration(Class(obo:OBI_0000361))
@@ -3073,7 +3052,6 @@ Declaration(Class(obo:OBI_0000444))
 Declaration(Class(obo:OBI_0000451))
 Declaration(Class(obo:OBI_0000453))
 Declaration(Class(obo:OBI_0000456))
-Declaration(Class(obo:OBI_0000457))
 Declaration(Class(obo:OBI_0000458))
 Declaration(Class(obo:OBI_0000471))
 Declaration(Class(obo:OBI_0000520))
@@ -3081,7 +3059,6 @@ Declaration(Class(obo:OBI_0000571))
 Declaration(Class(obo:OBI_0000576))
 Declaration(Class(obo:OBI_0000630))
 Declaration(Class(obo:OBI_0000639))
-Declaration(Class(obo:OBI_0000652))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000659))
 Declaration(Class(obo:OBI_0000678))
@@ -3094,12 +3071,10 @@ Declaration(Class(obo:OBI_0000740))
 Declaration(Class(obo:OBI_0000750))
 Declaration(Class(obo:OBI_0000751))
 Declaration(Class(obo:OBI_0000806))
-Declaration(Class(obo:OBI_0000810))
 Declaration(Class(obo:OBI_0000813))
 Declaration(Class(obo:OBI_0000825))
 Declaration(Class(obo:OBI_0000828))
 Declaration(Class(obo:OBI_0000832))
-Declaration(Class(obo:OBI_0000838))
 Declaration(Class(obo:OBI_0000931))
 Declaration(Class(obo:OBI_0000932))
 Declaration(Class(obo:OBI_0000941))
@@ -3109,17 +3084,10 @@ Declaration(Class(obo:OBI_0000968))
 Declaration(Class(obo:OBI_0000969))
 Declaration(Class(obo:OBI_0000973))
 Declaration(Class(obo:OBI_0000984))
-Declaration(Class(obo:OBI_0000988))
-Declaration(Class(obo:OBI_0000995))
 Declaration(Class(obo:OBI_0001000))
 Declaration(Class(obo:OBI_0001034))
 Declaration(Class(obo:OBI_0001057))
 Declaration(Class(obo:OBI_0001139))
-Declaration(Class(obo:OBI_0001173))
-Declaration(Class(obo:OBI_0001515))
-Declaration(Class(obo:OBI_0001528))
-Declaration(Class(obo:OBI_0001547))
-Declaration(Class(obo:OBI_0001557))
 Declaration(Class(obo:OBI_0001615))
 Declaration(Class(obo:OBI_0001616))
 Declaration(Class(obo:OBI_0001617))
@@ -3133,7 +3101,6 @@ Declaration(Class(obo:OBI_0001636))
 Declaration(Class(obo:OBI_0001687))
 Declaration(Class(obo:OBI_0001755))
 Declaration(Class(obo:OBI_0001769))
-Declaration(Class(obo:OBI_0001834))
 Declaration(Class(obo:OBI_0001880))
 Declaration(Class(obo:OBI_0001881))
 Declaration(Class(obo:OBI_0001883))
@@ -3152,17 +3119,12 @@ Declaration(Class(obo:OBI_0001897))
 Declaration(Class(obo:OBI_0001898))
 Declaration(Class(obo:OBI_0001900))
 Declaration(Class(obo:OBI_0001901))
-Declaration(Class(obo:OBI_0001902))
 Declaration(Class(obo:OBI_0001903))
-Declaration(Class(obo:OBI_0001904))
 Declaration(Class(obo:OBI_0001908))
 Declaration(Class(obo:OBI_0001909))
-Declaration(Class(obo:OBI_0001928))
 Declaration(Class(obo:OBI_0001931))
-Declaration(Class(obo:OBI_0001932))
 Declaration(Class(obo:OBI_0001933))
 Declaration(Class(obo:OBI_0001934))
-Declaration(Class(obo:OBI_0001942))
 Declaration(Class(obo:OBI_0002076))
 Declaration(Class(obo:OBI_0002078))
 Declaration(Class(obo:OBI_0002079))
@@ -3173,21 +3135,14 @@ Declaration(Class(obo:OBI_0002110))
 Declaration(Class(obo:OBI_0002116))
 Declaration(Class(obo:OBI_0100026))
 Declaration(Class(obo:OBI_0100086))
-Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:OBI_0200166))
 Declaration(Class(obo:OBI_0200167))
-Declaration(Class(obo:OBI_0200169))
 Declaration(Class(obo:OBI_0200183))
 Declaration(Class(obo:OBI_0302838))
 Declaration(Class(obo:OBI_0302840))
 Declaration(Class(obo:OBI_0302846))
-Declaration(Class(obo:OBI_0302885))
 Declaration(Class(obo:OBI_0302886))
-Declaration(Class(obo:OBI_0302893))
-Declaration(Class(obo:OBI_0302900))
-Declaration(Class(obo:OBI_0302908))
 Declaration(Class(obo:OBI_0302911))
-Declaration(Class(obo:OBI_0302914))
 Declaration(Class(obo:OBI_0400106))
 Declaration(Class(obo:OBI_0500022))
 Declaration(Class(obo:OBI_0500023))
@@ -3196,12 +3151,7 @@ Declaration(Class(obo:OBI_0500025))
 Declaration(Class(obo:OBI_0500026))
 Declaration(Class(obo:OBI_0500027))
 Declaration(Class(obo:OBI_0500028))
-Declaration(Class(obo:OBI_0600003))
-Declaration(Class(obo:OBI_0600004))
 Declaration(Class(obo:OBI_0600005))
-Declaration(Class(obo:OBI_0600007))
-Declaration(Class(obo:OBI_0600014))
-Declaration(Class(obo:OBI_0600015))
 Declaration(Class(obo:OBI_0600047))
 Declaration(Class(obo:OBI_0600052))
 Declaration(Class(obo:OBI_1110010))
@@ -3229,10 +3179,7 @@ Declaration(Class(obo:OHMI_0000002))
 Declaration(Class(obo:OHMI_0000003))
 Declaration(Class(obo:OHMI_0000016))
 Declaration(Class(obo:OHMI_0000020))
-Declaration(Class(obo:OMIABIS_0000036))
-Declaration(Class(obo:OMIABIS_0000037))
 Declaration(Class(obo:OMIABIS_0001016))
-Declaration(Class(obo:OMRSE_00000038))
 Declaration(Class(obo:ONS_0000001))
 Declaration(Class(obo:ONS_0000002))
 Declaration(Class(obo:ONS_0000003))
@@ -3276,7 +3223,6 @@ Declaration(Class(obo:ONS_0000041))
 Declaration(Class(obo:ONS_0000042))
 Declaration(Class(obo:ONS_0000043))
 Declaration(Class(obo:ONS_0000044))
-Declaration(Class(obo:ONS_0000045))
 Declaration(Class(obo:ONS_0000046))
 Declaration(Class(obo:ONS_0000047))
 Declaration(Class(obo:ONS_0000048))
@@ -3541,7 +3487,6 @@ Declaration(Class(obo:UO_0000109))
 Declaration(Class(obo:UO_0000270))
 Declaration(Class(obo:UO_0000280))
 Declaration(Class(obo:VO_0000001))
-Declaration(Class(obo:VO_0000002))
 Declaration(Class(resource:SIO_000031))
 Declaration(Class(resource:SIO_000085))
 Declaration(Class(resource:SIO_000115))
@@ -3563,7 +3508,6 @@ Declaration(Class(resource:SIO_000664))
 Declaration(Class(resource:SIO_000669))
 Declaration(Class(resource:SIO_000670))
 Declaration(Class(resource:SIO_000688))
-Declaration(Class(resource:SIO_000811))
 Declaration(Class(resource:SIO_000883))
 Declaration(Class(resource:SIO_000964))
 Declaration(Class(resource:SIO_001014))
@@ -3750,16 +3694,13 @@ Declaration(NamedIndividual(obo:UO_0000284))
 Declaration(NamedIndividual(obo:UO_0000285))
 Declaration(NamedIndividual(obo:UO_0000301))
 Declaration(NamedIndividual(obo:iao.owl))
-Declaration(NamedIndividual(obo:obi.owl))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>))
-Declaration(AnnotationProperty(edamontology:isdebtag))
 Declaration(AnnotationProperty(protege:defaultLanguage))
 Declaration(AnnotationProperty(protege:readOnly))
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000112))
-Declaration(AnnotationProperty(obo:IAO_0000113))
 Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000116))
@@ -3767,7 +3708,6 @@ Declaration(AnnotationProperty(obo:IAO_0000117))
 Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000232))
-Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(obo:IAO_0000412))
 Declaration(AnnotationProperty(obo:IAO_0000589))
 Declaration(AnnotationProperty(obo:IAO_0000600))
@@ -3788,29 +3728,21 @@ Declaration(AnnotationProperty(obo:OBI_0001847))
 Declaration(AnnotationProperty(obo:OBI_0001886))
 Declaration(AnnotationProperty(obo:hasDbXref))
 Declaration(AnnotationProperty(obo:hasOBONamespace))
-Declaration(AnnotationProperty(obo:id))
 Declaration(AnnotationProperty(obo:in_ONS_subset))
 Declaration(AnnotationProperty(obo:in_minimal_requirements_subset))
-Declaration(AnnotationProperty(obo:is_metadata_tag))
 Declaration(AnnotationProperty(obo:shorthand))
-Declaration(AnnotationProperty(apollo_sv:APOLLO_SV_0000040))
-Declaration(AnnotationProperty(dc:description))
-Declaration(AnnotationProperty(dc:format))
 Declaration(AnnotationProperty(dc:identifier))
-Declaration(AnnotationProperty(dc:language))
-Declaration(AnnotationProperty(dc:publisher))
 Declaration(AnnotationProperty(dc:relation))
 Declaration(AnnotationProperty(dc:rights))
 Declaration(AnnotationProperty(dc:source))
-Declaration(AnnotationProperty(dc:subject))
-Declaration(AnnotationProperty(dc:title))
 Declaration(AnnotationProperty(dc:type))
 Declaration(AnnotationProperty(terms:description))
+Declaration(AnnotationProperty(terms:format))
+Declaration(AnnotationProperty(terms:publisher))
 Declaration(AnnotationProperty(study_protocol:IAO_0000115))
 Declaration(AnnotationProperty(schema:comment))
 Declaration(AnnotationProperty(resource:example))
 Declaration(AnnotationProperty(resource:hasSynonym))
-Declaration(AnnotationProperty(resource:subset))
 Declaration(AnnotationProperty(doap:file-release))
 Declaration(AnnotationProperty(ont:controlled_vocabulary))
 Declaration(AnnotationProperty(ont:controlled_vocabulary_editor))
@@ -3837,13 +3769,11 @@ Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 Declaration(AnnotationProperty(oboInOwl:hasDefinition))
 Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasNarrowSynonym))
-Declaration(AnnotationProperty(oboInOwl:hasOBOFormatVersion))
 Declaration(AnnotationProperty(oboInOwl:hasOBONamespace))
 Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasSynonym))
 Declaration(AnnotationProperty(oboInOwl:id))
 Declaration(AnnotationProperty(oboInOwl:inSubset))
-Declaration(AnnotationProperty(oboInOwl:is_metadata_tag))
 Declaration(AnnotationProperty(oboInOwl:shorthand))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:isDefinedBy))
@@ -3856,13 +3786,6 @@ Declaration(Datatype(xsd:float))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: edamontology:isdebtag (isdebtag)
-
-AnnotationAssertion(obo:is_metadata_tag edamontology:isdebtag "true")
-AnnotationAssertion(oboInOwl:hasDefinition edamontology:isdebtag "When 'true', the concept has been proposed or is supported within Debian as a tag.")
-AnnotationAssertion(oboInOwl:inSubset edamontology:isdebtag "concept_properties")
-AnnotationAssertion(rdfs:label edamontology:isdebtag "isdebtag")
 
 # Annotation Property: obo:BFO_0000179 (BFO OWL specification label)
 
@@ -3912,32 +3835,9 @@ AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000112 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage")
 AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
 
-# Annotation Property: obo:IAO_0000113 (in branch)
+# Annotation Property: obo:IAO_0000115 (definition)
 
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000113 "in branch"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000113 "An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000113 "GROUP:OBI"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000113 "OBI_0000277"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000113 "in branch"@en)
-
-# Annotation Property: obo:IAO_0000114 (has curation status)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000114 "has curation status"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000114 "PERSON:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000114 "PERSON:Bill Bug"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000114 "PERSON:Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000114 "OBI_0000281"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status")
-AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
-
-# Annotation Property: obo:IAO_0000115 (textual definition)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "definition")
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "definition"@en)
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "textual definition")
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000115 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000115 "2012-04-05:
 Barry Smith
@@ -3960,13 +3860,8 @@ Personally, I am more comfortable weakening definition to documentation, with in
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000115 "PERSON:Daniel Schober"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:IAO_0000115 "DEFINITION")
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:IAO_0000115 "DEFINITION")
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000115 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
 
 # Annotation Property: obo:IAO_0000116 (editor note)
 
@@ -3977,70 +3872,14 @@ AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000116 "PERSON:Daniel Schober"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000116 "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"@en)
 AnnotationAssertion(obo:hasDbXref obo:IAO_0000116 "IAO:0000116")
 AnnotationAssertion(obo:hasOBONamespace obo:IAO_0000116 "uberon")
-AnnotationAssertion(obo:id obo:IAO_0000116 "editor_note")
-AnnotationAssertion(obo:is_metadata_tag obo:IAO_0000116 "true"^^xsd:boolean)
 AnnotationAssertion(obo:shorthand obo:IAO_0000116 "editor_note")
 AnnotationAssertion(oboInOwl:hasDbXref obo:IAO_0000116 "IAO:0000116")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:IAO_0000116 "uberon")
 AnnotationAssertion(oboInOwl:id obo:IAO_0000116 "editor_note")
-AnnotationAssertion(oboInOwl:is_metadata_tag obo:IAO_0000116 "1"^^xsd:integer)
 AnnotationAssertion(oboInOwl:shorthand obo:IAO_0000116 "editor_note")
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000116 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note")
 AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note"@en)
-
-# Annotation Property: obo:IAO_0000117 (term editor)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000117 "definition editor"@en)
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000117 "term editor"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000117 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000117 "Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000117 "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000117 "20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000117 "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000117 "PERSON:Daniel Schober"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000117 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000117 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition_editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
-
-# Annotation Property: obo:IAO_0000119 (definition source)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000119 "definition source"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000119 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000119 "PERSON:Daniel Schober"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000119 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition_source")
-
-# Annotation Property: obo:IAO_0000233 (term tracker item)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000233 "term tracker item")
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000233 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/")
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000233 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "An IRI or similar locator for a request or discussion of an ontology term.")
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg")
-AnnotationAssertion(rdfs:comment obo:IAO_0000233 "The 'tracker item' can associate a tracker with a specific ontology term.")
-AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
-
-# Annotation Property: obo:IAO_0000412 (imported from)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000412 "imported from"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000412 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000412 "For external terms/classes, the ontology from which the term was imported"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000412 "PERSON:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000412 "PERSON:Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000412 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000412 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
 # Annotation Property: obo:IAO_0000600 (elucidation)
 
@@ -4050,24 +3889,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000600 "Person:Barry Smith"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:IAO_0000600 "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en)
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000600 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000600 "elucidation"@en)
-
-# Annotation Property: obo:IAO_0000601 (has associated axiom(nl))
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000601 "has associated axiom(nl)"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000601 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000601 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000600 obo:IAO_0000601 "An axiom associated with a term expressed using natural language"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000601 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000601 "has associated axiom(nl)"@en)
-
-# Annotation Property: obo:IAO_0000602 (has associated axiom(fol))
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000602 "has associated axiom(fol)"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000602 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000602 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000600 obo:IAO_0000602 "An axiom expressed in first order logic using CLIF syntax"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000602 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000602 "has associated axiom(fol)"@en)
 
 # Annotation Property: obo:ICO_0000091 (term_mapping_to_UMLS)
 
@@ -4113,26 +3934,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_P108 "Preferred Term")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_P108 "Preferred_Name")
 AnnotationAssertion(rdfs:label obo:NCIT_P108 "Preferred_Name")
 
-# Annotation Property: obo:NCIT_P207 (UMLS_CUI)
-
-AnnotationAssertion(obo:IAO_0000115 obo:NCIT_P207 "Concept Unique Identifiers, or CUIs, are concept numbers assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.")
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_P207 "P207")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_P207 "Conceptual Entity")
-AnnotationAssertion(obo:NCIT_P107 obo:NCIT_P207 "UMLS CUI")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_P207 "UMLS_CUI")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_P207 "UMLS_CUI")
-AnnotationAssertion(rdfs:label obo:NCIT_P207 "UMLS_CUI")
-
-# Annotation Property: obo:NCIT_P366 (Legacy Concept Name)
-
-AnnotationAssertion(protege:readOnly obo:NCIT_P366 "true")
-AnnotationAssertion(obo:IAO_0000115 obo:NCIT_P366 "A retired unique concept identifier created and stored as Concept Name by legacy EVS software.  Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired.  Legacy values are intended solely to help resolve and update earlier coding.")
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_P366 "P366")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_P366 "Conceptual Entity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_P366 "Legacy Concept Name")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_P366 "Legacy Concept Name")
-AnnotationAssertion(rdfs:label obo:NCIT_P366 "Legacy_Concept_Name")
-
 # Annotation Property: obo:NCIT_P98 (DesignNote)
 
 AnnotationAssertion(obo:IAO_0000115 obo:NCIT_P98 "Design notes are notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.")
@@ -4155,39 +3956,9 @@ AnnotationAssertion(obo:IAO_0000115 obo:in_minimal_requirements_subset "Annotati
 AnnotationAssertion(rdfs:label obo:in_minimal_requirements_subset "in minimal requirement ONS subset"@en)
 SubAnnotationPropertyOf(obo:in_minimal_requirements_subset obo:in_ONS_subset)
 
-# Annotation Property: apollo_sv:APOLLO_SV_0000040 (Unique Apollo Label)
-
-AnnotationAssertion(obo:IAO_0000115 apollo_sv:APOLLO_SV_0000040 "This annotation property gives the unique label of all Apollo_SV entities that are refered to in the schema. The UAL is the denotator for the Apollo_SV class in the schema. There can at all times only be ONE value of UAL for each class.")
-AnnotationAssertion(obo:IAO_0000118 apollo_sv:APOLLO_SV_0000040 "UAL")
-AnnotationAssertion(rdfs:label apollo_sv:APOLLO_SV_0000040 "Unique Apollo Label"@en)
-
-# Annotation Property: dc:description (Description)
-
-AnnotationAssertion(dc:description dc:description "Description may include but is not limited to: an abstract,
-         table of contents, reference to a graphical representation
-         of content or a free-text account of the content."@en-us)
-AnnotationAssertion(rdfs:comment dc:description "An account of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:description <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:description "Description")
-AnnotationAssertion(rdfs:label dc:description "Description"@en-us)
-
-# Annotation Property: dc:format (Format)
-
-AnnotationAssertion(dc:description dc:format "Typically, Format may include the media-type or dimensions of
-         the resource. Format may be used to determine the software,
-         hardware or other equipment needed to display or operate the
-         resource. Examples of dimensions include size and duration.
-         Recommended best practice is to select a value from a
-         controlled vocabulary (for example, the list of Internet Media
-         Types [MIME] defining computer media formats)."@en-us)
-AnnotationAssertion(rdfs:comment dc:format "The physical or digital manifestation of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:format <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:format "Format")
-AnnotationAssertion(rdfs:label dc:format "Format"@en-us)
-
 # Annotation Property: dc:identifier (Resource Identifier)
 
-AnnotationAssertion(dc:description dc:identifier "Recommended best practice is to identify the resource by means
+AnnotationAssertion(terms:description dc:identifier "Recommended best practice is to identify the resource by means
          of a string or number conforming to a formal identification
          system.
          Example formal identification systems include the Uniform
@@ -4199,33 +3970,9 @@ AnnotationAssertion(rdfs:isDefinedBy dc:identifier <http://purl.org/dc/elements/
 AnnotationAssertion(rdfs:label dc:identifier "Resource Identifier")
 AnnotationAssertion(rdfs:label dc:identifier "Resource Identifier"@en-us)
 
-# Annotation Property: dc:language (Language)
-
-AnnotationAssertion(dc:description dc:language "Recommended best practice is to use RFC 3066 [RFC3066],
-         which, in conjunction with ISO 639 [ISO639], defines two-
-         and three-letter primary language tags with optional
-         subtags.  Examples include \"en\" or \"eng\" for English,
-         \"akk\" for Akkadian, and \"en-GB\" for English used in the
-         United Kingdom."@en-us)
-AnnotationAssertion(rdfs:comment dc:language "A language of the intellectual content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:language <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:language "Language")
-AnnotationAssertion(rdfs:label dc:language "Language"@en-us)
-
-# Annotation Property: dc:publisher (Publisher)
-
-AnnotationAssertion(dc:description dc:publisher "Examples of a Publisher include a person, an organisation,
-         or a service.
-         Typically, the name of a Publisher should be used to
-         indicate the entity."@en-us)
-AnnotationAssertion(rdfs:comment dc:publisher "An entity responsible for making the resource available"@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:publisher <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:publisher "Publisher")
-AnnotationAssertion(rdfs:label dc:publisher "Publisher"@en-us)
-
 # Annotation Property: dc:relation (Relation)
 
-AnnotationAssertion(dc:description dc:relation "
+AnnotationAssertion(terms:description dc:relation "
          Recommended best practice is to reference the resource by means
          of a string or number conforming to a formal identification
          system.
@@ -4237,7 +3984,7 @@ AnnotationAssertion(rdfs:label dc:relation "Relation"@en-us)
 
 # Annotation Property: dc:rights (Rights Management)
 
-AnnotationAssertion(dc:description dc:rights "
+AnnotationAssertion(terms:description dc:rights "
           Typically, a Rights element will contain a rights
           management statement for the resource, or reference
           a service providing such information. Rights information
@@ -4254,7 +4001,7 @@ AnnotationAssertion(rdfs:label dc:rights "Rights Management"@en-us)
 
 # Annotation Property: dc:source (Source)
 
-AnnotationAssertion(dc:description dc:source "The present resource may be derived from the Source resource
+AnnotationAssertion(terms:description dc:source "The present resource may be derived from the Source resource
          in whole or in part.  Recommended best practice is to reference
          the resource by means of a string or number conforming to a
          formal identification system."@en-us)
@@ -4264,32 +4011,9 @@ AnnotationAssertion(rdfs:isDefinedBy dc:source <http://purl.org/dc/elements/1.1/
 AnnotationAssertion(rdfs:label dc:source "Source")
 AnnotationAssertion(rdfs:label dc:source "Source"@en-us)
 
-# Annotation Property: dc:subject (Subject and Keywords)
-
-AnnotationAssertion(dc:description dc:subject "Typically, a Subject will be expressed as keywords,
-         key phrases or classification codes that describe a topic
-         of the resource.  Recommended best practice is to select
-         a value from a controlled vocabulary or formal
-         classification scheme."@en-us)
-AnnotationAssertion(rdfs:comment dc:subject "The topic of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:subject <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:subject "Subject and Keywords")
-AnnotationAssertion(rdfs:label dc:subject "Subject and Keywords"@en-us)
-
-# Annotation Property: dc:title (Title)
-
-AnnotationAssertion(dc:description dc:title "
-        Typically, a Title will be a name by which the resource is
-         formally known.
-    "@en-us)
-AnnotationAssertion(rdfs:comment dc:title "A name given to the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:title <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:title "Title")
-AnnotationAssertion(rdfs:label dc:title "Title"@en-us)
-
 # Annotation Property: dc:type (Resource Type)
 
-AnnotationAssertion(dc:description dc:type "Type includes terms describing general categories, functions,
+AnnotationAssertion(terms:description dc:type "Type includes terms describing general categories, functions,
          genres, or aggregation levels for content. Recommended best
          practice is to select a value from a controlled vocabulary
          (for example, the DCMI Type Vocabulary [DCMITYPE]). To
@@ -4300,9 +4024,29 @@ AnnotationAssertion(rdfs:isDefinedBy dc:type <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label dc:type "Resource Type")
 AnnotationAssertion(rdfs:label dc:type "Resource Type"@en-us)
 
-# Annotation Property: terms:description (terms:description)
+# Annotation Property: terms:description (Description)
 
 AnnotationAssertion(dc:identifier terms:description "description")
+AnnotationAssertion(terms:description terms:description "Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content."@en-us)
+AnnotationAssertion(rdfs:comment terms:description "An account of the content of the resource."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy terms:description <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label terms:description "Description")
+AnnotationAssertion(rdfs:label terms:description "Description"@en-us)
+
+# Annotation Property: terms:format (Format)
+
+AnnotationAssertion(terms:description terms:format "Typically, Format may include the media-type or dimensions of
+         the resource. Format may be used to determine the software,
+         hardware or other equipment needed to display or operate the
+         resource. Examples of dimensions include size and duration.
+         Recommended best practice is to select a value from a
+         controlled vocabulary (for example, the list of Internet Media
+         Types [MIME] defining computer media formats)."@en-us)
+AnnotationAssertion(rdfs:comment terms:format "The physical or digital manifestation of the resource."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy terms:format <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label terms:format "Format")
 
 # Annotation Property: schema:comment (schema:comment)
 
@@ -4315,10 +4059,6 @@ AnnotationAssertion(dc:identifier resource:example "example")
 # Annotation Property: resource:hasSynonym (resource:hasSynonym)
 
 AnnotationAssertion(dc:identifier resource:hasSynonym "hasSynonym")
-
-# Annotation Property: resource:subset (resource:subset)
-
-AnnotationAssertion(dc:identifier resource:subset "subset")
 
 # Annotation Property: ont:controlled_vocabulary_editor (ont:controlled_vocabulary_editor)
 
@@ -4380,26 +4120,18 @@ AnnotationAssertion(efo:definition efo:definition_citation "A definition citatio
 
 AnnotationAssertion(rdfs:label oboInOwl:hasAlternativeId "has_alternative_id")
 
-# Annotation Property: oboInOwl:hasBroadSynonym (has_broad_synonym)
+# Annotation Property: oboInOwl:hasBroadSynonym (has broad synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has broad synonym"@en)
-AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has_broad_synonym")
 
 # Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasExactSynonym "Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.")
-AnnotationAssertion(oboInOwl:hasExactSynonym oboInOwl:hasExactSynonym "FULL_SYN")
-AnnotationAssertion(oboInOwl:hasExactSynonym oboInOwl:hasExactSynonym "Synonym with Source Data")
-AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has exact synonym")
-AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
+AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasExactSynonym "Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software."@en)
+AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has exact synonym"@en)
 
 # Annotation Property: oboInOwl:hasNarrowSynonym (has narrow synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has narrow synonym"@en)
-
-# Annotation Property: oboInOwl:hasOBOFormatVersion (has_obo_format_version)
-
-AnnotationAssertion(rdfs:label oboInOwl:hasOBOFormatVersion "has_obo_format_version")
 
 # Annotation Property: oboInOwl:hasOBONamespace (has_obo_namespace)
 
@@ -4407,18 +4139,15 @@ AnnotationAssertion(rdfs:label oboInOwl:hasOBONamespace "has_obo_namespace")
 
 # Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
 
-AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym")
+AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym"@en)
 
 # Annotation Property: oboInOwl:hasSynonym (has synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 
-# Annotation Property: oboInOwl:inSubset (in_subset)
+# Annotation Property: oboInOwl:inSubset (in subset)
 
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:inSubset "Used to associate the concept defining a particular terminology subset with concepts that belong to this subset.")
-AnnotationAssertion(oboInOwl:hasExactSynonym oboInOwl:inSubset "Concept_In_Subset")
-AnnotationAssertion(rdfs:label oboInOwl:inSubset "in subset")
-AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset")
+AnnotationAssertion(rdfs:label oboInOwl:inSubset "in subset"@en)
 
 # Annotation Property: oboInOwl:shorthand (shorthand)
 
@@ -4431,8 +4160,6 @@ AnnotationAssertion(obo:IAO_0000589 rdfs:isDefinedBy "is defined by")
 
 # Annotation Property: rdfs:label (label)
 
-AnnotationAssertion(obo:IAO_0000111 rdfs:label "label")
-AnnotationAssertion(rdfs:label rdfs:label "label")
 AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 
 
@@ -4563,7 +4290,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000107 obo:IAO_0000123)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000107 "A relation between a service and the primary processual part of the service that is performed by the provider for the consumer.")
 AnnotationAssertion(rdfs:label obo:OBI_0000107 "provides_service_consumer_with")
 SubObjectPropertyOf(obo:OBI_0000107 obo:BFO_0000051)
-ObjectPropertyDomain(obo:OBI_0000107 obo:OBI_0001173)
 
 # Object Property: obo:OBI_0000643 (has grain)
 
@@ -4677,19 +4403,6 @@ DataPropertyRange(obo:OBI_0001937 owl:real)
 ############################
 #   Classes
 ############################
-
-# Class: edamontology:data_0970 (Citation)
-
-AnnotationAssertion(obo:IAO_0000412 edamontology:data_0970 edamontology:EDAM.owl)
-AnnotationAssertion(oboInOwl:hasDbXref edamontology:data_0970 "Moby:GCP_SimpleCitation")
-AnnotationAssertion(oboInOwl:hasDbXref edamontology:data_0970 "Moby:Publication")
-AnnotationAssertion(oboInOwl:hasDefinition edamontology:data_0970 "Bibliographic data that uniquely identifies a scientific article, book or other published material.")
-AnnotationAssertion(oboInOwl:hasExactSynonym edamontology:data_0970 "Bibliographic reference")
-AnnotationAssertion(oboInOwl:hasExactSynonym edamontology:data_0970 "Reference")
-AnnotationAssertion(oboInOwl:inSubset edamontology:data_0970 <http://purl.oboInOwllibrary.org/oboInOwl/edam#data>)
-AnnotationAssertion(oboInOwl:inSubset edamontology:data_0970 <http://purl.oboInOwllibrary.org/oboInOwl/edam#edam>)
-AnnotationAssertion(rdfs:label edamontology:data_0970 "Citation")
-SubClassOf(edamontology:data_0970 obo:IAO_0000300)
 
 # Class: obo:BFO_0000006 (spatial region)
 
@@ -5134,17 +4847,6 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CMO_0001407 "Clinical_Measureme
 AnnotationAssertion(oboInOwl:id obo:CMO_0001407 "CMO:0001407")
 AnnotationAssertion(rdfs:label obo:CMO_0001407 "ethanol drink intake rate")
 SubClassOf(obo:CMO_0001407 obo:ONS_0000089)
-
-# Class: obo:ERO_0000347 (intervention)
-
-AnnotationAssertion(obo:IAO_0000112 obo:ERO_0000347 "An drug intervention for cancer.")
-AnnotationAssertion(obo:IAO_0000114 obo:ERO_0000347 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:ERO_0000347 "A planned process used to influence one or more factors in a research study, and the independent variable in an interventional study wherein the influence is measured or evaluated.")
-AnnotationAssertion(obo:IAO_0000117 obo:ERO_0000347 "PERSON: Melanie Wilson")
-AnnotationAssertion(obo:IAO_0000119 obo:ERO_0000347 "PERSON: Melissa Haendel")
-AnnotationAssertion(obo:IAO_0000412 obo:ERO_0000347 obo:ero.owl)
-AnnotationAssertion(rdfs:label obo:ERO_0000347 "intervention")
-SubClassOf(obo:ERO_0000347 obo:OBI_0000011)
 
 # Class: obo:ERO_0001765 (anthropometric analysis)
 
@@ -50299,10 +50001,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:GAZ_00000448 "A reference to a place on 
 AnnotationAssertion(rdfs:label obo:GAZ_00000448 "geographic location")
 SubClassOf(obo:GAZ_00000448 obo:BFO_0000029)
 
-# Class: obo:GO_0006113 (fermentation)
-
-EquivalentClasses(obo:GO_0006113 obo:ONS_0000156)
-
 # Class: obo:GO_0007586 (digestion)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0007586 "The whole of the physical, chemical, and biochemical processes carried out by multicellular organisms to break down ingested nutrients into components that may be easily absorbed and directed into metabolism."@en)
@@ -50317,9 +50015,6 @@ SubClassOf(obo:GO_0019244 ObjectSomeValuesFrom(obo:RO_0002234 obo:NCIT_C76926))
 # Class: obo:GO_0019661 (glucose catabolic process to lactate via pyruvate)
 
 SubClassOf(obo:GO_0019661 obo:ONS_0000142)
-SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002018 obo:GO_0004565))
-SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002018 obo:GO_0019244))
-SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002018 obo:GO_0061621))
 SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002233 obo:NCIT_C28166))
 SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002234 obo:CHEBI_17234))
 
@@ -50596,32 +50291,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000109 "measurement datum"@en)
 SubClassOf(obo:IAO_0000109 obo:IAO_0000027)
 SubClassOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:OBI_0001938 obo:OBI_0001933))
 
-# Class: obo:IAO_0000144 (conclusion textual entity)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000144 "conclusion textual entity"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000144 "that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.PMID:19696660"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000144 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000144 "A textual entity that expresses the results of reasoning about a problem, for instance as typically found towards the end of scientific papers."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000144 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000144 "2009/10/23 Alan Ruttenberg: We need to work on the definition still"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000144 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000144 "conclusion textual entity"@en)
-SubClassOf(obo:IAO_0000144 obo:IAO_0000300)
-SubClassOf(obo:IAO_0000144 obo:OBI_0001909)
-SubClassOf(obo:IAO_0000144 ObjectSomeValuesFrom(obo:OBI_0000124 obo:IAO_0000027))
-SubClassOf(obo:IAO_0000144 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000338))
-
-# Class: obo:IAO_0000301 (citation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000301 "citation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000301 "Verspoor, K., Cohen, KB., Hunter, L. Textual characteristics of traditional and Open Access scientific journals are similar, BMC Bioinformatics 2009, 10:183."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000301 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000301 "a textual entity intended to identify a particular publication"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000301 "PERSON: Lawrence Hunter"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000301 "citation"@en)
-SubClassOf(obo:IAO_0000301 obo:IAO_0000300)
-SubClassOf(obo:IAO_0000301 ObjectSomeValuesFrom(obo:IAO_0000136 obo:IAO_0000310))
-
 # Class: obo:IAO_0000310 (document)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000310 "document"@en)
@@ -50667,47 +50336,6 @@ AnnotationAssertion(rdfs:label obo:IAO_0000416 "time measurement datum"@en)
 SubClassOf(obo:IAO_0000416 obo:IAO_0000032)
 SubClassOf(obo:IAO_0000416 ObjectIntersectionOf(ObjectAllValuesFrom(obo:IAO_0000039 obo:UO_0000003) ObjectAllValuesFrom(obo:IAO_0000413 obo:BFO_0000015)))
 
-# Class: obo:IAO_0000443 (data item extraction from journal article)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000443 "data item extraction from journal article")
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000443 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000443 "a planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing")
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000443 "Person:Alan Ruttenberg")
-AnnotationAssertion(rdfs:label obo:IAO_0000443 "data item extraction from journal article")
-SubClassOf(obo:IAO_0000443 obo:OBI_0000011)
-SubClassOf(obo:IAO_0000443 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000013))
-SubClassOf(obo:IAO_0000443 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000027))
-
-# Class: obo:IAO_0000572 (documenting)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000572 "documenting"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000572 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000572 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000572 "a planned process in which a document is created or added to by including the specified input in it."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000572 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000572 "Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000572 "wikipedia http://en.wikipedia.org/wiki/Documenting"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000572 "documenting"@en)
-SubClassOf(obo:IAO_0000572 obo:OBI_0000011)
-SubClassOf(obo:IAO_0000572 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000030))
-SubClassOf(obo:IAO_0000572 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000310))
-
-# Class: obo:IAO_0000574 (assigning a centrally registered identifier)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000574 "assigning a centrally registered identifier"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000574 "A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000574 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000574 "a planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000574 "2014-05-05: It is the CRID registry that assigns CRIDs, not the users of the registry."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000574 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000574 "Person:Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000574 "Person:Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:IAO_0000574 "assigning a CRID")
-AnnotationAssertion(rdfs:label obo:IAO_0000574 "assigning a centrally registered identifier"@en)
-SubClassOf(obo:IAO_0000574 obo:OBI_0000011)
-SubClassOf(obo:IAO_0000574 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000577))
-SubClassOf(obo:IAO_0000574 ObjectSomeValuesFrom(obo:RO_0000057 obo:IAO_0000579))
-
 # Class: obo:IAO_0000579 (centrally registered identifier registry)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000579 "centrally registered identifier registry"@en)
@@ -50722,19 +50350,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:IAO_0000579 "CRID registry")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000579 "Original proposal from Bjoern, discussions at IAO calls"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000579 "centrally registered identifier registry"@en)
 SubClassOf(obo:IAO_0000579 obo:IAO_0000100)
-
-# Class: obo:IAO_0000621 (ethical approval textual entity)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000621 "ethical approval textual entity"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000621 "From McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):
-
-The NHS National Research Ethics Service had previously approved the use of these anonymised data for research purposes and this analysis did not require independent review."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000621 "A textual entity that documents the ethical approval of some study design."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000621 "PERSON: Bill Baumgartner"@en)
-AnnotationAssertion(obo:IAO_0000233 obo:IAO_0000621 <https://github.com/information-artifact-ontology/IAO/issues/183>)
-AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000621 obo:iao.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000621 "ethical approval textual entity"@en)
-SubClassOf(obo:IAO_0000621 obo:IAO_0000300)
 
 # Class: obo:ICO_0000001 (informed consent form)
 
@@ -50756,15 +50371,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ICO_0000015 obo:ico.owl)
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:ICO_0000015 "true"^^xsd:boolean)
 AnnotationAssertion(rdfs:label obo:ICO_0000015 "signed informed consent form")
 SubClassOf(obo:ICO_0000015 obo:ICO_0000001)
-
-# Class: obo:ICO_0000069 (contact person for questions about research)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ICO_0000069 "a human person who is the contact for questions about research")
-AnnotationAssertion(obo:IAO_0000117 obo:ICO_0000069 "MH, AK, FM, YL, EE, YH")
-AnnotationAssertion(obo:IAO_0000412 obo:ICO_0000069 obo:ico.owl)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:ICO_0000069 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:ICO_0000069 "contact person for questions about research")
-SubClassOf(obo:ICO_0000069 resource:SIO_001066)
 
 # Class: obo:NCBITaxon_4890 (Ascomycota)
 
@@ -50832,20 +50438,6 @@ SubClassOf(obo:NCIT_C139218 obo:ONS_0000088)
 SubClassOf(obo:NCIT_C173982 ObjectSomeValuesFrom(obo:RO_0002248 obo:ONS_0000143))
 SubClassOf(obo:NCIT_C173982 ObjectSomeValuesFrom(obo:RO_0002248 obo:ONS_0000144))
 
-# Class: obo:NCIT_C25662 (Sampling)
-
-AnnotationAssertion(obo:IAO_0000115 obo:NCIT_C25662 "The selection and obtaining of small representative quantities of biological material for the purpose of analysis; also, in biomedical statistics, sampling is the selection and implementation of statistical observations in order to estimate properties of an underlying population; also, in environmental science, the collection of representative specimens analyzed to characterize site conditions.")
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C25662 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C25662 "C25662")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C25662 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C25662 "Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C25662 "C0870078")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C25662 "Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C25662 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C25662 "Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C25662 "Sampling")
-SubClassOf(obo:NCIT_C25662 obo:OBI_0000011)
-
 # Class: obo:NCIT_C25729 (Adherence)
 
 AnnotationAssertion(obo:IAO_0000115 obo:NCIT_C25729 "The act of abiding by a stated treatment plan or protocol.")
@@ -50862,88 +50454,6 @@ SubClassOf(obo:NCIT_C25729 obo:IAO_0000027)
 # Class: obo:NCIT_C28166 (Lactose)
 
 SubClassOf(obo:NCIT_C28166 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0000033))
-
-# Class: obo:NCIT_C53194 (Random Sampling)
-
-AnnotationAssertion(obo:IAO_0000115 obo:NCIT_C53194 "A method of selecting a sample from a population in such a way that every sample that could be selected has an equal chance of being selected.")
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C53194 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C53194 "C53194")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C53194 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C53194 "Random Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C53194 "C0150105")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C53194 "Random_Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C53194 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C53194 "Probabilty Sampling")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C53194 "Random Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C53194 "Random Sampling")
-SubClassOf(obo:NCIT_C53194 obo:NCIT_C25662)
-
-# Class: obo:NCIT_C53196 (Simple Random Sampling)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C53196 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C53196 "C53196")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C53196 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C53196 "Simple Random Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C53196 "C0681878")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C53196 "Simple_Random_Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C53196 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C53196 "Simple Random Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C53196 "Simple Random Sampling")
-SubClassOf(obo:NCIT_C53196 obo:NCIT_C25662)
-
-# Class: obo:NCIT_C53204 (Convenience Sampling)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C53204 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C53204 "C53204")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C53204 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C53204 "Convenience Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C53204 "C0150095")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C53204 "Convenience_Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C53204 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C53204 "Convenience Sampling")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C53204 "Volunteer Sample")
-AnnotationAssertion(rdfs:label obo:NCIT_C53204 "Convenience Sampling")
-SubClassOf(obo:NCIT_C53204 obo:NCIT_C25662)
-
-# Class: obo:NCIT_C71496 (Stratified Random Sampling)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C71496 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C71496 "C71496")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C71496 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C71496 "Stratified Random Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C71496 "C0681879")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C71496 "Stratified_Random_Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C71496 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C71496 "Stratified Random Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C71496 "Stratified Random Sampling")
-SubClassOf(obo:NCIT_C71496 obo:NCIT_C25662)
-
-# Class: obo:NCIT_C71503 (Judgment Sampling)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C71503 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C71503 "C71503")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C71503 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C71503 "Judgment Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C71503 "C2346606")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C71503 "Judgement_Sampling")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C71503 "Judgement Sampling")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C71503 "Judgment Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C71503 "Judgment Sampling")
-SubClassOf(obo:NCIT_C71503 obo:NCIT_C25662)
-
-# Class: obo:NCIT_C71515 (Multi-Stage Sampling)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C71515 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C71515 "C71515")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C71515 "Activity")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C71515 "Multi-Stage Sampling")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C71515 "C1709096")
-AnnotationAssertion(obo:NCIT_P366 obo:NCIT_C71515 "Multi-Stage_Sampling")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C71515 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C71515 "Multi-Stage Sampling")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C71515 "Multistage Sampling")
-AnnotationAssertion(rdfs:label obo:NCIT_C71515 "Multi-Stage Sampling")
-SubClassOf(obo:NCIT_C71515 obo:NCIT_C25662)
 
 # Class: obo:NCIT_C76926 (Lactic Acid)
 
@@ -50966,42 +50476,7 @@ SubClassOf(obo:NCIT_C86036 ObjectSomeValuesFrom(obo:RO_0000056 obo:ONS_0000086))
 
 # Class: obo:NCIT_C98714 (Clinical Trial Registry Identifier)
 
-AnnotationAssertion(obo:IAO_0000115 obo:NCIT_C98714 "A sequence of letters, numbers, or other characters that uniquely identifies a clinical trial within a clinical trial registry.")
-AnnotationAssertion(obo:IAO_0000412 obo:NCIT_C98714 obo:ncit.owl)
-AnnotationAssertion(obo:NCIT_NHC0 obo:NCIT_C98714 "C98714")
-AnnotationAssertion(obo:NCIT_P106 obo:NCIT_C98714 "Intellectual Product")
-AnnotationAssertion(obo:NCIT_P108 obo:NCIT_C98714 "Clinical Trial Registry Identifier")
-AnnotationAssertion(obo:NCIT_P207 obo:NCIT_C98714 "C3274381")
-AnnotationAssertion(obo:NCIT_P322 obo:NCIT_C98714 "CDISC")
-AnnotationAssertion(obo:NCIT_P325 obo:NCIT_C98714 "Identification numbers assigned to the protocol by clinicaltrials.gov, EudraCT, or other registries.")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C98714 "true"^^xsd:boolean)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C98714 "Clinical Trial Registry Identifier")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C98714 "REGID")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCIT_C98714 "Registry Identifier")
-AnnotationAssertion(oboInOwl:inSubset obo:NCIT_C98714 <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410>)
-AnnotationAssertion(oboInOwl:inSubset obo:NCIT_C98714 <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66738>)
-AnnotationAssertion(oboInOwl:inSubset obo:NCIT_C98714 <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830>)
-AnnotationAssertion(oboInOwl:inSubset obo:NCIT_C98714 <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67152>)
-AnnotationAssertion(rdfs:label obo:NCIT_C98714 "Clinical Trial Registry Identifier")
 SubClassOf(obo:NCIT_C98714 obo:IAO_0000300)
-
-# Class: obo:OBCS_0000002 (data collection)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBCS_0000002 "a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBCS_0000002 "Jie Zheng, Oliver He")
-AnnotationAssertion(obo:IAO_0000119 obo:OBCS_0000002 "WEB: http://en.wikipedia.org/wiki/Data_collection ")
-AnnotationAssertion(obo:IAO_0000412 obo:OBCS_0000002 obo:obcs.owl)
-AnnotationAssertion(rdfs:label obo:OBCS_0000002 "data collection"@en)
-SubClassOf(obo:OBCS_0000002 obo:OBI_0000011)
-
-# Class: obo:OBCS_0000089 (randomization sampling design)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBCS_0000089 "A data sampling design that uses randomization for sample selection")
-AnnotationAssertion(obo:IAO_0000117 obo:OBCS_0000089 "Marcy Harris, Jie Zheng, Yongqun He")
-AnnotationAssertion(obo:IAO_0000118 obo:OBCS_0000089 "randomization sampling plan")
-AnnotationAssertion(obo:IAO_0000412 obo:OBCS_0000089 obo:obcs.owl)
-AnnotationAssertion(rdfs:label obo:OBCS_0000089 "randomization sampling design")
-SubClassOf(obo:OBCS_0000089 resource:SIO_001066)
 
 # Class: obo:OBCS_0000120 (data matrix)
 
@@ -51012,23 +50487,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBCS_0000120 "WEB: https://en.wikipedia.
 AnnotationAssertion(obo:IAO_0000412 obo:OBCS_0000120 obo:obcs.owl)
 AnnotationAssertion(rdfs:label obo:OBCS_0000120 "data matrix")
 SubClassOf(obo:OBCS_0000120 obo:IAO_0000027)
-
-# Class: obo:OBCS_0000130 (data collection from literature)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBCS_0000130 "A data collection process that results in a collection of data from the literature.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBCS_0000130 "Jie Zheng, Oliver He")
-AnnotationAssertion(obo:IAO_0000412 obo:OBCS_0000130 obo:obcs.owl)
-AnnotationAssertion(rdfs:label obo:OBCS_0000130 "data collection from literature"@en)
-SubClassOf(obo:OBCS_0000130 obo:OBCS_0000002)
-
-# Class: obo:OBIB_0000018 (form filling)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OBIB_0000018 "A document editing process in which one or more fields in a form are filled with related information, such as when answering a questionnare.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBIB_0000018 "Person: Jie Zheng, Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000119 obo:OBIB_0000018 "Penn Group")
-AnnotationAssertion(obo:IAO_0000412 obo:OBIB_0000018 obo:obib.owl)
-AnnotationAssertion(rdfs:label obo:OBIB_0000018 "form filling"@en)
-SubClassOf(obo:OBIB_0000018 obo:OBI_0302908)
 
 # Class: obo:OBIB_0000019 (filled patient questionnaire)
 
@@ -51099,68 +50557,6 @@ SubClassOf(obo:OBI_0000049 ObjectSomeValuesFrom(obo:OBI_0000647 ObjectUnionOf(ob
 SubClassOf(obo:OBI_0000049 ObjectSomeValuesFrom(obo:RO_0000053 obo:OBI_0000654))
 SubClassOf(obo:OBI_0000049 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000453))
 
-# Class: obo:OBI_0000066 (investigation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000066 "investigation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000066 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000066 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000066 "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000066 "Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000066 "OBI branch derived"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000066 "Could add specific objective specification")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000066 "Following OBI call November 2012,26th: it was decided there was no need for adding \"achieves objective of drawing conclusion\" as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core
-editor = PRS"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000066 obo:obi.owl)
-AnnotationAssertion(obo:OBI_0001847 obo:OBI_0000066 "study")
-AnnotationAssertion(rdfs:label obo:OBI_0000066 "investigation"@en)
-EquivalentClasses(obo:OBI_0000066 resource:SIO_001066)
-SubClassOf(obo:OBI_0000066 obo:OBI_0000011)
-SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000572))
-SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000338))
-SubClassOf(obo:OBI_0000066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000471))
-
-# Class: obo:OBI_0000073 (sample preparation for assay)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000073 "sample preparation for assay"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000073 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000073 "A sample_preparation_for_assay is a protocol_application including material_enrollments and biomaterial_transformations. definition_source: OBI."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000073 "PlanAndPlannedProcess Branch"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000073 "study"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000073 "OBI branch derived"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000073 "sample preparation for assay"@en)
-SubClassOf(obo:OBI_0000073 obo:OBI_0000094)
-SubClassOf(obo:OBI_0000073 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000456))
-
-# Class: obo:OBI_0000075 (diagnosis textual entity)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000075 "diagnosis textual entity"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000075 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000075 "diagnosis is an assessment of a disease or injury, its likely prognosis and treatment."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000075 "Jennifer Fostel"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000075 "diagnosis textual entity"@en)
-SubClassOf(obo:OBI_0000075 obo:IAO_0000300)
-
-# Class: obo:OBI_0000094 (material processing)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000094 "material processing"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000094 "A cell lysis, production of a cloning vector, creating a buffer.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000094 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000094 "A planned process which results in physical changes in a specified input material"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000094 "PERSON: Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000094 "PERSON: Frank Gibson")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000094 "PERSON: Jennifer Fostel")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000094 "PERSON: Melanie Courtot")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000094 "PERSON: Philippe Rocca Serra")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000094 "material transformation"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000094 "OBI branch derived"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0000094 "material processing"@en)
-EquivalentClasses(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000456))
-SubClassOf(obo:OBI_0000094 obo:OBI_0000011)
-SubClassOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000047))
-SubClassOf(obo:OBI_0000094 ObjectAllValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000094 ObjectAllValuesFrom(obo:OBI_0000299 obo:BFO_0000040))
-
 # Class: obo:OBI_0000096 (protocol testing objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000096 "protocol testing objective"@en)
@@ -51181,19 +50577,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000102 "responsible party")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000102 "OBI"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0000102 "responsible party role"@en)
 SubClassOf(obo:OBI_0000102 obo:OBI_0000202)
-
-# Class: obo:OBI_0000103 (principal investigator role)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000103 "principal investigator role"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000103 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000103 "a responsible party role played by a person responsible for the overall conduct of a study"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000103 "Person: Jennifer Fostel"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000103 "principal investigator")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000103 "CDISC definition: A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at a trial site, the investigator is the responsible leader of the team and may be called the principal investigator. 2. The individual principal investigator. 2. The individual under whose immediate direction the test article is administered or dispensed to, or used involving, a subject, or, in the event of an investigation conducted by a team of individuals, is See also sponsor-investigator.; Leiter der klinischen Prufung.Under the German Drug Law, the physician who is head of the clinical investigation (CDISC): coordinating investigator (CDISC) (also study coordinator, MUSC); sponsor-investigator. An individual who both initiates and conducts, alone or with others, a clinical trial, and under whose immediate direction the investigational product is administered to, dispensed to, or used by a subject.NOTE: The term does not include any person other than an individual, hence not a corporation, agency (CDISC)"@en)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0000103 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0000103 "principal investigator role"@en)
-SubClassOf(obo:OBI_0000103 obo:OBI_0000102)
-SubClassOf(obo:OBI_0000103 resource:SIO_001066)
 
 # Class: obo:OBI_0000151 (filter paper)
 
@@ -51268,36 +50651,6 @@ AnnotationAssertion(obo:OBI_0001847 obo:OBI_0000272 "study protocol")
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0000272 "true"^^xsd:boolean)
 AnnotationAssertion(rdfs:label obo:OBI_0000272 "protocol"@en)
 SubClassOf(obo:OBI_0000272 obo:IAO_0000104)
-
-# Class: obo:OBI_0000274 (adding a material entity into a target)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000274 "adding a material entity into a target"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000274 "Injecting a drug into a mouse. Adding IL-2 to a cell culture. Adding NaCl into water.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000274 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000274 "is a process with the objective to place a material entity bearing the 'material to be added role' into a material bearing the 'target of material addition role'."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000274 "Class was renamed from 'administering substance', as this is commonly used only for additions into organisms.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000274 "BP")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000274 "branch derived")
-AnnotationAssertion(rdfs:label obo:OBI_0000274 "adding a material entity into a target"@en)
-EquivalentClasses(obo:OBI_0000274 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000434))
-SubClassOf(obo:OBI_0000274 obo:OBI_0000652)
-SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000319))
-SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000444))
-SubClassOf(obo:OBI_0000274 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000319) ObjectSomeValuesFrom(obo:RO_0001025 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000444))))))
-
-# Class: obo:OBI_0000338 (drawing a conclusion based on data)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000338 "drawing a conclusion based on data"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000338 "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. ")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000338 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000338 "A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000338 "PERSON: Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000338 "PERSON: Jennifer Fostel")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000338 "Bjoern Peters")
-AnnotationAssertion(rdfs:label obo:OBI_0000338 "drawing a conclusion based on data"@en)
-SubClassOf(obo:OBI_0000338 obo:OBI_0000011)
-SubClassOf(obo:OBI_0000338 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000027))
-SubClassOf(obo:OBI_0000338 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0001909))
 
 # Class: obo:OBI_0000345 (mass analyzer)
 
@@ -51432,7 +50785,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000451 "A data set that is produced
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000451 "PERSON: James Malone")
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000451 "PERSON: Melanie Courtot")
 AnnotationAssertion(rdfs:label obo:OBI_0000451 "normalized data set"@en)
-EquivalentClasses(obo:OBI_0000451 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0200169))
 SubClassOf(obo:OBI_0000451 obo:IAO_0000100)
 
 # Class: obo:OBI_0000456 (material transformation objective)
@@ -51451,25 +50803,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000456 "GROUP: OBI PlanAndPlannedPr
 AnnotationAssertion(rdfs:label obo:OBI_0000456 "material transformation objective"@en)
 SubClassOf(obo:OBI_0000456 obo:IAO_0000005)
 
-# Class: obo:OBI_0000457 (manufacturing)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000457 "manufacturing"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000457 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000457 "Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000457 "Manufacturing implies reproducibility and responsibility AR")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000457 "This includes a single scientist making a processed material for personal use."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000457 "PERSON: Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000457 "PERSON: Frank Gibson")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000457 "PERSON: Jennifer Fostel")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000457 "PERSON: Melanie Courtot")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000457 "PERSON: Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000457 "GROUP: OBI PlanAndPlannedProcess Branch")
-AnnotationAssertion(rdfs:label obo:OBI_0000457 "manufacturing"@en)
-EquivalentClasses(obo:OBI_0000457 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000458))
-SubClassOf(obo:OBI_0000457 obo:OBI_0000094)
-SubClassOf(obo:OBI_0000457 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000457 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000047))
-
 # Class: obo:OBI_0000458 (manufacturing objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000458 "manufacturing objective"@en)
@@ -51483,20 +50816,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000458 "PERSON: Philippe Rocca-Serr
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000458 "GROUP: OBI PlanAndPlannedProcess Branch")
 AnnotationAssertion(rdfs:label obo:OBI_0000458 "manufacturing objective"@en)
 SubClassOf(obo:OBI_0000458 obo:OBI_0000456)
-
-# Class: obo:OBI_0000471 (study design execution)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000471 "study design execution")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000471 "injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000471 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000471 "a planned process that carries out a study design")
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000471 "a planned process that realizes the concretization of a study design")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000471 "removed axiom has_part some (assay or 'data transformation') per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired.")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000471 "branch derived")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000471 "6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation.")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000471 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000471 "study design execution")
-SubClassOf(obo:OBI_0000471 obo:OBI_0000011)
 
 # Class: obo:OBI_0000520 (clinical chemistry assay)
 
@@ -51547,21 +50866,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000639 "PPPB branch")
 AnnotationAssertion(rdfs:label obo:OBI_0000639 "material separation objective")
 EquivalentClasses(obo:OBI_0000639 ObjectUnionOf(obo:OBI_0000678 obo:OBI_0000681))
 SubClassOf(obo:OBI_0000639 obo:OBI_0000456)
-
-# Class: obo:OBI_0000652 (material combination)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000652 "material combination")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000652 "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000652 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000652 "is a material processing with the objective to combine two or more material entities as input into a single material entity as output.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000652 "created at workshop as parent class for 'adding material into target', which is asymmetric, while combination encompasses all addition processes.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000652 "bp")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000652 "bp")
-AnnotationAssertion(rdfs:label obo:OBI_0000652 "material combination")
-EquivalentClasses(obo:OBI_0000652 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000686))
-SubClassOf(obo:OBI_0000652 obo:OBI_0000094)
-SubClassOf(obo:OBI_0000652 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0000652 ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040))
 
 # Class: obo:OBI_0000654 (device setting)
 
@@ -51629,8 +50933,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000721 "NuGO OBI plan branch")
 AnnotationAssertion(rdfs:label obo:OBI_0000721 "glucose tolerance test")
 SubClassOf(obo:OBI_0000721 obo:OBI_0000070)
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:OBI_0000418 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:OBI_0000751)))))
-SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000109) ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000038))))
-SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:OBI_0600007 ObjectSomeValuesFrom(obo:OBI_0000293 obo:CHEBI_17234))))
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:OBI_0000750)))
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:OBI_0000314 obo:HP_0000855))))
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000015))
@@ -51682,20 +50984,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000806 "PERSON: Bjoern Peters")
 AnnotationAssertion(rdfs:label obo:OBI_0000806 "material maintenance objective")
 SubClassOf(obo:OBI_0000806 obo:IAO_0000005)
 
-# Class: obo:OBI_0000810 (informed consent process)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000810 "informed consent process")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000810 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000810 "A planned process in which a person or their legal representative is informed about key facts about potential risks and benefits of a process and makes a documented decision as to whether the person in question will participate.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0000810 "09/28/2009 Alan Ruttenberg: This is made a subclass of the higher level processual entity in BFO because I don't want to take a stand on whether it is a process aggregate. Analogous to the situation with Material entity.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000810 "Person:Alan Ruttenberg")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000810 "http://clinicaltrials.gov/ct2/info/glossary#informed")
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000810 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case")
-AnnotationAssertion(rdfs:label obo:OBI_0000810 "informed consent process")
-SubClassOf(obo:OBI_0000810 obo:OBI_0000011)
-SubClassOf(obo:OBI_0000810 ObjectSomeValuesFrom(obo:OBI_0000293 obo:NCBITaxon_9606))
-SubClassOf(obo:OBI_0000810 ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000202)))
-
 # Class: obo:OBI_0000828 (research organization)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000828 "research organization")
@@ -51717,25 +51005,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000832 "OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0000832 "measurement device")
 EquivalentClasses(obo:OBI_0000832 ObjectIntersectionOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000453)))
 SubClassOf(obo:OBI_0000832 obo:OBI_0000968)
-
-# Class: obo:OBI_0000838 (material maintenance)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000838 "material maintenance")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000838 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000838 "a process with that achieves the objective to maintain some or all of the characteristics of an input material over time")
-AnnotationAssertion(rdfs:label obo:OBI_0000838 "material maintenance")
-EquivalentClasses(obo:OBI_0000838 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000806))
-SubClassOf(obo:OBI_0000838 obo:OBI_0000011)
-
-# Class: obo:OBI_0000931 (study intervention)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000931 "study intervention")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000931 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000931 "the part of the execution of an intervention design study which is varied between two or more subjects in the study")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000931 "PERSON: Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000931 "GROUP: OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000931 "study intervention")
-SubClassOf(obo:OBI_0000931 obo:OBI_0000011)
 
 # Class: obo:OBI_0000932 (material separation device)
 
@@ -51781,7 +51050,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000968 "instrument")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000968 "OBI development call 2012-12-17.")
 AnnotationAssertion(rdfs:label obo:OBI_0000968 "device")
 SubClassOf(obo:OBI_0000968 obo:OBI_0000047)
-SubClassOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000094))
 SubClassOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034))
 
 # Class: obo:OBI_0000969 (dose specification)
@@ -51814,27 +51082,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000984 obo:IAO_0000123)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000984 "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.")
 AnnotationAssertion(rdfs:label obo:OBI_0000984 "dose")
 SubClassOf(obo:OBI_0000984 obo:IAO_0000109)
-
-# Class: obo:OBI_0000988 (performing a diagnosis)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000988 "performing a diagnosis")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000988 "Diagnosing that a patient has pneumonia based on information on measurements of temperature, sound of breathing, and patient complaining about a headache.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000988 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000988 "The interpretation of the information available about bodily features (clinical picture) of a patient resulting in a diagnosis")
-AnnotationAssertion(rdfs:label obo:OBI_0000988 "performing a diagnosis")
-SubClassOf(obo:OBI_0000988 obo:OBI_0200000)
-SubClassOf(obo:OBI_0000988 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000075))
-
-# Class: obo:OBI_0000995 (administration of material to specimen)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000995 "administration of material to specimen")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000995 "Staining cells in a tissue slice with a dye. ")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000995 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000995 "The directed combination of a material entity with a specimen.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000995 "Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000995 "Bjoern Peters")
-AnnotationAssertion(rdfs:label obo:OBI_0000995 "administration of material to specimen")
-SubClassOf(obo:OBI_0000995 obo:OBI_0000274)
 
 # Class: obo:OBI_0001000 (questionnaire)
 
@@ -51870,87 +51117,6 @@ SubClassOf(obo:OBI_0001057 obo:OBI_0001139)
 
 SubClassOf(obo:OBI_0001139 obo:OBI_0000048)
 
-# Class: obo:OBI_0001173 (service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001173 "service")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001173 "providing a training course for UCSD employees how to run a DNA sequencer; sequencing a DNA sample provided by a service consumer restricted to non-human samples; giving access to tissue samples in a biobank within OHSU; JAX shipping mice from their colony ")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001173 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001173 "A planned process in which a service provider performs a task (i.e. a planned process) for a service consumer.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001173 "Carlo; Matt")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001173 "OBI workshop San Diego 2011")
-AnnotationAssertion(rdfs:label obo:OBI_0001173 "service")
-EquivalentClasses(obo:OBI_0001173 ObjectIntersectionOf(obo:OBI_0000011 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000941) ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000947))))
-SubClassOf(obo:OBI_0001173 obo:OBI_0000011)
-SubClassOf(obo:OBI_0001173 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000011))
-
-# Class: obo:OBI_0001515 (material maintenance service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001515 "material maintenance service")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001515 "model organism colony maintanance")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001515 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001515 "A material processing service in which a service provider makes physical modifications to a specified input material, such that at least one of the specified outputs of this process is a modified version of a specified input material.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001515 "PERSON: Carlo Torniai")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001515 "PERSON: Matthew Brush")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001515 "PERSON: Matthew Brush")
-AnnotationAssertion(rdfs:comment obo:OBI_0001515 "Here we need to go back to the defintoin of storage process. It has object specification which is material maintenance. Not necessareley a material maintenance is needed in a storage process. ")
-AnnotationAssertion(rdfs:label obo:OBI_0001515 "material maintenance service")
-EquivalentClasses(obo:OBI_0001515 ObjectIntersectionOf(obo:OBI_0001528 ObjectSomeValuesFrom(obo:OBI_0000107 obo:OBI_0000838)))
-SubClassOf(obo:OBI_0001515 obo:OBI_0001528)
-
-# Class: obo:OBI_0001528 (material service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001528 "material service")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001528 "A service performing DNA sequencing, a service preforming cell analysis. A service performing cell line immortalization")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001528 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001528 "A service which has a material entity as specified input and/or specified output.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001528 "PERSON: Carlo Torniai")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001528 "PERSON: Matthew Brush")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001528 "PERSON: Carlo Torniai")
-AnnotationAssertion(rdfs:label obo:OBI_0001528 "material service")
-EquivalentClasses(obo:OBI_0001528 ObjectIntersectionOf(obo:OBI_0001173 ObjectSomeValuesFrom(obo:OBI_0000107 ObjectUnionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040) ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040)))))
-SubClassOf(obo:OBI_0001528 obo:OBI_0001173)
-
-# Class: obo:OBI_0001547 (material analysis service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001547 "material analysis service")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001547 "Services performing DNA sequencing or Cell Analysis")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001547 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001547 "A service in which a service consumer provides some input material and a service provider performs some analysis of this material to generate data that is returned to the service consumer.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001547 "PERSON: Carlo Torniai")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001547 "PERSON: Matthew Brush")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001547 "PERSON: Matthew Brush")
-AnnotationAssertion(rdfs:label obo:OBI_0001547 "material analysis service")
-EquivalentClasses(obo:OBI_0001547 ObjectIntersectionOf(obo:OBI_0001528 ObjectSomeValuesFrom(obo:OBI_0000107 obo:OBI_0000070)))
-SubClassOf(obo:OBI_0001547 obo:OBI_0001528)
-
-# Class: obo:OBI_0001557 (material storage service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001557 "material storage service")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001557 "A service that offers liquid nitrogen stroage.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001557 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001557 "A storage service in which a service consumer provides some material as input which a service provider stores and returns as output.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001557 "PERSON: Carlo Torniai")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001557 "PERSON: Matthew Brush")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001557 "PERSON: Matthew Brush")
-AnnotationAssertion(rdfs:label obo:OBI_0001557 "material storage service")
-EquivalentClasses(obo:OBI_0001557 ObjectIntersectionOf(obo:OBI_0001528 ObjectSomeValuesFrom(obo:OBI_0000107 obo:OBI_0302893)))
-SubClassOf(obo:OBI_0001557 obo:OBI_0001515)
-
-# Class: obo:OBI_0001615 (investigation description)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001615 "investigation description"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001615 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001615 "A textual entity that describes an investigation."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001615 "Person: Chris Stoeckert, Jie Zheng"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001615 "NIAID GSCID-BRC metadata working group"@en)
-AnnotationAssertion(obo:OBI_0001847 obo:OBI_0001615 "study description")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001615 "project description"@en)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001615 "true"^^xsd:boolean)
-AnnotationAssertion(dc:source obo:OBI_0001615 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001615 "investigation description"@en)
-SubClassOf(obo:OBI_0001615 obo:IAO_0000300)
-SubClassOf(obo:OBI_0001615 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0000066))
-
 # Class: obo:OBI_0001616 (specimen identifier)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001616 "specimen identifier"@en)
@@ -51980,21 +51146,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0001617 "PubMed ID"@en)
 SubClassOf(obo:OBI_0001617 obo:IAO_0000577)
 SubClassOf(obo:OBI_0001617 ObjectExactCardinality(1 obo:IAO_0000219 obo:IAO_0000311))
 
-# Class: obo:OBI_0001622 (investigation title)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001622 "investigation title"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001622 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001622 "A textual entity that denotes an investigation."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001622 "Person:Chris Stoeckert, Jie Zheng"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001622 "NIAID GSCID-BRC metadata working group"@en)
-AnnotationAssertion(obo:OBI_0001847 obo:OBI_0001622 "study title")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001622 "project title"@en)
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001622 "true"^^xsd:boolean)
-AnnotationAssertion(dc:source obo:OBI_0001622 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001622 "investigation title"@en)
-SubClassOf(obo:OBI_0001622 obo:IAO_0000300)
-SubClassOf(obo:OBI_0001622 ObjectSomeValuesFrom(obo:IAO_0000219 obo:OBI_0000066))
-
 # Class: obo:OBI_0001626 (Bioinformatics Resource Center)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001626 "Bioinformatics Resource Center"@en)
@@ -52006,21 +51157,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001626 "Website: http://en.wikipedi
 AnnotationAssertion(dc:source obo:OBI_0001626 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001626 "Bioinformatics Resource Center"@en)
 SubClassOf(obo:OBI_0001626 obo:OBI_0000245)
-
-# Class: obo:OBI_0001627 (country name)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001627 "country name"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001627 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001627 "A textual entity that denotes a geographic location that is a site or part of a site that is identified as a country in the political geography."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001627 "Person: Chris Stoeckert, Jie Zheng"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001627 "NIAID GSCID-BRC metadata working group"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001627 "Website: http://en.wikipedia.org/wiki/Country"@en)
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001627 "Specimen Collection Location - Country")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001627 "true"^^xsd:boolean)
-AnnotationAssertion(dc:source obo:OBI_0001627 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001627 "country name"@en)
-SubClassOf(obo:OBI_0001627 obo:IAO_0000300)
-SubClassOf(obo:OBI_0001627 ObjectSomeValuesFrom(obo:IAO_0000219 obo:GAZ_00000448))
 
 # Class: obo:OBI_0001628 (investigation identifier)
 
@@ -52056,7 +51192,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001630 obo:IAO_0000120)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001630 "An analyte assay that uses a biomaterial's preferential affinity for either the mobile phase or the stationary phase to separate it from other materials and thereby detect its presence in an input material.")
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001630 "IEDB")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001630 "IEDB")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0001630 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0001630 "analytical chromatography")
 SubClassOf(obo:OBI_0001630 obo:OBI_0000443)
 
@@ -52097,19 +51232,6 @@ AnnotationAssertion(dc:source obo:OBI_0001769 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001769 "specimen collector role"@en)
 SubClassOf(obo:OBI_0001769 obo:OBI_0000202)
 SubClassOf(obo:OBI_0001769 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245) ObjectSomeValuesFrom(obo:RO_0000053 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:OBI_0000684 ObjectSomeValuesFrom(obo:OBI_0000833 ObjectIntersectionOf(obo:OBI_0000659 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OBI_0000066)))))))))
-
-# Class: obo:OBI_0001834 (drawing a conclusion)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001834 "drawing a conclusion")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001834 "Concluding that the length of the hypotenuse is equal to the square root of the sum of squares of the other two sides in a right-triangle.
-Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting.
-")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001834 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001834 "A planned process in which new information is inferred from existing information.")
-AnnotationAssertion(rdfs:label obo:OBI_0001834 "drawing a conclusion")
-EquivalentClasses(obo:OBI_0001834 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000144))
-SubClassOf(obo:OBI_0001834 obo:OBI_0000011)
-SubClassOf(obo:OBI_0001834 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000030))
 
 # Class: obo:OBI_0001880 (organization of specimen provider principal investigator)
 
@@ -52173,7 +51295,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001891 "NIAID GSCID-BRC metadata wo
 AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001891 "Sequencing Facility")
 AnnotationAssertion(dc:source obo:OBI_0001891 "NIAID GSCID-BRC")
 AnnotationAssertion(rdfs:label obo:OBI_0001891 "sequencing facility organization"@en)
-EquivalentClasses(obo:OBI_0001891 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 ObjectIntersectionOf(obo:OBI_0000947 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OBI_0001904)))))
 SubClassOf(obo:OBI_0001891 obo:OBI_0000245)
 
 # Class: obo:OBI_0001893 (organization of specimen collector)
@@ -52216,19 +51337,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0001897 "organization of sequencing facil
 EquivalentClasses(obo:OBI_0001897 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:OBI_0001688 obo:OBI_0001888)))
 SubClassOf(obo:OBI_0001897 obo:OBI_0000245)
 
-# Class: obo:OBI_0001898 (comment on investigation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001898 "comment on investigation"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001898 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001898 "A textual entity that is about any of the aspects of an investigation worth noting")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001898 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001898 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001898 "Comments")
-AnnotationAssertion(dc:source obo:OBI_0001898 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001898 "comment on investigation"@en)
-EquivalentClasses(obo:OBI_0001898 ObjectIntersectionOf(obo:IAO_0000300 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectUnionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000066)) ObjectSomeValuesFrom(obo:BFO_0000050 obo:OBI_0000066)))))
-SubClassOf(obo:OBI_0001898 obo:IAO_0000300)
-
 # Class: obo:OBI_0001900 (specimen identifier assigned by specimen repository)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001900 "specimen identifier assigned by specimen repository"@en)
@@ -52255,30 +51363,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0001901 "specimen identifier assigned by 
 EquivalentClasses(obo:OBI_0001901 ObjectIntersectionOf(obo:OBI_0001616 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0000574 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0001891)))))
 SubClassOf(obo:OBI_0001901 obo:OBI_0001616)
 
-# Class: obo:OBI_0001902 (sample preparation for sequencing assay)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001902 "sample preparation for sequencing assay"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001902 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001902 "A sample preparation for assay that preparation of nucleic acids for a sequencing assay")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001902 "PERSON: Chris Stoeckert, Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001902 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:OBI_0001886 obo:OBI_0001902 "Nucleic Acid Preparation Method")
-AnnotationAssertion(dc:source obo:OBI_0001902 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001902 "sample preparation for sequencing assay"@en)
-SubClassOf(obo:OBI_0001902 obo:OBI_0000073)
-
-# Class: obo:OBI_0001904 (sequencing service)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001904 "sequencing service"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001904 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001904 "A service provides sequencing service which is the realization of some sequencing such as RNA and DNA sequencing in which the service provider role is realized.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001904 "Person: Jie Zheng")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001904 "Adpated from 'DNA sequencing service'")
-AnnotationAssertion(dc:source obo:OBI_0001904 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001904 "sequencing service"@en)
-EquivalentClasses(obo:OBI_0001904 ObjectIntersectionOf(obo:OBI_0001528 ObjectSomeValuesFrom(obo:OBI_0000107 obo:OBI_0600047)))
-SubClassOf(obo:OBI_0001904 obo:OBI_0001547)
-
 # Class: obo:OBI_0001909 (conclusion based on data)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001909 "conclusion based on data")
@@ -52292,47 +51376,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001909 "Group:2013 Philly Workshop 
 AnnotationAssertion(rdfs:label obo:OBI_0001909 "conclusion based on data")
 SubClassOf(obo:OBI_0001909 obo:IAO_0000030)
 SubClassOf(obo:OBI_0001909 ObjectSomeValuesFrom(obo:OBI_0000124 obo:IAO_0000027))
-SubClassOf(obo:OBI_0001909 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000338))
-
-# Class: obo:OBI_0001928 (selection)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001928 "selection"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0001928 "PMID: 24023800.  In this study, a set of eleven genes (VATP16, 60 S, UQCC, SMD3, EF1α, UBQ, SAND, GAPDH, ACT, PsaB, PTB2) was evaluated to identify reference genes during the first hours of interaction (6, 12, 18 and 24 hpi) between two V. vinifera genotypes and P. viticola. Two analyses were used for the selection of reference genes: direct comparison of susceptible, Trincadeira, and resistant, Regent, V. vinifera cultivars at 0 h, 6, 12, 18 and 24 hours post inoculation with P. viticola (genotype effect); and comparison of each genotype with mock inoculated samples during inoculation time-course (biotic stress effect). Three statistical methods were used, GeNorm, NormFinder, and BestKeeper, allowing to identify UBQ, EF1α and GAPDH as the most stable genes for the genotype effect."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001928 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001928 "A planned process which results in the creation of group of entity from a larger group by the application of predefined criteria."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0001928 "this term refers to  a planned process and therefore is distinct from the notion of 'natural selection', a process covering the operation of natural causes by which those individuals of a species that are best adapted to the environment tend to be preserved and to transmit their characters, while those less adapted die out, so that in the course of generations the degree of adaptation to the environment tends progressively to increase. (as defined by Oxford English Dictionary)"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001928 "Person: Philippe Rocca-Serra"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0001928 "selection process"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001928 "OBI"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0001928 "selection"@en)
-EquivalentClasses(obo:OBI_0001928 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:OBI_0001755)))
-SubClassOf(obo:OBI_0001928 obo:OBI_0000011)
-
-# Class: obo:OBI_0001932 (comparing prediction to measurement)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001932 "comparing prediction to measurement")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001932 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001932 "A planned process in which predicted values for some thing are compared to measured values for that thing.")
-AnnotationAssertion(rdfs:label obo:OBI_0001932 "comparing prediction to measurement")
-SubClassOf(obo:OBI_0001932 obo:OBI_0000011)
-SubClassOf(obo:OBI_0001932 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000001 ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:OBI_0001934))))))))
-SubClassOf(obo:OBI_0001932 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0001934))
-
-# Class: obo:OBI_0001942 (grant agency)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0001942 "grant agency"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0001942 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0001942 "An organization that provides funding support for projects such as investigations.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0001942 "PERSON: Jie Zheng, Chris Stoeckert")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0001942 "funding organization")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0001942 "NIAID GSCID-BRC metadata working group")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001942 "true"^^xsd:boolean)
-AnnotationAssertion(dc:source obo:OBI_0001942 "NIAID GSCID-BRC")
-AnnotationAssertion(rdfs:label obo:OBI_0001942 "grant agency"@en)
-AnnotationAssertion(rdfs:seeAlso obo:OBI_0001942 "'funding organization'
-http://vivoweb.org/ontology/core#FundingOrganization")
-SubClassOf(obo:OBI_0001942 obo:OBI_0000245)
-SubClassOf(obo:OBI_0001942 resource:SIO_001066)
 
 # Class: obo:OBI_0002076 (collection of specimens)
 
@@ -52435,7 +51478,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002116 "An analytical chromatograph
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002116 "ImmPort")
 AnnotationAssertion(obo:IAO_0000118 obo:OBI_0002116 "HPLC")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002116 "http://www.ncbi.nlm.nih.gov/pubmed/9491555")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0002116 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0002116 "high performance liquid chromotography assay")
 SubClassOf(obo:OBI_0002116 obo:OBI_0001630)
 
@@ -52450,32 +51492,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:OBI_0100086 "glucose molecules")
 AnnotationAssertion(rdfs:label obo:OBI_0100086 "glucose in solution")
 SubClassOf(obo:OBI_0100086 obo:BFO_0000040)
 SubClassOf(obo:OBI_0100086 ObjectAllValuesFrom(obo:OBI_0000643 obo:CHEBI_17234))
-
-# Class: obo:OBI_0200000 (data transformation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0200000 "data transformation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0200000 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0200000 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0200000 "A planned process that produces output data from input data."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Elisabetta Manduchi"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Helen Parkinson"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "James Malone"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Melanie Courtot"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Richard Scheuermann"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Ryan Brinkman"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200000 "Tina Hernandez-Boussard"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0200000 "data analysis"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0200000 "data processing"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0200000 "Branch editors"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0200000 "data transformation"@en)
-EquivalentClasses(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0200166))
-SubClassOf(obo:OBI_0200000 obo:OBI_0000011)
-SubClassOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:IAO_0000064 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000005)))))
-SubClassOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000293 obo:IAO_0000027))
-SubClassOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000027))
-SubClassOf(obo:OBI_0200000 ObjectAllValuesFrom(obo:OBI_0000293 obo:IAO_0000027))
-SubClassOf(obo:OBI_0200000 ObjectAllValuesFrom(obo:OBI_0000299 obo:IAO_0000027))
 
 # Class: obo:OBI_0200166 (data transformation objective)
 
@@ -52506,17 +51522,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0200167 "PERSON: James Malone"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0200167 "data normalization objective"@en)
 SubClassOf(obo:OBI_0200167 obo:OBI_0200166)
 
-# Class: obo:OBI_0200169 (normalization data transformation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0200169 "normalization data transformation"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0200169 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0200169 "A normalization data transformation is a data transformation that has objective normalization."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0200169 "James Malone")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0200169 "PERSON: James Malone"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0200169 "normalization data transformation"@en)
-EquivalentClasses(obo:OBI_0200169 ObjectUnionOf(ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000451) ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0200167)))
-SubClassOf(obo:OBI_0200169 obo:OBI_0200000)
-
 # Class: obo:OBI_0200183 (scaling objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0200183 "scaling objective"@en)
@@ -52542,20 +51547,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302840 "Person:Philippe Rocca-Serra
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302840 "OBI")
 AnnotationAssertion(rdfs:label obo:OBI_0302840 "curated information"@en)
 SubClassOf(obo:OBI_0302840 obo:IAO_0000030)
-SubClassOf(obo:OBI_0302840 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0302914))
-
-# Class: obo:OBI_0302885 (filtration)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302885 "filtration"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302885 "PMID: 18524968.Filtration of CSF improves isolation of Mycobacteria.J Clin Microbiol. 2008 Jun 4."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302885 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302885 "filtration is a process which separates components suspended in a fluid based on granularity properties relying on a filter device"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302885 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302885 "OBI-Branch: adapted from wikipedia and wordnet")
-AnnotationAssertion(rdfs:label obo:OBI_0302885 "filtration"@en)
-SubClassOf(obo:OBI_0302885 obo:OBI_0600014)
-SubClassOf(obo:OBI_0302885 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000681))
-SubClassOf(obo:OBI_0302885 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0000151))
 
 # Class: obo:OBI_0302886 (centrifugation)
 
@@ -52566,69 +51557,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302886 "centrifugation is a process
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302886 "Philippe Rocca-Serra")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302886 "adapted from http://www.fao.org/DOCREP/003/X3910E/X3910E06.htm")
 AnnotationAssertion(rdfs:label obo:OBI_0302886 "centrifugation"@en)
-SubClassOf(obo:OBI_0302886 obo:OBI_0600014)
 SubClassOf(obo:OBI_0302886 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000681))
 SubClassOf(obo:OBI_0302886 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400106))
-
-# Class: obo:OBI_0302893 (storage)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302893 "storage"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302893 "PMID: 18550121.Total Prostate Specific Antigen Stability Confirmed After Long-Term Storage of Serum at -80C. J Urol. 2008 Jun 10."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302893 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302893 "A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302893 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302893 "OBI-Branch")
-AnnotationAssertion(rdfs:label obo:OBI_0302893 "storage"@en)
-SubClassOf(obo:OBI_0302893 obo:OBI_0000838)
-SubClassOf(obo:OBI_0302893 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0302893 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000806))
-
-# Class: obo:OBI_0302900 (group randomization)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302900 "group randomization"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302900 "PMID: 18349405. Randomization reveals unexpected acute leukemias in Southwest Oncology Group prostate cancer trial. J Clin Oncol. 2008 Mar 20;26(9):1532-6."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302900 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302900 "A group assignment which relies on chance to assign materials to a group of materials in order to avoid bias in experimental set up."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302900 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302900 "adapted from wikipedia [http://en.wikipedia.org/wiki/Randomization]")
-AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0302900 "true"^^xsd:boolean)
-AnnotationAssertion(rdfs:label obo:OBI_0302900 "group randomization"@en)
-SubClassOf(obo:OBI_0302900 obo:OBI_0600015)
-
-# Class: obo:OBI_0302908 (document editing)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302908 "document editing")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302908 "Wax DB, Beilin Y, Hossain S, Lin HM, Reich DL.
-Manual editing of automatically recorded data in an anesthesia information management system. Anesthesiology. 2008 Nov;109(5):811-5. PMID: 18946292"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302908 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302908 "is a planned process with specified input original document and specified output edited document"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302908 "Philippe Rocca-Serra and OBI consortium")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302908 "adapted from wikipedia")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0302908 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0302908 "document editing"@en)
-SubClassOf(obo:OBI_0302908 obo:OBI_0000011)
-
-# Class: obo:OBI_0302911 (validation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302911 "validation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302911 "PMID: 18557814 . Chemical and genetic validation of dihydrofolate reductase-thymidylate synthase as a drug target in African trypanosomes. Mol Microbiol. 2008 Jun 16."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302911 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302911 "a planned process with objective to check that the accuracy or the quality of a claim or prediction  satisfies some criteria and which is assessed by comparing with independent results"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302911 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302911 "adapted from wordnet (wkipedia)")
-AnnotationAssertion(rdfs:label obo:OBI_0302911 "validation"@en)
-SubClassOf(obo:OBI_0302911 obo:OBI_0000011)
-
-# Class: obo:OBI_0302914 (digital curation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0302914 "digital curation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0302914 "PMID: 16901087. Supporting the curation of biological databases with reusable text mining.Genome Inform. 2005;16(2):32-44."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302914 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302914 "Digital curation is the process of establishing and developing long term repositories of digital assets for current and future reference by researchers, scientists, and historians, and scholars generally."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0302914 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302914 "wikipedia")
-AnnotationAssertion(rdfs:label obo:OBI_0302914 "digital curation"@en)
-SubClassOf(obo:OBI_0302914 obo:IAO_0000572)
 
 # Class: obo:OBI_0400106 (centrifuge)
 
@@ -52727,39 +51657,6 @@ AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0500028 "true"^^x
 AnnotationAssertion(rdfs:label obo:OBI_0500028 "exclusion criterion"@en)
 SubClassOf(obo:OBI_0500028 obo:OBI_0500026)
 
-# Class: obo:OBI_0600003 (performing a clinical assessment)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600003 "performing a clinical assessment"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600003 obo:IAO_0000120)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600003 "a protocol application during which a series of tests are made of a patient  leading to determination of disease state, or condition."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600003 "PlanAndPlannedProcess Branch"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0600003 "clinical diagnosis")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600003 "OBI branch derived"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0600003 "(maybe CIO)"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600003 "performing a clinical assessment"@en)
-SubClassOf(obo:OBI_0600003 obo:OBI_0000070)
-SubClassOf(obo:OBI_0600003 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000988))
-SubClassOf(obo:OBI_0600003 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:OBI_0100026 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000093))))
-SubClassOf(obo:OBI_0600003 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0000075))
-SubClassOf(obo:OBI_0600003 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000441))
-
-# Class: obo:OBI_0600004 (human subject enrollment)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600004 "human subject enrollment"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600004 "enlisting familiy members of HIV patients into a study"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600004 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600004 "A planned process with the objective to obtain a population of human subjects to participate in an investigation by determining eligibility of subjects and obtaining informed consent."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0600004 "As with group assignment, should the specified output here be an organism which bears a role")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600004 "Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600004 "IEDB"@en)
-AnnotationAssertion(obo:IAO_0000232 obo:OBI_0600004 "criteria come from plan / clinical trial branch"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600004 "human subject enrollment"@en)
-SubClassOf(obo:OBI_0600004 obo:OBI_0001928)
-SubClassOf(obo:OBI_0600004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OBI_0000810))
-SubClassOf(obo:OBI_0600004 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:OBI_0500026)))
-SubClassOf(obo:OBI_0600004 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:OBI_0000181 ObjectSomeValuesFrom(obo:BFO_0000051 obo:NCBITaxon_9606))))
-SubClassOf(obo:OBI_0600004 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(ObjectIntersectionOf(obo:OBI_0000181 ObjectSomeValuesFrom(obo:BFO_0000051 obo:NCBITaxon_9606)) ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000097))))
-
 # Class: obo:OBI_0600005 (collecting specimen from organism)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600005 "collecting specimen from organism"@en)
@@ -52772,58 +51669,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0600005 "collecting specimen from organis
 SubClassOf(obo:OBI_0600005 obo:OBI_0000659)
 SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100026))
 SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000684))
-
-# Class: obo:OBI_0600007 (administering substance in vivo)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600007 "administering substance in vivo"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600007 "Balb/c mice received an intracameral or subconjunctival injection of trinitrophenylated spleen cells")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600007 "injecting mice with 10 ug morphine intranasally, a patient taking two pills of 1 mg aspirin orally"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600007 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600007 "A process by which a substance is intentionally given to an organism resulting in exposure of the organism to that substance.")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0600007 "2009-11-10. Tracker: https://sourceforge.net/tracker/?func=detail&aid=2893050&group_id=177891&atid=886178")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0600007 "Different routes and means of administration should go as children underneath this"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0600007 "Update the definition based on the discussion. Details see the tracker:
-https://sourceforge.net/p/obi/obi-terms/738/")
-AnnotationAssertion(obo:IAO_0000116 obo:OBI_0600007 "needs roles such as perturber and perturbee (children of input role). Perturb is too strong. Host might be the name for one role. Others considered: Doner, Donated, Acceptor."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600007 "Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600007 "Person:Bjoern Peters")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600007 "IEDB"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600007 "administering substance in vivo"@en)
-EquivalentClasses(obo:OBI_0600007 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000055 obo:OBI_0000319) ObjectSomeValuesFrom(obo:BFO_0000055 ObjectIntersectionOf(obo:OBI_0000444 ObjectSomeValuesFrom(obo:RO_0000081 ObjectUnionOf(obo:OBI_0100026 obo:UBERON_0000465))))))
-SubClassOf(obo:OBI_0600007 obo:OBI_0000274)
-SubClassOf(obo:OBI_0600007 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100026))
-SubClassOf(obo:OBI_0600007 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0100026))
-SubClassOf(obo:OBI_0600007 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000434))
-SubClassOf(obo:OBI_0600007 ObjectMaxCardinality(1 obo:OBI_0000299))
-
-# Class: obo:OBI_0600014 (material component separation)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600014 "material component separation"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600014 "Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600014 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600014 "a material processing in which components of an input material become segregated in space"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600014 "Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600014 "IEDB"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600014 "material component separation"@en)
-EquivalentClasses(obo:OBI_0600014 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000639))
-SubClassOf(obo:OBI_0600014 obo:OBI_0000094)
-SubClassOf(obo:OBI_0600014 ObjectSomeValuesFrom(obo:OBI_0000293 obo:BFO_0000040))
-SubClassOf(obo:OBI_0600014 ObjectSomeValuesFrom(obo:OBI_0000299 obo:BFO_0000040))
-
-# Class: obo:OBI_0600015 (group assignment)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600015 "group assignment"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600015 "Assigning' to be treated with active ingredient role' to an organism during group assignment. The group is those organisms that have the same role in the context of an investigation"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600015 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600015 "group assignment is a process which has an organism as specified input and during which a role is assigned"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600015 "Philippe Rocca-Serra"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0600015 "cohort assignment")
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0600015 "study assignment")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600015 "OBI Plan"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600015 "group assignment"@en)
-SubClassOf(obo:OBI_0600015 obo:OBI_0000011)
-SubClassOf(obo:OBI_0600015 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100026))
-SubClassOf(obo:OBI_0600015 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026))))
 
 # Class: obo:OBI_0600047 (sequencing assay)
 
@@ -52848,7 +51693,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600052 "a protocol application that
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600052 "PERSON:Kevin Clancy"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600052 "OBI branch derived"@en)
 AnnotationAssertion(rdfs:label obo:OBI_0600052 "dialysis"@en)
-SubClassOf(obo:OBI_0600052 obo:OBI_0600014)
 SubClassOf(obo:OBI_0600052 ObjectSomeValuesFrom(obo:OBI_0000417 obo:OBI_0000681))
 
 # Class: obo:OBI_1110011 (allergic reaction)
@@ -52886,7 +51730,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:OBI_1110095 "A material separation where
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_1110095 "IEDB"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_1110095 "IEDB"@en)
 AnnotationAssertion(rdfs:label obo:OBI_1110095 "blood harvesting"@en)
-SubClassOf(obo:OBI_1110095 obo:OBI_0600014)
 
 # Class: obo:OBI_1110122 (pathologic process)
 
@@ -52926,10 +51769,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000023 obo:ogms.owl)
 AnnotationAssertion(rdfs:label obo:OGMS_0000023 "phenotype")
 SubClassOf(obo:OGMS_0000023 obo:BFO_0000019)
 
-# Class: obo:OGMS_0000056 (clinical laboratory test)
-
-SubClassOf(obo:OGMS_0000056 obo:BFO_0000015)
-
 # Class: obo:OGMS_0000063 (disease course)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OGMS_0000063 "disease course")
@@ -52959,14 +51798,6 @@ AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000073 "creation date: 2009-06-23T
 AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000073 obo:ogms.owl)
 AnnotationAssertion(rdfs:label obo:OGMS_0000073 "diagnosis")
 SubClassOf(obo:OGMS_0000073 obo:IAO_0000030)
-
-# Class: obo:OGMS_0000090 (treatment)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OGMS_0000090 "treatment")
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000090 "A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000090 obo:ogms.owl)
-AnnotationAssertion(rdfs:label obo:OGMS_0000090 "treatment")
-SubClassOf(obo:OGMS_0000090 obo:OBI_0000011)
 
 # Class: obo:OHMI_0000002 (human microbiome)
 
@@ -53006,33 +51837,11 @@ AnnotationAssertion(rdfs:comment obo:OHMI_0000020 "A human being's gut microbiot
 AnnotationAssertion(rdfs:label obo:OHMI_0000020 "human gut microbiome"@en)
 SubClassOf(obo:OHMI_0000020 obo:OHMI_0000016)
 
-# Class: obo:OMIABIS_0000036 (sample collection or study aim description)
-
-AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0000036 obo:omiabis.owl)
-SubClassOf(obo:OMIABIS_0000036 resource:SIO_001066)
-
-# Class: obo:OMIABIS_0000037 (study proper name)
-
-AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0000037 obo:omiabis.owl)
-SubClassOf(obo:OMIABIS_0000037 resource:SIO_001066)
-
 # Class: obo:OMIABIS_0001016 (number of total human study participant objective)
 
 AnnotationAssertion(obo:IAO_0000412 obo:OMIABIS_0001016 obo:omiabis.owl)
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:OMIABIS_0001016 "true"^^xsd:boolean)
 SubClassOf(obo:OMIABIS_0001016 obo:IAO_0000005)
-
-# Class: obo:OMRSE_00000038 (legal person role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000038 "A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000038 "Mathias Brochhausen")
-AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000038 "Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008.")
-AnnotationAssertion(obo:IAO_0000412 obo:OMRSE_00000038 obo:omrse.owl)
-AnnotationAssertion(rdfs:comment obo:OMRSE_00000038 "We are aware of the fact that Wikipedia's definition differs from ours by saying that \"Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood\" (http://en.wikipedia.org/wiki/Legal_personality)
-However, Shaw explicates:
-\"In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as 'legal persons' possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation\" (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw's position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000038 "legal person role"@en)
-SubClassOf(obo:OMRSE_00000038 resource:SIO_001066)
 
 # Class: obo:ONS_0000001 (participants' identification number)
 
@@ -53354,19 +52163,11 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000044 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000044 "Treatment descriptive name"@en)
 SubClassOf(obo:ONS_0000044 obo:IAO_0000027)
 
-# Class: obo:ONS_0000045 (Study sampling method)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000045 "Short description of the sampling method used (i.e. \"needle\" for blood drawn, or \"direct sampling\" for questionnaire)"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000045 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000045 "Study sampling method"@en)
-SubClassOf(obo:ONS_0000045 obo:NCIT_C25662)
-
 # Class: obo:ONS_0000046 (Sampling method description)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000046 "A long description of the sampling method used"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000046 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000046 "Sampling method description"@en)
-SubClassOf(obo:ONS_0000046 obo:NCIT_C25662)
 
 # Class: obo:ONS_0000047 (assay description)
 
@@ -53441,7 +52242,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000056 "SAMPLING TAB. This class sh
 AnnotationAssertion(efo:definition_editor obo:ONS_0000056 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000056 "Sampling tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000056 "true"^^xsd:boolean)
-SubClassOf(obo:ONS_0000056 obo:NCIT_C25662)
 
 # Class: obo:ONS_0000057 (obsolete: physiology assay tab)
 
@@ -53715,7 +52515,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000093 "The process in which food i
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000093 "ENPADASI_WP4")
 AnnotationAssertion(rdfs:label obo:ONS_0000093 "food preparation"@en)
 SubClassOf(obo:ONS_0000093 obo:OBI_0000011)
-SubClassOf(obo:ONS_0000093 obo:OBI_0000094)
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:OBI_0000293 obo:ONS_0000078))
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:OBI_0000299 obo:ONS_0000079))
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:RO_0000059 resource:SIO_001042))
@@ -55643,19 +54442,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:PR_000000001 obo:pr.owl)
 AnnotationAssertion(rdfs:label obo:PR_000000001 "protein")
 SubClassOf(obo:PR_000000001 obo:CHEBI_16670)
 
-# Class: obo:STATO_0000096 (population stratification prior to sampling)
-
-AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000096 "stratification is a planned process which executes a stratification rule using as input a population and assign it member to mutually exclusive subpopulation based on the values defined by the stratification rule"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000096 "Alejandra Gonzalez-Beltran")
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000096 "Orlaith Burke")
-AnnotationAssertion(obo:IAO_0000117 obo:STATO_0000096 "Philippe Rocca-Serra")
-AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000096 "PRS+AGB adapted from wikipedia:
-http://en.wikipedia.org/wiki/Stratified_sampling
-polled on June 7th,2013"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000096 obo:stato.owl)
-AnnotationAssertion(rdfs:label obo:STATO_0000096 "population stratification prior to sampling")
-SubClassOf(obo:STATO_0000096 obo:OBI_0000011)
-
 # Class: obo:STATO_0000124 (stratification rule)
 
 AnnotationAssertion(obo:IAO_0000114 obo:STATO_0000124 obo:IAO_0000125)
@@ -55916,14 +54702,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:VO_0000001 obo:vo.owl)
 AnnotationAssertion(rdfs:label obo:VO_0000001 "vaccine")
 SubClassOf(obo:VO_0000001 obo:BFO_0000040)
 
-# Class: obo:VO_0000002 (vaccination)
-
-AnnotationAssertion(obo:IAO_0000111 obo:VO_0000002 "vaccination")
-AnnotationAssertion(obo:IAO_0000115 obo:VO_0000002 "a process of administering substance in vivo that involves in adding a vaccine into a host (e.g., human) in vivo with the intent to invoke a protective or therapeutic adaptive immune response.")
-AnnotationAssertion(obo:IAO_0000412 obo:VO_0000002 obo:vo.owl)
-AnnotationAssertion(rdfs:label obo:VO_0000002 "vaccination")
-SubClassOf(obo:VO_0000002 obo:OBI_0600007)
-
 # Class: resource:SIO_000031 (start date)
 
 AnnotationAssertion(obo:IAO_0000412 resource:SIO_000031 <http://semanticscience.org/ontology/sio.owl>)
@@ -56099,16 +54877,6 @@ AnnotationAssertion(dc:identifier resource:SIO_000688 "SIO_000688")
 AnnotationAssertion(terms:description resource:SIO_000688 "institute is a society or organization having a object or common factor, and is normally applied to those with a scientific, educational, or social objective."@en)
 AnnotationAssertion(rdfs:label resource:SIO_000688 "institute"@en)
 SubClassOf(resource:SIO_000688 resource:SIO_001066)
-
-# Class: resource:SIO_000811 (URL)
-
-AnnotationAssertion(obo:IAO_0000412 resource:SIO_000811 <http://semanticscience.org/ontology/sio.owl>)
-AnnotationAssertion(obo:in_minimal_requirements_subset resource:SIO_000811 "true"^^xsd:boolean)
-AnnotationAssertion(dc:identifier resource:SIO_000811 "SIO_000811")
-AnnotationAssertion(terms:description resource:SIO_000811 "A Uniform Resource Locator or Universal Resource Locator (URL) is a specific character string that constitutes a reference to an Internet resource."@en)
-AnnotationAssertion(resource:hasSynonym resource:SIO_000811 "Uniform Resource Locator"@en)
-AnnotationAssertion(rdfs:label resource:SIO_000811 "URL"@en)
-SubClassOf(resource:SIO_000811 obo:IAO_0000300)
 
 # Class: resource:SIO_000964 (standard operating procedure)
 
@@ -57286,7 +56054,6 @@ ClassAssertion(obo:UO_0000051 obo:UO_0000301)
 
 # Individual: <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> (OBI Release 2017-02-22)
 
-AnnotationAssertion(doap:file-release <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> obo:obi.owl)
 AnnotationAssertion(doap:file-release <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl> "OBI Release 2017-02-22")
 ClassAssertion(owl:Thing <http://purl.obolibrary.org/obo/obi/2017-02-22/obi.owl>)
