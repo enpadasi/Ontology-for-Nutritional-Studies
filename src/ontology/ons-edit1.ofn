@@ -25,7 +25,6 @@ Prefix(study_protocol:=<http://purl.org/net/OCRe/study_protocol.owl#>)
 
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
 Import(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/general-import.owl>)
-Annotation(protege:defaultLanguage "en")
 Annotation(terms:description "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."@en)
 Annotation(oboInOwl:created_by "ENPADASI_WP4"@en)
 Annotation(rdfs:label "ONS"@en)
@@ -52,6 +51,7 @@ Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:BFO_0000141))
 Declaration(Class(obo:BFO_0000145))
 Declaration(Class(obo:BFO_0000182))
+Declaration(Class(obo:CHEBI_17716))
 Declaration(Class(obo:CHEBI_33250))
 Declaration(Class(obo:CHEBI_78295))
 Declaration(Class(obo:CMO_0000051))
@@ -3558,9 +3558,6 @@ Declaration(NamedIndividual(obo:UO_0000282))
 Declaration(NamedIndividual(obo:UO_0000284))
 Declaration(NamedIndividual(obo:UO_0000285))
 Declaration(NamedIndividual(obo:UO_0000301))
-Declaration(NamedIndividual(obo:iao.owl))
-Declaration(AnnotationProperty(protege:defaultLanguage))
-Declaration(AnnotationProperty(protege:readOnly))
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(obo:IAO_0000111))
@@ -3593,7 +3590,6 @@ Declaration(AnnotationProperty(obo:in_ONS_subset))
 Declaration(AnnotationProperty(obo:in_minimal_requirements_subset))
 Declaration(AnnotationProperty(obo:shorthand))
 Declaration(AnnotationProperty(dc:identifier))
-Declaration(AnnotationProperty(dc:relation))
 Declaration(AnnotationProperty(dc:rights))
 Declaration(AnnotationProperty(dc:source))
 Declaration(AnnotationProperty(dc:type))
@@ -3634,7 +3630,6 @@ Declaration(AnnotationProperty(oboInOwl:id))
 Declaration(AnnotationProperty(oboInOwl:inSubset))
 Declaration(AnnotationProperty(oboInOwl:shorthand))
 Declaration(AnnotationProperty(rdfs:comment))
-Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(rdfs:seeAlso))
 Declaration(AnnotationProperty(owl:versionInfo))
@@ -3673,7 +3668,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000111 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000111 "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000111 "PERSON:Daniel Schober"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000111 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000111 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred label")
 AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred label"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term")
@@ -3689,7 +3683,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000112 "A phrase describing how a c
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000112 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000112 "PERSON:Daniel Schober"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000112 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000112 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage")
 AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
 
@@ -3718,7 +3711,6 @@ Personally, I am more comfortable weakening definition to documentation, with in
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000115 "PERSON:Daniel Schober"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000115 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 
 # Annotation Property: obo:IAO_0000116 (editor note)
@@ -3732,7 +3724,6 @@ AnnotationAssertion(obo:shorthand obo:IAO_0000116 "editor_note")
 AnnotationAssertion(oboInOwl:hasDbXref obo:IAO_0000116 "IAO:0000116")
 AnnotationAssertion(oboInOwl:id obo:IAO_0000116 "editor_note")
 AnnotationAssertion(oboInOwl:shorthand obo:IAO_0000116 "editor_note")
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000116 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note")
 AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note"@en)
 
@@ -3742,7 +3733,6 @@ AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000600 "elucidation"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000600 "person:Alan Ruttenberg"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000600 "Person:Barry Smith"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:IAO_0000600 "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en)
-AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000600 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000600 "elucidation"@en)
 
 # Annotation Property: obo:ICO_0000091 (term_mapping_to_UMLS)
@@ -3821,21 +3811,8 @@ AnnotationAssertion(terms:description dc:identifier "Recommended best practice i
          Locator (URL)), the Digital Object Identifier (DOI) and the
          International Standard Book Number (ISBN)."@en-us)
 AnnotationAssertion(rdfs:comment dc:identifier "An unambiguous reference to the resource within a given context."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:identifier <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label dc:identifier "Resource Identifier")
 AnnotationAssertion(rdfs:label dc:identifier "Resource Identifier"@en-us)
-
-# Annotation Property: dc:relation (Relation)
-
-AnnotationAssertion(terms:description dc:relation "
-         Recommended best practice is to reference the resource by means
-         of a string or number conforming to a formal identification
-         system.
-    "@en-us)
-AnnotationAssertion(rdfs:comment dc:relation "A reference to a related resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:relation <http://purl.org/dc/elements/1.1/>)
-AnnotationAssertion(rdfs:label dc:relation "Relation")
-AnnotationAssertion(rdfs:label dc:relation "Relation"@en-us)
 
 # Annotation Property: dc:rights (Rights Management)
 
@@ -3850,7 +3827,6 @@ AnnotationAssertion(terms:description dc:rights "
           the resource.
     "@en-us)
 AnnotationAssertion(rdfs:comment dc:rights "Information about rights held in and over the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:rights <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label dc:rights "Rights Management")
 AnnotationAssertion(rdfs:label dc:rights "Rights Management"@en-us)
 
@@ -3862,7 +3838,6 @@ AnnotationAssertion(terms:description dc:source "The present resource may be der
          formal identification system."@en-us)
 AnnotationAssertion(rdfs:comment dc:source "A reference to a resource from which the present resource
          is derived."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:source <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label dc:source "Source")
 AnnotationAssertion(rdfs:label dc:source "Source"@en-us)
 
@@ -3875,7 +3850,6 @@ AnnotationAssertion(terms:description dc:type "Type includes terms describing ge
          describe the physical or digital manifestation of the
          resource, use the Format element."@en-us)
 AnnotationAssertion(rdfs:comment dc:type "The nature or genre of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy dc:type <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label dc:type "Resource Type")
 AnnotationAssertion(rdfs:label dc:type "Resource Type"@en-us)
 
@@ -3886,7 +3860,6 @@ AnnotationAssertion(terms:description terms:description "Description may include
          table of contents, reference to a graphical representation
          of content or a free-text account of the content."@en-us)
 AnnotationAssertion(rdfs:comment terms:description "An account of the content of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy terms:description <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label terms:description "Description")
 AnnotationAssertion(rdfs:label terms:description "Description"@en-us)
 
@@ -3900,7 +3873,6 @@ AnnotationAssertion(terms:description terms:format "Typically, Format may includ
          controlled vocabulary (for example, the list of Internet Media
          Types [MIME] defining computer media formats)."@en-us)
 AnnotationAssertion(rdfs:comment terms:format "The physical or digital manifestation of the resource."@en-us)
-AnnotationAssertion(rdfs:isDefinedBy terms:format <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label terms:format "Format")
 
 # Annotation Property: schema:comment (schema:comment)
@@ -4000,10 +3972,6 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 
 AnnotationAssertion(obo:IAO_0000111 oboInOwl:shorthand "shorthand")
 AnnotationAssertion(rdfs:label oboInOwl:shorthand "shorthand")
-
-# Annotation Property: rdfs:isDefinedBy (rdfs:isDefinedBy)
-
-AnnotationAssertion(obo:IAO_0000589 rdfs:isDefinedBy "is defined by")
 
 # Annotation Property: rdfs:label (label)
 
@@ -4138,6 +4106,10 @@ IrreflexiveObjectProperty(obo:RO_0002351)
 ############################
 #   Classes
 ############################
+
+# Class: obo:CHEBI_17716 (lactose)
+
+SubClassOf(obo:CHEBI_17716 obo:NCIT_C68472)
 
 # Class: obo:CMO_0000051 (blood total cholesterol level)
 
