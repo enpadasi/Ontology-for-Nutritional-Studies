@@ -7,20 +7,14 @@ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(doap:=<http://usefulinc.com/ns/doap#>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(schema:=<http://schema.org/>)
-Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Prefix(resource:=<http://semanticscience.org/resource/>)
-Prefix(apollo_sv:=<http://purl.obolibrary.org/obo/apollo_sv.owl/>)
 Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
-Prefix(statistics:=<http://purl.org/net/OCRe/statistics.owl#>)
-Prefix(edamontology:=<http://edamontology.org/>)
-Prefix(study_protocol:=<http://purl.org/net/OCRe/study_protocol.owl#>)
 
 
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
@@ -3599,9 +3593,6 @@ Declaration(AnnotationProperty(terms:publisher))
 Declaration(AnnotationProperty(schema:comment))
 Declaration(AnnotationProperty(resource:example))
 Declaration(AnnotationProperty(resource:hasSynonym))
-Declaration(AnnotationProperty(doap:file-release))
-Declaration(AnnotationProperty(ont:controlled_vocabulary))
-Declaration(AnnotationProperty(ont:controlled_vocabulary_editor))
 Declaration(AnnotationProperty(efo:DOID_definition_citation))
 Declaration(AnnotationProperty(efo:ICD9_definition_citation))
 Declaration(AnnotationProperty(efo:MO_definition_citation))
@@ -3886,10 +3877,6 @@ AnnotationAssertion(dc:identifier resource:example "example")
 # Annotation Property: resource:hasSynonym (resource:hasSynonym)
 
 AnnotationAssertion(dc:identifier resource:hasSynonym "hasSynonym")
-
-# Annotation Property: ont:controlled_vocabulary_editor (ont:controlled_vocabulary_editor)
-
-SubAnnotationPropertyOf(ont:controlled_vocabulary_editor ont:controlled_vocabulary)
 
 # Annotation Property: efo:DOID_definition_citation (efo:DOID_definition_citation)
 
