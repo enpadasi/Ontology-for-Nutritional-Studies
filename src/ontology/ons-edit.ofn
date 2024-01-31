@@ -45000,13 +45000,13 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000078 "ENPADASI_WP4")
 AnnotationAssertion(rdfs:label obo:ONS_0000078 "Ingredient"@en)
 SubClassOf(obo:ONS_0000078 obo:BFO_0000040)
 
-# Class: obo:ONS_0000079 (Food)
+# Class: obo:ONS_0000079 (food)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000079 "The food is a complex matrix that is consumed by a person through the process of eating or drinking. Food are bearer of the nutrients, bioactives and sometimes other food components. Food consumption, through the meal consumption, follows a certain dietary pattern, which define the diet.  Nutrients and bioactives contained in food can be exploited by the human organism thanks to the process of digestion, absorption, metabolization, or through the intervention of the gut microflora")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000079 "ENPADASI_WP4")
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:ONS_0000079 "true"^^xsd:boolean)
 AnnotationAssertion(efo:MSH_definition_citation obo:ONS_0000079 "MSH:D005502")
-AnnotationAssertion(rdfs:label obo:ONS_0000079 "Food")
+AnnotationAssertion(rdfs:label obo:ONS_0000079 "food"@en)
 SubClassOf(obo:ONS_0000079 obo:OBI_0000047)
 SubClassOf(obo:ONS_0000079 ObjectSomeValuesFrom(obo:RO_0000053 obo:ONS_0000073))
 SubClassOf(obo:ONS_0000079 ObjectSomeValuesFrom(obo:RO_0000056 obo:ONS_0000087))
@@ -45211,18 +45211,18 @@ AnnotationAssertion(obo:IAO_0000119 obo:ONS_0000098 "https://www.ncbi.nlm.nih.go
 AnnotationAssertion(rdfs:label obo:ONS_0000098 "susceptibility biomarker"@en)
 SubClassOf(obo:ONS_0000098 obo:ONS_0000095)
 
-# Class: obo:ONS_0000099 (Raw food)
+# Class: obo:ONS_0000099 (raw food)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000099 "A raw food is an uncooked, unprocessed food that is consumed in its natural state")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000099 "ENPADASI_WP4")
-AnnotationAssertion(rdfs:label obo:ONS_0000099 "Raw food")
+AnnotationAssertion(rdfs:label obo:ONS_0000099 "raw food"@en)
 SubClassOf(obo:ONS_0000099 obo:ONS_0000079)
 
-# Class: obo:ONS_0000100 (Processed food)
+# Class: obo:ONS_0000100 (processed food)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000100 "A processed food is the result of the process of home or industrial food preparation")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000100 "ENPADASI_WP4")
-AnnotationAssertion(rdfs:label obo:ONS_0000100 "Processed food")
+AnnotationAssertion(rdfs:label obo:ONS_0000100 "processed food"@en)
 SubClassOf(obo:ONS_0000100 obo:ONS_0000079)
 
 # Class: obo:ONS_0000101 (food digestion)
@@ -46153,8 +46153,13 @@ AnnotationAssertion(rdfs:label obo:ONS_1000013 "time-restricted feeding"@en)
 AnnotationAssertion(rdfs:seeAlso obo:ONS_1000013 "https://pubmed.ncbi.nlm.nih.gov/24739093/")
 SubClassOf(obo:ONS_1000013 obo:ONS_1000012)
 
-# Class: obo:ONS_1000014 (obo:ONS_1000014)
+# Class: obo:ONS_1000014 (fasting protocol)
 
+AnnotationAssertion(obo:IAO_0000112 obo:ONS_1000014 "The fasting protocol indicated fasting for 16 hrs per 24 hrs for a duration of 3 months."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000014 "A protocol that specifies the timing of food consumption."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000014 "https://github.com/FoodOntology/joint-food-ontology-wg")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_1000014 "fasting schedule"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000014 "fasting protocol"@en)
 SubClassOf(obo:ONS_1000014 obo:OBI_0000272)
 
 # Class: obo:ONS_1000015 (episodic food intake process)
@@ -46640,8 +46645,12 @@ AnnotationAssertion(rdfs:label obo:ONS_1000061 "food component absorption proces
 AnnotationAssertion(rdfs:seeAlso obo:ONS_1000061 "https://askthescientists.com/nutrient-absorption/")
 SubClassOf(obo:ONS_1000061 obo:GO_0008150)
 
-# Class: obo:ONS_1000062 (obo:ONS_1000062)
+# Class: obo:ONS_1000062 (dietary regimen)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000062 "A set of restrictions on food type ingestion and/or timing of food ingestion."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000062 "https://github.com/FoodOntology/joint-food-ontology-wg")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_1000062 "dietary protocol"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000062 "dietary regimen"@en)
 SubClassOf(obo:ONS_1000062 obo:OBI_0000272)
 SubClassOf(obo:ONS_1000062 obo:ONS_0000094)
 
