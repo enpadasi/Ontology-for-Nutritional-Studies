@@ -1,0 +1,1685 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ons/imports/general_import.ofn
+
+#http://purl.obolibrary.org/obo/PCO_0000000
+#http://purl.obolibrary.org/obo/PO_0000003
+#http://purl.obolibrary.org/obo/PO_0009011
+#http://purl.obolibrary.org/obo/IAO_0000300
+
+[Source ontology]
+BFO
+
+[Low level source term URIs]
+# http://purl.obolibrary.org/obo/BFO_0000001 # using COB instead
+# http://purl.obolibrary.org/obo/BFO_0000002 # using COB instead
+# http://purl.obolibrary.org/obo/BFO_0000003 # using COB instead
+# http://purl.obolibrary.org/obo/BFO_0000004 # using COB instead
+# http://purl.obolibrary.org/obo/BFO_0000031 # using COB instead
+# http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity not IMPORTING via ontofox?
+
+http://purl.obolibrary.org/obo/BFO_0000006  # not importing?
+http://purl.obolibrary.org/obo/BFO_0000015 
+http://purl.obolibrary.org/obo/BFO_0000016 
+
+http://purl.obolibrary.org/obo/BFO_0000019 
+http://purl.obolibrary.org/obo/BFO_0000023 
+http://purl.obolibrary.org/obo/BFO_0000024 
+http://purl.obolibrary.org/obo/BFO_0000027 
+http://purl.obolibrary.org/obo/BFO_0000029 
+http://purl.obolibrary.org/obo/BFO_0000030 
+
+http://purl.obolibrary.org/obo/BFO_0000034 
+http://purl.obolibrary.org/obo/BFO_0000040 
+http://purl.obolibrary.org/obo/BFO_0000141 
+http://purl.obolibrary.org/obo/BFO_0000145 
+http://purl.obolibrary.org/obo/BFO_0000182 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+###########################################
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_16646 
+http://purl.obolibrary.org/obo/CHEBI_16670 
+http://purl.obolibrary.org/obo/CHEBI_16991 
+http://purl.obolibrary.org/obo/CHEBI_17234 
+http://purl.obolibrary.org/obo/CHEBI_23367 
+http://purl.obolibrary.org/obo/CHEBI_25413 
+http://purl.obolibrary.org/obo/CHEBI_26208 
+http://purl.obolibrary.org/obo/CHEBI_26607 
+http://purl.obolibrary.org/obo/CHEBI_33250 
+http://purl.obolibrary.org/obo/CHEBI_33696 
+http://purl.obolibrary.org/obo/CHEBI_33697 
+http://purl.obolibrary.org/obo/CHEBI_33839 
+http://purl.obolibrary.org/obo/CHEBI_36080 
+http://purl.obolibrary.org/obo/CHEBI_78295 
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_50906 # role
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity
+http://purl.obolibrary.org/obo/CHEBI_24431 # chemical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+[Source annotation URIs to be excluded]
+#http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
+###########################################
+
+
+[Source ontology]
+CDNO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CDNO_0500001 # dietary role
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CDNO_0500001
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023 # role
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+CL
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CL_0000000  # cell
+http://purl.obolibrary.org/obo/CL_0000010  # cultured cell
+http://purl.obolibrary.org/obo/CL_0000578  # experimentally modified cell in vitro
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CL_0000000 # cell
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000061 # anatomical structure
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+CMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CMO_0000051  # blood total cholesterol level
+http://purl.obolibrary.org/obo/CMO_0000052  # blood high density lipoprotein cholesterol level
+http://purl.obolibrary.org/obo/CMO_0000053  # blood low density lipoprotein cholesterol level
+http://purl.obolibrary.org/obo/CMO_0000105  # body mass index (BMI)
+http://purl.obolibrary.org/obo/CMO_0000772  # food intake measurement
+http://purl.obolibrary.org/obo/CMO_0001407  # ethanol drink intake rate
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CMO_0000000 # clinical measurement
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+COB
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/COB_0000032 # geographical location
+#http://purl.obolibrary.org/obo/PR_000000001 # Using ChEBI protein.
+#http://purl.obolibrary.org/obo/OBI_0000260 # plan
+http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
+http://purl.obolibrary.org/obo/COB_0000120 # information representation
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000017 #   realizable entity (not needed?)
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+#http://purl.obolibrary.org/obo/COB_0000082 # PROBLEM: COB ID'd planned process getting in via axiomatization of "plan"
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+EFO
+
+[Low level source term URIs]
+http://www.ebi.ac.uk/efo/EFO_0004329 # alcohol drinking
+http://www.ebi.ac.uk/efo/EFO_0004339 # body height
+http://www.ebi.ac.uk/efo/EFO_0004338 # body weight
+http://www.ebi.ac.uk/efo/EFO_0000319 # cardiovascular disease
+http://www.ebi.ac.uk/efo/EFO_0006525 # cigarettes per day measurement
+http://www.ebi.ac.uk/efo/EFO_0000400 # diabetes mellitus
+http://www.ebi.ac.uk/efo/EFO_0003939 # energy intake
+http://www.ebi.ac.uk/efo/EFO_0005093 # hip circumference
+http://www.ebi.ac.uk/efo/EFO_0005847 # increased risk
+http://www.ebi.ac.uk/efo/EFO_0003940 # physical activity
+http://www.ebi.ac.uk/efo/EFO_0005518 # sample collection protocol
+http://www.ebi.ac.uk/efo/EFO_0004318 # smoking behavior
+http://www.ebi.ac.uk/efo/EFO_0004342 # waist circumference
+http://www.ebi.ac.uk/efo/EFO_0000433 # duration
+http://www.ebi.ac.uk/efo/EFO_0000537 # hypertension
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.ebi.ac.uk/efo/definition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://www.ebi.ac.uk/efo/alternative_term
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+###########################################
+
+[Source ontology]
+FOODON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/FOODON_00001006
+http://purl.obolibrary.org/obo/FOODON_00001015
+http://purl.obolibrary.org/obo/FOODON_00001046
+http://purl.obolibrary.org/obo/FOODON_00001092
+http://purl.obolibrary.org/obo/FOODON_00001105
+http://purl.obolibrary.org/obo/FOODON_00001132
+http://purl.obolibrary.org/obo/FOODON_00001134
+http://purl.obolibrary.org/obo/FOODON_00001143
+http://purl.obolibrary.org/obo/FOODON_00001176
+http://purl.obolibrary.org/obo/FOODON_00001184
+http://purl.obolibrary.org/obo/FOODON_00001248
+http://purl.obolibrary.org/obo/FOODON_00001251
+http://purl.obolibrary.org/obo/FOODON_00001256
+http://purl.obolibrary.org/obo/FOODON_00001257
+http://purl.obolibrary.org/obo/FOODON_00001274
+http://purl.obolibrary.org/obo/FOODON_00001595
+http://purl.obolibrary.org/obo/FOODON_00001596
+http://purl.obolibrary.org/obo/FOODON_00001599
+http://purl.obolibrary.org/obo/FOODON_00001602
+http://purl.obolibrary.org/obo/FOODON_00001608
+http://purl.obolibrary.org/obo/FOODON_00002200
+http://purl.obolibrary.org/obo/FOODON_00002477
+http://purl.obolibrary.org/obo/FOODON_00002671
+http://purl.obolibrary.org/obo/FOODON_00003194
+http://purl.obolibrary.org/obo/FOODON_03302001
+http://purl.obolibrary.org/obo/FOODON_03303918
+http://purl.obolibrary.org/obo/FOODON_03411134
+http://purl.obolibrary.org/obo/FOODON_03411624
+http://purl.obolibrary.org/obo/FOODON_03420164
+
+http://purl.obolibrary.org/obo/FOODON_03470107
+
+http://purl.obolibrary.org/obo/FOODON_00004081 # recipe
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/NCBITaxon_2759 # Eukaryota
+
+http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0042756 # drinking behaviour
+http://purl.obolibrary.org/obo/GO_0042755 # eating behaviour
+
+http://purl.obolibrary.org/obo/GO_0000003 
+http://purl.obolibrary.org/obo/GO_0003674 
+http://purl.obolibrary.org/obo/GO_0003824 
+http://purl.obolibrary.org/obo/GO_0003872 
+http://purl.obolibrary.org/obo/GO_0004332 
+http://purl.obolibrary.org/obo/GO_0004347 
+http://purl.obolibrary.org/obo/GO_0004365 
+http://purl.obolibrary.org/obo/GO_0004457 
+http://purl.obolibrary.org/obo/GO_0004553 
+http://purl.obolibrary.org/obo/GO_0004565 
+http://purl.obolibrary.org/obo/GO_0004618 
+http://purl.obolibrary.org/obo/GO_0004619 
+http://purl.obolibrary.org/obo/GO_0004634 
+http://purl.obolibrary.org/obo/GO_0004807 
+http://purl.obolibrary.org/obo/GO_0005975 
+http://purl.obolibrary.org/obo/GO_0005996 
+http://purl.obolibrary.org/obo/GO_0006006 
+http://purl.obolibrary.org/obo/GO_0006007 
+http://purl.obolibrary.org/obo/GO_0006082 
+http://purl.obolibrary.org/obo/GO_0006089 
+http://purl.obolibrary.org/obo/GO_0006090 
+http://purl.obolibrary.org/obo/GO_0006091 
+http://purl.obolibrary.org/obo/GO_0006096 
+http://purl.obolibrary.org/obo/GO_0006113 
+http://purl.obolibrary.org/obo/GO_0006139 
+http://purl.obolibrary.org/obo/GO_0006163 
+http://purl.obolibrary.org/obo/GO_0006165 
+http://purl.obolibrary.org/obo/GO_0006725 
+http://purl.obolibrary.org/obo/GO_0006734 
+http://purl.obolibrary.org/obo/GO_0006735 
+http://purl.obolibrary.org/obo/GO_0006753 
+http://purl.obolibrary.org/obo/GO_0006757 
+http://purl.obolibrary.org/obo/GO_0006793 
+http://purl.obolibrary.org/obo/GO_0006796 
+http://purl.obolibrary.org/obo/GO_0006807 
+http://purl.obolibrary.org/obo/GO_0007586 
+http://purl.obolibrary.org/obo/GO_0008150 
+http://purl.obolibrary.org/obo/GO_0008152 
+http://purl.obolibrary.org/obo/GO_0009056 
+http://purl.obolibrary.org/obo/GO_0009058 
+http://purl.obolibrary.org/obo/GO_0009117 
+http://purl.obolibrary.org/obo/GO_0009132 
+http://purl.obolibrary.org/obo/GO_0009135 
+http://purl.obolibrary.org/obo/GO_0009150 
+http://purl.obolibrary.org/obo/GO_0009179 
+http://purl.obolibrary.org/obo/GO_0009185 
+http://purl.obolibrary.org/obo/GO_0009259 
+http://purl.obolibrary.org/obo/GO_0009987 
+http://purl.obolibrary.org/obo/GO_0015925 
+http://purl.obolibrary.org/obo/GO_0015980 
+http://purl.obolibrary.org/obo/GO_0016052 
+http://purl.obolibrary.org/obo/GO_0016053 
+http://purl.obolibrary.org/obo/GO_0016310 
+http://purl.obolibrary.org/obo/GO_0016787 
+http://purl.obolibrary.org/obo/GO_0016798 
+http://purl.obolibrary.org/obo/GO_0019244 
+http://purl.obolibrary.org/obo/GO_0019249 
+http://purl.obolibrary.org/obo/GO_0019318 
+http://purl.obolibrary.org/obo/GO_0019320 
+http://purl.obolibrary.org/obo/GO_0019637 
+http://purl.obolibrary.org/obo/GO_0019659 
+http://purl.obolibrary.org/obo/GO_0019660 
+http://purl.obolibrary.org/obo/GO_0019661 
+http://purl.obolibrary.org/obo/GO_0019674 
+http://purl.obolibrary.org/obo/GO_0019693 
+http://purl.obolibrary.org/obo/GO_0019752 
+http://purl.obolibrary.org/obo/GO_0030097 
+http://purl.obolibrary.org/obo/GO_0032501 
+http://purl.obolibrary.org/obo/GO_0032787 
+http://purl.obolibrary.org/obo/GO_0034641 
+http://purl.obolibrary.org/obo/GO_0043436 
+http://purl.obolibrary.org/obo/GO_0043891 
+http://purl.obolibrary.org/obo/GO_0044237 
+http://purl.obolibrary.org/obo/GO_0044238 
+http://purl.obolibrary.org/obo/GO_0044249 
+http://purl.obolibrary.org/obo/GO_0044281 
+http://purl.obolibrary.org/obo/GO_0044282 
+http://purl.obolibrary.org/obo/GO_0044283 
+http://purl.obolibrary.org/obo/GO_0046031 
+http://purl.obolibrary.org/obo/GO_0046034 
+http://purl.obolibrary.org/obo/GO_0046365 
+http://purl.obolibrary.org/obo/GO_0046394 
+http://purl.obolibrary.org/obo/GO_0046483 
+http://purl.obolibrary.org/obo/GO_0046939 
+http://purl.obolibrary.org/obo/GO_0050892 
+http://purl.obolibrary.org/obo/GO_0055086 
+http://purl.obolibrary.org/obo/GO_0061615 
+http://purl.obolibrary.org/obo/GO_0061620 
+http://purl.obolibrary.org/obo/GO_0061621 
+http://purl.obolibrary.org/obo/GO_0061718 
+http://purl.obolibrary.org/obo/GO_0071704 
+http://purl.obolibrary.org/obo/GO_0072330 
+http://purl.obolibrary.org/obo/GO_0072521 
+http://purl.obolibrary.org/obo/GO_1901135 
+http://purl.obolibrary.org/obo/GO_1901360 
+http://purl.obolibrary.org/obo/GO_1901564 
+http://purl.obolibrary.org/obo/GO_1901575 
+http://purl.obolibrary.org/obo/GO_1901576 
+http://purl.obolibrary.org/obo/GO_1901615 
+http://purl.obolibrary.org/obo/GO_1901617 
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GO_0008150 # biological process
+http://purl.obolibrary.org/obo/GO_0003674 # molecular function
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+HP
+
+[Low level source term URIs] 
+http://purl.obolibrary.org/obo/HP_0000118 
+http://purl.obolibrary.org/obo/HP_0000855 
+http://purl.obolibrary.org/obo/HP_0002024 
+http://purl.obolibrary.org/obo/HP_0002242 
+http://purl.obolibrary.org/obo/HP_0003119 
+http://purl.obolibrary.org/obo/HP_0004789 
+http://purl.obolibrary.org/obo/HP_0011024 
+http://purl.obolibrary.org/obo/HP_0012718 
+http://purl.obolibrary.org/obo/HP_0025031 
+http://purl.obolibrary.org/obo/HP_0025033 
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+#http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/HP_0000118 # Phenotypic abnormality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+[Source ontology]
+IAO
+
+[Low level source term URIs] 
+http://purl.obolibrary.org/obo/IAO_0000001 
+http://purl.obolibrary.org/obo/IAO_0000003 
+http://purl.obolibrary.org/obo/IAO_0000005 
+http://purl.obolibrary.org/obo/IAO_0000007 
+http://purl.obolibrary.org/obo/IAO_0000009 
+http://purl.obolibrary.org/obo/IAO_0000013 
+http://purl.obolibrary.org/obo/IAO_0000027 
+http://purl.obolibrary.org/obo/IAO_0000028 
+http://purl.obolibrary.org/obo/IAO_0000030 
+http://purl.obolibrary.org/obo/IAO_0000032 
+http://purl.obolibrary.org/obo/IAO_0000033 
+http://purl.obolibrary.org/obo/IAO_0000038 
+http://purl.obolibrary.org/obo/IAO_0000055 
+http://purl.obolibrary.org/obo/IAO_0000064 
+http://purl.obolibrary.org/obo/IAO_0000078 
+http://purl.obolibrary.org/obo/IAO_0000088 
+http://purl.obolibrary.org/obo/IAO_0000100 
+http://purl.obolibrary.org/obo/IAO_0000102 
+http://purl.obolibrary.org/obo/IAO_0000104 
+http://purl.obolibrary.org/obo/IAO_0000109 
+http://purl.obolibrary.org/obo/IAO_0000129 
+http://purl.obolibrary.org/obo/IAO_0000144 
+http://purl.obolibrary.org/obo/IAO_0000300 # textual entity
+http://purl.obolibrary.org/obo/IAO_0000301 
+http://purl.obolibrary.org/obo/IAO_0000308 
+http://purl.obolibrary.org/obo/IAO_0000309 
+http://purl.obolibrary.org/obo/IAO_0000310 
+http://purl.obolibrary.org/obo/IAO_0000311 
+http://purl.obolibrary.org/obo/IAO_0000312 
+http://purl.obolibrary.org/obo/IAO_0000326 
+http://purl.obolibrary.org/obo/IAO_0000416 
+http://purl.obolibrary.org/obo/IAO_0000429 
+http://purl.obolibrary.org/obo/IAO_0000442 
+http://purl.obolibrary.org/obo/IAO_0000443 
+http://purl.obolibrary.org/obo/IAO_0000572 
+http://purl.obolibrary.org/obo/IAO_0000574 
+http://purl.obolibrary.org/obo/IAO_0000577 
+http://purl.obolibrary.org/obo/IAO_0000578 
+http://purl.obolibrary.org/obo/IAO_0000579 
+http://purl.obolibrary.org/obo/IAO_0000621 
+http://purl.obolibrary.org/obo/IAO_0000039 
+http://purl.obolibrary.org/obo/IAO_0000136 
+http://purl.obolibrary.org/obo/IAO_0000142 
+http://purl.obolibrary.org/obo/IAO_0000219 
+http://purl.obolibrary.org/obo/IAO_0000221 
+http://purl.obolibrary.org/obo/IAO_0000413 
+http://purl.obolibrary.org/obo/IAO_0000417 
+
+http://purl.obolibrary.org/obo/IAO_0020015 # personal name
+http://purl.obolibrary.org/obo/IAO_0000004 #
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+OBI
+
+[Low level source term URIs] 
+
+http://purl.obolibrary.org/obo/OBI_0000011 
+http://purl.obolibrary.org/obo/OBI_0000014 
+http://purl.obolibrary.org/obo/OBI_0000015 
+http://purl.obolibrary.org/obo/OBI_0000017 
+http://purl.obolibrary.org/obo/OBI_0000018 
+http://purl.obolibrary.org/obo/OBI_0000047 
+http://purl.obolibrary.org/obo/OBI_0000048 
+http://purl.obolibrary.org/obo/OBI_0000049 
+http://purl.obolibrary.org/obo/OBI_0000066 
+http://purl.obolibrary.org/obo/OBI_0000067 
+http://purl.obolibrary.org/obo/OBI_0000070 
+http://purl.obolibrary.org/obo/OBI_0000073 
+http://purl.obolibrary.org/obo/OBI_0000075 
+http://purl.obolibrary.org/obo/OBI_0000079 
+http://purl.obolibrary.org/obo/OBI_0000086 
+http://purl.obolibrary.org/obo/OBI_0000093 
+http://purl.obolibrary.org/obo/OBI_0000094 
+http://purl.obolibrary.org/obo/OBI_0000096 
+http://purl.obolibrary.org/obo/OBI_0000097 
+http://purl.obolibrary.org/obo/OBI_0000102 
+http://purl.obolibrary.org/obo/OBI_0000103 
+http://purl.obolibrary.org/obo/OBI_0000112 
+http://purl.obolibrary.org/obo/OBI_0000115 
+http://purl.obolibrary.org/obo/OBI_0000143 
+http://purl.obolibrary.org/obo/OBI_0000151 
+http://purl.obolibrary.org/obo/OBI_0000161 
+http://purl.obolibrary.org/obo/OBI_0000174 
+http://purl.obolibrary.org/obo/OBI_0000181 
+http://purl.obolibrary.org/obo/OBI_0000198 
+http://purl.obolibrary.org/obo/OBI_0000202 
+http://purl.obolibrary.org/obo/OBI_0000208 
+http://purl.obolibrary.org/obo/OBI_0000220 
+http://purl.obolibrary.org/obo/OBI_0000245 
+http://purl.obolibrary.org/obo/OBI_0000249 
+http://purl.obolibrary.org/obo/OBI_0000252  
+http://purl.obolibrary.org/obo/OBI_0000260 # plan
+http://purl.obolibrary.org/obo/OBI_0000272 
+http://purl.obolibrary.org/obo/OBI_0000274 
+http://purl.obolibrary.org/obo/OBI_0000275 
+http://purl.obolibrary.org/obo/OBI_0000319 
+http://purl.obolibrary.org/obo/OBI_0000338 
+http://purl.obolibrary.org/obo/OBI_0000339 
+http://purl.obolibrary.org/obo/OBI_0000345 
+http://purl.obolibrary.org/obo/OBI_0000361 
+http://purl.obolibrary.org/obo/OBI_0000364 
+http://purl.obolibrary.org/obo/OBI_0000370 
+http://purl.obolibrary.org/obo/OBI_0000371 
+http://purl.obolibrary.org/obo/OBI_0000372 
+http://purl.obolibrary.org/obo/OBI_0000378 
+http://purl.obolibrary.org/obo/OBI_0000385 
+http://purl.obolibrary.org/obo/OBI_0000387 
+http://purl.obolibrary.org/obo/OBI_0000401 
+http://purl.obolibrary.org/obo/OBI_0000418 
+http://purl.obolibrary.org/obo/OBI_0000423 
+http://purl.obolibrary.org/obo/OBI_0000434 
+http://purl.obolibrary.org/obo/OBI_0000437 
+http://purl.obolibrary.org/obo/OBI_0000441 
+http://purl.obolibrary.org/obo/OBI_0000443 
+http://purl.obolibrary.org/obo/OBI_0000444 
+http://purl.obolibrary.org/obo/OBI_0000451 
+http://purl.obolibrary.org/obo/OBI_0000453 
+http://purl.obolibrary.org/obo/OBI_0000456 
+http://purl.obolibrary.org/obo/OBI_0000457 
+http://purl.obolibrary.org/obo/OBI_0000458 
+http://purl.obolibrary.org/obo/OBI_0000471 
+http://purl.obolibrary.org/obo/OBI_0000520 
+http://purl.obolibrary.org/obo/OBI_0000571 
+http://purl.obolibrary.org/obo/OBI_0000576 
+http://purl.obolibrary.org/obo/OBI_0000630 
+http://purl.obolibrary.org/obo/OBI_0000639 
+http://purl.obolibrary.org/obo/OBI_0000651 
+http://purl.obolibrary.org/obo/OBI_0000652 
+http://purl.obolibrary.org/obo/OBI_0000655 
+http://purl.obolibrary.org/obo/OBI_0000659 
+http://purl.obolibrary.org/obo/OBI_0000671 
+http://purl.obolibrary.org/obo/OBI_0000678 
+http://purl.obolibrary.org/obo/OBI_0000681 
+http://purl.obolibrary.org/obo/OBI_0000684 
+http://purl.obolibrary.org/obo/OBI_0000686 
+http://purl.obolibrary.org/obo/OBI_0000721 
+http://purl.obolibrary.org/obo/OBI_0000725 
+http://purl.obolibrary.org/obo/OBI_0000740 
+http://purl.obolibrary.org/obo/OBI_0000747 
+http://purl.obolibrary.org/obo/OBI_0000750 
+http://purl.obolibrary.org/obo/OBI_0000751 
+http://purl.obolibrary.org/obo/OBI_0000806 
+http://purl.obolibrary.org/obo/OBI_0000810 
+http://purl.obolibrary.org/obo/OBI_0000813 
+http://purl.obolibrary.org/obo/OBI_0000825 
+http://purl.obolibrary.org/obo/OBI_0000828 
+http://purl.obolibrary.org/obo/OBI_0000832 
+http://purl.obolibrary.org/obo/OBI_0000838 
+http://purl.obolibrary.org/obo/OBI_0000931 
+http://purl.obolibrary.org/obo/OBI_0000932 
+http://purl.obolibrary.org/obo/OBI_0000941 
+http://purl.obolibrary.org/obo/OBI_0000947 
+http://purl.obolibrary.org/obo/OBI_0000951 
+http://purl.obolibrary.org/obo/OBI_0000953 
+http://purl.obolibrary.org/obo/OBI_0000967 
+http://purl.obolibrary.org/obo/OBI_0000968 
+http://purl.obolibrary.org/obo/OBI_0000969 
+http://purl.obolibrary.org/obo/OBI_0000973 
+http://purl.obolibrary.org/obo/OBI_0000984 
+http://purl.obolibrary.org/obo/OBI_0000995 
+http://purl.obolibrary.org/obo/OBI_0001000 
+http://purl.obolibrary.org/obo/OBI_0001010 
+http://purl.obolibrary.org/obo/OBI_0001034 
+http://purl.obolibrary.org/obo/OBI_0001108 
+http://purl.obolibrary.org/obo/OBI_0001137 
+http://purl.obolibrary.org/obo/OBI_0001173 
+http://purl.obolibrary.org/obo/OBI_0001336 
+http://purl.obolibrary.org/obo/OBI_0001418 
+http://purl.obolibrary.org/obo/OBI_0001479 
+http://purl.obolibrary.org/obo/OBI_0001515 
+http://purl.obolibrary.org/obo/OBI_0001528 
+http://purl.obolibrary.org/obo/OBI_0001547 
+http://purl.obolibrary.org/obo/OBI_0001557 
+http://purl.obolibrary.org/obo/OBI_0001615 
+http://purl.obolibrary.org/obo/OBI_0001616 
+http://purl.obolibrary.org/obo/OBI_0001617 
+http://purl.obolibrary.org/obo/OBI_0001622 
+http://purl.obolibrary.org/obo/OBI_0001626 
+http://purl.obolibrary.org/obo/OBI_0001627 
+http://purl.obolibrary.org/obo/OBI_0001628 
+http://purl.obolibrary.org/obo/OBI_0001629 
+http://purl.obolibrary.org/obo/OBI_0001630 
+http://purl.obolibrary.org/obo/OBI_0001636 
+http://purl.obolibrary.org/obo/OBI_0001687 
+http://purl.obolibrary.org/obo/OBI_0001755 
+http://purl.obolibrary.org/obo/OBI_0001769 
+http://purl.obolibrary.org/obo/OBI_0001834 
+http://purl.obolibrary.org/obo/OBI_0001880 
+http://purl.obolibrary.org/obo/OBI_0001881 
+http://purl.obolibrary.org/obo/OBI_0001884 
+http://purl.obolibrary.org/obo/OBI_0001885 
+http://purl.obolibrary.org/obo/OBI_0001887 
+http://purl.obolibrary.org/obo/OBI_0001890 
+http://purl.obolibrary.org/obo/OBI_0001891 
+http://purl.obolibrary.org/obo/OBI_0001893 
+http://purl.obolibrary.org/obo/OBI_0001894 
+http://purl.obolibrary.org/obo/OBI_0001896 
+http://purl.obolibrary.org/obo/OBI_0001897 
+http://purl.obolibrary.org/obo/OBI_0001898 
+http://purl.obolibrary.org/obo/OBI_0001900 
+http://purl.obolibrary.org/obo/OBI_0001901 
+http://purl.obolibrary.org/obo/OBI_0001902 
+http://purl.obolibrary.org/obo/OBI_0001903 
+http://purl.obolibrary.org/obo/OBI_0001904 
+http://purl.obolibrary.org/obo/OBI_0001908 
+http://purl.obolibrary.org/obo/OBI_0001909 
+http://purl.obolibrary.org/obo/OBI_0001912 
+http://purl.obolibrary.org/obo/OBI_0001928 
+http://purl.obolibrary.org/obo/OBI_0001931 
+http://purl.obolibrary.org/obo/OBI_0001932 
+http://purl.obolibrary.org/obo/OBI_0001933 
+http://purl.obolibrary.org/obo/OBI_0001934 
+http://purl.obolibrary.org/obo/OBI_0001942 
+http://purl.obolibrary.org/obo/OBI_0002076 
+http://purl.obolibrary.org/obo/OBI_0002078 
+http://purl.obolibrary.org/obo/OBI_0002079 
+http://purl.obolibrary.org/obo/OBI_0002080 
+http://purl.obolibrary.org/obo/OBI_0002081 
+http://purl.obolibrary.org/obo/OBI_0002089 
+http://purl.obolibrary.org/obo/OBI_0002110 
+http://purl.obolibrary.org/obo/OBI_0002116 
+http://purl.obolibrary.org/obo/OBI_0002198 
+http://purl.obolibrary.org/obo/OBI_0002444 
+http://purl.obolibrary.org/obo/OBI_0002501 
+http://purl.obolibrary.org/obo/OBI_0002503 
+http://purl.obolibrary.org/obo/OBI_0002504 
+http://purl.obolibrary.org/obo/OBI_0002505 
+http://purl.obolibrary.org/obo/OBI_0002507 
+http://purl.obolibrary.org/obo/OBI_0002508 
+http://purl.obolibrary.org/obo/OBI_0002509 
+http://purl.obolibrary.org/obo/OBI_0100016 
+http://purl.obolibrary.org/obo/OBI_0100017 
+http://purl.obolibrary.org/obo/OBI_0100026 
+http://purl.obolibrary.org/obo/OBI_0100051 
+http://purl.obolibrary.org/obo/OBI_0100060 
+http://purl.obolibrary.org/obo/OBI_0100086 
+http://purl.obolibrary.org/obo/OBI_0200000 
+http://purl.obolibrary.org/obo/OBI_0200166 
+http://purl.obolibrary.org/obo/OBI_0200167 
+http://purl.obolibrary.org/obo/OBI_0200169 
+http://purl.obolibrary.org/obo/OBI_0200183 
+http://purl.obolibrary.org/obo/OBI_0300310 
+http://purl.obolibrary.org/obo/OBI_0300311 
+http://purl.obolibrary.org/obo/OBI_0302716 
+http://purl.obolibrary.org/obo/OBI_0302838 
+http://purl.obolibrary.org/obo/OBI_0302840 
+http://purl.obolibrary.org/obo/OBI_0302846 
+http://purl.obolibrary.org/obo/OBI_0302884 
+http://purl.obolibrary.org/obo/OBI_0302885 
+http://purl.obolibrary.org/obo/OBI_0302886 
+http://purl.obolibrary.org/obo/OBI_0302893 
+http://purl.obolibrary.org/obo/OBI_0302900 
+http://purl.obolibrary.org/obo/OBI_0302908 
+http://purl.obolibrary.org/obo/OBI_0302911 
+http://purl.obolibrary.org/obo/OBI_0302914 
+http://purl.obolibrary.org/obo/OBI_0400103 
+http://purl.obolibrary.org/obo/OBI_0400106 
+http://purl.obolibrary.org/obo/OBI_0500000 
+http://purl.obolibrary.org/obo/OBI_0500001 
+http://purl.obolibrary.org/obo/OBI_0500002 
+http://purl.obolibrary.org/obo/OBI_0500003 
+http://purl.obolibrary.org/obo/OBI_0500004 
+http://purl.obolibrary.org/obo/OBI_0500005 
+http://purl.obolibrary.org/obo/OBI_0500006 
+http://purl.obolibrary.org/obo/OBI_0500007 
+http://purl.obolibrary.org/obo/OBI_0500008 
+http://purl.obolibrary.org/obo/OBI_0500009 
+http://purl.obolibrary.org/obo/OBI_0500010 
+http://purl.obolibrary.org/obo/OBI_0500011 
+http://purl.obolibrary.org/obo/OBI_0500012 
+http://purl.obolibrary.org/obo/OBI_0500013 
+http://purl.obolibrary.org/obo/OBI_0500014 
+http://purl.obolibrary.org/obo/OBI_0500015 
+http://purl.obolibrary.org/obo/OBI_0500016 
+http://purl.obolibrary.org/obo/OBI_0500017 
+http://purl.obolibrary.org/obo/OBI_0500018 
+http://purl.obolibrary.org/obo/OBI_0500019 
+http://purl.obolibrary.org/obo/OBI_0500020 
+http://purl.obolibrary.org/obo/OBI_0500022 
+http://purl.obolibrary.org/obo/OBI_0500023 
+http://purl.obolibrary.org/obo/OBI_0500024 
+http://purl.obolibrary.org/obo/OBI_0500025 
+http://purl.obolibrary.org/obo/OBI_0500026 
+http://purl.obolibrary.org/obo/OBI_0500027 
+http://purl.obolibrary.org/obo/OBI_0500028 
+http://purl.obolibrary.org/obo/OBI_0600004 
+http://purl.obolibrary.org/obo/OBI_0600005 
+http://purl.obolibrary.org/obo/OBI_0600007 
+http://purl.obolibrary.org/obo/OBI_0600014 
+http://purl.obolibrary.org/obo/OBI_0600015 
+http://purl.obolibrary.org/obo/OBI_0600024 
+http://purl.obolibrary.org/obo/OBI_0600036 
+http://purl.obolibrary.org/obo/OBI_0600047 
+http://purl.obolibrary.org/obo/OBI_0600052 
+http://purl.obolibrary.org/obo/OBI_0666667 
+http://purl.obolibrary.org/obo/OBI_1110010 
+http://purl.obolibrary.org/obo/OBI_1110011 
+http://purl.obolibrary.org/obo/OBI_1110012 
+http://purl.obolibrary.org/obo/OBI_1110040 
+http://purl.obolibrary.org/obo/OBI_1110049 
+http://purl.obolibrary.org/obo/OBI_1110053 
+http://purl.obolibrary.org/obo/OBI_1110054 
+http://purl.obolibrary.org/obo/OBI_1110095 
+http://purl.obolibrary.org/obo/OBI_1110122 
+http://purl.obolibrary.org/obo/OBI_1110201 
+http://purl.obolibrary.org/obo/OBI_2000009 
+
+http://purl.obolibrary.org/obo/OBI_0000107 
+http://purl.obolibrary.org/obo/OBI_0000124 
+http://purl.obolibrary.org/obo/OBI_0000293 
+http://purl.obolibrary.org/obo/OBI_0000295 
+http://purl.obolibrary.org/obo/OBI_0000299 
+http://purl.obolibrary.org/obo/OBI_0000312 
+http://purl.obolibrary.org/obo/OBI_0000314 
+http://purl.obolibrary.org/obo/OBI_0000417 
+http://purl.obolibrary.org/obo/OBI_0000643 
+http://purl.obolibrary.org/obo/OBI_0000645 
+http://purl.obolibrary.org/obo/OBI_0000646 
+http://purl.obolibrary.org/obo/OBI_0000647 
+http://purl.obolibrary.org/obo/OBI_0000833 
+http://purl.obolibrary.org/obo/OBI_0000846 
+http://purl.obolibrary.org/obo/OBI_0001688 
+http://purl.obolibrary.org/obo/OBI_0001927 
+http://purl.obolibrary.org/obo/OBI_0001938 
+http://purl.obolibrary.org/obo/OBI_0001950 
+http://purl.obolibrary.org/obo/OBI_1110060 
+
+http://purl.obolibrary.org/obo/OBI_0001937
+
+http://purl.obolibrary.org/obo/OBI_0001139
+http://purl.obolibrary.org/obo/OBI_0001057
+
+http://purl.obolibrary.org/obo/SO_0000001 # region
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+#http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/SO_0000001 # (sequence) region
+subClassOf http://purl.obolibrary.org/obo/BFO_0000141 # region # DOES THIS WORK?
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+
+###########################################
+
+[Source ontology]
+NCIT
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCIT_C115696 
+http://purl.obolibrary.org/obo/NCIT_C116012 
+http://purl.obolibrary.org/obo/NCIT_C139218 
+http://purl.obolibrary.org/obo/NCIT_C16033 
+http://purl.obolibrary.org/obo/NCIT_C173982 
+http://purl.obolibrary.org/obo/NCIT_C1908 
+http://purl.obolibrary.org/obo/NCIT_C1913 
+http://purl.obolibrary.org/obo/NCIT_C1930 
+http://purl.obolibrary.org/obo/NCIT_C1947 
+http://purl.obolibrary.org/obo/NCIT_C1949 
+http://purl.obolibrary.org/obo/NCIT_C25662 
+http://purl.obolibrary.org/obo/NCIT_C25690 
+http://purl.obolibrary.org/obo/NCIT_C25729 
+http://purl.obolibrary.org/obo/NCIT_C28166 
+http://purl.obolibrary.org/obo/NCIT_C344 
+http://purl.obolibrary.org/obo/NCIT_C345 
+http://purl.obolibrary.org/obo/NCIT_C45678 
+http://purl.obolibrary.org/obo/NCIT_C49647 
+http://purl.obolibrary.org/obo/NCIT_C53194 
+http://purl.obolibrary.org/obo/NCIT_C53196 
+http://purl.obolibrary.org/obo/NCIT_C53204 
+http://purl.obolibrary.org/obo/NCIT_C54060 
+http://purl.obolibrary.org/obo/NCIT_C67518 
+http://purl.obolibrary.org/obo/NCIT_C68470 
+http://purl.obolibrary.org/obo/NCIT_C68472 
+http://purl.obolibrary.org/obo/NCIT_C68631 
+http://purl.obolibrary.org/obo/NCIT_C71496 
+http://purl.obolibrary.org/obo/NCIT_C71503 
+http://purl.obolibrary.org/obo/NCIT_C71515 
+http://purl.obolibrary.org/obo/NCIT_C718 
+http://purl.obolibrary.org/obo/NCIT_C76926  # Lactic Acid
+http://purl.obolibrary.org/obo/NCIT_C86036 
+http://purl.obolibrary.org/obo/NCIT_C93144 
+http://purl.obolibrary.org/obo/NCIT_C94090 
+http://purl.obolibrary.org/obo/NCIT_C94108 
+http://purl.obolibrary.org/obo/NCIT_C98714 
+http://purl.obolibrary.org/obo/NCIT_C25364 # Identifier
+http://purl.obolibrary.org/obo/NCIT_C182021 # research institute
+http://purl.obolibrary.org/obo/NCIT_C28143 # Control Group
+http://purl.obolibrary.org/obo/NCIT_C105759 # Subject Trial Set
+
+[Top level source term URIs and target direct superclass URIs]
+# All of NCIT has to be mapped into COB / BFO
+http://purl.obolibrary.org/obo/NCIT_C20181 # Conceptual Entity
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+http://purl.obolibrary.org/obo/NCIT_C1908 # Drug, Food, Chemical or Biomedical Material
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/NCIT_C43431 # activity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+http://purl.obolibrary.org/obo/NCIT_C19332 # Personal Attribute
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+http://purl.obolibrary.org/obo/NCIT_C139218 # BMI
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+http://purl.obolibrary.org/obo/NCIT_C199140 # Study Related Group
+subClassOf http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+ICO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ICO_0000001  # informed consent form
+http://purl.obolibrary.org/obo/ICO_0000015 
+http://purl.obolibrary.org/obo/ICO_0000069 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+http://purl.obolibrary.org/obo/NCBITaxon_9606 # Stop at Homo Sapiens
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+[Source ontology]
+OBCS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBCS_0000002  # data collection
+http://purl.obolibrary.org/obo/OBCS_0000089  # randomization sampling design
+http://purl.obolibrary.org/obo/OBCS_0000120  # data matrix
+http://purl.obolibrary.org/obo/OBCS_0000130  # data collection from literature
+http://purl.obolibrary.org/obo/OBCS_0000233  # transformed data item
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/IAO_0000030
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+OBIB
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/OBIB_0000018 # form filling
+http://purl.obolibrary.org/obo/OBIB_0000019 # filled patient questionnaire
+http://purl.obolibrary.org/obo/OBIB_0000020 # patient questionnaire
+http://purl.obolibrary.org/obo/OBIB_0000054 # smoking end date
+http://purl.obolibrary.org/obo/OBIB_0000070 # standard operating procedure
+http://purl.obolibrary.org/obo/OBIB_0000648 # sample collection or study aim description
+http://purl.obolibrary.org/obo/OBIB_0000649 # study proper name
+http://purl.obolibrary.org/obo/OBIB_0000692 # number of total human study participant objective
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+OGMS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGMS_0000014  # clinical finding
+http://purl.obolibrary.org/obo/OGMS_0000015  # clinical history
+http://purl.obolibrary.org/obo/OGMS_0000018 
+http://purl.obolibrary.org/obo/OGMS_0000023 
+http://purl.obolibrary.org/obo/OGMS_0000031 
+http://purl.obolibrary.org/obo/OGMS_0000056 
+http://purl.obolibrary.org/obo/OGMS_0000057 
+http://purl.obolibrary.org/obo/OGMS_0000063 
+http://purl.obolibrary.org/obo/OGMS_0000073 
+http://purl.obolibrary.org/obo/OGMS_0000090 
+http://purl.obolibrary.org/obo/OGMS_0000093 
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+OHMI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OHMI_0000002 
+http://purl.obolibrary.org/obo/OHMI_0000003 
+http://purl.obolibrary.org/obo/OHMI_0000016 
+http://purl.obolibrary.org/obo/OHMI_0000020 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+OMP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OMP_0005002 
+http://purl.obolibrary.org/obo/OMP_0005008 
+http://purl.obolibrary.org/obo/OMP_0005013 
+http://purl.obolibrary.org/obo/OMP_0007006 
+http://purl.obolibrary.org/obo/OMP_0007085 
+http://purl.obolibrary.org/obo/OMP_0007138 
+http://purl.obolibrary.org/obo/OMP_0007157 
+http://purl.obolibrary.org/obo/OMP_0007167 
+http://purl.obolibrary.org/obo/OMP_0007192 
+http://purl.obolibrary.org/obo/OMP_0007194 
+http://purl.obolibrary.org/obo/OMP_0007351 
+http://purl.obolibrary.org/obo/OMP_0007516 
+http://purl.obolibrary.org/obo/OMP_0007519 
+http://purl.obolibrary.org/obo/OMP_0007523 
+http://purl.obolibrary.org/obo/OMP_0007931 
+http://purl.obolibrary.org/obo/OMP_0007952 
+
+#http://purl.obolibrary.org/obo/OMP_0007189 # altered relative to
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OMP_0000000 # microbial phenotype
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # Characteristic
+http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+OMRSE
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OMRSE_00000038 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+OMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000118 # alternative label
+includeAllChildren
+
+http://purl.obolibrary.org/obo/IAO_0000111 # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000114 # has curation status
+http://purl.obolibrary.org/obo/IAO_0000119 # definition source
+http://purl.obolibrary.org/obo/IAO_0000231 # has obsolescence reason
+http://purl.obolibrary.org/obo/IAO_0000412 # imported from
+http://purl.obolibrary.org/obo/IAO_0100001 # term replaced by
+
+http://purl.obolibrary.org/obo/IAO_0000112
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000232
+http://purl.obolibrary.org/obo/IAO_0000234
+http://purl.obolibrary.org/obo/IAO_0000589
+http://purl.obolibrary.org/obo/IAO_0000600
+http://purl.obolibrary.org/obo/IAO_0000601
+http://purl.obolibrary.org/obo/IAO_0000602
+
+# curation states
+http://purl.obolibrary.org/obo/IAO_0000002
+http://purl.obolibrary.org/obo/IAO_0000120
+http://purl.obolibrary.org/obo/IAO_0000121
+http://purl.obolibrary.org/obo/IAO_0000122
+http://purl.obolibrary.org/obo/IAO_0000123
+http://purl.obolibrary.org/obo/IAO_0000124
+http://purl.obolibrary.org/obo/IAO_0000125
+http://purl.obolibrary.org/obo/IAO_0000423
+http://purl.obolibrary.org/obo/IAO_0000428
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+###########################################
+
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
+
+http://purl.obolibrary.org/obo/PATO_0002303 # decreased quality
+http://purl.obolibrary.org/obo/PATO_0001163 # decreased concentration
+http://purl.obolibrary.org/obo/PATO_0002305 # increased quality
+http://purl.obolibrary.org/obo/PATO_0001162 # increased concentration
+http://purl.obolibrary.org/obo/PATO_0000069 # deviation from normal
+http://purl.obolibrary.org/obo/PATO_0000918 # volume
+# http://purl.obolibrary.org/obo/PATO_0000125 # mass ; imported by way of COB
+
+http://purl.obolibrary.org/obo/PATO_0002138 # edibility
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0001800 # water composition
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0001894 # phenotypic sex
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0001546 # quality of a solid
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0001548 # quality of a liquid 
+includeAllChildren
+http://purl.obolibrary.org/obo/PATO_0000586 # increased size
+http://purl.obolibrary.org/obo/PATO_0000587 # decreased size
+
+http://purl.obolibrary.org/obo/PATO_0000146 # temperature
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0000014 # color
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0000261 # maturity
+includeAllChildren
+
+http://purl.obolibrary.org/obo/PATO_0000309 # young
+http://purl.obolibrary.org/obo/PATO_0000308 # old
+
+http://purl.obolibrary.org/obo/PATO_0000011 
+http://purl.obolibrary.org/obo/PATO_0000033 
+http://purl.obolibrary.org/obo/PATO_0000047 
+http://purl.obolibrary.org/obo/PATO_0000051 
+http://purl.obolibrary.org/obo/PATO_0000117 
+http://purl.obolibrary.org/obo/PATO_0000122 
+http://purl.obolibrary.org/obo/PATO_0000125 
+http://purl.obolibrary.org/obo/PATO_0000146 
+http://purl.obolibrary.org/obo/PATO_0000165 
+http://purl.obolibrary.org/obo/PATO_0000186 
+http://purl.obolibrary.org/obo/PATO_0000383 
+http://purl.obolibrary.org/obo/PATO_0000384 
+http://purl.obolibrary.org/obo/PATO_0000460 
+http://purl.obolibrary.org/obo/PATO_0000918 
+http://purl.obolibrary.org/obo/PATO_0001018 
+http://purl.obolibrary.org/obo/PATO_0001025 
+http://purl.obolibrary.org/obo/PATO_0001236 
+http://purl.obolibrary.org/obo/PATO_0001241 
+http://purl.obolibrary.org/obo/PATO_0001309 
+http://purl.obolibrary.org/obo/PATO_0001338 
+http://purl.obolibrary.org/obo/PATO_0001710 
+http://purl.obolibrary.org/obo/PATO_0001894 
+http://purl.obolibrary.org/obo/PATO_0001995 
+http://purl.obolibrary.org/obo/PATO_0002003 
+http://purl.obolibrary.org/obo/PATO_0002062 
+http://purl.obolibrary.org/obo/PATO_0002182 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000001
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+PO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/PO_0000003 
+http://purl.obolibrary.org/obo/PO_0009011 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 # Process
+http://purl.obolibrary.org/obo/BFO_0000040 # ME
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0000052 
+http://purl.obolibrary.org/obo/RO_0000053 
+http://purl.obolibrary.org/obo/RO_0000056 
+http://purl.obolibrary.org/obo/RO_0000057 
+http://purl.obolibrary.org/obo/RO_0000058 
+http://purl.obolibrary.org/obo/RO_0000059 
+http://purl.obolibrary.org/obo/RO_0000079 
+http://purl.obolibrary.org/obo/RO_0000080 
+http://purl.obolibrary.org/obo/RO_0000081 
+http://purl.obolibrary.org/obo/RO_0000085 
+http://purl.obolibrary.org/obo/RO_0000086 
+http://purl.obolibrary.org/obo/RO_0000087 
+http://purl.obolibrary.org/obo/RO_0001000 
+http://purl.obolibrary.org/obo/RO_0001001 
+http://purl.obolibrary.org/obo/RO_0001015 
+http://purl.obolibrary.org/obo/RO_0001025 
+http://purl.obolibrary.org/obo/RO_0002018 
+http://purl.obolibrary.org/obo/RO_0002087 
+http://purl.obolibrary.org/obo/RO_0002131 
+http://purl.obolibrary.org/obo/RO_0002162 
+http://purl.obolibrary.org/obo/RO_0002180 
+http://purl.obolibrary.org/obo/RO_0002219 
+http://purl.obolibrary.org/obo/RO_0002220 
+http://purl.obolibrary.org/obo/RO_0002233 
+http://purl.obolibrary.org/obo/RO_0002234 
+http://purl.obolibrary.org/obo/RO_0002248 
+http://purl.obolibrary.org/obo/RO_0002314 
+http://purl.obolibrary.org/obo/RO_0002321 
+http://purl.obolibrary.org/obo/RO_0002323 
+http://purl.obolibrary.org/obo/RO_0002350 
+http://purl.obolibrary.org/obo/RO_0002351 
+http://purl.obolibrary.org/obo/RO_0002418 
+http://purl.obolibrary.org/obo/RO_0002437 
+http://purl.obolibrary.org/obo/RO_0002470 # eats
+http://purl.obolibrary.org/obo/RO_0002500 
+http://purl.obolibrary.org/obo/RO_0002501 
+http://purl.obolibrary.org/obo/RO_0002502 
+http://purl.obolibrary.org/obo/RO_0002506 
+http://purl.obolibrary.org/obo/RO_0002507 
+http://purl.obolibrary.org/obo/RO_0002559 
+http://purl.obolibrary.org/obo/RO_0002573 
+http://purl.obolibrary.org/obo/RO_0002574 
+http://purl.obolibrary.org/obo/RO_0002595 
+
+http://purl.obolibrary.org/obo/BFO_0000050 # part of
+http://purl.obolibrary.org/obo/BFO_0000051 # has part
+http://purl.obolibrary.org/obo/BFO_0000054 # realized in
+http://purl.obolibrary.org/obo/BFO_0000055 # realizes
+http://purl.obolibrary.org/obo/BFO_0000062 # preceded by
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+SIO
+
+[Low level source term URIs]
+http://semanticscience.org/resource/SIO_000001 # is related to
+http://semanticscience.org/resource/SIO_000031 # start date
+http://semanticscience.org/resource/SIO_000669 # start time
+http://semanticscience.org/resource/SIO_000670 # end time
+
+http://semanticscience.org/resource/SIO_000085 # question
+http://semanticscience.org/resource/SIO_000113 # sentence
+# http://semanticscience.org/resource/SIO_000115 # identifier . replaced with IAO identifier
+# http://semanticscience.org/resource/SIO_000154 # article . replaced with IAO journal article
+# http://semanticscience.org/resource/SIO_000173 # affiliation . unused?!
+# http://semanticscience.org/resource/SIO_000183 # personal name . replaced with IAO personal name
+http://semanticscience.org/resource/SIO_000366 # number
+http://semanticscience.org/resource/SIO_000403 # study group
+http://semanticscience.org/resource/SIO_000508 # endpoint
+http://semanticscience.org/resource/SIO_000664 # country
+
+
+# http://semanticscience.org/resource/SIO_000688 # institute
+# http://semanticscience.org/resource/SIO_000964 # standard operating procedure replaced by OBIB term.
+http://semanticscience.org/resource/SIO_001014 # ethnicity
+http://semanticscience.org/resource/SIO_001068 # control group
+
+# http://semanticscience.org/resource/SIO_000883 # subject role replaced with "Subject under investigation role"
+# http://semanticscience.org/resource/SIO_001066 # study replaced with OBI investigation
+
+[Top level source term URIs and target direct superclass URIs]
+# http://semanticscience.org/resource/SIO_000015 # identifier
+# subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+http://semanticscience.org/resource/SIO_000475 # 		biological quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+
+http://semanticscience.org/resource/SIO_000664 # 		country
+subClassOf http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+
+http://semanticscience.org/resource/SIO_000506 #		geometric entity
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+http://semanticscience.org/resource/SIO_000113 # 		sentence
+subClassOf http://purl.obolibrary.org/obo/IAO_0000300 # textual entity
+
+# ISSUE: SIO study group is an ICE.  But OBI doesn't have object aggregate.
+http://semanticscience.org/resource/SIO_000403 # study group
+subClassOf http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
+
+# Can't subclass this if we don't import parent anywhere in this file?
+# http://semanticscience.org/resource/SIO_000418 # time instant
+# subClassOf https://www.w3.org/TR/owl-time/#time:Instant time:Instant
+
+http://semanticscience.org/resource/SIO_000366 # number
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+###########################################
+
+[Source ontology]
+STATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
+http://purl.obolibrary.org/obo/STATO_0000096 
+http://purl.obolibrary.org/obo/STATO_0000124 
+http://purl.obolibrary.org/obo/STATO_0000216 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+
+###########################################
+
+[Source ontology]
+UBERON
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/UBERON_0000160 
+http://purl.obolibrary.org/obo/UBERON_0000165 
+http://purl.obolibrary.org/obo/UBERON_0000178 
+http://purl.obolibrary.org/obo/UBERON_0000463 
+http://purl.obolibrary.org/obo/UBERON_0000465 
+http://purl.obolibrary.org/obo/UBERON_0000468 
+http://purl.obolibrary.org/obo/UBERON_0000477 
+http://purl.obolibrary.org/obo/UBERON_0000479 
+http://purl.obolibrary.org/obo/UBERON_0000945 
+http://purl.obolibrary.org/obo/UBERON_0001007 
+http://purl.obolibrary.org/obo/UBERON_0001013 
+http://purl.obolibrary.org/obo/UBERON_0001088 
+http://purl.obolibrary.org/obo/UBERON_0001089 
+http://purl.obolibrary.org/obo/UBERON_0001155 
+http://purl.obolibrary.org/obo/UBERON_0001836 
+http://purl.obolibrary.org/obo/UBERON_0001913 
+http://purl.obolibrary.org/obo/UBERON_0001970 
+http://purl.obolibrary.org/obo/UBERON_0001988 
+http://purl.obolibrary.org/obo/UBERON_0003100 
+http://purl.obolibrary.org/obo/UBERON_0005409 
+http://purl.obolibrary.org/obo/UBERON_0006314 
+http://purl.obolibrary.org/obo/UBERON_0006538 
+http://purl.obolibrary.org/obo/UBERON_0006911 
+http://purl.obolibrary.org/obo/UBERON_0007023 
+http://purl.obolibrary.org/obo/UBERON_0007311 
+http://purl.obolibrary.org/obo/UBERON_0012112 
+
+[Top level source term URIs and target direct superclass URIs]
+#http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic / quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+###########################################
+
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000000 
+http://purl.obolibrary.org/obo/UO_0000001 
+http://purl.obolibrary.org/obo/UO_0000002 
+http://purl.obolibrary.org/obo/UO_0000003 
+http://purl.obolibrary.org/obo/UO_0000005 
+http://purl.obolibrary.org/obo/UO_0000006 
+http://purl.obolibrary.org/obo/UO_0000009 
+http://purl.obolibrary.org/obo/UO_0000021 
+http://purl.obolibrary.org/obo/UO_0000031 
+http://purl.obolibrary.org/obo/UO_0000032 
+http://purl.obolibrary.org/obo/UO_0000033 
+http://purl.obolibrary.org/obo/UO_0000034 
+http://purl.obolibrary.org/obo/UO_0000036 
+http://purl.obolibrary.org/obo/UO_0000051 
+http://purl.obolibrary.org/obo/UO_0000095 
+http://purl.obolibrary.org/obo/UO_0000105 
+http://purl.obolibrary.org/obo/UO_0000109 
+http://purl.obolibrary.org/obo/UO_0000270 
+http://purl.obolibrary.org/obo/UO_0000280 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UO_0000000
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+http://www.w3.org/2000/01/rdf-schema#seeAlso
+
+###########################################
+
+[Source ontology]
+VO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/VO_0000001 
+http://purl.obolibrary.org/obo/VO_0000002 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000040
+http://purl.obolibrary.org/obo/OBI_0000011
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://www.geneontology.org/formats/oboInOwl#hasSynonym
+
