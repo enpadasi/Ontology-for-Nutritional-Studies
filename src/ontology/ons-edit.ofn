@@ -3784,6 +3784,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000038 "A moderate-fat, restricted-
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000038 " https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000038 "Leigh Carmody ")
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000038 "PMID:18635428")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_1000038 "MeDi")
 AnnotationAssertion(rdfs:label obo:ONS_1000038 "mediterranean diet"@en)
 AnnotationAssertion(rdfs:seeAlso obo:ONS_1000038 "PMID:18635428")
 SubClassOf(obo:ONS_1000038 obo:ONS_1000005)
