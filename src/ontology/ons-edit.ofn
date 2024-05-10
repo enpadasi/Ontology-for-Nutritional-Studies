@@ -20,6 +20,7 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
+<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-05-10/ons.owl>
 Import(<http://purl.obolibrary.org/obo/ons/imports/edam_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/general_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/ncbitaxon_import.ofn>)
@@ -2352,7 +2353,7 @@ SubClassOf(obo:ONS_0000079 ObjectSomeValuesFrom(obo:RO_0000056 obo:ONS_0000101))
 
 # Class: obo:ONS_0000080 (individual regular diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000080 "The regular course of eating and drinking adopted by an organism."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000080 "A descriptive diet which is the regular course of eating and drinking adopted by an organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000080 "ENPADASI_WP4")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000080 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_0000080 "https://github.com/enpadasi/Ontology-for-Nutritional-Studies")
@@ -2383,7 +2384,7 @@ SubClassOf(obo:ONS_0000082 obo:ONS_1000007)
 
 # Class: obo:ONS_0000083 (population regular diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000083 "The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000083 "A descriptive diet consumed by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000083 "ENPADASI_WP4")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000083 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_0000083 "usual diet"@en)
@@ -2400,10 +2401,10 @@ SubClassOf(obo:ONS_0000084 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_960
 
 # Class: obo:ONS_0000085 (meal)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed.")
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually occurs at certain time during the day."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000085 "ENPADASI_WP4")
 AnnotationAssertion(rdfs:label obo:ONS_0000085 "meal")
-SubClassOf(obo:ONS_0000085 obo:BFO_0000017)
+SubClassOf(obo:ONS_0000085 obo:OBI_0000011)
 
 # Class: obo:ONS_0000086 (obsolete: drinking)
 
@@ -3372,7 +3373,7 @@ SubClassOf(obo:ONS_0000178 ObjectSomeValuesFrom(obo:IAO_0000142 <https://www.w3.
 
 # Class: obo:ONS_1000001 (diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000001 "A collection of one or more food entities which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000001 "A collection of food types or items which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000001 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000001 "https://en.wikipedia.org/wiki/Diet_(nutrition)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ONS_1000001 "http://id.nlm.nih.gov/mesh/D004032")
@@ -3395,11 +3396,11 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000003 "https://github.com/FoodOnto
 AnnotationAssertion(rdfs:label obo:ONS_1000003 "diet by type of food"@en)
 SubClassOf(obo:ONS_1000003 obo:ONS_1000001)
 
-# Class: obo:ONS_1000004 (diet by agriculture treatment)
+# Class: obo:ONS_1000004 (diet by agricultural treatment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000004 "A diet which involves food produced under certain agricultural conditions."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000004 "https://github.com/FoodOntology/joint-food-ontology-wg")
-AnnotationAssertion(rdfs:label obo:ONS_1000004 "diet by agriculture treatment"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000004 "diet by agricultural treatment"@en)
 SubClassOf(obo:ONS_1000004 obo:ONS_1000001)
 
 # Class: obo:ONS_1000005 (diet by nutritional composition)
@@ -3418,7 +3419,7 @@ SubClassOf(obo:ONS_1000006 obo:ONS_1000007)
 
 # Class: obo:ONS_1000007 (prescribed diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000007 "A diet assigned as a dietary pattern objective to an individual organism or group."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000007 "A diet which is prescribed to meet some dietary pattern objective for an individual organism or group."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000007 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000007 "prescribed diet"@en)
 SubClassOf(obo:ONS_1000007 obo:ONS_1000001)
@@ -3426,7 +3427,7 @@ SubClassOf(obo:ONS_1000007 obo:ONS_1000001)
 # Class: obo:ONS_1000008 (descriptive diet)
 
 AnnotationAssertion(obo:IAO_0000114 obo:ONS_1000008 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000008 "A diet which has food entities that represent or generalize those consumed in the regular course of eating and drinking by an individual or population over some duration of time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000008 "A diet which represents food types or items consumed in the regular course of eating and drinking by an individual or population over some duration of time."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000008 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:comment obo:ONS_1000008 "The food entities in a descriptive diet may be characterized by kind of diet as well as other (food survey or log) parameters such as quantity, time, frequency or duration of aggregate consumption, meal type and/or setting."@en)
 AnnotationAssertion(rdfs:label obo:ONS_1000008 "descriptive diet"@en)
@@ -3912,7 +3913,7 @@ SubClassOf(obo:ONS_1000053 obo:ONS_1000051)
 
 # Class: obo:ONS_1000054 (self-reported diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An ingested food data set which is subjectively recorded or recalled by an individual consuming the food"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An individual regular diet which is subjectively recorded or recalled by an individual consuming the food."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000054 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_1000054 "diet record"@en)
 AnnotationAssertion(rdfs:label obo:ONS_1000054 "self-reported diet"@en)
@@ -3921,21 +3922,21 @@ SubClassOf(obo:ONS_1000054 obo:ONS_0000080)
 
 # Class: obo:ONS_1000055 (objectively-reported diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000055 "An ingested food data set which is observed by a researcher to have been consumed by a subject organism or population of organisms."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000055 "A descriptive diet which is observed by a researcher to have been consumed by a subject organism or population of organisms."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000055 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000055 "objectively-reported diet"@en)
 SubClassOf(obo:ONS_1000055 obo:ONS_1000008)
 
 # Class: obo:ONS_1000056 (ingested food data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A dataset which contains a list of foods that an organism has ingested over some period of time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A dataset which contains a list of foods that an individual organism has ingested over some period of time."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000056 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000056 "ingested food data set"@en)
 SubClassOf(obo:ONS_1000056 obo:ONS_0000080)
 
 # Class: obo:ONS_1000057 (NCI usual diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000057 "A long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000057 "A population regular diet which is a long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000057 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000057 "https://epi.grants.cancer.gov/diet/usualintakes/")
 AnnotationAssertion(rdfs:label obo:ONS_1000057 "NCI usual diet"@en)
@@ -3952,14 +3953,14 @@ SubClassOf(obo:ONS_1000058 obo:ONS_1000056)
 
 # Class: obo:ONS_1000059 (daily food intake)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000059 "A collection of food classes pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000059 "A descriptive diet containing food types or items pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000059 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000059 "daily food intake"@en)
 SubClassOf(obo:ONS_1000059 obo:ONS_1000008)
 
 # Class: obo:ONS_1000060 (daily average nutritional intake)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000060 "A collection containing nutrient classes and their average daily intake quantity for an individual or organism population."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000060 "A descriptive diet containing nutrient classes and their average daily intake quantity for an individual or organism population."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000060 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000060 "daily average nutritional intake"@en)
 SubClassOf(obo:ONS_1000060 obo:ONS_1000008)
