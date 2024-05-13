@@ -382,7 +382,6 @@ http://purl.obolibrary.org/obo/GO_0006757
 http://purl.obolibrary.org/obo/GO_0006793 
 http://purl.obolibrary.org/obo/GO_0006796 
 http://purl.obolibrary.org/obo/GO_0006807 
-http://purl.obolibrary.org/obo/GO_0007586 
 http://purl.obolibrary.org/obo/GO_0008150 
 http://purl.obolibrary.org/obo/GO_0008152 
 http://purl.obolibrary.org/obo/GO_0009056 
@@ -447,6 +446,8 @@ http://purl.obolibrary.org/obo/GO_1901575
 http://purl.obolibrary.org/obo/GO_1901576 
 http://purl.obolibrary.org/obo/GO_1901615 
 http://purl.obolibrary.org/obo/GO_1901617 
+http://purl.obolibrary.org/obo/GO_0050892 # Intestinal absorption
+http://purl.obolibrary.org/obo/GO_0007586 # Digestion
 
 
 [Top level source term URIs and target direct superclass URIs]
