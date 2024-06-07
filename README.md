@@ -4,10 +4,10 @@ The multidisciplinary nature of nutritional studies is one of its main strengths
 
 We have developed the Ontology for Nutritional Studies (ONS) by harmonizing selected pre-existing de facto ontologies with novel health and nutritional terminology classifications as the result of a scholarly consensus of 51 research centers in 9 European countries. The resulting ontology classes and relations are commonly encountered while conducting, storing, harmonizing, integrating, describing and searching nutritional studies. ONS stands out as a single knowledge entry-point of unified and standardized domain-specific conceptual entitles, improving on the process of describing and specifying complex nutritional studies as demonstrated with two application scenarios.
 
-ONS is the first systematic effort providing a solid and extensible formal ontology framework for nutritional studies, where integration of new information can be easily achieved by the addition of extra modules (i.e. Nutrigenomics, Metabolomics, Nutrikinetics, Quality appraisal, etc.). Nutritional researchers who might not necessarily be familiar with ontologies and concept standardization, can find in ONS a single knowledge entry point for a unified and standardized terminology for their studies. 
+ONS is the first systematic effort providing a solid and extensible formal ontology framework for nutritional studies, where integration of new information can be easily achieved by the addition of extra modules (i.e. Nutrigenomics, Metabolomics, Nutrikinetics, Quality appraisal, etc.). Nutritional researchers who might not necessarily be familiar with ontologies and concept standardization, can find in ONS a single knowledge entry point for a unified and standardized terminology for their studies.
 
 
-ONS has lately joined the international initiative [International Food Ontology Work Group](https://github.com/FoodOntology/joint-food-ontology-wg); an initiative aimed at connecting various researchers and ontology developers in the broader-sense food domain to collaboratively build consensus on terms and classification in the food domain. Inside the IFOWG's [issue tracker](https://github.com/FoodOntology/joint-food-ontology-wg/issues), terms are discussed and changes are proposed. Eventually, those changes can be adopted by the single ontologies in the IFOWG. 
+ONS has lately joined the international initiative [International Food Ontology Work Group](https://github.com/FoodOntology/joint-food-ontology-wg); an initiative aimed at connecting various researchers and ontology developers in the broader-sense food domain to collaboratively build consensus on terms and classification in the food domain. Inside the IFOWG's [issue tracker](https://github.com/FoodOntology/joint-food-ontology-wg/issues), terms are discussed and changes are proposed. Eventually, those changes can be adopted by the single ontologies in the IFOWG.
 
 ONS was chosen to be the modeling of diet related terms, which were partially already included in V1.0. In the very next future, stemming from discussion in the IFOWG, a series of terms will be de-novo included in ONS and for some terms, definitions or axiomes will be modified. To assure treacability, double issues will be opened on the ONS and on the IFOWG tracker, but the core discussion would be taking place in the latter.
 
@@ -31,16 +31,22 @@ The ONS ontology has been circulating as a "work-in-progress" research artifact 
 
 ## Bibliographic reference
 
-- Original publication: 
+ONS: an ontology for a standardized description of interventions and observational studies in nutrition; Vitali F. et al., 2018
 DOI: https://doi.org/10.1186/s12263-018-0601-y
 https://genesandnutrition.biomedcentral.com/articles/10.1186/s12263-018-0601-y
 
+Semantics of Dairy Fermented Foods: A Microbiologist’s Perspective; Vitali F. et al., 2022
+DOI: https://doi.org/10.3390/foods11131939
+https://www.mdpi.com/2304-8158/11/13/1939
+
+
 - Other publications
+
 IFOW 2021 paper on "western diet" concept http://ceur-ws.org/Vol-2969/paper7-IFOW.pdf
 
 - Other resources:
 Video of IFOW 2020 oral presentation https://www.youtube.com/playlist?list=PLhzFEi0G-n-vDmqvPLBinMsoATgyPAzLk (Sept 23 session)
-Video of IFOW 2021 oral presentation https://summerofknowledge.inf.unibz.it/ifow-2021-video-presentations/ 
+Video of IFOW 2021 oral presentation https://summerofknowledge.inf.unibz.it/ifow-2021-video-presentations/
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>

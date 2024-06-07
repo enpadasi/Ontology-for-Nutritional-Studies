@@ -20,7 +20,7 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
-<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-05-10/ons.owl>
+<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-05-13/ons.owl>
 Import(<http://purl.obolibrary.org/obo/ons/imports/edam_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/general_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/ncbitaxon_import.ofn>)
