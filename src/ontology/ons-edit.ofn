@@ -3913,12 +3913,12 @@ SubClassOf(obo:ONS_1000053 obo:ONS_1000051)
 
 # Class: obo:ONS_1000054 (self-reported diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An individual regular diet which is subjectively recorded or recalled by an individual consuming the food."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An ingested food data set which is subjectively recorded or recalled by an individual consuming the food."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000054 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:ONS_1000054 "diet record"@en)
 AnnotationAssertion(rdfs:label obo:ONS_1000054 "self-reported diet"@en)
 AnnotationAssertion(rdfs:seeAlso obo:ONS_1000054 "https://doi.org/10.1093/ajcn/63.4.491")
-SubClassOf(obo:ONS_1000054 obo:ONS_0000080)
+SubClassOf(obo:ONS_1000054 obo:ONS_1000056)
 
 # Class: obo:ONS_1000055 (objectively-reported diet)
 
@@ -3929,10 +3929,10 @@ SubClassOf(obo:ONS_1000055 obo:ONS_1000008)
 
 # Class: obo:ONS_1000056 (ingested food data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A dataset which contains a list of foods that an individual organism has ingested over some period of time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A descriptive diet which contains a list of foods that an individual organism has ingested over some period of time."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000056 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:label obo:ONS_1000056 "ingested food data set"@en)
-SubClassOf(obo:ONS_1000056 obo:ONS_0000080)
+SubClassOf(obo:ONS_1000056 obo:ONS_1000008)
 
 # Class: obo:ONS_1000057 (NCI usual diet)
 
