@@ -20,11 +20,11 @@
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl">
-        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-05-31/ons.owl"/>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-06-07/ons.owl"/>
         <terms:description xml:lang="en">The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies.</terms:description>
         <oboInOwl:created_by xml:lang="en">ENPADASI_WP4</oboInOwl:created_by>
         <rdfs:label xml:lang="en">ONS</rdfs:label>
-        <owl:versionInfo xml:lang="en">Release version 2.0.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Release version 2024-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -50350,7 +50350,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
-        <obo:IAO_0000115 xml:lang="en">The regular course of eating and drinking adopted by an organism.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which is the regular course of eating and drinking adopted by an organism.</obo:IAO_0000115>
         <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <obo:IAO_0000119>https://github.com/enpadasi/Ontology-for-Nutritional-Studies</obo:IAO_0000119>
@@ -50398,7 +50398,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
-        <obo:IAO_0000115 xml:lang="en">The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet consumed by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour.</obo:IAO_0000115>
         <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym xml:lang="en">usual diet</oboInOwl:hasExactSynonym>
@@ -50427,8 +50427,8 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/ONS_0000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:IAO_0000115>A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A meal is an eating/drinking occasion which usually occurs at certain time during the day.</obo:IAO_0000115>
         <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
         <rdfs:label>meal</rdfs:label>
     </owl:Class>
@@ -52483,7 +52483,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">A collection of one or more food entities which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A collection of food types or items which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Diet_(nutrition)</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://id.nlm.nih.gov/mesh/D004032</oboInOwl:hasDbXref>
@@ -52522,7 +52522,7 @@ defines and states the requirements (positive or negative) for an entity to be c
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
         <obo:IAO_0000115 xml:lang="en">A diet which involves food produced under certain agricultural conditions.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">diet by agriculture treatment</rdfs:label>
+        <rdfs:label xml:lang="en">diet by agricultural treatment</rdfs:label>
     </owl:Class>
     
 
@@ -52553,7 +52553,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
-        <obo:IAO_0000115 xml:lang="en">A diet assigned as a dietary pattern objective to an individual organism or group.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A diet which is prescribed to meet some dietary pattern objective for an individual organism or group.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">prescribed diet</rdfs:label>
     </owl:Class>
@@ -52565,7 +52565,7 @@ defines and states the requirements (positive or negative) for an entity to be c
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">A diet which has food entities that represent or generalize those consumed in the regular course of eating and drinking by an individual or population over some duration of time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A diet which represents food types or items consumed in the regular course of eating and drinking by an individual or population over some duration of time.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">The food entities in a descriptive diet may be characterized by kind of diet as well as other (food survey or log) parameters such as quantity, time, frequency or duration of aggregate consumption, meal type and/or setting.</rdfs:comment>
         <rdfs:label xml:lang="en">descriptive diet</rdfs:label>
@@ -53916,8 +53916,8 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/ONS_1000054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000080"/>
-        <obo:IAO_0000115 xml:lang="en">An ingested food data set which is subjectively recorded or recalled by an individual consuming the food</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000056"/>
+        <obo:IAO_0000115 xml:lang="en">An ingested food data set which is subjectively recorded or recalled by an individual consuming the food.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym xml:lang="en">diet record</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">self-reported diet</rdfs:label>
@@ -53930,7 +53930,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
-        <obo:IAO_0000115 xml:lang="en">An ingested food data set which is observed by a researcher to have been consumed by a subject organism or population of organisms.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which is observed by a researcher to have been consumed by a subject organism or population of organisms.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">objectively-reported diet</rdfs:label>
     </owl:Class>
@@ -53940,8 +53940,8 @@ defines and states the requirements (positive or negative) for an entity to be c
     <!-- http://purl.obolibrary.org/obo/ONS_1000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000080"/>
-        <obo:IAO_0000115 xml:lang="en">A dataset which contains a list of foods that an organism has ingested over some period of time.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which contains a list of foods that an individual organism has ingested over some period of time.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">ingested food data set</rdfs:label>
     </owl:Class>
@@ -53952,7 +53952,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000083"/>
-        <obo:IAO_0000115 xml:lang="en">A long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A population regular diet which is a long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <obo:IAO_0000119>https://epi.grants.cancer.gov/diet/usualintakes/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">NCI usual diet</rdfs:label>
@@ -53977,7 +53977,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
-        <obo:IAO_0000115 xml:lang="en">A collection of food classes pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet containing food types or items pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">daily food intake</rdfs:label>
     </owl:Class>
@@ -53988,7 +53988,7 @@ defines and states the requirements (positive or negative) for an entity to be c
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
-        <obo:IAO_0000115 xml:lang="en">A collection containing nutrient classes and their average daily intake quantity for an individual or organism population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet containing nutrient classes and their average daily intake quantity for an individual or organism population.</obo:IAO_0000115>
         <obo:IAO_0000117>https://github.com/FoodOntology/joint-food-ontology-wg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">daily average nutritional intake</rdfs:label>
     </owl:Class>
@@ -59168,13 +59168,37 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:label>microgram per liter</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -59201,37 +59225,13 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/foodon.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -59283,5 +59283,5 @@ This interpretation is *not* the same as an at-all-times relation
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
