@@ -27,7 +27,7 @@ Import(<http://purl.obolibrary.org/obo/ons/imports/ncbitaxon_import.ofn>)
 Annotation(terms:description "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."@en)
 Annotation(oboInOwl:created_by "ENPADASI_WP4"@en)
 Annotation(rdfs:label "ONS"@en)
-Annotation(owl:versionInfo "Release version 2024-06-07"@en)
+Annotation(owl:versionInfo "2024-06-07")
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_037000>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050422>))
