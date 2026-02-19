@@ -1,55 +1,6 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/ons/imports/general_import.ofn
 
-#http://purl.obolibrary.org/obo/PCO_0000000
-#http://purl.obolibrary.org/obo/PO_0000003
-#http://purl.obolibrary.org/obo/PO_0009011
-#http://purl.obolibrary.org/obo/IAO_0000300
-
-[Source ontology]
-BFO
-
-[Low level source term URIs]
-# http://purl.obolibrary.org/obo/BFO_0000001 # using COB instead
-# http://purl.obolibrary.org/obo/BFO_0000002 # using COB instead
-# http://purl.obolibrary.org/obo/BFO_0000003 # using COB instead
-# http://purl.obolibrary.org/obo/BFO_0000004 # using COB instead
-# http://purl.obolibrary.org/obo/BFO_0000031 # using COB instead
-# http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity not IMPORTING via ontofox?
-
-http://purl.obolibrary.org/obo/BFO_0000006  # not importing?
-http://purl.obolibrary.org/obo/BFO_0000015 
-http://purl.obolibrary.org/obo/BFO_0000016 
-
-http://purl.obolibrary.org/obo/BFO_0000019 
-http://purl.obolibrary.org/obo/BFO_0000023 
-http://purl.obolibrary.org/obo/BFO_0000024 
-http://purl.obolibrary.org/obo/BFO_0000027 
-http://purl.obolibrary.org/obo/BFO_0000029 
-http://purl.obolibrary.org/obo/BFO_0000030 
-
-http://purl.obolibrary.org/obo/BFO_0000034 
-http://purl.obolibrary.org/obo/BFO_0000040 
-http://purl.obolibrary.org/obo/BFO_0000141 
-http://purl.obolibrary.org/obo/BFO_0000145 
-http://purl.obolibrary.org/obo/BFO_0000182 
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/BFO_0000015 # process
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 # definition
-http://purl.obolibrary.org/obo/IAO_0000111
-http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
@@ -98,14 +49,12 @@ http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
-
 [Source ontology]
 CDNO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CDNO_0500001 # dietary role
 includeAllChildren
-
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CDNO_0500001
@@ -171,7 +120,7 @@ http://purl.obolibrary.org/obo/CMO_0001407  # ethanol drink intake rate
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CMO_0000000 # clinical measurement
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 
 [Source term retrieval setting]
@@ -196,21 +145,23 @@ COB
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/COB_0000032 # geographical location
-#http://purl.obolibrary.org/obo/PR_000000001 # Using ChEBI protein.
-#http://purl.obolibrary.org/obo/OBI_0000260 # plan
 http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
-http://purl.obolibrary.org/obo/COB_0000120 # information representation
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000017 #   realizable entity (not needed?)
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000017 #   realizable entity
+includeAllChildren
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/COB_0000026 #   processed material entity
+http://purl.obolibrary.org/obo/COB_0001300 #     device
+http://purl.obolibrary.org/obo/COB_0000022 # organism
+
+http://purl.obolibrary.org/obo/ENVO_01000813 # geophysical entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-#http://purl.obolibrary.org/obo/COB_0000082 # PROBLEM: COB ID'd planned process getting in via axiomatization of "plan"
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -228,6 +179,37 @@ http://purl.obolibrary.org/obo/OBI_0001886
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
+###########################################
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ENVO_00000009 # national political entity
+http://purl.obolibrary.org/obo/ENVO_01000813 # geophysical entity
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/ENVO_00000123 # political entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -236,28 +218,60 @@ EFO
 
 [Low level source term URIs]
 http://www.ebi.ac.uk/efo/EFO_0004329 # alcohol drinking
-http://www.ebi.ac.uk/efo/EFO_0004339 # body height
 http://www.ebi.ac.uk/efo/EFO_0004338 # body weight
 http://www.ebi.ac.uk/efo/EFO_0000319 # cardiovascular disease
 http://www.ebi.ac.uk/efo/EFO_0006525 # cigarettes per day measurement
 http://www.ebi.ac.uk/efo/EFO_0000400 # diabetes mellitus
 http://www.ebi.ac.uk/efo/EFO_0003939 # energy intake
-http://www.ebi.ac.uk/efo/EFO_0005093 # hip circumference
 http://www.ebi.ac.uk/efo/EFO_0005847 # increased risk
 http://www.ebi.ac.uk/efo/EFO_0003940 # physical activity
 http://www.ebi.ac.uk/efo/EFO_0005518 # sample collection protocol
 http://www.ebi.ac.uk/efo/EFO_0004318 # smoking behavior
-http://www.ebi.ac.uk/efo/EFO_0004342 # waist circumference
+
 http://www.ebi.ac.uk/efo/EFO_0000433 # duration
 http://www.ebi.ac.uk/efo/EFO_0000537 # hypertension
 
-
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000016 # disposition
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.ebi.ac.uk/efo/definition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://www.ebi.ac.uk/efo/alternative_term
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+###########################################
+
+[Source ontology]
+OBA
+
+[Low level source term URIs]
+# http://www.ebi.ac.uk/efo/EFO_0004339 # body height
+http://purl.obolibrary.org/obo/OBA_VT0001253 # body height
+# http://www.ebi.ac.uk/efo/EFO_0005093 # hip circumference
+http://purl.obolibrary.org/obo/OBA_1000032 # hip circumference
+# http://www.ebi.ac.uk/efo/EFO_0004342 # waist circumference
+http://purl.obolibrary.org/obo/OBA_1001085 # waist circumference
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBA_0000001 # biological attribute
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+http://purl.obolibrary.org/obo/PATO_0000001 # quality
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -315,14 +329,12 @@ http://purl.obolibrary.org/obo/FOODON_00004081 # recipe
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/NCBITaxon_2759 # Eukaryota
 
-http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity
-subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -489,15 +501,15 @@ http://purl.obolibrary.org/obo/HP_0025033
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000020 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-#http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/HP_0000118 # Phenotypic abnormality
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -544,15 +556,15 @@ http://purl.obolibrary.org/obo/IAO_0000300 # textual entity
 http://purl.obolibrary.org/obo/IAO_0000301 
 http://purl.obolibrary.org/obo/IAO_0000308 
 http://purl.obolibrary.org/obo/IAO_0000309 
-http://purl.obolibrary.org/obo/IAO_0000310 
-http://purl.obolibrary.org/obo/IAO_0000311 
+http://purl.obolibrary.org/obo/IAO_0000310 # document
+http://purl.obolibrary.org/obo/IAO_0000311 # publication
 http://purl.obolibrary.org/obo/IAO_0000312 
 http://purl.obolibrary.org/obo/IAO_0000326 
 http://purl.obolibrary.org/obo/IAO_0000416 
 http://purl.obolibrary.org/obo/IAO_0000429 
 http://purl.obolibrary.org/obo/IAO_0000442 
 http://purl.obolibrary.org/obo/IAO_0000443 
-http://purl.obolibrary.org/obo/IAO_0000572 
+# http://purl.obolibrary.org/obo/IAO_0000572 # VIA OBI
 http://purl.obolibrary.org/obo/IAO_0000574 
 http://purl.obolibrary.org/obo/IAO_0000577 
 http://purl.obolibrary.org/obo/IAO_0000578 
@@ -566,17 +578,35 @@ http://purl.obolibrary.org/obo/IAO_0000221
 http://purl.obolibrary.org/obo/IAO_0000413 
 http://purl.obolibrary.org/obo/IAO_0000417 
 
+http://purl.obolibrary.org/obo/IAO_0000314 # document part
+http://purl.obolibrary.org/obo/IAO_0000315 # abstract
+http://purl.obolibrary.org/obo/IAO_0000319 # discussion section of a publication about an investigation
+http://purl.obolibrary.org/obo/IAO_0000620 # ethical approval section
+http://purl.obolibrary.org/obo/IAO_0000317 # methods section
+http://purl.obolibrary.org/obo/IAO_0000318 # results section
+http://purl.obolibrary.org/obo/IAO_0000644 # statistical analysis section
+http://purl.obolibrary.org/obo/IAO_0000326 # supplemental materials to a document
+
 http://purl.obolibrary.org/obo/IAO_0020015 # personal name
 http://purl.obolibrary.org/obo/IAO_0000004 #
 
+
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502
+http://purl.obolibrary.org/obo/BFO_0000017 # realizable entity
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+http://purl.obolibrary.org/obo/IAO_0000443 # 'assigning a centrally registered identifier'
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # CEPP
+http://purl.obolibrary.org/obo/IAO_0000574 # 'data item extraction from journal article'
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # CEPP
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -599,12 +629,10 @@ OBI
 
 [Low level source term URIs] 
 
-http://purl.obolibrary.org/obo/OBI_0000011 
 http://purl.obolibrary.org/obo/OBI_0000014 
 http://purl.obolibrary.org/obo/OBI_0000015 
 http://purl.obolibrary.org/obo/OBI_0000017 
 http://purl.obolibrary.org/obo/OBI_0000018 
-http://purl.obolibrary.org/obo/OBI_0000047 
 http://purl.obolibrary.org/obo/OBI_0000048 
 http://purl.obolibrary.org/obo/OBI_0000049 
 http://purl.obolibrary.org/obo/OBI_0000066 
@@ -615,7 +643,6 @@ http://purl.obolibrary.org/obo/OBI_0000075
 http://purl.obolibrary.org/obo/OBI_0000079 
 http://purl.obolibrary.org/obo/OBI_0000086 
 http://purl.obolibrary.org/obo/OBI_0000093 
-http://purl.obolibrary.org/obo/OBI_0000094 
 http://purl.obolibrary.org/obo/OBI_0000096 
 http://purl.obolibrary.org/obo/OBI_0000097 
 http://purl.obolibrary.org/obo/OBI_0000102 
@@ -671,6 +698,7 @@ http://purl.obolibrary.org/obo/OBI_0000630
 http://purl.obolibrary.org/obo/OBI_0000639 
 http://purl.obolibrary.org/obo/OBI_0000651 
 http://purl.obolibrary.org/obo/OBI_0000652 
+http://purl.obolibrary.org/obo/OBI_0000654 # device setting
 http://purl.obolibrary.org/obo/OBI_0000655 
 http://purl.obolibrary.org/obo/OBI_0000659 
 http://purl.obolibrary.org/obo/OBI_0000671 
@@ -698,7 +726,6 @@ http://purl.obolibrary.org/obo/OBI_0000947
 http://purl.obolibrary.org/obo/OBI_0000951 
 http://purl.obolibrary.org/obo/OBI_0000953 
 http://purl.obolibrary.org/obo/OBI_0000967 
-http://purl.obolibrary.org/obo/OBI_0000968 
 http://purl.obolibrary.org/obo/OBI_0000969 
 http://purl.obolibrary.org/obo/OBI_0000973 
 http://purl.obolibrary.org/obo/OBI_0000984 
@@ -775,7 +802,6 @@ http://purl.obolibrary.org/obo/OBI_0002508
 http://purl.obolibrary.org/obo/OBI_0002509 
 http://purl.obolibrary.org/obo/OBI_0100016 
 http://purl.obolibrary.org/obo/OBI_0100017 
-http://purl.obolibrary.org/obo/OBI_0100026 
 http://purl.obolibrary.org/obo/OBI_0100051 
 http://purl.obolibrary.org/obo/OBI_0100060 
 http://purl.obolibrary.org/obo/OBI_0100086 
@@ -877,15 +903,16 @@ http://purl.obolibrary.org/obo/OBI_0001057
 
 http://purl.obolibrary.org/obo/SO_0000001 # region
 
+http://purl.obolibrary.org/obo/IAO_0000300
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-#http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+
 http://purl.obolibrary.org/obo/SO_0000001 # (sequence) region
 subClassOf http://purl.obolibrary.org/obo/BFO_0000141 # region # DOES THIS WORK?
 
@@ -952,6 +979,7 @@ http://purl.obolibrary.org/obo/NCIT_C25364 # Identifier
 http://purl.obolibrary.org/obo/NCIT_C182021 # research institute
 http://purl.obolibrary.org/obo/NCIT_C28143 # Control Group
 http://purl.obolibrary.org/obo/NCIT_C105759 # Subject Trial Set
+#http://purl.obolibrary.org/obo/NCIT_C25464 # country
 
 [Top level source term URIs and target direct superclass URIs]
 # All of NCIT has to be mapped into COB / BFO
@@ -963,13 +991,16 @@ http://purl.obolibrary.org/obo/NCIT_C43431 # activity
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 http://purl.obolibrary.org/obo/NCIT_C19332 # Personal Attribute
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 http://purl.obolibrary.org/obo/NCIT_C139218 # BMI
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 
 http://purl.obolibrary.org/obo/NCIT_C199140 # Study Related Group
 subClassOf http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
+
+#http://purl.obolibrary.org/obo/NCIT_C25464 # country
+#subClassOf http://purl.obolibrary.org/obo/ENVO_00000009 # national geopolitical entity
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -1026,7 +1057,6 @@ http://purl.obolibrary.org/obo/OBCS_0000130  # data collection from literature
 http://purl.obolibrary.org/obo/OBCS_0000233  # transformed data item
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/IAO_0000030
 
 [Source term retrieval setting]
@@ -1051,7 +1081,7 @@ OBIB
 
 [Low level source term URIs]
 
-http://purl.obolibrary.org/obo/OBIB_0000018 # form filling
+http://purl.obolibrary.org/obo/OBIB_0000018 # form filling / process
 http://purl.obolibrary.org/obo/OBIB_0000019 # filled patient questionnaire
 http://purl.obolibrary.org/obo/OBIB_0000020 # patient questionnaire
 http://purl.obolibrary.org/obo/OBIB_0000054 # smoking end date
@@ -1062,7 +1092,7 @@ http://purl.obolibrary.org/obo/OBIB_0000692 # number of total human study partic
 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
 http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 
 [Source term retrieval setting]
@@ -1087,21 +1117,28 @@ OGMS
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OGMS_0000014  # clinical finding
 http://purl.obolibrary.org/obo/OGMS_0000015  # clinical history
-http://purl.obolibrary.org/obo/OGMS_0000018 
-http://purl.obolibrary.org/obo/OGMS_0000023 
-http://purl.obolibrary.org/obo/OGMS_0000031 
-http://purl.obolibrary.org/obo/OGMS_0000056 
-http://purl.obolibrary.org/obo/OGMS_0000057 
-http://purl.obolibrary.org/obo/OGMS_0000063 
-http://purl.obolibrary.org/obo/OGMS_0000073 
-http://purl.obolibrary.org/obo/OGMS_0000090 
-http://purl.obolibrary.org/obo/OGMS_0000093 
+http://purl.obolibrary.org/obo/OGMS_0000018 #  laboratory finding
+http://purl.obolibrary.org/obo/OGMS_0000056 # clinical laboratory test
+http://purl.obolibrary.org/obo/OGMS_0000057 # physical examination
+http://purl.obolibrary.org/obo/OGMS_0000063 #  disease course
+http://purl.obolibrary.org/obo/OGMS_0000073 # diagnosis
+http://purl.obolibrary.org/obo/OGMS_0000090 # treatment
+http://purl.obolibrary.org/obo/OGMS_0000093 # prognosis
 
+http://purl.obolibrary.org/obo/OGMS_0000023 # phenotype (BFO Quality)
+http://purl.obolibrary.org/obo/OGMS_0000031 # disease (realizable entity)
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/IAO_0000030 # ICE
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+http://purl.obolibrary.org/obo/OGMS_0000031
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic 
+http://purl.obolibrary.org/obo/OGMS_0000023
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic 
+
+http://purl.obolibrary.org/obo/OGMS_0000096 # health care process
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # CE planned process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1129,7 +1166,7 @@ http://purl.obolibrary.org/obo/OHMI_0000016
 http://purl.obolibrary.org/obo/OHMI_0000020 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
 http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
@@ -1175,8 +1212,8 @@ http://purl.obolibrary.org/obo/OMP_0007952
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OMP_0000000 # microbial phenotype
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # Characteristic
-http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # Characteristic
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
 http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 
 
@@ -1203,8 +1240,8 @@ OMRSE
 http://purl.obolibrary.org/obo/OMRSE_00000038 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_0000011 # planned process
-http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+#http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 http://purl.obolibrary.org/obo/BFO_0000023 # role
 
 [Source term retrieval setting]
@@ -1344,7 +1381,7 @@ http://purl.obolibrary.org/obo/PATO_0002182
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1483,7 +1520,7 @@ http://semanticscience.org/resource/SIO_000113 # sentence
 http://semanticscience.org/resource/SIO_000366 # number
 http://semanticscience.org/resource/SIO_000403 # study group
 http://semanticscience.org/resource/SIO_000508 # endpoint
-http://semanticscience.org/resource/SIO_000664 # country
+http://semanticscience.org/resource/SIO_000664 # country # REPLACE????
 
 
 # http://semanticscience.org/resource/SIO_000688 # institute
@@ -1499,10 +1536,10 @@ http://semanticscience.org/resource/SIO_001068 # control group
 # subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
 
 http://semanticscience.org/resource/SIO_000475 # 		biological quality
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 http://semanticscience.org/resource/SIO_000664 # 		country
-subClassOf http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+subClassOf http://purl.obolibrary.org/obo/ENVO_00000009 # national political entity
 
 http://semanticscience.org/resource/SIO_000506 #		geometric entity
 subClassOf http://purl.obolibrary.org/obo/IAO_0000030 # ICE
@@ -1547,6 +1584,12 @@ http://purl.obolibrary.org/obo/STATO_0000216
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/IAO_0000030 # ICE
+
+http://purl.obolibrary.org/obo/STATO_0000096 # pop strat. prior to sampling
+subClassOf http://purl.obolibrary.org/obo/COB_0000110 # material processing
+
+http://purl.obolibrary.org/obo/STATO_0000502 # statistical sampling
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # compl. ex. planned process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1601,13 +1644,14 @@ http://purl.obolibrary.org/obo/UBERON_0012112
 [Top level source term URIs and target direct superclass URIs]
 #http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-http://purl.obolibrary.org/obo/PATO_0000001 # characteristic / quality
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+
 http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
@@ -1673,8 +1717,9 @@ http://purl.obolibrary.org/obo/VO_0000001
 http://purl.obolibrary.org/obo/VO_0000002 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000040
-http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/OBI_0600007 # admin substance in vitro
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # compl. ex. planned process
 
 [Source term retrieval setting]
 includeAllIntermediates

@@ -20,34 +20,26 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl>
-<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-07-03/ons.owl>
+<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/2026-02-06/ons.owl>
 Import(<http://purl.obolibrary.org/obo/ons/imports/edam_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/general_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/ons/imports/ncbitaxon_import.ofn>)
+Import(<http://www.semanticweb.org/damion/ontologies/2026/1/3/untitled-ontology-2486>)
 Annotation(terms:description "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."@en)
 Annotation(oboInOwl:created_by "ENPADASI_WP4"@en)
 Annotation(rdfs:label "ONS"@en)
-Annotation(owl:versionInfo "2024-07-03")
+Annotation(owl:versionInfo "2026-02-06")
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_037000>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050422>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050423>))
-Declaration(Class(obo:BFO_0000006))
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:BFO_0000017))
-Declaration(Class(obo:BFO_0000019))
-Declaration(Class(obo:BFO_0000020))
 Declaration(Class(obo:BFO_0000023))
-Declaration(Class(obo:BFO_0000024))
-Declaration(Class(obo:BFO_0000027))
-Declaration(Class(obo:BFO_0000029))
-Declaration(Class(obo:BFO_0000030))
 Declaration(Class(obo:BFO_0000034))
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:BFO_0000141))
-Declaration(Class(obo:BFO_0000145))
-Declaration(Class(obo:BFO_0000182))
 Declaration(Class(obo:CHEBI_17716))
 Declaration(Class(obo:CHEBI_33250))
 Declaration(Class(obo:CHEBI_78295))
@@ -229,7 +221,6 @@ Declaration(Class(obo:OBI_0000932))
 Declaration(Class(obo:OBI_0000941))
 Declaration(Class(obo:OBI_0000947))
 Declaration(Class(obo:OBI_0000967))
-Declaration(Class(obo:OBI_0000968))
 Declaration(Class(obo:OBI_0000973))
 Declaration(Class(obo:OBI_0000984))
 Declaration(Class(obo:OBI_0001000))
@@ -268,7 +259,6 @@ Declaration(Class(obo:OBI_0002081))
 Declaration(Class(obo:OBI_0002089))
 Declaration(Class(obo:OBI_0002110))
 Declaration(Class(obo:OBI_0002116))
-Declaration(Class(obo:OBI_0100026))
 Declaration(Class(obo:OBI_0100086))
 Declaration(Class(obo:OBI_0302838))
 Declaration(Class(obo:OBI_0302840))
@@ -583,7 +573,6 @@ Declaration(Class(obo:PATO_0000384))
 Declaration(Class(obo:PATO_0000918))
 Declaration(Class(obo:PATO_0001025))
 Declaration(Class(obo:PATO_0001237))
-Declaration(Class(obo:PATO_0001238))
 Declaration(Class(obo:PATO_0001338))
 Declaration(Class(obo:PATO_0001995))
 Declaration(Class(obo:SO_0000001))
@@ -601,7 +590,6 @@ Declaration(Class(resource:SIO_000031))
 Declaration(Class(resource:SIO_000085))
 Declaration(Class(resource:SIO_000115))
 Declaration(Class(resource:SIO_000136))
-Declaration(Class(resource:SIO_000154))
 Declaration(Class(resource:SIO_000366))
 Declaration(Class(resource:SIO_000403))
 Declaration(Class(resource:SIO_000508))
@@ -817,7 +805,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term~editor pre
 
 AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
 
-# Annotation Property: obo:IAO_0000115 (definition)
+# Annotation Property: obo:IAO_0000115 (textual definition)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 
@@ -1000,7 +988,7 @@ AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BC
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_037000> obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_037000> "A planned process that has the aim of influencing an outcome.")
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_037000> "intervention")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_037000> obo:OBI_0000011)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_037000> obo:COB_0000035)
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_050422> (drinking)
 
@@ -1008,7 +996,7 @@ AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BC
 AnnotationAssertion(terms:contributor <http://humanbehaviourchange.org/ontology/BCIO_050422> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(terms:date <http://humanbehaviourchange.org/ontology/BCIO_050422> "2024-05-03T01:01:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050422> "drinking"@en)
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050422> obo:BFO_0000015)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050422> obo:COB_0000035)
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_050423> (eating)
 
@@ -1016,7 +1004,7 @@ AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BC
 AnnotationAssertion(terms:contributor <http://humanbehaviourchange.org/ontology/BCIO_050423> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(terms:date <http://humanbehaviourchange.org/ontology/BCIO_050423> "2024-05-03T00:57:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050423> "eating"@en)
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050423> obo:BFO_0000015)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050423> obo:COB_0000035)
 
 # Class: obo:CHEBI_17716 (obo:CHEBI_17716)
 
@@ -1055,7 +1043,7 @@ SubClassOf(obo:FOODON_00001018 obo:ONS_0000134)
 SubClassOf(obo:GO_0019244 ObjectSomeValuesFrom(obo:RO_0002233 obo:NCIT_C116012))
 SubClassOf(obo:GO_0019244 ObjectSomeValuesFrom(obo:RO_0002234 obo:NCIT_C76926))
 
-# Class: obo:GO_0019661 (glucose catabolic process to lactate via pyruvate)
+# Class: obo:GO_0019661 (homolactic fermentation)
 
 SubClassOf(obo:GO_0019661 obo:ONS_0000142)
 SubClassOf(obo:GO_0019661 ObjectSomeValuesFrom(obo:RO_0002233 obo:NCIT_C28166))
@@ -1178,6 +1166,7 @@ SubClassOf(obo:NCBITaxon_716545 obo:NCBITaxon_4890)
 # Class: obo:NCBITaxon_species (species)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_species "species")
+SubClassOf(obo:NCBITaxon_species obo:COB_0000502)
 
 # Class: obo:NCIT_C139218 (Body Fat Percentage)
 
@@ -1192,10 +1181,6 @@ SubClassOf(obo:NCIT_C173982 ObjectSomeValuesFrom(obo:RO_0002248 obo:ONS_0000144)
 # Class: obo:NCIT_C182021 (Research Center)
 
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C182021 "true"^^xsd:boolean)
-
-# Class: obo:NCIT_C25729 (Adherence)
-
-SubClassOf(obo:NCIT_C25729 obo:BFO_0000016)
 
 # Class: obo:NCIT_C28166 (Lactose)
 
@@ -1232,6 +1217,14 @@ AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C94108 "true"^^x
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:NCIT_C98714 "true"^^xsd:boolean)
 SubClassOf(obo:NCIT_C98714 obo:IAO_0000300)
 
+# Class: obo:OBCS_0000002 (data collection)
+
+SubClassOf(obo:OBCS_0000002 obo:COB_0000035)
+
+# Class: obo:OBIB_0000018 (form filling)
+
+SubClassOf(obo:OBIB_0000018 obo:COB_0000035)
+
 # Class: obo:OBIB_0000019 (filled patient questionnaire)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBIB_0000019 "A patient questionnaire which has been filled out by a patient.")
@@ -1252,6 +1245,12 @@ SubClassOf(obo:OBIB_0000020 obo:OBI_0001000)
 
 SubClassOf(obo:OBIB_0000054 obo:IAO_0000416)
 
+# Class: obo:OBI_0000011 (obsolete: planned process)
+
+AnnotationAssertion(obo:IAO_0100001 obo:OBI_0000011 obo:COB_0000035)
+AnnotationAssertion(rdfs:label obo:OBI_0000011 "obsolete: planned process"@en)
+AnnotationAssertion(owl:deprecated obo:OBI_0000011 "true"^^xsd:boolean)
+
 # Class: obo:OBI_0000048 (chromatography device)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000048 "chromatography device"@en)
@@ -1262,10 +1261,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000048 "chromatography instrument"@
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000048 "http://en.wikipedia.org/wiki/Chromatography"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OBI_0000048 "open tracker https://sourceforge.net/tracker/index.php?func=detail&aid=2881353&group_id=177891&atid=886178")
 AnnotationAssertion(rdfs:label obo:OBI_0000048 "chromatography device"@en)
-
-# Class: obo:OBI_0000049 (mass spectrometer)
-
-SubClassOf(obo:OBI_0000049 ObjectSomeValuesFrom(obo:RO_0000053 obo:OBI_0000654))
 
 # Class: obo:OBI_0000102 (responsible party role)
 
@@ -1308,30 +1303,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000345 "Frank Gibson")
 AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000345 "PERSON: Daniel Schober")
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000345 "http://en.wikipedia.org/wiki/Mass_spectrometry#Mass_analyzer")
 AnnotationAssertion(rdfs:label obo:OBI_0000345 "mass analyzer"@en)
-
-# Class: obo:OBI_0000361 (ion source)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000361 "ion source"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000361 "The ion source of a Voyager-DE??? STR Biospectrometry Workstation"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000361 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000361 "An ion source is a device that is part of a mass
-spectrometer that ionizes the material under analysis. The ions are
-then transported by magnetic or electric fields to the mass analyzer.
-Techniques for ionization have been key to determining what types of
-samples can be analyzed by mass spectrometry. Electron ionization and
-chemical ionization are used for gases and vapors. In chemical
-ionization sources, the material is ionized by chemical ion-molecule
-reactions during collisions in the source. Two techniques often used
-with liquid and solid biological samples include electrospray
-ionization (due to John Fenn PMID 2675315.) and matrix-assisted laser
-desorption/ionization (MALDI, due to M. Karas and F. Hillenkamp
-(Measuring Mass: From Positive Rays to Proteins by Michael A. Grayson
-(Editor) (ISBN 0-941901-31-9)))."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000361 "Frank Gibson")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000361 "http://en.wikipedia.org/wiki/Mass_spectrometry#Ion_source")
-AnnotationAssertion(rdfs:label obo:OBI_0000361 "ion source"@en)
-SubClassOf(obo:OBI_0000361 obo:OBI_0000968)
-SubClassOf(obo:OBI_0000361 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000385))
 
 # Class: obo:OBI_0000364 (ion detector)
 
@@ -1405,17 +1376,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0000630 "hematology")
 SubClassOf(obo:OBI_0000630 obo:OBI_0000070)
 SubClassOf(obo:OBI_0000630 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:IAO_0000136 obo:GO_0030097))))
 
-# Class: obo:OBI_0000654 (device setting)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000654 "device setting")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000654 "Examples, 300V for 4 hours, 200mvolts, 37degrees.A knob set a 300 V is the device setting, the protocol stating to set the instrument to 300V is a device setting specification")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000654 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000654 "a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000654 "PERSON: Frank Gibson")
-AnnotationAssertion(rdfs:label obo:OBI_0000654 "device setting")
-SubClassOf(obo:OBI_0000654 obo:BFO_0000019)
-SubClassOf(obo:OBI_0000654 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0000047))
-
 # Class: obo:OBI_0000721 (glucose tolerance test)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000721 "glucose tolerance test")
@@ -1432,35 +1392,9 @@ AnnotationAssertion(rdfs:label obo:OBI_0000721 "glucose tolerance test")
 SubClassOf(obo:OBI_0000721 obo:OBI_0000070)
 SubClassOf(obo:OBI_0000721 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:OBI_0000314 obo:HP_0000855))))
 
-# Class: obo:OBI_0000832 (measurement device)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000832 "measurement device")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000832 "A ruler, a microarray scanner, a Geiger counter.")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000832 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000832 "A device in which a measure function inheres.")
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0000832 "GROUP:OBI Philly workshop")
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000832 "OBI")
-AnnotationAssertion(rdfs:label obo:OBI_0000832 "measurement device")
-EquivalentClasses(obo:OBI_0000832 ObjectIntersectionOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000453)))
-SubClassOf(obo:OBI_0000832 obo:OBI_0000968)
-
-# Class: obo:OBI_0000932 (material separation device)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000932 "material separation device")
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0000932 "flow cytometer")
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000932 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000932 "A device with a separation function realized in a planed process")
-AnnotationAssertion(rdfs:label obo:OBI_0000932 "material separation device")
-EquivalentClasses(obo:OBI_0000932 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000372))
-SubClassOf(obo:OBI_0000932 obo:OBI_0000968)
-
 # Class: obo:OBI_0000967 (container)
 
 EquivalentClasses(obo:OBI_0000967 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000370))
-
-# Class: obo:OBI_0000968 (device)
-
-SubClassOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:RO_0000085 obo:BFO_0000034))
 
 # Class: obo:OBI_0001000 (questionnaire)
 
@@ -1479,11 +1413,11 @@ AnnotationAssertion(rdfs:label obo:OBI_0001000 "questionnaire")
 
 EquivalentClasses(obo:OBI_0001034 ObjectSomeValuesFrom(obo:RO_0000085 ObjectUnionOf(obo:OBI_0000371 obo:OBI_0000387 obo:OBI_0000401)))
 
-# Class: obo:OBI_0001057 (obo:OBI_0001057)
+# Class: obo:OBI_0001057 (high performance liquid chromatography instrument)
 
 SubClassOf(obo:OBI_0001057 obo:OBI_0001139)
 
-# Class: obo:OBI_0001139 (obo:OBI_0001139)
+# Class: obo:OBI_0001139 (liquid chromatography instrument)
 
 SubClassOf(obo:OBI_0001139 obo:OBI_0000048)
 
@@ -1601,18 +1535,7 @@ AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001909 "true"^^x
 
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0001942 "true"^^xsd:boolean)
 
-# Class: obo:OBI_0002078 (specimen set collection process)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002078 "specimen set collection process"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0002078 "Collection of both blood and urine specimens in one clinical visit; Taking out liver and brain specimens during an autopsy."@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0002078 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0002078 "A specimen collection process that generates multiple specimens from one source (e.g. one organism) during a time period which for the purpose of the study can be considered to be taken at the same sampling time."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0002078 "Chris Stoeckert, Jie Zheng"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0002078 "OBIB, OBI"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0002078 "specimen set collection process"@en)
-SubClassOf(obo:OBI_0002078 obo:OBI_0000659)
-
-# Class: obo:OBI_0002089 (physical store)
+# Class: obo:OBI_0002089 (container with environmental control)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0002089 "physical store"@en)
 AnnotationAssertion(obo:IAO_0000112 obo:OBI_0002089 "a freezer. a humidity controlled box."@en)
@@ -1708,18 +1631,6 @@ AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0500027 "true"^^x
 
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:OBI_0500028 "true"^^xsd:boolean)
 
-# Class: obo:OBI_0600005 (collecting specimen from organism)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600005 "collecting specimen from organism"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:OBI_0600005 "taking a sputum sample from a cancer patient, taking the spleen from a killed mouse, collecting a urine sample from a patient"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0600005 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0600005 "a process with the objective to obtain a material entity that was part of an organism for potential future use in an investigation"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_0600005 "PERSON:Bjoern Peters"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0600005 "IEDB"@en)
-AnnotationAssertion(rdfs:label obo:OBI_0600005 "collecting specimen from organism"@en)
-SubClassOf(obo:OBI_0600005 obo:OBI_0000659)
-SubClassOf(obo:OBI_0600005 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0100026))
-
 # Class: obo:OBI_0600047 (sequencing assay)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OBI_0600047 "sequencing assay"@en)
@@ -1745,22 +1656,6 @@ AnnotationAssertion(rdfs:label obo:OBI_0600052 "dialysis"@en)
 # Class: obo:OBI_1110040 (infectious disease)
 
 SubClassOf(obo:OBI_1110040 obo:OGMS_0000031)
-
-# Class: obo:OBI_1110095 (blood harvesting)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OBI_1110095 "blood harvesting"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_1110095 obo:IAO_0000123)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_1110095 "A material separation where blood is taken from an organism."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OBI_1110095 "IEDB"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_1110095 "IEDB"@en)
-AnnotationAssertion(rdfs:label obo:OBI_1110095 "blood harvesting"@en)
-
-# Class: obo:OGMS_0000023 (phenotype)
-
-AnnotationAssertion(obo:IAO_0000111 obo:OGMS_0000023 "phenotype")
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000023 "A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species."@en)
-AnnotationAssertion(rdfs:label obo:OGMS_0000023 "phenotype")
-SubClassOf(obo:OGMS_0000023 obo:BFO_0000019)
 
 # Class: obo:ONS_0000001 (participants' identification number)
 
@@ -1906,13 +1801,13 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000020 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000020 "average duration of bouts"@en)
 SubClassOf(obo:ONS_0000020 obo:ONS_0000092)
 
-# Class: obo:ONS_0000021 (obsolete: Dietary assessment method)
+# Class: obo:ONS_0000021 (obsolete Dietary assessment method)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000021 "Dietary assessment used for uploaded dietary variables
 1=24-hour recall; 2=FFQ; 3=Food record; 4=other"@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000021 "ENPADASI_WP4"@en)
 AnnotationAssertion(oboInOwl:created_by obo:ONS_0000021 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000021 "obsolete: Dietary assessment method"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000021 "obsolete Dietary assessment method"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000021 "true"^^xsd:boolean)
 
 # Class: obo:ONS_0000022 (month of dietary assessment)
@@ -2030,7 +1925,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000037 "The name of the method used
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000037 "ENPADASI_WP4"@en)
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:ONS_0000037 "true"^^xsd:boolean)
 AnnotationAssertion(rdfs:label obo:ONS_0000037 "randomization method"@en)
-SubClassOf(obo:ONS_0000037 obo:OBI_0000011)
+SubClassOf(obo:ONS_0000037 obo:COB_0000035)
 
 # Class: obo:ONS_0000038 (blinding)
 
@@ -2136,11 +2031,11 @@ SubClassOf(obo:ONS_0000052 ObjectSomeValuesFrom(obo:IAO_0000142 obo:CMO_0000053)
 SubClassOf(obo:ONS_0000052 ObjectSomeValuesFrom(obo:IAO_0000142 obo:ONS_0000030))
 SubClassOf(obo:ONS_0000052 ObjectSomeValuesFrom(obo:IAO_0000142 obo:ONS_0000031))
 
-# Class: obo:ONS_0000053 (obsolete: Start tab)
+# Class: obo:ONS_0000053 (obsolete Start tab)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000053 "START TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology."@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000053 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000053 "obsolete: Start tab"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000053 "obsolete Start tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000053 "true"^^xsd:boolean)
 
 # Class: obo:ONS_0000054 (Subject tab)
@@ -2157,30 +2052,27 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000055 "EVENTS TAB. This class shou
 AnnotationAssertion(efo:definition_editor obo:ONS_0000055 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000055 "Event tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000055 "true"^^xsd:boolean)
-SubClassOf(obo:ONS_0000055 obo:OBI_0000011)
 
-# Class: obo:ONS_0000056 (Sampling tab)
+# Class: obo:ONS_0000056 (obsolete: Sampling tab)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000056 "SAMPLING TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology."@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000056 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000056 "Sampling tab"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000056 "obsolete: Sampling tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000056 "true"^^xsd:boolean)
 
-# Class: obo:ONS_0000057 (obsolete: physiology assay tab)
+# Class: obo:ONS_0000057 (obsolete physiology assay tab)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000057 "PHYSIOLOGY ASSAY TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology."@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000057 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000057 "obsolete: physiology assay tab"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000057 "obsolete physiology assay tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000057 "true"^^xsd:boolean)
 
-# Class: obo:ONS_0000058 (Information tab)
+# Class: obo:ONS_0000058 (obsolete: Information tab)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000058 "INFORMATIONS TAB. This class should not be used as an ontology term, it is included as a superclass for the purpose to give a better organization to the ontology."@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000058 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000058 "Information tab"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000058 "obsolete: Information tab"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000058 "true"^^xsd:boolean)
-SubClassOf(obo:ONS_0000058 obo:OBI_0000070)
-SubClassOf(obo:ONS_0000058 obo:ONS_0000090)
 
 # Class: obo:ONS_0000059 (Chemical-biological assay)
 
@@ -2225,11 +2117,11 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000064 "ENPADASI_WP4"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000064 "question type"@en)
 SubClassOf(obo:ONS_0000064 obo:ONS_0000090)
 
-# Class: obo:ONS_0000065 (obsolete: Physiology assay type)
+# Class: obo:ONS_0000065 (obsolete Physiology assay type)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000065 "Type of physiology assay performed"@en)
 AnnotationAssertion(efo:definition_editor obo:ONS_0000065 "ENPADASI_WP4"@en)
-AnnotationAssertion(rdfs:label obo:ONS_0000065 "obsolete: Physiology assay type"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000065 "obsolete Physiology assay type"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000065 "true"^^xsd:boolean)
 
 # Class: obo:ONS_0000066 (Subject Information collection)
@@ -2404,24 +2296,24 @@ SubClassOf(obo:ONS_0000084 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_960
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually occurs at certain time during the day."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000085 "ENPADASI_WP4")
 AnnotationAssertion(rdfs:label obo:ONS_0000085 "meal")
-SubClassOf(obo:ONS_0000085 obo:OBI_0000011)
+SubClassOf(obo:ONS_0000085 obo:COB_0000035)
 
-# Class: obo:ONS_0000086 (obsolete: drinking)
+# Class: obo:ONS_0000086 (obsolete drinking)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000086 "The consumption of liquids. Not for drinking alcohol or alcohol consumption ( = ALCOHOL DRINKING); differentiate from DRINKING BEHAVIOR.")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000086 "ENPADASI_WP4")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_0000086 <http://humanbehaviourchange.org/ontology/BCIO_050422>)
 AnnotationAssertion(efo:MSH_definition_citation obo:ONS_0000086 "MSH:D004326")
-AnnotationAssertion(rdfs:label obo:ONS_0000086 "obsolete: drinking"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000086 "obsolete drinking"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000086 "true"^^xsd:boolean)
 
-# Class: obo:ONS_0000087 (obsolete: eating)
+# Class: obo:ONS_0000087 (obsolete eating)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000087 "The consumption of edible substances. The act of eating: do not confuse with FOOD (the substance eaten) or EATING BEHAVIOR (the manner of eating).")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000087 "ENPADASI_WP4")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_0000087 <http://humanbehaviourchange.org/ontology/BCIO_050423>)
 AnnotationAssertion(efo:MSH_definition_citation obo:ONS_0000087 "MSH:D004435")
-AnnotationAssertion(rdfs:label obo:ONS_0000087 "obsolete: eating"@en)
+AnnotationAssertion(rdfs:label obo:ONS_0000087 "obsolete eating"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_0000087 "true"^^xsd:boolean)
 
 # Class: obo:ONS_0000088 (subject information collection data)
@@ -2494,7 +2386,7 @@ SubClassOf(obo:ONS_0000092 ObjectSomeValuesFrom(obo:OBI_0000293 obo:ONS_0000067)
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000093 "The process in which food is made."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000093 "ENPADASI_WP4")
 AnnotationAssertion(rdfs:label obo:ONS_0000093 "food preparation"@en)
-SubClassOf(obo:ONS_0000093 obo:OBI_0000094)
+SubClassOf(obo:ONS_0000093 obo:COB_0000110)
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:OBI_0000293 obo:ONS_0000078))
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:OBI_0000299 obo:ONS_0000079))
 SubClassOf(obo:ONS_0000093 ObjectSomeValuesFrom(obo:RO_0000059 obo:FOODON_00004081))
@@ -2780,7 +2672,7 @@ SubClassOf(obo:ONS_0000126 ObjectSomeValuesFrom(obo:RO_0002248 obo:ONS_0000144))
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000127 "the addition of a small amount of a previously fermented batch to the raw food, with the aim of initiating a new fermentation process"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000127 "bakslopping"@en)
-SubClassOf(obo:ONS_0000127 obo:OBI_0000011)
+SubClassOf(obo:ONS_0000127 obo:COB_0000035)
 
 # Class: obo:ONS_0000128 (food choice management process)
 
@@ -2871,7 +2763,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000136 "https://github.com/Francesc
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000136 "https://orcid.org/0000-0001-9446-7979")
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000136 "https://orcid.org/0000-0002-7114-7726")
 AnnotationAssertion(rdfs:label obo:ONS_0000136 "technological processes during dairy food fermentation"@en)
-SubClassOf(obo:ONS_0000136 obo:BFO_0000015)
+SubClassOf(obo:ONS_0000136 obo:COB_0000035)
 
 # Class: obo:ONS_0000137 (biological process during dairy food fermentation)
 
@@ -3091,7 +2983,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000156 "https://orcid.org/0000-0001
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_0000156 "https://orcid.org/0000-0002-7114-7726")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ONS_0000156 "https://en.wikipedia.org/wiki/Fermentation_in_food_processing"@en)
 AnnotationAssertion(rdfs:label obo:ONS_0000156 "fermentation ons"@en)
-SubClassOf(obo:ONS_0000156 obo:BFO_0000015)
+SubClassOf(obo:ONS_0000156 obo:COB_0000035)
 
 # Class: obo:ONS_0000157 (fermented food)
 
@@ -3371,6 +3263,10 @@ SubClassOf(obo:ONS_0000178 ObjectSomeValuesFrom(obo:IAO_0000142 resource:SIO_000
 SubClassOf(obo:ONS_0000178 ObjectSomeValuesFrom(obo:IAO_0000142 resource:SIO_001068))
 SubClassOf(obo:ONS_0000178 ObjectSomeValuesFrom(obo:IAO_0000142 <https://www.w3.org/TR/owl-time/#time:TemporalDuration>))
 
+# Class: obo:ONS_0010021 (quality indicator of a dietary assessment)
+
+SubClassOf(obo:ONS_0010021 obo:IAO_0000030)
+
 # Class: obo:ONS_1000001 (diet)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000001 "A collection of food types or items which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population."@en)
@@ -3379,7 +3275,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000001 "https://en.wikipedia.org/wi
 AnnotationAssertion(oboInOwl:hasDbXref obo:ONS_1000001 "http://id.nlm.nih.gov/mesh/D004032")
 AnnotationAssertion(rdfs:comment obo:ONS_1000001 "OLD definition: In nutrition, diet is the sum of food consumed by a person or other organism"@en)
 AnnotationAssertion(rdfs:label obo:ONS_1000001 "diet"@en)
-SubClassOf(obo:ONS_1000001 obo:BFO_0000027)
+SubClassOf(obo:ONS_1000001 obo:FOODON_00002403)
 
 # Class: obo:ONS_1000002 (diet by digestive capability)
 
@@ -3433,12 +3329,12 @@ AnnotationAssertion(rdfs:comment obo:ONS_1000008 "The food entities in a descrip
 AnnotationAssertion(rdfs:label obo:ONS_1000008 "descriptive diet"@en)
 SubClassOf(obo:ONS_1000008 obo:ONS_1000001)
 
-# Class: obo:ONS_1000009 (obsolete: individual dietary pattern)
+# Class: obo:ONS_1000009 (obsolete individual dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000009 "An eating pattern pertaining to a single organism (an instance of organism). This can be used descriptively or prescriptively."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_1000009 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_1000009 obo:ONS_0000094)
-AnnotationAssertion(rdfs:label obo:ONS_1000009 "obsolete: individual dietary pattern"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000009 "obsolete individual dietary pattern"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_1000009 "true"^^xsd:boolean)
 
 # Class: obo:ONS_1000010 (recommended diet)
@@ -4026,7 +3922,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000001 "The temporal aspect of a di
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_2000001 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(rdfs:comment obo:ONS_2000001 "This should be placed under BCIO \"consumption behaviour pattern\" BCIO:050210"@en)
 AnnotationAssertion(rdfs:label obo:ONS_2000001 "timing of food intake"@en)
-SubClassOf(obo:ONS_2000001 obo:BFO_0000015)
+SubClassOf(obo:ONS_2000001 obo:COB_0000502)
 
 # Class: obo:ONS_2000002 (obsolete: dietary pattern by digestive capability)
 
@@ -4062,28 +3958,28 @@ AnnotationAssertion(rdfs:label obo:ONS_2000005 "obsolete: dietary pattern by nut
 AnnotationAssertion(owl:deprecated obo:ONS_2000005 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000005 obo:ONS_0000094)
 
-# Class: obo:ONS_2000006 (obsolete: proscribed dietary pattern)
+# Class: obo:ONS_2000006 (obsolete proscribed dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000006 "A dietary pattern that define the quantity, variety or combination of different food in a proscribed diet"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_2000006 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000006 obo:ONS_1000006)
-AnnotationAssertion(rdfs:label obo:ONS_2000006 "obsolete: proscribed dietary pattern"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000006 "obsolete proscribed dietary pattern"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_2000006 "true"^^xsd:boolean)
 
-# Class: obo:ONS_2000007 (obsolete: prescribed dietary pattern)
+# Class: obo:ONS_2000007 (obsolete prescribed dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000007 "A dietary pattern that define the quantity, variety or combination of different food in a prescribed diet"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_2000007 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000007 obo:ONS_1000007)
-AnnotationAssertion(rdfs:label obo:ONS_2000007 "obsolete: prescribed dietary pattern"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000007 "obsolete prescribed dietary pattern"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_2000007 "true"^^xsd:boolean)
 
-# Class: obo:ONS_2000008 (obsolete: descriptive dietary pattern)
+# Class: obo:ONS_2000008 (obsolete descriptive dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000008 "A dietary pattern that define the quantity, variety or combination of different food in descriptive diet"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:ONS_2000008 "https://github.com/FoodOntology/joint-food-ontology-wg")
 AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000008 obo:ONS_1000008)
-AnnotationAssertion(rdfs:label obo:ONS_2000008 "obsolete: descriptive dietary pattern"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000008 "obsolete descriptive dietary pattern"@en)
 AnnotationAssertion(owl:deprecated obo:ONS_2000008 "true"^^xsd:boolean)
 
 # Class: obo:ONS_2000019 (obsolete: dietary pattern by food organism)
@@ -4269,40 +4165,16 @@ SubClassOf(obo:ONS_2000045 ObjectSomeValuesFrom(obo:IAO_0000219 obo:ONS_1000066)
 
 AnnotationAssertion(obo:in_minimal_requirements_subset obo:PATO_0000047 "true"^^xsd:boolean)
 
-# Class: obo:PATO_0000122 (length)
-
-AnnotationAssertion(obo:IAO_0000111 obo:PATO_0000122 "length")
-AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000122 "A 1-D extent quality which is equal to the distance between two points.")
-AnnotationAssertion(rdfs:label obo:PATO_0000122 "length")
-SubClassOf(obo:PATO_0000122 obo:BFO_0000019)
-
-# Class: obo:PATO_0000125 (mass)
-
-AnnotationAssertion(obo:IAO_0000111 obo:PATO_0000125 "mass")
-AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000125 "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.")
-AnnotationAssertion(rdfs:label obo:PATO_0000125 "mass")
-SubClassOf(obo:PATO_0000125 obo:BFO_0000019)
-
-# Class: obo:PATO_0001237 (obsolete: quality of a single physical entity)
+# Class: obo:PATO_0001237 (obsolete quality of a single physical entity)
 
 AnnotationAssertion(obo:IAO_0000111 obo:PATO_0001237 "quality of a single physical entity"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001237 "A physical object quality which inheres in a single-bearer."@en)
-AnnotationAssertion(rdfs:label obo:PATO_0001237 "obsolete: quality of a single physical entity"@en)
+AnnotationAssertion(rdfs:label obo:PATO_0001237 "obsolete quality of a single physical entity"@en)
 AnnotationAssertion(owl:deprecated obo:PATO_0001237 "true"^^xsd:boolean)
 
-# Class: obo:PATO_0001238 (quality of related physical entities)
+# Class: obo:UO_0000000 (unit)
 
-AnnotationAssertion(obo:IAO_0000111 obo:PATO_0001238 "quality of related physical entities"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001238 "A physical entity quality which exists in relation towards some other entity."@en)
-AnnotationAssertion(rdfs:label obo:PATO_0001238 "quality of related physical entities"@en)
-SubClassOf(obo:PATO_0001238 obo:BFO_0000019)
-
-# Class: obo:PATO_0001338 (mixed sex)
-
-AnnotationAssertion(obo:IAO_0000111 obo:PATO_0001338 "mixed sex")
-AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001338 "A biological sex quality inhering in a population of multiple sexes.")
-AnnotationAssertion(rdfs:label obo:PATO_0001338 "mixed sex")
-SubClassOf(obo:PATO_0001338 obo:BFO_0000019)
+SubClassOf(obo:UO_0000000 obo:IAO_0000030)
 
 # Class: obo:VO_0000001 (vaccine)
 
@@ -4324,10 +4196,6 @@ SubClassOf(resource:SIO_000115 obo:IAO_0000027)
 
 AnnotationAssertion(obo:in_minimal_requirements_subset resource:SIO_000136 "true"^^xsd:boolean)
 SubClassOf(resource:SIO_000136 obo:ONS_0000090)
-
-# Class: resource:SIO_000154 (resource:SIO_000154)
-
-SubClassOf(resource:SIO_000154 obo:IAO_0000311)
 
 # Class: resource:SIO_001068 (control group)
 
@@ -4365,13 +4233,25 @@ AnnotationAssertion(obo:in_minimal_requirements_subset efo:EFO_0004329 "true"^^x
 
 AnnotationAssertion(obo:in_minimal_requirements_subset efo:EFO_0004338 "true"^^xsd:boolean)
 
-# Class: efo:EFO_0004339 (body height)
+# Class: efo:EFO_0004339 (obsolete body height)
 
+AnnotationAssertion(obo:IAO_0100001 efo:EFO_0004339 obo:OBA_VT0001253)
 AnnotationAssertion(obo:in_minimal_requirements_subset efo:EFO_0004339 "true"^^xsd:boolean)
+AnnotationAssertion(rdfs:label efo:EFO_0004339 "obsolete body height"@en)
+AnnotationAssertion(owl:deprecated efo:EFO_0004339 "true"^^xsd:boolean)
 
-# Class: efo:EFO_0004342 (waist circumference)
+# Class: efo:EFO_0004342 (obsolete waist circumfrence)
 
+AnnotationAssertion(obo:IAO_0100001 efo:EFO_0004342 obo:OBA_1001085)
 AnnotationAssertion(obo:in_minimal_requirements_subset efo:EFO_0004342 "true"^^xsd:boolean)
+AnnotationAssertion(rdfs:label efo:EFO_0004342 "obsolete waist circumfrence"@en)
+AnnotationAssertion(owl:deprecated efo:EFO_0004342 "true"^^xsd:boolean)
+
+# Class: efo:EFO_0005093 (obsolete hip circumference)
+
+AnnotationAssertion(obo:IAO_0100001 efo:EFO_0005093 obo:OBA_1000032)
+AnnotationAssertion(rdfs:label efo:EFO_0005093 "obsolete hip circumference"@en)
+AnnotationAssertion(owl:deprecated efo:EFO_0005093 "true"^^xsd:boolean)
 
 # Class: <https://www.w3.org/TR/owl-time/#time:Instant> (Temporal Instant)
 

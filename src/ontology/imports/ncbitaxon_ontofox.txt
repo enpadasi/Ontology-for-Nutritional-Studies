@@ -2180,10 +2180,10 @@ http://purl.obolibrary.org/obo/NCBITaxon_999584
 [Top level source term URIs and target direct superclass URIs]
 # http://purl.obolibrary.org/obo/NCBITaxon_1 # root organism
 http://purl.obolibrary.org/obo/NCBITaxon_131567 # cellular organisms
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 # organism
+subClassOf http://purl.obolibrary.org/obo/COB_0000022 # organism
 
 http://purl.obolibrary.org/obo/NCBITaxon_10239 # viruses
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 # organism
+subClassOf http://purl.obolibrary.org/obo/COB_0000022 # organism
 
 
 
